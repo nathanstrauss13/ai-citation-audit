@@ -1329,6 +1329,7 @@ TPL_TYPEFORM_AUDIT = """
             border: 2px solid #2A2A2A;
             border-radius: 8px;
             color: #E8E8E8;
+            caret-color: #E8E8E8; /* ensure caret is visible on dark bg */
             transition: all 0.3s ease;
             font-weight: 300;
         }
@@ -1714,6 +1715,37 @@ TPL_TYPEFORM_AUDIT = """
             queries: [],
             results: null
         };
+
+        // Focus helpers to keep input caret visible/active
+        function focusBrandInput() {
+            const el = document.getElementById('brandInput');
+            if (el) {
+                el.focus({ preventScroll: true });
+                try { el.selectionStart = el.selectionEnd = el.value.length; } catch (_) {}
+            }
+        }
+        function focusQueryInput() {
+            const el = document.getElementById('queryInput');
+            if (el) {
+                el.focus({ preventScroll: true });
+                try { el.selectionStart = el.selectionEnd = el.value.length; } catch (_) {}
+            }
+        }
+
+        // Restore focus if user clicks anywhere on screen 1 or 2 that isn't an input/textarea/button
+        document.addEventListener('click', (e) => {
+            const active = document.querySelector('.screen.active');
+            if (!active) return;
+            const t = e.target;
+            const isButton = t && (t.tagName === 'BUTTON' || (t.closest && t.closest('button')));
+            if (active.id === 'screen1') {
+                const isInput = t && (t.id === 'brandInput' || t.tagName === 'INPUT');
+                if (!isInput && !isButton) focusBrandInput();
+            } else if (active.id === 'screen2') {
+                const isTextarea = t && (t.id === 'queryInput' || t.tagName === 'TEXTAREA');
+                if (!isTextarea && !isButton) focusQueryInput();
+            }
+        });
         
         const processingMessages = {
             detectCompetitors: [
@@ -1771,6 +1803,13 @@ TPL_TYPEFORM_AUDIT = """
             
             currentScreen = screenNum;
             updateProgress();
+
+            // After transition, ensure the correct field has focus
+            if (screenNum === 1) {
+                setTimeout(focusBrandInput, 80);
+            } else if (screenNum === 2) {
+                setTimeout(focusQueryInput, 80);
+            }
         }
         
         function nextScreen(screenNum) {
