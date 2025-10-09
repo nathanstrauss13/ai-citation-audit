@@ -1,23 +1,3 @@
-# In app.py (Flask)
-from flask import Flask, redirect
-
-app = Flask(__name__)
-
-@app.route('/')
-def root():
-    # Redirect all root traffic to the Typeform Audit page
-    return redirect('/typeform-audit', code=308)
-
-# --- existing routes below ---
-@app.route('/typeform-audit')
-def typeform_audit():
-    # existing logic for your app
-    return "Typeform Audit Page"
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-
-
 #!/usr/bin/env python3
 import os
 import subprocess
@@ -38,6 +18,18 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "dev")
+
+# Globally deprecate legacy MVP UI on insights.innatec3.com and redirect root to the Typeform UI
+@app.before_request
+def _redirect_root_to_typeform():
+    try:
+        # Deprecate legacy UI on insights.innatec3.com and forward common entry paths
+        redirect_paths = {"/", "/typeform-audit", "/typeform", "/audit"}
+        if request.path in redirect_paths and request.method in ("GET", "POST"):
+            return redirect("https://ai-citation-audit.onrender.com/typeform-audit", code=302)
+    except Exception:
+        # If anything goes wrong, fall back to normal handling
+        pass
 
 REPORTS_DIR = os.path.join("news-analyzer", "static", "reports")
 
