@@ -1746,6 +1746,40 @@ TPL_TYPEFORM_AUDIT = """
                 if (!isTextarea && !isButton) focusQueryInput();
             }
         });
+
+        // Extra guards: if the input/textarea loses focus or the user starts typing while unfocused,
+        // immediately re-acquire focus on the active screen's field. This prevents the "vanishing caret"
+        // state that sometimes occurs after stray clicks on the page.
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ensure initial focus on screen 1
+            setTimeout(focusBrandInput, 0);
+
+            const bi = document.getElementById('brandInput');
+            if (bi) {
+                bi.addEventListener('blur', () => {
+                    if (currentScreen === 1) setTimeout(focusBrandInput, 0);
+                });
+            }
+            const qi = document.getElementById('queryInput');
+            if (qi) {
+                qi.addEventListener('blur', () => {
+                    if (currentScreen === 2) setTimeout(focusQueryInput, 0);
+                });
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            // If user begins typing while nothing is focused, restore focus to the relevant field.
+            const activeTag = (document.activeElement && document.activeElement.tagName) || '';
+            const modifierHeld = e.metaKey || e.ctrlKey || e.altKey;
+            if (!modifierHeld) {
+                if (currentScreen === 1 && activeTag !== 'INPUT') {
+                    focusBrandInput();
+                } else if (currentScreen === 2 && activeTag !== 'TEXTAREA') {
+                    focusQueryInput();
+                }
+            }
+        });
         
         const processingMessages = {
             detectCompetitors: [
