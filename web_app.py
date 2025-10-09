@@ -2143,8 +2143,24 @@ TPL_TYPEFORM_AUDIT = """
                         // Job finished successfully
                         if (processingInterval) clearInterval(processingInterval);
                         if (progressInterval) clearInterval(progressInterval);
-                        appState.results = data.result;
-                        renderResults(data.result);
+                        
+                        // The result from the worker includes the analysis
+                        const result = data.result;
+                        
+                        // If result has the analysis structure, use it directly
+                        // Otherwise, wrap it in the expected format
+                        if (result && result.brand) {
+                            appState.results = result;
+                            renderResults(result);
+                        } else {
+                            // Fallback: construct minimal result structure
+                            appState.results = {
+                                brand: appState.brand,
+                                results: result.results || [],
+                                error: 'Unexpected result format'
+                            };
+                            alert('Audit completed but result format was unexpected. Please check the CSV download.');
+                        }
                         showScreen(6);
                     } else if (data.status === 'failed') {
                         // Job failed
