@@ -87,9 +87,25 @@ def fix_location_query(query: str, brand: str) -> str:
 
 
 def infer_competitors(brand: str, openai_key: str) -> Dict[str, Any]:
-    """Use OpenAI to infer competitors only"""
+    """Use OpenAI to infer competitors; fallback to deterministic mapping when key missing/unavailable."""
+    def _fallback(brand_name: str) -> Dict[str, Any]:
+        b = (brand_name or "").lower()
+        fallback_map = [
+            (["tesla"], {"competitors": ["Ford", "Rivian", "Lucid Motors"], "industry": "Automotive Electric Vehicles"}),
+            (["uniqlo"], {"competitors": ["Zara", "H&M", "Gap"], "industry": "Apparel Retail"}),
+            (["lululemon"], {"competitors": ["Nike", "Adidas", "Under Armour"], "industry": "Athletic Apparel"}),
+            (["honeybaked", "honey baked"], {"competitors": ["Smithfield", "Omaha Steaks", "Harry & David"], "industry": "Food & Gifts"}),
+            (["john hardy"], {"competitors": ["David Yurman", "Tiffany & Co.", "Pandora"], "industry": "Jewelry"}),
+            (["nba"], {"competitors": ["NFL", "MLB", "NHL"], "industry": "Sports Leagues"})
+        ]
+        for keys, val in fallback_map:
+            if any(k in b for k in keys):
+                return val
+        return {"competitors": [], "industry": "Unknown"}
+    
+    # No key: fallback mapping
     if not openai_key:
-        return {'competitors': [], 'industry': 'Unknown'}
+        return _fallback(brand)
     
     try:
         response = requests.post(
@@ -128,12 +144,15 @@ Respond in JSON format:
                 content = content.split('```')[1].split('```')[0].strip()
             
             result = json.loads(content)
-            return result
+            # If model returned something usable, prefer it
+            if isinstance(result, dict) and result.get('competitors'):
+                return result
         
     except Exception as e:
         logger.error(f"Error inferring competitors: {e}")
     
-    return {'competitors': [], 'industry': 'Unknown'}
+    # Fallback if model failed or returned empty
+    return _fallback(brand)
 
 
 def generate_queries(brand: str, general_query: str, competitors: List[str], openai_key: str) -> List[str]:
