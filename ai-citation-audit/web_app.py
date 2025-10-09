@@ -19,17 +19,27 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "dev")
 
-# Globally deprecate legacy MVP UI on insights.innatec3.com and redirect root to the Typeform UI
+# Default Typeform UX in-app + Squarespace deprecation for insights.innatec3.com
 @app.before_request
 def _redirect_root_to_typeform():
     try:
-        # Deprecate legacy UI on insights.innatec3.com and forward common entry paths
-        redirect_paths = {"/", "/typeform-audit", "/typeform", "/audit"}
-        if request.path in redirect_paths and request.method in ("GET", "POST"):
+        host = (request.host or "").lower()
+        # If this process happens to serve insights.innatec3.com, forward everything to hosted Typeform UI
+        if "insights.innatec3.com" in host:
+            if request.path in ("/health", "/healthz", "/favicon.ico"):
+                return None
             return redirect("https://ai-citation-audit.onrender.com/typeform-audit", code=302)
+        # Make Typeform the default UX for this app: redirect only root to internal Typeform route
+        if request.path == "/" and request.method in ("GET", "POST"):
+            return redirect(url_for("typeform_audit"), code=308)
     except Exception:
         # If anything goes wrong, fall back to normal handling
         pass
+
+# Health endpoint for uptime checks
+@app.route("/healthz")
+def healthz():
+    return "ok", 200
 
 REPORTS_DIR = os.path.join("news-analyzer", "static", "reports")
 
