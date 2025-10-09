@@ -927,51 +927,67 @@ def typeform_audit():
     action = request.json.get('action') if request.is_json else None
     
     if action == 'suggest_query':
-        brand = request.json.get('brand', '')
-        openai_key = os.environ.get('OPENAI_API_KEY')
-        
-        suggestion = generate_smart_query_suggestion(brand, openai_key)
-        return {'suggestion': suggestion}
+        try:
+            brand = request.json.get('brand', '')
+            openai_key = os.environ.get('OPENAI_API_KEY')
+            
+            suggestion = generate_smart_query_suggestion(brand, openai_key)
+            return {'suggestion': suggestion}
+        except Exception as e:
+            logger.exception("suggest_query failed")
+            return {'error': str(e)}, 500
     
     elif action == 'detect_competitors':
-        brand = request.json.get('brand', '')
-        openai_key = os.environ.get('OPENAI_API_KEY')
-        
-        from simple_raw_auditor import infer_competitors
-        result = infer_competitors(brand, openai_key)
-        return {'competitors': result.get('competitors', []), 'industry': result.get('industry', 'Unknown')}
+        try:
+            brand = request.json.get('brand', '')
+            openai_key = os.environ.get('OPENAI_API_KEY')
+            
+            from simple_raw_auditor import infer_competitors
+            result = infer_competitors(brand, openai_key)
+            return {'competitors': result.get('competitors', []), 'industry': result.get('industry', 'Unknown')}
+        except Exception as e:
+            logger.exception("detect_competitors failed")
+            return {'error': str(e)}, 500
     
     elif action == 'generate_queries':
-        brand = request.json.get('brand', '')
-        query = request.json.get('query', '')
-        competitors = request.json.get('competitors', [])
-        openai_key = os.environ.get('OPENAI_API_KEY')
-        
-        from simple_raw_auditor import generate_queries
-        prompts = generate_queries(brand, query, competitors, openai_key)
-        return {'queries': prompts}
+        try:
+            brand = request.json.get('brand', '')
+            query = request.json.get('query', '')
+            competitors = request.json.get('competitors', [])
+            openai_key = os.environ.get('OPENAI_API_KEY')
+            
+            from simple_raw_auditor import generate_queries
+            prompts = generate_queries(brand, query, competitors, openai_key)
+            return {'queries': prompts}
+        except Exception as e:
+            logger.exception("generate_queries failed")
+            return {'error': str(e)}, 500
     
     elif action == 'run_audit':
-        brand = request.json.get('brand', '')
-        competitors = request.json.get('competitors', [])
-        prompts = request.json.get('prompts', [])
-        
-        from simple_raw_auditor import SimpleRawAuditor
-        auditor = SimpleRawAuditor(brand, competitors, prompts)
-        results = auditor.run_audit()
-        
-        # Save CSV
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M")
-        safe_brand = "".join(c for c in brand if c.isalnum() or c in (' ', '-', '_')).strip()
-        csv_filename = f"{safe_brand}_audit_{timestamp}.csv"
-        csv_path = f"lead_audits/{csv_filename}"
-        auditor.to_csv(csv_path)
-        
-        # Analyze results for dashboard
-        analysis = analyze_audit_results(brand, competitors, results)
-        analysis['csv_filename'] = csv_filename
-        
-        return analysis
+        try:
+            brand = request.json.get('brand', '')
+            competitors = request.json.get('competitors', [])
+            prompts = request.json.get('prompts', [])
+            
+            from simple_raw_auditor import SimpleRawAuditor
+            auditor = SimpleRawAuditor(brand, competitors, prompts)
+            results = auditor.run_audit()
+            
+            # Save CSV
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M")
+            safe_brand = "".join(c for c in brand if c.isalnum() or c in (' ', '-', '_')).strip()
+            csv_filename = f"{safe_brand}_audit_{timestamp}.csv"
+            csv_path = f"lead_audits/{csv_filename}"
+            auditor.to_csv(csv_path)
+            
+            # Analyze results for dashboard
+            analysis = analyze_audit_results(brand, competitors, results)
+            analysis['csv_filename'] = csv_filename
+            
+            return analysis
+        except Exception as e:
+            logger.exception("run_audit failed")
+            return {'error': str(e)}, 500
     
     return {'error': 'Invalid action'}, 400
 
@@ -1779,6 +1795,7 @@ TPL_TYPEFORM_AUDIT = """
                 });
                 
                 const data = await response.json();
+                if (!response.ok || data.error) { throw new Error(data.error || `Request failed (${response.status})`); }
                 appState.competitors = data.competitors || [];
                 
                 renderCompetitors();
@@ -1842,6 +1859,7 @@ TPL_TYPEFORM_AUDIT = """
                 });
                 
                 const data = await response.json();
+                if (!response.ok || data.error) { throw new Error(data.error || `Request failed (${response.status})`); }
                 appState.queries = data.queries || [];
                 
                 renderQueries();
@@ -1888,6 +1906,7 @@ TPL_TYPEFORM_AUDIT = """
                 });
                 
                 const data = await response.json();
+                if (!response.ok || data.error) { throw new Error(data.error || `Request failed (${response.status})`); }
                 appState.results = data;
                 
                 renderResults(data);
