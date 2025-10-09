@@ -1,0 +1,26 @@
+platform,query,brand_mentioned,competitors_mentioned,actual_urls,inferred_sources,recommended_resources,sample_context
+ChatGPT,What are the best electric vehicles for families?,True,"Rivian, Ford","ford.com, tesla.com, ford.com, consumerreports.org, vw.com, kia.com, edmunds.com, kia.com, consumerreports.org, rivian.com, hyundaiusa.com, edmunds.com, rivian.com, tesla.com, rivian.com, cars.usnews.com, ford.com, kia.com, edmunds.com, tesla.com, consumerreports.org, usnews.com, vw.com, cars.usnews.com, hyundaiusa.com, vw.com, hyundaiusa.com",,,"**Tesla Model Y**: The Model Y is a popular choice for families due to its spacious interior, impressive range (up to 330 miles on a single charge), and advanced safety features. It also offers optional third-row seating, making it versatile for larger families ([Tesla](https://www"
+Claude,What are the best electric vehicles for families?,True,Ford,"edmunds.com, caranddriver.com, plugincars.com, fueleconomy.gov, kbb.com, insideevs.com, fueleconomy.gov, edmunds.com, electrek.co, epa.gov, consumerreports.org, plugincars.com, fueleconomy.gov, consumerreports.org, caranddriver.com, kbb.com, epa.gov",,,"Here are some of the best electric vehicles for families in 2023-2024, based on expert reviews and ratings:
+
+Tesla Model Y
+- Most popular electric SUV globally
+- Range: 310-330 miles
+- Spacious interior with optional third row
+- Strong safety ratings and advanced driver assistance features
+[Source: "
+Perplexity,What are the best electric vehicles for families?,True,Ford,"electriccarscheme.com, caranddriver.com, motortrend.com, evpowered.co.uk, youtube.com, edmunds.com, carwow.co.uk, hendrickcars.com, ev.com, caranddriver.com, topgear.com",,,"- **Ford Mustang Mach-E, Tesla Model Y, Polestar 2**: These are also frequently recommended for their blend of performance, tech, and practicality, though they may come at a higher price[7][9]"
+Gemini,What are the best electric vehicles for families?,True,,"electrek.co, cars.usnews.com, iihs.org, cars.usnews.com, usnews.com, edmunds.com, caranddriver.com, edmunds.com, nhtsa.gov, nhtsa.gov, electrek.co, iihs.org, nhtsa.gov, edmunds.com, caranddriver.com, electrek.co, iihs.org, caranddriver.com",,www,"Tesla Model Y:**
+
+*   **Pros:** Ample cargo space, available third-row seating (though somewhat cramped), long range, access to Tesla's Supercharger network, advanced technology features (Autopilot). *   **Citation:** Edmunds names the Tesla Model Y as a Top Rated EV"
+ChatGPT,What are the top electric vehicles suitable for family use?,True,Ford,"cars.usnews.com, greencarreports.com, usnews.com, insideevs.com, electricdrive.org, edmunds.com, cars.usnews.com, electricdrive.org, insideevs.com, caranddriver.com, insideevs.com, greencarreports.com, edmunds.com, electricdrive.org, greencarreports.com, caranddriver.com, edmunds.com, caranddriver.com",,electricdrive,"**Tesla Model Y**  
+   The Tesla Model Y is a compact SUV that offers ample space for families with its optional third-row seating. It has a long range of up to 326 miles on a single charge and comes with advanced safety features and Tesla's Autopilot system"
+Claude,What are the top electric vehicles suitable for family use?,True,Ford,"edmunds.com, tesla.com, iihs.org, consumerreports.org, evfinder.com, plugshare.com, insideevs.com, electricvehiclecouncil.com, tesla.com, edmunds.com, tesla.com, fueleconomy.gov, iihs.org, consumerreports.org",Tesla,,"Tesla Model Y
+- Mid-size SUV with seating for up to 7
+- Range: 330 miles
+- Excellent safety ratings
+- Starting price: $47,490
+(Source: Tesla. tesla"
+Perplexity,What are the top electric vehicles suitable for family use?,True,Ford,"electriccarscheme.com, caranddriver.com, kbb.com, evpowered.co.uk, whatcar.com, edmunds.com, ev.com, caranddriver.com, youtube.com, topgear.com",,,"The top electric vehicles suitable for family use in 2025 are the **Kia EV9**, **Hyundai Ioniq 9**, **Skoda Elroq**, **Kia EV3**, **Tesla Model Y**, **Volvo EX90**, **Skoda Enyaq iV**, and **Kia e-Niro**[2][3][4][6][9]. - **Tesla Model Y**: Known for its advanced entertainment system, strong safety "
+Gemini,What are the top electric vehicles suitable for family use?,True,,"cars.usnews.com, cars.usnews.com, consumerreports.org, insideevs.com, insideevs.com, electrek.co, consumerreports.org, caranddriver.com, insideevs.com, afdc.energy.gov, edmunds.com, energy.gov, edmunds.com, kbb.com, edmunds.com, caranddriver.com, kbb.com, consumerreports.org, electrek.co, kbb.com, usnews.com, afdc.energy.gov, electrek.co, caranddriver.com",,electrek,"Tesla Model Y:**
+
+*   **Why it's great for families:** The Model Y offers a good balance of range, performance, and cargo space. It has seating for up to seven (with the optional third row), a large rear hatch, and access to Tesla's Supercharger network"

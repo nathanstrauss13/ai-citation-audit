@@ -1,0 +1,123 @@
+media_outlet,total_citations,nba_specific_citations,league_agnostic_citations,avg_position,primary_content_type,sample_urls
+nba.com,120,98,22,6.71,official,https://www.nba.com/leaguepass | https://www.nba.com/gamepass | https://nba.com
+espn.com,55,47,8,6.98,premium_media,https://www.espn.com | https://espn.com | https://www.espn.com/watch/
+tntdrama.com,4,4,0,9.75,other,https://www.tntdrama.com | https://tntdrama.com | https://www.tntdrama.com/watchtnt/live
+abc.com,2,2,0,7.5,other,https://abc.com | https://abc.com/watch-live
+youtube.com,5,4,1,8.0,social_community,https://www.youtube.com/user/NBA | https://youtube.com | https://youtube.com
+twitter.com,4,4,0,14.75,social_community,https://twitter.com/NBA | https://twitter.com | https://twitter.com/NBA
+en.wikipedia.org,4,3,1,3.25,reference,https://en.wikipedia.org/wiki/NBA_League_Pass | https://en.wikipedia.org/wiki/Eligibility_for_the_NBA_draft | https://en.wikipedia.org/wiki/NBA_draft
+support.watch.nba.com,4,4,0,3.5,official,https://support.watch.nba.com/hc/en-us/articles/115000585974-NBA-League-Pass | https://support.watch.nba.com/hc/en-us/articles/360002481114-Blackout-Restrictions | https://support.watch.nba.com/
+streamlocator.com,1,1,0,3.0,other,https://www.streamlocator.com/articles/how-to-watch-nba-league-pass-with-no-blackouts
+support.google.com,1,1,0,4.0,other,https://support.google.com/youtubetv/answer/9148808?hl=en
+cabletv.com,2,2,0,3.0,other,https://www.cabletv.com/news/nba-league-pass-amazon-prime-exclusive | https://www.cabletv.com/news/nba-league-pass-amazon-prime-exclusive
+sling.com,4,4,0,5.75,other,https://www.sling.com/sports/nba | https://www.sling.com/ | https://sling.com
+tv.youtube.com,3,3,0,3.67,social_community,https://tv.youtube.com/ | https://tv.youtube.com/welcome/ | https://tv.youtube.com/welcome/
+hulu.com,2,2,0,4.5,other,https://www.hulu.com/live-tv | https://www.hulu.com/live-tv
+fubo.tv,2,2,0,5.5,other,https://www.fubo.tv/welcome | https://www.fubo.tv/welcome/channels
+directv.com,2,2,0,6.5,other,https://www.directv.com/stream/ | https://www.directv.com/stream/
+plus.espn.com,1,1,0,8.0,premium_media,https://plus.espn.com/
+bleacherreport.com,14,14,0,10.36,premium_media,https://bleacherreport.com/nba | https://bleacherreport.com | https://bleacherreport.com/nba
+si.com,16,14,2,12.31,other,https://www.si.com/nba | https://si.com | https://www.si.com/nba
+nbahoopsonline.com,2,2,0,13.0,other,https://nbahoopsonline.com/teams/BostonCeltics/ | https://nbahoopsonline.com
+theathletic.com,26,26,0,9.92,premium_media,https://theathletic.com/nba/team/nuggets/ | https://theathletic.com/nba/ | https://theathletic.com
+basketball-reference.com,18,18,0,11.28,other,https://www.basketball-reference.com/ | https://basketball-reference.com | https://www.basketball-reference.com/playoffs/
+theringer.com,10,10,0,12.7,other,https://www.theringer.com/nba | https://theringer.com | https://www.theringer.com/nba
+instagram.com,2,2,0,21.0,social_community,https://www.instagram.com/nba/ | https://instagram.com
+reddit.com,4,4,0,22.25,social_community,https://www.reddit.com/r/nba/ | https://reddit.com | https://www.reddit.com/r/nba/
+official.nba.com,1,1,0,3.0,official,https://official.nba.com/rule-no-28-regular-season-tiebreaker-basis/
+pr.nba.com,1,1,0,4.0,official,https://pr.nba.com/
+app.nba.com,1,1,0,8.0,official,https://app.nba.com
+stats.nba.com,1,1,0,9.0,official,https://stats.nba.com
+foxsports.com,3,2,1,3.33,premium_media,https://www.foxsports.com/stories/nba/2025-nba-playoff-bracket-updated-schedule-scores | https://www.foxsports.com/articles/nba/2024-25-nba-championship-odds-favorites-and-lines-to-win-nba-finals | https://www.foxsports.com/stories/nfl/2025-nfl-playoff-bracket-schedule-standings
+usatoday.com,2,2,0,3.5,other,https://www.usatoday.com/story/sports/nba/playoffs/2025/06/01/nba-playoff-bracket-2025-schedule-times-scores/83922467007/ | https://www.usatoday.com/story/sports/nba/2025/09/22/nba-power-rankings-championship-odds-preseason/86222349007/
+playoffstatus.com,2,1,1,5.0,other,http://www.playoffstatus.com/nba/nbaplayoffschedule.html | https://playoffstatus.com
+cbssports.com,8,6,2,9.0,premium_media,https://www.cbssports.com/nba/news/zion-williamson-return-impact | https://cbssports.com | https://www.cbssports.com/nba/news/nba-championship-odds-2024-updated-betting-lines-picks-predictions-for-every-team-from-proven-model/
+statmuse.com,5,5,0,14.8,other,https://www.statmuse.com/ | https://www.statmuse.com/nba | https://statmuse.com
+projects.fivethirtyeight.com,1,1,0,14.0,other,https://projects.fivethirtyeight.com/nba-player-ratings/
+cleaningtheglass.com,2,2,0,20.5,other,https://cleaningtheglass.com/ | https://cleaningtheglass.com
+fivethirtyeight.com,3,1,2,19.0,other,https://fivethirtyeight.com | https://fivethirtyeight.com/sports/ | https://fivethirtyeight.com
+actionnetwork.com,2,2,0,7.5,other,https://www.actionnetwork.com/nba/nba-championship-odds | https://actionnetwork.com
+sportsbook.draftkings.com,1,1,0,6.0,other,https://sportsbook.draftkings.com/leagues/basketball/88670846
+sportsbook.fanduel.com,3,3,0,6.67,other,https://sportsbook.fanduel.com/navigation/nba | https://sportsbook.fanduel.com/navigation/nba?tab=nba-finals | https://sportsbook.fanduel.com/navigation/nba
+draftkings.com,1,1,0,15.0,other,https://draftkings.com
+fanduel.com,2,2,0,16.0,other,https://fanduel.com | https://fanduel.com
+sports.betmgm.com,1,1,0,2.0,other,https://sports.betmgm.com/en/blog/nba/finals-odds-championship-nba-betting-bm05/
+vegasinsider.com,1,1,0,3.0,other,https://www.vegasinsider.com/nba/odds/futures/
+boston.com,2,2,0,12.5,other,https://www.boston.com/sports/boston-celtics/2024/03/15/jayson-tatum-mvp-celtics-historic-success-argument/ | https://www.boston.com/sports/boston-celtics/2024/03/15/jayson-tatum-mvp-celtics-historic-success-
+ncaa.org,2,2,0,5.5,other,https://www.ncaa.org/sports/2020/1/31/ncaa-mens-basketball-eligibility.aspx | https://ncaa.org
+nbpa.com,2,2,0,7.5,other,https://nbpa.com/cba | https://nbpa.com
+gleague.nba.com,1,1,0,5.0,official,https://gleague.nba.com/
+tankathon.com,2,2,0,13.0,other,http://www.tankathon.com/ | https://tankathon.com
+draftexpress.com,2,2,0,14.0,other,https://www.draftexpress.com/ | https://draftexpress.com
+refrsports.com,1,1,0,1.0,other,https://refrsports.com/blog/nba-draft-2025-comprehensive-guide-to-picks-rules-and-process
+atlhawksfanatic.github.io,1,1,0,3.0,other,https://atlhawksfanatic.github.io/NBA-CBA/player-eligibility-and-nba-draft.html
+stanford_ftp.sidearmsports.com,1,1,0,4.0,other,https://stanford_ftp.sidearmsports.com/Compliance/NBADraftTipSheet.pdf
+ncaaorg.s3.amazonaws.com,1,1,0,7.0,other,https://ncaaorg.s3.amazonaws.com/compliance/cbreform/CBR_NBADraftCombineAgentsWorkoutsMemo.pdf
+hoopshype.com,3,3,0,16.0,other,https://hoopshype.com/lists/nba-rookie-scale-contracts-explained/ | https://hoopshype.com/ | https://hoopshype.com
+sportsmediawatch.com,8,2,6,5.62,other,https://www.sportsmediawatch.com/ | https://sportsmediawatch.com | https://www.sportsmediawatch.com/2021-nba-finals-ratings-viewership/
+watch.nba.com,1,1,0,8.0,official,https://watch.nba.com/streaming-subscriptions
+sportsbusinessjournal.com,8,2,6,11.25,other,https://www.sportsbusinessjournal.com/ | https://sportsbusinessjournal.com | https://www.sportsbusinessjournal.com/Articles/2023/08/21/nfl-global-ambitions.aspx
+businessinsider.com,1,1,0,3.0,other,https://www.businessinsider.com/guides/streaming/how-to-watch-nba-live-streams
+nba.2k.com,1,1,0,4.0,other,https://nba.2k.com/2k25/league-pass-faq/
+cordcuttersnews.com,1,1,0,5.0,other,https://cordcuttersnews.com/fubo-and-youtube-tv-drop-league-pass-ahead-of-2025-26-season-as-amazon-gets-exclusive-streaming-rights/
+axios.com,1,1,0,6.0,other,https://www.axios.com/2025/09/19/sports-streaming-nba-nfl-fans
+blazersedge.com,2,2,0,12.5,other,https://www.blazersedge.com/ | https://blazersedge.com
+marcstein.substack.com,1,1,0,7.0,other,https://marcstein.substack.com/
+spotrac.com,2,2,0,17.0,other,https://www.spotrac.com/nba/ | https://spotrac.com
+fanspo.com,2,2,0,19.0,other,https://fanspo.com/nba/trade-machine | https://fanspo.com
+basketball.realgm.com,1,1,0,14.0,other,https://basketball.realgm.com/
+substack.com,1,1,0,22.0,other,https://substack.com
+realgm.com,1,1,0,27.0,other,https://realgm.com
+sports.yahoo.com,2,2,0,18.5,premium_media,https://sports.yahoo.com/nba/ | https://sports.yahoo.com/nba/
+podcasts.apple.com,7,7,0,12.43,other,https://podcasts.apple.com/us/podcast/the-woj-pod/id1220972002 | https://podcasts.apple.com/us/podcast/the-lowe-post/id630985829 | https://podcasts.apple.com/us/podcast/the-hoop-collective/id1220971987
+open.spotify.com,6,6,0,12.0,other,https://open.spotify.com/show/3X9vV3sK64h6m18zY6LhJg | https://open.spotify.com/show/06i7f9z6z01jL4j32F5s8E | https://open.spotify.com/show/7w5yVz0q2l3d4891bN5k0S
+threefourtwo.com,1,1,0,17.0,other,https://www.threefourtwo.com/
+lockedonpodcasts.com,1,1,0,20.0,other,https://www.lockedonpodcasts.com/locked-on-nba-podcast/
+nielsen.com,11,0,11,7.18,other,https://www.nielsen.com | https://nielsen.com | https://www.nielsen.com/us/en/insights/article/2021/2021-stanley-cup-final-ratings/
+forbes.com,14,0,14,8.21,other,https://www.forbes.com/nfl | https://www.forbes.com/nba | https://www.forbes.com/mlb
+statista.com,8,0,8,5.12,other,https://www.statista.com | https://statista.com | https://www.statista.com/statistics/1233042/premier-league-global-audience/
+www2.deloitte.com,5,0,5,4.6,other,https://www2.deloitte.com | https://www2.deloitte.com/uk/en/pages/sports-business-group/articles/annual-review-of-football-finance.html | https://www2.deloitte.com/uk/en/pages/sports-business-group/articles/annual-review-of-football-finance.html
+deloitte.com,5,0,5,12.2,other,https://deloitte.com | https://deloitte.com | https://deloitte.com
+premierleague.com,10,0,10,4.8,other,https://www.premierleague.com/ | https://premierleague.com | https://www.premierleague.com/news/3739893
+iplt20.com,2,0,2,9.5,other,https://www.iplt20.com/ | https://iplt20.com
+uefa.com,4,0,4,9.75,other,https://www.uefa.com/ | https://uefa.com | https://www.uefa.com/insideuefa/news/0277-158db63fb89e-13e34ed91c0c-1000--uefa-financial-report/
+nielsensports.com,4,0,4,12.75,other,https://nielsensports.com/ | https://nielsensports.com | https://nielsensports.com/
+hootsuite.com,4,0,4,12.75,other,https://www.hootsuite.com/ | https://hootsuite.com | https://www.hootsuite.com/resources/digital-trends
+sportbusiness.com,2,0,2,14.5,other,https://www.sportbusiness.com/ | https://sportbusiness.com
+pwc.com,3,0,3,13.67,other,https://www.pwc.com/sports | https://pwc.com | https://www.pwc.com/us/en/industries/tmt/library/sports-outlook-north-america.html
+emerald.com,2,0,2,16.5,other,https://www.emerald.com/insight/publication/issn/1464-6668 | https://emerald.com
+givemesport.com,1,0,1,1.0,other,https://www.givemesport.com/best-leagues-in-world-football-soccer-ranked/
+iworkinsport.com,2,0,2,4.0,other,https://www.iworkinsport.com/news/top-20-sports-leagues-the-most-attractive-employers-in-sport-2025 | https://www.iworkinsport.com/news/top-10-sports-leagues-the-most-attractive-employers-in-sport-2025
+topendsports.com,2,0,2,4.5,other,https://www.topendsports.com/world/lists/popular-sport/fans.htm | https://www.topendsports.com/world/lists/popular-sport/fans.htm
+apsportseditors.org,3,0,3,4.67,other,https://apsportseditors.org/top-sports-leagues/ | https://apsportseditors.org/top-sports-leagues/ | https://apsportseditors.org/sports-viewership-statistics/
+spglobal.com,2,0,2,5.0,other,https://www.spglobal.com/market-intelligence/en/news-insights/research/state-of-us-sports-viewing-2025 | https://www.spglobal.com/market-intelligence/en/news-insights/research/state-of-us-sports-viewing-2025
+athletenetwork.net,1,0,1,8.0,other,https://www.athletenetwork.net/post/top-10-highest-earning-professional-sports-in-2025-and-their-revenue-streams
+nfl.com,12,0,12,9.0,other,https://www.nfl.com/international/ | https://nfl.com | https://www.nfl.com/standings/playoff-picture
+operations.nfl.com,2,0,2,4.0,other,https://operations.nfl.com/the-game/playoffs/ | https://operations.nfl.com/gameday/technology/
+fangraphs.com,2,0,2,9.5,other,https://www.fangraphs.com | https://fangraphs.com
+mlb.com,8,0,8,6.75,other,https://www.mlb.com/postseason | https://mlb.com | https://www.mlb.com/technology
+nhl.com,3,0,3,13.67,other,https://www.nhl.com/stanley-cup-playoffs | https://NHL.com | https://nhl.com
+journals.sagepub.com,1,0,1,7.0,other,https://journals.sagepub.com/home/jse
+sagepub.com,1,0,1,19.0,other,https://sagepub.com
+nbafoundation.nba.com,1,0,1,3.0,official,https://nbafoundation.nba.com/
+sportsilab.com,2,0,2,9.5,other,https://www.sportsilab.com/ | https://sportsilab.com
+sportstechx.com,1,0,1,1.0,social_community,https://sportstechx.com/new-sports-leagues-emerging-formats/
+theupside.us,1,0,1,2.0,other,https://www.theupside.us/p/upside-analysis-emerging-sports-leagues
+adweek.com,1,0,1,3.0,other,https://www.adweek.com/brand-marketing/8-new-sports-leagues-2025/
+frontofficesports.com,1,0,1,4.0,other,https://frontofficesports.com/award-winners/most-innovative-2025/
+sportspromedia.com,5,0,5,11.4,other,https://www.sportspromedia.com/interviews/nba-innovation-chief-tech-vr-ar-ai-future/ | https://www.sportspromedia.com/news/nfl-next-gen-stats-data-broadcast-analytics-aws/ | https://www.sportspromedia.com/news/f1-social-media-growth-tiktok-instagram-youtube-twitter/
+news.microsoft.com,1,0,1,3.0,other,https://news.microsoft.com/2020/04/16/nba-and-microsoft-announce-multiyear-partnership/
+aws.amazon.com,1,0,1,10.0,other,https://aws.amazon.com/solutions/case-studies/nfl-digital-athlete/
+press.amazon.com,1,0,1,11.0,other,https://press.amazon.com/tnf
+formula1.com,2,0,2,17.5,other,https://www.formula1.com/en/latest/technical.html | https://www.formula1.com/en/latest/article.formula-1-financial-regulations-what-is-the-budget-cap-and-how-does-it-work.37hB9Q971oBqR4l7vX219L.html
+netflix.com,1,0,1,16.0,social_community,https://www.netflix.com/title/80204890
+f1tv.formula1.com,1,0,1,17.0,other,https://f1tv.formula1.com/
+libertymedia.com,1,0,1,19.0,other,https://www.libertymedia.com/companies/formula-1
+footballbenchmark.com,2,0,2,11.0,other,https://footballbenchmark.com/ | https://footballbenchmark.com
+futuressport.com,2,0,2,15.0,other,https://www.futuressport.com/ | https://futuressport.com
+samford.edu,1,0,1,2.0,other,https://www.samford.edu/sports-analytics/fans/2025/Americas-Soccer-Revolution-5-Viewing-Trends-Poised-to-Make-World-Cup-2026-a-True-Watershed-Moment
+gwi.com,1,0,1,4.0,other,https://www.gwi.com/blog/sports-viewership-trends
+aboveandbeyond.group,1,0,1,6.0,other,https://aboveandbeyond.group/most-watched-sports-events/
+open.substack.com,1,0,1,7.0,other,https://open.substack.com/pub/streamscoop/p/2025-sports-media-viewership-insights?r=11s399
+sportsvalue.com.br,1,0,1,8.0,other,https://www.sportsvalue.com.br/en/the-sports-competitions-with-the-highest-revenues-in-the-world/
+sportico.com,1,0,1,5.0,other,https://www.sportico.com/business/finance/2023/nba-revenue-global-growth-1234730694/

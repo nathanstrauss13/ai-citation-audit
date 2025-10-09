@@ -1,0 +1,536 @@
+Engine,Query,Domain,Classification,URL,Brand_Association,Confidence_Level,URL_Contains_Brand,Content_Type
+chatgpt,What is John Hardy jewelry known for?,www.johnhardy.com,owned,https://www.johnhardy.com/pages/our-craft,John Hardy,HIGH,Yes,Other
+chatgpt,What is John Hardy jewelry known for?,www.johnhardy.com,owned,https://www.johnhardy.com/pages/sustainability,John Hardy,HIGH,Yes,Sustainability
+chatgpt,What is John Hardy jewelry known for?,www.vogue.com,luxury_fashion_tier1,https://www.vogue.com/article/best-jewelry-brands,John Hardy (inferred),MEDIUM,No,Editorial
+chatgpt,What is John Hardy jewelry known for?,www.harpersbazaar.com,luxury_fashion_tier1,https://www.harpersbazaar.com/fashion/jewelry/g38656334/best-jewelry-brands/,John Hardy (inferred),MEDIUM,No,Editorial
+chatgpt,What is John Hardy jewelry known for?,www.forbes.com,business_sustainability,https://www.forbes.com/sites/forbesbusinesscouncil/2023/01/10/john-hardy-a-sustainable-luxury-jewelry-brand/?sh=5f7f6b5f7c5e,John Hardy,HIGH,Yes,Product
+chatgpt,What is John Hardy jewelry known for?,www.johnhardy.com,owned,https://www.johnhardy.com,John Hardy,HIGH,Yes,Other
+chatgpt,What is John Hardy jewelry known for?,johnhardy.com,owned,https://johnhardy.com,John Hardy,HIGH,Yes,Other
+chatgpt,What is John Hardy jewelry known for?,vogue.com,luxury_fashion_tier1,https://vogue.com,John Hardy (inferred),MEDIUM,No,Other
+chatgpt,What is John Hardy jewelry known for?,harpersbazaar.com,luxury_fashion_tier1,https://harpersbazaar.com,John Hardy (inferred),MEDIUM,No,Other
+chatgpt,What is John Hardy jewelry known for?,forbes.com,business_sustainability,https://forbes.com,John Hardy (inferred),MEDIUM,No,Other
+claude,What is John Hardy jewelry known for?,www.johnhardy.com,owned,https://www.johnhardy.com/our-story,John Hardy,HIGH,Yes,Owned
+claude,What is John Hardy jewelry known for?,www.neimanmarcus.com,retail,https://www.neimanmarcus.com/c/designers-john-hardy-cat43250739,John Hardy,HIGH,Yes,Other
+claude,What is John Hardy jewelry known for?,www.johnhardy.com,owned,https://www.johnhardy.com/sustainability,John Hardy,HIGH,Yes,Sustainability
+claude,What is John Hardy jewelry known for?,www.reuters.com,general_editorial,https://www.reuters.com/article/us-johnhardy-ma-catterton/l-capital-buys-control-of-john-hardy-in-asian-luxury-push-idUSKBN0FK0BS20140715,John Hardy,HIGH,Yes,News
+claude,What is John Hardy jewelry known for?,www.johnhardy.com,owned,https://www.johnhardy.com/store-locator,John Hardy,HIGH,Yes,Other
+claude,What is John Hardy jewelry known for?,www.johnhardy.com,owned,https://www.johnhardy.com,John Hardy,HIGH,Yes,Other
+claude,What is John Hardy jewelry known for?,johnhardy.com,owned,https://johnhardy.com,John Hardy,HIGH,Yes,Other
+claude,What is John Hardy jewelry known for?,neimanmarcus.com,retail,https://neimanmarcus.com,John Hardy (inferred),MEDIUM,No,Other
+claude,What is John Hardy jewelry known for?,wwd.com,luxury_fashion_tier1,https://WWD.com,John Hardy (inferred),MEDIUM,No,Other
+claude,What is John Hardy jewelry known for?,reuters.com,general_editorial,https://reuters.com,John Hardy (inferred),MEDIUM,No,Other
+claude,What is John Hardy jewelry known for?,wwd.com,luxury_fashion_tier1,https://wwd.com,John Hardy (inferred),MEDIUM,No,Other
+claude,What is John Hardy jewelry known for?,www.vogue.com,luxury_fashion_tier1,https://www.vogue.com,John Hardy (inferred),MEDIUM,No,Other
+perplexity,What is John Hardy jewelry known for?,www.simmonsfinejewelry.com,general_editorial,https://www.simmonsfinejewelry.com/brands/fashion-jewelry/john-hardy/,John Hardy,HIGH,Yes,Product
+perplexity,What is John Hardy jewelry known for?,www.benarijewelers.com,general_editorial,https://www.benarijewelers.com/designer-spotlight-on-john-hardy,John Hardy,HIGH,Yes,Other
+perplexity,What is John Hardy jewelry known for?,aywlux.com,general_editorial,https://aywlux.com/blogs/news/luxury-showdown-david-yurman-or-john-hardy-find-out-which-brand-matches-your-style,John Hardy,HIGH,Yes,News
+perplexity,What is John Hardy jewelry known for?,mazzaresejewelry.com,general_editorial,https://mazzaresejewelry.com/pages/about-john-hardy,John Hardy,HIGH,Yes,Product
+perplexity,What is John Hardy jewelry known for?,sebastiancharles.com,general_editorial,https://sebastiancharles.com/blog/is-john-hardy-jewelry-valuable,John Hardy,HIGH,Yes,Product
+perplexity,What is John Hardy jewelry known for?,bcclark.com,general_editorial,https://bcclark.com/collections/john-hardy,John Hardy,HIGH,Yes,Product
+perplexity,What is John Hardy jewelry known for?,theadultman.com,general_editorial,https://theadultman.com/fashion-and-style/john-hardy-review/,John Hardy,HIGH,Yes,Other
+perplexity,What is John Hardy jewelry known for?,www.longsjewelers.com,general_editorial,https://www.longsjewelers.com/blogs/fashion/facts-john-hardy,John Hardy,HIGH,Yes,Other
+perplexity,What is John Hardy jewelry known for?,www.thequalityedit.com,general_editorial,https://www.thequalityedit.com/articles/john-hardy-review,John Hardy,HIGH,Yes,News
+perplexity,What is John Hardy jewelry known for?,www.bachendorfs.com,general_editorial,https://www.bachendorfs.com/fashion-designers/john-hardy,John Hardy,HIGH,Yes,Other
+perplexity,What is John Hardy jewelry known for?,www.diamondbanc.com,general_editorial,https://www.diamondbanc.com/insider-news/everything-you-should-know-about-john-hardy-jewelry/,John Hardy,HIGH,Yes,Product
+perplexity,What is John Hardy jewelry known for?,www.wilsonsestatejewelry.com,general_editorial,https://www.wilsonsestatejewelry.com/pages/john-hardy,John Hardy,HIGH,Yes,Product
+perplexity,What is John Hardy jewelry known for?,sebastiancharles.com,general_editorial,https://sebastiancharles.com/blog/does-john-hardy-jewelry-hold-its-value-over-time,John Hardy,HIGH,Yes,Product
+perplexity,What is John Hardy jewelry known for?,www.rottermond.com,general_editorial,https://www.rottermond.com/john-hardy,John Hardy,HIGH,Yes,Other
+perplexity,What is John Hardy jewelry known for?,www.tripadvisor.com,general_editorial,https://www.tripadvisor.com/ShowTopic-g294226-i7220-k2024423-John_Hardy_Jewelry_or_look_alikes-Bali.html,John Hardy,MEDIUM,Yes,Editorial
+perplexity,What is John Hardy jewelry known for?,johnhardy.com,owned,https://johnhardy.com,John Hardy,HIGH,Yes,Other
+gemini,What is John Hardy jewelry known for?,www.nordstrom.com,retail,https://www.nordstrom.com/brands/john-hardy--1250,John Hardy,HIGH,Yes,Other
+gemini,What is John Hardy jewelry known for?,www.johnhardy.com,owned,https://www.johnhardy.com/our-story,John Hardy,HIGH,Yes,Owned
+gemini,What is John Hardy jewelry known for?,www.neimanmarcus.com,retail,https://www.neimanmarcus.com/c/designers-john-hardy-cat000000,John Hardy,HIGH,Yes,Other
+gemini,What is John Hardy jewelry known for?,www.saksfifthavenue.com,retail,https://www.saksfifthavenue.com/brand/john-hardy,John Hardy,HIGH,Yes,Other
+gemini,What is John Hardy jewelry known for?,www.vogue.com,luxury_fashion_tier1,https://www.vogue.com/article/john-hardy-40-years-sustainable-luxury,John Hardy,HIGH,Yes,News
+gemini,What is John Hardy jewelry known for?,www.johnhardy.com,owned,https://www.johnhardy.com/our-impact,John Hardy,HIGH,Yes,Other
+gemini,What is John Hardy jewelry known for?,robbreport.com,general_editorial,https://robbreport.com/style/jewelry/john-hardy-celebrates-40-years-sustainable-luxury-257004/,John Hardy,HIGH,Yes,Product
+chatgpt,Is John Hardy jewelry worth the investment?,www.johnhardy.com,owned,https://www.johnhardy.com,John Hardy,HIGH,Yes,Other
+chatgpt,Is John Hardy jewelry worth the investment?,robbreport.com,general_editorial,https://robbreport.com/style/jewelry/john-hardy-jewelry-1234646754/,John Hardy,HIGH,Yes,Product
+chatgpt,Is John Hardy jewelry worth the investment?,www.therealreal.com,general_editorial,https://www.therealreal.com,John Hardy (inferred),MEDIUM,No,Other
+chatgpt,Is John Hardy jewelry worth the investment?,www.bain.com,general_editorial,https://www.bain.com/globalassets/noindex/2022/bain_report_global_jewelry_market_2022.pdf,John Hardy (inferred),MEDIUM,No,Product
+chatgpt,Is John Hardy jewelry worth the investment?,johnhardy.com,owned,https://johnhardy.com,John Hardy,HIGH,Yes,Other
+chatgpt,Is John Hardy jewelry worth the investment?,robbreport.com,general_editorial,https://robbreport.com,John Hardy (inferred),MEDIUM,No,Other
+chatgpt,Is John Hardy jewelry worth the investment?,therealreal.com,general_editorial,https://therealreal.com,John Hardy (inferred),MEDIUM,No,Other
+chatgpt,Is John Hardy jewelry worth the investment?,bain.com,general_editorial,https://bain.com,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,positiveluxury.com,general_editorial,https://positiveluxury.com/brand/john-hardy,John Hardy,HIGH,Yes,Other
+claude,Is John Hardy jewelry worth the investment?,www.responsiblejewellery.com,general_editorial,https://www.responsiblejewellery.com/,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,johnhardy.com,owned,https://johnhardy.com,John Hardy,HIGH,Yes,Other
+claude,Is John Hardy jewelry worth the investment?,positiveluxury.com,general_editorial,https://positiveluxury.com,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,professionaljeweller.com,general_editorial,https://professionaljeweller.com,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,responsiblejewellery.com,general_editorial,https://responsiblejewellery.com,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,reuters.com,general_editorial,https://reuters.com,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,gia.edu,general_editorial,https://gia.edu,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,therealreal.com,general_editorial,https://therealreal.com,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,1stdibs.com,general_editorial,https://1stdibs.com,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,luxurydaily.com,general_editorial,https://luxurydaily.com,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,nationaljeweler.com,jewelry_trade,https://nationaljeweler.com,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,forbes.com,business_sustainability,https://forbes.com,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,diamonds.net,general_editorial,https://diamonds.net,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,thejewelleryeditor.com,general_editorial,https://thejewelleryeditor.com,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,igi.org,general_editorial,https://igi.org,John Hardy (inferred),MEDIUM,No,Other
+claude,Is John Hardy jewelry worth the investment?,www.forbes.com,business_sustainability,https://www.forbes.com,John Hardy (inferred),MEDIUM,No,Other
+perplexity,Is John Hardy jewelry worth the investment?,sebastiancharles.com,general_editorial,https://sebastiancharles.com/blog/is-john-hardy-jewelry-valuable,John Hardy,HIGH,Yes,Product
+perplexity,Is John Hardy jewelry worth the investment?,theadultman.com,general_editorial,https://theadultman.com/fashion-and-style/john-hardy-review/,John Hardy,HIGH,Yes,Other
+perplexity,Is John Hardy jewelry worth the investment?,www.grayandsons.com,general_editorial,https://www.grayandsons.com/blog/the-art-of-handcrafted-john-hardy-jewelry-inside-john-hardys-iconic-collections/,John Hardy,HIGH,Yes,Product
+perplexity,Is John Hardy jewelry worth the investment?,forum.purseblog.com,general_editorial,https://forum.purseblog.com/threads/please-help-me-decide-between-a-john-hardy-bracelet-or-tiffany-necklace.939372/,John Hardy,HIGH,Yes,Other
+perplexity,Is John Hardy jewelry worth the investment?,sebastiancharles.com,general_editorial,https://sebastiancharles.com/blog/does-john-hardy-jewelry-hold-its-value-over-time,John Hardy,HIGH,Yes,Product
+perplexity,Is John Hardy jewelry worth the investment?,www.tripadvisor.com,general_editorial,https://www.tripadvisor.com/ShowTopic-g294226-i7220-k2024423-John_Hardy_Jewelry_or_look_alikes-Bali.html,John Hardy,MEDIUM,Yes,Editorial
+perplexity,Is John Hardy jewelry worth the investment?,johnhardy.com,owned,https://johnhardy.com,John Hardy,HIGH,Yes,Other
+perplexity,Is John Hardy jewelry worth the investment?,www.diamondbanc.com,general_editorial,https://www.diamondbanc.com/insider-news/everything-you-should-know-about-john-hardy-jewelry/,John Hardy,HIGH,Yes,Product
+perplexity,Is John Hardy jewelry worth the investment?,www.thequalityedit.com,general_editorial,https://www.thequalityedit.com/articles/john-hardy-review,John Hardy,HIGH,Yes,News
+perplexity,Is John Hardy jewelry worth the investment?,www.lcatterton.com,general_editorial,https://www.lcatterton.com/Investments.html,John Hardy (inferred),MEDIUM,No,Other
+perplexity,Is John Hardy jewelry worth the investment?,aywlux.com,general_editorial,https://aywlux.com/blogs/news/luxury-showdown-david-yurman-or-john-hardy-find-out-which-brand-matches-your-style,John Hardy,HIGH,Yes,News
+perplexity,Is John Hardy jewelry worth the investment?,www.swisswatchgallery.com,general_editorial,https://www.swisswatchgallery.com/john-hardy,John Hardy,HIGH,Yes,Other
+gemini,Is John Hardy jewelry worth the investment?,www.johnhardy.com,owned,https://www.johnhardy.com/our-craftsmanship.html,John Hardy,HIGH,Yes,Other
+gemini,Is John Hardy jewelry worth the investment?,www.forbes.com,business_sustainability,https://www.forbes.com/sites/carolbesler/2023/04/17/john-hardys-new-creative-director-on-crafting-the-future-of-the-brand/,John Hardy,HIGH,Yes,Other
+gemini,Is John Hardy jewelry worth the investment?,www.johnhardy.com,owned,https://www.johnhardy.com/our-materials.html,John Hardy,HIGH,Yes,Other
+gemini,Is John Hardy jewelry worth the investment?,www.johnhardy.com,owned,https://www.johnhardy.com/our-sustainability.html,John Hardy,HIGH,Yes,Sustainability
+chatgpt,Most sustainable luxury jewelry brands,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com,Brilliant Earth,MEDIUM,No,Other
+chatgpt,Most sustainable luxury jewelry brands,www.chopard.com,general_editorial,https://www.chopard.com,Chopard,HIGH,No,Other
+chatgpt,Most sustainable luxury jewelry brands,www.tiffany.com,competitor_owned,https://www.tiffany.com,Tiffany & Co,MEDIUM,No,Other
+chatgpt,Most sustainable luxury jewelry brands,www.annahujewelry.com,general_editorial,https://www.annahujewelry.com,Unknown,LOW,No,Product
+chatgpt,Most sustainable luxury jewelry brands,www.shopsoko.com,general_editorial,https://www.shopsoko.com,Unknown,LOW,No,Other
+chatgpt,Most sustainable luxury jewelry brands,www.vrai.com,competitor_owned,https://www.vrai.com,Vrai,HIGH,No,Other
+chatgpt,Most sustainable luxury jewelry brands,www.mizukijewelry.com,general_editorial,https://www.mizukijewelry.com,Unknown,LOW,No,Product
+chatgpt,Most sustainable luxury jewelry brands,www.pippasmall.com,general_editorial,https://www.pippasmall.com,Unknown,LOW,No,Other
+chatgpt,Most sustainable luxury jewelry brands,www.responsiblejewellery.com,general_editorial,https://www.responsiblejewellery.com,Unknown,LOW,No,Other
+chatgpt,Most sustainable luxury jewelry brands,www.fairmined.org,general_editorial,https://www.fairmined.org,Unknown,LOW,No,Other
+chatgpt,Most sustainable luxury jewelry brands,brilliantearth.com,competitor_owned,https://brilliantearth.com,Brilliant Earth,MEDIUM,No,Other
+chatgpt,Most sustainable luxury jewelry brands,chopard.com,general_editorial,https://chopard.com,Chopard,HIGH,No,Other
+chatgpt,Most sustainable luxury jewelry brands,tiffany.com,competitor_owned,https://tiffany.com,Tiffany & Co,MEDIUM,No,Other
+chatgpt,Most sustainable luxury jewelry brands,annahujewelry.com,general_editorial,https://annahujewelry.com,Unknown,LOW,No,Product
+chatgpt,Most sustainable luxury jewelry brands,shopsoko.com,general_editorial,https://shopsoko.com,Unknown,LOW,No,Other
+chatgpt,Most sustainable luxury jewelry brands,vrai.com,competitor_owned,https://vrai.com,Vrai,HIGH,No,Other
+chatgpt,Most sustainable luxury jewelry brands,mizukijewelry.com,general_editorial,https://mizukijewelry.com,Unknown,LOW,No,Product
+chatgpt,Most sustainable luxury jewelry brands,pippasmall.com,general_editorial,https://pippasmall.com,Unknown,LOW,No,Other
+chatgpt,Most sustainable luxury jewelry brands,responsiblejewellery.com,general_editorial,https://responsiblejewellery.com,Unknown,LOW,No,Other
+chatgpt,Most sustainable luxury jewelry brands,fairmined.org,general_editorial,https://fairmined.org,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/conflict-free-diamonds/,Brilliant Earth,MEDIUM,No,Other
+claude,Most sustainable luxury jewelry brands,www.forbes.com,business_sustainability,https://www.forbes.com/sites/bethszanto/2022/03/16/sustainable-jewelry-brands-doing-it-right/,Unknown,LOW,No,Product
+claude,Most sustainable luxury jewelry brands,www.chopard.com,general_editorial,https://www.chopard.com/us/sustainability,Chopard,HIGH,No,Sustainability
+claude,Most sustainable luxury jewelry brands,www.vrai.com,competitor_owned,https://www.vrai.com/sustainability,Vrai,HIGH,No,Sustainability
+claude,Most sustainable luxury jewelry brands,mejuri.com,general_editorial,https://mejuri.com/world/sustainability,Mejuri,HIGH,No,Sustainability
+claude,Most sustainable luxury jewelry brands,www.pandoragroup.com,general_editorial,https://www.pandoragroup.com/sustainability,Pandora,HIGH,No,Sustainability
+claude,Most sustainable luxury jewelry brands,www.responsiblejewellery.com,general_editorial,https://www.responsiblejewellery.com/,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,fairmined.org,general_editorial,https://fairmined.org/,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,www.jckonline.com,jewelry_trade,https://www.jckonline.com/editorial-article/jewelry-industry-sustainability/,Unknown,LOW,No,Product
+claude,Most sustainable luxury jewelry brands,www.gold.org,general_editorial,https://www.gold.org/about-gold/gold-supply/responsible-gold/responsible-gold-mining-principles,Unknown,LOW,No,Owned
+claude,Most sustainable luxury jewelry brands,www.mckinsey.com,general_editorial,https://www.mckinsey.com/industries/retail/our-insights/sustainability-in-jewelry,Unknown,LOW,No,Product
+claude,Most sustainable luxury jewelry brands,www.bain.com,general_editorial,https://www.bain.com/insights/luxury-goods-worldwide-market-study/,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,earthworks.org,general_editorial,https://earthworks.org/campaigns/no-dirty-gold/,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,www.responsiblemines.org,general_editorial,https://www.responsiblemines.org/,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,brilliantearth.com,competitor_owned,https://brilliantearth.com,Brilliant Earth,MEDIUM,No,Other
+claude,Most sustainable luxury jewelry brands,forbes.com,business_sustainability,https://forbes.com,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,chopard.com,general_editorial,https://chopard.com,Chopard,HIGH,No,Other
+claude,Most sustainable luxury jewelry brands,vrai.com,competitor_owned,https://vrai.com,Vrai,HIGH,No,Other
+claude,Most sustainable luxury jewelry brands,mejuri.com,general_editorial,https://mejuri.com,Mejuri,HIGH,No,Other
+claude,Most sustainable luxury jewelry brands,pandoragroup.com,general_editorial,https://pandoragroup.com,Pandora,HIGH,No,Other
+claude,Most sustainable luxury jewelry brands,responsiblejewellery.com,general_editorial,https://responsiblejewellery.com,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,fairmined.org,general_editorial,https://fairmined.org,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,jckonline.com,jewelry_trade,https://jckonline.com,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,gold.org,general_editorial,https://gold.org,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,mckinsey.com,general_editorial,https://mckinsey.com,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,bain.com,general_editorial,https://bain.com,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,earthworks.org,general_editorial,https://earthworks.org,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,responsiblemines.org,general_editorial,https://responsiblemines.org,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,www.forbes.com,business_sustainability,https://www.forbes.com,Unknown,LOW,No,Other
+claude,Most sustainable luxury jewelry brands,www.businessoffashion.com,general_editorial,https://www.businessoffashion.com,Unknown,LOW,No,Other
+perplexity,Most sustainable luxury jewelry brands,dunejewelry.com,general_editorial,https://dunejewelry.com/blog/earth-day-2024-5-sustainable-jewelry-brands/,Unknown,LOW,No,Product
+perplexity,Most sustainable luxury jewelry brands,orbasics.com,general_editorial,https://orbasics.com/blogs/stories/conscious-sparkle-10-sustainable-jewelry-brands-to-fall-in-love-with,Unknown,LOW,No,Product
+perplexity,Most sustainable luxury jewelry brands,the-ethos.co,general_editorial,https://the-ethos.co/luxury-recycled-jewelry-brands/,Unknown,LOW,No,Product
+perplexity,Most sustainable luxury jewelry brands,favy.com,general_editorial,https://favy.com/fashion/sustainable-and-ethical-jewelry-brands,Unknown,LOW,No,Product
+perplexity,Most sustainable luxury jewelry brands,gardensofthesun.com,general_editorial,https://gardensofthesun.com/blogs/news/certified-sustainable-fine-jewelry-brands,Unknown,LOW,No,Product
+perplexity,Most sustainable luxury jewelry brands,consciousfashion.co,general_editorial,https://consciousfashion.co/guides/eco-jewelry-brands,Unknown,LOW,No,Editorial
+perplexity,Most sustainable luxury jewelry brands,www.thegoodtrade.com,sustainability_media,https://www.thegoodtrade.com/features/fair-trade-jewelry/,The Good Trade,MEDIUM,No,Product
+perplexity,Most sustainable luxury jewelry brands,goodonyou.eco,general_editorial,https://goodonyou.eco/ethical-sustainable-jewellery/,Unknown,LOW,No,Sustainability
+perplexity,Most sustainable luxury jewelry brands,www.analuisa.com,general_editorial,https://www.analuisa.com/collections/ethical-jewelry,Unknown,LOW,No,Product
+perplexity,Most sustainable luxury jewelry brands,www.linjer.co,general_editorial,https://www.linjer.co/collections/sustainable-jewelry,Unknown,LOW,No,Product
+perplexity,Most sustainable luxury jewelry brands,www.ebony.com,general_editorial,https://www.ebony.com/9-sustainable-jewelry-brands-to-shine-in-this-spring/,Unknown,LOW,No,Product
+gemini,Most sustainable luxury jewelry brands,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/our-mission/,Brilliant Earth,MEDIUM,No,Owned
+gemini,Most sustainable luxury jewelry brands,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/b-corp/,Brilliant Earth,MEDIUM,No,Other
+gemini,Most sustainable luxury jewelry brands,www.vrai.com,competitor_owned,https://www.vrai.com/sustainability,Vrai,HIGH,No,Sustainability
+gemini,Most sustainable luxury jewelry brands,www.vrai.com,competitor_owned,https://www.vrai.com/the-foundry,Vrai,HIGH,No,Other
+gemini,Most sustainable luxury jewelry brands,www.chopard.com,general_editorial,https://www.chopard.com/intl/our-commitments,Chopard,HIGH,No,Other
+gemini,Most sustainable luxury jewelry brands,www.chopard.com,general_editorial,https://www.chopard.com/intl/journey-to-sustainable-luxury,Chopard,HIGH,No,Other
+gemini,Most sustainable luxury jewelry brands,www.monicavinader.com,general_editorial,https://www.monicavinader.com/sustainability,Monica Vinader,MEDIUM,No,Sustainability
+gemini,Most sustainable luxury jewelry brands,www.monicavinader.com,general_editorial,https://www.monicavinader.com/b-corp,Monica Vinader,MEDIUM,No,Other
+gemini,Most sustainable luxury jewelry brands,www.tiffany.com,competitor_owned,https://www.tiffany.com/world-of-tiffany/sustainability/,Tiffany & Co,MEDIUM,No,Sustainability
+gemini,Most sustainable luxury jewelry brands,www.tiffany.com,competitor_owned,https://www.tiffany.com/world-of-tiffany/sustainability/diamond-provenance/,Tiffany & Co,MEDIUM,No,Sustainability
+chatgpt,Ethical jewelry brands that use recycled materials,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com,Brilliant Earth,MEDIUM,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,www.shopsoko.com,general_editorial,https://www.shopsoko.com,Unknown,LOW,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,www.catbirdnyc.com,general_editorial,https://www.catbirdnyc.com,Catbird,HIGH,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,www.miadonna.com,general_editorial,https://www.miadonna.com,Unknown,LOW,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,www.pippasmall.com,general_editorial,https://www.pippasmall.com,Unknown,LOW,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,noahmarion.com,general_editorial,https://noahmarion.com,Unknown,LOW,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,www.alighieri.co.uk,general_editorial,https://www.alighieri.co.uk,Unknown,LOW,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,www.tenthousandthings.com,general_editorial,https://www.tenthousandthings.com,Unknown,LOW,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,www.ethicaljewelryguide.com,general_editorial,https://www.ethicaljewelryguide.com,Unknown,LOW,No,Editorial
+chatgpt,Ethical jewelry brands that use recycled materials,www.sustainablejewelry.com,general_editorial,https://www.sustainablejewelry.com,Unknown,LOW,No,Product
+chatgpt,Ethical jewelry brands that use recycled materials,brilliantearth.com,competitor_owned,https://brilliantearth.com,Brilliant Earth,MEDIUM,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,shopsoko.com,general_editorial,https://shopsoko.com,Unknown,LOW,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,catbirdnyc.com,general_editorial,https://catbirdnyc.com,Catbird,HIGH,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,miadonna.com,general_editorial,https://miadonna.com,Unknown,LOW,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,pippasmall.com,general_editorial,https://pippasmall.com,Unknown,LOW,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,alighieri.co.uk,general_editorial,https://alighieri.co.uk,Unknown,LOW,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,tenthousandthings.com,general_editorial,https://tenthousandthings.com,Unknown,LOW,No,Other
+chatgpt,Ethical jewelry brands that use recycled materials,ethicaljewelryguide.com,general_editorial,https://ethicaljewelryguide.com,Unknown,LOW,No,Editorial
+chatgpt,Ethical jewelry brands that use recycled materials,sustainablejewelry.com,general_editorial,https://sustainablejewelry.com,Unknown,LOW,No,Product
+claude,Ethical jewelry brands that use recycled materials,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/recycled-gold/,Brilliant Earth,MEDIUM,No,Other
+claude,Ethical jewelry brands that use recycled materials,www.melissajoymanning.com,general_editorial,https://www.melissajoymanning.com/pages/about-us,Unknown,LOW,No,Owned
+claude,Ethical jewelry brands that use recycled materials,www.catbirdnyc.com,general_editorial,https://www.catbirdnyc.com/about-catbird,Catbird,HIGH,No,Owned
+claude,Ethical jewelry brands that use recycled materials,barionealjewelry.com,general_editorial,https://barionealjewelry.com/pages/ethics,Bario Neal,MEDIUM,No,Product
+claude,Ethical jewelry brands that use recycled materials,auratenewyork.com,general_editorial,https://auratenewyork.com/pages/sustainability,Aurate,HIGH,No,Sustainability
+claude,Ethical jewelry brands that use recycled materials,www.responsiblejewellery.com,general_editorial,https://www.responsiblejewellery.com/,Unknown,LOW,No,Other
+claude,Ethical jewelry brands that use recycled materials,earthworks.org,general_editorial,https://earthworks.org/campaigns/no-dirty-gold/,Unknown,LOW,No,Other
+claude,Ethical jewelry brands that use recycled materials,www.responsiblemines.org,general_editorial,https://www.responsiblemines.org/,Unknown,LOW,No,Other
+claude,Ethical jewelry brands that use recycled materials,www.mckinsey.com,general_editorial,https://www.mckinsey.com/industries/retail/our-insights/sustainability-in-jewelry,Unknown,LOW,No,Product
+claude,Ethical jewelry brands that use recycled materials,www.ethicalconsumer.org,general_editorial,https://www.ethicalconsumer.org/,Unknown,LOW,No,Sustainability
+claude,Ethical jewelry brands that use recycled materials,fairjewelry.org,general_editorial,http://fairjewelry.org/,Unknown,LOW,No,Product
+claude,Ethical jewelry brands that use recycled materials,www.kimberleyprocess.com,general_editorial,https://www.kimberleyprocess.com/,Unknown,LOW,No,Other
+claude,Ethical jewelry brands that use recycled materials,brilliantearth.com,competitor_owned,https://brilliantearth.com,Brilliant Earth,MEDIUM,No,Other
+claude,Ethical jewelry brands that use recycled materials,melissajoymanning.com,general_editorial,https://melissajoymanning.com,Unknown,LOW,No,Other
+claude,Ethical jewelry brands that use recycled materials,catbirdnyc.com,general_editorial,https://catbirdnyc.com,Catbird,HIGH,No,Other
+claude,Ethical jewelry brands that use recycled materials,barionealjewelry.com,general_editorial,https://barionealjewelry.com,Bario Neal,MEDIUM,No,Product
+claude,Ethical jewelry brands that use recycled materials,auratenewyork.com,general_editorial,https://auratenewyork.com,Aurate,HIGH,No,Other
+claude,Ethical jewelry brands that use recycled materials,responsiblejewellery.com,general_editorial,https://responsiblejewellery.com,Unknown,LOW,No,Other
+claude,Ethical jewelry brands that use recycled materials,earthworks.org,general_editorial,https://earthworks.org,Unknown,LOW,No,Other
+claude,Ethical jewelry brands that use recycled materials,responsiblemines.org,general_editorial,https://responsiblemines.org,Unknown,LOW,No,Other
+claude,Ethical jewelry brands that use recycled materials,mckinsey.com,general_editorial,https://mckinsey.com,Unknown,LOW,No,Other
+claude,Ethical jewelry brands that use recycled materials,ethicalconsumer.org,general_editorial,https://ethicalconsumer.org,Unknown,LOW,No,Sustainability
+claude,Ethical jewelry brands that use recycled materials,fairjewelry.org,general_editorial,https://fairjewelry.org,Unknown,LOW,No,Product
+claude,Ethical jewelry brands that use recycled materials,kimberleyprocess.com,general_editorial,https://kimberleyprocess.com,Unknown,LOW,No,Other
+perplexity,Ethical jewelry brands that use recycled materials,paulinaontheroad.com,general_editorial,https://paulinaontheroad.com/sustainable-jewelry-brands/,Unknown,LOW,No,Product
+perplexity,Ethical jewelry brands that use recycled materials,www.analuisa.com,general_editorial,https://www.analuisa.com/collections/recycled-gold-jewelry/,Unknown,LOW,No,Product
+perplexity,Ethical jewelry brands that use recycled materials,www.scsglobalservices.com,general_editorial,https://www.scsglobalservices.com/news/a-complete-guide-to-sustainable-and-ethical-jewelry,Unknown,LOW,No,Editorial
+perplexity,Ethical jewelry brands that use recycled materials,mochni.com,general_editorial,https://mochni.com/ultimate-guide-to-ethical-jewelry-brands/,Unknown,LOW,No,Editorial
+perplexity,Ethical jewelry brands that use recycled materials,consciousfashion.co,general_editorial,https://consciousfashion.co/guides/eco-jewelry-brands,Unknown,LOW,No,Editorial
+perplexity,Ethical jewelry brands that use recycled materials,vandrakejewelers.com,general_editorial,https://vandrakejewelers.com/blogs/jewelry-blogs/eco-friendly-jewelry-exploring-recycled-and-sustainable-materials,Unknown,LOW,No,Product
+perplexity,Ethical jewelry brands that use recycled materials,www.thegoodtrade.com,sustainability_media,https://www.thegoodtrade.com/features/fair-trade-jewelry/,The Good Trade,MEDIUM,No,Product
+perplexity,Ethical jewelry brands that use recycled materials,gardensofthesun.com,general_editorial,https://gardensofthesun.com/blogs/news/certified-sustainable-fine-jewelry-brands,Unknown,LOW,No,Product
+perplexity,Ethical jewelry brands that use recycled materials,www.analuisa.com,general_editorial,https://www.analuisa.com/collections/ethical-jewelry,Unknown,LOW,No,Product
+perplexity,Ethical jewelry brands that use recycled materials,goodonyou.eco,general_editorial,https://goodonyou.eco/ethical-sustainable-jewellery/,Unknown,LOW,No,Sustainability
+perplexity,Ethical jewelry brands that use recycled materials,lunaandrose.co,general_editorial,https://lunaandrose.co,Unknown,LOW,No,Other
+perplexity,Ethical jewelry brands that use recycled materials,www.fejn.com,general_editorial,https://www.fejn.com/en,Unknown,LOW,No,Other
+gemini,Ethical jewelry brands that use recycled materials,mejuri.com,general_editorial,https://mejuri.com/us/en/responsible-sourcing,Mejuri,HIGH,No,Other
+gemini,Ethical jewelry brands that use recycled materials,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/our-mission/,Brilliant Earth,MEDIUM,No,Owned
+gemini,Ethical jewelry brands that use recycled materials,www.vrai.com,competitor_owned,https://www.vrai.com/sustainability,Vrai,HIGH,No,Sustainability
+gemini,Ethical jewelry brands that use recycled materials,www.monicavinader.com,general_editorial,https://www.monicavinader.com/us/our-sustainability-journey,Monica Vinader,MEDIUM,No,Sustainability
+gemini,Ethical jewelry brands that use recycled materials,www.analuisa.com,general_editorial,https://www.analuisa.com/pages/our-sustainability-journey,Unknown,LOW,No,Sustainability
+gemini,Ethical jewelry brands that use recycled materials,www.catbirdnyc.com,general_editorial,https://www.catbirdnyc.com/pages/sustainability,Catbird,HIGH,No,Sustainability
+chatgpt,Which jewelry companies are truly sustainable?,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/sustainability/,Brilliant Earth,MEDIUM,No,Sustainability
+chatgpt,Which jewelry companies are truly sustainable?,www.catbirdnyc.com,general_editorial,https://www.catbirdnyc.com/pages/sustainability,Catbird,HIGH,No,Sustainability
+chatgpt,Which jewelry companies are truly sustainable?,vrai.com,competitor_owned,https://vrai.com/pages/sustainability,Vrai,HIGH,No,Sustainability
+chatgpt,Which jewelry companies are truly sustainable?,fairmined.org,general_editorial,https://fairmined.org/,Unknown,LOW,No,Other
+chatgpt,Which jewelry companies are truly sustainable?,shopsoko.com,general_editorial,https://shopsoko.com/pages/our-impact,Unknown,LOW,No,Other
+chatgpt,Which jewelry companies are truly sustainable?,pipcorn.com,general_editorial,https://pipcorn.com/pages/sustainability,Unknown,LOW,No,Sustainability
+chatgpt,Which jewelry companies are truly sustainable?,www.tenthousandvillages.com,general_editorial,https://www.tenthousandvillages.com/about-us/our-commitment/,Unknown,LOW,No,Owned
+chatgpt,Which jewelry companies are truly sustainable?,www.responsiblejewellery.com,general_editorial,https://www.responsiblejewellery.com/,Unknown,LOW,No,Other
+chatgpt,Which jewelry companies are truly sustainable?,www.jewelry.org,general_editorial,https://www.jewelry.org/sustainable-jewelry-guide,Unknown,LOW,No,Editorial
+chatgpt,Which jewelry companies are truly sustainable?,brilliantearth.com,competitor_owned,https://brilliantearth.com,Brilliant Earth,MEDIUM,No,Other
+chatgpt,Which jewelry companies are truly sustainable?,catbirdnyc.com,general_editorial,https://catbirdnyc.com,Catbird,HIGH,No,Other
+chatgpt,Which jewelry companies are truly sustainable?,vrai.com,competitor_owned,https://vrai.com,Vrai,HIGH,No,Other
+chatgpt,Which jewelry companies are truly sustainable?,fairmined.org,general_editorial,https://fairmined.org,Unknown,LOW,No,Other
+chatgpt,Which jewelry companies are truly sustainable?,shopsoko.com,general_editorial,https://shopsoko.com,Unknown,LOW,No,Other
+chatgpt,Which jewelry companies are truly sustainable?,pipcorn.com,general_editorial,https://pipcorn.com,Unknown,LOW,No,Other
+chatgpt,Which jewelry companies are truly sustainable?,tenthousandvillages.com,general_editorial,https://tenthousandvillages.com,Unknown,LOW,No,Other
+chatgpt,Which jewelry companies are truly sustainable?,responsiblejewellery.com,general_editorial,https://responsiblejewellery.com,Unknown,LOW,No,Other
+chatgpt,Which jewelry companies are truly sustainable?,jewelry.org,general_editorial,https://jewelry.org,Unknown,LOW,No,Product
+claude,Which jewelry companies are truly sustainable?,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/sustainable-jewelry/,Brilliant Earth,MEDIUM,No,Product
+claude,Which jewelry companies are truly sustainable?,www.scsglobalservices.com,general_editorial,https://www.scsglobalservices.com/news/brilliant-earth-receives-sustainability-certification,Brilliant Earth,HIGH,No,Sustainability
+claude,Which jewelry companies are truly sustainable?,auratenewyork.com,general_editorial,https://auratenewyork.com/pages/sustainability,Aurate,HIGH,No,Sustainability
+claude,Which jewelry companies are truly sustainable?,mejuri.com,general_editorial,https://mejuri.com/world/sustainability,Mejuri,HIGH,No,Sustainability
+claude,Which jewelry companies are truly sustainable?,www.responsiblejewellery.com,general_editorial,https://www.responsiblejewellery.com/membership/member-directory/,Unknown,LOW,No,Other
+claude,Which jewelry companies are truly sustainable?,www.hrw.org,general_editorial,https://www.hrw.org/report/2020/11/24/sparkling-jewels-opaque-supply-chains/jewelry-companies-changing-sourcing,Unknown,LOW,No,Product
+claude,Which jewelry companies are truly sustainable?,www.worldbank.org,general_editorial,https://www.worldbank.org/en/topic/extractiveindustries/brief/artisanal-and-small-scale-mining,Unknown,LOW,No,Editorial
+claude,Which jewelry companies are truly sustainable?,fairmined.org,general_editorial,https://fairmined.org/,Unknown,LOW,No,Other
+claude,Which jewelry companies are truly sustainable?,www.kimberleyprocess.com,general_editorial,https://www.kimberleyprocess.com/,Unknown,LOW,No,Other
+claude,Which jewelry companies are truly sustainable?,www.scsglobalservices.com,general_editorial,https://www.scsglobalservices.com/services/jewelry-sustainability,Unknown,LOW,No,Product
+claude,Which jewelry companies are truly sustainable?,www.vrai.com,competitor_owned,https://www.vrai.com/sustainability,Vrai,HIGH,No,Sustainability
+claude,Which jewelry companies are truly sustainable?,www.catbirdnyc.com,general_editorial,https://www.catbirdnyc.com/about-catbird,Catbird,HIGH,No,Owned
+claude,Which jewelry companies are truly sustainable?,www.responsiblejewellery.com,general_editorial,https://www.responsiblejewellery.com/standards/code-of-practices-2019/,Unknown,LOW,No,Other
+claude,Which jewelry companies are truly sustainable?,ethicalmetalsmiths.org,general_editorial,https://ethicalmetalsmiths.org/,Unknown,LOW,No,Sustainability
+claude,Which jewelry companies are truly sustainable?,www.mckinsey.com,general_editorial,https://www.mckinsey.com/industries/retail/our-insights/state-of-fashion-watches-and-jewellery,Unknown,LOW,No,Other
+claude,Which jewelry companies are truly sustainable?,brilliantearth.com,competitor_owned,https://brilliantearth.com,Brilliant Earth,MEDIUM,No,Other
+claude,Which jewelry companies are truly sustainable?,scsglobalservices.com,general_editorial,https://scsglobalservices.com,Unknown,LOW,No,Other
+claude,Which jewelry companies are truly sustainable?,auratenewyork.com,general_editorial,https://auratenewyork.com,Aurate,HIGH,No,Other
+claude,Which jewelry companies are truly sustainable?,mejuri.com,general_editorial,https://mejuri.com,Mejuri,HIGH,No,Other
+claude,Which jewelry companies are truly sustainable?,responsiblejewellery.com,general_editorial,https://responsiblejewellery.com,Unknown,LOW,No,Other
+claude,Which jewelry companies are truly sustainable?,hrw.org,general_editorial,https://hrw.org,Unknown,LOW,No,Other
+claude,Which jewelry companies are truly sustainable?,worldbank.org,general_editorial,https://worldbank.org,Unknown,LOW,No,Other
+claude,Which jewelry companies are truly sustainable?,fairmined.org,general_editorial,https://fairmined.org,Unknown,LOW,No,Other
+claude,Which jewelry companies are truly sustainable?,kimberleyprocess.com,general_editorial,https://kimberleyprocess.com,Unknown,LOW,No,Other
+claude,Which jewelry companies are truly sustainable?,vrai.com,competitor_owned,https://vrai.com,Vrai,HIGH,No,Other
+claude,Which jewelry companies are truly sustainable?,catbirdnyc.com,general_editorial,https://catbirdnyc.com,Catbird,HIGH,No,Other
+claude,Which jewelry companies are truly sustainable?,ethicalmetalsmiths.org,general_editorial,https://ethicalmetalsmiths.org,Unknown,LOW,No,Sustainability
+claude,Which jewelry companies are truly sustainable?,mckinsey.com,general_editorial,https://mckinsey.com,Unknown,LOW,No,Other
+perplexity,Which jewelry companies are truly sustainable?,www.pantherdeluxe.com,general_editorial,https://www.pantherdeluxe.com/post/top-sustainable-jewelry-brands-to-watch-in-2025,Unknown,LOW,No,Editorial
+perplexity,Which jewelry companies are truly sustainable?,orbasics.com,general_editorial,https://orbasics.com/blogs/stories/conscious-sparkle-10-sustainable-jewelry-brands-to-fall-in-love-with,Unknown,LOW,No,Product
+perplexity,Which jewelry companies are truly sustainable?,www.thegoodtrade.com,sustainability_media,https://www.thegoodtrade.com/features/fair-trade-jewelry/,The Good Trade,MEDIUM,No,Product
+perplexity,Which jewelry companies are truly sustainable?,www.garfieldrefining.com,general_editorial,https://www.garfieldrefining.com/resources/blog/top-5-sustainable-gold-jewelry-brands/,Unknown,LOW,No,Editorial
+perplexity,Which jewelry companies are truly sustainable?,gardensofthesun.com,general_editorial,https://gardensofthesun.com/blogs/news/certified-sustainable-fine-jewelry-brands,Unknown,LOW,No,Product
+perplexity,Which jewelry companies are truly sustainable?,mochni.com,general_editorial,https://mochni.com/ultimate-guide-to-ethical-jewelry-brands/,Unknown,LOW,No,Editorial
+perplexity,Which jewelry companies are truly sustainable?,goodonyou.eco,general_editorial,https://goodonyou.eco/ethical-sustainable-jewellery/,Unknown,LOW,No,Sustainability
+perplexity,Which jewelry companies are truly sustainable?,robinsonsjewelers.com,general_editorial,https://robinsonsjewelers.com/blogs/news/the-rise-of-sustainable-jewelry-brands-and-practices-that-prioritize-the-environment-and-make-you-look-fabulous-doing-it,Unknown,LOW,No,Product
+perplexity,Which jewelry companies are truly sustainable?,vegoutmag.com,general_editorial,https://vegoutmag.com/fashion-and-beauty/dna-10-ethical-jewelry-brands-youll-want-to-wear-every-day/,Unknown,LOW,No,Product
+perplexity,Which jewelry companies are truly sustainable?,www.naturaldiamonds.com,general_editorial,https://www.naturaldiamonds.com/responsible/sustainable-jewelry/,Unknown,LOW,No,Product
+perplexity,Which jewelry companies are truly sustainable?,loytee.com,general_editorial,https://loytee.com/blogs/sustainable-jewelry-manufacturing-blog/how-top-jewelry-brands-are-de-risking-their-supply-chains-in-2025,Unknown,LOW,No,Editorial
+perplexity,Which jewelry companies are truly sustainable?,the-ethos.co,general_editorial,https://the-ethos.co/luxury-recycled-jewelry-brands/,Unknown,LOW,No,Product
+perplexity,Which jewelry companies are truly sustainable?,www.elle.com,luxury_fashion_tier1,https://www.elle.com/fashion/jewelry/a65357051/pandora-sustainable-jewelry-2025/,Pandora,HIGH,No,Product
+perplexity,Which jewelry companies are truly sustainable?,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/jewelry/,Brilliant Earth,MEDIUM,No,Product
+perplexity,Which jewelry companies are truly sustainable?,lunaandrose.co,general_editorial,https://lunaandrose.co,Unknown,LOW,No,Other
+gemini,Which jewelry companies are truly sustainable?,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/our-mission/,Brilliant Earth,MEDIUM,No,Owned
+gemini,Which jewelry companies are truly sustainable?,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/sustainability-report/,Brilliant Earth,MEDIUM,No,Sustainability
+gemini,Which jewelry companies are truly sustainable?,www.bcorporation.net,general_editorial,https://www.bcorporation.net/en-us/find-a-b-corp/company/brilliant-earth,Brilliant Earth,HIGH,No,Owned
+gemini,Which jewelry companies are truly sustainable?,www.vrai.com,competitor_owned,https://www.vrai.com/our-story,Vrai,HIGH,No,Owned
+gemini,Which jewelry companies are truly sustainable?,www.vrai.com,competitor_owned,https://www.vrai.com/sustainability,Vrai,HIGH,No,Sustainability
+gemini,Which jewelry companies are truly sustainable?,bario-neal.com,general_editorial,https://bario-neal.com/pages/our-ethics,Bario Neal,HIGH,No,Other
+gemini,Which jewelry companies are truly sustainable?,www.bcorporation.net,general_editorial,https://www.bcorporation.net/en-us/find-a-b-corp/company/bario-neal,Bario Neal,HIGH,No,Owned
+gemini,Which jewelry companies are truly sustainable?,mejuri.com,general_editorial,https://mejuri.com/ca/en/sustainability,Mejuri,HIGH,No,Sustainability
+gemini,Which jewelry companies are truly sustainable?,www.bcorporation.net,general_editorial,https://www.bcorporation.net/en-us/find-a-b-corp/company/mejuri-inc,Mejuri,HIGH,No,Owned
+gemini,Which jewelry companies are truly sustainable?,wwake.com,general_editorial,https://wwake.com/pages/our-ethics,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com,Brilliant Earth,MEDIUM,No,Other
+claude,Best lab-grown diamond jewelry brands,www.cleanorigin.com,general_editorial,https://www.cleanorigin.com,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,www.nationaljeweler.com,jewelry_trade,https://www.nationaljeweler.com,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,www.vrai.com,competitor_owned,https://www.vrai.com,Vrai,HIGH,No,Other
+claude,Best lab-grown diamond jewelry brands,www.jamesallen.com,general_editorial,https://www.jamesallen.com,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,www.jckonline.com,jewelry_trade,https://www.jckonline.com,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,mejuri.com,general_editorial,https://mejuri.com,Mejuri,HIGH,No,Other
+claude,Best lab-grown diamond jewelry brands,www.igi.org,general_editorial,https://www.igi.org,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,www.ftc.gov,general_editorial,https://www.ftc.gov/news-events/topics/truth-advertising,Unknown,LOW,No,Editorial
+claude,Best lab-grown diamond jewelry brands,www.diamondfoundry.com,general_editorial,https://www.diamondfoundry.com/blogs/the-foundry,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,theigda.org,general_editorial,https://theigda.org,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,brilliantearth.com,competitor_owned,https://brilliantearth.com,Brilliant Earth,MEDIUM,No,Other
+claude,Best lab-grown diamond jewelry brands,cleanorigin.com,general_editorial,https://cleanorigin.com,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,nationaljeweler.com,jewelry_trade,https://nationaljeweler.com,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,vrai.com,competitor_owned,https://vrai.com,Vrai,HIGH,No,Other
+claude,Best lab-grown diamond jewelry brands,jamesallen.com,general_editorial,https://jamesallen.com,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,jckonline.com,jewelry_trade,https://jckonline.com,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,igi.org,general_editorial,https://igi.org,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,ftc.gov,general_editorial,https://ftc.gov,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,diamondfoundry.com,general_editorial,https://diamondfoundry.com,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,www.forbes.com,business_sustainability,https://www.forbes.com,Unknown,LOW,No,Other
+claude,Best lab-grown diamond jewelry brands,www.vogue.com,luxury_fashion_tier1,https://www.vogue.com,Unknown,LOW,No,Other
+perplexity,Best lab-grown diamond jewelry brands,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/lab-diamond/buying-guide/best-place-to-buy-lab-grown-diamonds/,Brilliant Earth,MEDIUM,No,Editorial
+perplexity,Best lab-grown diamond jewelry brands,varniya.com,general_editorial,https://varniya.com/blogs/labgrown-diamond-news/top-5-brands-to-shop-lab-grown-diamonds-online,Unknown,LOW,No,Editorial
+perplexity,Best lab-grown diamond jewelry brands,www.ritani.com,general_editorial,https://www.ritani.com/collections/lab-grown-diamonds,Unknown,LOW,No,Product
+perplexity,Best lab-grown diamond jewelry brands,bestbrilliance.com,general_editorial,https://bestbrilliance.com/collections/lab-grown-diamonds,Unknown,LOW,No,Editorial
+perplexity,Best lab-grown diamond jewelry brands,jeandousset.com,general_editorial,https://jeandousset.com/collections/lab-grown-diamond-engagement-rings,Unknown,LOW,No,Product
+perplexity,Best lab-grown diamond jewelry brands,jeandousset.com,general_editorial,https://jeandousset.com/collections/lab-grown-diamond-jewelry,Unknown,LOW,No,Product
+perplexity,Best lab-grown diamond jewelry brands,www.bluenile.com,general_editorial,https://www.bluenile.com/diamond-search/lab-grown-diamond-search,Unknown,LOW,No,Other
+perplexity,Best lab-grown diamond jewelry brands,karaters.com,general_editorial,https://karaters.com/blogs/news/best-lab-grown-diamond-jewelers,Unknown,LOW,No,Editorial
+perplexity,Best lab-grown diamond jewelry brands,www.shaneco.com,general_editorial,https://www.shaneco.com/loose-diamonds-and-gems/lab-grown-diamonds/c,Unknown,LOW,No,Sustainability
+perplexity,Best lab-grown diamond jewelry brands,www.jamesallen.com,general_editorial,https://www.jamesallen.com/loose-diamonds/all-diamonds/lab-grown-diamond-search/,Unknown,LOW,No,Other
+perplexity,Best lab-grown diamond jewelry brands,smilingrocks.com,general_editorial,https://smilingrocks.com,Unknown,LOW,No,Other
+gemini,Best lab-grown diamond jewelry brands,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/lab-grown-diamonds/,Brilliant Earth,MEDIUM,No,Other
+gemini,Best lab-grown diamond jewelry brands,www.forbes.com,business_sustainability,https://www.forbes.com/advisor/personal-finance/best-places-to-buy-engagement-rings/,Unknown,LOW,No,Editorial
+gemini,Best lab-grown diamond jewelry brands,www.vrai.com,competitor_owned,https://www.vrai.com/,Vrai,HIGH,No,Other
+gemini,Best lab-grown diamond jewelry brands,www.businessinsider.com,business_sustainability,https://www.businessinsider.com/vrai-review,Vrai,HIGH,No,Other
+gemini,Best lab-grown diamond jewelry brands,lightboxjewelry.com,general_editorial,https://lightboxjewelry.com/,Unknown,LOW,No,Product
+gemini,Best lab-grown diamond jewelry brands,www.jckonline.com,jewelry_trade,https://www.jckonline.com/editorial-article/de-beers-lightbox-jewelry-engagement-rings/,Unknown,LOW,No,Product
+gemini,Best lab-grown diamond jewelry brands,www.jamesallen.com,general_editorial,https://www.jamesallen.com/lab-created-diamonds/,Unknown,LOW,No,Other
+gemini,Best lab-grown diamond jewelry brands,www.theknot.com,general_editorial,https://www.theknot.com/content/james-allen-review,Unknown,LOW,No,Other
+gemini,Best lab-grown diamond jewelry brands,www.bluenile.com,general_editorial,https://www.bluenile.com/lab-grown-diamonds,Unknown,LOW,No,Other
+gemini,Best lab-grown diamond jewelry brands,www.brides.com,general_editorial,https://www.brides.com/blue-nile-review-7507119,Unknown,LOW,No,Other
+gemini,Best lab-grown diamond jewelry brands,www.grownbrilliance.com,general_editorial,https://www.grownbrilliance.com/,Unknown,LOW,No,Other
+gemini,Best lab-grown diamond jewelry brands,www.diamondpro.com,general_editorial,https://www.diamondpro.com/reviews/grown-brilliance-review/,Unknown,LOW,No,Other
+chatgpt,Luxury brands that offer lab-grown diamonds,www.debeersgroup.com,general_editorial,https://www.debeersgroup.com/media/press-releases/2018/de-beers-group-launches-lightbox-jewelry,Unknown,LOW,No,Product
+chatgpt,Luxury brands that offer lab-grown diamonds,www.tiffany.com,competitor_owned,https://www.tiffany.com/engagement/lab-grown-diamonds/,Tiffany & Co,MEDIUM,No,Other
+chatgpt,Luxury brands that offer lab-grown diamonds,www.cartier.com,competitor_owned,https://www.cartier.com/collections/jewelry/lab-grown-diamonds,Cartier,HIGH,No,Product
+chatgpt,Luxury brands that offer lab-grown diamonds,www.chopard.com,general_editorial,https://www.chopard.com/us/lab-grown-diamonds,Chopard,HIGH,No,Other
+chatgpt,Luxury brands that offer lab-grown diamonds,www.bulgari.com,general_editorial,https://www.bulgari.com/en-us/sustainability/lab-grown-diamonds,Unknown,LOW,No,Sustainability
+chatgpt,Luxury brands that offer lab-grown diamonds,www.harrywinston.com,general_editorial,https://www.harrywinston.com/en/diamonds/lab-grown-diamonds,Unknown,LOW,No,Other
+chatgpt,Luxury brands that offer lab-grown diamonds,vrai.com,competitor_owned,https://vrai.com/pages/about,Vrai,HIGH,No,Owned
+chatgpt,Luxury brands that offer lab-grown diamonds,debeersgroup.com,general_editorial,https://debeersgroup.com,Unknown,LOW,No,Other
+chatgpt,Luxury brands that offer lab-grown diamonds,tiffany.com,competitor_owned,https://tiffany.com,Tiffany & Co,MEDIUM,No,Other
+chatgpt,Luxury brands that offer lab-grown diamonds,cartier.com,competitor_owned,https://cartier.com,Cartier,HIGH,No,Other
+chatgpt,Luxury brands that offer lab-grown diamonds,chopard.com,general_editorial,https://chopard.com,Chopard,HIGH,No,Other
+chatgpt,Luxury brands that offer lab-grown diamonds,bulgari.com,general_editorial,https://bulgari.com,Unknown,LOW,No,Other
+chatgpt,Luxury brands that offer lab-grown diamonds,harrywinston.com,general_editorial,https://harrywinston.com,Unknown,LOW,No,Other
+chatgpt,Luxury brands that offer lab-grown diamonds,vrai.com,competitor_owned,https://vrai.com,Vrai,HIGH,No,Other
+claude,Luxury brands that offer lab-grown diamonds,pandoragroup.com,general_editorial,https://pandoragroup.com/sustainability/news-and-updates/pandora-launches-lab-created-diamond-collection,Pandora,HIGH,No,Product
+claude,Luxury brands that offer lab-grown diamonds,lightboxjewelry.com,general_editorial,https://lightboxjewelry.com/,Unknown,LOW,No,Product
+claude,Luxury brands that offer lab-grown diamonds,www.vrai.com,competitor_owned,https://www.vrai.com/about-vrai,Vrai,HIGH,No,Owned
+claude,Luxury brands that offer lab-grown diamonds,www.professionaljeweller.com,general_editorial,https://www.professionaljeweller.com/oscar-massin-returns-after-150-years-with-lab-grown-diamonds/,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,www.kimai.com,general_editorial,https://www.kimai.com/pages/about-us,Unknown,LOW,No,Owned
+claude,Luxury brands that offer lab-grown diamonds,theigda.org,general_editorial,https://theigda.org/,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,www.jckonline.com,jewelry_trade,https://www.jckonline.com/editorial-article/lab-grown-diamond-market-2023/,Unknown,LOW,No,News
+claude,Luxury brands that offer lab-grown diamonds,www.morganstanley.com,general_editorial,https://www.morganstanley.com/ideas/lab-grown-diamonds-market-share-2023,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,www.igi.org,general_editorial,https://www.igi.org/,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,www.gia.edu,general_editorial,https://www.gia.edu/,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,www.signetjewelers.com,general_editorial,https://www.signetjewelers.com/investors/financial-information,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,www.professionaljeweller.com,general_editorial,https://www.professionaljeweller.com/swarovski-created-diamonds/,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,pandoragroup.com,general_editorial,https://pandoragroup.com,Pandora,HIGH,No,Other
+claude,Luxury brands that offer lab-grown diamonds,lightboxjewelry.com,general_editorial,https://lightboxjewelry.com,Unknown,LOW,No,Product
+claude,Luxury brands that offer lab-grown diamonds,vrai.com,competitor_owned,https://vrai.com,Vrai,HIGH,No,Other
+claude,Luxury brands that offer lab-grown diamonds,professionaljeweller.com,general_editorial,https://professionaljeweller.com,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,kimai.com,general_editorial,https://kimai.com,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,theigda.org,general_editorial,https://theigda.org,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,jckonline.com,jewelry_trade,https://jckonline.com,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,morganstanley.com,general_editorial,https://morganstanley.com,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,igi.org,general_editorial,https://igi.org,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,gia.edu,general_editorial,https://gia.edu,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,signetjewelers.com,general_editorial,https://signetjewelers.com,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,www.forbes.com,business_sustainability,https://www.forbes.com,Unknown,LOW,No,Other
+claude,Luxury brands that offer lab-grown diamonds,www.vogue.com,luxury_fashion_tier1,https://www.vogue.com,Unknown,LOW,No,Other
+perplexity,Luxury brands that offer lab-grown diamonds,kiradiam.com,general_editorial,https://kiradiam.com/blog/lab-grown-diamonds-redefining-fashion-trends/,Unknown,LOW,No,Other
+perplexity,Luxury brands that offer lab-grown diamonds,the-ethos.co,general_editorial,https://the-ethos.co/best-lab-grown-diamond-brands/,Unknown,LOW,No,Editorial
+perplexity,Luxury brands that offer lab-grown diamonds,mdmetalsdiamonds.com,general_editorial,https://mdmetalsdiamonds.com/blogs/news/lab-diamonds-affordable-luxury,Unknown,LOW,No,News
+perplexity,Luxury brands that offer lab-grown diamonds,www.harpersbazaar.com,luxury_fashion_tier1,https://www.harpersbazaar.com/uk/fashion/shopping/g26098172/lab-grown-diamond-brands/,Unknown,LOW,No,Other
+perplexity,Luxury brands that offer lab-grown diamonds,vertu.com,general_editorial,https://vertu.com/lifestyle/luxury-diamond-rings-top-10-brands-trends-2025-guide/,Unknown,LOW,No,Editorial
+perplexity,Luxury brands that offer lab-grown diamonds,jeandousset.com,general_editorial,https://jeandousset.com/collections/lab-grown-diamond-jewelry,Unknown,LOW,No,Product
+perplexity,Luxury brands that offer lab-grown diamonds,mvraki.com,general_editorial,https://mvraki.com/blogs/news/lab-grown-diamond-trends-2025,Unknown,LOW,No,News
+perplexity,Luxury brands that offer lab-grown diamonds,revelation.co,general_editorial,https://revelation.co,Unknown,LOW,No,Other
+perplexity,Luxury brands that offer lab-grown diamonds,www.grownbrilliance.com,general_editorial,https://www.grownbrilliance.com,Unknown,LOW,No,Other
+perplexity,Luxury brands that offer lab-grown diamonds,www.bluenile.com,general_editorial,https://www.bluenile.com/diamond-search/lab-grown-diamond-search,Unknown,LOW,No,Other
+perplexity,Luxury brands that offer lab-grown diamonds,www.precedenceresearch.com,general_editorial,https://www.precedenceresearch.com/lab-grown-diamonds-market,Unknown,LOW,No,Other
+gemini,Luxury brands that offer lab-grown diamonds,www.ft.com,general_editorial,https://www.ft.com/content/13812733-4f11-469b-980b-0441e86975a2,Unknown,LOW,No,Other
+gemini,Luxury brands that offer lab-grown diamonds,www.vrai.com,competitor_owned,https://www.vrai.com/,Vrai,HIGH,No,Other
+gemini,Luxury brands that offer lab-grown diamonds,www.forbes.com,business_sustainability,https://www.forbes.com/sites/forbes-personal-shopper/2023/08/17/vrai-review/,Vrai,HIGH,No,Other
+gemini,Luxury brands that offer lab-grown diamonds,www.swarovski.com,general_editorial,https://www.swarovski.com/en-US/s-created-diamonds/,Unknown,LOW,No,Other
+gemini,Luxury brands that offer lab-grown diamonds,www.jckonline.com,jewelry_trade,https://www.jckonline.com/editorial-article/swarovski-lab-grown-diamond-collection/,Unknown,LOW,No,Product
+gemini,Luxury brands that offer lab-grown diamonds,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/lab-grown-diamonds/,Brilliant Earth,MEDIUM,No,Other
+gemini,Luxury brands that offer lab-grown diamonds,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/about-us/,Brilliant Earth,MEDIUM,No,Owned
+gemini,Luxury brands that offer lab-grown diamonds,courbet.com,general_editorial,https://courbet.com/en/,Unknown,LOW,No,Other
+gemini,Luxury brands that offer lab-grown diamonds,wwd.com,luxury_fashion_tier1,https://wwd.com/fashion-news/jewelry/courbet-lab-grown-diamond-jewelry-brand-expanding-1235613346/,Unknown,LOW,No,Product
+gemini,Luxury brands that offer lab-grown diamonds,www.oscarmassin.com,general_editorial,https://www.oscarmassin.com/,Unknown,LOW,No,Other
+gemini,Luxury brands that offer lab-grown diamonds,www.forbes.com,business_sustainability,https://www.forbes.com/sites/carolbesler/2022/07/07/oscar-massin-reinvents-luxury-with-lab-grown-diamonds-and-sustainable-gold/,Unknown,LOW,No,Other
+gemini,Luxury brands that offer lab-grown diamonds,lightboxjewelry.com,general_editorial,https://lightboxjewelry.com/,Unknown,LOW,No,Product
+gemini,Luxury brands that offer lab-grown diamonds,www.debeersgroup.com,general_editorial,https://www.debeersgroup.com/brands/lightbox-jewelry,Unknown,LOW,No,Product
+gemini,Luxury brands that offer lab-grown diamonds,www.voguebusiness.com,general_editorial,https://www.voguebusiness.com/companies/why-tiffany-co-wont-sell-lab-grown-diamonds,Tiffany & Co,MEDIUM,No,Other
+chatgpt,John Hardy vs Tiffany & Co sustainability,www.johnhardy.com,owned,https://www.johnhardy.com/sustainability,John Hardy,HIGH,Yes,Sustainability
+chatgpt,John Hardy vs Tiffany & Co sustainability,www.forbes.com,business_sustainability,https://www.forbes.com/sites/forbesbusinesscouncil/2021/04/14/how-john-hardy-is-creating-sustainable-luxury-jewelry/?sh=1a6f0e3f6a1c,John Hardy,HIGH,Yes,Product
+chatgpt,John Hardy vs Tiffany & Co sustainability,www.tiffany.com,competitor_owned,https://www.tiffany.com/sustainability/,Tiffany & Co,MEDIUM,No,Sustainability
+chatgpt,John Hardy vs Tiffany & Co sustainability,www.businessoffashion.com,general_editorial,https://www.businessoffashion.com/articles/news-analysis/tiffany-co-sustainability-commitment-2021/,Tiffany & Co,MEDIUM,No,Sustainability
+chatgpt,John Hardy vs Tiffany & Co sustainability,johnhardy.com,owned,https://johnhardy.com,John Hardy,HIGH,Yes,Other
+chatgpt,John Hardy vs Tiffany & Co sustainability,forbes.com,business_sustainability,https://forbes.com,John Hardy (inferred),MEDIUM,No,Other
+chatgpt,John Hardy vs Tiffany & Co sustainability,tiffany.com,competitor_owned,https://tiffany.com,Tiffany & Co,MEDIUM,No,Other
+chatgpt,John Hardy vs Tiffany & Co sustainability,businessoffashion.com,general_editorial,https://businessoffashion.com,John Hardy (inferred),MEDIUM,No,Other
+claude,John Hardy vs Tiffany & Co sustainability,www.johnhardy.com,owned,https://www.johnhardy.com,John Hardy,HIGH,Yes,Other
+claude,John Hardy vs Tiffany & Co sustainability,www.johnhardy.com,owned,https://www.johnhardy.com/sustainability,John Hardy,HIGH,Yes,Sustainability
+claude,John Hardy vs Tiffany & Co sustainability,www.tiffany.com,competitor_owned,https://www.tiffany.com,Tiffany & Co,MEDIUM,No,Other
+claude,John Hardy vs Tiffany & Co sustainability,www.tiffany.com,competitor_owned,https://www.tiffany.com/sustainability,Tiffany & Co,MEDIUM,No,Sustainability
+claude,John Hardy vs Tiffany & Co sustainability,www.tiffany.com,competitor_owned,https://www.tiffany.com/sustainability/planet,Tiffany & Co,MEDIUM,No,Sustainability
+claude,John Hardy vs Tiffany & Co sustainability,www.professionaljeweller.com,general_editorial,https://www.professionaljeweller.com,John Hardy (inferred),MEDIUM,No,Other
+claude,John Hardy vs Tiffany & Co sustainability,www.jckonline.com,jewelry_trade,https://www.jckonline.com,John Hardy (inferred),MEDIUM,No,Other
+claude,John Hardy vs Tiffany & Co sustainability,johnhardy.com,owned,https://johnhardy.com,John Hardy,HIGH,Yes,Other
+claude,John Hardy vs Tiffany & Co sustainability,tiffany.com,competitor_owned,https://tiffany.com,Tiffany & Co,MEDIUM,No,Other
+claude,John Hardy vs Tiffany & Co sustainability,katerinaperez.com,general_editorial,https://katerinaperez.com,John Hardy (inferred),MEDIUM,No,Other
+claude,John Hardy vs Tiffany & Co sustainability,professionaljeweller.com,general_editorial,https://professionaljeweller.com,John Hardy (inferred),MEDIUM,No,Other
+claude,John Hardy vs Tiffany & Co sustainability,jckonline.com,jewelry_trade,https://jckonline.com,John Hardy (inferred),MEDIUM,No,Other
+claude,John Hardy vs Tiffany & Co sustainability,responsiblejewellery.com,general_editorial,https://responsiblejewellery.com,John Hardy (inferred),MEDIUM,No,Other
+claude,John Hardy vs Tiffany & Co sustainability,www.businessoffashion.com,general_editorial,https://www.businessoffashion.com,John Hardy (inferred),MEDIUM,No,Other
+perplexity,John Hardy vs Tiffany & Co sustainability,www.thequalityedit.com,general_editorial,https://www.thequalityedit.com/articles/john-hardy-review,John Hardy,HIGH,Yes,News
+perplexity,John Hardy vs Tiffany & Co sustainability,www.luxxu.net,general_editorial,https://www.luxxu.net/blog/how-top-jewelry-brands-are-embracing-sustainable-luxury/,Unknown,LOW,No,Editorial
+perplexity,John Hardy vs Tiffany & Co sustainability,elitetraveler.com,general_editorial,https://elitetraveler.com/shopping-lifestyle/jewelry/polly-purser-on-john-hardy-jewelry-sustainability,John Hardy,HIGH,Yes,Product
+perplexity,John Hardy vs Tiffany & Co sustainability,loytee.com,general_editorial,https://loytee.com/blogs/sustainable-jewelry-manufacturing-blog/why-the-worlds-top-jewelry-brands-produce-in-thailand,Unknown,LOW,No,Editorial
+perplexity,John Hardy vs Tiffany & Co sustainability,www.naturaldiamonds.com,general_editorial,https://www.naturaldiamonds.com/responsible/john-hardy-sustainable-jewelry/,John Hardy,HIGH,Yes,Product
+perplexity,John Hardy vs Tiffany & Co sustainability,www.townandcountrymag.com,general_editorial,https://www.townandcountrymag.com/style/jewelry-and-watches/g36027432/best-sustainable-jewelry-brands/,Unknown,LOW,No,Editorial
+perplexity,John Hardy vs Tiffany & Co sustainability,directory.goodonyou.eco,general_editorial,https://directory.goodonyou.eco/brand/john-hardy,John Hardy,HIGH,Yes,Sustainability
+perplexity,John Hardy vs Tiffany & Co sustainability,www.naturaldiamonds.com,general_editorial,https://www.naturaldiamonds.com/culture-and-style/creative-chairman-reed-krakoff-on-his-first-collection-for-john-hardy/,John Hardy,HIGH,Yes,Product
+perplexity,John Hardy vs Tiffany & Co sustainability,www.grayandsons.com,general_editorial,https://www.grayandsons.com/blog/the-art-of-handcrafted-john-hardy-jewelry-inside-john-hardys-iconic-collections/,John Hardy,HIGH,Yes,Product
+perplexity,John Hardy vs Tiffany & Co sustainability,johnhardy.com,owned,https://johnhardy.com/pages/sustainable-luxury,John Hardy,HIGH,Yes,Other
+perplexity,John Hardy vs Tiffany & Co sustainability,johnhardy.com,owned,https://johnhardy.com/pages/responsible-business-practices,John Hardy,HIGH,Yes,Other
+perplexity,John Hardy vs Tiffany & Co sustainability,www.thedesire.co,general_editorial,https://www.thedesire.co/p/john-hardy,John Hardy,HIGH,Yes,Other
+perplexity,John Hardy vs Tiffany & Co sustainability,blog.bernierobbins.com,general_editorial,http://blog.bernierobbins.com/john-hardy-jewelry/,John Hardy,HIGH,Yes,Product
+perplexity,John Hardy vs Tiffany & Co sustainability,www.jamesandsons.com,general_editorial,https://www.jamesandsons.com/blog/john-hardy-jewelry-at-james-and-sons-in-schererville-in,John Hardy,HIGH,Yes,Product
+chatgpt,David Yurman vs John Hardy craftsmanship,www.davidyurman.com,competitor_owned,https://www.davidyurman.com,David Yurman,MEDIUM,No,Other
+chatgpt,David Yurman vs John Hardy craftsmanship,www.forbes.com,business_sustainability,https://www.forbes.com/sites/forbesbusinesscouncil/2021/01/20/the-art-of-david-yurman/?sh=4c1c5e9f4b6d,David Yurman,HIGH,No,Other
+chatgpt,David Yurman vs John Hardy craftsmanship,www.johnhardy.com,owned,https://www.johnhardy.com,John Hardy,HIGH,Yes,Other
+chatgpt,David Yurman vs John Hardy craftsmanship,www.vogue.com,luxury_fashion_tier1,https://www.vogue.com/article/john-hardy-jewelry-handcrafted,John Hardy,HIGH,Yes,Product
+chatgpt,David Yurman vs John Hardy craftsmanship,davidyurman.com,competitor_owned,https://davidyurman.com,David Yurman,MEDIUM,No,Other
+chatgpt,David Yurman vs John Hardy craftsmanship,forbes.com,business_sustainability,https://forbes.com,John Hardy (inferred),MEDIUM,No,Other
+chatgpt,David Yurman vs John Hardy craftsmanship,johnhardy.com,owned,https://johnhardy.com,John Hardy,HIGH,Yes,Other
+chatgpt,David Yurman vs John Hardy craftsmanship,vogue.com,luxury_fashion_tier1,https://vogue.com,John Hardy (inferred),MEDIUM,No,Other
+claude,David Yurman vs John Hardy craftsmanship,www.davidyurman.com,competitor_owned,https://www.davidyurman.com/world-of-yurman/our-story.html,David Yurman,MEDIUM,No,Owned
+claude,David Yurman vs John Hardy craftsmanship,www.johnhardy.com,owned,https://www.johnhardy.com/our-story,John Hardy,HIGH,Yes,Owned
+claude,David Yurman vs John Hardy craftsmanship,www.jewelryconnoisseur.net,general_editorial,https://www.jewelryconnoisseur.net,John Hardy (inferred),MEDIUM,No,Product
+claude,David Yurman vs John Hardy craftsmanship,www.businessoffashion.com,general_editorial,https://www.businessoffashion.com,John Hardy (inferred),MEDIUM,No,Other
+claude,David Yurman vs John Hardy craftsmanship,www.jckonline.com,jewelry_trade,https://www.jckonline.com,John Hardy (inferred),MEDIUM,No,Other
+claude,David Yurman vs John Hardy craftsmanship,davidyurman.com,competitor_owned,https://davidyurman.com,David Yurman,MEDIUM,No,Other
+claude,David Yurman vs John Hardy craftsmanship,johnhardy.com,owned,https://johnhardy.com,John Hardy,HIGH,Yes,Other
+claude,David Yurman vs John Hardy craftsmanship,jewelryconnoisseur.net,general_editorial,https://jewelryconnoisseur.net,John Hardy (inferred),MEDIUM,No,Product
+claude,David Yurman vs John Hardy craftsmanship,businessoffashion.com,general_editorial,https://businessoffashion.com,John Hardy (inferred),MEDIUM,No,Other
+claude,David Yurman vs John Hardy craftsmanship,jckonline.com,jewelry_trade,https://jckonline.com,John Hardy (inferred),MEDIUM,No,Other
+claude,David Yurman vs John Hardy craftsmanship,www.forbes.com,business_sustainability,https://www.forbes.com,John Hardy (inferred),MEDIUM,No,Other
+perplexity,David Yurman vs John Hardy craftsmanship,sellusyourjewelry.com,general_editorial,https://sellusyourjewelry.com/blog/is-david-yurman-jewelry-a-high-end-brand/,David Yurman,HIGH,No,Product
+perplexity,David Yurman vs John Hardy craftsmanship,aywlux.com,general_editorial,https://aywlux.com/blogs/news/luxury-showdown-david-yurman-or-john-hardy-find-out-which-brand-matches-your-style,John Hardy,HIGH,Yes,News
+perplexity,David Yurman vs John Hardy craftsmanship,www.grayandsons.com,general_editorial,https://www.grayandsons.com/blog/is-david-yurman-really-worth-the-pricethe-pros-cons-of-adding-to-your-collection/,David Yurman,HIGH,No,Product
+perplexity,David Yurman vs John Hardy craftsmanship,thejewelboxataccent.com,general_editorial,https://thejewelboxataccent.com/blogs/news/timeless-elegance-exploring-iconic-designer-jewelry-from-david-yurman-effy-john-hardy-and-tiffany-co,John Hardy,HIGH,Yes,Product
+perplexity,David Yurman vs John Hardy craftsmanship,aywlux.com,general_editorial,https://aywlux.com/blogs/news/why-buy-pre-owned-david-yurman-jewelry,David Yurman,HIGH,No,Product
+perplexity,David Yurman vs John Hardy craftsmanship,jrdunn.com,general_editorial,https://jrdunn.com/blogs/news/john-hardy-vs-david-yurman,John Hardy,HIGH,Yes,News
+perplexity,David Yurman vs John Hardy craftsmanship,www.davidyurman.com,competitor_owned,https://www.davidyurman.com,David Yurman,MEDIUM,No,Other
+perplexity,David Yurman vs John Hardy craftsmanship,www.youtube.com,general_editorial,https://www.youtube.com/watch?v=xlwfD1Brc8g,John Hardy (inferred),MEDIUM,No,Other
+perplexity,David Yurman vs John Hardy craftsmanship,www.davidyurman.com,competitor_owned,https://www.davidyurman.com/world-of-yurman/our-values.html,David Yurman,MEDIUM,No,Other
+perplexity,David Yurman vs John Hardy craftsmanship,app.assembo.ai,general_editorial,https://app.assembo.ai/blogs/mens-jewelry-brands,John Hardy (inferred),MEDIUM,No,Product
+perplexity,David Yurman vs John Hardy craftsmanship,www.davidyurman.com,competitor_owned,https://www.davidyurman.com/world-of-yurman/stories/guides/understanding-dy-diamonds.html,David Yurman,MEDIUM,No,Editorial
+perplexity,David Yurman vs John Hardy craftsmanship,johnhardy.com,owned,https://johnhardy.com,John Hardy,HIGH,Yes,Other
+perplexity,David Yurman vs John Hardy craftsmanship,www.reisnichols.com,general_editorial,https://www.reisnichols.com/blogs/news/why-i-love-david-yurman,David Yurman,HIGH,No,News
+perplexity,David Yurman vs John Hardy craftsmanship,www.grayandsons.com,general_editorial,https://www.grayandsons.com/blog/a-complete-guide-to-david-yurman-designer-jewelry/,David Yurman,HIGH,No,Editorial
+perplexity,David Yurman vs John Hardy craftsmanship,jackweirandsons.com,general_editorial,https://jackweirandsons.com/blogs/news/david-yurman-jewelry-history-facts,David Yurman,HIGH,No,Product
+perplexity,David Yurman vs John Hardy craftsmanship,sebastiancharles.com,general_editorial,https://sebastiancharles.com/blog/is-david-yurman-jewelry-considered-valuable,David Yurman,HIGH,No,Product
+perplexity,David Yurman vs John Hardy craftsmanship,estatejewelrybuyer.com,general_editorial,https://estatejewelrybuyer.com/jewelry-designers/,John Hardy (inferred),MEDIUM,No,Product
+chatgpt,Jewelry industry sustainability leaders,www.responsiblejewellery.com,general_editorial,https://www.responsiblejewellery.com,Unknown,LOW,No,Other
+chatgpt,Jewelry industry sustainability leaders,www.fairmined.org,general_editorial,https://www.fairmined.org,Unknown,LOW,No,Other
+chatgpt,Jewelry industry sustainability leaders,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com,Brilliant Earth,MEDIUM,No,Other
+chatgpt,Jewelry industry sustainability leaders,gemfields.com,general_editorial,https://gemfields.com,Unknown,LOW,No,Other
+chatgpt,Jewelry industry sustainability leaders,www.diamondfoundry.com,general_editorial,https://www.diamondfoundry.com,Unknown,LOW,No,Other
+chatgpt,Jewelry industry sustainability leaders,sustainablejewelryinitiative.org,general_editorial,https://sustainablejewelryinitiative.org,Unknown,LOW,No,Product
+chatgpt,Jewelry industry sustainability leaders,www.chopard.com,general_editorial,https://www.chopard.com,Chopard,HIGH,No,Other
+chatgpt,Jewelry industry sustainability leaders,responsiblejewellery.com,general_editorial,https://responsiblejewellery.com,Unknown,LOW,No,Other
+chatgpt,Jewelry industry sustainability leaders,fairmined.org,general_editorial,https://fairmined.org,Unknown,LOW,No,Other
+chatgpt,Jewelry industry sustainability leaders,brilliantearth.com,competitor_owned,https://brilliantearth.com,Brilliant Earth,MEDIUM,No,Other
+chatgpt,Jewelry industry sustainability leaders,diamondfoundry.com,general_editorial,https://diamondfoundry.com,Unknown,LOW,No,Other
+chatgpt,Jewelry industry sustainability leaders,chopard.com,general_editorial,https://chopard.com,Chopard,HIGH,No,Other
+claude,Jewelry industry sustainability leaders,pandoragroup.com,general_editorial,https://pandoragroup.com/sustainability,Pandora,HIGH,No,Sustainability
+claude,Jewelry industry sustainability leaders,www.tiffany.com,competitor_owned,https://www.tiffany.com/sustainability/,Tiffany & Co,MEDIUM,No,Sustainability
+claude,Jewelry industry sustainability leaders,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/conflict-free-diamonds/,Brilliant Earth,MEDIUM,No,Other
+claude,Jewelry industry sustainability leaders,www.responsiblejewellery.com,general_editorial,https://www.responsiblejewellery.com/,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,www.kimberleyprocess.com,general_editorial,https://www.kimberleyprocess.com/,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,www.gold.org,general_editorial,https://www.gold.org/goldhub/research/gold-and-climate-change-current-and-future-impacts,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,www.mckinsey.com,general_editorial,https://www.mckinsey.com/industries/retail/our-insights/state-of-fashion-watches-and-jewellery,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,www.monicavinader.com,general_editorial,https://www.monicavinader.com/sustainability,Monica Vinader,MEDIUM,No,Sustainability
+claude,Jewelry industry sustainability leaders,www.vrai.com,competitor_owned,https://www.vrai.com/sustainability,Vrai,HIGH,No,Sustainability
+claude,Jewelry industry sustainability leaders,responsiblemining.net,general_editorial,https://responsiblemining.net/,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,www.fairtrade.net,general_editorial,https://www.fairtrade.net/product/gold,Unknown,LOW,No,Product
+claude,Jewelry industry sustainability leaders,www.jckonline.com,jewelry_trade,https://www.jckonline.com/,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,www.nationaljeweler.com,jewelry_trade,https://www.nationaljeweler.com/,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,www.thejewelleryeditor.com,general_editorial,https://www.thejewelleryeditor.com/,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,pandoragroup.com,general_editorial,https://pandoragroup.com,Pandora,HIGH,No,Other
+claude,Jewelry industry sustainability leaders,tiffany.com,competitor_owned,https://tiffany.com,Tiffany & Co,MEDIUM,No,Other
+claude,Jewelry industry sustainability leaders,brilliantearth.com,competitor_owned,https://brilliantearth.com,Brilliant Earth,MEDIUM,No,Other
+claude,Jewelry industry sustainability leaders,responsiblejewellery.com,general_editorial,https://responsiblejewellery.com,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,kimberleyprocess.com,general_editorial,https://kimberleyprocess.com,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,gold.org,general_editorial,https://gold.org,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,mckinsey.com,general_editorial,https://mckinsey.com,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,monicavinader.com,general_editorial,https://monicavinader.com,Monica Vinader,MEDIUM,No,Other
+claude,Jewelry industry sustainability leaders,vrai.com,competitor_owned,https://vrai.com,Vrai,HIGH,No,Other
+claude,Jewelry industry sustainability leaders,responsiblemining.net,general_editorial,https://responsiblemining.net,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,fairtrade.net,general_editorial,https://fairtrade.net,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,jckonline.com,jewelry_trade,https://jckonline.com,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,nationaljeweler.com,jewelry_trade,https://nationaljeweler.com,Unknown,LOW,No,Other
+claude,Jewelry industry sustainability leaders,thejewelleryeditor.com,general_editorial,https://thejewelleryeditor.com,Unknown,LOW,No,Other
+perplexity,Jewelry industry sustainability leaders,www.scsglobalservices.com,general_editorial,https://www.scsglobalservices.com/news/a-complete-guide-to-sustainable-and-ethical-jewelry,Unknown,LOW,No,Editorial
+perplexity,Jewelry industry sustainability leaders,www.pureearth.org,general_editorial,https://www.pureearth.org/iris-van-der-veken-impact-award/,Unknown,LOW,No,Other
+perplexity,Jewelry industry sustainability leaders,paulinaontheroad.com,general_editorial,https://paulinaontheroad.com/sustainable-jewelry-brands/,Unknown,LOW,No,Product
+perplexity,Jewelry industry sustainability leaders,rapaport.com,general_editorial,https://rapaport.com/magazine-article/why-collaboration-is-the-missing-link-in-jewelrys-sustainability-journey/,Unknown,LOW,No,Product
+perplexity,Jewelry industry sustainability leaders,www.greenmatters.com,general_editorial,https://www.greenmatters.com/green-matters-approved/best-sustainable-jewelry-brands,Unknown,LOW,No,Editorial
+perplexity,Jewelry industry sustainability leaders,www.responsiblejewellery.com,general_editorial,https://www.responsiblejewellery.com,Unknown,LOW,No,Other
+perplexity,Jewelry industry sustainability leaders,gardensofthesun.com,general_editorial,https://gardensofthesun.com/blogs/news/certified-sustainable-fine-jewelry-brands,Unknown,LOW,No,Product
+perplexity,Jewelry industry sustainability leaders,gem-spectrum.com,general_editorial,https://gem-spectrum.com/2025/03/08/sustainability-awards-2025-by-jwa-discover-the-judging-panel-jewellery-industry-leaders-sustainability-experts-power-independent-jury/,Unknown,LOW,No,Sustainability
+perplexity,Jewelry industry sustainability leaders,www.thegoodtrade.com,sustainability_media,https://www.thegoodtrade.com/features/fair-trade-jewelry/,The Good Trade,MEDIUM,No,Product
+perplexity,Jewelry industry sustainability leaders,news.jewellerynet.com,general_editorial,https://news.jewellerynet.com/en/jnanews/features/24190/031721-Jewellery-sector-A-rising-sustainability-leader,Unknown,LOW,No,Sustainability
+perplexity,Jewelry industry sustainability leaders,twinflameparis.com,general_editorial,https://twinflameparis.com/blogs/lifestyle/ethical-and-sustainable-jewelry-brands-you-will-add-to-your-wishlist,Unknown,LOW,No,Product
+perplexity,Jewelry industry sustainability leaders,favy.com,general_editorial,https://favy.com/fashion/sustainable-and-ethical-jewelry-brands,Unknown,LOW,No,Product
+perplexity,Jewelry industry sustainability leaders,robinsonsjewelers.com,general_editorial,https://robinsonsjewelers.com/blogs/news/the-rise-of-sustainable-jewelry-brands-and-practices-that-prioritize-the-environment-and-make-you-look-fabulous-doing-it,Unknown,LOW,No,Product
+gemini,Jewelry industry sustainability leaders,www.fairtrade.org.uk,general_editorial,https://www.fairtrade.org.uk/farmers-and-workers/gold/,Unknown,LOW,No,Other
+gemini,Jewelry industry sustainability leaders,www.responsiblejewellery.com,general_editorial,https://www.responsiblejewellery.com/,Unknown,LOW,No,Other
+gemini,Jewelry industry sustainability leaders,www.tiffany.com,competitor_owned,https://www.tiffany.com/world-of-tiffany/sustainability/,Tiffany & Co,MEDIUM,No,Sustainability
+gemini,Jewelry industry sustainability leaders,www.lvmh.com,general_editorial,https://www.lvmh.com/news-documents/documents/environmental-report-2022/,Unknown,LOW,No,News
+gemini,Jewelry industry sustainability leaders,www.chopard.com,general_editorial,https://www.chopard.com/intl/the-journey-to-sustainable-luxury,Chopard,HIGH,No,Other
+gemini,Jewelry industry sustainability leaders,www.pandoragroup.com,general_editorial,https://www.pandoragroup.com/sustainability/,Pandora,HIGH,No,Sustainability
+gemini,Jewelry industry sustainability leaders,www.pandoragroup.com,general_editorial,https://www.pandoragroup.com/media/news/2022/pandora-launches-first-collection-with-lab-grown-diamonds-in-north-america/,Pandora,HIGH,No,Product
+gemini,Jewelry industry sustainability leaders,www.brilliantearth.com,competitor_owned,https://www.brilliantearth.com/mission/,Brilliant Earth,MEDIUM,No,Owned
+gemini,Jewelry industry sustainability leaders,www.debeersgroup.com,general_editorial,https://www.debeersgroup.com/buildingforever,Unknown,LOW,No,Other
+gemini,Jewelry industry sustainability leaders,www.richemont.com,general_editorial,https://www.richemont.com/en/our-group/sustainability/,Unknown,LOW,No,Sustainability
+gemini,Jewelry industry sustainability leaders,www.cartier.com,competitor_owned,https://www.cartier.com/en-us/corporate/our-commitments.html,Cartier,HIGH,No,Other
+gemini,Jewelry industry sustainability leaders,www.fairmined.org,general_editorial,https://www.fairmined.org/,Unknown,LOW,No,Other

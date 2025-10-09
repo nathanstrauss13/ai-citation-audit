@@ -1,0 +1,974 @@
+brand,query,query_category,query_type,engine,mentioned_in_response,prominence_ranking,tone,specific_products_mentioned,context_of_mention,citation_count_for_brand
+HoneyBaked,What is HoneyBaked Ham known for?,BRANDED,BRANDED,ChatGPT,Yes,1,Neutral,No,honeybaked ham is primarily known for its signature products,1
+Omaha Steaks,What is HoneyBaked Ham known for?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,What is HoneyBaked Ham known for?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,What is HoneyBaked Ham known for?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,What is HoneyBaked Ham known for?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,What is HoneyBaked Ham known for?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Claude,Yes,1,Neutral,No,honeybaked ham is known for several distinctive characterist,4
+Omaha Steaks,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Harry & David,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Costco,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Smithfield,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Perplexity,Yes,1,Neutral,No,honeybaked ham is primarily known for its **signature spiral,8
+Omaha Steaks,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Costco,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Omaha Steaks,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Harry & David,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Costco,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Whole Foods,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Smithfield,What is HoneyBaked Ham known for?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+HoneyBaked,Tell me about HoneyBaked Ham,BRANDED,BRANDED,ChatGPT,Yes,1,Neutral,No,honeybaked ham is a well-known american food company that sp,5
+Omaha Steaks,Tell me about HoneyBaked Ham,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Tell me about HoneyBaked Ham,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Tell me about HoneyBaked Ham,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Tell me about HoneyBaked Ham,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Tell me about HoneyBaked Ham,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Claude,Yes,1,Neutral,No,"here's information about honeybaked ham with multiple sources:
+
+honeybaked ham compan",1
+Omaha Steaks,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Costco,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Perplexity,Yes,1,Neutral,No,"## overview of honeybaked ham
+
+honeybaked ham is a renowned food retailer s",7
+Omaha Steaks,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Omaha Steaks,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Harry & David,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Costco,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Whole Foods,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Smithfield,Tell me about HoneyBaked Ham,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+HoneyBaked,HoneyBaked Ham history and reputation,BRANDED,BRANDED,ChatGPT,Yes,1,Neutral,No,honeybaked ham is a well-known american food retailer specia,1
+Omaha Steaks,HoneyBaked Ham history and reputation,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,HoneyBaked Ham history and reputation,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,HoneyBaked Ham history and reputation,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,HoneyBaked Ham history and reputation,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,HoneyBaked Ham history and reputation,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Claude,Yes,1,Neutral,No,"here's information about honeybaked ham's history and reputation with sources:
+
+honey",1
+Omaha Steaks,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Harry & David,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Costco,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Smithfield,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Perplexity,Yes,1,Neutral,No,the honeybaked ham company has a rich history spanning nearly se,3
+Omaha Steaks,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Costco,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Omaha Steaks,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Harry & David,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Costco,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Whole Foods,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Smithfield,HoneyBaked Ham history and reputation,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+HoneyBaked,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,ChatGPT,Yes,1,Neutral,No,"you can buy honeybaked ham from various sources, including their officia",1
+Omaha Steaks,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Claude,Yes,1,Neutral,No,"here's information about where to buy honeybaked ham:
+
+1. honeybaked ham retail stores:
+the most d",3
+Omaha Steaks,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Costco,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Perplexity,Yes,1,Neutral,No,"## where to buy honeybaked ham
+
+you have several convenient options for purc",7
+Omaha Steaks,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Omaha Steaks,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Harry & David,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Costco,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Whole Foods,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Smithfield,Where can I buy HoneyBaked Ham?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+HoneyBaked,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,ChatGPT,Yes,1,Neutral,No,"here are some reviews and ratings for honeybaked ham from various sources:
+
+1. **consumer affairs*",0
+Omaha Steaks,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Claude,Yes,1,Neutral,No,"here's an analysis of honeybaked ham reviews and ratings:
+
+overall reputation:
+hon",0
+Omaha Steaks,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Harry & David,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Costco,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Smithfield,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Perplexity,Yes,1,Neutral,No,"honeybaked ham currently receives **low customer ratings**,",1
+Omaha Steaks,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Costco,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Omaha Steaks,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Harry & David,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Costco,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Whole Foods,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Smithfield,HoneyBaked Ham reviews and ratings,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+HoneyBaked,Who is Chef Tim Ziga?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,Who is Chef Tim Ziga?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Who is Chef Tim Ziga?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Who is Chef Tim Ziga?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Who is Chef Tim Ziga?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Who is Chef Tim Ziga?,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Who is Chef Tim Ziga?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,Who is Chef Tim Ziga?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Who is Chef Tim Ziga?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Costco,Who is Chef Tim Ziga?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Who is Chef Tim Ziga?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Who is Chef Tim Ziga?,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Who is Chef Tim Ziga?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,Who is Chef Tim Ziga?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Who is Chef Tim Ziga?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Who is Chef Tim Ziga?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Who is Chef Tim Ziga?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Who is Chef Tim Ziga?,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Who is Chef Tim Ziga?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Omaha Steaks,Who is Chef Tim Ziga?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Harry & David,Who is Chef Tim Ziga?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Costco,Who is Chef Tim Ziga?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Whole Foods,Who is Chef Tim Ziga?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Smithfield,Who is Chef Tim Ziga?,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+HoneyBaked,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,ChatGPT,Yes,1,Neutral,No,"023, i do not have specific information about the honeybaked ham holiday menu for 2025. however, hon",4
+Omaha Steaks,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Claude,Yes,1,Neutral,No,"i apologize, but i cannot provide the specific honeybaked ham menu for 2025 as that would be future ",2
+Omaha Steaks,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Harry & David,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Costco,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+Smithfield,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Perplexity,Yes,1,Neutral,No,honeybaked ham's 2025 holiday menu offers a variety of optio,9
+Omaha Steaks,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Costco,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Omaha Steaks,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Harry & David,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Costco,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Whole Foods,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+Smithfield,HoneyBaked Ham holiday menu 2025,BRANDED,BRANDED,Gemini,No,,Neutral,No,,0
+HoneyBaked,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"often come glazed, which adds flavor. brands like honeybaked and smithfield are popular choices.
+   ",0
+Omaha Steaks,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,2,Neutral,No,"ed, which adds flavor. brands like honeybaked and smithfield are popular choices.
+   - source: https",0
+HoneyBaked,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Omaha Steaks,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Harry & David,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Costco,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Whole Foods,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Smithfield,What is the best ham for Thanksgiving dinner?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+HoneyBaked,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"viding a delicious crust.
+
+   source: https://www.honeybaked.com/
+
+3. **smithfield ham**: this virgi",1
+Omaha Steaks,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,2,Neutral,No,"st.
+
+   source: https://www.honeybaked.com/
+
+3. **smithfield ham**: this virginia-style ham is known",1
+HoneyBaked,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,1,Neutral,No,"e and consistent quality.
+
+reference: https://www.honeybaked.com/about-our-ham
+
+5. fresh ham (city h",1
+Omaha Steaks,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Omaha Steaks,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Harry & David,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Costco,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Whole Foods,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Smithfield,What is the best ham for Christmas dinner?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+HoneyBaked,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"where you can quickly order a holiday ham:
+
+1. **honeybaked ham** - they offer a variety of hams tha",1
+Omaha Steaks,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,3,Neutral,No,"ailable.
+   source: https://www.walmart.com
+
+4. **costco** - if you're a member, costco offers a var",1
+Whole Foods,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,2,Neutral,No,"vors.
+   source: https://www.honeybaked.com
+
+2. **smithfield marketplace** - smithfield provides a s",1
+HoneyBaked,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,1,Neutral,No,"-sliced, honey-glazed hams
+reference: https://www.honeybaked.com/shop-now
+
+2. omaha steaks
+- various",1
+Omaha Steaks,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,2,Neutral,No,"eference: https://www.honeybaked.com/shop-now
+
+2. omaha steaks
+- various ham options including spira",1
+Harry & David,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,3,Neutral,No,"https://www.omahasteaks.com/shop/holiday-hams
+
+3. harry & david
+- gourmet ham options with various g",0
+Costco,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,4,Neutral,No,"ence: https://www.walmart.com/cp/meat/1071964
+
+6. smithfield
+- direct ordering from one of america's",1
+HoneyBaked,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,Yes,1,Neutral,No,"premium quality, delivered fresh-frozen[3] |
+| **honeybaked ham**      | world-famous glazed spiral ",3
+Omaha Steaks,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Omaha Steaks,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Harry & David,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Costco,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Whole Foods,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+Smithfield,Where can I order a holiday ham quickly?,PRIMARY_HOLIDAY,UNBRANDED,Gemini,No,,Neutral,No,,0
+HoneyBaked,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,4,Neutral,No,"ood for casual gatherings
+
+reference: https://www.honeybaked.com/catering
+
+remember to:
+- order well",1
+Omaha Steaks,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,3,Neutral,No,"options from premium markets:
+- williams-sonoma, harry & david offer complete holiday meals
+- includ",0
+Costco,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,2,Neutral,No,"2. grocery store prepared meals:
+- whole foods, costco, and other major grocers offer complete holid",0
+Whole Foods,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,1,Neutral,No,"n-serve-meals
+
+2. grocery store prepared meals:
+- whole foods, costco, and other major grocers offer",1
+Smithfield,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,What should I serve for Christmas dinner if I don't want to cook?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"along with sources for further information:
+
+1. **honeybaked ham**: known for their signature spiral",1
+Omaha Steaks,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,2,Neutral,No,"- source: https://www.crackerbarrel.com
+
+4. **whole foods market**: whole foods provides a selection",1
+Smithfield,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,1,Neutral,No,"rve
+- no cooking required
+
+reference: https://www.honeybaked.com/holiday-meals
+
+2. boston market
+- t",1
+Omaha Steaks,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,2,Neutral,No,": https://www.bostonmarket.com/holiday-meals/
+
+3. omaha steaks
+- multiple holiday meal packages
+- pr",1
+Harry & David,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,3,Neutral,No,"s-sonoma.com/shop/food/prepared-food-entrées/
+
+5. whole foods market
+- holiday meals available throu",1
+Smithfield,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,Yes,2,Neutral,No,"from a reputable retailer such as harry & david, omaha steaks, or mackenzie limited[2][3]. these ser",0
+Harry & David,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,Yes,1,Neutral,No,"inner package** from a reputable retailer such as harry & david, omaha steaks, or mackenzie limited[",0
+Costco,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,1
+Smithfield,What is the easiest holiday meal to order online?,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,2,Neutral,No,"https://www.crackerbarrel.com/thanksgiving
+
+4. **honeybaked ham**: honeybaked ham specializes in hol",1
+Omaha Steaks,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"r offerings and links for more information:
+
+1. **whole foods market**: whole foods offers a variety",1
+Smithfield,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,3,Neutral,No,"on
+- nationwide locations
+
+reference: https://www.honeybaked.com/holiday-meals
+
+tips for ordering:
+-",1
+Omaha Steaks,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,2,Neutral,No,"oma.com/shop/food/prepared-food-thanksgiving/
+
+5. costco
+- complete turkey dinner package
+- serves 8",1
+Whole Foods,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,1,Neutral,No,"ns to suit different preferences and budgets:
+
+1. whole foods market
+- complete turkey dinners servi",1
+Smithfield,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,1
+Omaha Steaks,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,Yes,1,Neutral,No,"dinner, here are some excellent options:
+
+## 1. **harry & david**
+harry & david offers a stress-free",0
+Costco,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,Yes,2,Neutral,No,"fer a stress-free holiday experience[3].
+
+## 3. **whole foods market**
+whole foods market provides a",1
+Smithfield,Best place to order Thanksgiving dinner,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,2,Neutral,No,"oodsmarket.com/shop/choose
+reference: https://www.honeybaked.com/holiday-meals
+reference: https://ww",1
+Omaha Steaks,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,1,Neutral,No,"ekly delivery schedules
+
+grocery store options:
+- whole foods offers prepared holiday meals through ",1
+Smithfield,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,1
+Omaha Steaks,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,Yes,2,Neutral,No,"or two, but not for same-day emergencies[2].
+
+- **omaha steaks**: budget-friendly, fully prepared ho",0
+Harry & David,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,Yes,1,Neutral,No,"ding full meal kits, sides, and desserts[3].
+
+- **harry & david**: popular for complete holiday meal",0
+Costco,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,1
+Smithfield,Last minute holiday meal delivery,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"ptions for pre-cooked holiday ham delivery:
+
+1. **honeybaked ham**: known for their signature spiral",1
+Omaha Steaks,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,3,Neutral,No,"s.
+   source: https://www.harryanddavid.com
+
+3. **omaha steaks**: omaha steaks offers a variety of p",1
+Harry & David,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,2,Neutral,No,"erts.
+   source: https://www.honeybaked.com
+
+2. **harry & david**: this gourmet food retailer offers",0
+Costco,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,4,Neutral,No,"als.
+   source: https://www.omahasteaks.com
+
+4. **costco**: if you're a member, costco offers pre-co",1
+Whole Foods,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,5,Neutral,No,"y priced.
+   source: https://www.costco.com
+
+5. **smithfield marketplace**: smithfield offers a rang",1
+HoneyBaked,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,1,Neutral,No,"ature sweet crunchy glaze.
+reference: https://www.honeybaked.com/shipping
+
+omaha steaks delivers spi",1
+Omaha Steaks,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,2,Neutral,No,".
+reference: https://www.honeybaked.com/shipping
+
+omaha steaks delivers spiral-sliced hams that are ",1
+Harry & David,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,3,Neutral,No,"tps://www.omahasteaks.com/shop/holiday-meals/ham
+
+harry & david provides gourmet spiral-sliced hams ",0
+Costco,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,3
+Omaha Steaks,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Pre-cooked holiday ham delivery,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"provide a full christmas dinner experience:
+
+1. **honeybaked ham**: known for their delicious hams a",1
+Omaha Steaks,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,2,Neutral,No,"rovides pre-cooked traditional christmas feasts
+- omaha steaks delivers complete holiday meal packag",1
+Harry & David,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,1,Neutral,No,"ere are the key details:
+
+1. national services:
+- harry & david offers complete holiday meals with t",0
+Costco,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,1
+Omaha Steaks,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,Yes,2,Neutral,No,"hile maximizing quality and presentation[3].
+
+- **omaha steaks:** offers christmas dinner packages f",1
+Harry & David,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,Yes,1,Neutral,No,"e for both small and large gatherings[2][6].
+
+- **harry & david:** provides christmas dinner caterin",0
+Costco,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,Yes,3,Neutral,No,"etarian and traditional christmas dishes[1].
+
+- **whole foods market:** offers prepared christmas di",0
+Smithfield,Complete Christmas dinner delivery service,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,1,Neutral,No,". here are some of the top recommendations:
+
+1. **honeybaked ham**: known for its sweet, crunchy gla",1
+Omaha Steaks,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,3,Neutral,No,"at.
+   - source: https://www.nimanranch.com
+
+5. **costco spiral cut ham**: costco's kirkland signatu",1
+Whole Foods,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,ChatGPT,Yes,2,Neutral,No,"ts.
+   - source: https://www.honeybaked.com
+
+2. **smithfield spiral sliced ham**: smithfield offers ",1
+HoneyBaked,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,1,Neutral,No,"iew of the best spiral cut hams for holidays:
+
+1. honeybaked ham
+- known for consistent quality and ",1
+Omaha Steaks,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,4,Neutral,No,"h/gourmet-foods/meat-cheese/spiral-sliced-ham
+
+5. omaha steaks duroc boneless country ham
+- made fro",1
+Harry & David,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,3,Neutral,No,"eskes.com/spiral-sliced-ham-with-honey-glaze/
+
+4. harry & david spiral-sliced ham
+- known for except",0
+Costco,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,Claude,Yes,2,Neutral,No,"nce: https://www.honeybaked.com/about-our-ham
+
+2. smithfield spiral sliced ham
+- traditional cure an",1
+HoneyBaked,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,Yes,4,Neutral,No,"aking it a strong budget-friendly choice[3].
+
+- **honeybaked ham co.**: while this brand is iconic a",0
+Omaha Steaks,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,Yes,2,Neutral,No,"rankings, are **costco’s kirkland signature**, **harry & david**, and **smithfield**, which consiste",0
+Costco,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,Yes,1,Neutral,No,"o expert taste tests and consumer rankings, are **costco’s kirkland signature**, **harry & david**, ",0
+Whole Foods,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Best spiral cut ham for holidays,PRIMARY_HOLIDAY,UNBRANDED,Perplexity,Yes,3,Neutral,No,"’s kirkland signature**, **harry & david**, and **smithfield**, which consistently score high for fl",0
+HoneyBaked,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,Perplexity,Yes,1,Neutral,No,"ay celebration[2].
+3. **christmas food baskets**: harry & david provides beautifully curated baskets",0
+Costco,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,What's the best food gift for the holidays?,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"es, meats, chocolates, and snacks. companies like harry & david and gourmet gift baskets offer a wid",0
+Costco,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,Claude,Yes,1,Neutral,No,"du chocolat gift sets
+
+3. gourmet gift baskets
+- harry & david's signature towers
+- zabar's new york",0
+Costco,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Best holiday food gifts to send,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"r, along with sources for more information:
+
+1. **honeybaked ham** - known for their signature spira",1
+Omaha Steaks,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,Yes,2,Neutral,No,"on.
+   - source: https://www.honeybaked.com
+
+2. **smithfield hams** - smithfield offers a range of p",1
+HoneyBaked,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,Yes,1,Neutral,No,"pular holiday gift choice.
+reference: https://www.honeybaked.com/ham
+
+nueske's applewood smoked spir",1
+Omaha Steaks,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,Yes,3,Neutral,No,"d.
+reference: https://www.dartagnan.com/buy/ham/
+
+harry & david's spiral-sliced ham comes with a hon",0
+Costco,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,Yes,2,Neutral,No,"ttps://www.snakeriverfarms.com/kurobuta-ham.html
+
+smithfield offers their signature spiral sliced ha",1
+HoneyBaked,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,1
+Omaha Steaks,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Premium holiday ham gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,Yes,1,Neutral,No,to different dietary preferences. companies like harry & david and gourmet gift baskets offer a wide,0
+Costco,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,Yes,1,Neutral,No,"ounts
+
+top-rated corporate food gift companies:
+- harry & david (corporate gifting programs)
+- hicko",0
+Costco,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Corporate holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,Claude,Yes,1,Neutral,No,"top companies known for holiday food baskets:
+- harry & david (known for premium fruits and treats)
+",0
+Costco,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,1
+Whole Foods,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Holiday meal gift baskets,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"ere are some of the best options available:
+
+1. **honeybaked ham**: known for its signature spiral-s",1
+Omaha Steaks,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,Yes,3,Neutral,No,"ality.
+   - source: https://www.nueskes.com
+
+4. **harry & david**: this gourmet food company offers ",0
+Costco,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,Yes,2,Neutral,No,"te.
+   - source: https://www.honeybaked.com
+
+2. **smithfield**: smithfield offers a range of hams, i",1
+HoneyBaked,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,Claude,Yes,1,Neutral,No,"and offer various sizes.
+
+reference: https://www.honeybaked.com/shop-now/hams
+
+2. nueske's applewood",1
+Omaha Steaks,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,Claude,Yes,2,Neutral,No,"e: https://www.edwardsvaham.com/country-hams/
+
+5. smithfield spiral sliced ham
+well-known for their ",1
+HoneyBaked,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,Perplexity,Yes,1,Neutral,No,"business days[2].
+
+**other notable options:**
+- **honeybaked ham** is a popular national brand, but ",0
+Omaha Steaks,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,Perplexity,Yes,2,Neutral,No,less expensive options from stores like aldi and costco sometimes outperformed honeybaked in taste t,0
+Whole Foods,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Best mail order holiday ham,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,Yes,1,Neutral,No,"retailers such as williams sonoma, hickory farms, harry & david, and magnolia bakery, with options f",0
+Costco,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Gourmet holiday food gifts,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"source: https://www.thecateredaffair.com
+
+3. **honeybaked ham** - famous for their holiday hams, the",1
+Omaha Steaks,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,Yes,2,Neutral,No,"ients.
+   source: https://www.blueapron.com
+
+5. **whole foods market catering** - whole foods provid",1
+Smithfield,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,1
+Smithfield,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,1
+Omaha Steaks,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,Perplexity,Yes,1,Neutral,No,"ainment, to ensure a seamless experience[2].
+
+- **whole foods market** (nationwide, select locations",1
+Smithfield,Holiday dinner catering services,GIFT_CONVENIENCE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Best premium ham brands,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,Best premium ham brands,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Best premium ham brands,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Best premium ham brands,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Best premium ham brands,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Best premium ham brands,COMPETITIVE,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"re are some of the best premium ham brands:
+
+1. **smithfield**: known for its rich flavor and qualit",1
+HoneyBaked,Best premium ham brands,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,Best premium ham brands,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Best premium ham brands,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,Best premium ham brands,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Best premium ham brands,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Best premium ham brands,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Best premium ham brands,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,Best premium ham brands,COMPETITIVE,UNBRANDED,Perplexity,Yes,2,Neutral,No,"d as ultra-premium[1][2].
+- **logan farms** and **omaha steaks** are also recognized for quality, bu",0
+Harry & David,Best premium ham brands,COMPETITIVE,UNBRANDED,Perplexity,Yes,1,Neutral,No,"iews, include **d'artagnan**, **tender belly**, **harry & david**, and **nueske's**. these brands ar",0
+Costco,Best premium ham brands,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Best premium ham brands,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Best premium ham brands,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"some popular holiday ham delivery services:
+
+1. **honeybaked ham**:
+   - **overview**: honeybaked ha",1
+Omaha Steaks,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,ChatGPT,Yes,4,Neutral,No,"ace](https://www.smithfieldmarketplace.com)
+
+4. **omaha steaks**:
+   - **overview**: omaha steaks is",1
+Harry & David,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,ChatGPT,Yes,2,Neutral,No,"honeybaked ham](https://www.honeybaked.com)
+
+2. **harry & david**:
+   - **overview**: known for gour",0
+Costco,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,ChatGPT,Yes,3,Neutral,No,"rry & david](https://www.harryanddavid.com)
+
+3. **smithfield marketplace**:
+   - **overview**: smith",1
+HoneyBaked,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,Claude,Yes,4,Neutral,No,"runs holiday promotions
+
+references:
+https://www.honeybaked.com/shipping-information
+https://www.oma",1
+Omaha Steaks,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,Claude,Yes,1,Neutral,No,"- strong reputation for consistency and quality
+
+omaha steaks:
+- multiple ham varieties including sp",1
+Harry & David,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,Claude,Yes,2,Neutral,No,"known for reliable shipping and customer service
+
+harry & david:
+- premium gourmet ham options
+- spi",0
+Costco,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,Claude,Yes,3,Neutral,No,"cludes additional gourmet foods in gift packages
+
+smithfield:
+- traditional virginia hams
+- both cou",1
+HoneyBaked,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Compare holiday ham delivery services,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,ChatGPT,Yes,2,Neutral,No,"when comparing omaha steaks, honeybaked ham, and harry & david, it's essential to conside",1
+Omaha Steaks,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"when comparing omaha steaks, honeybaked ham, and harry & david, it's essentia",1
+Harry & David,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,ChatGPT,Yes,3,Neutral,No,"when comparing omaha steaks, honeybaked ham, and harry & david, it's essential to consider various f",0
+Costco,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,Claude,Yes,2,Neutral,No,"here's a comparison of omaha steaks, honeybaked ham, and harry & david:
+
+product range:
+- omaha s",1
+Omaha Steaks,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,Claude,Yes,1,Neutral,No,"here's a comparison of omaha steaks, honeybaked ham, and harry & david:
+
+product rang",1
+Harry & David,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,Claude,Yes,3,Neutral,No,"a comparison of omaha steaks, honeybaked ham, and harry & david:
+
+product range:
+- omaha steaks: pri",0
+Costco,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Omaha Steaks vs HoneyBaked Ham vs Harry & David,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,ChatGPT,Yes,1,Neutral,No,2. **online retailers**: websites like amazon and honeybaked ham offer a wide selection of hams that,1
+Omaha Steaks,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,Claude,Yes,1,Neutral,No,"tions and online ordering.
+reference: https://www.honeybaked.com/shop-now
+
+2. omaha steaks - offers ",1
+Omaha Steaks,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,Claude,Yes,2,Neutral,No,"eference: https://www.honeybaked.com/shop-now
+
+2. omaha steaks - offers spiral-sliced honey-glazed h",1
+Harry & David,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,Claude,Yes,3,Neutral,No,"ttps://www.omahasteaks.com/shop/holiday-meals
+
+3. harry & david - known for gourmet food gifts, they",0
+Costco,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,Claude,Yes,5,Neutral,No,"to order from local establishments. for example, whole foods offers holiday ham pre-orders.
+referenc",1
+Smithfield,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,Claude,Yes,4,Neutral,No,"ryanddavid.com/h/gourmet-foods/prepared-meals
+
+4. smithfield - a major ham producer offering various",1
+HoneyBaked,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,3
+Omaha Steaks,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Where do people order holiday hams from?,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,Claude,Yes,2,Neutral,No,"ttps://www.hellofresh.com/pages/holiday-meals
+
+3. omaha steaks
+- traditional holiday meals including",1
+Harry & David,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,Claude,Yes,1,Neutral,No,"ased on recent reviews and customer feedback:
+
+1. harry & david
+- known for premium holiday hams, tu",0
+Costco,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,Perplexity,Yes,1,Neutral,No,"r, green chef, blue apron, hellofresh, home chef, omaha steaks, williams sonoma, freshly, magic kitc",0
+Harry & David,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,Perplexity,Yes,2,Neutral,No,"ms sonoma, freshly, magic kitchen, boston market, whole foods market, amazon fresh, goldbelly, and m",0
+Smithfield,Most popular holiday meal delivery companies,COMPETITIVE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,How to choose the best holiday ham,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,How to choose the best holiday ham,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,How to choose the best holiday ham,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,How to choose the best holiday ham,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,How to choose the best holiday ham,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,How to choose the best holiday ham,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,How to choose the best holiday ham,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,How to choose the best holiday ham,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,How to choose the best holiday ham,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,How to choose the best holiday ham,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,How to choose the best holiday ham,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,How to choose the best holiday ham,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,How to choose the best holiday ham,EXPERTISE,UNBRANDED,Perplexity,Yes,1,Neutral,No,"- taste tests show that expensive brands (e.g., honeybaked) are not always superior; some store bran",0
+Omaha Steaks,How to choose the best holiday ham,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,How to choose the best holiday ham,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,How to choose the best holiday ham,EXPERTISE,UNBRANDED,Perplexity,Yes,2,Neutral,No,"t always superior; some store brands (e.g., aldi, costco) have ranked higher in flavor and appearanc",0
+Whole Foods,How to choose the best holiday ham,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,How to choose the best holiday ham,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,ChatGPT,Yes,1,Neutral,No,"www.foodnetwork.com/how-to/how-to-cook-a-ham
+3. **smithfield** - ""choosing the right ham"": https://w",1
+HoneyBaked,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,Claude,Yes,1,Neutral,No,"ral integrity when glazed
+
+reference: https://www.honeybaked.com/about-our-ham
+
+4. smoking process:
+",1
+Omaha Steaks,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,Claude,Yes,2,Neutral,No,"and genuine smoke flavor
+
+reference: https://www.smithfieldmarketplace.com/about-our-hams
+
+5. moistu",1
+HoneyBaked,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,1
+Omaha Steaks,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,What makes a quality spiral cut ham?,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,1
+HoneyBaked,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Holiday ham preparation tips from chefs,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+HoneyBaked,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,Claude,Yes,1,Neutral,No,"ast 30 minutes of cooking
+
+reference: https://www.smithfieldfoods.com/cook-with-smithfield/cooking-i",1
+HoneyBaked,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,1
+Omaha Steaks,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,How to serve holiday ham like a professional,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,1
+HoneyBaked,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Omaha Steaks,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Harry & David,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Costco,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Whole Foods,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+Smithfield,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,ChatGPT,No,,Neutral,No,,0
+HoneyBaked,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Omaha Steaks,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Harry & David,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Costco,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Whole Foods,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+Smithfield,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,Claude,No,,Neutral,No,,0
+HoneyBaked,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Omaha Steaks,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Harry & David,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Costco,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Whole Foods,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0
+Smithfield,Best honey glazed ham recipes,EXPERTISE,UNBRANDED,Perplexity,No,,Neutral,No,,0

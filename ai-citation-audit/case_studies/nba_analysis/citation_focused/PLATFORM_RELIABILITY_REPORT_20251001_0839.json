@@ -1,0 +1,28 @@
+{
+  "analysis_date": "2025-10-01T08:39:22.186836",
+  "execution_summary": {
+    "total_queries_attempted": 120,
+    "successful_completions": 119,
+    "platform_success_rates": {
+      "chatgpt": 100.0,
+      "claude": 100.0,
+      "perplexity": 100.0,
+      "gemini": 100.0
+    }
+  },
+  "gemini_debugging": {
+    "api_keys_used": 3,
+    "attempts": 30,
+    "successes": 30
+  },
+  "citation_quality": {
+    "total_citations_captured": 831,
+    "citations_by_platform": {
+      "ChatGPT": 258,
+      "Perplexity": 323,
+      "Gemini": 250
+    },
+    "unique_domains": 224,
+    "chatgpt_note": "ChatGPT may have 0-50 citations (this platform rarely cites sources)"
+  }
+}

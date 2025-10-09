@@ -1,0 +1,139 @@
+query,query_type,category,commercial_intent,launch_awareness,engine,john_hardy_mentioned,lovestruck_mentioned,billie_eilish_mentioned,competitors_mentioned,featured_brand,total_citations,john_hardy_citations,lovestruck_citations,competitor_citations,owned_media_citations,earned_media_citations
+What is John Hardy Lovestruck?,branded,collection_specific,brand_knowledge,Yes,ChatGPT,Yes,Yes,No,None,John Hardy,1,1,0,0,1,0
+What is John Hardy Lovestruck?,branded,collection_specific,brand_knowledge,No,Claude,Yes,Yes,No,None,John Hardy,1,1,0,0,1,0
+What is John Hardy Lovestruck?,branded,collection_specific,brand_knowledge,Yes,Perplexity,Yes,Yes,Yes,None,John Hardy,11,7,3,0,4,3
+What is John Hardy Lovestruck?,branded,collection_specific,brand_knowledge,No,Gemini,Yes,Yes,No,None,John Hardy,0,0,0,0,0,0
+John Hardy Lovestruck collection review,branded,collection_specific,research,Yes,ChatGPT,Yes,Yes,No,None,John Hardy,1,1,0,0,1,0
+John Hardy Lovestruck collection review,branded,collection_specific,research,Yes,Claude,Yes,Yes,No,None,John Hardy,1,1,1,0,1,0
+John Hardy Lovestruck collection review,branded,collection_specific,research,Yes,Perplexity,Yes,Yes,Yes,None,John Hardy,5,4,1,0,1,3
+John Hardy Lovestruck collection review,branded,collection_specific,research,No,Gemini,Yes,Yes,No,None,John Hardy,2,1,0,0,1,0
+Where can I buy John Hardy Lovestruck jewelry?,branded,collection_specific,purchase_intent,Yes,ChatGPT,Yes,Yes,No,None,John Hardy,6,1,0,0,1,0
+Where can I buy John Hardy Lovestruck jewelry?,branded,collection_specific,purchase_intent,No,Claude,Yes,Yes,No,None,John Hardy,3,1,0,0,1,0
+Where can I buy John Hardy Lovestruck jewelry?,branded,collection_specific,purchase_intent,No,Perplexity,Yes,Yes,No,None,John Hardy,13,13,5,0,8,5
+Where can I buy John Hardy Lovestruck jewelry?,branded,collection_specific,purchase_intent,No,Gemini,Yes,Yes,No,None,John Hardy,7,7,2,0,1,6
+John Hardy lab-grown diamond collection,branded,collection_specific,research,No,ChatGPT,Yes,No,No,None,John Hardy,1,1,0,0,1,0
+John Hardy lab-grown diamond collection,branded,collection_specific,research,No,Claude,Yes,No,No,None,John Hardy,1,1,0,0,1,0
+John Hardy lab-grown diamond collection,branded,collection_specific,research,No,Gemini,Yes,No,No,None,John Hardy,3,3,0,0,1,2
+John Hardy Billie Eilish jewelry collection,branded,collection_specific,discovery,No,ChatGPT,Yes,No,Yes,None,John Hardy,4,1,0,0,1,0
+John Hardy Billie Eilish jewelry collection,branded,collection_specific,discovery,No,Claude,Yes,No,Yes,None,John Hardy,3,1,0,0,1,0
+John Hardy Billie Eilish jewelry collection,branded,collection_specific,discovery,Yes,Perplexity,Yes,Yes,Yes,None,John Hardy,8,8,2,0,4,4
+John Hardy Billie Eilish jewelry collection,branded,collection_specific,discovery,No,Gemini,Yes,No,Yes,None,John Hardy,3,3,0,0,1,2
+John Hardy proprietary diamond cuts,branded,collection_specific,research,No,ChatGPT,Yes,No,No,None,John Hardy,1,1,0,0,1,0
+John Hardy proprietary diamond cuts,branded,collection_specific,research,No,Claude,Yes,No,No,None,John Hardy,1,1,0,0,1,0
+John Hardy proprietary diamond cuts,branded,collection_specific,research,Yes,Perplexity,Yes,Yes,Yes,None,John Hardy,8,8,6,0,6,2
+John Hardy proprietary diamond cuts,branded,collection_specific,research,No,Gemini,Yes,No,No,None,John Hardy,2,0,0,0,0,0
+Billie Eilish jewelry collaboration,celebrity,celebrity_partnership,discovery,No,ChatGPT,No,No,Yes,None,None,4,0,0,0,0,0
+Billie Eilish jewelry collaboration,celebrity,celebrity_partnership,discovery,No,Claude,No,No,Yes,Brilliant Earth,Brilliant Earth,2,0,0,2,0,0
+Billie Eilish jewelry collaboration,celebrity,celebrity_partnership,discovery,Yes,Perplexity,Yes,Yes,Yes,None,John Hardy,7,4,1,0,1,3
+Billie Eilish jewelry collaboration,celebrity,celebrity_partnership,discovery,No,Gemini,No,No,Yes,None,None,3,0,0,0,0,0
+Billie Eilish sustainable jewelry,celebrity,celebrity_partnership,research,No,ChatGPT,No,No,Yes,None,None,3,0,0,0,0,0
+Billie Eilish sustainable jewelry,celebrity,celebrity_partnership,research,No,Claude,No,No,Yes,Mejuri,Mejuri,2,0,0,0,0,0
+Billie Eilish sustainable jewelry,celebrity,celebrity_partnership,research,Yes,Perplexity,Yes,Yes,Yes,None,John Hardy,6,5,1,0,1,4
+Billie Eilish sustainable jewelry,celebrity,celebrity_partnership,research,No,Gemini,No,No,Yes,None,None,1,0,0,0,0,0
+What jewelry does Billie Eilish wear?,celebrity,celebrity_partnership,research,No,ChatGPT,No,No,Yes,None,None,3,0,0,0,0,0
+What jewelry does Billie Eilish wear?,celebrity,celebrity_partnership,research,No,Claude,No,No,Yes,None,None,3,0,0,0,0,0
+What jewelry does Billie Eilish wear?,celebrity,celebrity_partnership,research,No,Perplexity,No,No,Yes,None,None,8,1,0,0,1,0
+What jewelry does Billie Eilish wear?,celebrity,celebrity_partnership,research,No,Gemini,No,No,Yes,None,None,1,0,0,0,0,0
+Finneas O'Connell jewelry collaboration,celebrity,celebrity_partnership,discovery,No,ChatGPT,No,No,Yes,None,None,0,0,0,0,0,0
+Finneas O'Connell jewelry collaboration,celebrity,celebrity_partnership,discovery,No,Claude,No,No,Yes,None,None,1,0,0,0,0,0
+Finneas O'Connell jewelry collaboration,celebrity,celebrity_partnership,discovery,Yes,Perplexity,Yes,Yes,Yes,None,John Hardy,6,6,2,0,1,5
+Finneas O'Connell jewelry collaboration,celebrity,celebrity_partnership,discovery,No,Gemini,No,No,Yes,None,None,0,0,0,0,0,0
+Celebrity lab-grown diamond jewelry,celebrity,celebrity_partnership,discovery,No,ChatGPT,No,No,No,Vrai,Vrai,5,0,0,0,0,0
+Celebrity lab-grown diamond jewelry,celebrity,celebrity_partnership,discovery,No,Claude,No,No,No,None,None,3,0,0,0,0,0
+Celebrity lab-grown diamond jewelry,celebrity,celebrity_partnership,discovery,No,Perplexity,No,No,No,None,None,16,0,0,1,0,0
+Celebrity lab-grown diamond jewelry,celebrity,celebrity_partnership,discovery,No,Gemini,No,No,No,None,None,7,0,0,0,0,0
+Best lab-grown diamond jewelry brands 2025,category,lab_grown,discovery,No,ChatGPT,No,No,No,"Brilliant Earth, Vrai",Brilliant Earth,6,0,0,2,0,0
+Best lab-grown diamond jewelry brands 2025,category,lab_grown,discovery,No,Claude,No,No,No,Brilliant Earth,Brilliant Earth,3,0,0,1,0,0
+Best lab-grown diamond jewelry brands 2025,category,lab_grown,discovery,No,Perplexity,No,No,No,"Brilliant Earth, Vrai",Brilliant Earth,7,0,0,1,0,0
+Best lab-grown diamond jewelry brands 2025,category,lab_grown,discovery,No,Gemini,No,No,No,"Brilliant Earth, Vrai",Vrai,8,0,0,2,0,0
+Sustainable lab-created diamond jewelry,category,lab_grown,research,No,ChatGPT,No,No,No,None,None,5,0,0,0,0,0
+Sustainable lab-created diamond jewelry,category,lab_grown,research,No,Claude,No,No,No,Brilliant Earth,Brilliant Earth,5,0,0,0,0,0
+Sustainable lab-created diamond jewelry,category,lab_grown,research,No,Perplexity,No,No,No,None,None,17,0,0,2,0,0
+Sustainable lab-created diamond jewelry,category,lab_grown,research,No,Gemini,No,No,No,Vrai,Vrai,11,0,0,2,0,0
+Lab-grown diamond rings for everyday wear,category,lab_grown,purchase_intent,No,ChatGPT,No,No,No,Brilliant Earth,Brilliant Earth,5,0,0,1,0,0
+Lab-grown diamond rings for everyday wear,category,lab_grown,purchase_intent,No,Claude,No,No,No,Brilliant Earth,Brilliant Earth,4,0,0,1,0,0
+Lab-grown diamond rings for everyday wear,category,lab_grown,purchase_intent,No,Perplexity,No,No,No,None,None,13,0,0,0,0,0
+Lab-grown diamond rings for everyday wear,category,lab_grown,purchase_intent,No,Gemini,No,No,No,"Brilliant Earth, Vrai",Vrai,12,0,0,2,0,0
+Organic shaped lab-grown diamonds,category,lab_grown,research,No,ChatGPT,No,No,No,None,None,4,0,0,0,0,0
+Organic shaped lab-grown diamonds,category,lab_grown,research,No,Claude,No,No,No,None,None,5,0,0,0,0,0
+Organic shaped lab-grown diamonds,category,lab_grown,research,No,Perplexity,No,No,No,None,None,18,0,0,1,0,0
+Organic shaped lab-grown diamonds,category,lab_grown,research,No,Gemini,No,No,No,Brilliant Earth,Brilliant Earth,7,0,0,1,0,0
+Freeform diamond cuts and shapes,category,lab_grown,research,No,ChatGPT,No,No,No,None,None,3,0,0,0,0,0
+Freeform diamond cuts and shapes,category,lab_grown,research,No,Claude,No,No,No,None,None,4,0,0,0,0,0
+Freeform diamond cuts and shapes,category,lab_grown,research,No,Perplexity,No,No,No,None,None,17,0,0,2,0,0
+Freeform diamond cuts and shapes,category,lab_grown,research,No,Gemini,No,No,No,None,None,0,0,0,0,0,0
+Lab-grown diamonds in reclaimed metals,category,lab_grown,research,No,ChatGPT,No,No,No,Brilliant Earth,Brilliant Earth,5,0,0,1,0,0
+Lab-grown diamonds in reclaimed metals,category,lab_grown,research,No,Claude,No,No,No,"Brilliant Earth, Vrai",Brilliant Earth,5,0,0,1,0,0
+Lab-grown diamonds in reclaimed metals,category,lab_grown,research,No,Perplexity,No,No,No,None,None,14,0,0,0,0,0
+Lab-grown diamonds in reclaimed metals,category,lab_grown,research,No,Gemini,No,No,No,"Brilliant Earth, Vrai",Brilliant Earth,8,0,0,2,0,0
+Renewable energy jewelry production,category,lab_grown,research,No,ChatGPT,No,No,No,None,None,5,0,0,0,0,0
+Renewable energy jewelry production,category,lab_grown,research,No,Claude,No,No,No,None,None,4,0,0,0,0,0
+Renewable energy jewelry production,category,lab_grown,research,No,Perplexity,No,No,No,Brilliant Earth,Brilliant Earth,16,0,0,0,0,0
+Renewable energy jewelry production,category,lab_grown,research,No,Gemini,No,No,No,"Brilliant Earth, Vrai",Brilliant Earth,6,0,0,3,0,0
+Lab-grown vs natural diamond jewelry brands,category,lab_grown,comparison,No,ChatGPT,No,No,No,"Brilliant Earth, Vrai",Brilliant Earth,10,0,0,2,0,0
+Lab-grown vs natural diamond jewelry brands,category,lab_grown,comparison,No,Claude,No,No,No,"Brilliant Earth, Vrai",Brilliant Earth,1,0,0,0,0,0
+Lab-grown vs natural diamond jewelry brands,category,lab_grown,comparison,No,Gemini,No,No,No,"Brilliant Earth, Vrai",Vrai,13,0,0,2,0,0
+Most sustainable jewelry brands 2025,category,sustainability,discovery,No,ChatGPT,No,No,No,"Brilliant Earth, Vrai, Mejuri",Mejuri,0,0,0,0,0,0
+Most sustainable jewelry brands 2025,category,sustainability,discovery,No,Claude,No,No,No,"Brilliant Earth, Mejuri",Brilliant Earth,1,0,0,1,0,0
+Most sustainable jewelry brands 2025,category,sustainability,discovery,No,Perplexity,No,No,No,"Brilliant Earth, Vrai, Mejuri, Aurate",Brilliant Earth,10,0,0,0,0,0
+Most sustainable jewelry brands 2025,category,sustainability,discovery,No,Gemini,No,No,No,"Brilliant Earth, Vrai, Aurate",Vrai,8,0,0,3,0,0
+Ethical diamond jewelry with renewable energy,category,sustainability,research,No,ChatGPT,No,No,No,"Brilliant Earth, Vrai",Brilliant Earth,4,0,0,2,0,0
+Ethical diamond jewelry with renewable energy,category,sustainability,research,No,Claude,No,No,No,Brilliant Earth,Brilliant Earth,1,0,0,0,0,0
+Ethical diamond jewelry with renewable energy,category,sustainability,research,No,Perplexity,No,No,No,Brilliant Earth,Brilliant Earth,17,0,0,2,0,0
+Ethical diamond jewelry with renewable energy,category,sustainability,research,No,Gemini,No,No,No,"Brilliant Earth, Vrai",Vrai,10,0,0,2,0,0
+Recycled gold jewelry with lab-grown diamonds,category,sustainability,research,No,ChatGPT,No,No,No,"Brilliant Earth, Vrai",Brilliant Earth,5,0,0,2,0,0
+Recycled gold jewelry with lab-grown diamonds,category,sustainability,research,No,Claude,No,No,No,Brilliant Earth,Brilliant Earth,2,0,0,1,0,0
+Recycled gold jewelry with lab-grown diamonds,category,sustainability,research,No,Perplexity,No,No,No,None,None,12,0,0,0,0,0
+Recycled gold jewelry with lab-grown diamonds,category,sustainability,research,No,Gemini,No,No,No,"Brilliant Earth, Vrai",Vrai,11,0,0,2,0,0
+Climate-conscious jewelry brands,category,sustainability,research,No,ChatGPT,No,No,No,"Brilliant Earth, Vrai, Mejuri",Mejuri,6,0,0,3,0,0
+Climate-conscious jewelry brands,category,sustainability,research,No,Claude,Yes,No,No,"Brilliant Earth, Mejuri, Aurate",Brilliant Earth,1,0,0,1,0,0
+Climate-conscious jewelry brands,category,sustainability,research,No,Perplexity,No,No,No,Aurate,Aurate,13,0,0,1,0,0
+Climate-conscious jewelry brands,category,sustainability,research,No,Gemini,No,No,No,"Vrai, Mejuri, Aurate",Mejuri,8,0,0,3,0,0
+Zero-waste jewelry production,category,sustainability,research,No,ChatGPT,No,No,No,None,None,5,0,0,0,0,0
+Zero-waste jewelry production,category,sustainability,research,No,Claude,No,No,No,None,None,2,0,0,0,0,0
+Zero-waste jewelry production,category,sustainability,research,No,Perplexity,No,No,No,None,None,18,0,0,0,0,0
+Zero-waste jewelry production,category,sustainability,research,No,Gemini,No,No,No,"Vrai, Mejuri, Aurate",Vrai,17,0,0,3,0,0
+Jewelry brands supporting climate initiatives,category,sustainability,research,No,ChatGPT,No,No,No,Brilliant Earth,Brilliant Earth,6,0,0,1,0,0
+Jewelry brands supporting climate initiatives,category,sustainability,research,No,Claude,Yes,No,No,Brilliant Earth,John Hardy,2,0,0,0,0,0
+Jewelry brands supporting climate initiatives,category,sustainability,research,No,Perplexity,No,No,No,"Brilliant Earth, Mejuri",Brilliant Earth,14,0,0,0,0,0
+Jewelry brands supporting climate initiatives,category,sustainability,research,No,Gemini,No,No,No,"Brilliant Earth, Vrai, Mejuri",Vrai,10,0,0,3,0,0
+Sustainable luxury jewelry for Gen Z,category,sustainability,discovery,No,ChatGPT,No,No,No,None,None,5,0,0,0,0,0
+Sustainable luxury jewelry for Gen Z,category,sustainability,discovery,No,Claude,No,No,No,None,None,4,0,0,0,0,0
+Sustainable luxury jewelry for Gen Z,category,sustainability,discovery,No,Perplexity,No,No,No,"Brilliant Earth, Mejuri",Mejuri,16,0,0,1,0,0
+Sustainable luxury jewelry for Gen Z,category,sustainability,discovery,No,Gemini,No,No,No,Vrai,Vrai,10,0,0,1,0,0
+Pebble-shaped diamond jewelry,product,product_discovery,discovery,No,ChatGPT,No,No,No,David Yurman,David Yurman,5,0,0,1,0,0
+Pebble-shaped diamond jewelry,product,product_discovery,discovery,No,Claude,No,No,No,None,None,0,0,0,0,0,0
+Pebble-shaped diamond jewelry,product,product_discovery,discovery,No,Perplexity,No,No,No,None,None,15,0,0,0,0,0
+Pebble-shaped diamond jewelry,product,product_discovery,discovery,No,Gemini,No,No,No,None,None,7,0,0,0,0,0
+Handmade lab-grown diamond jewelry,product,product_discovery,research,No,ChatGPT,No,No,No,"Brilliant Earth, Vrai",Brilliant Earth,5,0,0,2,0,0
+Handmade lab-grown diamond jewelry,product,product_discovery,research,No,Claude,No,No,No,None,None,3,0,0,0,0,0
+Handmade lab-grown diamond jewelry,product,product_discovery,research,No,Perplexity,No,No,No,None,None,8,0,0,0,0,0
+Handmade lab-grown diamond jewelry,product,product_discovery,research,No,Gemini,No,No,No,Vrai,Vrai,10,0,0,1,0,0
+Everyday diamond jewelry for stacking,product,product_discovery,purchase_intent,No,ChatGPT,No,No,No,Mejuri,Mejuri,5,0,0,1,0,0
+Everyday diamond jewelry for stacking,product,product_discovery,purchase_intent,No,Claude,No,No,No,Mejuri,Mejuri,2,0,0,0,0,0
+Everyday diamond jewelry for stacking,product,product_discovery,purchase_intent,No,Perplexity,No,No,No,None,None,11,0,0,1,0,0
+Everyday diamond jewelry for stacking,product,product_discovery,purchase_intent,No,Gemini,No,No,No,"Brilliant Earth, Mejuri, Aurate",Mejuri,10,0,0,5,0,0
+Modern diamond ear cuffs,product,product_discovery,discovery,No,ChatGPT,No,No,No,None,None,5,0,0,0,0,0
+Modern diamond ear cuffs,product,product_discovery,discovery,No,Claude,No,No,No,Mejuri,Mejuri,1,0,0,1,0,0
+Modern diamond ear cuffs,product,product_discovery,discovery,No,Perplexity,No,No,No,None,None,10,0,0,1,0,0
+Modern diamond ear cuffs,product,product_discovery,discovery,No,Gemini,No,No,No,"Mejuri, Aurate",Mejuri,18,0,0,2,0,0
+Surf chain necklace with diamonds,product,product_discovery,discovery,No,ChatGPT,No,No,No,David Yurman,David Yurman,5,0,0,1,0,0
+Surf chain necklace with diamonds,product,product_discovery,discovery,No,Claude,No,No,No,David Yurman,David Yurman,1,0,0,1,0,0
+Surf chain necklace with diamonds,product,product_discovery,discovery,No,Perplexity,Yes,No,No,None,John Hardy,12,6,0,0,1,5
+Surf chain necklace with diamonds,product,product_discovery,discovery,No,Gemini,No,No,No,None,None,1,0,0,0,0,0
+John Hardy vs Brilliant Earth lab-grown diamonds,competitive,competitive,comparison,No,ChatGPT,Yes,No,No,Brilliant Earth,John Hardy,3,1,0,2,1,0
+John Hardy vs Brilliant Earth lab-grown diamonds,competitive,competitive,comparison,No,Claude,Yes,No,No,Brilliant Earth,John Hardy,3,1,0,1,1,0
+John Hardy vs Brilliant Earth lab-grown diamonds,competitive,competitive,comparison,No,Perplexity,Yes,Yes,No,Brilliant Earth,John Hardy,12,8,4,3,7,1
+John Hardy vs Brilliant Earth lab-grown diamonds,competitive,competitive,comparison,No,Gemini,Yes,No,No,Brilliant Earth,John Hardy,5,1,0,1,1,0
+Vrai vs John Hardy sustainable jewelry,competitive,competitive,comparison,No,ChatGPT,Yes,No,No,Vrai,Vrai,2,1,0,1,1,0
+Vrai vs John Hardy sustainable jewelry,competitive,competitive,comparison,No,Claude,Yes,No,No,Vrai,Vrai,1,0,0,1,0,0
+Vrai vs John Hardy sustainable jewelry,competitive,competitive,comparison,No,Perplexity,Yes,No,No,Vrai,Vrai,18,3,0,10,1,2
+Vrai vs John Hardy sustainable jewelry,competitive,competitive,comparison,No,Gemini,Yes,No,No,Vrai,Vrai,6,3,0,3,3,0
+Alternative to Brilliant Earth engagement rings,competitive,competitive,discovery,No,ChatGPT,No,No,No,"Brilliant Earth, Vrai",Brilliant Earth,7,0,0,2,0,0
+Alternative to Brilliant Earth engagement rings,competitive,competitive,discovery,No,Claude,No,No,No,"Brilliant Earth, Mejuri",Brilliant Earth,2,0,0,0,0,0
+Alternative to Brilliant Earth engagement rings,competitive,competitive,discovery,No,Perplexity,No,No,No,"Brilliant Earth, Vrai, Mejuri",Brilliant Earth,8,0,0,6,0,0
+Alternative to Brilliant Earth engagement rings,competitive,competitive,discovery,No,Gemini,No,No,No,"Brilliant Earth, Vrai",Brilliant Earth,11,0,0,1,0,0
+Lab-grown diamond jewelry besides Vrai,competitive,competitive,discovery,No,ChatGPT,No,No,No,"Brilliant Earth, Vrai",Vrai,7,0,0,1,0,0
+Lab-grown diamond jewelry besides Vrai,competitive,competitive,discovery,No,Claude,No,No,No,"Brilliant Earth, Vrai",Brilliant Earth,5,0,0,2,0,0
+Lab-grown diamond jewelry besides Vrai,competitive,competitive,discovery,No,Perplexity,No,No,No,"Brilliant Earth, Vrai, Aurate",Vrai,11,0,0,1,0,0
+Lab-grown diamond jewelry besides Vrai,competitive,competitive,discovery,No,Gemini,No,No,No,"Brilliant Earth, Vrai",Vrai,8,0,0,1,0,0

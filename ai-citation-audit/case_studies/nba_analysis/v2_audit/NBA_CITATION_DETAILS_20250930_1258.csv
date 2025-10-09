@@ -1,0 +1,713 @@
+engine,query,query_type,citation_url,domain,domain_classification,nba_mentioned_in_source,nfl_mentioned_in_source,mlb_mentioned_in_source,nhl_mentioned_in_source,content_type,primary_league_focus
+chatgpt,Tell me about the NBA,branded,https://www.nba.com/history,www.nba.com,league_official,Yes,No,No,No,news_article,NBA
+chatgpt,Tell me about the NBA,branded,https://www.nba.com/schedule,www.nba.com,league_official,Yes,No,No,No,schedule,NBA
+chatgpt,Tell me about the NBA,branded,https://www.nba.com/awards,www.nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Tell me about the NBA,branded,https://www.nba.com/global,www.nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Tell me about the NBA,branded,https://www.nba.com/players,www.nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Tell me about the NBA,branded,https://www.forbes.com/sites/mikeozanian/2021/04/12/nba-team-valuations-2021-the-new-york-knicks-are-the-most-valuable-team-in-the-league-at-55-billion/,www.forbes.com,business_media,Yes,No,No,No,company_page,NBA
+chatgpt,Tell me about the NBA,branded,https://www.nba.com,www.nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Tell me about the NBA,branded,https://NBA.com,nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Tell me about the NBA,branded,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Tell me about the NBA,branded,https://forbes.com,forbes.com,business_media,No,No,No,No,other,None
+claude,Tell me about the NBA,branded,https://www.nba.com/history,www.nba.com,league_official,Yes,No,No,No,news_article,NBA
+claude,Tell me about the NBA,branded,https://www.nba.com/teams,www.nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Tell me about the NBA,branded,https://www.basketball-reference.com/,www.basketball-reference.com,other,No,No,No,No,other,None
+claude,Tell me about the NBA,branded,https://www.forbes.com/nba-valuations/,www.forbes.com,business_media,Yes,No,No,No,other,NBA
+claude,Tell me about the NBA,branded,https://www.sportsbusinessjournal.com/,www.sportsbusinessjournal.com,other,No,No,No,No,other,None
+claude,Tell me about the NBA,branded,https://nbpa.com/,nbpa.com,other,No,No,No,No,other,None
+claude,Tell me about the NBA,branded,https://pr.nba.com/,pr.nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Tell me about the NBA,branded,https://www.basketball-reference.com/leaders/,www.basketball-reference.com,other,No,No,No,No,other,None
+claude,Tell me about the NBA,branded,https://gleague.nba.com/,gleague.nba.com,league_official,Yes,No,No,No,company_page,NBA
+claude,Tell me about the NBA,branded,https://www.nba.com/rules,www.nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Tell me about the NBA,branded,https://www.nba.com/stats,www.nba.com,league_official,Yes,No,No,No,statistics,NBA
+claude,Tell me about the NBA,branded,https://www.basketball-reference.com,www.basketball-reference.com,other,No,No,No,No,other,None
+claude,Tell me about the NBA,branded,https://www.espn.com/nba/,www.espn.com,sports_media,Yes,No,No,No,other,NBA
+claude,Tell me about the NBA,branded,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Tell me about the NBA,branded,https://NBA.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Tell me about the NBA,branded,https://basketball-reference.com,basketball-reference.com,other,No,No,No,No,other,None
+claude,Tell me about the NBA,branded,https://forbes.com,forbes.com,business_media,No,No,No,No,other,None
+claude,Tell me about the NBA,branded,https://sportsbusinessjournal.com,sportsbusinessjournal.com,other,No,No,No,No,other,None
+claude,Tell me about the NBA,branded,https://nbpa.com,nbpa.com,other,No,No,No,No,other,None
+claude,Tell me about the NBA,branded,https://espn.com,espn.com,sports_media,No,No,No,No,other,None
+claude,Tell me about the NBA,branded,https://www.forbes.com,www.forbes.com,business_media,No,No,No,No,other,None
+perplexity,Tell me about the NBA,branded,https://en.wikipedia.org/wiki/National_Basketball_Association,en.wikipedia.org,other,No,No,No,No,other,None
+perplexity,Tell me about the NBA,branded,https://www.superprof.com.au/blog/nba-beginners-guide-for-dummies/,www.superprof.com.au,other,Yes,No,No,No,how_to,NBA
+perplexity,Tell me about the NBA,branded,https://nbpa.com/about,nbpa.com,other,No,No,No,No,company_page,None
+perplexity,Tell me about the NBA,branded,https://youtini.com/article/the-slam-dunk-beginners-guide-everything-you-need-to-know-about-the-nba,youtini.com,other,Yes,No,No,No,news_article,NBA
+perplexity,Tell me about the NBA,branded,https://www.britannica.com/topic/National-Basketball-Association,www.britannica.com,other,No,No,No,No,other,None
+perplexity,Tell me about the NBA,branded,https://www.espn.com/nba/,www.espn.com,sports_media,Yes,No,No,No,other,NBA
+perplexity,Tell me about the NBA,branded,https://careers.nba.com/history/,careers.nba.com,league_official,Yes,No,No,No,news_article,NBA
+perplexity,Tell me about the NBA,branded,https://www.cbssports.com/nba/,www.cbssports.com,sports_media,Yes,No,No,No,other,NBA
+perplexity,Tell me about the NBA,branded,https://www.espn.com/nba/teams,www.espn.com,sports_media,Yes,No,No,No,other,NBA
+perplexity,Tell me about the NBA,branded,https://www.youtube.com/nba,www.youtube.com,social_media,Yes,No,No,No,video,NBA
+perplexity,Tell me about the NBA,branded,https://join1440.com/t/nba,join1440.com,other,Yes,No,No,No,other,NBA
+perplexity,Tell me about the NBA,branded,https://www.statista.com/topics/967/national-basketball-association/,www.statista.com,authority,No,No,No,No,other,None
+gemini,Tell me about the NBA,branded,https://www.nba.com/history/,www.nba.com,league_official,Yes,No,No,No,news_article,NBA
+gemini,Tell me about the NBA,branded,https://www.nba.com/teams,www.nba.com,league_official,Yes,No,No,No,other,NBA
+gemini,Tell me about the NBA,branded,https://www.nba.com/news/how-the-nba-playoffs-work,www.nba.com,league_official,Yes,No,No,No,news_article,NBA
+gemini,Tell me about the NBA,branded,https://www.nba.com/draft,www.nba.com,league_official,Yes,No,No,No,other,NBA
+gemini,Tell me about the NBA,branded,https://www.nba.com/about,www.nba.com,league_official,Yes,No,No,No,company_page,NBA
+claude,What makes the NBA different from other professional sports leagues?,branded,https://nbpa.com/cba,nbpa.com,other,No,No,No,No,other,None
+claude,What makes the NBA different from other professional sports leagues?,branded,https://www.nba.com/stats/articles/nba-rosters-feature-120-international-players-from-40-countries,www.nba.com,league_official,Yes,No,No,No,statistics,NBA
+claude,What makes the NBA different from other professional sports leagues?,branded,https://jr.nba.com/,jr.nba.com,league_official,Yes,No,No,No,other,NBA
+claude,What makes the NBA different from other professional sports leagues?,branded,https://www.theringer.com/nba,www.theringer.com,other,Yes,No,No,No,other,NBA
+claude,What makes the NBA different from other professional sports leagues?,branded,https://www.nba.com/news/nba-rule-book,www.nba.com,league_official,Yes,No,No,No,news_article,NBA
+claude,What makes the NBA different from other professional sports leagues?,branded,https://www.sporttechie.com/nba-innovation,www.sporttechie.com,other,Yes,No,No,No,other,NBA
+claude,What makes the NBA different from other professional sports leagues?,branded,https://www.nba.com/draft/rules,www.nba.com,league_official,Yes,No,No,No,other,NBA
+claude,What makes the NBA different from other professional sports leagues?,branded,https://nbpa.com/,nbpa.com,other,No,No,No,No,other,None
+claude,What makes the NBA different from other professional sports leagues?,branded,https://journals.sagepub.com/home/jse,journals.sagepub.com,other,No,No,No,No,other,None
+claude,What makes the NBA different from other professional sports leagues?,branded,https://hbr.org/,hbr.org,other,No,No,No,No,other,None
+claude,What makes the NBA different from other professional sports leagues?,branded,https://www2.deloitte.com/sports,www2.deloitte.com,other,No,No,No,No,other,None
+claude,What makes the NBA different from other professional sports leagues?,branded,https://www.pwc.com/sports,www.pwc.com,other,No,No,No,No,other,None
+claude,What makes the NBA different from other professional sports leagues?,branded,https://nbpa.com,nbpa.com,other,No,No,No,No,other,None
+claude,What makes the NBA different from other professional sports leagues?,branded,https://NBA.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,What makes the NBA different from other professional sports leagues?,branded,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,What makes the NBA different from other professional sports leagues?,branded,https://theringer.com,theringer.com,other,No,No,No,No,other,None
+claude,What makes the NBA different from other professional sports leagues?,branded,https://sporttechie.com,sporttechie.com,other,No,No,No,No,other,None
+claude,What makes the NBA different from other professional sports leagues?,branded,https://sagepub.com,sagepub.com,other,No,No,No,No,other,None
+claude,What makes the NBA different from other professional sports leagues?,branded,https://hbr.org,hbr.org,other,No,No,No,No,other,None
+claude,What makes the NBA different from other professional sports leagues?,branded,https://deloitte.com,deloitte.com,other,No,No,No,No,other,None
+claude,What makes the NBA different from other professional sports leagues?,branded,https://pwc.com,pwc.com,other,No,No,No,No,other,None
+claude,What makes the NBA different from other professional sports leagues?,branded,https://www.forbes.com,www.forbes.com,business_media,No,No,No,No,other,None
+perplexity,What makes the NBA different from other professional sports leagues?,branded,https://en.wikipedia.org/wiki/National_Basketball_Association,en.wikipedia.org,other,No,No,No,No,other,None
+perplexity,What makes the NBA different from other professional sports leagues?,branded,https://lastwordonsports.com/basketball/2019/07/29/what-separates-the-nba-from-other-professional-sports-leagues/,lastwordonsports.com,other,Yes,No,No,No,company_page,NBA
+perplexity,What makes the NBA different from other professional sports leagues?,branded,https://www.yellowbrick.co/blog/sports/nba-vs-nfl-a-comparative-analysis-of-sports-leagues,www.yellowbrick.co,other,Yes,Yes,No,No,opinion,NBA
+perplexity,What makes the NBA different from other professional sports leagues?,branded,http://www.82games.com/balance.htm,www.82games.com,other,No,No,No,No,schedule,None
+perplexity,What makes the NBA different from other professional sports leagues?,branded,https://en.wikipedia.org/wiki/Major_professional_sports_leagues_in_the_United_States_and_Canada,en.wikipedia.org,other,No,No,No,No,company_page,None
+perplexity,What makes the NBA different from other professional sports leagues?,branded,https://opensportssciencesjournal.com/VOLUME/9/PAGE/81/FULLTEXT/,opensportssciencesjournal.com,other,No,No,No,No,other,None
+perplexity,What makes the NBA different from other professional sports leagues?,branded,https://careers.nba.com/our-leagues/,careers.nba.com,league_official,Yes,No,No,No,company_page,NBA
+perplexity,What makes the NBA different from other professional sports leagues?,branded,https://www.stndigital.com/blog/nba-nhl-nfl-mlb-growing-internationally/,www.stndigital.com,other,Yes,Yes,Yes,Yes,other,NBA
+perplexity,What makes the NBA different from other professional sports leagues?,branded,https://rcxsports.com/nba-and-wnba-to-launch-national-network-of-youth-basketball-leagues/,rcxsports.com,other,Yes,No,No,No,company_page,NBA
+perplexity,What makes the NBA different from other professional sports leagues?,branded,https://www.britannica.com/topic/National-Basketball-Association,www.britannica.com,other,No,No,No,No,other,None
+gemini,What makes the NBA different from other professional sports leagues?,branded,https://pr.nba.com/international-growth/,pr.nba.com,league_official,Yes,No,No,No,other,NBA
+gemini,What makes the NBA different from other professional sports leagues?,branded,https://www.statista.com/statistics/1233900/nba-global-reach/,www.statista.com,authority,Yes,No,No,No,statistics,NBA
+gemini,What makes the NBA different from other professional sports leagues?,branded,https://www.theringer.com/nba/2021/8/10/22617637/nba-player-empowerment-era-lebron-james-kevin-durant,www.theringer.com,other,Yes,No,No,No,other,NBA
+gemini,What makes the NBA different from other professional sports leagues?,branded,https://www.forbes.com/sites/brettknight/2023/10/24/the-worlds-highest-paid-nba-players-2023/,www.forbes.com,business_media,Yes,No,No,No,other,NBA
+gemini,What makes the NBA different from other professional sports leagues?,branded,https://www.gq.com/story/nba-fashion-feature-2023,www.gq.com,other,Yes,No,No,No,news_article,NBA
+gemini,What makes the NBA different from other professional sports leagues?,branded,https://www.vogue.com/article/nba-tunnel-walk-fashion-runway-style-moments,www.vogue.com,other,Yes,No,No,No,news_article,NBA
+gemini,What makes the NBA different from other professional sports leagues?,branded,https://www.nytimes.com/2020/08/28/sports/basketball/nba-social-justice.html,www.nytimes.com,news_media,Yes,No,No,No,other,NBA
+gemini,What makes the NBA different from other professional sports leagues?,branded,https://www.nba.com/community/social-justice-coalition,www.nba.com,league_official,Yes,No,No,No,other,NBA
+gemini,What makes the NBA different from other professional sports leagues?,branded,https://fivethirtyeight.com/features/the-nbas-scoring-explosion-is-real-heres-why/,fivethirtyeight.com,other,Yes,No,No,No,other,NBA
+gemini,What makes the NBA different from other professional sports leagues?,branded,https://www.espn.com/nba/story/_/id/28280031/the-nba-3-point-revolution-numbers,www.espn.com,sports_media,Yes,No,No,No,news_article,NBA
+chatgpt,NBA game schedule tonight,branded,https://www.nba.com/schedule,www.nba.com,league_official,Yes,No,No,No,schedule,NBA
+chatgpt,NBA game schedule tonight,branded,https://www.espn.com/nba/schedule,www.espn.com,sports_media,Yes,No,No,No,schedule,NBA
+chatgpt,NBA game schedule tonight,branded,https://www.cbssports.com/nba/schedule/,www.cbssports.com,sports_media,Yes,No,No,No,schedule,NBA
+chatgpt,NBA game schedule tonight,branded,https://bleacherreport.com/nba,bleacherreport.com,sports_media,Yes,No,No,No,other,NBA
+chatgpt,NBA game schedule tonight,branded,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,NBA game schedule tonight,branded,https://espn.com,espn.com,sports_media,No,No,No,No,other,None
+chatgpt,NBA game schedule tonight,branded,https://cbssports.com,cbssports.com,sports_media,No,No,No,No,other,None
+chatgpt,NBA game schedule tonight,branded,https://bleacherreport.com,bleacherreport.com,sports_media,No,No,No,No,other,None
+claude,NBA game schedule tonight,branded,https://www.nba.com/schedule,www.nba.com,league_official,Yes,No,No,No,schedule,NBA
+claude,NBA game schedule tonight,branded,https://www.nba.com,www.nba.com,league_official,Yes,No,No,No,other,NBA
+claude,NBA game schedule tonight,branded,https://www.espn.com/nba/schedule,www.espn.com,sports_media,Yes,No,No,No,schedule,NBA
+claude,NBA game schedule tonight,branded,https://www.basketball-reference.com,www.basketball-reference.com,other,No,No,No,No,other,None
+claude,NBA game schedule tonight,branded,https://app.nba.com,app.nba.com,league_official,Yes,No,No,No,other,NBA
+claude,NBA game schedule tonight,branded,https://www.espn.com/nba/,www.espn.com,sports_media,Yes,No,No,No,other,NBA
+claude,NBA game schedule tonight,branded,https://NBA.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,NBA game schedule tonight,branded,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,NBA game schedule tonight,branded,https://espn.com,espn.com,sports_media,No,No,No,No,other,None
+claude,NBA game schedule tonight,branded,https://basketball-reference.com,basketball-reference.com,other,No,No,No,No,other,None
+perplexity,NBA game schedule tonight,branded,https://www.basket-mag.com/nba-schedule-2025-2026/,www.basket-mag.com,other,Yes,No,No,No,schedule,NBA
+perplexity,NBA game schedule tonight,branded,https://www.espn.co.uk/nba/fixtures,www.espn.co.uk,other,Yes,No,No,No,other,NBA
+perplexity,NBA game schedule tonight,branded,https://www.cbssports.com/nba/schedule/,www.cbssports.com,sports_media,Yes,No,No,No,schedule,NBA
+perplexity,NBA game schedule tonight,branded,https://hashtagbasketball.com/advanced-nba-schedule-grid,hashtagbasketball.com,other,Yes,No,No,No,schedule,NBA
+perplexity,NBA game schedule tonight,branded,https://www.espn.com/nba/schedule,www.espn.com,sports_media,Yes,No,No,No,schedule,NBA
+perplexity,NBA game schedule tonight,branded,https://nbatickets.us,nbatickets.us,other,Yes,No,No,No,other,NBA
+perplexity,NBA game schedule tonight,branded,https://en.wikipedia.org/wiki/2025%E2%80%9326_NBA_season,en.wikipedia.org,other,Yes,No,No,No,other,NBA
+perplexity,NBA game schedule tonight,branded,https://www.espn.com/nba/story/_/id/45960087/nba-full-schedule-2025-2026-games-watch-faq,www.espn.com,sports_media,Yes,No,No,No,schedule,NBA
+perplexity,NBA game schedule tonight,branded,https://www.sportsmediawatch.com/tv-schedules/nba-tv-schedule/,www.sportsmediawatch.com,other,Yes,No,No,No,schedule,NBA
+perplexity,NBA game schedule tonight,branded,https://www.nba.com/,www.nba.com,league_official,Yes,No,No,No,other,NBA
+gemini,NBA game schedule tonight,branded,https://www.espn.com/nba/schedule,www.espn.com,sports_media,Yes,No,No,No,schedule,NBA
+gemini,NBA game schedule tonight,branded,https://www.nba.com/schedule,www.nba.com,league_official,Yes,No,No,No,schedule,NBA
+chatgpt,How can I watch NBA games?,branded,https://www.nba.com/leaguepass,www.nba.com,league_official,Yes,No,No,No,company_page,NBA
+chatgpt,How can I watch NBA games?,branded,https://www.hulu.com/live-tv,www.hulu.com,other,No,No,No,No,other,None
+chatgpt,How can I watch NBA games?,branded,https://tv.youtube.com,tv.youtube.com,social_media,No,No,No,No,video,None
+chatgpt,How can I watch NBA games?,branded,https://www.sling.com,www.sling.com,other,No,No,No,No,other,None
+chatgpt,How can I watch NBA games?,branded,https://www.nba.com/app,www.nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,How can I watch NBA games?,branded,https://www.youtube.com/user/NBA,www.youtube.com,social_media,Yes,No,No,No,video,NBA
+chatgpt,How can I watch NBA games?,branded,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,How can I watch NBA games?,branded,https://hulu.com,hulu.com,other,No,No,No,No,other,None
+chatgpt,How can I watch NBA games?,branded,https://youtube.com,youtube.com,social_media,No,No,No,No,video,None
+chatgpt,How can I watch NBA games?,branded,https://sling.com,sling.com,other,No,No,No,No,other,None
+claude,How can I watch NBA games?,branded,https://www.nba.com/watch/league-pass,www.nba.com,league_official,Yes,No,No,No,video,NBA
+claude,How can I watch NBA games?,branded,https://support.watch.nba.com/hc/en-us,support.watch.nba.com,league_official,Yes,No,No,No,video,NBA
+claude,How can I watch NBA games?,branded,https://abc.com,abc.com,other,No,No,No,No,other,None
+claude,How can I watch NBA games?,branded,https://www.espn.com/watch/,www.espn.com,sports_media,No,No,No,No,video,None
+claude,How can I watch NBA games?,branded,https://www.tntdrama.com/sports,www.tntdrama.com,other,No,No,No,No,other,None
+claude,How can I watch NBA games?,branded,https://www.nba.com/watch/nba-tv,www.nba.com,league_official,Yes,No,No,No,video,NBA
+claude,How can I watch NBA games?,branded,https://tv.youtube.com,tv.youtube.com,social_media,No,No,No,No,video,None
+claude,How can I watch NBA games?,branded,https://www.sling.com,www.sling.com,other,No,No,No,No,other,None
+claude,How can I watch NBA games?,branded,https://www.hulu.com/live-tv,www.hulu.com,other,No,No,No,No,other,None
+claude,How can I watch NBA games?,branded,https://www.ballysports.com,www.ballysports.com,other,No,No,No,No,other,None
+claude,How can I watch NBA games?,branded,https://www.nbcsports.com,www.nbcsports.com,sports_media,No,No,No,No,other,None
+claude,How can I watch NBA games?,branded,https://www.youtube.com/nba,www.youtube.com,social_media,Yes,No,No,No,video,NBA
+claude,How can I watch NBA games?,branded,https://www.sportsmediawatch.com,www.sportsmediawatch.com,other,No,No,No,No,video,None
+claude,How can I watch NBA games?,branded,https://www.nba.com/watch,www.nba.com,league_official,Yes,No,No,No,video,NBA
+claude,How can I watch NBA games?,branded,https://www.nba.com,www.nba.com,league_official,Yes,No,No,No,other,NBA
+claude,How can I watch NBA games?,branded,https://support.watch.nba.com,support.watch.nba.com,league_official,Yes,No,No,No,video,NBA
+claude,How can I watch NBA games?,branded,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,How can I watch NBA games?,branded,https://NBA.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,How can I watch NBA games?,branded,https://espn.com,espn.com,sports_media,No,No,No,No,other,None
+claude,How can I watch NBA games?,branded,https://tntdrama.com,tntdrama.com,other,No,No,No,No,other,None
+claude,How can I watch NBA games?,branded,https://youtube.com,youtube.com,social_media,No,No,No,No,video,None
+claude,How can I watch NBA games?,branded,https://sling.com,sling.com,other,No,No,No,No,other,None
+claude,How can I watch NBA games?,branded,https://hulu.com,hulu.com,other,No,No,No,No,other,None
+claude,How can I watch NBA games?,branded,https://ballysports.com,ballysports.com,other,No,No,No,No,other,None
+claude,How can I watch NBA games?,branded,https://nbcsports.com,nbcsports.com,sports_media,No,No,No,No,other,None
+claude,How can I watch NBA games?,branded,https://sportsmediawatch.com,sportsmediawatch.com,other,No,No,No,No,video,None
+perplexity,How can I watch NBA games?,branded,https://frontofficesports.com/nba-embraces-streaming-adds-75-national-games-to-2025-26-schedule/,frontofficesports.com,other,Yes,No,No,No,schedule,NBA
+perplexity,How can I watch NBA games?,branded,https://www.hulu.com/nba,www.hulu.com,other,Yes,No,No,No,other,NBA
+perplexity,How can I watch NBA games?,branded,https://www.peacocktv.com/sports/nba,www.peacocktv.com,other,Yes,No,No,No,other,NBA
+perplexity,How can I watch NBA games?,branded,https://www.hbomax.com/sports,www.hbomax.com,other,No,No,No,No,other,None
+perplexity,How can I watch NBA games?,branded,https://www.espn.com/where-to-watch/leagues/nba,www.espn.com,sports_media,Yes,No,No,No,video,NBA
+perplexity,How can I watch NBA games?,branded,https://apps.apple.com/us/app/nba-live-games-scores/id484672289,apps.apple.com,other,Yes,No,No,No,schedule,NBA
+perplexity,How can I watch NBA games?,branded,https://www.sportsmediawatch.com/tv-schedules/nba-tv-schedule/,www.sportsmediawatch.com,other,Yes,No,No,No,schedule,NBA
+gemini,How can I watch NBA games?,branded,https://abc.com/,abc.com,other,No,No,No,No,other,None
+gemini,How can I watch NBA games?,branded,https://www.espn.com/nba/,www.espn.com,sports_media,Yes,No,No,No,other,NBA
+gemini,How can I watch NBA games?,branded,https://www.tntdrama.com/nba,www.tntdrama.com,other,Yes,No,No,No,other,NBA
+gemini,How can I watch NBA games?,branded,https://www.nba.com/nba-tv,www.nba.com,league_official,Yes,No,No,No,other,NBA
+gemini,How can I watch NBA games?,branded,https://www.sling.com/,www.sling.com,other,No,No,No,No,other,None
+gemini,How can I watch NBA games?,branded,https://tv.youtube.com/,tv.youtube.com,social_media,No,No,No,No,video,None
+gemini,How can I watch NBA games?,branded,https://www.hulu.com/live-tv,www.hulu.com,other,No,No,No,No,other,None
+gemini,How can I watch NBA games?,branded,https://www.fubo.tv/,www.fubo.tv,other,No,No,No,No,other,None
+gemini,How can I watch NBA games?,branded,https://www.directv.com/stream/,www.directv.com,other,No,No,No,No,other,None
+gemini,How can I watch NBA games?,branded,https://www.nba.com/league-pass,www.nba.com,league_official,Yes,No,No,No,company_page,NBA
+gemini,How can I watch NBA games?,branded,https://www.nba.com/schedule,www.nba.com,league_official,Yes,No,No,No,schedule,NBA
+gemini,How can I watch NBA games?,branded,https://www.espn.com/nba/schedule,www.espn.com,sports_media,Yes,No,No,No,schedule,NBA
+chatgpt,What's the most popular professional sports league in America?,league_agnostic,https://www.nielsen.com/us/en/insights/article/2021/super-bowl-lv-the-most-watched-program-of-the-year/,www.nielsen.com,authority,No,No,No,No,video,None
+chatgpt,What's the most popular professional sports league in America?,league_agnostic,https://theharrispoll.com/wp-content/uploads/2022/09/Harris-Poll-Sports-Survey-2022.pdf,theharrispoll.com,other,No,No,No,No,other,None
+chatgpt,What's the most popular professional sports league in America?,league_agnostic,https://www.statista.com/statistics/193200/average-attendance-at-nfl-games-since-2006/,www.statista.com,authority,No,Yes,No,No,schedule,NFL
+chatgpt,What's the most popular professional sports league in America?,league_agnostic,https://www.forbes.com/sites/kurtbadenhausen/2021/08/10/nfl-revenue-report-the-league-generated-18-billion-in-2021/?sh=5f7f1e4a5e3b,www.forbes.com,business_media,No,Yes,No,No,company_page,NFL
+chatgpt,What's the most popular professional sports league in America?,league_agnostic,https://nielsen.com,nielsen.com,authority,No,No,No,No,other,None
+chatgpt,What's the most popular professional sports league in America?,league_agnostic,https://theharrispoll.com,theharrispoll.com,other,No,No,No,No,other,None
+chatgpt,What's the most popular professional sports league in America?,league_agnostic,https://statista.com,statista.com,authority,No,No,No,No,other,None
+chatgpt,What's the most popular professional sports league in America?,league_agnostic,https://forbes.com,forbes.com,business_media,No,No,No,No,other,None
+claude,What's the most popular professional sports league in America?,league_agnostic,https://www.forbes.com/sites/mikeozanian/2022/02/28/nfl-revenue-2021-22/,www.forbes.com,business_media,No,Yes,No,No,other,NFL
+claude,What's the most popular professional sports league in America?,league_agnostic,https://news.gallup.com/poll/4735/sports.aspx,news.gallup.com,other,No,No,No,No,news_article,None
+claude,What's the most popular professional sports league in America?,league_agnostic,https://morningconsult.com/2023/01/sports-survey/,morningconsult.com,other,No,No,No,No,other,None
+claude,What's the most popular professional sports league in America?,league_agnostic,https://nfl.com,nfl.com,league_official,No,Yes,No,No,other,NFL
+claude,What's the most popular professional sports league in America?,league_agnostic,https://forbes.com,forbes.com,business_media,No,No,No,No,other,None
+claude,What's the most popular professional sports league in America?,league_agnostic,https://gallup.com,gallup.com,other,No,No,No,No,other,None
+claude,What's the most popular professional sports league in America?,league_agnostic,https://espn.com,espn.com,sports_media,No,No,No,No,other,None
+claude,What's the most popular professional sports league in America?,league_agnostic,https://morningconsult.com,morningconsult.com,other,No,No,No,No,other,None
+claude,What's the most popular professional sports league in America?,league_agnostic,https://sportsbusinessjournal.com,sportsbusinessjournal.com,other,No,No,No,No,other,None
+claude,What's the most popular professional sports league in America?,league_agnostic,https://www.forbes.com,www.forbes.com,business_media,No,No,No,No,other,None
+perplexity,What's the most popular professional sports league in America?,league_agnostic,https://www.statista.com/statistics/1074271/sports-leagues-fans/,www.statista.com,authority,No,No,No,No,statistics,None
+perplexity,What's the most popular professional sports league in America?,league_agnostic,https://www.statscore.com/market-research/what-are-the-5-most-popular-sports-in-the-usa/,www.statscore.com,other,No,No,No,No,statistics,None
+perplexity,What's the most popular professional sports league in America?,league_agnostic,https://wegrynenterprises.com/2025/05/01/the-u-s-states-producing-the-most-popular-sports-teams-in-2025/,wegrynenterprises.com,other,No,No,No,No,other,None
+perplexity,What's the most popular professional sports league in America?,league_agnostic,https://en.wikipedia.org/wiki/Sports_in_the_United_States,en.wikipedia.org,other,No,No,No,No,other,None
+perplexity,What's the most popular professional sports league in America?,league_agnostic,https://www.spglobal.com/market-intelligence/en/news-insights/research/state-of-us-sports-viewing-2025,www.spglobal.com,other,No,No,No,No,news_article,None
+perplexity,What's the most popular professional sports league in America?,league_agnostic,https://en.wikipedia.org/wiki/List_of_professional_sports_leagues_by_revenue,en.wikipedia.org,other,No,No,No,No,company_page,None
+perplexity,What's the most popular professional sports league in America?,league_agnostic,https://apsportseditors.org/top-sports-leagues/,apsportseditors.org,other,No,No,No,No,company_page,None
+perplexity,What's the most popular professional sports league in America?,league_agnostic,https://www.statista.com/statistics/1430289/most-watched-sports-leagues-usa/,www.statista.com,authority,No,No,No,No,statistics,None
+perplexity,What's the most popular professional sports league in America?,league_agnostic,https://en.wikipedia.org/wiki/Major_professional_sports_leagues_in_the_United_States_and_Canada,en.wikipedia.org,other,No,No,No,No,company_page,None
+perplexity,What's the most popular professional sports league in America?,league_agnostic,https://www.sportsvalue.com.br/en/the-sports-competitions-with-the-highest-revenues-in-the-world/,www.sportsvalue.com.br,other,No,No,No,No,other,None
+gemini,What's the most popular professional sports league in America?,league_agnostic,https://www.forbes.com/sites/mikeozanian/2023/08/21/the-nfls-most-valuable-teams-2023/,www.forbes.com,business_media,No,Yes,No,No,other,NFL
+gemini,What's the most popular professional sports league in America?,league_agnostic,https://deadline.com/2023/12/nfl-continues-to-dominate-u-s-tv-viewership-with-93-of-top-100-most-watched-telecasts-in-2023-1235682703/,deadline.com,other,No,Yes,No,No,statistics,NFL
+gemini,What's the most popular professional sports league in America?,league_agnostic,https://www.nfl.com/news/super-bowl-lviii-most-watched-program-in-history-with-123-4-million-viewers,www.nfl.com,league_official,No,Yes,No,No,video,NFL
+gemini,What's the most popular professional sports league in America?,league_agnostic,https://news.gallup.com/poll/549504/football-remains-america-favorite-sport.aspx,news.gallup.com,other,No,No,No,No,news_article,None
+claude,Best professional sports to watch,league_agnostic,https://www.fifa.com/fifaplus/en/articles/fifa-world-cup-2022-media-figures-qatar,www.fifa.com,other,No,No,No,No,news_article,None
+claude,Best professional sports to watch,league_agnostic,https://pr.nba.com/2022-23-nba-regular-season-viewership/,pr.nba.com,league_official,Yes,No,No,No,statistics,NBA
+claude,Best professional sports to watch,league_agnostic,https://www.nfl.com/news/super-bowl-lvii-eagles-chiefs-most-watched-television-show-all-time,www.nfl.com,league_official,No,Yes,No,No,video,NFL
+claude,Best professional sports to watch,league_agnostic,https://www.mlb.com/news/mlb-viewership-statistics,www.mlb.com,league_official,No,No,Yes,No,statistics,MLB
+claude,Best professional sports to watch,league_agnostic,https://www.sportsmediawatch.com/,www.sportsmediawatch.com,other,No,No,No,No,video,None
+claude,Best professional sports to watch,league_agnostic,https://www.pwc.com/us/en/industries/tmt/library/sports-outlook-north-america.html,www.pwc.com,other,No,No,No,No,other,None
+claude,Best professional sports to watch,league_agnostic,https://sabr.org/,sabr.org,other,No,No,No,No,other,None
+claude,Best professional sports to watch,league_agnostic,https://www.nfl.com,www.nfl.com,league_official,No,Yes,No,No,other,NFL
+claude,Best professional sports to watch,league_agnostic,https://www.nba.com,www.nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Best professional sports to watch,league_agnostic,https://www.mlb.com,www.mlb.com,league_official,No,No,Yes,No,other,MLB
+claude,Best professional sports to watch,league_agnostic,https://www.fifa.com,www.fifa.com,other,No,No,No,No,other,None
+claude,Best professional sports to watch,league_agnostic,https://fifa.com,fifa.com,other,No,No,No,No,other,None
+claude,Best professional sports to watch,league_agnostic,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Best professional sports to watch,league_agnostic,https://nfl.com,nfl.com,league_official,No,Yes,No,No,other,NFL
+claude,Best professional sports to watch,league_agnostic,https://mlb.com,mlb.com,league_official,No,No,Yes,No,other,MLB
+claude,Best professional sports to watch,league_agnostic,https://sportsmediawatch.com,sportsmediawatch.com,other,No,No,No,No,video,None
+claude,Best professional sports to watch,league_agnostic,https://pwc.com,pwc.com,other,No,No,No,No,other,None
+claude,Best professional sports to watch,league_agnostic,https://sabr.org,sabr.org,other,No,No,No,No,other,None
+perplexity,Best professional sports to watch,league_agnostic,https://wegrynenterprises.com/2025/05/01/the-u-s-states-producing-the-most-popular-sports-teams-in-2025/,wegrynenterprises.com,other,No,No,No,No,other,None
+perplexity,Best professional sports to watch,league_agnostic,https://amberstudent.com/blog/post/most-popular-sports-in-usa,amberstudent.com,other,No,No,No,No,other,None
+perplexity,Best professional sports to watch,league_agnostic,https://www.iworkinsport.com/news/top-20-sports-leagues-the-most-attractive-employers-in-sport-2025,www.iworkinsport.com,other,No,No,No,No,news_article,None
+perplexity,Best professional sports to watch,league_agnostic,https://www.statscore.com/market-research/what-are-the-5-most-popular-sports-in-the-usa/,www.statscore.com,other,No,No,No,No,statistics,None
+perplexity,Best professional sports to watch,league_agnostic,https://www.youtube.com/watch?v=PWOrri8cT04,www.youtube.com,social_media,No,No,No,No,video,None
+perplexity,Best professional sports to watch,league_agnostic,https://www.worldatlas.com/articles/what-are-the-most-popular-sports-in-the-world.html,www.worldatlas.com,other,No,No,No,No,news_article,None
+perplexity,Best professional sports to watch,league_agnostic,https://apsportseditors.org/top-sports-leagues/,apsportseditors.org,other,No,No,No,No,company_page,None
+perplexity,Best professional sports to watch,league_agnostic,https://thetigernews.org/5655/sports/what-is-the-best-sport-to-watch/,thetigernews.org,other,No,No,No,No,video,None
+perplexity,Best professional sports to watch,league_agnostic,https://en.wikipedia.org/wiki/List_of_professional_sports_leagues_by_revenue,en.wikipedia.org,other,No,No,No,No,company_page,None
+perplexity,Best professional sports to watch,league_agnostic,https://www.spond.com/en-us/news-and-blog/the-top-10-most-popular-sports-in-the-usa/,www.spond.com,other,No,No,No,No,news_article,None
+perplexity,Best professional sports to watch,league_agnostic,https://www.athletenetwork.net/post/top-10-highest-earning-professional-sports-in-2025-and-their-revenue-streams,www.athletenetwork.net,other,No,No,No,No,other,None
+perplexity,Best professional sports to watch,league_agnostic,https://www.twinkietown.com/2021/12/6/22817403/best-worst-live-sports-experiences-ranked-football-sucks-roller-derby-is-awesome-baseball-has-food,www.twinkietown.com,other,No,No,No,No,other,None
+perplexity,Best professional sports to watch,league_agnostic,https://www.adweek.com/brand-marketing/8-new-sports-leagues-2025/,www.adweek.com,other,No,No,No,No,company_page,None
+perplexity,Best professional sports to watch,league_agnostic,https://medliant.com/blog/20-popular-sporting-events-to-enjoy-in-the-usa,medliant.com,other,No,No,No,No,other,None
+gemini,Best professional sports to watch,league_agnostic,https://www.fifa.com/tournaments/mens/worldcup/qatar2022/media-releases/fifa-world-cup-qatar-2022tm-reached-5-billion-people-sparking-global-engagement,www.fifa.com,other,No,No,No,No,other,None
+gemini,Best professional sports to watch,league_agnostic,https://www.nba.com/news/nba-announces-global-growth-strategy,www.nba.com,league_official,Yes,No,No,No,news_article,NBA
+gemini,Best professional sports to watch,league_agnostic,https://www.espn.com/nfl/story/_/id/39327827/nfl-regular-season-average-2023-up-7-percent-most-watched-seven-years,www.espn.com,sports_media,No,Yes,No,No,video,NFL
+gemini,Best professional sports to watch,league_agnostic,https://www.statista.com/statistics/1251347/most-popular-sports-in-north-america-by-fan-base/,www.statista.com,authority,No,No,No,No,statistics,None
+gemini,Best professional sports to watch,league_agnostic,https://www.bbc.com/sport/tennis/66187903,www.bbc.com,other,No,No,No,No,other,None
+gemini,Best professional sports to watch,league_agnostic,https://www.forbes.com/sites/mikeozanian/2023/02/09/formula-1-viewership-up-36-since-drive-to-survive-debuted/?sh=7427189178f7,www.forbes.com,business_media,No,No,No,No,statistics,None
+gemini,Best professional sports to watch,league_agnostic,https://www.ufc.com/news/ufc-announces-record-breaking-2023-results,www.ufc.com,other,No,No,No,No,news_article,None
+chatgpt,Most exciting sports league,league_agnostic,https://www.statista.com/statistics/1101445/usa-super-bowl-viewership/,www.statista.com,authority,No,No,No,No,statistics,None
+chatgpt,Most exciting sports league,league_agnostic,https://www.economist.com/graphic-detail/2021/08/14/the-premier-league-is-the-most-watched-football-league-in-the-world,www.economist.com,other,No,No,No,No,video,None
+chatgpt,Most exciting sports league,league_agnostic,https://www.forbes.com/sites/kurtbadenhausen/2022/04/12/the-nba-is-the-most-valuable-sports-league-in-the-world/,www.forbes.com,business_media,Yes,No,No,No,company_page,NBA
+chatgpt,Most exciting sports league,league_agnostic,https://www.theguardian.com/sport/2021/dec/12/f1-2021-season-review,www.theguardian.com,other,No,No,No,No,other,None
+chatgpt,Most exciting sports league,league_agnostic,https://www.nfl.com,www.nfl.com,league_official,No,Yes,No,No,other,NFL
+chatgpt,Most exciting sports league,league_agnostic,https://www.premierleague.com,www.premierleague.com,other,No,No,No,No,company_page,None
+chatgpt,Most exciting sports league,league_agnostic,https://www.nba.com,www.nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Most exciting sports league,league_agnostic,https://www.formula1.com,www.formula1.com,other,No,No,No,No,other,None
+chatgpt,Most exciting sports league,league_agnostic,https://statista.com,statista.com,authority,No,No,No,No,other,None
+chatgpt,Most exciting sports league,league_agnostic,https://economist.com,economist.com,other,No,No,No,No,other,None
+chatgpt,Most exciting sports league,league_agnostic,https://forbes.com,forbes.com,business_media,No,No,No,No,other,None
+chatgpt,Most exciting sports league,league_agnostic,https://theguardian.com,theguardian.com,other,No,No,No,No,other,None
+chatgpt,Most exciting sports league,league_agnostic,https://nfl.com,nfl.com,league_official,No,Yes,No,No,other,NFL
+chatgpt,Most exciting sports league,league_agnostic,https://premierleague.com,premierleague.com,other,No,No,No,No,company_page,None
+chatgpt,Most exciting sports league,league_agnostic,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Most exciting sports league,league_agnostic,https://formula1.com,formula1.com,other,No,No,No,No,other,None
+claude,Most exciting sports league,league_agnostic,https://www.forbes.com/sites/mikeozanian/2021/05/25/worlds-most-valuable-sports-teams-2021/,www.forbes.com,business_media,No,No,No,No,other,None
+claude,Most exciting sports league,league_agnostic,https://www2.deloitte.com/uk/en/pages/sports-business-group/articles/annual-review-of-football-finance.html,www2.deloitte.com,other,No,No,No,No,news_article,None
+claude,Most exciting sports league,league_agnostic,https://nielsensports.com/,nielsensports.com,other,No,No,No,No,other,None
+claude,Most exciting sports league,league_agnostic,https://nfl.com,nfl.com,league_official,No,Yes,No,No,other,NFL
+claude,Most exciting sports league,league_agnostic,https://forbes.com,forbes.com,business_media,No,No,No,No,other,None
+claude,Most exciting sports league,league_agnostic,https://premierleague.com,premierleague.com,other,No,No,No,No,company_page,None
+claude,Most exciting sports league,league_agnostic,https://deloitte.com,deloitte.com,other,No,No,No,No,other,None
+claude,Most exciting sports league,league_agnostic,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Most exciting sports league,league_agnostic,https://nielsensports.com,nielsensports.com,other,No,No,No,No,other,None
+claude,Most exciting sports league,league_agnostic,https://sportsbusinessjournal.com,sportsbusinessjournal.com,other,No,No,No,No,other,None
+claude,Most exciting sports league,league_agnostic,https://www.forbes.com,www.forbes.com,business_media,No,No,No,No,other,None
+perplexity,Most exciting sports league,league_agnostic,https://instasport.club/blogs/insta360/the-10-most-popular-sports-in-the-world-2025-edition,instasport.club,other,No,No,No,No,other,None
+perplexity,Most exciting sports league,league_agnostic,https://www.youtube.com/watch?v=R76JkdvEZcA,www.youtube.com,social_media,No,No,No,No,video,None
+perplexity,Most exciting sports league,league_agnostic,https://www.youtube.com/watch?v=PWOrri8cT04,www.youtube.com,social_media,No,No,No,No,video,None
+perplexity,Most exciting sports league,league_agnostic,https://www.iworkinsport.com/news/top-20-sports-leagues-the-most-attractive-employers-in-sport-2025,www.iworkinsport.com,other,No,No,No,No,news_article,None
+perplexity,Most exciting sports league,league_agnostic,https://wegrynenterprises.com/2025/05/01/the-u-s-states-producing-the-most-popular-sports-teams-in-2025/,wegrynenterprises.com,other,No,No,No,No,other,None
+perplexity,Most exciting sports league,league_agnostic,https://en.wikipedia.org/wiki/Major_professional_sports_leagues_in_the_United_States_and_Canada,en.wikipedia.org,other,No,No,No,No,company_page,None
+perplexity,Most exciting sports league,league_agnostic,https://en.wikipedia.org/wiki/List_of_professional_sports_leagues_by_revenue,en.wikipedia.org,other,No,No,No,No,company_page,None
+perplexity,Most exciting sports league,league_agnostic,https://www.sportsvalue.com.br/en/the-sports-competitions-with-the-highest-revenues-in-the-world/,www.sportsvalue.com.br,other,No,No,No,No,other,None
+perplexity,Most exciting sports league,league_agnostic,https://timesofindia.indiatimes.com/sports/international-sports/sports-billion-dollar-club-top-10-richest-leagues-that-are-changing-the-game/articleshow/123659092.cms,timesofindia.indiatimes.com,other,No,No,No,No,schedule,None
+perplexity,Most exciting sports league,league_agnostic,https://today.yougov.com/topics/society/survey-results/daily/2025/03/13/60bd2/2,today.yougov.com,other,No,No,No,No,other,None
+perplexity,Most exciting sports league,league_agnostic,https://sportsepreneur.com/top-5-soccer-leagues-2025-rankings/,sportsepreneur.com,other,No,No,No,No,company_page,None
+gemini,Most exciting sports league,league_agnostic,https://www.statista.com/statistics/1235332/nfl-regular-season-average-viewership-usa/,www.statista.com,authority,No,Yes,No,No,statistics,NFL
+gemini,Most exciting sports league,league_agnostic,https://www.forbes.com/sites/mikeozanian/2023/08/24/the-nfl-is-the-most-valuable-sports-league-in-the-world/,www.forbes.com,business_media,No,Yes,No,No,company_page,NFL
+gemini,Most exciting sports league,league_agnostic,https://www.premierleague.com/about,www.premierleague.com,other,No,No,No,No,company_page,None
+gemini,Most exciting sports league,league_agnostic,https://www2.deloitte.com/uk/en/pages/sports-business-group/articles/annual-review-of-football-finance.html,www2.deloitte.com,other,No,No,No,No,news_article,None
+gemini,Most exciting sports league,league_agnostic,https://www.sportspromedia.com/news/nba-global-growth-viewership-social-media-digital-strategy/,www.sportspromedia.com,other,Yes,No,No,No,statistics,NBA
+gemini,Most exciting sports league,league_agnostic,https://www.forbes.com/sites/shlomosiegel/2023/10/26/the-nbas-global-reach-and-the-rise-of-international-talent/,www.forbes.com,business_media,Yes,No,No,No,other,NBA
+gemini,Most exciting sports league,league_agnostic,https://www.espn.com/f1/story/_/id/33543292/how-drive-survive-changed-formula-1,www.espn.com,sports_media,No,No,No,No,news_article,None
+gemini,Most exciting sports league,league_agnostic,https://www.motorsport.com/f1/news/f1-viewership-growth-netflix-drive-to-survive-impact/10419323/,www.motorsport.com,other,No,No,No,No,statistics,None
+chatgpt,Which sports league has the best athletes?,league_agnostic,https://theathletic.com/1234567/2021/05/10/the-unique-athleticism-of-nba-players/,theathletic.com,sports_media,Yes,No,No,No,other,NBA
+chatgpt,Which sports league has the best athletes?,league_agnostic,https://www.espn.com/nfl/story/_/id/1234567/nfl-athletes-training,www.espn.com,sports_media,No,Yes,No,No,news_article,NFL
+chatgpt,Which sports league has the best athletes?,league_agnostic,https://bleacherreport.com/articles/1234567-the-training-of-ufc-champions,bleacherreport.com,sports_media,No,No,No,No,news_article,None
+chatgpt,Which sports league has the best athletes?,league_agnostic,https://www.si.com/mlb/2021/05/10/the-athleticism-of-mlb-players,www.si.com,sports_media,No,No,Yes,No,other,MLB
+chatgpt,Which sports league has the best athletes?,league_agnostic,https://www.theguardian.com/football/2021/may/10/the-physical-demand-of-soccer-players,www.theguardian.com,other,No,No,No,No,other,None
+chatgpt,Which sports league has the best athletes?,league_agnostic,https://theathletic.com,theathletic.com,sports_media,No,No,No,No,other,None
+chatgpt,Which sports league has the best athletes?,league_agnostic,https://espn.com,espn.com,sports_media,No,No,No,No,other,None
+chatgpt,Which sports league has the best athletes?,league_agnostic,https://bleacherreport.com,bleacherreport.com,sports_media,No,No,No,No,other,None
+chatgpt,Which sports league has the best athletes?,league_agnostic,https://si.com,si.com,sports_media,No,No,No,No,other,None
+chatgpt,Which sports league has the best athletes?,league_agnostic,https://theguardian.com,theguardian.com,other,No,No,No,No,other,None
+claude,Which sports league has the best athletes?,league_agnostic,https://journals.lww.com/nsca-jscr,journals.lww.com,other,No,No,No,No,other,None
+claude,Which sports league has the best athletes?,league_agnostic,https://www.nba.com/stats,www.nba.com,league_official,Yes,No,No,No,statistics,NBA
+claude,Which sports league has the best athletes?,league_agnostic,https://www.nfl.com/combine/,www.nfl.com,league_official,No,Yes,No,No,other,NFL
+claude,Which sports league has the best athletes?,league_agnostic,https://olympics.com/ioc/medical-and-scientific-commission,olympics.com,other,No,No,No,No,other,None
+claude,Which sports league has the best athletes?,league_agnostic,https://www.tandfonline.com/toc/rjsp20/current,www.tandfonline.com,other,No,No,No,No,other,None
+claude,Which sports league has the best athletes?,league_agnostic,https://www.mayoclinic.org,www.mayoclinic.org,other,No,No,No,No,other,None
+claude,Which sports league has the best athletes?,league_agnostic,https://www.ncaa.org/research,www.ncaa.org,other,No,No,No,No,other,None
+claude,Which sports league has the best athletes?,league_agnostic,https://www.olympic.org/medical,www.olympic.org,other,No,No,No,No,other,None
+claude,Which sports league has the best athletes?,league_agnostic,https://journals.humankinetics.com/,journals.humankinetics.com,other,No,No,No,No,other,None
+claude,Which sports league has the best athletes?,league_agnostic,https://lww.com,lww.com,other,No,No,No,No,other,None
+claude,Which sports league has the best athletes?,league_agnostic,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Which sports league has the best athletes?,league_agnostic,https://nfl.com,nfl.com,league_official,No,Yes,No,No,other,NFL
+claude,Which sports league has the best athletes?,league_agnostic,https://olympics.com,olympics.com,other,No,No,No,No,other,None
+claude,Which sports league has the best athletes?,league_agnostic,https://tandfonline.com,tandfonline.com,other,No,No,No,No,other,None
+claude,Which sports league has the best athletes?,league_agnostic,https://mayoclinic.org,mayoclinic.org,other,No,No,No,No,other,None
+claude,Which sports league has the best athletes?,league_agnostic,https://ncaa.org,ncaa.org,other,No,No,No,No,other,None
+claude,Which sports league has the best athletes?,league_agnostic,https://olympic.org,olympic.org,other,No,No,No,No,other,None
+claude,Which sports league has the best athletes?,league_agnostic,https://humankinetics.com,humankinetics.com,other,No,No,No,No,other,None
+perplexity,Which sports league has the best athletes?,league_agnostic,https://theladylovessports.com/archives/4426,theladylovessports.com,other,No,No,No,No,other,None
+perplexity,Which sports league has the best athletes?,league_agnostic,https://www.thebiglead.com/posts/ranking-the-10-best-athletes-in-american-team-sports-01dxkrakkngk,www.thebiglead.com,other,No,No,No,No,other,None
+perplexity,Which sports league has the best athletes?,league_agnostic,https://www.ncsharp.com/info/salaries-professional-athletes-nfl-mlb-nba/,www.ncsharp.com,other,Yes,Yes,Yes,No,other,NBA
+perplexity,Which sports league has the best athletes?,league_agnostic,https://en.wikipedia.org/wiki/Major_professional_sports_leagues_in_the_United_States_and_Canada,en.wikipedia.org,other,No,No,No,No,company_page,None
+perplexity,Which sports league has the best athletes?,league_agnostic,https://www.espn.com/espn/story/_/id/40446224/top-100-athletes-21st-century,www.espn.com,sports_media,No,No,No,No,news_article,None
+perplexity,Which sports league has the best athletes?,league_agnostic,https://everythingtakesforever.com/2020/12/18/why-the-nba-is-americas-best-sports-league/,everythingtakesforever.com,other,Yes,No,No,No,company_page,NBA
+perplexity,Which sports league has the best athletes?,league_agnostic,https://en.wikipedia.org/wiki/List_of_professional_sports_leagues_by_revenue,en.wikipedia.org,other,No,No,No,No,company_page,None
+perplexity,Which sports league has the best athletes?,league_agnostic,https://bleacherreport.com/articles/31560-which-sport-has-the-best-athletes-opinions-vary-but-football-leads-the-way,bleacherreport.com,sports_media,No,No,No,No,news_article,None
+perplexity,Which sports league has the best athletes?,league_agnostic,https://www.rantsports.com/rankings/male/,www.rantsports.com,other,No,No,No,No,other,None
+perplexity,Which sports league has the best athletes?,league_agnostic,https://blog.betway.com/other-sports/the-us-states-producing-the-most-athletes/,blog.betway.com,other,No,No,No,No,other,None
+perplexity,Which sports league has the best athletes?,league_agnostic,https://www.stadium-maps.com/facts/national-champions.html,www.stadium-maps.com,other,No,No,No,No,other,None
+perplexity,Which sports league has the best athletes?,league_agnostic,https://www.uniqgene.com/post/which-is-the-most-popular-sport-in-america,www.uniqgene.com,other,No,No,No,No,other,None
+perplexity,Which sports league has the best athletes?,league_agnostic,https://www.mlb.com/news/list-of-top-athletes-to-play-2-or-more-sports-c215130098,www.mlb.com,league_official,No,No,Yes,No,news_article,MLB
+gemini,Which sports league has the best athletes?,league_agnostic,https://www.nfl.com/combine/,www.nfl.com,league_official,No,Yes,No,No,other,NFL
+gemini,Which sports league has the best athletes?,league_agnostic,https://bleacherreport.com/articles/1233633-ranking-the-10-most-physically-demanding-sports,bleacherreport.com,sports_media,No,No,No,No,news_article,None
+gemini,Which sports league has the best athletes?,league_agnostic,https://www.nba.com/draft/combine,www.nba.com,league_official,Yes,No,No,No,other,NBA
+gemini,Which sports league has the best athletes?,league_agnostic,https://www.ufc.com/athlete-training,www.ufc.com,other,No,No,No,No,other,None
+gemini,Which sports league has the best athletes?,league_agnostic,https://www.forbes.com/sites/erikaindustries/2018/05/29/the-fittest-athletes-in-the-world/?sh=2576e5f15e51,www.forbes.com,business_media,No,No,No,No,other,None
+gemini,Which sports league has the best athletes?,league_agnostic,https://www.nhl.com/draft/combine,www.nhl.com,league_official,No,No,No,Yes,other,NHL
+chatgpt,Best professional sports for families,league_agnostic,https://www.mlb.com/fans/family-fun,www.mlb.com,league_official,No,No,Yes,No,other,MLB
+chatgpt,Best professional sports for families,league_agnostic,https://www.nfl.com/fans/family-friendly,www.nfl.com,league_official,No,Yes,No,No,other,NFL
+chatgpt,Best professional sports for families,league_agnostic,https://www.nba.com/fans/family-night,www.nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Best professional sports for families,league_agnostic,https://www.nhl.com/fans/family-friendly,www.nhl.com,league_official,No,No,No,Yes,other,NHL
+chatgpt,Best professional sports for families,league_agnostic,https://www.mlssoccer.com/fans/family-activities,www.mlssoccer.com,other,No,No,No,No,other,MLS
+chatgpt,Best professional sports for families,league_agnostic,https://MLB.com,mlb.com,league_official,No,No,Yes,No,other,MLB
+chatgpt,Best professional sports for families,league_agnostic,https://mlb.com,mlb.com,league_official,No,No,Yes,No,other,MLB
+chatgpt,Best professional sports for families,league_agnostic,https://NFL.com,nfl.com,league_official,No,Yes,No,No,other,NFL
+chatgpt,Best professional sports for families,league_agnostic,https://nfl.com,nfl.com,league_official,No,Yes,No,No,other,NFL
+chatgpt,Best professional sports for families,league_agnostic,https://NBA.com,nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Best professional sports for families,league_agnostic,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Best professional sports for families,league_agnostic,https://NHL.com,nhl.com,league_official,No,No,No,Yes,other,NHL
+chatgpt,Best professional sports for families,league_agnostic,https://nhl.com,nhl.com,league_official,No,No,No,Yes,other,NHL
+chatgpt,Best professional sports for families,league_agnostic,https://MLSsoccer.com,mlssoccer.com,other,No,No,No,No,other,MLS
+chatgpt,Best professional sports for families,league_agnostic,https://mlssoccer.com,mlssoccer.com,other,No,No,No,No,other,MLS
+claude,Best professional sports for families,league_agnostic,https://www.mlb.com/fans/family,www.mlb.com,league_official,No,No,Yes,No,other,MLB
+claude,Best professional sports for families,league_agnostic,https://www.milb.com/fans/family,www.milb.com,other,No,No,No,No,other,None
+claude,Best professional sports for families,league_agnostic,https://www.nhl.com/fans,www.nhl.com,league_official,No,No,No,Yes,other,NHL
+claude,Best professional sports for families,league_agnostic,https://www.wnba.com/tickets/family-packages/,www.wnba.com,league_official,Yes,No,No,No,other,NBA
+claude,Best professional sports for families,league_agnostic,https://teammarketing.com/fci,teammarketing.com,other,No,No,No,No,other,None
+claude,Best professional sports for families,league_agnostic,https://www.sportsbusinessjournal.com,www.sportsbusinessjournal.com,other,No,No,No,No,other,None
+claude,Best professional sports for families,league_agnostic,https://stadiumjourney.com,stadiumjourney.com,other,No,No,No,No,other,None
+claude,Best professional sports for families,league_agnostic,https://www.commonsensemedia.org/sports,www.commonsensemedia.org,other,No,No,No,No,other,None
+claude,Best professional sports for families,league_agnostic,https://www.parents.com/fun/sports,www.parents.com,other,No,No,No,No,other,None
+claude,Best professional sports for families,league_agnostic,https://www.sikids.com,www.sikids.com,other,No,No,No,No,other,None
+claude,Best professional sports for families,league_agnostic,https://mlb.com,mlb.com,league_official,No,No,Yes,No,other,MLB
+claude,Best professional sports for families,league_agnostic,https://milb.com,milb.com,other,No,No,No,No,other,None
+claude,Best professional sports for families,league_agnostic,https://nhl.com,nhl.com,league_official,No,No,No,Yes,other,NHL
+claude,Best professional sports for families,league_agnostic,https://wnba.com,wnba.com,league_official,Yes,No,No,No,other,NBA
+claude,Best professional sports for families,league_agnostic,https://teammarketing.com,teammarketing.com,other,No,No,No,No,other,None
+claude,Best professional sports for families,league_agnostic,https://sportsbusinessjournal.com,sportsbusinessjournal.com,other,No,No,No,No,other,None
+claude,Best professional sports for families,league_agnostic,https://commonsensemedia.org,commonsensemedia.org,other,No,No,No,No,other,None
+claude,Best professional sports for families,league_agnostic,https://parents.com,parents.com,other,No,No,No,No,other,None
+claude,Best professional sports for families,league_agnostic,https://sikids.com,sikids.com,other,No,No,No,No,other,None
+perplexity,Best professional sports for families,league_agnostic,https://nzonesports.com,nzonesports.com,other,No,No,No,No,other,None
+perplexity,Best professional sports for families,league_agnostic,https://www.hearthsong.com/blogs/blog/how-to-pick-the-best-sport-for-your-child,www.hearthsong.com,other,No,No,No,No,how_to,None
+perplexity,Best professional sports for families,league_agnostic,https://www.ymcala.org/programs/youth/youth-sports/,www.ymcala.org,other,No,No,No,No,other,None
+perplexity,Best professional sports for families,league_agnostic,https://isport360.com/the-top-10-youth-sports-in-the-united-states/,isport360.com,other,No,No,No,No,other,None
+perplexity,Best professional sports for families,league_agnostic,https://skyhawks.com/bakersfield/,skyhawks.com,other,No,No,No,No,other,None
+perplexity,Best professional sports for families,league_agnostic,https://www.roadtripsforfamilies.com/top-10-best-sporting-events-for-families/,www.roadtripsforfamilies.com,other,No,No,No,No,other,None
+perplexity,Best professional sports for families,league_agnostic,https://www.i9sports.com,www.i9sports.com,other,No,No,No,No,other,None
+perplexity,Best professional sports for families,league_agnostic,https://www.finehomesandliving.com/lifestyle/family/4-sports-to-watch-together-as-a-family/article_fbae917c-64f9-11ec-ae9f-cb15f5657b24.html?=%2F&subcategory=532%7CWebinars,www.finehomesandliving.com,other,No,No,No,No,video,None
+perplexity,Best professional sports for families,league_agnostic,https://amazingathletes.com,amazingathletes.com,other,No,No,No,No,other,None
+perplexity,Best professional sports for families,league_agnostic,https://time.com/5422342/best-sport-kids/,time.com,other,No,No,No,No,other,None
+perplexity,Best professional sports for families,league_agnostic,https://www.ymca.org/what-we-do/healthy-living/sports-recreation,www.ymca.org,other,No,No,No,No,other,None
+gemini,Best professional sports for families,league_agnostic,https://www.forbes.com/sites/erikbacharach/2023/04/06/minor-league-baseballs-economic-impact-on-communities-continues-to-grow/?sh=57a9f733182c,www.forbes.com,business_media,No,No,No,No,company_page,None
+gemini,Best professional sports for families,league_agnostic,https://www.nba.com/fan-guide,www.nba.com,league_official,Yes,No,No,No,how_to,NBA
+gemini,Best professional sports for families,league_agnostic,https://www.nhl.com/info/fan-guide,www.nhl.com,league_official,No,No,No,Yes,how_to,NHL
+gemini,Best professional sports for families,league_agnostic,https://www.mlssoccer.com/,www.mlssoccer.com,other,No,No,No,No,other,MLS
+chatgpt,Kid-friendly sporting events,league_agnostic,https://www.littleleague.org,www.littleleague.org,other,No,No,No,No,company_page,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://www.sandiego.gov/park-and-recreation,www.sandiego.gov,other,No,No,No,No,other,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://www.specialolympics.org,www.specialolympics.org,other,No,No,No,No,other,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://www.runrocknroll.com,www.runrocknroll.com,other,No,No,No,No,other,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://www.shapeamerica.org,www.shapeamerica.org,other,No,No,No,No,other,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://www.mlb.com/redsox/tickets/kids,www.mlb.com,league_official,No,No,Yes,No,other,MLB
+chatgpt,Kid-friendly sporting events,league_agnostic,https://www.nays.org,www.nays.org,other,No,No,No,No,other,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://www.kidssportsnetwork.com,www.kidssportsnetwork.com,other,No,No,No,No,other,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://www.youthsportsafety.org,www.youthsportsafety.org,other,No,No,No,No,other,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://littleleague.org,littleleague.org,other,No,No,No,No,company_page,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://sandiego.gov,sandiego.gov,other,No,No,No,No,other,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://specialolympics.org,specialolympics.org,other,No,No,No,No,other,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://runrocknroll.com,runrocknroll.com,other,No,No,No,No,other,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://shapeamerica.org,shapeamerica.org,other,No,No,No,No,other,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://mlb.com,mlb.com,league_official,No,No,Yes,No,other,MLB
+chatgpt,Kid-friendly sporting events,league_agnostic,https://nays.org,nays.org,other,No,No,No,No,other,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://kidssportsnetwork.com,kidssportsnetwork.com,other,No,No,No,No,other,None
+chatgpt,Kid-friendly sporting events,league_agnostic,https://youthsportsafety.org,youthsportsafety.org,other,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://www.milb.com/fans/family,www.milb.com,other,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://jr.nba.com/,jr.nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Kid-friendly sporting events,league_agnostic,https://www.mlssoccer.com/fans,www.mlssoccer.com,other,No,No,No,No,other,MLS
+claude,Kid-friendly sporting events,league_agnostic,https://www.ncaa.com/fans,www.ncaa.com,other,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://www.sfia.org/reports,www.sfia.org,other,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://www.iavm.org/safety,www.iavm.org,other,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://www.theahl.com,www.theahl.com,other,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://www.usta.com/en/home/play/programs.html,www.usta.com,other,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://www.espn.com/family,www.espn.com,sports_media,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://www.teammarketing.com,www.teammarketing.com,other,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://milb.com,milb.com,other,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Kid-friendly sporting events,league_agnostic,https://mlssoccer.com,mlssoccer.com,other,No,No,No,No,other,MLS
+claude,Kid-friendly sporting events,league_agnostic,https://ncaa.com,ncaa.com,other,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://sfia.org,sfia.org,other,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://iavm.org,iavm.org,other,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://theahl.com,theahl.com,other,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://usta.com,usta.com,other,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://espn.com,espn.com,sports_media,No,No,No,No,other,None
+claude,Kid-friendly sporting events,league_agnostic,https://teammarketing.com,teammarketing.com,other,No,No,No,No,other,None
+perplexity,Kid-friendly sporting events,league_agnostic,https://www.hifivesportsclubs.com/locations/chicago/,www.hifivesportsclubs.com,other,No,No,No,No,other,None
+perplexity,Kid-friendly sporting events,league_agnostic,https://theincidentalparent.com/life-in-general/family-friendly-sports-events-tips-for-enjoying-games-together/,theincidentalparent.com,other,No,No,No,No,schedule,None
+perplexity,Kid-friendly sporting events,league_agnostic,https://www.visitchicagosouthland.com/events?sporting,www.visitchicagosouthland.com,other,No,No,No,No,other,None
+perplexity,Kid-friendly sporting events,league_agnostic,https://www.justshortofcrazy.com/best-sporting-events-to-attend-in-the-u-s-with-kids/,www.justshortofcrazy.com,other,No,No,No,No,other,None
+perplexity,Kid-friendly sporting events,league_agnostic,https://us.trip.com/events/2688078-2025-illinois-sports--fitness-collection/,us.trip.com,other,No,No,No,No,other,None
+perplexity,Kid-friendly sporting events,league_agnostic,https://www.bayareakidfun.com/family-friendly-events-in-the-bay-area/,www.bayareakidfun.com,other,No,No,No,No,other,None
+perplexity,Kid-friendly sporting events,league_agnostic,https://mykidlist.com/events/,mykidlist.com,other,No,No,No,No,other,None
+perplexity,Kid-friendly sporting events,league_agnostic,https://gokidpower.org/fun-sports-activities-games-resources-kids/,gokidpower.org,other,No,No,No,No,schedule,None
+perplexity,Kid-friendly sporting events,league_agnostic,https://www.eventbrite.com/b/il--chicago/sports-and-fitness/,www.eventbrite.com,other,No,No,No,No,other,None
+perplexity,Kid-friendly sporting events,league_agnostic,https://www.510families.com/cal-berkeley-athletic-events-fun-for-kids/,www.510families.com,other,No,No,No,No,other,None
+perplexity,Kid-friendly sporting events,league_agnostic,https://sportsillinois.com/sports-events/,sportsillinois.com,other,No,No,No,No,other,None
+perplexity,Kid-friendly sporting events,league_agnostic,https://forum.meangreennation.com/t/random-best-sport-to-attend-with-your-children/119,forum.meangreennation.com,other,No,No,No,No,forum_discussion,None
+perplexity,Kid-friendly sporting events,league_agnostic,https://www.nhs.uk/healthier-families/activities/sports-and-activities/,www.nhs.uk,other,No,No,No,No,other,None
+gemini,Kid-friendly sporting events,league_agnostic,https://www.mlssoccer.com/,www.mlssoccer.com,other,No,No,No,No,other,MLS
+gemini,Kid-friendly sporting events,league_agnostic,https://www.milb.com/,www.milb.com,other,No,No,No,No,other,None
+gemini,Kid-friendly sporting events,league_agnostic,https://www.harlemglobetrotters.com/,www.harlemglobetrotters.com,other,No,No,No,No,other,None
+gemini,Kid-friendly sporting events,league_agnostic,https://www.monsterjam.com/en-us,www.monsterjam.com,other,No,No,No,No,other,None
+gemini,Kid-friendly sporting events,league_agnostic,https://www.ncaa.com/,www.ncaa.com,other,No,No,No,No,other,None
+chatgpt,Sports games to take children to,league_agnostic,https://www.mlb.com/padres/tickets/kidsfest,www.mlb.com,league_official,No,No,Yes,No,other,MLB
+chatgpt,Sports games to take children to,league_agnostic,https://www.patriots.com/kidsclub,www.patriots.com,other,No,No,No,No,other,None
+chatgpt,Sports games to take children to,league_agnostic,https://www.nba.com/warriors/kidsclub,www.nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Sports games to take children to,league_agnostic,https://www.nhl.com/blackhawks/tickets/family-nights,www.nhl.com,league_official,No,No,No,Yes,other,NHL
+chatgpt,Sports games to take children to,league_agnostic,https://www.soundersfc.com/kidsclub,www.soundersfc.com,other,No,No,No,No,other,None
+chatgpt,Sports games to take children to,league_agnostic,https://www.milb.com/family-fun,www.milb.com,other,No,No,No,No,other,None
+chatgpt,Sports games to take children to,league_agnostic,https://mlb.com,mlb.com,league_official,No,No,Yes,No,other,MLB
+chatgpt,Sports games to take children to,league_agnostic,https://patriots.com,patriots.com,other,No,No,No,No,other,None
+chatgpt,Sports games to take children to,league_agnostic,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Sports games to take children to,league_agnostic,https://nhl.com,nhl.com,league_official,No,No,No,Yes,other,NHL
+chatgpt,Sports games to take children to,league_agnostic,https://soundersfc.com,soundersfc.com,other,No,No,No,No,other,None
+chatgpt,Sports games to take children to,league_agnostic,https://milb.com,milb.com,other,No,No,No,No,other,None
+claude,Sports games to take children to,league_agnostic,https://www.baseballamerica.com/stories/minor-league-baseball-attendance-2022/,www.baseballamerica.com,other,No,No,No,No,company_page,None
+claude,Sports games to take children to,league_agnostic,https://gleague.nba.com/,gleague.nba.com,league_official,Yes,No,No,No,company_page,NBA
+claude,Sports games to take children to,league_agnostic,https://www.iavm.org/safety-security,www.iavm.org,other,No,No,No,No,other,None
+claude,Sports games to take children to,league_agnostic,https://www.healthychildren.org/sports-activities,www.healthychildren.org,other,No,No,No,No,other,None
+claude,Sports games to take children to,league_agnostic,https://www.teamsnap.com/blog/,www.teamsnap.com,other,No,No,No,No,other,None
+claude,Sports games to take children to,league_agnostic,https://milb.com,milb.com,other,No,No,No,No,other,None
+claude,Sports games to take children to,league_agnostic,https://baseballamerica.com,baseballamerica.com,other,No,No,No,No,other,None
+claude,Sports games to take children to,league_agnostic,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Sports games to take children to,league_agnostic,https://ncaa.com,ncaa.com,other,No,No,No,No,other,None
+claude,Sports games to take children to,league_agnostic,https://aspenprojectplay.org,aspenprojectplay.org,other,No,No,No,No,other,None
+claude,Sports games to take children to,league_agnostic,https://iavm.org,iavm.org,other,No,No,No,No,other,None
+claude,Sports games to take children to,league_agnostic,https://healthychildren.org,healthychildren.org,other,No,No,No,No,other,None
+claude,Sports games to take children to,league_agnostic,https://teamsnap.com,teamsnap.com,other,No,No,No,No,other,None
+claude,Sports games to take children to,league_agnostic,https://sportsevents365.com,sportsevents365.com,other,No,No,No,No,other,None
+claude,Sports games to take children to,league_agnostic,https://ticketsforkids.org,ticketsforkids.org,other,No,No,No,No,other,None
+perplexity,Sports games to take children to,league_agnostic,https://www.villasport.com/san-jose/family/events,www.villasport.com,other,No,No,No,No,other,None
+perplexity,Sports games to take children to,league_agnostic,https://eliteclubs.com/activities-for-kids/,eliteclubs.com,other,No,No,No,No,other,None
+perplexity,Sports games to take children to,league_agnostic,https://www.sanjose.org/things-to-do/sports-recreation,www.sanjose.org,other,No,No,No,No,other,None
+perplexity,Sports games to take children to,league_agnostic,https://activeforlife.com/50-indoor-physical-activities-for-kids/,activeforlife.com,other,No,No,No,No,other,None
+perplexity,Sports games to take children to,league_agnostic,https://www.eventbrite.com/d/ca--cupertino/kids-sports/,www.eventbrite.com,other,No,No,No,No,other,None
+perplexity,Sports games to take children to,league_agnostic,https://www.littleathletics.com.au/wp-content/uploads/2022/11/Great-Ideas-for-Group-Games.pdf,www.littleathletics.com.au,other,No,No,No,No,schedule,None
+perplexity,Sports games to take children to,league_agnostic,https://www.bayareakidfun.com/family-friendly-events-in-the-bay-area/,www.bayareakidfun.com,other,No,No,No,No,other,None
+perplexity,Sports games to take children to,league_agnostic,https://www.nhs.uk/healthier-families/activities/sports-and-activities/,www.nhs.uk,other,No,No,No,No,other,None
+perplexity,Sports games to take children to,league_agnostic,https://www.groupon.com/local/cupertino-ca/kids-activities,www.groupon.com,other,No,No,No,No,other,None
+perplexity,Sports games to take children to,league_agnostic,https://ultimatecampresource.com/camp-games/sports-oriented-games/,ultimatecampresource.com,other,No,No,No,No,schedule,None
+perplexity,Sports games to take children to,league_agnostic,https://gokidpower.org/fun-sports-activities-games-resources-kids/,gokidpower.org,other,No,No,No,No,schedule,None
+perplexity,Sports games to take children to,league_agnostic,https://mommypoppins.com/anywhere-kids/sports-for-kids-hobbies-for-kids,mommypoppins.com,other,No,No,No,No,other,None
+perplexity,Sports games to take children to,league_agnostic,https://www.ymcasv.org/family-activities-sports,www.ymcasv.org,other,No,No,No,No,other,None
+gemini,Sports games to take children to,league_agnostic,https://www.milb.com/,www.milb.com,other,No,No,No,No,other,None
+gemini,Sports games to take children to,league_agnostic,https://www.aarp.org/leisure/travel/info-2018/minor-league-baseball-family-fun.html,www.aarp.org,other,No,No,No,No,company_page,None
+gemini,Sports games to take children to,league_agnostic,https://www.nba.com/,www.nba.com,league_official,Yes,No,No,No,other,NBA
+gemini,Sports games to take children to,league_agnostic,https://www.verywellfamily.com/tips-for-taking-kids-to-a-sporting-event-2700877,www.verywellfamily.com,other,No,No,No,No,how_to,None
+gemini,Sports games to take children to,league_agnostic,https://www.mlssoccer.com/,www.mlssoccer.com,other,No,No,No,No,other,MLS
+gemini,Sports games to take children to,league_agnostic,https://www.today.com/parents/family/tips-taking-kids-sporting-event-rcna10193,www.today.com,other,No,No,No,No,how_to,None
+gemini,Sports games to take children to,league_agnostic,https://www.nhl.com/,www.nhl.com,league_official,No,No,No,Yes,other,NHL
+gemini,Sports games to take children to,league_agnostic,https://www.parentmap.com/article/game-on-tips-for-taking-kids-to-sporting-events,www.parentmap.com,other,No,No,No,No,schedule,None
+chatgpt,Most entertaining sports league,league_agnostic,https://www.statista.com/statistics/219200/average-attendance-in-nba-games/,www.statista.com,authority,Yes,No,No,No,schedule,NBA
+chatgpt,Most entertaining sports league,league_agnostic,https://www.premierleague.com/news/2198928,www.premierleague.com,other,No,No,No,No,news_article,None
+chatgpt,Most entertaining sports league,league_agnostic,https://www.nielsen.com/us/en/insights/article/2021/super-bowl-lv-viewership/,www.nielsen.com,authority,No,No,No,No,statistics,None
+chatgpt,Most entertaining sports league,league_agnostic,https://www.forbes.com/sites/jonathanberman/2021/10/06/ufc-229-mcgregor-vs-khabib-ppv-buys/,www.forbes.com,business_media,No,No,No,No,other,None
+chatgpt,Most entertaining sports league,league_agnostic,https://www.nba.com,www.nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Most entertaining sports league,league_agnostic,https://www.premierleague.com,www.premierleague.com,other,No,No,No,No,company_page,None
+chatgpt,Most entertaining sports league,league_agnostic,https://www.nfl.com,www.nfl.com,league_official,No,Yes,No,No,other,NFL
+chatgpt,Most entertaining sports league,league_agnostic,https://www.ufc.com,www.ufc.com,other,No,No,No,No,other,None
+chatgpt,Most entertaining sports league,league_agnostic,https://www.iplt20.com,www.iplt20.com,other,No,No,No,No,other,None
+chatgpt,Most entertaining sports league,league_agnostic,https://statista.com,statista.com,authority,No,No,No,No,other,None
+chatgpt,Most entertaining sports league,league_agnostic,https://premierleague.com,premierleague.com,other,No,No,No,No,company_page,None
+chatgpt,Most entertaining sports league,league_agnostic,https://nielsen.com,nielsen.com,authority,No,No,No,No,other,None
+chatgpt,Most entertaining sports league,league_agnostic,https://forbes.com,forbes.com,business_media,No,No,No,No,other,None
+chatgpt,Most entertaining sports league,league_agnostic,https://NBA.com,nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Most entertaining sports league,league_agnostic,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Most entertaining sports league,league_agnostic,https://PremierLeague.com,premierleague.com,other,No,No,No,No,company_page,None
+chatgpt,Most entertaining sports league,league_agnostic,https://NFL.com,nfl.com,league_official,No,Yes,No,No,other,NFL
+chatgpt,Most entertaining sports league,league_agnostic,https://nfl.com,nfl.com,league_official,No,Yes,No,No,other,NFL
+chatgpt,Most entertaining sports league,league_agnostic,https://UFC.com,ufc.com,other,No,No,No,No,other,None
+chatgpt,Most entertaining sports league,league_agnostic,https://ufc.com,ufc.com,other,No,No,No,No,other,None
+chatgpt,Most entertaining sports league,league_agnostic,https://IPL.com,ipl.com,other,No,No,No,No,other,None
+chatgpt,Most entertaining sports league,league_agnostic,https://iplt20.com,iplt20.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://www.nielsen.com/insights/super-bowl-lvi-draws-112-3-million-viewers/,www.nielsen.com,authority,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://www.sportsbusinessjournal.com/,www.sportsbusinessjournal.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://www.statista.com/statistics/193457/total-league-revenue-of-the-nfl-since-2005/,www.statista.com,authority,No,Yes,No,No,statistics,NFL
+claude,Most entertaining sports league,league_agnostic,https://www.hootsuite.com/research,www.hootsuite.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://www.sportspromedia.com/,www.sportspromedia.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://www.forbes.com/sports-business/,www.forbes.com,business_media,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://operations.nfl.com/,operations.nfl.com,league_official,No,Yes,No,No,other,NFL
+claude,Most entertaining sports league,league_agnostic,https://sthm.temple.edu/research/sport-industry-research-center/,sthm.temple.edu,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://www.pwc.com/us/en/industries/tmt/library/sports-outlook-north-america.html,www.pwc.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://www.jdpower.com/business/press-releases/,www.jdpower.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://nielsensports.com/,nielsensports.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://www.premierleague.com/,www.premierleague.com,other,No,No,No,No,company_page,None
+claude,Most entertaining sports league,league_agnostic,https://www.nba.com/,www.nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Most entertaining sports league,league_agnostic,https://www.uefa.com/,www.uefa.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://nielsen.com,nielsen.com,authority,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://sportsbusinessjournal.com,sportsbusinessjournal.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://statista.com,statista.com,authority,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://hootsuite.com,hootsuite.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://sportspromedia.com,sportspromedia.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://forbes.com,forbes.com,business_media,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://nfl.com,nfl.com,league_official,No,Yes,No,No,other,NFL
+claude,Most entertaining sports league,league_agnostic,https://temple.edu,temple.edu,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://pwc.com,pwc.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://jdpower.com,jdpower.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://nielsensports.com,nielsensports.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://premierleague.com,premierleague.com,other,No,No,No,No,company_page,None
+claude,Most entertaining sports league,league_agnostic,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Most entertaining sports league,league_agnostic,https://uefa.com,uefa.com,other,No,No,No,No,other,None
+claude,Most entertaining sports league,league_agnostic,https://www.forbes.com,www.forbes.com,business_media,No,No,No,No,other,None
+perplexity,Most entertaining sports league,league_agnostic,https://www.youtube.com/watch?v=O-jd6LUSBp0,www.youtube.com,social_media,No,No,No,No,video,None
+perplexity,Most entertaining sports league,league_agnostic,https://www.youtube.com/watch?v=R76JkdvEZcA,www.youtube.com,social_media,No,No,No,No,video,None
+perplexity,Most entertaining sports league,league_agnostic,https://www.iworkinsport.com/news/top-20-sports-leagues-the-most-attractive-employers-in-sport-2025,www.iworkinsport.com,other,No,No,No,No,news_article,None
+perplexity,Most entertaining sports league,league_agnostic,https://en.wikipedia.org/wiki/List_of_professional_sports_leagues_by_revenue,en.wikipedia.org,other,No,No,No,No,company_page,None
+perplexity,Most entertaining sports league,league_agnostic,https://www.adweek.com/brand-marketing/8-new-sports-leagues-2025/,www.adweek.com,other,No,No,No,No,company_page,None
+perplexity,Most entertaining sports league,league_agnostic,https://www.magicsportsapp.com/blog/league-management/the-most-popular-sports-leagues/,www.magicsportsapp.com,other,No,No,No,No,company_page,None
+perplexity,Most entertaining sports league,league_agnostic,https://blog.vinfotech.com/which-are-the-most-popular-fantasy-sports-that-are-captivating-fans-in-2025,blog.vinfotech.com,other,No,No,No,No,other,None
+perplexity,Most entertaining sports league,league_agnostic,https://www.statista.com/statistics/1074271/sports-leagues-fans/,www.statista.com,authority,No,No,No,No,statistics,None
+perplexity,Most entertaining sports league,league_agnostic,https://www.spglobal.com/market-intelligence/en/news-insights/research/state-of-us-sports-viewing-2025,www.spglobal.com,other,No,No,No,No,news_article,None
+perplexity,Most entertaining sports league,league_agnostic,https://www.sportsvalue.com.br/en/the-sports-competitions-with-the-highest-revenues-in-the-world/,www.sportsvalue.com.br,other,No,No,No,No,other,None
+perplexity,Most entertaining sports league,league_agnostic,https://apsportseditors.org/top-sports-leagues/,apsportseditors.org,other,No,No,No,No,company_page,None
+perplexity,Most entertaining sports league,league_agnostic,https://www1.grousemountain.com/list-of-sports-leagues,www1.grousemountain.com,other,No,No,No,No,company_page,None
+perplexity,Most entertaining sports league,league_agnostic,https://today.yougov.com/topics/society/survey-results/daily/2025/03/13/60bd2/2,today.yougov.com,other,No,No,No,No,other,None
+perplexity,Most entertaining sports league,league_agnostic,https://www.topendsports.com/world/lists/popular-sport/fans.htm,www.topendsports.com,other,No,No,No,No,other,None
+gemini,Most entertaining sports league,league_agnostic,https://www.statista.com/statistics/1236683/most-popular-sports-leagues-us/,www.statista.com,authority,No,No,No,No,statistics,None
+gemini,Most entertaining sports league,league_agnostic,https://www.forbes.com/sites/mikeozanian/2023/08/21/nfl-team-values-2023-americas-most-valuable-sports-league-gets-14-more-expensive/?sh=461c37b340c4,www.forbes.com,business_media,No,Yes,No,No,company_page,NFL
+gemini,Most entertaining sports league,league_agnostic,https://www.premierleague.com/about,www.premierleague.com,other,No,No,No,No,company_page,None
+gemini,Most entertaining sports league,league_agnostic,https://www2.deloitte.com/uk/en/pages/sports-business-group/articles/deloitte-football-money-league.html,www2.deloitte.com,other,No,No,No,No,news_article,None
+gemini,Most entertaining sports league,league_agnostic,https://www.nba.com/news/nba-reaches-1-billion-followers-across-social-media-platforms,www.nba.com,league_official,Yes,No,No,No,news_article,NBA
+chatgpt,Fast-paced sports to watch,league_agnostic,https://www.fifa.com/football-development/education/refereeing/laws-of-the-game,www.fifa.com,other,No,No,No,No,schedule,None
+chatgpt,Fast-paced sports to watch,league_agnostic,https://www.nhl.com/fans/how-the-game-is-played,www.nhl.com,league_official,No,No,No,Yes,schedule,NHL
+chatgpt,Fast-paced sports to watch,league_agnostic,https://www.nba.com/official/rules,www.nba.com,league_official,Yes,No,No,No,company_page,NBA
+chatgpt,Fast-paced sports to watch,league_agnostic,https://www.formula1.com/en/racing/how-f1-works.html,www.formula1.com,other,No,No,No,No,how_to,None
+chatgpt,Fast-paced sports to watch,league_agnostic,https://www.usaultimate.org/learn/rules/,www.usaultimate.org,other,No,No,No,No,other,None
+chatgpt,Fast-paced sports to watch,league_agnostic,https://fifa.com,fifa.com,other,No,No,No,No,other,None
+chatgpt,Fast-paced sports to watch,league_agnostic,https://nhl.com,nhl.com,league_official,No,No,No,Yes,other,NHL
+chatgpt,Fast-paced sports to watch,league_agnostic,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Fast-paced sports to watch,league_agnostic,https://formula1.com,formula1.com,other,No,No,No,No,other,None
+chatgpt,Fast-paced sports to watch,league_agnostic,https://usaultimate.org,usaultimate.org,other,No,No,No,No,other,None
+claude,Fast-paced sports to watch,league_agnostic,https://nhl.com,nhl.com,league_official,No,No,No,Yes,other,NHL
+claude,Fast-paced sports to watch,league_agnostic,https://iihf.com,iihf.com,other,No,No,No,No,other,None
+claude,Fast-paced sports to watch,league_agnostic,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Fast-paced sports to watch,league_agnostic,https://basketball-reference.com,basketball-reference.com,other,No,No,No,No,other,None
+claude,Fast-paced sports to watch,league_agnostic,https://olympics.com,olympics.com,other,No,No,No,No,other,None
+claude,Fast-paced sports to watch,league_agnostic,https://nll.com,nll.com,other,No,No,No,No,other,None
+claude,Fast-paced sports to watch,league_agnostic,https://usalacrosse.com,usalacrosse.com,other,No,No,No,No,other,None
+claude,Fast-paced sports to watch,league_agnostic,https://ittf.com,ittf.com,other,No,No,No,No,other,None
+claude,Fast-paced sports to watch,league_agnostic,https://sportsci.org,sportsci.org,other,No,No,No,No,other,None
+claude,Fast-paced sports to watch,league_agnostic,https://espn.com,espn.com,sports_media,No,No,No,No,other,None
+claude,Fast-paced sports to watch,league_agnostic,https://sports-reference.com,sports-reference.com,other,No,No,No,No,other,None
+claude,Fast-paced sports to watch,league_agnostic,https://statscrunch.com,statscrunch.com,other,No,No,No,No,statistics,None
+claude,Fast-paced sports to watch,league_agnostic,https://issaonline.com,issaonline.com,other,No,No,No,No,other,None
+perplexity,Fast-paced sports to watch,league_agnostic,https://blog.sponsor.me/10-fastest-sports-in-the-world/,blog.sponsor.me,other,No,No,No,No,other,None
+perplexity,Fast-paced sports to watch,league_agnostic,https://bellyupsports.com/2025/01/the-best-sports-to-watch-a-guide-for-enthusiasts/,bellyupsports.com,other,No,No,No,No,video,None
+perplexity,Fast-paced sports to watch,league_agnostic,https://www.neurotrackerx.com/post/top-5-olympic-sports-with-the-fastest-reactions,www.neurotrackerx.com,other,No,No,No,No,other,None
+perplexity,Fast-paced sports to watch,league_agnostic,https://www.topendsports.com/fitness/sports/speed-espn.htm,www.topendsports.com,other,No,No,No,No,other,None
+perplexity,Fast-paced sports to watch,league_agnostic,https://www.topendsports.com/sport/fastest-sports.htm,www.topendsports.com,other,No,No,No,No,other,None
+perplexity,Fast-paced sports to watch,league_agnostic,https://www.watchmojo.com/articles/top-10-sports-that-are-entertaining-to-watch,www.watchmojo.com,other,No,No,No,No,video,None
+perplexity,Fast-paced sports to watch,league_agnostic,https://erthegolf.com/blogs/news/the-10-fastest-growing-sports-why-they-re-booming-and-what-s-next,erthegolf.com,other,No,No,No,No,news_article,None
+perplexity,Fast-paced sports to watch,league_agnostic,https://www.spond.com/en-us/news-and-blog/the-top-10-most-popular-sports-in-the-usa/,www.spond.com,other,No,No,No,No,news_article,None
+perplexity,Fast-paced sports to watch,league_agnostic,https://www.britishicehockey.co.uk/post/ice-hockey-the-fast-paced-sport-that-captivates-the-world/,www.britishicehockey.co.uk,other,No,No,No,No,other,None
+perplexity,Fast-paced sports to watch,league_agnostic,https://www.gwi.com/blog/worlds-most-popular-sports,www.gwi.com,other,No,No,No,No,other,None
+perplexity,Fast-paced sports to watch,league_agnostic,https://www.stfrancishs.org/news/fastest-game-two-feet-why-lacrosse-growing-popularity,www.stfrancishs.org,other,No,No,No,No,schedule,None
+gemini,Fast-paced sports to watch,league_agnostic,https://www.fia.com/,www.fia.com,other,No,No,No,No,other,None
+gemini,Fast-paced sports to watch,league_agnostic,https://www.nhl.com/,www.nhl.com,league_official,No,No,No,Yes,other,NHL
+gemini,Fast-paced sports to watch,league_agnostic,https://www.britannica.com/sports/ice-hockey,www.britannica.com,other,No,No,No,No,other,None
+gemini,Fast-paced sports to watch,league_agnostic,https://www.nba.com/,www.nba.com,league_official,Yes,No,No,No,other,NBA
+gemini,Fast-paced sports to watch,league_agnostic,https://www.fiba.basketball/,www.fiba.basketball,other,No,No,No,No,other,None
+gemini,Fast-paced sports to watch,league_agnostic,https://www.fifa.com/,www.fifa.com,other,No,No,No,No,other,None
+gemini,Fast-paced sports to watch,league_agnostic,https://www.premierleague.com/,www.premierleague.com,other,No,No,No,No,company_page,None
+gemini,Fast-paced sports to watch,league_agnostic,https://www.world.rugby/,www.world.rugby,other,No,No,No,No,other,None
+gemini,Fast-paced sports to watch,league_agnostic,https://www.rugby-league.com/,www.rugby-league.com,other,No,No,No,No,company_page,None
+gemini,Fast-paced sports to watch,league_agnostic,https://worldlacrosse.sport/,worldlacrosse.sport,other,No,No,No,No,other,None
+gemini,Fast-paced sports to watch,league_agnostic,https://premierlacrosseleague.com/,premierlacrosseleague.com,other,No,No,No,No,company_page,None
+gemini,Fast-paced sports to watch,league_agnostic,https://www.ihf.info/,www.ihf.info,other,No,No,No,No,other,None
+gemini,Fast-paced sports to watch,league_agnostic,https://www.eurohandball.com/,www.eurohandball.com,other,No,No,No,No,other,None
+gemini,Fast-paced sports to watch,league_agnostic,https://www.worldsquash.org/,www.worldsquash.org,other,No,No,No,No,other,None
+gemini,Fast-paced sports to watch,league_agnostic,https://psaworldtour.com/,psaworldtour.com,other,No,No,No,No,other,None
+gemini,Fast-paced sports to watch,league_agnostic,https://www.formula1.com/,www.formula1.com,other,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://www.fifa.com/worldcup/,www.fifa.com,other,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://www.uefa.com/uefachampionsleague/,www.uefa.com,other,No,No,No,No,company_page,None
+chatgpt,Best sports for casual fans,league_agnostic,https://www.nba.com/,www.nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Best sports for casual fans,league_agnostic,https://www.espn.com/nba/,www.espn.com,sports_media,Yes,No,No,No,other,NBA
+chatgpt,Best sports for casual fans,league_agnostic,https://www.nfl.com/,www.nfl.com,league_official,No,Yes,No,No,other,NFL
+chatgpt,Best sports for casual fans,league_agnostic,https://www.statista.com/topics/965/super-bowl/,www.statista.com,authority,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://www.atptour.com/,www.atptour.com,other,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://www.wtatennis.com/,www.wtatennis.com,other,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://www.mlb.com/,www.mlb.com,league_official,No,No,Yes,No,other,MLB
+chatgpt,Best sports for casual fans,league_agnostic,https://www.theringer.com/mlb,www.theringer.com,other,No,No,Yes,No,other,MLB
+chatgpt,Best sports for casual fans,league_agnostic,https://www.pgatour.com/,www.pgatour.com,other,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://www.bbc.com/sport/golf,www.bbc.com,other,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://fifa.com,fifa.com,other,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://uefa.com,uefa.com,other,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+chatgpt,Best sports for casual fans,league_agnostic,https://espn.com,espn.com,sports_media,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://nfl.com,nfl.com,league_official,No,Yes,No,No,other,NFL
+chatgpt,Best sports for casual fans,league_agnostic,https://statista.com,statista.com,authority,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://atptour.com,atptour.com,other,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://wtatennis.com,wtatennis.com,other,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://mlb.com,mlb.com,league_official,No,No,Yes,No,other,MLB
+chatgpt,Best sports for casual fans,league_agnostic,https://theringer.com,theringer.com,other,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://pgatour.com,pgatour.com,other,No,No,No,No,other,None
+chatgpt,Best sports for casual fans,league_agnostic,https://bbc.com,bbc.com,other,No,No,No,No,other,None
+claude,Best sports for casual fans,league_agnostic,https://www.sportsbusinessjournal.com/,www.sportsbusinessjournal.com,other,No,No,No,No,other,None
+claude,Best sports for casual fans,league_agnostic,https://www.fifa.com/worldcup/news/,www.fifa.com,other,No,No,No,No,news_article,None
+claude,Best sports for casual fans,league_agnostic,https://www.sportsmediawatch.com/,www.sportsmediawatch.com,other,No,No,No,No,video,None
+claude,Best sports for casual fans,league_agnostic,https://www2.deloitte.com/sports-industry-report-2023,www2.deloitte.com,other,No,No,No,No,other,None
+claude,Best sports for casual fans,league_agnostic,https://nba.com,nba.com,league_official,Yes,No,No,No,other,NBA
+claude,Best sports for casual fans,league_agnostic,https://sportsbusinessjournal.com,sportsbusinessjournal.com,other,No,No,No,No,other,None
+claude,Best sports for casual fans,league_agnostic,https://FIFA.com,fifa.com,other,No,No,No,No,other,None
+claude,Best sports for casual fans,league_agnostic,https://fifa.com,fifa.com,other,No,No,No,No,other,None
+claude,Best sports for casual fans,league_agnostic,https://atptour.com,atptour.com,other,No,No,No,No,other,None
+claude,Best sports for casual fans,league_agnostic,https://mlb.com,mlb.com,league_official,No,No,Yes,No,other,MLB
+claude,Best sports for casual fans,league_agnostic,https://sportsmediawatch.com,sportsmediawatch.com,other,No,No,No,No,video,None
+claude,Best sports for casual fans,league_agnostic,https://deloitte.com,deloitte.com,other,No,No,No,No,other,None
+claude,Best sports for casual fans,league_agnostic,https://espn.com,espn.com,sports_media,No,No,No,No,other,None
+claude,Best sports for casual fans,league_agnostic,https://bleacherreport.com,bleacherreport.com,sports_media,No,No,No,No,other,None
+claude,Best sports for casual fans,league_agnostic,https://theathletic.com,theathletic.com,sports_media,No,No,No,No,other,None
+claude,Best sports for casual fans,league_agnostic,https://si.com,si.com,sports_media,No,No,No,No,other,None
+claude,Best sports for casual fans,league_agnostic,https://ESPN.com,espn.com,sports_media,No,No,No,No,other,None
+perplexity,Best sports for casual fans,league_agnostic,https://www.spglobal.com/market-intelligence/en/news-insights/research/state-of-us-sports-viewing-2025,www.spglobal.com,other,No,No,No,No,news_article,None
+perplexity,Best sports for casual fans,league_agnostic,https://www.marshmallowchallenge.com/blog/top-27-sport-hobbies-to-get-active-and-have-fun/,www.marshmallowchallenge.com,other,No,No,No,No,other,None
+perplexity,Best sports for casual fans,league_agnostic,https://www.gwi.com/blog/worlds-most-popular-sports,www.gwi.com,other,No,No,No,No,other,None
+perplexity,Best sports for casual fans,league_agnostic,https://teamlinkt.com/blog/teamlinkt-com-blog-what-is-the-easiest-sport-the-top-10-sports-for-beginners,teamlinkt.com,other,No,No,No,No,other,None
+perplexity,Best sports for casual fans,league_agnostic,https://www.statscore.com/market-research/what-are-the-5-most-popular-sports-in-the-usa/,www.statscore.com,other,No,No,No,No,statistics,None
+perplexity,Best sports for casual fans,league_agnostic,https://wecareonlineclasses.com/25-sports-you-can-play-by-yourself/,wecareonlineclasses.com,other,No,No,No,No,other,None
+perplexity,Best sports for casual fans,league_agnostic,https://news.gallup.com/poll/610046/football-retains-dominant-position-favorite-sport.aspx,news.gallup.com,other,No,No,No,No,news_article,None
+perplexity,Best sports for casual fans,league_agnostic,https://pinkhouse.co/top-casual-sports-to-play-while-high-stay-active-and-have-fun/,pinkhouse.co,other,No,No,No,No,other,None
+perplexity,Best sports for casual fans,league_agnostic,https://www.topendsports.com/world/lists/popular-sport/fans.htm,www.topendsports.com,other,No,No,No,No,other,None
+perplexity,Best sports for casual fans,league_agnostic,https://www.worldatlas.com/articles/what-are-the-most-popular-sports-in-the-world.html,www.worldatlas.com,other,No,No,No,No,news_article,None
+perplexity,Best sports for casual fans,league_agnostic,https://www.statista.com/topics/2113/sports-on-tv/,www.statista.com,authority,No,No,No,No,other,None
+perplexity,Best sports for casual fans,league_agnostic,https://thefitnessequation.com/fitness/fun-sports-you-can-try-as-an-adult/,thefitnessequation.com,other,No,No,No,No,other,None
+perplexity,Best sports for casual fans,league_agnostic,https://www.spond.com/en-us/news-and-blog/the-top-10-most-popular-sports-in-the-usa/,www.spond.com,other,No,No,No,No,news_article,None
+chatgpt,Which sports league has the biggest cultural impact?,league_agnostic,https://www.nytimes.com/2020/06/05/sports/nfl-social-justice-timeline.html,www.nytimes.com,news_media,No,Yes,No,No,other,NFL
+chatgpt,Which sports league has the biggest cultural impact?,league_agnostic,https://www.statista.com/statistics/193174/revenue-of-the-nfl/,www.statista.com,authority,No,Yes,No,No,statistics,NFL
+chatgpt,Which sports league has the biggest cultural impact?,league_agnostic,https://www.nytimes.com/2017/04/15/sports/baseball/jackie-robinson.html,www.nytimes.com,news_media,No,No,No,No,other,None
+chatgpt,Which sports league has the biggest cultural impact?,league_agnostic,https://www.mlb.com/international,www.mlb.com,league_official,No,No,Yes,No,other,MLB
+chatgpt,Which sports league has the biggest cultural impact?,league_agnostic,https://www.premierleague.com/about,www.premierleague.com,other,No,No,No,No,company_page,None
+chatgpt,Which sports league has the biggest cultural impact?,league_agnostic,https://www.bbc.com/sport/football/54212345,www.bbc.com,other,No,No,No,No,other,None
+chatgpt,Which sports league has the biggest cultural impact?,league_agnostic,https://www.nielsen.com/us/en/insights/article/2023/super-bowl-lvii-viewership-statistics/,www.nielsen.com,authority,No,No,No,No,statistics,None
+chatgpt,Which sports league has the biggest cultural impact?,league_agnostic,https://nytimes.com,nytimes.com,news_media,No,No,No,No,other,None
+chatgpt,Which sports league has the biggest cultural impact?,league_agnostic,https://statista.com,statista.com,authority,No,No,No,No,other,None
+chatgpt,Which sports league has the biggest cultural impact?,league_agnostic,https://mlb.com,mlb.com,league_official,No,No,Yes,No,other,MLB
+chatgpt,Which sports league has the biggest cultural impact?,league_agnostic,https://premierleague.com,premierleague.com,other,No,No,No,No,company_page,None
+chatgpt,Which sports league has the biggest cultural impact?,league_agnostic,https://bbc.com,bbc.com,other,No,No,No,No,other,None
+chatgpt,Which sports league has the biggest cultural impact?,league_agnostic,https://nielsen.com,nielsen.com,authority,No,No,No,No,other,None
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://www.nielsen.com/news-center/2023/super-bowl-lvii-attracts-115-1-million-viewers/,www.nielsen.com,authority,No,No,No,No,news_article,None
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://www.forbes.com/sites/mikeozanian/2022/08/22/nfl-team-values-2022-dallas-cowboys-are-the-first-franchise-worth-8-billion/,www.forbes.com,business_media,No,Yes,No,No,other,NFL
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://www.premierleague.com/this-is-pl/the-premier-league/681273,www.premierleague.com,other,No,No,No,No,company_page,None
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://www.fifa.com/fifaplus/en/articles/fifa-world-cup-2022-media-figures-qatar,www.fifa.com,other,No,No,No,No,news_article,None
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://hbr.org/2020/09/the-business-of-sports,hbr.org,other,No,No,No,No,other,None
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://nielsensports.com/global-interest-in-sport-2022/,nielsensports.com,other,No,No,No,No,other,None
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://www.aspenprojectplay.org/state-of-play-2022,www.aspenprojectplay.org,other,No,No,No,No,other,None
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://nielsen.com,nielsen.com,authority,No,No,No,No,other,None
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://forbes.com,forbes.com,business_media,No,No,No,No,other,None
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://premierleague.com,premierleague.com,other,No,No,No,No,company_page,None
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://fifa.com,fifa.com,other,No,No,No,No,other,None
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://hbr.org,hbr.org,other,No,No,No,No,other,None
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://nielsensports.com,nielsensports.com,other,No,No,No,No,other,None
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://aspenprojectplay.org,aspenprojectplay.org,other,No,No,No,No,other,None
+claude,Which sports league has the biggest cultural impact?,league_agnostic,https://www.forbes.com,www.forbes.com,business_media,No,No,No,No,other,None
+perplexity,Which sports league has the biggest cultural impact?,league_agnostic,https://vocal.media/cleats/the-cultural-impact-of-major-league-soccer-in-american-cities,vocal.media,other,No,No,No,No,company_page,None
+perplexity,Which sports league has the biggest cultural impact?,league_agnostic,https://www.theintelligencer.net/news/2023/03/nfl-understanding-the-social-significance-of-americas-favorite-sport/,www.theintelligencer.net,other,No,Yes,No,No,news_article,NFL
+perplexity,Which sports league has the biggest cultural impact?,league_agnostic,https://www.sportsvenue-technology.com/articles/globalization-of-sports,www.sportsvenue-technology.com,other,No,No,No,No,news_article,None
+perplexity,Which sports league has the biggest cultural impact?,league_agnostic,https://www.spiritexchange.com/cultural-activity-highlight-overview-of-baseball/,www.spiritexchange.com,other,No,No,No,No,other,None
+perplexity,Which sports league has the biggest cultural impact?,league_agnostic,https://ciobulletin.com/sports/the-impact-of-major-sports-leagues-on-global-economy-culture-and-fan-engagement,ciobulletin.com,other,No,No,No,No,company_page,None
+perplexity,Which sports league has the biggest cultural impact?,league_agnostic,https://business.yougov.com/content/48115-the-global-footprint-of-american-sports-league-nfl-nba-nhl-and-mlb,business.yougov.com,other,Yes,Yes,Yes,Yes,company_page,NBA
+perplexity,Which sports league has the biggest cultural impact?,league_agnostic,https://www.nationalsportsmuseum.org/blog/sports-as-cultural-identity,www.nationalsportsmuseum.org,other,No,No,No,No,other,None
+perplexity,Which sports league has the biggest cultural impact?,league_agnostic,https://pro-football-history.com/blog/10/134/beyond-the-gridiron-how-the-nfl-has-conquered-pop-culture-and-digital-entertainment,pro-football-history.com,other,No,Yes,No,No,news_article,NFL
+perplexity,Which sports league has the biggest cultural impact?,league_agnostic,https://www.liberty.edu/champion/2024/04/08/observing-history-through-sports-the-importance-and-relevance-of-sports-within-a-culture/,www.liberty.edu,other,No,No,No,No,news_article,None
+gemini,Which sports league has the biggest cultural impact?,league_agnostic,https://www.premierleague.com/news/3727636,www.premierleague.com,other,No,No,No,No,news_article,None
+gemini,Which sports league has the biggest cultural impact?,league_agnostic,https://www2.deloitte.com/uk/en/pages/sports-business-group/articles/deloitte-football-money-league.html,www2.deloitte.com,other,No,No,No,No,news_article,None
+gemini,Which sports league has the biggest cultural impact?,league_agnostic,https://www.forbes.com/sites/brettknight/2023/10/26/the-worlds-highest-paid-basketball-players-2023/?sh=38629734135e,www.forbes.com,business_media,No,No,No,No,other,None
+gemini,Which sports league has the biggest cultural impact?,league_agnostic,https://www.gq.com/story/how-the-nba-became-the-most-fashionable-league-in-sports,www.gq.com,other,Yes,No,No,No,news_article,NBA
+gemini,Which sports league has the biggest cultural impact?,league_agnostic,https://www.nytimes.com/2020/09/01/sports/basketball/nba-social-justice.html,www.nytimes.com,news_media,Yes,No,No,No,other,NBA
+gemini,Which sports league has the biggest cultural impact?,league_agnostic,https://www.nba.com/news/nbas-global-growth-continues-to-accelerate,www.nba.com,league_official,Yes,No,No,No,news_article,NBA
+gemini,Which sports league has the biggest cultural impact?,league_agnostic,https://www.nielsen.com/insights/2024/super-bowl-lviii-is-most-watched-program-in-history/,www.nielsen.com,authority,No,No,No,No,video,None
+gemini,Which sports league has the biggest cultural impact?,league_agnostic,https://theathletic.com/5292708/2024/02/23/drive-to-survive-formula-one-netflix/,theathletic.com,sports_media,No,No,No,No,other,None
+gemini,Which sports league has the biggest cultural impact?,league_agnostic,https://theathletic.com/5292708/2024/02%2F23%2Fdrive-to-survive-formula-one-netflix/,theathletic.com,sports_media,No,No,No,No,other,None

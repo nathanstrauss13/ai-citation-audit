@@ -1,0 +1,131 @@
+{
+  "analysis_timestamp": "20250929",
+  "total_queries_processed": 60,
+  "total_citations_collected": 764,
+  "target_achievement": "764/120 citations (Target: 80-120+)",
+  "pickle_robot_mentions": 22,
+  "pickle_visibility_rate": "36.7%",
+  "platform_performance": {
+    "ChatGPT": {
+      "queries": 15,
+      "citations": 135,
+      "pickle_mentions": 5
+    },
+    "Claude": {
+      "queries": 15,
+      "citations": 329,
+      "pickle_mentions": 5
+    },
+    "Perplexity": {
+      "queries": 15,
+      "citations": 118,
+      "pickle_mentions": 7
+    },
+    "Gemini": {
+      "queries": 15,
+      "citations": 182,
+      "pickle_mentions": 5
+    }
+  },
+  "competitor_mentions": {
+    "Boston Dynamics": 11,
+    "Locus Robotics": 13,
+    "Fetch Robotics": 3,
+    "Berkshire Grey": 6,
+    "6 River Systems": 1
+  },
+  "media_category_breakdown": {
+    "other": 570,
+    "tech_media": 52,
+    "robotics_trade": 70,
+    "investment": 12,
+    "supply_chain": 39,
+    "tier_1_business": 11,
+    "pr": 10
+  },
+  "top_media_sources": [
+    {
+      "domain": "techcrunch.com",
+      "citations": 51,
+      "category": "tech_media"
+    },
+    {
+      "domain": "roboticsbusinessreview.com",
+      "citations": 42,
+      "category": "robotics_trade"
+    },
+    {
+      "domain": "picklerobot.com",
+      "citations": 37,
+      "category": "other"
+    },
+    {
+      "domain": "supplychaindive.com",
+      "citations": 31,
+      "category": "supply_chain"
+    },
+    {
+      "domain": "therobotreport.com",
+      "citations": 24,
+      "category": "robotics_trade"
+    },
+    {
+      "domain": "mhi.org",
+      "citations": 22,
+      "category": "other"
+    },
+    {
+      "domain": "mckinsey.com",
+      "citations": 20,
+      "category": "other"
+    },
+    {
+      "domain": "amazonrobotics.com",
+      "citations": 17,
+      "category": "other"
+    },
+    {
+      "domain": "thelogisticsiq.com",
+      "citations": 16,
+      "category": "other"
+    },
+    {
+      "domain": "marketsandmarkets.com",
+      "citations": 16,
+      "category": "other"
+    },
+    {
+      "domain": "mmh.com",
+      "citations": 16,
+      "category": "other"
+    },
+    {
+      "domain": "locusrobotics.com",
+      "citations": 16,
+      "category": "other"
+    },
+    {
+      "domain": "bostondynamics.com",
+      "citations": 14,
+      "category": "other"
+    },
+    {
+      "domain": "roboticsandautomationnews.com",
+      "citations": 12,
+      "category": "other"
+    },
+    {
+      "domain": "gartner.com",
+      "citations": 11,
+      "category": "other"
+    }
+  ],
+  "competitive_intelligence": [
+    "Locus Robotics shows strongest competitive presence with 13 mentions",
+    "Strong robotics trade media presence - opportunity to expand into business media"
+  ],
+  "strategic_recommendations": [
+    "Optimize content strategy for Claude - highest citation yield platform",
+    "Differentiate from Boston Dynamics through warehouse-specific use case messaging"
+  ]
+}

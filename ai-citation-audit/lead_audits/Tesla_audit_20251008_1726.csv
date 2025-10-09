@@ -1,0 +1,5 @@
+query,platform,brand_mentioned,competitors_mentioned,actual_citations,inferred_citations,recommended_resources,full_response
+What are the best electric vehicles for families?,ChatGPT,No,None,None,None,None,ERROR: name 're' is not defined
+What are the best electric vehicles for families?,Claude,No,None,None,None,None,ERROR: name 're' is not defined
+What are the best electric vehicles for families?,Perplexity,No,None,None,None,None,ERROR: name 're' is not defined
+What are the best electric vehicles for families?,Gemini,No,None,None,None,None,ERROR: name 're' is not defined

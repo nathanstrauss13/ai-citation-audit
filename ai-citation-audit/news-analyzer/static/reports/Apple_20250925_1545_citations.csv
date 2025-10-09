@@ -1,0 +1,39 @@
+engine,prompt,domain,class,url
+gemini,Tell me about Apple. Respond in English.,apple.com,editorial,https://www.apple.com/newsroom
+gemini,Tell me about Apple. Respond in English.,sec.gov,editorial,https://www.sec.gov/edgar/searchedgar/companysearch.html
+gemini,Tell me about Apple. Respond in English.,apple.com,editorial,https://www.apple.com/investor
+gemini,Tell me about Apple. Respond in English.,bloomberg.com,editorial_tier1,https://www.bloomberg.com/markets/stocks/us-equities/aapl
+gemini,Tell me about Apple. Respond in English.,finance.yahoo.com,editorial,https://finance.yahoo.com/quote/AAPL
+gemini,Tell me about Apple. Respond in English.,reuters.com,editorial_tier1,https://www.reuters.com/companies/AAPL.OQ
+gemini,Tell me about Apple. Respond in English.,cnbc.com,editorial_tier1,https://www.cnbc.com/apple
+gemini,Tell me about Apple. Respond in English.,wsj.com,editorial_tier1,https://www.wsj.com/market-data/quotes/AAPL
+gemini,Tell me about Apple. Respond in English.,theverge.com,editorial,https://www.theverge.com/apple
+gemini,Tell me about Apple. Respond in English.,macworld.com,editorial,https://www.macworld.com
+perplexity,What is Apple known for? Respond in English.,britannica.com,editorial,https://www.britannica.com/money/Apple-Inc
+perplexity,What is Apple known for? Respond in English.,fuellednetworks.com,editorial,https://www.fuellednetworks.com/what-came-out-of-the-2025-apple-wwdc
+perplexity,What is Apple known for? Respond in English.,brandvm.com,editorial,https://www.brandvm.com/post/apples-product-lineup-2025-new-products
+perplexity,What is Apple known for? Respond in English.,apple.com,editorial,https://www.apple.com/environment/pdf/Apple_Environmental_Progress_Report_2024.pdf
+perplexity,What is Apple known for? Respond in English.,apple.com,editorial,https://www.apple.com/newsroom/2025/08/apple-increases-us-commitment-to-600-billion-usd-announces-ambitious-program
+perplexity,What is Apple known for? Respond in English.,apple.com,editorial,https://www.apple.com/newsroom/2025/06/apple-intelligence-gets-even-more-powerful-with-new-capabilities-across-apple-devices
+perplexity,What is Apple known for? Respond in English.,en.wikipedia.org,editorial,https://en.wikipedia.org/wiki/List_of_Apple_products
+perplexity,What is Apple known for? Respond in English.,apple.com,editorial,https://www.apple.com/newsroom/2024/10/apple-intelligence-is-available-today-on-iphone-ipad-and-mac
+perplexity,What is Apple known for? Respond in English.,thegadgetflow.com,editorial,https://thegadgetflow.com/blog/new-apple-products-coming
+perplexity,What is Apple known for? Respond in English.,economictimes.com,editorial,https://economictimes.com/tech/artificial-intelligence/apples-new-answers-team-set-to-build-chatgpt-style-app/articleshow/123088085.cms
+perplexity,What is Apple known for? Respond in English.,forums.macrumors.com,editorial,https://forums.macrumors.com/threads/apple-launching-these-15-products-later-this-year.2461056
+perplexity,What is Apple known for? Respond in English.,youtube.com,editorial,https://www.youtube.com/watch
+perplexity,What is Apple known for? Respond in English.,apple.com,editorial,https://www.apple.com/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design
+perplexity,What is Apple known for? Respond in English.,automobiles.honda.com,editorial,https://automobiles.honda.com/accord-sedan
+perplexity,What is Apple known for? Respond in English.,apple.com,editorial,https://www.apple.com/services
+perplexity,What is Apple known for? Respond in English.,zoom.com,editorial,https://www.zoom.com/en/products/whats-new
+gemini,What is Apple known for? Respond in English.,cnet.com,editorial,https://www.cnet.com
+gemini,What is Apple known for? Respond in English.,tomsguide.com,editorial,https://www.tomsguide.com
+gemini,What is Apple known for? Respond in English.,apple.com,editorial,https://www.apple.com/newsroom
+gemini,What is Apple known for? Respond in English.,apple.com,editorial,https://www.apple.com/about
+gemini,What is Apple known for? Respond in English.,statista.com,editorial,https://www.statista.com/topics/1708/apple
+gemini,What is Apple known for? Respond in English.,bloomberg.com,editorial_tier1,https://www.bloomberg.com/markets/stocks/us-equities/aapl
+gemini,What is Apple known for? Respond in English.,cnbc.com,editorial_tier1,https://www.cnbc.com/apple
+gemini,What is Apple known for? Respond in English.,reuters.com,editorial_tier1,https://www.reuters.com/companies/AAPL.OQ
+gemini,What is Apple known for? Respond in English.,theverge.com,editorial,https://www.theverge.com/apple
+gemini,What is Apple known for? Respond in English.,wired.com,editorial,https://www.wired.com/tag/apple
+gemini,What is Apple known for? Respond in English.,wsj.com,editorial_tier1,https://www.wsj.com/search
+gemini,What is Apple known for? Respond in English.,forbes.com,editorial_tier1,https://www.forbes.com/companies/apple

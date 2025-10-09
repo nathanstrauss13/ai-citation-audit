@@ -1,0 +1,35 @@
+{
+  "platform_status": {
+    "perplexity": {
+      "has_api_key": false,
+      "api_key_length": 0
+    },
+    "chatgpt": {
+      "has_api_key": false,
+      "api_key_length": 0
+    },
+    "claude": {
+      "has_api_key": false,
+      "api_key_length": 0
+    },
+    "gemini": {
+      "has_api_key": false,
+      "api_key_length": 0
+    }
+  },
+  "test_results": {
+    "perplexity": "initialization_failed",
+    "chatgpt": "initialization_failed",
+    "claude": "initialization_failed",
+    "gemini": "initialization_failed"
+  },
+  "aggregation_issues": [
+    "api.py: citations = []"
+  ],
+  "fixes_needed": [
+    "Set PERPLEXITY_API_KEY environment variable",
+    "Set OPENAI_API_KEY environment variable",
+    "Set ANTHROPIC_API_KEY environment variable",
+    "Set GOOGLE_API_KEY environment variable"
+  ]
+}

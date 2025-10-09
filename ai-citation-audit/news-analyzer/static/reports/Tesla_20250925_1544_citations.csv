@@ -1,0 +1,36 @@
+engine,prompt,domain,class,url
+gemini,Tell me about Tesla. Respond in English.,tesla.com,editorial,https://www.tesla.com
+gemini,Tell me about Tesla. Respond in English.,sec.gov,editorial,https://www.sec.gov/cgi-bin/browse-edgar
+gemini,Tell me about Tesla. Respond in English.,bloomberg.com,editorial_tier1,https://www.bloomberg.com/quote/TSLA:US
+gemini,Tell me about Tesla. Respond in English.,finance.yahoo.com,editorial,https://finance.yahoo.com/quote/TSLA
+gemini,Tell me about Tesla. Respond in English.,reuters.com,editorial_tier1,https://www.reuters.com/companies/TSLA.OQ
+gemini,Tell me about Tesla. Respond in English.,investopedia.com,editorial,https://www.investopedia.com/terms/t/tesla.asp
+gemini,Tell me about Tesla. Respond in English.,en.wikipedia.org,editorial,"https://en.wikipedia.org/wiki/Tesla,_Inc."
+gemini,Tell me about Tesla. Respond in English.,cnbc.com,editorial_tier1,https://www.cnbc.com/tesla
+gemini,What is Tesla known for? Respond in English.,tesla.com,editorial,https://www.tesla.com/about
+gemini,What is Tesla known for? Respond in English.,investopedia.com,editorial,https://www.investopedia.com/terms/t/tesla.asp
+gemini,What is Tesla known for? Respond in English.,cnbc.com,editorial_tier1,https://www.cnbc.com/tesla
+gemini,What is Tesla known for? Respond in English.,bloomberg.com,editorial_tier1,https://www.bloomberg.com/markets/stocks/tesla-inc-tsla-us
+gemini,What is Tesla known for? Respond in English.,reuters.com,editorial_tier1,https://www.reuters.com/companies/TSLA.OQ
+gemini,What is Tesla known for? Respond in English.,theverge.com,editorial,https://www.theverge.com/tag/tesla
+gemini,What is Tesla known for? Respond in English.,wired.com,editorial,https://www.wired.com/tag/tesla
+gemini,What is Tesla known for? Respond in English.,businessinsider.com,editorial,https://www.businessinsider.com/tesla
+gemini,What is Tesla known for? Respond in English.,fortune.com,editorial,https://fortune.com/company/tesla
+gemini,Please tell me about recent news from Tesla. Respond in English.,reuters.com,editorial_tier1,https://www.reuters.com/business/autos-transportation
+gemini,Please tell me about recent news from Tesla. Respond in English.,bloomberg.com,editorial_tier1,https://www.bloomberg.com/markets/stocks/tesla
+gemini,Please tell me about recent news from Tesla. Respond in English.,cnbc.com,editorial_tier1,https://www.cnbc.com/tesla-tsla
+gemini,Please tell me about recent news from Tesla. Respond in English.,wsj.com,editorial_tier1,https://www.wsj.com/search
+gemini,Please tell me about recent news from Tesla. Respond in English.,autonews.com,editorial,https://www.autonews.com/tesla
+gemini,Please tell me about recent news from Tesla. Respond in English.,theverge.com,editorial,https://www.theverge.com/tesla
+gemini,Please tell me about recent news from Tesla. Respond in English.,electrek.co,editorial,https://electrek.co
+gemini,Please tell me about recent news from Tesla. Respond in English.,insideevs.com,editorial,https://insideevs.com
+gemini,Please tell me about recent news from Tesla. Respond in English.,businessinsider.com,editorial,https://www.businessinsider.com/tesla
+gemini,Who are the leading consumer products companies in US? Respond in English.,statista.com,editorial,https://www.statista.com/statistics/200667/leading-us-consumer-goods-companies-by-revenue
+gemini,Who are the leading consumer products companies in US? Respond in English.,forbes.com,editorial_tier1,https://www.forbes.com/lists/global-2000
+gemini,Who are the leading consumer products companies in US? Respond in English.,marketwatch.com,editorial,https://www.marketwatch.com
+gemini,Who are the leading consumer products companies in US? Respond in English.,bloomberg.com,editorial_tier1,https://www.bloomberg.com/markets/companies/us-consumer-staples
+gemini,Who are the leading consumer products companies in US? Respond in English.,reuters.com,editorial_tier1,https://www.reuters.com/companies
+gemini,Who are the leading consumer products companies in US? Respond in English.,prnewswire.com,pr,https://www.prnewswire.com/news-releases
+gemini,Who are the leading consumer products companies in US? Respond in English.,businessinsider.com,editorial,https://www.businessinsider.com
+gemini,Who are the leading consumer products companies in US? Respond in English.,fool.com,editorial,https://www.fool.com
+gemini,Who are the leading consumer products companies in US? Respond in English.,s&p500.com,editorial,https://www.s&p500.com

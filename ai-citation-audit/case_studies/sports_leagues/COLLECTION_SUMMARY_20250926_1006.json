@@ -1,0 +1,108 @@
+{
+  "collection_timestamp": "20250926_1006",
+  "total_queries_processed": 80,
+  "nba_mention_rate": "28.7%",
+  "nba_win_rate": "27.5%",
+  "top_media_sources": [
+    [
+      "forbes.com",
+      {
+        "nba_citations": 31,
+        "nfl_citations": 14,
+        "mlb_citations": 19,
+        "nhl_citations": 6,
+        "total_citations": 61
+      }
+    ],
+    [
+      "nba.com",
+      {
+        "nba_citations": 49,
+        "nfl_citations": 26,
+        "mlb_citations": 30,
+        "nhl_citations": 16,
+        "total_citations": 49
+      }
+    ],
+    [
+      "mlb.com",
+      {
+        "nba_citations": 35,
+        "nfl_citations": 22,
+        "mlb_citations": 40,
+        "nhl_citations": 18,
+        "total_citations": 40
+      }
+    ],
+    [
+      "sportsbusinessjournal.com",
+      {
+        "nba_citations": 18,
+        "nfl_citations": 8,
+        "mlb_citations": 18,
+        "nhl_citations": 10,
+        "total_citations": 34
+      }
+    ],
+    [
+      "espn.com",
+      {
+        "nba_citations": 14,
+        "nfl_citations": 12,
+        "mlb_citations": 12,
+        "nhl_citations": 6,
+        "total_citations": 29
+      }
+    ],
+    [
+      "nfl.com",
+      {
+        "nba_citations": 24,
+        "nfl_citations": 28,
+        "mlb_citations": 20,
+        "nhl_citations": 8,
+        "total_citations": 28
+      }
+    ],
+    [
+      "premierleague.com",
+      {
+        "nba_citations": 14,
+        "nfl_citations": 5,
+        "mlb_citations": 3,
+        "nhl_citations": 1,
+        "total_citations": 19
+      }
+    ],
+    [
+      "nhl.com",
+      {
+        "nba_citations": 18,
+        "nfl_citations": 10,
+        "mlb_citations": 17,
+        "nhl_citations": 18,
+        "total_citations": 18
+      }
+    ],
+    [
+      "nielsen.com",
+      {
+        "nba_citations": 6,
+        "nfl_citations": 2,
+        "mlb_citations": 6,
+        "nhl_citations": 2,
+        "total_citations": 17
+      }
+    ],
+    [
+      "statista.com",
+      {
+        "nba_citations": 6,
+        "nfl_citations": 2,
+        "mlb_citations": 6,
+        "nhl_citations": 0,
+        "total_citations": 17
+      }
+    ]
+  ]
+}

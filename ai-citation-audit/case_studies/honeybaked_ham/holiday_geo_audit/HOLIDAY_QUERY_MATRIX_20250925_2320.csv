@@ -1,0 +1,50 @@
+query,engine,honeybaked_present,competitors_mentioned,position_prominence,source_quality,total_citations
+What is the best ham for Thanksgiving dinner?,perplexity,Yes,None,High,Low,9
+What is the best ham for Thanksgiving dinner?,chatgpt,Yes,Smithfield,Low,High,8
+What is the best ham for Thanksgiving dinner?,claude,Yes,"Smithfield, Costco",Low,High,8
+What is the best ham for Thanksgiving dinner?,gemini,No,None,Not Present,Low,0
+What is the best ham for Christmas dinner?,perplexity,Yes,"Omaha Steaks, Costco",Low,Medium,6
+What is the best ham for Christmas dinner?,chatgpt,Yes,Smithfield,Low,High,8
+What is the best ham for Christmas dinner?,claude,Yes,Smithfield,Low,High,7
+What is the best ham for Christmas dinner?,gemini,No,None,Not Present,Low,0
+Where can I order a holiday meal online?,perplexity,No,Whole Foods,Not Present,Medium,15
+Where can I order a holiday meal online?,chatgpt,Yes,"Omaha Steaks, Williams Sonoma, Whole Foods",Medium,Low,8
+Where can I order a holiday meal online?,claude,No,"Omaha Steaks, Harry & David, Williams Sonoma, Whole Foods",Not Present,Low,7
+Where can I order a holiday meal online?,gemini,No,None,Not Present,Low,0
+What should I serve for Christmas dinner if I don't want to cook?,perplexity,No,None,Not Present,Low,10
+What should I serve for Christmas dinner if I don't want to cook?,chatgpt,No,"Costco, Whole Foods",Not Present,Medium,8
+What should I serve for Christmas dinner if I don't want to cook?,claude,No,"Costco, Whole Foods",Not Present,Low,7
+What should I serve for Christmas dinner if I don't want to cook?,gemini,No,None,Not Present,Low,0
+Where can I get a holiday ham quickly?,perplexity,No,None,Not Present,Low,12
+Where can I get a holiday ham quickly?,chatgpt,Yes,"Omaha Steaks, Harry & David, Smithfield, Costco, Whole Foods",Low,Low,8
+Where can I get a holiday ham quickly?,claude,Yes,"Omaha Steaks, Harry & David, Williams Sonoma, Costco, Whole Foods",Low,Low,8
+What's the best food gift for the holidays?,perplexity,No,None,Not Present,Low,9
+What's the best food gift for the holidays?,chatgpt,No,None,Not Present,High,8
+What's the best food gift for the holidays?,claude,No,None,Not Present,High,8
+Who is Chef Tim Ziga?,perplexity,Yes,None,Low,Low,13
+Who is Chef Tim Ziga?,chatgpt,No,None,Not Present,High,8
+Who is Chef Tim Ziga?,claude,No,None,Not Present,Low,5
+HoneyBaked Ham chef recommendations,perplexity,Yes,None,High,Low,9
+HoneyBaked Ham chef recommendations,chatgpt,Yes,None,High,High,8
+HoneyBaked Ham chef recommendations,claude,Yes,None,High,Low,7
+Best mail-order hams 2025,perplexity,Yes,"Omaha Steaks, Costco",High,Medium,5
+Best mail-order hams 2025,chatgpt,Yes,"Harry & David, Smithfield",Medium,Low,7
+Best mail-order hams 2025,claude,Yes,"Smithfield, Dartagnan",Low,Low,7
+Easiest holiday meal to order online,perplexity,No,None,Not Present,Medium,11
+Easiest holiday meal to order online,chatgpt,Yes,"Williams Sonoma, Whole Foods",Low,Medium,10
+Easiest holiday meal to order online,claude,No,"Omaha Steaks, Harry & David, Williams Sonoma, Whole Foods",Not Present,Low,7
+Last-minute Thanksgiving dinner options,perplexity,No,None,Not Present,Low,13
+Last-minute Thanksgiving dinner options,chatgpt,No,"Costco, Whole Foods",Not Present,High,8
+Last-minute Thanksgiving dinner options,claude,No,"Costco, Whole Foods",Not Present,Medium,8
+Best holiday food gifts to ship,perplexity,No,None,Not Present,Low,9
+Best holiday food gifts to ship,chatgpt,No,None,Not Present,High,9
+Best holiday food gifts to ship,claude,No,"Harry & David, Williams Sonoma",Not Present,High,8
+HoneyBaked Ham vs Omaha Steaks for holidays,perplexity,Yes,Omaha Steaks,High,Medium,7
+HoneyBaked Ham vs Omaha Steaks for holidays,chatgpt,Yes,Omaha Steaks,High,High,8
+HoneyBaked Ham vs Omaha Steaks for holidays,claude,Yes,Omaha Steaks,High,Low,7
+Best spiral cut ham brands for Christmas,perplexity,Yes,"Harry & David, Costco",High,Medium,3
+Best spiral cut ham brands for Christmas,chatgpt,Yes,"Smithfield, Costco",Medium,High,11
+Best spiral cut ham brands for Christmas,claude,Yes,"Harry & David, Smithfield, Costco",High,High,7
+Holiday ham delivery comparison,perplexity,Yes,Omaha Steaks,Low,Medium,10
+Holiday ham delivery comparison,chatgpt,Yes,"Omaha Steaks, Harry & David, Williams Sonoma, Costco, Whole Foods",Medium,Low,6
+Holiday ham delivery comparison,claude,Yes,"Omaha Steaks, Harry & David, Dartagnan",Low,Low,7

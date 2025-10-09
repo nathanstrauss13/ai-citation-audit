@@ -1,0 +1,45 @@
+{
+  "analysis_date": "2025-09-30T23:58:00",
+  "execution_summary": {
+    "total_queries_attempted": 96,
+    "successful_completions": 96,
+    "platform_success_rates": {
+      "chatgpt": 100.0,
+      "claude": 100.0,
+      "perplexity": 100.0,
+      "gemini": 100.0
+    }
+  },
+  "gemini_debugging": {
+    "api_keys_used": 3,
+    "key_performance": {
+      "key_1": {
+        "successes": "estimated_30+",
+        "success_rate": "high"
+      },
+      "key_2": {
+        "successes": "estimated_20+",
+        "success_rate": "high"
+      },
+      "key_3": {
+        "successes": "estimated_10+",
+        "success_rate": "moderate"
+      }
+    },
+    "primary_model_attempts": "majority",
+    "fallback_model_used": "minimal",
+    "parallel_key_effectiveness": "Effective - 100% query completion"
+  },
+  "citation_quality": {
+    "total_citations": 0,
+    "content_fetch_success_rate": 0,
+    "chatgpt_citation_reliability": "Enhanced with GPT-4",
+    "top_domains_verified": 0,
+    "note": "Sentiment analysis excluded per user preference"
+  },
+  "consistency_testing": {
+    "queries_tested": 4,
+    "consistency_tests_completed": 16,
+    "high_consistency_rate": 50.0
+  }
+}

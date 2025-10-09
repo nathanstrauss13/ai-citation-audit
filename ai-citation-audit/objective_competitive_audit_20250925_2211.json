@@ -1,0 +1,643 @@
+{
+  "methodology": {
+    "total_queries": 40,
+    "neutral_queries": 20,
+    "comparative_queries": 10,
+    "feature_queries": 10,
+    "primary_brands": [
+      "UNIQLO",
+      "Zara",
+      "H&M",
+      "Shein",
+      "Gap",
+      "Everlane",
+      "Patagonia"
+    ],
+    "secondary_brands": [
+      "Primark",
+      "ASOS",
+      "Mango"
+    ],
+    "randomized_order": true,
+    "platforms": [
+      "perplexity",
+      "chatgpt",
+      "claude",
+      "gemini"
+    ]
+  },
+  "raw_results": {
+    "total_citations": 80,
+    "platform_breakdown": {},
+    "execution_time": 0
+  },
+  "competitive_analysis": {
+    "brand_mentions": {
+      "UNIQLO": 0,
+      "Zara": 0,
+      "H&M": 0,
+      "Shein": 0,
+      "Gap": 0,
+      "Everlane": 0,
+      "Patagonia": 0,
+      "Primark": 0,
+      "ASOS": 0,
+      "Mango": 0
+    },
+    "share_of_voice": {
+      "UNIQLO": 0.0,
+      "Zara": 0.0,
+      "H&M": 0.0,
+      "Shein": 0.0,
+      "Gap": 0.0,
+      "Everlane": 0.0,
+      "Patagonia": 0.0,
+      "Primark": 0.0,
+      "ASOS": 0.0,
+      "Mango": 0.0
+    },
+    "authority_index": {
+      "UNIQLO": 0.0,
+      "Zara": 0.0,
+      "H&M": 0.0,
+      "Shein": 0.0,
+      "Gap": 0.0,
+      "Everlane": 0.0,
+      "Patagonia": 0.0,
+      "Primark": 0.0,
+      "ASOS": 0.0,
+      "Mango": 0.0
+    },
+    "competitive_overlap": {},
+    "platform_variance": {},
+    "source_tiers": {
+      "tier_1": 0,
+      "tier_2": 0,
+      "tier_3": 0,
+      "tier_4": 0,
+      "tier_5": 80
+    }
+  },
+  "citations": [
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "best value clothing retailers",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "best value clothing retailers",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "fashion rental and resale programs",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "fashion rental and resale programs",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "worker treatment across global fashion brands",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "worker treatment across global fashion brands",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "brands with living wage commitments",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "brands with living wage commitments",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "brands with take-back programs",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "brands with take-back programs",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "minimalist fashion brands",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "minimalist fashion brands",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "fashion transparency index leaders",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "fashion transparency index leaders",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "Everlane vs UNIQLO vs COS transparency",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "Everlane vs UNIQLO vs COS transparency",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "greenwashing in fashion: worst offenders",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "greenwashing in fashion: worst offenders",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "best sustainable fashion brands 2025",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "best sustainable fashion brands 2025",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "Patagonia vs UNIQLO vs North Face ethics",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "Patagonia vs UNIQLO vs North Face ethics",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "price-quality analysis major fashion retailers",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "price-quality analysis major fashion retailers",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "most durable affordable clothing",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "most durable affordable clothing",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "best performance fabric innovations",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "best performance fabric innovations",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "brands using recycled materials",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "brands using recycled materials",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "fashion brands using AI for sustainability",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "fashion brands using AI for sustainability",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "innovative textile technology brands",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "innovative textile technology brands",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "affordable quality basics brands",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "affordable quality basics brands",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "fashion supply chain transparency tools",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "fashion supply chain transparency tools",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "fashion industry sustainability leaders",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "fashion industry sustainability leaders",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "companies with best factory conditions",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "companies with best factory conditions",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "ocean plastic fashion initiatives",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "ocean plastic fashion initiatives",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "sustainable fabric innovations 2025",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "sustainable fabric innovations 2025",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "brands with zero waste initiatives",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "brands with zero waste initiatives",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "brands fighting greenwashing",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "brands fighting greenwashing",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "fashion brand innovation comparison 2025",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "fashion brand innovation comparison 2025",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "fashion leaders in carbon neutrality",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "fashion leaders in carbon neutrality",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "Shein vs Primark vs H&M quality analysis",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "Shein vs Primark vs H&M quality analysis",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "thermal clothing innovations 2025",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "thermal clothing innovations 2025",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "ethical alternatives to fast fashion",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "ethical alternatives to fast fashion",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "compare sustainability: Zara vs H&M vs UNIQLO vs Gap",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "compare sustainability: Zara vs H&M vs UNIQLO vs Gap",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "fashion brands with transparent supply chains",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "fashion brands with transparent supply chains",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "clothing recycling technology leaders",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "clothing recycling technology leaders",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "fast fashion brand factory conditions compared",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "fast fashion brand factory conditions compared",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "fashion brand environmental impact rankings",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "fashion brand environmental impact rankings",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "circular fashion pioneers",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "circular fashion pioneers",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "most ethical clothing companies",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "most ethical clothing companies",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "best moisture-wicking fabric technology",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "best moisture-wicking fabric technology",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "fashion companies with B-corp certification",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "fashion companies with B-corp certification",
+      "type": "mock"
+    },
+    {
+      "url": "https://example.com/mock-citation-1",
+      "domain": "example.com",
+      "platform": "mock",
+      "prompt": "brands with longest product warranties",
+      "type": "mock"
+    },
+    {
+      "url": "https://test.com/mock-citation-2",
+      "domain": "test.com",
+      "platform": "mock",
+      "prompt": "brands with longest product warranties",
+      "type": "mock"
+    }
+  ]
+}

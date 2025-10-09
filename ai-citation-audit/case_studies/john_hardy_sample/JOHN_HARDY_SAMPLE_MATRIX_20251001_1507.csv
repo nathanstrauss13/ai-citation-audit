@@ -1,0 +1,41 @@
+query,engine,john_hardy_present,competitors_mentioned,position_prominence,winner_brand,total_citations
+What is John Hardy jewelry known for?,chatgpt,Yes,None,High,John Hardy,10
+What is John Hardy jewelry known for?,claude,Yes,None,High,John Hardy,12
+What is John Hardy jewelry known for?,perplexity,Yes,None,High,John Hardy,16
+What is John Hardy jewelry known for?,gemini,Yes,None,High,John Hardy,7
+Is John Hardy jewelry worth the investment?,chatgpt,Yes,None,High,John Hardy,8
+Is John Hardy jewelry worth the investment?,claude,Yes,None,High,John Hardy,17
+Is John Hardy jewelry worth the investment?,perplexity,Yes,"Tiffany & Co, Cartier",Medium,John Hardy,12
+Is John Hardy jewelry worth the investment?,gemini,Yes,Cartier,Medium,John Hardy,4
+Most sustainable luxury jewelry brands,chatgpt,No,"Brilliant Earth, Vrai, Aurate, Tiffany & Co, Catbird",Not Present,Brilliant Earth,20
+Most sustainable luxury jewelry brands,claude,No,"Brilliant Earth, Vrai, Mejuri, Aurate, Catbird, Chopard",Not Present,Brilliant Earth,30
+Most sustainable luxury jewelry brands,perplexity,No,"Vrai, Bario Neal",Not Present,Vrai,11
+Most sustainable luxury jewelry brands,gemini,No,"Brilliant Earth, Vrai, Tiffany & Co, Bario Neal, Chopard",Not Present,Brilliant Earth,10
+Ethical jewelry brands that use recycled materials,chatgpt,No,"Brilliant Earth, Mejuri, Aurate, Catbird",Not Present,Brilliant Earth,19
+Ethical jewelry brands that use recycled materials,claude,No,"Brilliant Earth, Catbird",Not Present,Brilliant Earth,24
+Ethical jewelry brands that use recycled materials,perplexity,No,"Mejuri, Monica Vinader, Catbird",Not Present,Mejuri,12
+Ethical jewelry brands that use recycled materials,gemini,No,"Brilliant Earth, Vrai, Aurate, Monica Vinader, Bario Neal",Not Present,Brilliant Earth,6
+Which jewelry companies are truly sustainable?,chatgpt,No,"Brilliant Earth, Vrai, Tiffany & Co, Catbird",Not Present,Brilliant Earth,18
+Which jewelry companies are truly sustainable?,claude,No,"Brilliant Earth, Vrai, Mejuri, Aurate",Not Present,Brilliant Earth,28
+Which jewelry companies are truly sustainable?,perplexity,No,"Brilliant Earth, Pandora",Not Present,Brilliant Earth,15
+Which jewelry companies are truly sustainable?,gemini,No,"Brilliant Earth, Vrai, Aurate, Tiffany & Co, Monica Vinader, Catbird",Not Present,Brilliant Earth,10
+Best lab-grown diamond jewelry brands,chatgpt,No,None,Not Present,No Clear Winner,0
+Best lab-grown diamond jewelry brands,claude,No,"Brilliant Earth, Vrai, Mejuri",Not Present,Brilliant Earth,22
+Best lab-grown diamond jewelry brands,perplexity,No,"Brilliant Earth, Vrai",Not Present,Brilliant Earth,11
+Best lab-grown diamond jewelry brands,gemini,No,None,Not Present,No Clear Winner,12
+Luxury brands that offer lab-grown diamonds,chatgpt,No,"Brilliant Earth, Vrai, Tiffany & Co, Cartier, Chopard",Not Present,Brilliant Earth,14
+Luxury brands that offer lab-grown diamonds,claude,No,"Brilliant Earth, Vrai, Mejuri, Pandora",Not Present,Brilliant Earth,25
+Luxury brands that offer lab-grown diamonds,perplexity,No,"Brilliant Earth, Vrai, Pandora",Not Present,Brilliant Earth,11
+Luxury brands that offer lab-grown diamonds,gemini,No,"Brilliant Earth, Vrai",Not Present,Brilliant Earth,14
+John Hardy vs Tiffany & Co sustainability,chatgpt,Yes,Tiffany & Co,Medium,John Hardy,8
+John Hardy vs Tiffany & Co sustainability,claude,Yes,Tiffany & Co,Medium,John Hardy,14
+John Hardy vs Tiffany & Co sustainability,perplexity,No,None,Not Present,No Clear Winner,14
+John Hardy vs Tiffany & Co sustainability,gemini,No,None,Not Present,No Clear Winner,0
+David Yurman vs John Hardy craftsmanship,chatgpt,Yes,David Yurman,High,David Yurman,8
+David Yurman vs John Hardy craftsmanship,claude,Yes,David Yurman,High,David Yurman,11
+David Yurman vs John Hardy craftsmanship,perplexity,Yes,David Yurman,High,David Yurman,17
+David Yurman vs John Hardy craftsmanship,gemini,Yes,David Yurman,Medium,David Yurman,0
+Jewelry industry sustainability leaders,chatgpt,No,"Brilliant Earth, Tiffany & Co, Chopard",Not Present,Brilliant Earth,12
+Jewelry industry sustainability leaders,claude,No,"Brilliant Earth, Tiffany & Co, Pandora, Chopard",Not Present,Brilliant Earth,28
+Jewelry industry sustainability leaders,perplexity,No,None,Not Present,No Clear Winner,13
+Jewelry industry sustainability leaders,gemini,No,"Brilliant Earth, Aurate, Tiffany & Co, Pandora, Monica Vinader, Chopard",Not Present,Brilliant Earth,12

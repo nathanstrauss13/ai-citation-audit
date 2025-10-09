@@ -1,0 +1,71 @@
+{
+  "analysis_timestamp": "20250926_1232",
+  "total_nba_queries_processed": 40,
+  "total_citations_collected": 363,
+  "official_content_percentage": "29.8%",
+  "top_media_sources": [
+    {
+      "domain": "nba.com",
+      "citations": 120
+    },
+    {
+      "domain": "espn.com",
+      "citations": 55
+    },
+    {
+      "domain": "theathletic.com",
+      "citations": 26
+    },
+    {
+      "domain": "basketball-reference.com",
+      "citations": 18
+    },
+    {
+      "domain": "si.com",
+      "citations": 16
+    },
+    {
+      "domain": "bleacherreport.com",
+      "citations": 14
+    },
+    {
+      "domain": "forbes.com",
+      "citations": 14
+    },
+    {
+      "domain": "nfl.com",
+      "citations": 12
+    },
+    {
+      "domain": "nielsen.com",
+      "citations": 11
+    },
+    {
+      "domain": "theringer.com",
+      "citations": 10
+    }
+  ],
+  "platform_performance": {
+    "ChatGPT": {
+      "queries": 10,
+      "citations": 76
+    },
+    "Claude": {
+      "queries": 10,
+      "citations": 170
+    },
+    "Perplexity": {
+      "queries": 10,
+      "citations": 30
+    },
+    "Gemini": {
+      "queries": 10,
+      "citations": 87
+    }
+  },
+  "key_insights": [
+    "Third-party content dominates NBA citations - opportunity to increase official NBA.com presence",
+    "ESPN is a dominant source for NBA content - strong media partnership",
+    "Claude provides the most NBA citations - prioritize content optimization for this platform"
+  ]
+}

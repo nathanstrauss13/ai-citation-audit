@@ -1,0 +1,40 @@
+query_id,query_text,query_type,engine,nba_leaguepass_mentioned,nba_leaguepass_position,amazon_prime_mentioned,amazon_prime_position,youtube_tv_mentioned,youtube_tv_position,hulu_mentioned,hulu_position,other_services_mentioned,primary_recommendation,total_citations,scraped_citations,inferred_citations
+A1,How can I stream NBA games online?,service_agnostic,ChatGPT,Yes,First,No,Not Present,Yes,Prominent,Yes,Prominent,"Sling TV,FuboTV,ESPN+",NBA League Pass,0,0,0
+A1,How can I stream NBA games online?,service_agnostic,Claude,Yes,First,No,Not Present,Yes,Prominent,Yes,Prominent,"Sling TV,FuboTV,DirecTV Stream",NBA League Pass,0,0,0
+A1,How can I stream NBA games online?,service_agnostic,Perplexity,Yes,First,No,Not Present,No,Not Present,No,Not Present,,NBA League Pass,8,8,0
+A1,How can I stream NBA games online?,service_agnostic,Gemini,Yes,First,Yes,Buried,Yes,Prominent,Yes,Prominent,"Sling TV,FuboTV,DirecTV Stream,ESPN+",NBA League Pass,0,0,0
+A2,What's the best way to watch NBA games without cable?,service_agnostic,ChatGPT,Yes,First,No,Not Present,Yes,Prominent,Yes,Prominent,"Sling TV,FuboTV,DirecTV Stream",NBA League Pass,0,0,0
+A2,What's the best way to watch NBA games without cable?,service_agnostic,Claude,Yes,First,No,Not Present,Yes,Prominent,Yes,Prominent,"Sling TV,FuboTV",NBA League Pass,0,0,0
+A2,What's the best way to watch NBA games without cable?,service_agnostic,Perplexity,Yes,Buried,Yes,Prominent,Yes,First,Yes,Prominent,"Sling TV,FuboTV,DirecTV Stream",YouTube TV,8,8,0
+A2,What's the best way to watch NBA games without cable?,service_agnostic,Gemini,Yes,First,No,Not Present,Yes,Prominent,Yes,Prominent,"Sling TV,FuboTV,DirecTV Stream",YouTube TV,0,0,0
+A3,NBA streaming options comparison,service_agnostic,ChatGPT,Yes,Prominent,No,Not Present,Yes,Prominent,Yes,Prominent,"Sling TV,FuboTV,DirecTV Stream,ESPN+",NBA League Pass,0,0,0
+A3,NBA streaming options comparison,service_agnostic,Claude,Yes,First,No,Not Present,Yes,Prominent,Yes,Prominent,"Sling TV,ESPN+",NBA League Pass,0,0,0
+A3,NBA streaming options comparison,service_agnostic,Gemini,Yes,Prominent,No,Not Present,Yes,Prominent,Yes,Prominent,,NBA League Pass,0,0,0
+A4,Where to watch NBA games 2025-2026 season,service_agnostic,ChatGPT,Yes,First,No,Not Present,No,Not Present,No,Not Present,ESPN+,NBA League Pass,0,0,0
+A4,Where to watch NBA games 2025-2026 season,service_agnostic,Claude,No,Not Present,No,Not Present,No,Not Present,No,Not Present,,None,0,0,0
+A4,Where to watch NBA games 2025-2026 season,service_agnostic,Perplexity,No,Not Present,Yes,Prominent,No,Not Present,No,Not Present,,Amazon Prime Video,8,8,0
+A4,Where to watch NBA games 2025-2026 season,service_agnostic,Gemini,Yes,Prominent,Yes,Prominent,Yes,Prominent,Yes,Buried,"Sling TV,DirecTV Stream",Amazon Prime Video,0,0,0
+A5,Best streaming service for NBA fans,service_agnostic,ChatGPT,Yes,First,No,Not Present,Yes,Prominent,Yes,Prominent,"Sling TV,FuboTV,ESPN+",NBA League Pass,0,0,0
+A5,Best streaming service for NBA fans,service_agnostic,Claude,Yes,First,No,Not Present,Yes,Prominent,Yes,Prominent,Sling TV,NBA League Pass,0,0,0
+A5,Best streaming service for NBA fans,service_agnostic,Perplexity,Yes,First,No,Not Present,Yes,Prominent,No,Not Present,"Sling TV,FuboTV,DirecTV Stream",YouTube TV,8,8,0
+A5,Best streaming service for NBA fans,service_agnostic,Gemini,Yes,Prominent,Yes,Buried,Yes,Prominent,Yes,Prominent,"Sling TV,FuboTV,ESPN+",YouTube TV,0,0,0
+A6,How to watch NBA games on streaming platforms,service_agnostic,ChatGPT,Yes,First,Yes,Buried,Yes,Prominent,Yes,Prominent,"Sling TV,FuboTV,ESPN+",NBA League Pass,0,0,0
+A6,How to watch NBA games on streaming platforms,service_agnostic,Claude,Yes,First,No,Not Present,Yes,Prominent,Yes,Prominent,"Sling TV,FuboTV,DirecTV Stream,ESPN+",NBA League Pass,0,0,0
+A6,How to watch NBA games on streaming platforms,service_agnostic,Perplexity,Yes,Prominent,No,Not Present,No,Not Present,Yes,First,"Sling TV,FuboTV,DirecTV Stream,ESPN+",Hulu Live TV,6,6,0
+A6,How to watch NBA games on streaming platforms,service_agnostic,Gemini,Yes,First,No,Not Present,Yes,Prominent,Yes,Prominent,"Sling TV,FuboTV,DirecTV Stream,ESPN+",NBA League Pass,0,0,0
+B1,How do I get NBA League Pass?,service_specific,ChatGPT,Yes,First,Yes,Prominent,Yes,Prominent,No,Not Present,Sling TV,NBA League Pass,1,1,0
+B1,How do I get NBA League Pass?,service_specific,Claude,Yes,First,Yes,Prominent,Yes,Prominent,No,Not Present,,NBA League Pass,0,0,0
+B1,How do I get NBA League Pass?,service_specific,Perplexity,Yes,First,No,Not Present,No,Not Present,No,Not Present,DirecTV Stream,NBA League Pass,7,7,0
+B1,How do I get NBA League Pass?,service_specific,Gemini,Yes,First,Yes,Prominent,Yes,Prominent,No,Not Present,,NBA League Pass,0,0,0
+B2,Can I watch NBA games on Amazon Prime?,service_specific,ChatGPT,Yes,Prominent,Yes,First,Yes,Buried,Yes,Prominent,"Sling TV,FuboTV",Amazon Prime Video,0,0,0
+B2,Can I watch NBA games on Amazon Prime?,service_specific,Claude,Yes,Prominent,Yes,First,No,Not Present,No,Not Present,,Amazon Prime Video,0,0,0
+B2,Can I watch NBA games on Amazon Prime?,service_specific,Perplexity,Yes,Prominent,Yes,First,No,Not Present,No,Not Present,,Amazon Prime Video,8,8,0
+B2,Can I watch NBA games on Amazon Prime?,service_specific,Gemini,Yes,Prominent,Yes,First,Yes,Prominent,Yes,Buried,"Sling TV,FuboTV",Amazon Prime Video,0,0,0
+B3,Is NBA League Pass worth it compared to YouTube TV?,service_specific,ChatGPT,Yes,First,No,Not Present,Yes,Prominent,No,Not Present,,NBA League Pass,0,0,0
+B3,Is NBA League Pass worth it compared to YouTube TV?,service_specific,Claude,Yes,First,No,Not Present,Yes,Prominent,No,Not Present,,NBA League Pass,0,0,0
+B3,Is NBA League Pass worth it compared to YouTube TV?,service_specific,Perplexity,Yes,First,Yes,Prominent,Yes,Prominent,No,Not Present,,YouTube TV,8,8,0
+B3,Is NBA League Pass worth it compared to YouTube TV?,service_specific,Gemini,Yes,First,No,Not Present,Yes,Prominent,No,Not Present,,NBA League Pass,0,0,0
+B4,Hulu vs NBA League Pass for watching basketball,service_specific,ChatGPT,Yes,First,No,Not Present,No,Not Present,Yes,Prominent,,NBA League Pass,0,0,0
+B4,Hulu vs NBA League Pass for watching basketball,service_specific,Claude,Yes,First,No,Not Present,No,Not Present,Yes,Prominent,,NBA League Pass,0,0,0
+B4,Hulu vs NBA League Pass for watching basketball,service_specific,Perplexity,Yes,First,No,Not Present,No,Not Present,Yes,Prominent,,NBA League Pass,9,9,0
+B4,Hulu vs NBA League Pass for watching basketball,service_specific,Gemini,Yes,First,No,Not Present,No,Not Present,Yes,Prominent,,NBA League Pass,0,0,0

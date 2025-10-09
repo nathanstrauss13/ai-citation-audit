@@ -1,0 +1,25 @@
+{
+  "platform_status": {
+    "perplexity": {
+      "has_api_key": true,
+      "api_key_length": 53
+    },
+    "chatgpt": {
+      "has_api_key": true,
+      "api_key_length": 164
+    },
+    "claude": {
+      "has_api_key": true,
+      "api_key_length": 108
+    },
+    "gemini": {
+      "has_api_key": true,
+      "api_key_length": 39
+    }
+  },
+  "test_results": {},
+  "aggregation_issues": [
+    "api.py: citations = []"
+  ],
+  "fixes_needed": []
+}

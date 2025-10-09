@@ -1,0 +1,37 @@
+media_outlet,total_citations,scraped_count,inferred_count,services_favored,amazon_mention_count,leaguepass_mention_count,queries_appeared_in,engines_citing,sample_urls
+aboutamazon.com,3,3,0,"Amazon Prime Video,NBA League Pass",1,2,"A4,B2",Perplexity,https://www.aboutamazon.com/news/entertainment/stream-nba-prime-video | https://www.aboutamazon.com/news/entertainment/how-to-watch-nba-prime | https://www.aboutamazon.com/news/entertainment/stream-nba-prime-video
+businessinsider.com,3,3,0,NBA League Pass,0,3,"A5,A6,B4",Perplexity,https://www.businessinsider.com/guides/streaming/how-to-watch-nba-live-streams | https://www.businessinsider.com/guides/streaming/how-to-watch-nba-live-streams | https://www.businessinsider.com/guides/streaming/how-to-watch-nba-live-streams
+cabletv.com,4,4,0,NBA League Pass,0,4,"A2,A5,B3",Perplexity,https://www.cabletv.com/sports/watch-nba-without-cable | https://www.cabletv.com/sports/watch-nba-games | https://www.cabletv.com/sports/watch-nba-tv
+cordcuttersnews.com,1,1,0,NBA League Pass,0,1,B4,Perplexity,https://cordcuttersnews.com/live-sports-dominates-american-tv-hulu-live-tv-reveals-top-10-most-watched-programs-revealing-sports-is-the-only-thing-saving-cable-tv/
+cordcutting.com,1,1,0,NBA League Pass,0,1,B4,Perplexity,https://cordcutting.com/how-to-watch/nba-playoffs/
+directv.com,1,1,0,NBA League Pass,0,1,B1,Perplexity,https://www.directv.com/sports/nba-basketball/
+en.wikipedia.org,1,1,0,NBA League Pass,0,1,B2,Perplexity,https://en.wikipedia.org/wiki/NBA_on_Prime
+espn.com,8,8,0,"Amazon Prime Video,NBA League Pass",1,7,"A1,A2,A4,A6",Perplexity,https://www.espn.com/watch/ | https://www.espn.com/where-to-watch/leagues/nba | https://www.espn.com/where-to-watch/leagues/nba
+espnpressroom.com,1,1,0,Amazon Prime Video,1,0,A4,Perplexity,https://espnpressroom.com/us/press-releases/2025/08/espn-abcs-star-studded-2025-26-nba-regular-season-broadcast-schedule/
+frontofficesports.com,1,1,0,Amazon Prime Video,1,0,A4,Perplexity,https://frontofficesports.com/newsletter/nbas-big-streaming-push/
+geekwire.com,1,1,0,NBA League Pass,0,1,B2,Perplexity,https://www.geekwire.com/2025/amazons-nba-on-prime-streams-will-include-fanduel-bet-tracking-shopping-integration-and-more/
+help.hulu.com,1,1,0,NBA League Pass,0,1,B4,Perplexity,https://help.hulu.com/article/hulu-nba-availability
+hulu.com,5,5,0,NBA League Pass,0,5,"A1,A2,B4",Perplexity,https://www.hulu.com/nba | https://www.hulu.com/guides/nba-basketball | https://www.hulu.com/nba
+justwatch.com,1,1,0,NBA League Pass,0,1,A1,Perplexity,https://www.justwatch.com/us/basketball/nba
+my.dish.com,1,1,0,NBA League Pass,0,1,B1,Perplexity,https://my.dish.com/payperview/sports-and-events/nba-league-pass
+nba.2k.com,1,1,0,NBA League Pass,0,1,B1,Perplexity,https://nba.2k.com/2k25/league-pass-faq/
+nbc.com,1,1,0,Amazon Prime Video,1,0,A4,Perplexity,https://www.nbc.com/nbc-insider/the-full-2025-2026-nba-on-nbc-schedule
+nbcsports.com,1,1,0,Amazon Prime Video,1,0,A4,Perplexity,https://www.nbcsports.com/pressbox/press-releases/nbc-sports-announces-its-complete-2025-26-nba-regular-season-schedule-featuring-100-games-across-nbc-and-peacock
+peacocktv.com,5,5,0,"Amazon Prime Video,NBA League Pass",1,4,"A1,A2,A4,A5,A6",Perplexity,https://www.peacocktv.com/sports/nba | https://www.peacocktv.com/sports/nba | https://www.peacocktv.com/sports/nba
+plus.espn.com,1,1,0,NBA League Pass,0,1,A5,Perplexity,https://plus.espn.com
+primevideo.com,2,2,0,NBA League Pass,0,2,B2,Perplexity,https://www.primevideo.com/tournament/amzn1.dv.icid.cf75b42a-68cd-4a1c-993a-a0b3f0575c5f | https://www.primevideo.com/collection/pvsports
+reviews.org,1,1,0,NBA League Pass,0,1,B3,Perplexity,https://www.reviews.org/tv-service/nba-league-pass-review/
+si.com,1,1,0,NBA League Pass,0,1,B2,Perplexity,https://www.si.com/nba/every-nba-game-on-amazon-prime-for-2025-26-season
+smartmove.us,2,2,0,NBA League Pass,0,2,"A5,B4",Perplexity,https://www.smartmove.us/streaming/guide/what-is-the-best-streaming-service-for-nba-games | https://www.smartmove.us/streaming/guide/what-is-the-best-streaming-service-for-nba-games
+sportsepreneur.com,1,1,0,NBA League Pass,0,1,B3,Perplexity,https://sportsepreneur.com/is-nba-league-pass-worth-it-tv-media-deal/
+support.google.com,2,2,0,NBA League Pass,0,2,"B1,B3",Perplexity,https://support.google.com/youtubetv/answer/9148808?hl=en | https://support.google.com/youtubetv/answer/9148808?hl=en
+support.watch.nba.com,3,3,0,NBA League Pass,0,3,"A1,B1,B2",Perplexity,https://support.watch.nba.com/hc/en-us/articles/115000581693-NBA-Single-Game | https://support.watch.nba.com/hc/en-us/articles/115000585813-Purchasing-NBA-League-Pass | https://support.watch.nba.com/hc/en-us/articles/34813181782679-League-Pass-with-Amazon-Prime
+teamziller.com,3,3,0,NBA League Pass,0,3,"A5,B4",Perplexity,https://www.teamziller.com/nba-streaming-services-prime-video-peacock-espn-unlimited/ | https://www.teamziller.com/the-2024-25-guide-to-streaming-packages/ | https://www.teamziller.com/the-2024-25-guide-to-streaming-packages/
+theleadsm.com,1,1,0,NBA League Pass,0,1,B3,Perplexity,https://theleadsm.com/is-nba-league-pass-worth-it/
+threads.com,1,1,0,NBA League Pass,0,1,B3,Perplexity,https://www.threads.com/@kevinoconnor/post/DN9dcIWjBpT/no-more-nba-and-wnba-league-pass-on-youtube-tv?hl=en
+top10.com,1,1,0,NBA League Pass,0,1,B4,Perplexity,https://www.top10.com/tv-services/top-tv-services-to-watch-the-nba-finals-and-stream-it-online
+tv.youtube.com,1,1,0,NBA League Pass,0,1,A1,Perplexity,https://tv.youtube.com/browse/nba-basketball-UCfCI17CQpic3xo2Q_S50UVA
+tvtechnology.com,1,1,0,Amazon Prime Video,1,0,A4,Perplexity,https://www.tvtechnology.com/news/nbcu-reports-nearly-sold-out-inventory-for-nba-coverage
+watch.nba.com,1,1,0,NBA League Pass,0,1,B1,ChatGPT,https://watch.nba.com/packages
+xfinity.com,3,3,0,NBA League Pass,0,3,"A1,B1",Perplexity,https://www.xfinity.com/learn/digital-cable-tv/sports/nba | https://www.xfinity.com/learn/digital-cable-tv/sports/nba/league-pass | https://www.xfinity.com/support/articles/about-nba-league-pass
+youtube.com,5,5,0,NBA League Pass,0,5,"A2,A5,B3",Perplexity,https://www.youtube.com/watch?v=rAD3V_6gODU | https://www.youtube.com/watch?v=prTw_w3sGCg | https://www.youtube.com/watch?v=3d6CABqSxWo

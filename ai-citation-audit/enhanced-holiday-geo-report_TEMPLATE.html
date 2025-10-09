@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoneyBaked Ham - Enhanced Holiday GEO Performance Analysis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f7f7f7;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Header with Holiday Theme */
+        .header {
+            background: linear-gradient(135deg, #8B2635 0%, #D2691E 50%, #8B2635 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 16px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: "🎄";
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 80px;
+            opacity: 0.2;
+        }
+        
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
+            margin-bottom: 10px;
+        }
+        
+        .header .date {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        /* Alert Box */
+        .alert-box {
+            background: linear-gradient(135deg, #fff4e6 0%, #ffe0b2 100%);
+            border-left: 5px solid #ff6b35;
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        .alert-box h3 {
+            color: #ff6b35;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+        
+        /* Score Dashboard */
+        .score-dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin: 40px 0;
+        }
+        
+        .score-card {
+            background: white;
+            border-radius: 12px;
+            padding: 28px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .score-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+        
+        .score-card.primary {
+            background: linear-gradient(135deg, #8B2635 0%, #D2691E 100%);
+            color: white;
+            grid-column: span 2;
+        }
+        
+        .score-card.warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .score-card.new {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-left: 4px solid #2196F3;
+        }
+        
+        .score-value {
+            font-size: 3.2em;
+            font-weight: 700;
+            margin: 10px 0;
+            line-height: 1;
+        }
+        
+        .score-label {
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.8;
+            margin-bottom: 8px;
+        }
+        
+        .score-comparison {
+            font-size: 0.85em;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .score-card.primary .score-comparison {
+            border-color: rgba(255,255,255,0.3);
+        }
+        
+        /* Competitive Ranking Section */
+        .ranking-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        .ranking-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        
+        .ranking-table th {
+            background: linear-gradient(135deg, #8B2635 0%, #D2691E 100%);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .ranking-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .ranking-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .rank-badge {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .rank-1 { background: linear-gradient(135deg, #FFD700, #FFA000); }
+        .rank-2 { background: linear-gradient(135deg, #C0C0C0, #909090); }
+        .rank-3 { background: linear-gradient(135deg, #CD7F32, #8B4513); }
+        .rank-default { background: #6c757d; }
+        
+        /* Query Performance Matrix Enhanced */
+        .query-matrix {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        .query-grid {
+            display: grid;
+            gap: 16px;
+            margin-top: 20px;
+        }
+        
+        .query-item {
+            padding: 16px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .query-item:hover {
+            background: #e9ecef;
+            transform: translateX(4px);
+        }
+        
+        .query-item.success {
+            border-left-color: #28a745;
+            background: #d4edda;
+        }
+        
+        .query-item.warning {
+            border-left-color: #ffc107;
+            background: #fff3cd;
+        }
+        
+        .query-item.danger {
+            border-left-color: #dc3545;
+            background: #f8d7da;
+        }
+        
+        .query-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .query-text {
+            font-size: 0.95em;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .query-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        
+        .query-citations {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            font-size: 0.85em;
+            color: #6c757d;
+        }
+        
+        .citation-link {
+            color: #2196F3;
+            text-decoration: none;
+            margin-right: 8px;
+            word-break: break-all;
+        }
+        
+        .citation-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* PR Media Targets */
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+            margin: 24px 0;
+        }
+        
+        .media-card {
+            background: white;
+            border-radius: 8px;
+            padding: 16px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .media-card.achieved {
+            border-color: #28a745;
+            background: linear-gradient(135deg, #ffffff 0%, #d4edda 100%);
+        }
+        
+        .media-card.missing {
+            border-color: #dc3545;
+            background: linear-gradient(135deg, #ffffff 0%, #f8d7da 100%);
+        }
+        
+        .media-name {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+        
+        .media-count {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #8B2635;
+        }
+        
+        .media-label {
+            font-size: 0.85em;
+            color: #6c757d;
+        }
+        
+        /* Competitive Landscape */
+        .competitive-chart {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        .competitor-bars {
+            margin: 24px 0;
+        }
+        
+        .competitor-item {
+            display: grid;
+            grid-template-columns: 150px 1fr 80px;
+            align-items: center;
+            gap: 20px;
+            margin: 16px 0;
+        }
+        
+        .competitor-name {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .competitor-bar {
+            height: 32px;
+            background: #e9ecef;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .competitor-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #8B2635, #D2691E);
+            border-radius: 16px;
+            transition: width 1s ease;
+            position: relative;
+        }
+        
+        .competitor-fill.highlight {
+            background: linear-gradient(90deg, #28a745, #20c997);
+        }
+        
+        .competitor-count {
+            font-weight: 700;
+            color: #8B2635;
+            text-align: right;
+        }
+        
+        /* Performance Stats */
+        .performance-stat {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 8px;
+            padding: 16px;
+            margin: 8px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .stat-label {
+            font-weight: 600;
+            color: #495057;
+        }
+        
+        .stat-value {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #8B2635;
+        }
+        
+        /* Tim Ziga Section */
+        .chef-section {
+            background: linear-gradient(135deg, #FFF8E7 0%, #FFE4B5 100%);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            border: 2px solid #D2691E;
+        }
+        
+        .chef-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+        
+        .chef-icon {
+            width: 60px;
+            height: 60px;
+            background: #8B2635;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+        
+        .chef-mentions {
+            background: white;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 12px 0;
+            border-left: 4px solid #8B2635;
+        }
+        
+        /* Recommendations */
+        .recommendations-grid {
+            display: grid;
+            gap: 20px;
+            margin: 24px 0;
+        }
+        
+        .recommendation-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-left: 4px solid #8B2635;
+            transition: all 0.3s ease;
+        }
+        
+        .recommendation-card:hover {
+            transform: translateX(4px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+        }
+        
+        .priority-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-left: 12px;
+        }
+        
+        .priority-high {
+            background: #f8d7da;
+            color: #8B2635;
+        }
+        
+        .priority-medium {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #e9ecef;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .score-dashboard {
+                grid-template-columns: 1fr;
+            }
+            
+            .score-card.primary {
+                grid-column: span 1;
+            }
+            
+            .competitor-item {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+            
+            .ranking-table {
+                font-size: 0.9em;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                font-size: 11pt;
+            }
+            
+            .header {
+                background: #8B2635 !important;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            
+            .score-card, .recommendation-card {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Holiday GEO Performance Analysis</h1>
+            <div class="subtitle">HoneyBaked Ham PR Strategy Assessment - Enhanced Report</div>
+            <div class="date">Analysis Date: September 25, 2025 | Holiday Season Focus</div>
+        </div>
+
+        <!-- Key Alert -->
+        <div class="alert-box">
+            <h3>⚠️ Critical Finding</h3>
+            <p><strong>Holiday query coverage at 34.7%</strong> - Despite PR efforts, HoneyBaked appears in only 1/3 of holiday shopping queries. The GEO score of 49.3 is below the baseline 52.3, indicating increased competition during holiday season.</p>
+        </div>
+
+        <!-- Score Dashboard with New Metrics -->
+        <div class="score-dashboard">
+            <div class="score-card primary">
+                <div class="score-label">Overall GEO Score</div>
+                <div class="score-value">49.3</div>
+                <div class="score-comparison">
+                    📉 Baseline: 52.3 (-3.0 points)<br>
+                    🎯 Target: 65-70 (15.7 points to goal)
+                </div>
+            </div>
+            
+            <div class="score-card new">
+                <div class="score-label">🆕 Competitive Ranking</div>
+                <div class="score-value">#1</div>
+                <div class="score-comparison">
+                    🥇 Leading with 32 citations<br>
+                    📊 2.7x ahead of #2 competitor
+                </div>
+            </div>
+            
+            <div class="score-card">
+                <div class="score-label">Total Citations</div>
+                <div class="score-value">372</div>
+                <div class="score-comparison">
+                    📈 +141% vs baseline (154)
+                </div>
+            </div>
+            
+            <div class="score-card new">
+                <div class="score-label">🆕 LLM Prompts Queried</div>
+                <div class="score-value">49</div>
+                <div class="score-comparison">
+                    🤖 15 queries × 4 engines<br>
+                    📝 Comprehensive testing
+                </div>
+            </div>
+            
+            <div class="score-card warning">
+                <div class="score-label">Holiday Query Coverage</div>
+                <div class="score-value">34.7%</div>
+                <div class="score-comparison">
+                    🎄 Only 1/3 holiday queries
+                </div>
+            </div>
+            
+            <div class="score-card">
+                <div class="score-label">PR Media Achieved</div>
+                <div class="score-value">10/11</div>
+                <div class="score-comparison">
+                    ✅ 91% target achievement
+                </div>
+            </div>
+            
+            <div class="score-card">
+                <div class="score-label">Authority Citations</div>
+                <div class="score-value">74.9%</div>
+                <div class="score-comparison">
+                    📰 High-quality sources
+                </div>
+            </div>
+            
+            <div class="score-card warning">
+                <div class="score-label">Chef Tim Ziga</div>
+                <div class="score-value">4</div>
+                <div class="score-comparison">
+                    👨‍🍳 Limited mentions
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW: Competitive Ranking Table -->
+        <div class="ranking-section">
+            <h2>🏆 Competitive Ranking by Citation Volume</h2>
+            <p style="margin: 12px 0; color: #6c757d;">Rankings based on total AI citation frequency across all holiday queries</p>
+            
+            <table class="ranking-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Competitor</th>
+                        <th>Citations</th>
+                        <th>% of Leader</th>
+                        <th>Gap to Leader</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="rank-badge rank-1">1</span></td>
+                        <td><strong>HoneyBaked Ham</strong></td>
+                        <td><strong>32</strong></td>
+                        <td><strong>100%</strong></td>
+                        <td><strong>—</strong></td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank-badge rank-2">2</span></td>
+                        <td>Whole Foods</td>
+                        <td>12</td>
+                        <td>37.5%</td>
+                        <td>-20</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank-badge rank-2">2</span></td>
+                        <td>Omaha Steaks</td>
+                        <td>12</td>
+                        <td>37.5%</td>
+                        <td>-20</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank-badge rank-default">4</span></td>
+                        <td>Harry & David</td>
+                        <td>10</td>
+                        <td>31.3%</td>
+                        <td>-22</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank-badge rank-default">5</span></td>
+                        <td>Costco</td>
+                        <td>7</td>
+                        <td>21.9%</td>
+                        <td>-25</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank-badge rank-default">5</span></td>
+                        <td>Williams Sonoma</td>
+                        <td>7</td>
+                        <td>21.9%</td>
+                        <td>-25</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rank-badge rank-default">7</span></td>
+                        <td>Walmart</td>
+                        <td>4</td>
+                        <td>12.5%</td>
+                        <td>-28</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ENHANCED: Holiday Query Performance with Citations -->
+        <div class="query-matrix">
+            <h2>🎄 Holiday Query Performance with Citations</h2>
+            <p style="margin: 12px 0; color: #6c757d;">Testing how HoneyBaked appears in critical holiday shopping queries across 4 AI engines</p>
+            
+            <div class="performance-stat">
+                <span class="stat-label">Total Unique Queries Tested:</span>
+                <span class="stat-value">15</span>
+            </div>
+            <div class="performance-stat">
+                <span class="stat-label">Total Prompts Queried (Queries × Engines):</span>
+                <span class="stat-value">49</span>
+            </div>
+            <div class="performance-stat">
+                <span class="stat-label">AI Engines Tested:</span>
+                <span class="stat-value">Perplexity, ChatGPT, Claude, Gemini</span>
+            </div>
+            
+            <div class="query-grid">
+                <div class="query-item success">
+                    <div class="query-header">
+                        <div class="query-text">"What is the best ham for Thanksgiving dinner?"</div>
+                        <div class="query-status">✅ 3/4 Engines</div>
+                    </div>
+                    <div class="query-citations">
+                        <strong>HoneyBaked Citations (2):</strong><br>
+                        • <a href="https://www.honeybaked.com/products/thanksgiving-dinner" class="citation-link">Thanksgiving Dinner Products</a><br>
+                        • <a href="https://www.honeybaked.com/holiday-meals/thanksgiving" class="citation-link">Holiday Meals - Thanksgiving</a>
+                    </div>
+                </div>
+                
+                <div class="query-item success">
+                    <div class="query-header">
+                        <div class="query-text">"What is the best ham for Christmas dinner?"</div>
+                        <div class="query-status">✅ 3/4 Engines</div>
+                    </div>
+                    <div class="query-citations">
+                        <strong>HoneyBaked Citation (1):</strong><br>
+                        • <a href="https://www.honeybaked.com/shop-now/bone-in-hams" class="citation-link">Bone-In Hams</a>
+                    </div>
+                </div>
+                
+                <div class="query-item warning">
+                    <div class="query-header">
+                        <div class="query-text">"Where can I order a holiday meal online?"</div>
+                        <div class="query-status">⚠️ 1/4 Engines</div>
+                    </div>
+                    <div class="query-citations">
+                        <strong>HoneyBaked Citations (2):</strong><br>
+                        • <a href="https://www.honeybaked.com/holiday-meals" class="citation-link">Holiday Meals</a><br>
+                        • <a href="https://www.honeybaked.com" class="citation-link">HoneyBaked Homepage</a>
+                    </div>
+                </div>
+                
+                <div class="query-item danger">
+                    <div class="query-header">
+                        <div class="query-text">"What should I serve for Christmas dinner if I don't want to cook?"</div>
+                        <div class="query-status">❌ 0/4 Engines</div>
+                    </div>
+                    <div class="query-citations">
+                        <strong>No HoneyBaked Citations</strong> - Opportunity for content creation
+                    </div>
+                </div>
+                
+                <div class="query-item success">
+                    <div class="query-header">
+                        <div class="query-text">"Where can I get a holiday ham quickly?"</div>
+                        <div class="query-status">✅ 2/3 Engines</div>
+                    </div>
+                    <div class="query-citations">
+                        <strong>HoneyBaked Citations (6):</strong><br>
+                        • <a href="https://www.honeybaked.com/stores" class="citation-link">Store Locations</a><br>
+                        • <a href="https://www.honeybaked.com/holiday-meals" class="citation-link">Holiday Meals</a><br>
+                        • <a href="https://www.honeybaked.com/store-locator" class="citation-link">Store Locator</a><br>
+                        • Plus 3 additional store-specific URLs
+                    </div>
+                </div>
+                
+                <div class="query-item danger">
+                    <div class="query-header">
+                        <div class="query-text">"What's the best food gift for the holidays?"</div>
+                        <div class="query-status">❌ 0/3 Engines</div>
+                    </div>
+                    <div class="query-citations">
+                        <strong>No HoneyBaked Citations</strong> - Major gap in gift positioning
+                    </div>
+                </div>
+                
+                <div class="query-item warning">
+                    <div class="query-header">
+                        <div class="query-text">"Who is Chef Tim Ziga?"</div>
+                        <div class="query-status">⚠️ 1/3 Engines</div>
+                    </div>
+                    <div class="query-citations">
+                        <strong>No direct HoneyBaked Citations</strong> - Despite being HoneyBaked's culinary expert
+                    </div>
+                </div>
+                
+                <div class="query-item success">
+                    <div class="query-header">
+                        <div class="query-text">"HoneyBaked Ham chef recommendations"</div>
+                        <div class="query-status">✅ 3/3 Engines</div>
+                    </div>
+                    <div class="query-citations">
+                        <strong>HoneyBaked Citations (11):</strong> - Highest citation count<br>
+                        • Press releases, recipes, serving suggestions, FAQs, holiday menus
+                    </div>
+                </div>
+                
+                <div class="query-item success">
+                    <div class="query-header">
+                        <div class="query-text">"Best mail-order hams 2025"</div>
+                        <div class="query-status">✅ 3/3 Engines</div>
+                    </div>
+                    <div class="query-citations">
+                        <strong>HoneyBaked Citations (2):</strong><br>
+                        • <a href="https://www.honeybaked.com" class="citation-link">Homepage</a><br>
+                        • <a href="https://www.honeybaked.com/bone-in-ham" class="citation-link">Bone-In Ham</a>
+                    </div>
+                </div>
+                
+                <div class="query-item danger">
+                    <div class="query-header">
+                        <div class="query-text">"Last-minute Thanksgiving dinner options"</div>
+                        <div class="query-status">❌ 0/3 Engines</div>
+                    </div>
+                    <div class="query-citations">
+                        <strong>No HoneyBaked Citations</strong> - Missing last-minute shopper segment
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PR Media Target Achievement -->
+        <div class="performance-gauge">
+            <h2>📰 PR Media Target Achievement</h2>
+            <div class="media-grid">
+                <div class="media-card achieved">
+                    <div class="media-name">Good Housekeeping</div>
+                    <div class="media-count">10</div>
+                    <div class="media-label">citations</div>
+                </div>
+                
+                <div class="media-card achieved">
+                    <div class="media-name">Food & Wine</div>
+                    <div class="media-count">8</div>
+                    <div class="media-label">citations</div>
+                </div>
+                
+                <div class="media-card achieved">
+                    <div class="media-name">Bon Appétit</div>
+                    <div class="media-count">8</div>
+                    <div class="media-label">citations</div>
+                </div>
+                
+                <div class="media-card achieved">
+                    <div class="media-name">Serious Eats</div>
+                    <div class="media-count">8</div>
+                    <div class="media-label">citations</div>
+                </div>
+                
+                <div class="media-card achieved">
+                    <div class="media-name">Spruce Eats</div>
+                    <div class="media-count">7</div>
+                    <div class="media-label">citations</div>
+                </div>
+                
+                <div class="media-card achieved">
+                    <div class="media-name">Business Insider</div>
+                    <div class="media-count">5</div>
+                    <div class="media-label">citations</div>
+                </div>
+                
+                <div class="media-card achieved">
+                    <div class="media-name">Consumer Reports</div>
+                    <div class="media-count">4</div>
+                    <div class="media-label">citations</div>
+                </div>
+                
+                <div class="media-card achieved">
+                    <div class="media-name">Eater</div>
+                    <div class="media-count">4</div>
+                    <div class="media-label">citations</div>
+                </div>
+                
+                <div class="media-card achieved">
+                    <div class="media-name">AllRecipes</div>
+                    <div class="media-count">3</div>
+                    <div class="media-label">citations</div>
+                </div>
+                
+                <div class="media-card achieved">
+                    <div class="media-name">Southern Living</div>
+                    <div class="media-count">1</div>
+                    <div class="media-label">citation</div>
+                </div>
+                
+                <div class="media-card missing">
+                    <div class="media-name">CNN</div>
+                    <div class="media-count">0</div>
+                    <div class="media-label">Missing</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Competitive Landscape Visualization -->
+        <div class="competitive-chart">
+            <h2>🏆 Holiday Competitive Landscape</h2>
+            <p style="margin: 12px 0 24px 0; color: #6c757d;">Top competitors by AI citation frequency in holiday queries</p>
+            
+            <div class="competitor-bars">
+                <div class="competitor-item">
+                    <div class="competitor-name">HoneyBaked Ham (#1)</div>
+                    <div class="competitor-bar">
+                        <div class="competitor-fill highlight" style="width: 100%"></div>
+                    </div>
+                    <div class="competitor-count">32 citations</div>
+                </div>
+                
+                <div class="competitor-item">
+                    <div class="competitor-name">Whole Foods (#2)</div>
+                    <div class="competitor-bar">
+                        <div class="competitor-fill" style="width: 37.5%"></div>
+                    </div>
+                    <div class="competitor-count">12 citations</div>
+                </div>
+                
+                <div class="competitor-item">
+                    <div class="competitor-name">Omaha Steaks (#2)</div>
+                    <div class="competitor-bar">
+                        <div class="competitor-fill" style="width: 37.5%"></div>
+                    </div>
+                    <div class="competitor-count">12 citations</div>
+                </div>
+                
+                <div class="competitor-item">
+                    <div class="competitor-name">Harry & David (#4)</div>
+                    <div class="competitor-bar">
+                        <div class="competitor-fill" style="width: 31.3%"></div>
+                    </div>
+                    <div class="competitor-count">10 citations</div>
+                </div>
+                
+                <div class="competitor-item">
+                    <div class="competitor-name">Costco (#5)</div>
+                    <div class="competitor-bar">
+                        <div class="competitor-fill" style="width: 21.9%"></div>
+                    </div>
+                    <div class="competitor-count">7 citations</div>
+                </div>
+                
+                <div class="competitor-item">
+                    <div class="competitor-name">Williams Sonoma (#5)</div>
+                    <div class="competitor-bar">
+                        <div class="competitor-fill" style="width: 21.9%"></div>
+                    </div>
+                    <div class="competitor-count">7 citations</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chef Tim Ziga Section -->
+        <div class="chef-section">
+            <div class="chef-header">
+                <div class="chef-icon">👨‍🍳</div>
+                <div>
+                    <h2>Chef Tim Ziga Authority Presence</h2>
+                    <p style="margin-top: 4px; color: #856404;">4 mentions across AI platforms - Limited thought leadership visibility</p>
+                </div>
+            </div>
+            
+            <div class="chef-mentions">
+                <strong>Perplexity:</strong> "Chef Tim Ziga is the Culinary Expert for The Honey Baked Ham Company, known for sharing professional tips on holiday entertaining..."
+            </div>
+            
+            <div class="chef-mentions">
+                <strong>ChatGPT:</strong> "Chef Tim Ziga is a culinary professional known for his expertise in holiday dining and festive cuisine..."
+            </div>
+            
+            <div class="chef-mentions">
+                <strong>Claude:</strong> "Executive Chef at Davio's Northern Italian Steakhouse in Philadelphia, gained recognition for holiday cooking expertise..."
+            </div>
+        </div>
+
+        <!-- Strategic Recommendations -->
+        <div class="performance-gauge">
+            <h2>🎯 Data-Driven Recommendations</h2>
+            <div class="recommendations-grid">
+                <div class="recommendation-card">
+                    <strong>1. Maintain #1 Ranking While Improving Coverage</strong>
+                    <span class="priority-badge priority-high">High Priority</span>
+                    <p style="margin-top: 12px;">While HoneyBaked leads with 32 citations (2.7x ahead of #2), presence is concentrated in branded queries. Expand to generic holiday queries where we have 0 citations.</p>
+                </div>
+                
+                <div class="recommendation-card">
+                    <strong>2. Target Zero-Citation Queries</strong>
+                    <span class="priority-badge priority-high">High Priority</span>
+                    <p style="margin-top: 12px;">Create content for: "Christmas dinner without cooking," "best holiday food gifts," and "last-minute Thanksgiving options" - all currently showing 0 HoneyBaked citations.</p>
+                </div>
+                
+                <div class="recommendation-card">
+                    <strong>3. Amplify Chef Tim Ziga</strong>
+                    <span class="priority-badge priority-high">High Priority</span>
+                    <p style="margin-top: 12px;">Despite queries about "Chef Tim Ziga," no citations link back to HoneyBaked. Create authoritative chef content and media interviews to establish thought leadership.</p>
+                </div>
+                
+                <div class="recommendation-card">
+                    <strong>4. CNN Media Outreach</strong>
+                    <span class="priority-badge priority-medium">Medium Priority</span>
+                    <p style="margin-top: 12px;">Only missing PR target. With 49 AI prompts tested showing strong competitor presence, CNN coverage could improve visibility.</p>
+                </div>
+                
+                <div class="recommendation-card">
+                    <strong>5. Leverage Store Locator Success</strong>
+                    <span class="priority-badge priority-medium">Medium Priority</span>
+                    <p style="margin-top: 12px;">"Where can I get a holiday ham quickly?" has 6 citations. Build on this strength with last-minute shopping content.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Insights -->
+        <div class="query-matrix">
+            <h2>🔍 Critical Insights</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+                <div style="padding: 20px; background: #d4edda; border-radius: 8px; border-left: 4px solid #28a745;">
+                    <h4 style="margin-bottom: 8px;">✅ #1 Competitive Ranking</h4>
+                    <p>Leading all competitors with 32 citations, 2.7x ahead of second place (Whole Foods & Omaha Steaks at 12 each).</p>
+                </div>
+                
+                <div style="padding: 20px; background: #f8d7da; border-radius: 8px; border-left: 4px solid #dc3545;">
+                    <h4 style="margin-bottom: 8px;">❌ Query Coverage Gap</h4>
+                    <p>Despite #1 ranking, present in only 34.7% of queries. 49 LLM prompts tested reveal significant gaps.</p>
+                </div>
+                
+                <div style="padding: 20px; background: #fff3cd; border-radius: 8px; border-left: 4px solid #ffc107;">
+                    <h4 style="margin-bottom: 8px;">⚠️ Citation Concentration</h4>
+                    <p>High citations (11) on branded queries but 0 citations on generic gift and last-minute shopping queries.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2025 AI Citation Visibility Audit System | Enhanced Holiday GEO Analysis</p>
+            <p>Proprietary methodology | Data-driven insights | Confidential</p>
+            <p style="margin-top: 8px; font-size: 0.85em;">
+                <strong>Report Enhancements:</strong> Competitive Rankings | Query-Level Citations | LLM Testing Metrics
+            </p>
+        </div>
+    </div>
+</body>
+</html>

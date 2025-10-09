@@ -1,0 +1,241 @@
+query,query_type,engine,league_mentioned,mentioned_in_response,mentioned_in_citations,prominence_vs_nba,viewership_data_cited,cultural_impact_noted
+Tell me about the NBA,branded,chatgpt,NFL,Yes,No,Lower - Mentioned After,No,Yes
+Tell me about the NBA,branded,chatgpt,NBA,Yes,Yes,Featured First,No,Yes
+Tell me about the NBA,branded,chatgpt,MLB,No,No,N/A - NBA Present Only,No,Yes
+Tell me about the NBA,branded,chatgpt,NHL,No,No,N/A - NBA Present Only,No,Yes
+Tell me about the NBA,branded,claude,NFL,Yes,No,Lower - Mentioned After,No,Yes
+Tell me about the NBA,branded,claude,NBA,Yes,Yes,Featured First,No,Yes
+Tell me about the NBA,branded,claude,MLB,No,No,N/A - NBA Present Only,No,Yes
+Tell me about the NBA,branded,claude,NHL,No,No,N/A - NBA Present Only,No,Yes
+Tell me about the NBA,branded,perplexity,NFL,No,No,N/A - NBA Present Only,No,No
+Tell me about the NBA,branded,perplexity,NBA,Yes,Yes,Exclusive Focus,No,No
+Tell me about the NBA,branded,perplexity,MLB,No,No,N/A - NBA Present Only,No,No
+Tell me about the NBA,branded,perplexity,NHL,No,No,N/A - NBA Present Only,No,No
+Tell me about the NBA,branded,gemini,NFL,Yes,No,Lower - Mentioned After,No,Yes
+Tell me about the NBA,branded,gemini,NBA,Yes,Yes,Featured First,No,Yes
+Tell me about the NBA,branded,gemini,MLB,No,No,N/A - NBA Present Only,No,Yes
+Tell me about the NBA,branded,gemini,NHL,No,No,N/A - NBA Present Only,No,Yes
+What makes the NBA different from other professional sports leagues?,branded,chatgpt,NFL,Yes,No,Lower - Mentioned After,No,Yes
+What makes the NBA different from other professional sports leagues?,branded,chatgpt,NBA,Yes,No,Listed First Among Options,No,Yes
+What makes the NBA different from other professional sports leagues?,branded,chatgpt,MLB,No,No,N/A - NBA Present Only,No,Yes
+What makes the NBA different from other professional sports leagues?,branded,chatgpt,NHL,No,No,N/A - NBA Present Only,No,Yes
+What makes the NBA different from other professional sports leagues?,branded,claude,NFL,Yes,No,Lower - Mentioned After,Yes,Yes
+What makes the NBA different from other professional sports leagues?,branded,claude,NBA,Yes,Yes,Listed First Among Options,Yes,Yes
+What makes the NBA different from other professional sports leagues?,branded,claude,MLB,No,No,N/A - NBA Present Only,Yes,Yes
+What makes the NBA different from other professional sports leagues?,branded,claude,NHL,No,No,N/A - NBA Present Only,Yes,Yes
+What makes the NBA different from other professional sports leagues?,branded,perplexity,NFL,Yes,Yes,Lower - Mentioned After,Yes,Yes
+What makes the NBA different from other professional sports leagues?,branded,perplexity,NBA,Yes,Yes,Featured First,Yes,Yes
+What makes the NBA different from other professional sports leagues?,branded,perplexity,MLB,Yes,Yes,Lower - Mentioned After,Yes,Yes
+What makes the NBA different from other professional sports leagues?,branded,perplexity,NHL,Yes,Yes,Lower - Mentioned After,Yes,Yes
+What makes the NBA different from other professional sports leagues?,branded,gemini,NFL,Yes,No,Lower - Mentioned After,Yes,Yes
+What makes the NBA different from other professional sports leagues?,branded,gemini,NBA,Yes,Yes,Listed First Among Options,Yes,Yes
+What makes the NBA different from other professional sports leagues?,branded,gemini,MLB,Yes,No,Lower - Mentioned After,Yes,Yes
+What makes the NBA different from other professional sports leagues?,branded,gemini,NHL,Yes,No,Lower - Mentioned After,Yes,Yes
+NBA game schedule tonight,branded,chatgpt,NFL,No,No,N/A - NBA Present Only,No,No
+NBA game schedule tonight,branded,chatgpt,NBA,Yes,Yes,Exclusive Focus,No,No
+NBA game schedule tonight,branded,chatgpt,MLB,No,No,N/A - NBA Present Only,No,No
+NBA game schedule tonight,branded,chatgpt,NHL,No,No,N/A - NBA Present Only,No,No
+NBA game schedule tonight,branded,claude,NFL,No,No,N/A - NBA Present Only,No,No
+NBA game schedule tonight,branded,claude,NBA,Yes,Yes,Exclusive Focus,No,No
+NBA game schedule tonight,branded,claude,MLB,No,No,N/A - NBA Present Only,No,No
+NBA game schedule tonight,branded,claude,NHL,No,No,N/A - NBA Present Only,No,No
+NBA game schedule tonight,branded,perplexity,NFL,No,No,N/A - NBA Present Only,No,No
+NBA game schedule tonight,branded,perplexity,NBA,Yes,Yes,Exclusive Focus,No,No
+NBA game schedule tonight,branded,perplexity,MLB,No,No,N/A - NBA Present Only,No,No
+NBA game schedule tonight,branded,perplexity,NHL,No,No,N/A - NBA Present Only,No,No
+NBA game schedule tonight,branded,gemini,NFL,No,No,N/A - NBA Present Only,No,No
+NBA game schedule tonight,branded,gemini,NBA,Yes,Yes,Exclusive Focus,No,No
+NBA game schedule tonight,branded,gemini,MLB,No,No,N/A - NBA Present Only,No,No
+NBA game schedule tonight,branded,gemini,NHL,No,No,N/A - NBA Present Only,No,No
+How can I watch NBA games?,branded,chatgpt,NFL,No,No,N/A - NBA Present Only,No,No
+How can I watch NBA games?,branded,chatgpt,NBA,Yes,Yes,Exclusive Focus,No,No
+How can I watch NBA games?,branded,chatgpt,MLB,No,No,N/A - NBA Present Only,No,No
+How can I watch NBA games?,branded,chatgpt,NHL,No,No,N/A - NBA Present Only,No,No
+How can I watch NBA games?,branded,claude,NFL,No,No,N/A - NBA Present Only,No,No
+How can I watch NBA games?,branded,claude,NBA,Yes,Yes,Exclusive Focus,No,No
+How can I watch NBA games?,branded,claude,MLB,No,No,N/A - NBA Present Only,No,No
+How can I watch NBA games?,branded,claude,NHL,No,No,N/A - NBA Present Only,No,No
+How can I watch NBA games?,branded,perplexity,NFL,Yes,No,Lower - Mentioned After,No,No
+How can I watch NBA games?,branded,perplexity,NBA,Yes,Yes,Listed First Among Options,No,No
+How can I watch NBA games?,branded,perplexity,MLB,No,No,N/A - NBA Present Only,No,No
+How can I watch NBA games?,branded,perplexity,NHL,No,No,N/A - NBA Present Only,No,No
+How can I watch NBA games?,branded,gemini,NFL,No,No,N/A - NBA Present Only,Yes,No
+How can I watch NBA games?,branded,gemini,NBA,Yes,Yes,Exclusive Focus,Yes,No
+How can I watch NBA games?,branded,gemini,MLB,No,No,N/A - NBA Present Only,Yes,No
+How can I watch NBA games?,branded,gemini,NHL,No,No,N/A - NBA Present Only,Yes,No
+What's the most popular professional sports league in America?,league_agnostic,chatgpt,NFL,Yes,Yes,Higher - Mentioned First,Yes,No
+What's the most popular professional sports league in America?,league_agnostic,chatgpt,NBA,Yes,No,Listed Among Options,Yes,No
+What's the most popular professional sports league in America?,league_agnostic,chatgpt,MLB,Yes,No,Higher - Mentioned First,Yes,No
+What's the most popular professional sports league in America?,league_agnostic,chatgpt,NHL,Yes,No,Lower - Mentioned After,Yes,No
+What's the most popular professional sports league in America?,league_agnostic,claude,NFL,Yes,Yes,"Present, NBA Absent",Yes,No
+What's the most popular professional sports league in America?,league_agnostic,claude,NBA,No,No,Not Present,Yes,No
+What's the most popular professional sports league in America?,league_agnostic,claude,MLB,No,No,Both Absent,Yes,No
+What's the most popular professional sports league in America?,league_agnostic,claude,NHL,No,No,Both Absent,Yes,No
+What's the most popular professional sports league in America?,league_agnostic,perplexity,NFL,Yes,No,Higher - Mentioned First,Yes,Yes
+What's the most popular professional sports league in America?,league_agnostic,perplexity,NBA,Yes,No,Listed Among Options,Yes,Yes
+What's the most popular professional sports league in America?,league_agnostic,perplexity,MLB,Yes,No,Lower - Mentioned After,Yes,Yes
+What's the most popular professional sports league in America?,league_agnostic,perplexity,NHL,Yes,No,Lower - Mentioned After,Yes,Yes
+What's the most popular professional sports league in America?,league_agnostic,gemini,NFL,Yes,Yes,Higher - Featured First,Yes,Yes
+What's the most popular professional sports league in America?,league_agnostic,gemini,NBA,Yes,No,Listed Among Options,Yes,Yes
+What's the most popular professional sports league in America?,league_agnostic,gemini,MLB,No,No,N/A - NBA Present Only,Yes,Yes
+What's the most popular professional sports league in America?,league_agnostic,gemini,NHL,No,No,N/A - NBA Present Only,Yes,Yes
+Best professional sports to watch,league_agnostic,chatgpt,NFL,Yes,No,Lower - Mentioned After,Yes,Yes
+Best professional sports to watch,league_agnostic,chatgpt,NBA,Yes,No,Listed Among Options,Yes,Yes
+Best professional sports to watch,league_agnostic,chatgpt,MLB,Yes,No,Lower - Mentioned After,Yes,Yes
+Best professional sports to watch,league_agnostic,chatgpt,NHL,Yes,No,Lower - Mentioned After,Yes,Yes
+Best professional sports to watch,league_agnostic,claude,NFL,Yes,Yes,Higher - Mentioned First,No,Yes
+Best professional sports to watch,league_agnostic,claude,NBA,Yes,Yes,Listed Among Options,No,Yes
+Best professional sports to watch,league_agnostic,claude,MLB,Yes,Yes,Lower - Mentioned After,No,Yes
+Best professional sports to watch,league_agnostic,claude,NHL,Yes,No,Lower - Mentioned After,No,Yes
+Best professional sports to watch,league_agnostic,perplexity,NFL,Yes,No,Lower - Mentioned After,Yes,Yes
+Best professional sports to watch,league_agnostic,perplexity,NBA,Yes,No,Listed Among Options,Yes,Yes
+Best professional sports to watch,league_agnostic,perplexity,MLB,Yes,No,Lower - Mentioned After,Yes,Yes
+Best professional sports to watch,league_agnostic,perplexity,NHL,No,No,N/A - NBA Present Only,Yes,Yes
+Best professional sports to watch,league_agnostic,gemini,NFL,Yes,Yes,Lower - Mentioned After,No,Yes
+Best professional sports to watch,league_agnostic,gemini,NBA,Yes,Yes,Listed Among Options,No,Yes
+Best professional sports to watch,league_agnostic,gemini,MLB,Yes,No,Lower - Mentioned After,No,Yes
+Best professional sports to watch,league_agnostic,gemini,NHL,Yes,No,Lower - Mentioned After,No,Yes
+Most exciting sports league,league_agnostic,chatgpt,NFL,Yes,Yes,Higher - Featured First,No,Yes
+Most exciting sports league,league_agnostic,chatgpt,NBA,Yes,Yes,Listed Among Options,No,Yes
+Most exciting sports league,league_agnostic,chatgpt,MLB,Yes,No,Lower - Mentioned After,No,Yes
+Most exciting sports league,league_agnostic,chatgpt,NHL,Yes,No,Lower - Mentioned After,No,Yes
+Most exciting sports league,league_agnostic,claude,NFL,Yes,Yes,Higher - Mentioned First,No,Yes
+Most exciting sports league,league_agnostic,claude,NBA,Yes,Yes,Listed Among Options,No,Yes
+Most exciting sports league,league_agnostic,claude,MLB,Yes,No,Lower - Mentioned After,No,Yes
+Most exciting sports league,league_agnostic,claude,NHL,Yes,No,Lower - Mentioned After,No,Yes
+Most exciting sports league,league_agnostic,perplexity,NFL,Yes,No,Lower - Mentioned After,Yes,Yes
+Most exciting sports league,league_agnostic,perplexity,NBA,Yes,No,Listed Among Options,Yes,Yes
+Most exciting sports league,league_agnostic,perplexity,MLB,No,No,N/A - NBA Present Only,Yes,Yes
+Most exciting sports league,league_agnostic,perplexity,NHL,No,No,N/A - NBA Present Only,Yes,Yes
+Most exciting sports league,league_agnostic,gemini,NFL,Yes,Yes,Lower - Mentioned After,No,Yes
+Most exciting sports league,league_agnostic,gemini,NBA,Yes,Yes,Listed Among Options,No,Yes
+Most exciting sports league,league_agnostic,gemini,MLB,Yes,No,Lower - Mentioned After,No,Yes
+Most exciting sports league,league_agnostic,gemini,NHL,Yes,No,Lower - Mentioned After,No,Yes
+Which sports league has the best athletes?,league_agnostic,chatgpt,NFL,Yes,Yes,Lower - Mentioned After,No,Yes
+Which sports league has the best athletes?,league_agnostic,chatgpt,NBA,Yes,Yes,Listed Among Options,No,Yes
+Which sports league has the best athletes?,league_agnostic,chatgpt,MLB,Yes,Yes,Lower - Mentioned After,No,Yes
+Which sports league has the best athletes?,league_agnostic,chatgpt,NHL,Yes,No,Lower - Mentioned After,No,Yes
+Which sports league has the best athletes?,league_agnostic,claude,NFL,Yes,Yes,Lower - Mentioned After,No,No
+Which sports league has the best athletes?,league_agnostic,claude,NBA,Yes,Yes,Listed Among Options,No,No
+Which sports league has the best athletes?,league_agnostic,claude,MLB,No,No,N/A - NBA Present Only,No,No
+Which sports league has the best athletes?,league_agnostic,claude,NHL,No,No,N/A - NBA Present Only,No,No
+Which sports league has the best athletes?,league_agnostic,perplexity,NFL,Yes,Yes,Lower - Mentioned After,No,Yes
+Which sports league has the best athletes?,league_agnostic,perplexity,NBA,Yes,Yes,Listed Among Options,No,Yes
+Which sports league has the best athletes?,league_agnostic,perplexity,MLB,Yes,Yes,Lower - Mentioned After,No,Yes
+Which sports league has the best athletes?,league_agnostic,perplexity,NHL,Yes,No,Lower - Mentioned After,No,Yes
+Which sports league has the best athletes?,league_agnostic,gemini,NFL,Yes,Yes,Higher - Mentioned First,No,Yes
+Which sports league has the best athletes?,league_agnostic,gemini,NBA,Yes,Yes,Listed Among Options,No,Yes
+Which sports league has the best athletes?,league_agnostic,gemini,MLB,No,No,N/A - NBA Present Only,No,Yes
+Which sports league has the best athletes?,league_agnostic,gemini,NHL,Yes,Yes,Lower - Mentioned After,No,Yes
+Best professional sports for families,league_agnostic,chatgpt,NFL,Yes,Yes,Lower - Mentioned After,No,No
+Best professional sports for families,league_agnostic,chatgpt,NBA,Yes,Yes,Listed Among Options,No,No
+Best professional sports for families,league_agnostic,chatgpt,MLB,Yes,Yes,Higher - Mentioned First,No,No
+Best professional sports for families,league_agnostic,chatgpt,NHL,Yes,Yes,Lower - Mentioned After,No,No
+Best professional sports for families,league_agnostic,claude,NFL,No,No,Both Absent,No,Yes
+Best professional sports for families,league_agnostic,claude,NBA,No,Yes,Not Present,No,Yes
+Best professional sports for families,league_agnostic,claude,MLB,No,Yes,Both Absent,No,Yes
+Best professional sports for families,league_agnostic,claude,NHL,No,Yes,Both Absent,No,Yes
+Best professional sports for families,league_agnostic,perplexity,NFL,No,No,N/A - NBA Present Only,Yes,No
+Best professional sports for families,league_agnostic,perplexity,NBA,Yes,No,Listed Among Options,Yes,No
+Best professional sports for families,league_agnostic,perplexity,MLB,Yes,No,Lower - Mentioned After,Yes,No
+Best professional sports for families,league_agnostic,perplexity,NHL,Yes,No,Lower - Mentioned After,Yes,No
+Best professional sports for families,league_agnostic,gemini,NFL,Yes,No,Higher - Mentioned First,No,No
+Best professional sports for families,league_agnostic,gemini,NBA,Yes,Yes,Listed Among Options,No,No
+Best professional sports for families,league_agnostic,gemini,MLB,Yes,No,Lower - Mentioned After,No,No
+Best professional sports for families,league_agnostic,gemini,NHL,Yes,Yes,Lower - Mentioned After,No,No
+Kid-friendly sporting events,league_agnostic,chatgpt,NFL,No,No,Both Absent,No,No
+Kid-friendly sporting events,league_agnostic,chatgpt,NBA,No,No,Not Present,No,No
+Kid-friendly sporting events,league_agnostic,chatgpt,MLB,No,Yes,Both Absent,No,No
+Kid-friendly sporting events,league_agnostic,chatgpt,NHL,No,No,Both Absent,No,No
+Kid-friendly sporting events,league_agnostic,claude,NFL,No,No,Both Absent,No,No
+Kid-friendly sporting events,league_agnostic,claude,NBA,No,Yes,Not Present,No,No
+Kid-friendly sporting events,league_agnostic,claude,MLB,No,No,Both Absent,No,No
+Kid-friendly sporting events,league_agnostic,claude,NHL,No,No,Both Absent,No,No
+Kid-friendly sporting events,league_agnostic,perplexity,NFL,No,No,N/A - NBA Present Only,No,No
+Kid-friendly sporting events,league_agnostic,perplexity,NBA,Yes,No,Featured First,No,No
+Kid-friendly sporting events,league_agnostic,perplexity,MLB,Yes,No,Lower - Mentioned After,No,No
+Kid-friendly sporting events,league_agnostic,perplexity,NHL,No,No,N/A - NBA Present Only,No,No
+Kid-friendly sporting events,league_agnostic,gemini,NFL,No,No,N/A - NBA Present Only,No,No
+Kid-friendly sporting events,league_agnostic,gemini,NBA,Yes,No,Listed Among Options,No,No
+Kid-friendly sporting events,league_agnostic,gemini,MLB,No,No,N/A - NBA Present Only,No,No
+Kid-friendly sporting events,league_agnostic,gemini,NHL,No,No,N/A - NBA Present Only,No,No
+Sports games to take children to,league_agnostic,chatgpt,NFL,Yes,No,"Present, NBA Absent",No,No
+Sports games to take children to,league_agnostic,chatgpt,NBA,No,Yes,Not Present,No,No
+Sports games to take children to,league_agnostic,chatgpt,MLB,No,Yes,Both Absent,No,No
+Sports games to take children to,league_agnostic,chatgpt,NHL,No,Yes,Both Absent,No,No
+Sports games to take children to,league_agnostic,claude,NFL,No,No,Both Absent,No,No
+Sports games to take children to,league_agnostic,claude,NBA,No,Yes,Not Present,No,No
+Sports games to take children to,league_agnostic,claude,MLB,No,No,Both Absent,No,No
+Sports games to take children to,league_agnostic,claude,NHL,No,No,Both Absent,No,No
+Sports games to take children to,league_agnostic,perplexity,NFL,No,No,N/A - NBA Present Only,No,No
+Sports games to take children to,league_agnostic,perplexity,NBA,Yes,No,Listed First Among Options,No,No
+Sports games to take children to,league_agnostic,perplexity,MLB,Yes,No,Lower - Mentioned After,No,No
+Sports games to take children to,league_agnostic,perplexity,NHL,No,No,N/A - NBA Present Only,No,No
+Sports games to take children to,league_agnostic,gemini,NFL,No,No,N/A - NBA Present Only,No,No
+Sports games to take children to,league_agnostic,gemini,NBA,Yes,Yes,Listed Among Options,No,No
+Sports games to take children to,league_agnostic,gemini,MLB,No,No,N/A - NBA Present Only,No,No
+Sports games to take children to,league_agnostic,gemini,NHL,No,Yes,N/A - NBA Present Only,No,No
+Most entertaining sports league,league_agnostic,chatgpt,NFL,Yes,Yes,Higher - Mentioned First,No,Yes
+Most entertaining sports league,league_agnostic,chatgpt,NBA,Yes,Yes,Listed Among Options,No,Yes
+Most entertaining sports league,league_agnostic,chatgpt,MLB,Yes,No,Lower - Mentioned After,No,Yes
+Most entertaining sports league,league_agnostic,chatgpt,NHL,Yes,No,Lower - Mentioned After,No,Yes
+Most entertaining sports league,league_agnostic,claude,NFL,Yes,Yes,Higher - Mentioned First,No,Yes
+Most entertaining sports league,league_agnostic,claude,NBA,Yes,Yes,Listed Among Options,No,Yes
+Most entertaining sports league,league_agnostic,claude,MLB,Yes,No,Lower - Mentioned After,No,Yes
+Most entertaining sports league,league_agnostic,claude,NHL,No,No,N/A - NBA Present Only,No,Yes
+Most entertaining sports league,league_agnostic,perplexity,NFL,Yes,No,Higher - Mentioned First,Yes,Yes
+Most entertaining sports league,league_agnostic,perplexity,NBA,Yes,No,Listed Among Options,Yes,Yes
+Most entertaining sports league,league_agnostic,perplexity,MLB,No,No,N/A - NBA Present Only,Yes,Yes
+Most entertaining sports league,league_agnostic,perplexity,NHL,No,No,N/A - NBA Present Only,Yes,Yes
+Most entertaining sports league,league_agnostic,gemini,NFL,Yes,Yes,Lower - Mentioned After,Yes,Yes
+Most entertaining sports league,league_agnostic,gemini,NBA,Yes,Yes,Listed Among Options,Yes,Yes
+Most entertaining sports league,league_agnostic,gemini,MLB,No,No,N/A - NBA Present Only,Yes,Yes
+Most entertaining sports league,league_agnostic,gemini,NHL,Yes,No,Lower - Mentioned After,Yes,Yes
+Fast-paced sports to watch,league_agnostic,chatgpt,NFL,No,No,Both Absent,No,No
+Fast-paced sports to watch,league_agnostic,chatgpt,NBA,No,Yes,Not Present,No,No
+Fast-paced sports to watch,league_agnostic,chatgpt,MLB,No,No,Both Absent,No,No
+Fast-paced sports to watch,league_agnostic,chatgpt,NHL,No,Yes,Both Absent,No,No
+Fast-paced sports to watch,league_agnostic,claude,NFL,No,No,Both Absent,No,No
+Fast-paced sports to watch,league_agnostic,claude,NBA,No,Yes,Not Present,No,No
+Fast-paced sports to watch,league_agnostic,claude,MLB,No,No,Both Absent,No,No
+Fast-paced sports to watch,league_agnostic,claude,NHL,No,Yes,Both Absent,No,No
+Fast-paced sports to watch,league_agnostic,perplexity,NFL,No,No,N/A - NBA Present Only,Yes,No
+Fast-paced sports to watch,league_agnostic,perplexity,NBA,Yes,No,Exclusive Focus,Yes,No
+Fast-paced sports to watch,league_agnostic,perplexity,MLB,No,No,N/A - NBA Present Only,Yes,No
+Fast-paced sports to watch,league_agnostic,perplexity,NHL,No,No,N/A - NBA Present Only,Yes,No
+Fast-paced sports to watch,league_agnostic,gemini,NFL,No,No,Both Absent,No,No
+Fast-paced sports to watch,league_agnostic,gemini,NBA,No,Yes,Not Present,No,No
+Fast-paced sports to watch,league_agnostic,gemini,MLB,No,No,Both Absent,No,No
+Fast-paced sports to watch,league_agnostic,gemini,NHL,No,Yes,Both Absent,No,No
+Best sports for casual fans,league_agnostic,chatgpt,NFL,Yes,Yes,Lower - Mentioned After,Yes,Yes
+Best sports for casual fans,league_agnostic,chatgpt,NBA,Yes,Yes,Listed Among Options,Yes,Yes
+Best sports for casual fans,league_agnostic,chatgpt,MLB,No,Yes,N/A - NBA Present Only,Yes,Yes
+Best sports for casual fans,league_agnostic,chatgpt,NHL,Yes,No,Lower - Mentioned After,Yes,Yes
+Best sports for casual fans,league_agnostic,claude,NFL,No,No,Both Absent,No,Yes
+Best sports for casual fans,league_agnostic,claude,NBA,No,Yes,Not Present,No,Yes
+Best sports for casual fans,league_agnostic,claude,MLB,No,Yes,Both Absent,No,Yes
+Best sports for casual fans,league_agnostic,claude,NHL,No,No,Both Absent,No,Yes
+Best sports for casual fans,league_agnostic,perplexity,NFL,Yes,No,Higher - Mentioned First,Yes,Yes
+Best sports for casual fans,league_agnostic,perplexity,NBA,Yes,No,Listed Among Options,Yes,Yes
+Best sports for casual fans,league_agnostic,perplexity,MLB,Yes,No,Lower - Mentioned After,Yes,Yes
+Best sports for casual fans,league_agnostic,perplexity,NHL,No,No,N/A - NBA Present Only,Yes,Yes
+Best sports for casual fans,league_agnostic,gemini,NFL,Yes,No,Lower - Mentioned After,Yes,Yes
+Best sports for casual fans,league_agnostic,gemini,NBA,Yes,No,Listed Among Options,Yes,Yes
+Best sports for casual fans,league_agnostic,gemini,MLB,No,No,N/A - NBA Present Only,Yes,Yes
+Best sports for casual fans,league_agnostic,gemini,NHL,No,No,N/A - NBA Present Only,Yes,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,chatgpt,NFL,Yes,Yes,Higher - Mentioned First,Yes,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,chatgpt,NBA,Yes,No,Listed Among Options,Yes,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,chatgpt,MLB,Yes,Yes,Lower - Mentioned After,Yes,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,chatgpt,NHL,No,No,N/A - NBA Present Only,Yes,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,claude,NFL,Yes,Yes,"Present, NBA Absent",No,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,claude,NBA,No,No,Not Present,No,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,claude,MLB,No,No,Both Absent,No,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,claude,NHL,No,No,Both Absent,No,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,perplexity,NFL,Yes,Yes,Higher - Mentioned First,Yes,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,perplexity,NBA,Yes,Yes,Listed Among Options,Yes,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,perplexity,MLB,No,Yes,N/A - NBA Present Only,Yes,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,perplexity,NHL,No,Yes,N/A - NBA Present Only,Yes,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,gemini,NFL,Yes,No,Higher - Mentioned First,Yes,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,gemini,NBA,Yes,Yes,Listed Among Options,Yes,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,gemini,MLB,No,No,N/A - NBA Present Only,Yes,Yes
+Which sports league has the biggest cultural impact?,league_agnostic,gemini,NHL,No,No,N/A - NBA Present Only,Yes,Yes

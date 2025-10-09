@@ -1,0 +1,289 @@
+query,query_type,commercial_intent,engine,league_mentioned,mentioned_in_response,mentioned_in_citations,prominence_vs_nba,recommendation_favorability
+How do I watch NBA games?,branded,streaming,ChatGPT,NBA,Yes,No,N/A,Favorable
+How do I watch NBA games?,branded,streaming,ChatGPT,NFL,No,No,N/A,Not_Mentioned
+How do I watch NBA games?,branded,streaming,ChatGPT,MLB,No,No,N/A,Not_Mentioned
+How do I watch NBA games?,branded,streaming,ChatGPT,NHL,No,No,N/A,Not_Mentioned
+How do I watch NBA games?,branded,streaming,Claude,NBA,Yes,No,N/A,Favorable
+How do I watch NBA games?,branded,streaming,Claude,NFL,No,No,N/A,Not_Mentioned
+How do I watch NBA games?,branded,streaming,Claude,MLB,No,No,N/A,Not_Mentioned
+How do I watch NBA games?,branded,streaming,Claude,NHL,No,No,N/A,Not_Mentioned
+How do I watch NBA games?,branded,streaming,Perplexity,NBA,Yes,No,N/A,Favorable
+How do I watch NBA games?,branded,streaming,Perplexity,NFL,No,No,N/A,Not_Mentioned
+How do I watch NBA games?,branded,streaming,Perplexity,MLB,No,No,N/A,Not_Mentioned
+How do I watch NBA games?,branded,streaming,Perplexity,NHL,No,No,N/A,Not_Mentioned
+How do I watch NBA games?,branded,streaming,Gemini,NBA,Yes,No,N/A,Favorable
+How do I watch NBA games?,branded,streaming,Gemini,NFL,No,No,N/A,Not_Mentioned
+How do I watch NBA games?,branded,streaming,Gemini,MLB,No,No,N/A,Not_Mentioned
+How do I watch NBA games?,branded,streaming,Gemini,NHL,No,No,N/A,Not_Mentioned
+Where can I stream NBA games live?,branded,streaming,ChatGPT,NBA,Yes,No,N/A,Favorable
+Where can I stream NBA games live?,branded,streaming,ChatGPT,NFL,No,No,N/A,Not_Mentioned
+Where can I stream NBA games live?,branded,streaming,ChatGPT,MLB,No,No,N/A,Not_Mentioned
+Where can I stream NBA games live?,branded,streaming,ChatGPT,NHL,No,No,N/A,Not_Mentioned
+Where can I stream NBA games live?,branded,streaming,Claude,NBA,Yes,No,N/A,Favorable
+Where can I stream NBA games live?,branded,streaming,Claude,NFL,No,No,N/A,Not_Mentioned
+Where can I stream NBA games live?,branded,streaming,Claude,MLB,No,No,N/A,Not_Mentioned
+Where can I stream NBA games live?,branded,streaming,Claude,NHL,No,No,N/A,Not_Mentioned
+Where can I stream NBA games live?,branded,streaming,Perplexity,NBA,Yes,No,N/A,Favorable
+Where can I stream NBA games live?,branded,streaming,Perplexity,NFL,No,No,N/A,Not_Mentioned
+Where can I stream NBA games live?,branded,streaming,Perplexity,MLB,No,No,N/A,Not_Mentioned
+Where can I stream NBA games live?,branded,streaming,Perplexity,NHL,No,No,N/A,Not_Mentioned
+Where can I stream NBA games live?,branded,streaming,Gemini,NBA,Yes,No,N/A,Favorable
+Where can I stream NBA games live?,branded,streaming,Gemini,NFL,No,No,N/A,Not_Mentioned
+Where can I stream NBA games live?,branded,streaming,Gemini,MLB,No,No,N/A,Not_Mentioned
+Where can I stream NBA games live?,branded,streaming,Gemini,NHL,No,No,N/A,Not_Mentioned
+How do I get tickets to NBA games?,branded,ticketing,ChatGPT,NBA,Yes,No,N/A,Favorable
+How do I get tickets to NBA games?,branded,ticketing,ChatGPT,NFL,No,No,N/A,Not_Mentioned
+How do I get tickets to NBA games?,branded,ticketing,ChatGPT,MLB,No,No,N/A,Not_Mentioned
+How do I get tickets to NBA games?,branded,ticketing,ChatGPT,NHL,No,No,N/A,Not_Mentioned
+How do I get tickets to NBA games?,branded,ticketing,Claude,NBA,Yes,No,N/A,Favorable
+How do I get tickets to NBA games?,branded,ticketing,Claude,NFL,No,No,N/A,Not_Mentioned
+How do I get tickets to NBA games?,branded,ticketing,Claude,MLB,No,No,N/A,Not_Mentioned
+How do I get tickets to NBA games?,branded,ticketing,Claude,NHL,No,No,N/A,Not_Mentioned
+How do I get tickets to NBA games?,branded,ticketing,Perplexity,NBA,Yes,No,N/A,Favorable
+How do I get tickets to NBA games?,branded,ticketing,Perplexity,NFL,No,No,N/A,Not_Mentioned
+How do I get tickets to NBA games?,branded,ticketing,Perplexity,MLB,No,No,N/A,Not_Mentioned
+How do I get tickets to NBA games?,branded,ticketing,Perplexity,NHL,No,No,N/A,Not_Mentioned
+How do I get tickets to NBA games?,branded,ticketing,Gemini,NBA,Yes,No,N/A,Favorable
+How do I get tickets to NBA games?,branded,ticketing,Gemini,NFL,No,No,N/A,Not_Mentioned
+How do I get tickets to NBA games?,branded,ticketing,Gemini,MLB,No,No,N/A,Not_Mentioned
+How do I get tickets to NBA games?,branded,ticketing,Gemini,NHL,No,No,N/A,Not_Mentioned
+Best NBA games to attend this season,branded,ticketing,ChatGPT,NBA,Yes,No,N/A,Favorable
+Best NBA games to attend this season,branded,ticketing,ChatGPT,NFL,No,No,N/A,Not_Mentioned
+Best NBA games to attend this season,branded,ticketing,ChatGPT,MLB,No,No,N/A,Not_Mentioned
+Best NBA games to attend this season,branded,ticketing,ChatGPT,NHL,No,No,N/A,Not_Mentioned
+Best NBA games to attend this season,branded,ticketing,Claude,NBA,Yes,No,N/A,Favorable
+Best NBA games to attend this season,branded,ticketing,Claude,NFL,No,No,N/A,Not_Mentioned
+Best NBA games to attend this season,branded,ticketing,Claude,MLB,No,No,N/A,Not_Mentioned
+Best NBA games to attend this season,branded,ticketing,Claude,NHL,No,No,N/A,Not_Mentioned
+Best NBA games to attend this season,branded,ticketing,Perplexity,NBA,Yes,No,N/A,Most_Favorable
+Best NBA games to attend this season,branded,ticketing,Perplexity,NFL,No,No,N/A,Not_Mentioned
+Best NBA games to attend this season,branded,ticketing,Perplexity,MLB,No,No,N/A,Not_Mentioned
+Best NBA games to attend this season,branded,ticketing,Perplexity,NHL,No,No,N/A,Not_Mentioned
+Best NBA games to attend this season,branded,ticketing,Gemini,NBA,Yes,No,N/A,Most_Favorable
+Best NBA games to attend this season,branded,ticketing,Gemini,NFL,Yes,No,Mentioned_After,Most_Favorable
+Best NBA games to attend this season,branded,ticketing,Gemini,MLB,No,No,N/A,Not_Mentioned
+Best NBA games to attend this season,branded,ticketing,Gemini,NHL,No,No,N/A,Not_Mentioned
+How do I become an NBA fan?,branded,fan_acquisition,ChatGPT,NBA,Yes,No,N/A,Favorable
+How do I become an NBA fan?,branded,fan_acquisition,ChatGPT,NFL,No,No,N/A,Not_Mentioned
+How do I become an NBA fan?,branded,fan_acquisition,ChatGPT,MLB,No,No,N/A,Not_Mentioned
+How do I become an NBA fan?,branded,fan_acquisition,ChatGPT,NHL,No,No,N/A,Not_Mentioned
+How do I become an NBA fan?,branded,fan_acquisition,Claude,NBA,Yes,No,N/A,Favorable
+How do I become an NBA fan?,branded,fan_acquisition,Claude,NFL,No,No,N/A,Not_Mentioned
+How do I become an NBA fan?,branded,fan_acquisition,Claude,MLB,No,No,N/A,Not_Mentioned
+How do I become an NBA fan?,branded,fan_acquisition,Claude,NHL,No,No,N/A,Not_Mentioned
+How do I become an NBA fan?,branded,fan_acquisition,Perplexity,NBA,Yes,No,N/A,Favorable
+How do I become an NBA fan?,branded,fan_acquisition,Perplexity,NFL,No,No,N/A,Not_Mentioned
+How do I become an NBA fan?,branded,fan_acquisition,Perplexity,MLB,No,No,N/A,Not_Mentioned
+How do I become an NBA fan?,branded,fan_acquisition,Perplexity,NHL,No,No,N/A,Not_Mentioned
+How do I become an NBA fan?,branded,fan_acquisition,Gemini,NBA,Yes,No,N/A,Favorable
+How do I become an NBA fan?,branded,fan_acquisition,Gemini,NFL,No,No,N/A,Not_Mentioned
+How do I become an NBA fan?,branded,fan_acquisition,Gemini,MLB,No,No,N/A,Not_Mentioned
+How do I become an NBA fan?,branded,fan_acquisition,Gemini,NHL,No,No,N/A,Not_Mentioned
+What NBA team should I root for?,branded,fan_acquisition,ChatGPT,NBA,Yes,No,N/A,Favorable
+What NBA team should I root for?,branded,fan_acquisition,ChatGPT,NFL,No,No,N/A,Not_Mentioned
+What NBA team should I root for?,branded,fan_acquisition,ChatGPT,MLB,No,No,N/A,Not_Mentioned
+What NBA team should I root for?,branded,fan_acquisition,ChatGPT,NHL,No,No,N/A,Not_Mentioned
+What NBA team should I root for?,branded,fan_acquisition,Claude,NBA,Yes,No,N/A,Favorable
+What NBA team should I root for?,branded,fan_acquisition,Claude,NFL,No,No,N/A,Not_Mentioned
+What NBA team should I root for?,branded,fan_acquisition,Claude,MLB,No,No,N/A,Not_Mentioned
+What NBA team should I root for?,branded,fan_acquisition,Claude,NHL,No,No,N/A,Not_Mentioned
+What NBA team should I root for?,branded,fan_acquisition,Perplexity,NBA,Yes,No,N/A,Favorable
+What NBA team should I root for?,branded,fan_acquisition,Perplexity,NFL,No,No,N/A,Not_Mentioned
+What NBA team should I root for?,branded,fan_acquisition,Perplexity,MLB,No,No,N/A,Not_Mentioned
+What NBA team should I root for?,branded,fan_acquisition,Perplexity,NHL,No,No,N/A,Not_Mentioned
+What NBA team should I root for?,branded,fan_acquisition,Gemini,NBA,Yes,No,N/A,Most_Favorable
+What NBA team should I root for?,branded,fan_acquisition,Gemini,NFL,No,No,N/A,Not_Mentioned
+What NBA team should I root for?,branded,fan_acquisition,Gemini,MLB,No,No,N/A,Not_Mentioned
+What NBA team should I root for?,branded,fan_acquisition,Gemini,NHL,No,No,N/A,Not_Mentioned
+What's the best professional sports league to watch?,league_agnostic,brand_preference,ChatGPT,NBA,Yes,No,N/A,Favorable
+What's the best professional sports league to watch?,league_agnostic,brand_preference,ChatGPT,NFL,Yes,No,Featured_First,Favorable
+What's the best professional sports league to watch?,league_agnostic,brand_preference,ChatGPT,MLB,Yes,No,Mentioned_After,Most_Favorable
+What's the best professional sports league to watch?,league_agnostic,brand_preference,ChatGPT,NHL,Yes,No,Mentioned_After,Favorable
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Claude,NBA,Yes,No,N/A,Favorable
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Claude,NFL,Yes,No,Featured_First,Favorable
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Claude,MLB,Yes,No,Mentioned_After,Most_Favorable
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Claude,NHL,No,No,N/A,Not_Mentioned
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Perplexity,NBA,Yes,No,N/A,Neutral
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Perplexity,NFL,Yes,No,Featured_First,Neutral
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Perplexity,MLB,No,No,N/A,Not_Mentioned
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Perplexity,NHL,No,No,N/A,Not_Mentioned
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Gemini,NBA,Yes,No,N/A,Favorable
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Gemini,NFL,Yes,No,Mentioned_After,Favorable
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Gemini,MLB,Yes,No,Mentioned_After,Favorable
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Gemini,NHL,Yes,No,Mentioned_After,Favorable
+Which sports have the best streaming options?,league_agnostic,streaming,ChatGPT,NBA,Yes,No,N/A,Neutral
+Which sports have the best streaming options?,league_agnostic,streaming,ChatGPT,NFL,Yes,No,Featured_First,Favorable
+Which sports have the best streaming options?,league_agnostic,streaming,ChatGPT,MLB,Yes,No,Mentioned_After,Favorable
+Which sports have the best streaming options?,league_agnostic,streaming,ChatGPT,NHL,Yes,No,Mentioned_After,Favorable
+Which sports have the best streaming options?,league_agnostic,streaming,Claude,NBA,Yes,No,N/A,Favorable
+Which sports have the best streaming options?,league_agnostic,streaming,Claude,NFL,No,No,N/A,Not_Mentioned
+Which sports have the best streaming options?,league_agnostic,streaming,Claude,MLB,Yes,No,Mentioned_After,Favorable
+Which sports have the best streaming options?,league_agnostic,streaming,Claude,NHL,Yes,No,Mentioned_After,Favorable
+Which sports have the best streaming options?,league_agnostic,streaming,Perplexity,NBA,Yes,No,N/A,Favorable
+Which sports have the best streaming options?,league_agnostic,streaming,Perplexity,NFL,Yes,No,Featured_First,Favorable
+Which sports have the best streaming options?,league_agnostic,streaming,Perplexity,MLB,Yes,No,Mentioned_After,Favorable
+Which sports have the best streaming options?,league_agnostic,streaming,Perplexity,NHL,Yes,No,Mentioned_After,Favorable
+Which sports have the best streaming options?,league_agnostic,streaming,Gemini,NBA,Yes,No,N/A,Favorable
+Which sports have the best streaming options?,league_agnostic,streaming,Gemini,NFL,Yes,No,Featured_First,Favorable
+Which sports have the best streaming options?,league_agnostic,streaming,Gemini,MLB,Yes,No,Mentioned_After,Favorable
+Which sports have the best streaming options?,league_agnostic,streaming,Gemini,NHL,Yes,No,Mentioned_After,Favorable
+Most exciting sports to watch live?,league_agnostic,brand_preference,ChatGPT,NBA,No,No,N/A,Not_Mentioned
+Most exciting sports to watch live?,league_agnostic,brand_preference,ChatGPT,NFL,Yes,No,Featured_First,Favorable
+Most exciting sports to watch live?,league_agnostic,brand_preference,ChatGPT,MLB,No,No,N/A,Not_Mentioned
+Most exciting sports to watch live?,league_agnostic,brand_preference,ChatGPT,NHL,No,No,N/A,Not_Mentioned
+Most exciting sports to watch live?,league_agnostic,brand_preference,Claude,NBA,No,No,N/A,Not_Mentioned
+Most exciting sports to watch live?,league_agnostic,brand_preference,Claude,NFL,Yes,No,Featured_First,Favorable
+Most exciting sports to watch live?,league_agnostic,brand_preference,Claude,MLB,No,No,N/A,Not_Mentioned
+Most exciting sports to watch live?,league_agnostic,brand_preference,Claude,NHL,No,No,N/A,Not_Mentioned
+Most exciting sports to watch live?,league_agnostic,brand_preference,Perplexity,NBA,Yes,No,N/A,Favorable
+Most exciting sports to watch live?,league_agnostic,brand_preference,Perplexity,NFL,No,No,N/A,Not_Mentioned
+Most exciting sports to watch live?,league_agnostic,brand_preference,Perplexity,MLB,No,No,N/A,Not_Mentioned
+Most exciting sports to watch live?,league_agnostic,brand_preference,Perplexity,NHL,Yes,No,Mentioned_After,Favorable
+Most exciting sports to watch live?,league_agnostic,brand_preference,Gemini,NBA,No,No,N/A,Not_Mentioned
+Most exciting sports to watch live?,league_agnostic,brand_preference,Gemini,NFL,No,No,N/A,Not_Mentioned
+Most exciting sports to watch live?,league_agnostic,brand_preference,Gemini,MLB,No,No,N/A,Not_Mentioned
+Most exciting sports to watch live?,league_agnostic,brand_preference,Gemini,NHL,No,No,N/A,Not_Mentioned
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,ChatGPT,NBA,No,No,N/A,Not_Mentioned
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,ChatGPT,NFL,Yes,No,Featured_First,Favorable
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,ChatGPT,MLB,No,No,N/A,Not_Mentioned
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,ChatGPT,NHL,Yes,No,Featured_First,Favorable
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Claude,NBA,Yes,No,N/A,Favorable
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Claude,NFL,Yes,No,Featured_First,Favorable
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Claude,MLB,No,No,N/A,Not_Mentioned
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Claude,NHL,Yes,No,Mentioned_After,Favorable
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Perplexity,NBA,Yes,No,N/A,Neutral
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Perplexity,NFL,Yes,No,Featured_First,Favorable
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Perplexity,MLB,Yes,No,Featured_First,Favorable
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Perplexity,NHL,No,No,N/A,Not_Mentioned
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Gemini,NBA,Yes,No,N/A,Most_Favorable
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Gemini,NFL,Yes,No,Featured_First,Most_Favorable
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Gemini,MLB,Yes,No,Featured_First,Favorable
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Gemini,NHL,No,No,N/A,Not_Mentioned
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,ChatGPT,NBA,Yes,No,N/A,Favorable
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,ChatGPT,NFL,Yes,No,Mentioned_After,Favorable
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,ChatGPT,MLB,No,No,N/A,Not_Mentioned
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,ChatGPT,NHL,Yes,No,Mentioned_After,Favorable
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Claude,NBA,Yes,No,N/A,Favorable
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Claude,NFL,No,No,N/A,Not_Mentioned
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Claude,MLB,No,No,N/A,Not_Mentioned
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Claude,NHL,No,No,N/A,Not_Mentioned
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Perplexity,NBA,No,No,N/A,Not_Mentioned
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Perplexity,NFL,No,No,N/A,Not_Mentioned
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Perplexity,MLB,No,No,N/A,Not_Mentioned
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Perplexity,NHL,No,No,N/A,Not_Mentioned
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Gemini,NBA,Yes,No,N/A,Favorable
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Gemini,NFL,Yes,No,Mentioned_After,Favorable
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Gemini,MLB,Yes,No,Mentioned_After,Favorable
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Gemini,NHL,Yes,No,Mentioned_After,Favorable
+Best sports league for international fans,league_agnostic,fan_acquisition,ChatGPT,NBA,Yes,No,N/A,Favorable
+Best sports league for international fans,league_agnostic,fan_acquisition,ChatGPT,NFL,Yes,No,Mentioned_After,Favorable
+Best sports league for international fans,league_agnostic,fan_acquisition,ChatGPT,MLB,No,No,N/A,Not_Mentioned
+Best sports league for international fans,league_agnostic,fan_acquisition,ChatGPT,NHL,Yes,No,Mentioned_After,Favorable
+Best sports league for international fans,league_agnostic,fan_acquisition,Claude,NBA,Yes,No,N/A,Favorable
+Best sports league for international fans,league_agnostic,fan_acquisition,Claude,NFL,Yes,No,Mentioned_After,Favorable
+Best sports league for international fans,league_agnostic,fan_acquisition,Claude,MLB,No,No,N/A,Not_Mentioned
+Best sports league for international fans,league_agnostic,fan_acquisition,Claude,NHL,No,No,N/A,Not_Mentioned
+Best sports league for international fans,league_agnostic,fan_acquisition,Perplexity,NBA,Yes,No,N/A,Most_Favorable
+Best sports league for international fans,league_agnostic,fan_acquisition,Perplexity,NFL,Yes,No,Mentioned_After,Favorable
+Best sports league for international fans,league_agnostic,fan_acquisition,Perplexity,MLB,No,No,N/A,Not_Mentioned
+Best sports league for international fans,league_agnostic,fan_acquisition,Perplexity,NHL,No,No,N/A,Not_Mentioned
+Best sports league for international fans,league_agnostic,fan_acquisition,Gemini,NBA,Yes,No,N/A,Favorable
+Best sports league for international fans,league_agnostic,fan_acquisition,Gemini,NFL,Yes,No,Mentioned_After,Favorable
+Best sports league for international fans,league_agnostic,fan_acquisition,Gemini,MLB,Yes,No,Mentioned_After,Most_Favorable
+Best sports league for international fans,league_agnostic,fan_acquisition,Gemini,NHL,Yes,No,Mentioned_After,Favorable
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,ChatGPT,NBA,Yes,No,N/A,Favorable
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,ChatGPT,NFL,Yes,No,Featured_First,Neutral
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,ChatGPT,MLB,Yes,No,Mentioned_After,Favorable
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,ChatGPT,NHL,Yes,No,Mentioned_After,Favorable
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Claude,NBA,Yes,No,N/A,Favorable
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Claude,NFL,Yes,No,Featured_First,Favorable
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Claude,MLB,Yes,No,Mentioned_After,Favorable
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Claude,NHL,No,No,N/A,Not_Mentioned
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Perplexity,NBA,Yes,No,N/A,Favorable
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Perplexity,NFL,Yes,No,Featured_First,Favorable
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Perplexity,MLB,No,No,N/A,Not_Mentioned
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Perplexity,NHL,No,No,N/A,Not_Mentioned
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Gemini,NBA,Yes,No,N/A,Favorable
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Gemini,NFL,Yes,No,Featured_First,Favorable
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Gemini,MLB,Yes,No,Mentioned_After,Favorable
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Gemini,NHL,Yes,No,Mentioned_After,Favorable
+Most socially engaged sports leagues,league_agnostic,brand_preference,ChatGPT,NBA,Yes,No,N/A,Favorable
+Most socially engaged sports leagues,league_agnostic,brand_preference,ChatGPT,NFL,Yes,No,Mentioned_After,Favorable
+Most socially engaged sports leagues,league_agnostic,brand_preference,ChatGPT,MLB,No,No,N/A,Not_Mentioned
+Most socially engaged sports leagues,league_agnostic,brand_preference,ChatGPT,NHL,Yes,No,Mentioned_After,Favorable
+Most socially engaged sports leagues,league_agnostic,brand_preference,Claude,NBA,Yes,No,N/A,Favorable
+Most socially engaged sports leagues,league_agnostic,brand_preference,Claude,NFL,Yes,No,Mentioned_After,Favorable
+Most socially engaged sports leagues,league_agnostic,brand_preference,Claude,MLB,Yes,No,Mentioned_After,Favorable
+Most socially engaged sports leagues,league_agnostic,brand_preference,Claude,NHL,No,No,N/A,Not_Mentioned
+Most socially engaged sports leagues,league_agnostic,brand_preference,Perplexity,NBA,Yes,No,N/A,Neutral
+Most socially engaged sports leagues,league_agnostic,brand_preference,Perplexity,NFL,Yes,No,Featured_First,Neutral
+Most socially engaged sports leagues,league_agnostic,brand_preference,Perplexity,MLB,Yes,No,Featured_First,Neutral
+Most socially engaged sports leagues,league_agnostic,brand_preference,Perplexity,NHL,Yes,No,Mentioned_After,Neutral
+Most socially engaged sports leagues,league_agnostic,brand_preference,Gemini,NBA,Yes,No,N/A,Most_Favorable
+Most socially engaged sports leagues,league_agnostic,brand_preference,Gemini,NFL,Yes,No,Mentioned_After,Favorable
+Most socially engaged sports leagues,league_agnostic,brand_preference,Gemini,MLB,Yes,No,Mentioned_After,Favorable
+Most socially engaged sports leagues,league_agnostic,brand_preference,Gemini,NHL,Yes,No,Mentioned_After,Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,ChatGPT,NBA,Yes,No,N/A,Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,ChatGPT,NFL,Yes,No,Mentioned_After,Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,ChatGPT,MLB,Yes,No,Mentioned_After,Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,ChatGPT,NHL,Yes,No,Mentioned_After,Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,Claude,NBA,Yes,No,N/A,Most_Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,Claude,NFL,Yes,No,Mentioned_After,Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,Claude,MLB,Yes,No,Mentioned_After,Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,Claude,NHL,Yes,No,Mentioned_After,Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,Perplexity,NBA,Yes,No,N/A,Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,Perplexity,NFL,Yes,No,Featured_First,Most_Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,Perplexity,MLB,Yes,No,Mentioned_After,Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,Perplexity,NHL,Yes,No,Mentioned_After,Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,Gemini,NBA,Yes,No,N/A,Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,Gemini,NFL,Yes,No,Featured_First,Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,Gemini,MLB,Yes,No,Mentioned_After,Favorable
+Sports leagues with the best athletes,league_agnostic,brand_preference,Gemini,NHL,Yes,No,Mentioned_After,Favorable
+Best professional sports for families to watch,league_agnostic,fan_acquisition,ChatGPT,NBA,Yes,No,N/A,Most_Favorable
+Best professional sports for families to watch,league_agnostic,fan_acquisition,ChatGPT,NFL,Yes,No,Mentioned_After,Favorable
+Best professional sports for families to watch,league_agnostic,fan_acquisition,ChatGPT,MLB,Yes,No,Featured_First,Favorable
+Best professional sports for families to watch,league_agnostic,fan_acquisition,ChatGPT,NHL,Yes,No,Mentioned_After,Favorable
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Claude,NBA,No,No,N/A,Not_Mentioned
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Claude,NFL,No,No,N/A,Not_Mentioned
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Claude,MLB,No,No,N/A,Not_Mentioned
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Claude,NHL,No,No,N/A,Not_Mentioned
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Perplexity,NBA,Yes,No,N/A,Neutral
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Perplexity,NFL,Yes,No,Mentioned_After,Neutral
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Perplexity,MLB,Yes,No,Mentioned_After,Favorable
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Perplexity,NHL,No,No,N/A,Not_Mentioned
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Gemini,NBA,Yes,No,N/A,Favorable
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Gemini,NFL,No,No,N/A,Not_Mentioned
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Gemini,MLB,Yes,No,Featured_First,Most_Favorable
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Gemini,NHL,Yes,No,Mentioned_After,Most_Favorable
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,ChatGPT,NBA,No,No,N/A,Not_Mentioned
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,ChatGPT,NFL,Yes,No,Featured_First,Favorable
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,ChatGPT,MLB,No,No,N/A,Not_Mentioned
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,ChatGPT,NHL,No,No,N/A,Not_Mentioned
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Claude,NBA,No,No,N/A,Not_Mentioned
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Claude,NFL,No,No,N/A,Not_Mentioned
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Claude,MLB,No,No,N/A,Not_Mentioned
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Claude,NHL,No,No,N/A,Not_Mentioned
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Perplexity,NBA,Yes,No,N/A,Favorable
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Perplexity,NFL,No,No,N/A,Not_Mentioned
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Perplexity,MLB,No,No,N/A,Not_Mentioned
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Perplexity,NHL,No,No,N/A,Not_Mentioned
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Gemini,NBA,Yes,No,N/A,Favorable
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Gemini,NFL,Yes,No,Mentioned_After,Favorable
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Gemini,MLB,No,No,N/A,Not_Mentioned
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Gemini,NHL,Yes,No,Mentioned_After,Favorable
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,ChatGPT,NBA,Yes,No,N/A,Favorable
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,ChatGPT,NFL,No,No,N/A,Not_Mentioned
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,ChatGPT,MLB,No,No,N/A,Not_Mentioned
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,ChatGPT,NHL,No,No,N/A,Not_Mentioned
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Claude,NBA,No,No,N/A,Not_Mentioned
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Claude,NFL,No,No,N/A,Not_Mentioned
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Claude,MLB,No,No,N/A,Not_Mentioned
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Claude,NHL,No,No,N/A,Not_Mentioned
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Perplexity,NBA,No,No,N/A,Not_Mentioned
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Perplexity,NFL,No,No,N/A,Not_Mentioned
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Perplexity,MLB,No,No,N/A,Not_Mentioned
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Perplexity,NHL,No,No,N/A,Not_Mentioned
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Gemini,NBA,Yes,No,N/A,Favorable
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Gemini,NFL,Yes,No,Mentioned_After,Favorable
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Gemini,MLB,No,No,N/A,Not_Mentioned
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Gemini,NHL,No,No,N/A,Not_Mentioned

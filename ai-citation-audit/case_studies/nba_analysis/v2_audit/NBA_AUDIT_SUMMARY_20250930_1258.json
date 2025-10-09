@@ -1,0 +1,75 @@
+{
+  "audit_date": "2025-09-30T12:58:43.820029",
+  "total_queries_tested": 60,
+  "total_platforms": 4,
+  "total_tests_conducted": 60,
+  "overall_metrics": {
+    "nba_mention_rate": 81.67,
+    "total_nba_mentions": 49,
+    "total_citations": 712,
+    "citations_with_nba": 152,
+    "nba_citation_authority_score": 21.35
+  },
+  "by_query_type": {
+    "branded": {
+      "total": 16,
+      "nba_mentions": 16,
+      "rate": 100.0
+    },
+    "league_agnostic": {
+      "total": 44,
+      "nba_mentions": 33,
+      "rate": 75.0
+    }
+  },
+  "by_platform": {
+    "chatgpt": {
+      "total_queries": 15,
+      "nba_mentions": 12,
+      "mention_rate": 80.0
+    },
+    "claude": {
+      "total_queries": 15,
+      "nba_mentions": 8,
+      "mention_rate": 53.333333333333336
+    },
+    "perplexity": {
+      "total_queries": 15,
+      "nba_mentions": 15,
+      "mention_rate": 100.0
+    },
+    "gemini": {
+      "total_queries": 15,
+      "nba_mentions": 14,
+      "mention_rate": 93.33333333333333
+    }
+  },
+  "competitive_landscape": {
+    "nfl_mentions": 38,
+    "mlb_mentions": 22,
+    "nhl_mentions": 19,
+    "other_mentions": 34
+  },
+  "revenue_adjusted_metrics": {
+    "nba": {
+      "revenue_billions": 11.0,
+      "absolute_mentions": 49,
+      "mentions_per_billion": 4.455
+    },
+    "nfl": {
+      "revenue_billions": 19.0,
+      "absolute_mentions": 38,
+      "mentions_per_billion": 2.0
+    },
+    "mlb": {
+      "revenue_billions": 11.5,
+      "absolute_mentions": 22,
+      "mentions_per_billion": 1.913
+    },
+    "nhl": {
+      "revenue_billions": 6.0,
+      "absolute_mentions": 19,
+      "mentions_per_billion": 3.167
+    }
+  }
+}

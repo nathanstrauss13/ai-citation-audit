@@ -1,0 +1,73 @@
+query,query_type,commercial_intent,engine,nba_mentioned_in_response,nfl_mentioned,mlb_mentioned,nhl_mentioned,mls_mentioned,other_leagues_mentioned,featured_league,nba_prominence,contains_nba_actionable_info,total_citations,citations_mentioning_nba,citations_mentioning_nfl,citations_mentioning_mlb,citations_mentioning_nhl
+How do I watch NBA games?,branded,streaming,ChatGPT,Yes,No,No,No,No,,NBA,Featured_First,Yes,18,6,0,0,0
+How do I watch NBA games?,branded,streaming,Claude,Yes,No,No,No,No,,NBA,Featured_First,Yes,11,2,0,0,0
+How do I watch NBA games?,branded,streaming,Perplexity,Yes,No,No,No,No,,NBA,Featured_First,Yes,8,7,0,0,0
+How do I watch NBA games?,branded,streaming,Gemini,Yes,No,No,No,No,,NBA,Featured_First,Yes,0,0,0,0,0
+Where can I stream NBA games live?,branded,streaming,ChatGPT,Yes,No,No,No,No,,NBA,Featured_First,Yes,13,2,0,0,0
+Where can I stream NBA games live?,branded,streaming,Claude,Yes,No,No,No,No,,NBA,Featured_First,Yes,12,5,0,0,0
+Where can I stream NBA games live?,branded,streaming,Perplexity,Yes,No,No,No,No,,NBA,Featured_First,Yes,6,6,0,0,0
+Where can I stream NBA games live?,branded,streaming,Gemini,Yes,No,No,No,No,,NBA,Featured_First,Yes,7,3,0,0,0
+How do I get tickets to NBA games?,branded,ticketing,ChatGPT,Yes,No,No,No,No,,NBA,Featured_First,Yes,14,2,0,0,0
+How do I get tickets to NBA games?,branded,ticketing,Claude,Yes,No,No,No,No,,NBA,Featured_First,Yes,19,9,0,0,0
+How do I get tickets to NBA games?,branded,ticketing,Perplexity,Yes,No,No,No,No,,NBA,Featured_First,Yes,0,0,0,0,0
+How do I get tickets to NBA games?,branded,ticketing,Gemini,Yes,No,No,No,No,,NBA,Featured_First,Yes,0,0,0,0,0
+Best NBA games to attend this season,branded,ticketing,ChatGPT,Yes,No,No,No,No,,NBA,Featured_First,No,13,8,0,0,0
+Best NBA games to attend this season,branded,ticketing,Claude,Yes,No,No,No,No,,NBA,Featured_First,Yes,16,11,0,0,0
+Best NBA games to attend this season,branded,ticketing,Perplexity,Yes,No,No,No,No,,NBA,Featured_First,Yes,13,9,0,0,0
+Best NBA games to attend this season,branded,ticketing,Gemini,Yes,Yes,No,No,No,,NBA,Featured_First,Yes,0,0,0,0,0
+How do I become an NBA fan?,branded,fan_acquisition,ChatGPT,Yes,No,No,No,No,,NBA,Featured_First,Yes,15,12,0,0,0
+How do I become an NBA fan?,branded,fan_acquisition,Claude,Yes,No,No,No,No,,NBA,Featured_First,Yes,41,24,0,0,0
+How do I become an NBA fan?,branded,fan_acquisition,Perplexity,Yes,No,No,No,No,,NBA,Featured_First,Yes,10,7,0,0,0
+How do I become an NBA fan?,branded,fan_acquisition,Gemini,Yes,No,No,No,No,,NBA,Featured_First,Yes,0,0,0,0,0
+What NBA team should I root for?,branded,fan_acquisition,ChatGPT,Yes,No,No,No,No,,NBA,Featured_First,Yes,8,7,0,0,0
+What NBA team should I root for?,branded,fan_acquisition,Claude,Yes,No,No,No,No,,NBA,Featured_First,Yes,22,14,0,0,0
+What NBA team should I root for?,branded,fan_acquisition,Perplexity,Yes,No,No,No,No,,NBA,Featured_First,Yes,13,10,0,0,0
+What NBA team should I root for?,branded,fan_acquisition,Gemini,Yes,No,No,No,No,,NBA,Featured_First,Yes,9,9,0,0,0
+What's the best professional sports league to watch?,league_agnostic,brand_preference,ChatGPT,Yes,Yes,Yes,Yes,No,"Premier League,La Liga",NFL,Mentioned_After,Yes,19,3,3,2,0
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Claude,Yes,Yes,Yes,No,No,Premier League,NFL,Buried,Yes,19,3,3,0,0
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Perplexity,Yes,Yes,No,No,No,"Premier League,La Liga,Serie A,Bundesliga",NFL,Buried,Yes,13,0,1,2,0
+What's the best professional sports league to watch?,league_agnostic,brand_preference,Gemini,Yes,Yes,Yes,Yes,No,Premier League,NBA,Featured_First,Yes,0,0,0,0,0
+Which sports have the best streaming options?,league_agnostic,streaming,ChatGPT,Yes,Yes,Yes,Yes,Yes,"Premier League,Bundesliga,Champions League",NFL,Mentioned_After,Yes,25,2,2,2,2
+Which sports have the best streaming options?,league_agnostic,streaming,Claude,Yes,No,Yes,Yes,No,Premier League,NBA,Featured_First,Yes,24,2,2,3,0
+Which sports have the best streaming options?,league_agnostic,streaming,Perplexity,Yes,Yes,Yes,Yes,No,,NFL,Mentioned_After,Yes,8,0,0,0,0
+Which sports have the best streaming options?,league_agnostic,streaming,Gemini,Yes,Yes,Yes,Yes,Yes,"Premier League,La Liga,Serie A,Bundesliga,Champions League",MLS,Buried,Yes,0,0,0,0,0
+Most exciting sports to watch live?,league_agnostic,brand_preference,ChatGPT,No,Yes,No,No,No,,NFL,Not_Present,No,27,3,3,0,3
+Most exciting sports to watch live?,league_agnostic,brand_preference,Claude,No,Yes,No,No,No,,NFL,Not_Present,No,24,0,0,0,1
+Most exciting sports to watch live?,league_agnostic,brand_preference,Perplexity,Yes,No,No,Yes,No,,NBA,Featured_First,Yes,5,0,1,1,0
+Most exciting sports to watch live?,league_agnostic,brand_preference,Gemini,No,No,No,No,No,,None,Not_Present,No,0,0,0,0,0
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,ChatGPT,No,Yes,No,Yes,No,"Premier League,La Liga,Bundesliga",NFL,Not_Present,No,10,1,2,0,0
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Claude,Yes,Yes,No,Yes,No,"Premier League,La Liga,Bundesliga,NCAA",NFL,Buried,Yes,26,0,3,0,0
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Perplexity,Yes,Yes,Yes,No,No,"Premier League,La Liga,Bundesliga",NFL,Buried,Yes,6,2,0,1,0
+Which sports league has the most passionate fans?,league_agnostic,brand_preference,Gemini,Yes,Yes,Yes,No,No,,NFL,Buried,Yes,7,0,3,0,0
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,ChatGPT,Yes,Yes,No,Yes,Yes,Premier League,MLS,Mentioned_After,Yes,16,4,4,4,0
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Claude,Yes,No,No,No,No,,NBA,Featured_First,Yes,19,3,0,0,3
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Perplexity,No,No,No,No,No,,None,Not_Present,No,8,0,0,0,0
+Easiest professional sport to get into as a new fan,league_agnostic,fan_acquisition,Gemini,Yes,Yes,Yes,Yes,Yes,Premier League,NBA,Featured_First,Yes,4,1,0,0,0
+Best sports league for international fans,league_agnostic,fan_acquisition,ChatGPT,Yes,Yes,No,Yes,No,"Premier League,La Liga",NBA,Featured_First,Yes,10,2,2,0,0
+Best sports league for international fans,league_agnostic,fan_acquisition,Claude,Yes,Yes,No,No,No,"Premier League,Champions League",NBA,Featured_First,No,12,2,0,0,0
+Best sports league for international fans,league_agnostic,fan_acquisition,Perplexity,Yes,Yes,No,No,No,"Premier League,Champions League",NBA,Featured_First,Yes,15,1,1,1,1
+Best sports league for international fans,league_agnostic,fan_acquisition,Gemini,Yes,Yes,Yes,Yes,No,"Premier League,Champions League",NBA,Featured_First,Yes,0,0,0,0,0
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,ChatGPT,Yes,Yes,Yes,Yes,No,"Premier League,La Liga",NFL,Mentioned_After,Yes,18,3,2,3,2
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Claude,Yes,Yes,Yes,No,No,"Premier League,Champions League",NFL,Buried,Yes,21,2,1,2,0
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Perplexity,Yes,Yes,No,No,Yes,Premier League,NFL,Mentioned_After,Yes,8,2,4,2,2
+Which sports leagues have the biggest cultural impact?,league_agnostic,brand_preference,Gemini,Yes,Yes,Yes,Yes,Yes,"Premier League,Champions League",NFL,Mentioned_After,Yes,0,0,0,0,0
+Most socially engaged sports leagues,league_agnostic,brand_preference,ChatGPT,Yes,Yes,No,Yes,Yes,,NBA,Featured_First,Yes,19,6,3,0,0
+Most socially engaged sports leagues,league_agnostic,brand_preference,Claude,Yes,Yes,Yes,No,No,Premier League,NBA,Featured_First,Yes,12,2,4,0,0
+Most socially engaged sports leagues,league_agnostic,brand_preference,Perplexity,Yes,Yes,Yes,Yes,Yes,NCAA,NFL,Mentioned_After,Yes,14,0,2,1,0
+Most socially engaged sports leagues,league_agnostic,brand_preference,Gemini,Yes,Yes,Yes,Yes,Yes,"Premier League,La Liga,Bundesliga",NBA,Featured_First,Yes,0,0,0,0,0
+Sports leagues with the best athletes,league_agnostic,brand_preference,ChatGPT,Yes,Yes,Yes,Yes,No,Premier League,NBA,Featured_First,Yes,18,3,3,3,3
+Sports leagues with the best athletes,league_agnostic,brand_preference,Claude,Yes,Yes,Yes,Yes,No,"Premier League,La Liga,Serie A,Bundesliga,Champions League",NBA,Featured_First,Yes,20,2,2,0,0
+Sports leagues with the best athletes,league_agnostic,brand_preference,Perplexity,Yes,Yes,Yes,Yes,No,"La Liga,Bundesliga,Champions League",NFL,Mentioned_After,Yes,15,4,5,2,2
+Sports leagues with the best athletes,league_agnostic,brand_preference,Gemini,Yes,Yes,Yes,Yes,Yes,Premier League,NFL,Mentioned_After,Yes,0,0,0,0,0
+Best professional sports for families to watch,league_agnostic,fan_acquisition,ChatGPT,Yes,Yes,Yes,Yes,Yes,,MLB,Mentioned_After,Yes,14,3,3,1,3
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Claude,No,No,No,No,No,,None,Not_Present,No,21,2,0,2,2
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Perplexity,Yes,Yes,Yes,No,Yes,,NBA,Featured_First,Yes,12,0,0,0,0
+Best professional sports for families to watch,league_agnostic,fan_acquisition,Gemini,Yes,No,Yes,Yes,Yes,,MLB,Mentioned_After,Yes,0,0,0,0,0
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,ChatGPT,No,Yes,No,No,No,,NFL,Not_Present,No,18,1,0,0,0
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Claude,No,No,No,No,No,,None,Not_Present,No,20,0,0,0,0
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Perplexity,Yes,No,No,No,No,,NBA,Featured_First,Yes,7,0,0,0,0
+Which sports are most fun to play and watch?,league_agnostic,brand_preference,Gemini,Yes,Yes,No,Yes,No,"Premier League,Champions League",NBA,Featured_First,Yes,0,0,0,0,0
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,ChatGPT,Yes,No,No,No,Yes,Premier League,MLS,Buried,Yes,11,0,1,0,0
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Claude,No,No,No,No,Yes,Premier League,MLS,Not_Present,No,21,2,0,0,0
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Perplexity,No,No,No,No,No,,None,Not_Present,No,14,0,0,0,0
+Fastest growing sports leagues in the world,league_agnostic,brand_preference,Gemini,Yes,Yes,No,No,Yes,Premier League,NBA,Featured_First,Yes,0,0,0,0,0

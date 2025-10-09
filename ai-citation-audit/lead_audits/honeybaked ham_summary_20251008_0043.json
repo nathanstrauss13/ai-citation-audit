@@ -1,0 +1,258 @@
+{
+  "metadata": {
+    "brand": "honeybaked ham",
+    "competitors": [
+      "kroger",
+      "whole foods",
+      "costco"
+    ],
+    "email": "nathanstrauss@gmail.com",
+    "total_queries": 5,
+    "total_tests": 20,
+    "timestamp": "2025-10-08T00:43:40.947415"
+  },
+  "key_metrics": {
+    "brand_mention_rate": 65.0,
+    "competitor_rates": {
+      "kroger": 30.0,
+      "whole foods": 0.0,
+      "costco": 20.0
+    },
+    "first_position_count": 12
+  },
+  "platform_performance": {
+    "ChatGPT": {
+      "success_rate": 100.0,
+      "brand_mentions": 3
+    },
+    "Claude": {
+      "success_rate": 100.0,
+      "brand_mentions": 3
+    },
+    "Perplexity": {
+      "success_rate": 100.0,
+      "brand_mentions": 4
+    },
+    "Gemini": {
+      "success_rate": 100.0,
+      "brand_mentions": 3
+    }
+  },
+  "sample_query_results": [
+    {
+      "query": "What's the best ham to buy for thanksgiving?",
+      "platform": "ChatGPT",
+      "brand_mentioned": true,
+      "competitors_mentioned": [],
+      "position": "First",
+      "response_text": "Choosing the best ham for Thanksgiving depends on your preferences, budget, and how many people you plan to serve. Here are some popular options:\n\n1. **Spiral-Cut Ham**: This is a pre-sliced ham that'"
+    },
+    {
+      "query": "What's the best ham to buy for thanksgiving?",
+      "platform": "Claude",
+      "brand_mentioned": false,
+      "competitors_mentioned": [],
+      "position": null,
+      "response_text": "For Thanksgiving, some of the best ham options include:\n\n1. Spiral-Cut Ham\n- Pre-sliced for convenience\n- Either honey-glazed or plain\n- Popular brands like Honey Baked Ham\n\n2. Bone-in Ham\n- More flav"
+    },
+    {
+      "query": "What's the best ham to buy for thanksgiving?",
+      "platform": "Perplexity",
+      "brand_mentioned": true,
+      "competitors_mentioned": [
+        "costco"
+      ],
+      "position": "Later",
+      "response_text": "For Thanksgiving, the best ham to buy is typically a **spiral-sliced, bone-in ham** with a honey or brown sugar glaze, as these are consistently top-rated for flavor, convenience, and presentation[1]["
+    },
+    {
+      "query": "What's the best ham to buy for thanksgiving?",
+      "platform": "Gemini",
+      "brand_mentioned": false,
+      "competitors_mentioned": [],
+      "position": null,
+      "response_text": "The \"best\" ham for Thanksgiving is subjective and depends on your preferences! However, here's a breakdown of popular options and factors to consider to help you choose:\n\n**Types of Ham:**\n\n*   **City"
+    }
+  ],
+  "all_results": [
+    {
+      "query": "What's the best ham to buy for thanksgiving?",
+      "platform": "ChatGPT",
+      "brand_mentioned": true,
+      "competitors_mentioned": [],
+      "position": "First",
+      "response_text": "Choosing the best ham for Thanksgiving depends on your preferences, budget, and how many people you plan to serve. Here are some popular options:\n\n1. **Spiral-Cut Ham**: This is a pre-sliced ham that'"
+    },
+    {
+      "query": "What's the best ham to buy for thanksgiving?",
+      "platform": "Claude",
+      "brand_mentioned": false,
+      "competitors_mentioned": [],
+      "position": null,
+      "response_text": "For Thanksgiving, some of the best ham options include:\n\n1. Spiral-Cut Ham\n- Pre-sliced for convenience\n- Either honey-glazed or plain\n- Popular brands like Honey Baked Ham\n\n2. Bone-in Ham\n- More flav"
+    },
+    {
+      "query": "What's the best ham to buy for thanksgiving?",
+      "platform": "Perplexity",
+      "brand_mentioned": true,
+      "competitors_mentioned": [
+        "costco"
+      ],
+      "position": "Later",
+      "response_text": "For Thanksgiving, the best ham to buy is typically a **spiral-sliced, bone-in ham** with a honey or brown sugar glaze, as these are consistently top-rated for flavor, convenience, and presentation[1]["
+    },
+    {
+      "query": "What's the best ham to buy for thanksgiving?",
+      "platform": "Gemini",
+      "brand_mentioned": false,
+      "competitors_mentioned": [],
+      "position": null,
+      "response_text": "The \"best\" ham for Thanksgiving is subjective and depends on your preferences! However, here's a breakdown of popular options and factors to consider to help you choose:\n\n**Types of Ham:**\n\n*   **City"
+    },
+    {
+      "query": "Who are the top brands like honeybaked ham?",
+      "platform": "ChatGPT",
+      "brand_mentioned": true,
+      "competitors_mentioned": [],
+      "position": "First",
+      "response_text": "If you're looking for brands similar to HoneyBaked Ham, which is known for its premium glazed hams and other specialty meats, you might consider the following:\n\n1. **Smithfield** - Known for a wide ra"
+    },
+    {
+      "query": "Who are the top brands like honeybaked ham?",
+      "platform": "Claude",
+      "brand_mentioned": true,
+      "competitors_mentioned": [],
+      "position": "First",
+      "response_text": "Some of the top brands that compete with HoneyBaked Ham include:\n\n1. Smithfield Foods\n2. Nueske's\n3. Carando\n4. Boar's Head\n5. Kentucky Legend\n6. Cook's Ham\n7. Farmland\n8. Hormel\n9. Hickory Farms\n10. "
+    },
+    {
+      "query": "Who are the top brands like honeybaked ham?",
+      "platform": "Perplexity",
+      "brand_mentioned": true,
+      "competitors_mentioned": [
+        "costco"
+      ],
+      "position": "First",
+      "response_text": "The top brands similar to **HoneyBaked Ham**\u2014offering spiral-sliced, glazed, and premium hams\u2014include:\n\n- **Harry & David**: Known for their gift-quality spiral-cut hams with included glaze, high-qual"
+    },
+    {
+      "query": "Who are the top brands like honeybaked ham?",
+      "platform": "Gemini",
+      "brand_mentioned": true,
+      "competitors_mentioned": [
+        "kroger",
+        "costco"
+      ],
+      "position": "First",
+      "response_text": "Okay, you're looking for brands similar to HoneyBaked Ham, meaning you want that pre-cooked, spiral-sliced, often glazed ham experience. Here are some of the top brands and options that offer comparab"
+    },
+    {
+      "query": "Compare honeybaked ham and kroger",
+      "platform": "ChatGPT",
+      "brand_mentioned": true,
+      "competitors_mentioned": [
+        "kroger"
+      ],
+      "position": "First",
+      "response_text": "When comparing HoneyBaked Ham and Kroger, it is important to note that they cater to different aspects of the food market. HoneyBaked Ham is a specialty retailer known for its signature glazed spiral-"
+    },
+    {
+      "query": "Compare honeybaked ham and kroger",
+      "platform": "Claude",
+      "brand_mentioned": true,
+      "competitors_mentioned": [
+        "kroger"
+      ],
+      "position": "First",
+      "response_text": "Here's a comparison of HoneyBaked Ham and Kroger:\n\nHoneyBaked Ham:\n- Specialty retailer focused primarily on premium hams and turkeys\n- Known for signature spiral-sliced, honey-glazed hams\n- Higher pr"
+    },
+    {
+      "query": "Compare honeybaked ham and kroger",
+      "platform": "Perplexity",
+      "brand_mentioned": true,
+      "competitors_mentioned": [
+        "kroger"
+      ],
+      "position": "First",
+      "response_text": "**HoneyBaked Ham generally offers a premium, specialty product with a distinctive crunchy glaze and higher cost, while Kroger typically provides more budget-friendly spiral-sliced hams that are good f"
+    },
+    {
+      "query": "Compare honeybaked ham and kroger",
+      "platform": "Gemini",
+      "brand_mentioned": true,
+      "competitors_mentioned": [
+        "kroger"
+      ],
+      "position": "First",
+      "response_text": "Let's compare HoneyBaked Ham and Kroger, focusing on their ham offerings and overall shopping experience:\n\n**HoneyBaked Ham:**\n\n*   **Focus:** Primarily known for their signature spiral-sliced hams wi"
+    },
+    {
+      "query": "Best products",
+      "platform": "ChatGPT",
+      "brand_mentioned": false,
+      "competitors_mentioned": [],
+      "position": null,
+      "response_text": "To provide recommendations for the best products, it would be helpful to know the specific category or type of product you're interested in, such as electronics, home appliances, beauty products, etc."
+    },
+    {
+      "query": "Best products",
+      "platform": "Claude",
+      "brand_mentioned": false,
+      "competitors_mentioned": [],
+      "position": null,
+      "response_text": "That's a very broad topic. Could you be more specific about what type of products you're interested in? For example:\n\n1. Electronics\n2. Home goods\n3. Fashion\n4. Beauty products\n5. Automotive\n6. Kitche"
+    },
+    {
+      "query": "Best products",
+      "platform": "Perplexity",
+      "brand_mentioned": false,
+      "competitors_mentioned": [],
+      "position": null,
+      "response_text": "According to current 2025 consumer trends, some of the best products are those experiencing the most substantial growth in popularity and sales across several categories, including health supplements,"
+    },
+    {
+      "query": "Best products",
+      "platform": "Gemini",
+      "brand_mentioned": false,
+      "competitors_mentioned": [],
+      "position": null,
+      "response_text": "To give you the best recommendations, I need a little more information!  Tell me:\n\n*   **What are you looking for?** (e.g., skincare, electronics, books, a new vacuum cleaner, etc.)\n*   **What is your"
+    },
+    {
+      "query": "Where to buy honeybaked ham?",
+      "platform": "ChatGPT",
+      "brand_mentioned": false,
+      "competitors_mentioned": [],
+      "position": null,
+      "response_text": "Honey Baked Ham can be purchased from a variety of locations. Here are some options:\n\n1. **Honey Baked Ham Stores**: The most direct way is to visit one of their retail locations. You can find the nea"
+    },
+    {
+      "query": "Where to buy honeybaked ham?",
+      "platform": "Claude",
+      "brand_mentioned": true,
+      "competitors_mentioned": [
+        "costco"
+      ],
+      "position": "First",
+      "response_text": "HoneyBaked Ham products can be purchased through several channels:\n\n1. HoneyBaked Ham retail stores - Find a store near you using their store locator on their website (www.honeybaked.com)\n\n2. Online o"
+    },
+    {
+      "query": "Where to buy honeybaked ham?",
+      "platform": "Perplexity",
+      "brand_mentioned": true,
+      "competitors_mentioned": [
+        "kroger"
+      ],
+      "position": "First",
+      "response_text": "You can buy **HoneyBaked Ham** from the official Honey Baked Ham Company retail stores, from their official website online, and at select grocery retailers such as Kroger[5][6][7][2].\n\n- **Stores:** T"
+    },
+    {
+      "query": "Where to buy honeybaked ham?",
+      "platform": "Gemini",
+      "brand_mentioned": true,
+      "competitors_mentioned": [],
+      "position": "First",
+      "response_text": "You can purchase HoneyBaked Ham from the following locations:\n\n*   **HoneyBaked Ham retail stores:** Use the HoneyBaked Ham store locator on their website ([https://www.honeybaked.com/stores](https://"
+    }
+  ]
+}

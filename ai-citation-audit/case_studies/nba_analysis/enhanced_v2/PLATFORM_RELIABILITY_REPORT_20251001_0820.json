@@ -1,0 +1,43 @@
+{
+  "execution_summary": {
+    "total_queries_attempted": 96,
+    "successful_completions": 95,
+    "platform_success_rates": {
+      "chatgpt": 95.83,
+      "claude": 100.0,
+      "perplexity": 100.0,
+      "gemini": 100.0
+    }
+  },
+  "gemini_debugging": {
+    "api_keys_used": 3,
+    "key_performance": {
+      "key_1_(...GBvtfBvs)": {
+        "successes": 11,
+        "failures": 0,
+        "success_rate": 100.0
+      },
+      "key_2_(..._f5E-23A)": {
+        "successes": 11,
+        "failures": 0,
+        "success_rate": 100.0
+      },
+      "key_3_(...Wf-nGxa8)": {
+        "successes": 10,
+        "failures": 0,
+        "success_rate": 100.0
+      }
+    },
+    "primary_model_attempts": 32,
+    "fallback_model_used": 0,
+    "total_failures": 0,
+    "retry_success_rate": 100.0,
+    "parallel_key_effectiveness": "Effective"
+  },
+  "citation_quality": {
+    "total_citations": 795,
+    "content_fetch_success_rate": 86.0,
+    "chatgpt_citation_reliability": "Enhanced with GPT-4",
+    "top_domains_verified": 43
+  }
+}

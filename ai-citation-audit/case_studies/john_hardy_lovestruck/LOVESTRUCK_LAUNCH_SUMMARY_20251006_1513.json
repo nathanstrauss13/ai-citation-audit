@@ -1,0 +1,44 @@
+{
+  "launch_date": "September 29, 2025",
+  "analysis_date": "2025-10-06T15:13:48.487410",
+  "execution_summary": {
+    "total_tests": 138,
+    "launch_awareness_rate": 7.97,
+    "lovestruck_mention_rate": 13.04,
+    "billie_eilish_association_rate": 16.67
+  },
+  "category_performance": {
+    "collection_specific": {
+      "queries": 23,
+      "lovestruck_mentions": 14,
+      "launch_awareness": 8
+    },
+    "celebrity_partnership": {
+      "queries": 20,
+      "billie_eilish_mentions": 16,
+      "john_hardy_association": 3
+    },
+    "lab_grown_category": {
+      "queries": 31,
+      "john_hardy_mentions": 0,
+      "lovestruck_mentions": 0
+    }
+  },
+  "citation_analysis": {
+    "total_citations": 869,
+    "owned_media_citations": 59,
+    "earned_media_citations": 47,
+    "fresh_2025_content": 98,
+    "lovestruck_specific_citations": 28
+  },
+  "competitive_position": {
+    "total_competitor_citations": 117,
+    "john_hardy_citations": 106,
+    "competitive_ratio": 0.91
+  },
+  "media_coverage": {
+    "total_outlets": 310,
+    "entertainment_media_outlets": 0,
+    "luxury_fashion_outlets": 15
+  }
+}

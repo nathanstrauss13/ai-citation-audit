@@ -1,0 +1,77 @@
+{
+  "audit_metadata": {
+    "timestamp": "2025-10-07T15:31:28.536617",
+    "total_queries": 10,
+    "service_agnostic_queries": 6,
+    "service_specific_queries": 4,
+    "platforms_tested": 4,
+    "total_prompts": 40
+  },
+  "share_of_voice_analysis": {
+    "service_agnostic_queries": {
+      "amazon_prime_mention_rate": 26.1,
+      "nba_leaguepass_mention_rate": 91.3,
+      "youtube_tv_mention_rate": 78.3,
+      "hulu_mention_rate": 78.3,
+      "amazon_first_position_rate": 0.0,
+      "amazon_prominent_rate": 13.0
+    }
+  },
+  "citation_intelligence": {
+    "total_citations": 71,
+    "scraped_urls": 71,
+    "inferred_sources": 0,
+    "amazon_supporting_citations": 8,
+    "leaguepass_supporting_citations": 63
+  },
+  "media_outlet_intelligence": {
+    "unique_outlets": 36,
+    "top_10_outlets": [
+      {
+        "outlet": "espn.com",
+        "citations": 8
+      },
+      {
+        "outlet": "peacocktv.com",
+        "citations": 5
+      },
+      {
+        "outlet": "hulu.com",
+        "citations": 5
+      },
+      {
+        "outlet": "youtube.com",
+        "citations": 5
+      },
+      {
+        "outlet": "cabletv.com",
+        "citations": 4
+      },
+      {
+        "outlet": "xfinity.com",
+        "citations": 3
+      },
+      {
+        "outlet": "support.watch.nba.com",
+        "citations": 3
+      },
+      {
+        "outlet": "aboutamazon.com",
+        "citations": 3
+      },
+      {
+        "outlet": "businessinsider.com",
+        "citations": 3
+      },
+      {
+        "outlet": "teamziller.com",
+        "citations": 3
+      }
+    ]
+  },
+  "strategic_insights": {
+    "amazon_visibility_gap": true,
+    "primary_competitor": "NBA League Pass",
+    "earned_media_opportunity": "High"
+  }
+}

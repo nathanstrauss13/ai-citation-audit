@@ -1,0 +1,120 @@
+{
+  "analysis_date": "2025-09-30T15:38:54.064619",
+  "total_queries": 18,
+  "total_tests": 72,
+  "by_intent_category": {
+    "streaming": {
+      "queries_tested": 12,
+      "nba_mention_rate": 100.0,
+      "actionable_info_provided": 12
+    },
+    "ticketing": {
+      "queries_tested": 8,
+      "nba_mention_rate": 100.0,
+      "actionable_info_provided": 7
+    },
+    "fan_acquisition": {
+      "queries_tested": 20,
+      "nba_mention_rate": 90.0,
+      "actionable_info_provided": 17
+    },
+    "brand_preference": {
+      "queries_tested": 32,
+      "nba_mention_rate": 75.0,
+      "actionable_info_provided": 24
+    }
+  },
+  "by_platform": {
+    "ChatGPT": {
+      "nba_mention_rate": 83.33,
+      "featured_first_rate": 50.0,
+      "avg_citations": 15.89
+    },
+    "Claude": {
+      "nba_mention_rate": 77.78,
+      "featured_first_rate": 61.11,
+      "avg_citations": 20.0
+    },
+    "Perplexity": {
+      "nba_mention_rate": 88.89,
+      "featured_first_rate": 55.56,
+      "avg_citations": 9.72
+    },
+    "Gemini": {
+      "nba_mention_rate": 94.44,
+      "featured_first_rate": 66.67,
+      "avg_citations": 1.5
+    }
+  },
+  "competitive_landscape": {
+    "nba_mentions": 62,
+    "nfl_mentions": 37,
+    "mlb_mentions": 24,
+    "nhl_mentions": 25,
+    "mls_mentions": 16
+  },
+  "citation_analysis": {
+    "total_citations": 848,
+    "citations_with_nba": 214,
+    "citations_with_streaming_info": 35,
+    "citations_with_ticketing_info": 14,
+    "top_cited_domains": [
+      {
+        "domain": "www.nba.com",
+        "count": 56
+      },
+      {
+        "domain": "nba.com",
+        "count": 44
+      },
+      {
+        "domain": "www.espn.com",
+        "count": 33
+      },
+      {
+        "domain": "espn.com",
+        "count": 21
+      },
+      {
+        "domain": "www.youtube.com",
+        "count": 17
+      },
+      {
+        "domain": "nfl.com",
+        "count": 16
+      },
+      {
+        "domain": "www.forbes.com",
+        "count": 15
+      },
+      {
+        "domain": "www.nfl.com",
+        "count": 14
+      },
+      {
+        "domain": "www.sportsbusinessjournal.com",
+        "count": 13
+      },
+      {
+        "domain": "premierleague.com",
+        "count": 12
+      }
+    ]
+  },
+  "streaming_visibility": {
+    "league_pass_mentioned": 0,
+    "partner_platforms_mentioned": [],
+    "streaming_guide_citations": 0
+  },
+  "ticketing_visibility": {
+    "ticketing_platforms_cited": [
+      "www.seatgeek.com",
+      "seatgeek.com",
+      "www.stubhub.com",
+      "www.ticketmaster.com",
+      "ticketmaster.com",
+      "stubhub.com"
+    ],
+    "ticket_purchase_guidance": 14
+  }
+}

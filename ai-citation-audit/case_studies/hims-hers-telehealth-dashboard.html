@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hims & Hers AI Telehealth Visibility Analysis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #2B2B2B;
+            background: #FFFFFF;
+            letter-spacing: -0.01em;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Header with Hims & Hers Theme - Their actual brand colors */
+        .header {
+            background: linear-gradient(135deg, #2B2B2B 0%, #4A4A4A 100%);
+            color: white;
+            padding: 80px 40px 60px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0;
+        }
+        
+        .header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #E8B4B8 0%, #E8B4B8 50%, #95C8D8 50%, #95C8D8 100%);
+        }
+        
+        .header h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+        
+        .header .date {
+            font-size: 0.9em;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+        
+        /* Alert Box with Hims & Hers styling */
+        .alert-box {
+            padding: 24px;
+            margin-bottom: 24px;
+            border-left: 3px solid;
+            background: #FAFAFA;
+            border-radius: 0;
+        }
+        
+        .alert-box.critical {
+            background: #FFF5F5;
+            border-left-color: #E74C3C;
+        }
+        
+        .alert-box.warning {
+            background: #FFFBF0;
+            border-left-color: #F39C12;
+        }
+        
+        .alert-box.success {
+            background: #F0FFF4;
+            border-left-color: #27AE60;
+        }
+        
+        .alert-box h3 {
+            margin-bottom: 12px;
+            font-size: 1.1em;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+        
+        .alert-box.critical h3 {
+            color: #C0392B;
+        }
+        
+        .alert-box.warning h3 {
+            color: #D68910;
+        }
+        
+        .alert-box.success h3 {
+            color: #1E8449;
+        }
+        
+        /* Score Dashboard with Hims & Hers aesthetic */
+        .score-dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .score-card {
+            background: white;
+            padding: 32px;
+            border: 1px solid #EFEFEF;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0;
+        }
+        
+        .score-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        
+        .score-card.primary {
+            background: #2B2B2B;
+            color: white;
+            grid-column: span 2;
+            border: none;
+        }
+        
+        .score-card.primary::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #E8B4B8 0%, #95C8D8 100%);
+        }
+        
+        .score-card.success {
+            background: #F0FFF4;
+            border-left: 3px solid #27AE60;
+        }
+        
+        .score-card.warning {
+            background: #FFFBF0;
+            border-left: 3px solid #F39C12;
+        }
+        
+        .score-card.danger {
+            background: #FFF5F5;
+            border-left: 3px solid #E74C3C;
+        }
+        
+        .score-value {
+            font-size: 3.5em;
+            font-weight: 200;
+            margin: 10px 0;
+            line-height: 1;
+            letter-spacing: -0.02em;
+        }
+        
+        .score-label {
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            opacity: 0.7;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .score-comparison {
+            font-size: 0.85em;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            font-weight: 400;
+        }
+        
+        .score-card.primary .score-comparison {
+            border-color: rgba(255,255,255,0.2);
+        }
+        
+        /* Competitive Analysis Section */
+        .competitive-section {
+            background: white;
+            padding: 40px;
+            margin: 30px 0;
+            border: 1px solid #EFEFEF;
+            border-radius: 0;
+        }
+        
+        .competitive-section h2 {
+            font-weight: 300;
+            font-size: 2em;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+        }
+        
+        .competitive-table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+        
+        .competitive-table th {
+            background: #2B2B2B;
+            color: white;
+            padding: 14px;
+            text-align: left;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            font-size: 0.85em;
+            text-transform: uppercase;
+        }
+        
+        .competitive-table td {
+            padding: 14px;
+            border-bottom: 1px solid #EFEFEF;
+            font-weight: 400;
+        }
+        
+        .competitive-table tr:hover {
+            background: #FAFAFA;
+        }
+        
+        .competitive-table tr.highlight {
+            background: linear-gradient(to right, rgba(232,180,184,0.15), transparent);
+        }
+        
+        /* Media Influence Section */
+        .media-influence {
+            background: white;
+            padding: 40px;
+            margin: 30px 0;
+            border: 1px solid #EFEFEF;
+            border-radius: 0;
+        }
+        
+        .media-influence h2 {
+            font-weight: 300;
+            font-size: 2em;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+        }
+        
+        .media-ranking {
+            margin: 30px 0;
+        }
+        
+        .media-item {
+            display: grid;
+            grid-template-columns: 40px 250px 1fr 100px;
+            align-items: center;
+            gap: 20px;
+            padding: 16px;
+            border-bottom: 1px solid #EFEFEF;
+            transition: all 0.3s ease;
+        }
+        
+        .media-item:hover {
+            background: #FAFAFA;
+            transform: translateX(2px);
+        }
+        
+        .media-rank {
+            font-size: 1.2em;
+            font-weight: 300;
+            color: #888;
+        }
+        
+        .media-rank.top-3 {
+            color: #2B2B2B;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+        
+        .media-name {
+            font-weight: 500;
+            color: #2B2B2B;
+        }
+        
+        .media-category {
+            font-size: 0.85em;
+            color: #888;
+            margin-top: 2px;
+            font-weight: 400;
+        }
+        
+        .media-bar {
+            height: 20px;
+            background: #F5F5F5;
+            overflow: hidden;
+            position: relative;
+            border-radius: 0;
+        }
+        
+        .media-fill {
+            height: 100%;
+            background: #2B2B2B;
+            transition: width 1s ease;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+        
+        .media-fill.official {
+            background: linear-gradient(90deg, #E8B4B8, #EAC4C8);
+        }
+        
+        .media-fill.regulatory {
+            background: #F39C12;
+        }
+        
+        .media-fill.medical {
+            background: #95C8D8;
+        }
+        
+        .fill-text {
+            color: white;
+            font-size: 0.7em;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        
+        .media-count {
+            text-align: right;
+            font-weight: 500;
+            color: #2B2B2B;
+        }
+        
+        /* Query Performance */
+        .query-performance {
+            background: white;
+            padding: 40px;
+            margin: 30px 0;
+            border: 1px solid #EFEFEF;
+            border-radius: 0;
+        }
+        
+        .query-performance h2 {
+            font-weight: 300;
+            font-size: 2em;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+        }
+        
+        .query-grid {
+            display: grid;
+            gap: 16px;
+            margin-top: 30px;
+        }
+        
+        .query-item {
+            display: grid;
+            grid-template-columns: 1fr 150px 150px;
+            align-items: start;
+            gap: 20px;
+            padding: 20px;
+            background: #FAFAFA;
+            border-left: 3px solid #2B2B2B;
+            transition: all 0.3s ease;
+            border-radius: 0;
+        }
+        
+        .query-item:hover {
+            background: #F5F5F5;
+            transform: translateX(2px);
+        }
+        
+        .query-text {
+            font-size: 0.95em;
+            color: #2B2B2B;
+            font-weight: 500;
+        }
+        
+        .query-metric {
+            text-align: center;
+            font-size: 0.9em;
+        }
+        
+        .metric-value {
+            font-size: 1.8em;
+            font-weight: 300;
+            color: #2B2B2B;
+            letter-spacing: -0.02em;
+        }
+        
+        .metric-label {
+            font-size: 0.75em;
+            color: #888;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+        
+        /* Platform Analysis */
+        .platform-analysis {
+            background: white;
+            padding: 40px;
+            margin: 30px 0;
+            border: 1px solid #EFEFEF;
+            border-radius: 0;
+        }
+        
+        .platform-analysis h2 {
+            font-weight: 300;
+            font-size: 2em;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+        }
+        
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .platform-card {
+            padding: 24px;
+            background: #FAFAFA;
+            border: 1px solid #EFEFEF;
+            transition: all 0.3s ease;
+            text-align: center;
+            border-radius: 0;
+        }
+        
+        .platform-card:hover {
+            border-color: #2B2B2B;
+            transform: translateY(-2px);
+        }
+        
+        .platform-card.leader {
+            background: linear-gradient(135deg, rgba(232,180,184,0.2) 0%, rgba(149,200,216,0.2) 100%);
+            border-color: #2B2B2B;
+        }
+        
+        .platform-name {
+            font-weight: 600;
+            color: #2B2B2B;
+            margin-bottom: 12px;
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .platform-citations {
+            font-size: 2.5em;
+            font-weight: 200;
+            color: #2B2B2B;
+            margin: 10px 0;
+            letter-spacing: -0.02em;
+        }
+        
+        .platform-metrics {
+            font-size: 0.85em;
+            color: #888;
+            font-weight: 400;
+        }
+        
+        /* Regulatory Analysis */
+        .regulatory-section {
+            background: linear-gradient(135deg, #FFF8F0 0%, #FFFBF0 100%);
+            padding: 40px;
+            margin: 30px 0;
+            border: 1px solid #F39C12;
+            border-radius: 0;
+        }
+        
+        .regulatory-stat {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .regulatory-percentage {
+            font-size: 4em;
+            font-weight: 200;
+            color: #F39C12;
+            letter-spacing: -0.02em;
+        }
+        
+        .regulatory-label {
+            font-size: 1em;
+            color: #D68910;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+        
+        /* Sentiment Breakdown */
+        .sentiment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin: 30px 0;
+        }
+        
+        .sentiment-card {
+            padding: 20px;
+            background: white;
+            border: 1px solid #EFEFEF;
+            text-align: center;
+            transition: all 0.3s ease;
+            border-radius: 0;
+        }
+        
+        .sentiment-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        .sentiment-card.neutral {
+            border-top: 3px solid #888;
+        }
+        
+        .sentiment-card.cautionary {
+            border-top: 3px solid #F39C12;
+        }
+        
+        .sentiment-card.negative {
+            border-top: 3px solid #E74C3C;
+        }
+        
+        .sentiment-card.positive {
+            border-top: 3px solid #27AE60;
+        }
+        
+        .sentiment-percentage {
+            font-size: 2em;
+            font-weight: 200;
+            letter-spacing: -0.02em;
+        }
+        
+        .sentiment-label {
+            font-size: 0.85em;
+            color: #888;
+            margin-top: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+        
+        /* Insights Grid */
+        .insights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .insight-card {
+            padding: 24px;
+            border-left: 3px solid;
+            background: white;
+            border-radius: 0;
+        }
+        
+        .insight-card.strength {
+            background: #F0FFF4;
+            border-color: #27AE60;
+        }
+        
+        .insight-card.opportunity {
+            background: #FFFBF0;
+            border-color: #F39C12;
+        }
+        
+        .insight-card.gap {
+            background: #FFF5F5;
+            border-color: #E74C3C;
+        }
+        
+        /* Recommendations */
+        .recommendations-grid {
+            display: grid;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .recommendation-card {
+            background: white;
+            padding: 28px;
+            border: 1px solid #EFEFEF;
+            border-left: 3px solid #2B2B2B;
+            transition: all 0.3s ease;
+            border-radius: 0;
+        }
+        
+        .recommendation-card:hover {
+            transform: translateX(2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+        
+        .priority-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 0.7em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-left: 12px;
+            border-radius: 0;
+        }
+        
+        .priority-critical {
+            background: #FFF5F5;
+            color: #C0392B;
+            border: 1px solid #E74C3C;
+        }
+        
+        .priority-high {
+            background: #FFFBF0;
+            color: #D68910;
+            border: 1px solid #F39C12;
+        }
+        
+        .priority-medium {
+            background: #EBF5FB;
+            color: #1565C0;
+            border: 1px solid #2196F3;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #EFEFEF;
+            color: #888;
+            font-size: 0.85em;
+            font-weight: 400;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .score-dashboard {
+                grid-template-columns: 1fr;
+            }
+            
+            .score-card.primary {
+                grid-column: span 1;
+            }
+            
+            .media-item {
+                grid-template-columns: 30px 1fr;
+                gap: 10px;
+            }
+            
+            .media-bar,
+            .media-count {
+                display: none;
+            }
+            
+            .query-item {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Hims & Hers Telehealth AI Visibility Analysis</h1>
+            <div class="subtitle">Competitive Intelligence in the Digital Healthcare Landscape</div>
+            <div class="date">Analysis Date: September 26, 2025 | 60 AI Prompts Tested</div>
+        </div>
+
+        <!-- Critical Alerts -->
+        <div class="alert-box critical">
+            <h3>🚨 Critical: Roman Dominates Competitive Queries</h3>
+            <p><strong>Roman wins 26.7% of competitive queries vs Hims/Hers 0%</strong> - Despite being mentioned in searches, Hims & Hers never emerges as the "winner" in AI responses. Roman has successfully positioned itself as the category leader in telehealth narrative.</p>
+        </div>
+        
+        <div class="alert-box warning">
+            <h3>⚠️ Regulatory Citations Dominate at 70.3%</h3>
+            <p><strong>595 of 846 citations mention regulatory aspects</strong> - While this establishes legitimacy, the heavy regulatory focus may overshadow consumer benefits and convenience messaging. FDA.gov is the #2 most cited source.</p>
+        </div>
+        
+        <div class="alert-box success">
+            <h3>✅ Strong Medical Authority Positioning</h3>
+            <p><strong>Medical and healthcare platforms provide credibility</strong> - Mayo Clinic, GoodRx, and medical associations frequently cited alongside Hims & Hers, establishing trust in the telehealth model.</p>
+        </div>
+
+        <!-- Analysis Overview Dashboard -->
+        <div class="competitive-section" style="background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%); margin-bottom: 30px;">
+            <h2 style="color: #3B3B3B; margin-bottom: 20px;">🎯 Analysis Overview: Testing Methodology</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 20px;">
+                <div style="background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 2.5em; font-weight: 700; color: #ED5153;">15</div>
+                    <div style="color: #666; font-size: 0.9em;">Total Queries Tested</div>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 2.5em; font-weight: 700; color: #3B3B3B;">4</div>
+                    <div style="color: #666; font-size: 0.9em;">AI Platforms</div>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 2.5em; font-weight: 700; color: #2196F3;">60</div>
+                    <div style="color: #666; font-size: 0.9em;">Total AI Prompts</div>
+                </div>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h4 style="color: #3B3B3B; margin-bottom: 15px;">📋 Brand-Agnostic Queries (12)</h4>
+                    <p style="font-size: 0.85em; color: #666; margin-bottom: 10px;">
+                        <strong>Purpose:</strong> Measure organic visibility and competitive positioning when users don't specify a brand
+                    </p>
+                    <ul style="font-size: 0.85em; color: #424242; line-height: 1.6; padding-left: 20px;">
+                        <li>"Best online doctor consultation platforms"</li>
+                        <li>"How to get prescription medication online"</li>
+                        <li>"Telehealth for men's health issues"</li>
+                        <li>"Online therapy and mental health services"</li>
+                        <li>"Cost of telehealth consultations"</li>
+                        <li>"Is online prescription medication safe?"</li>
+                        <li>"Online treatment for hair loss"</li>
+                        <li>"Telehealth for anxiety and depression"</li>
+                        <li>"Online ED treatment options"</li>
+                        <li>"Birth control online prescription"</li>
+                        <li>+ 2 more general telehealth queries</li>
+                    </ul>
+                    <div style="margin-top: 15px; padding: 10px; background: #ffebee; border-radius: 4px;">
+                        <strong style="color: #c62828;">Finding:</strong> 
+                        <span style="color: #424242;">Hims & Hers appears in only 33% of brand-agnostic queries, losing to Roman in most comparisons</span>
+                    </div>
+                </div>
+                
+                <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h4 style="color: #3B3B3B; margin-bottom: 15px;">🏢 Brand-Specific Queries (3)</h4>
+                    <p style="font-size: 0.85em; color: #666; margin-bottom: 10px;">
+                        <strong>Purpose:</strong> Assess how AI platforms describe Hims & Hers when directly asked
+                    </p>
+                    <ul style="font-size: 0.85em; color: #424242; line-height: 1.6; padding-left: 20px;">
+                        <li>"Hims vs Roman vs Lemonaid comparison"</li>
+                        <li>"How does Hims and Hers work?"</li>
+                        <li>"Hims and Hers reviews and ratings"</li>
+                        <li>"Hims and Hers vs traditional healthcare"</li>
+                        <li>"Who owns Hims and Hers?"</li>
+                    </ul>
+                    <div style="margin-top: 15px; padding: 10px; background: #e8f5e9; border-radius: 4px;">
+                        <strong style="color: #2e7d32;">Finding:</strong> 
+                        <span style="color: #424242;">100% presence in brand-specific queries, but Roman still wins direct comparisons</span>
+                    </div>
+                    
+                    <div style="margin-top: 15px; padding: 15px; background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-radius: 4px; border-left: 3px solid #ff9800;">
+                        <strong style="color: #e65100;">Key Insight:</strong>
+                        <p style="color: #424242; margin-top: 5px; font-size: 0.9em;">
+                            The 80/20 split (brand-agnostic/specific) reveals that Hims & Hers has weak organic discovery. 
+                            Users searching for telehealth solutions without brand names rarely encounter Hims & Hers as a recommended option.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; text-align: center; padding: 15px; background: rgba(59,59,59,0.1); border-radius: 8px;">
+                <p style="color: #3B3B3B; font-size: 0.95em;">
+                    <strong>Analysis Goal:</strong> Understand how Hims & Hers performs in both organic discovery (brand-agnostic) 
+                    and direct brand queries to identify visibility gaps and competitive positioning challenges in AI responses.
+                </p>
+            </div>
+        </div>
+
+        <!-- Score Dashboard -->
+        <div class="score-dashboard">
+            <div class="score-card primary">
+                <div class="score-label">Telehealth Authority Score</div>
+                <div class="score-value">42.7</div>
+                <div class="score-comparison">
+                    ⚕️ Strong regulatory compliance messaging<br>
+                    ⚠️ Lost to Roman in head-to-head<br>
+                    📊 Limited brand differentiation
+                </div>
+            </div>
+            
+            <div class="score-card">
+                <div class="score-label">Total Citations</div>
+                <div class="score-value">846</div>
+                <div class="score-comparison">
+                    Across 15 queries<br>
+                    14.1 avg per prompt
+                </div>
+            </div>
+            
+            <div class="score-card danger">
+                <div class="score-label">Win Rate</div>
+                <div class="score-value">0%</div>
+                <div class="score-comparison">
+                    0/60 competitive wins<br>
+                    Roman: 16 wins
+                </div>
+            </div>
+            
+            <div class="score-card">
+                <div class="score-label">Brand Presence</div>
+                <div class="score-value">48.3%</div>
+                <div class="score-comparison">
+                    29/60 prompts<br>
+                    Moderate visibility
+                </div>
+            </div>
+            
+            <div class="score-card warning">
+                <div class="score-label">Regulatory Focus</div>
+                <div class="score-value">70.3%</div>
+                <div class="score-comparison">
+                    595 citations<br>
+                    FDA #2 source
+                </div>
+            </div>
+            
+            <div class="score-card">
+                <div class="score-label">Sentiment</div>
+                <div class="score-value">94.8%</div>
+                <div class="score-comparison">
+                    Neutral tone<br>
+                    Few negative mentions
+                </div>
+            </div>
+            
+            <div class="score-card">
+                <div class="score-label">Platform Leader</div>
+                <div class="score-value">Claude</div>
+                <div class="score-comparison">
+                    354 citations<br>
+                    3.2x vs Perplexity
+                </div>
+            </div>
+            
+            <div class="score-card danger">
+                <div class="score-label">Consumer Media</div>
+                <div class="score-value">0.4%</div>
+                <div class="score-comparison">
+                    Only 3 citations<br>
+                    Major visibility gap
+                </div>
+            </div>
+        </div>
+
+        <!-- Competitive Analysis -->
+        <div class="competitive-section">
+            <h2>⚔️ Competitive Landscape Analysis</h2>
+            <p style="margin: 12px 0; color: #6c757d;">Head-to-head performance in telehealth queries</p>
+            
+            <table class="competitive-table">
+                <thead>
+                    <tr>
+                        <th>Brand</th>
+                        <th>Query Wins</th>
+                        <th>Win Rate</th>
+                        <th>Presence Rate</th>
+                        <th>Key Strength</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Roman (Ro)</strong></td>
+                        <td>16/60</td>
+                        <td>26.7%</td>
+                        <td>10.0%</td>
+                        <td>Category leader positioning</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td><strong>Hims & Hers</strong></td>
+                        <td>0/60</td>
+                        <td>0%</td>
+                        <td>48.3%</td>
+                        <td>High visibility, low authority</td>
+                    </tr>
+                    <tr>
+                        <td>Lemonaid Health</td>
+                        <td>3/60</td>
+                        <td>5.0%</td>
+                        <td>15.0%</td>
+                        <td>Affordability messaging</td>
+                    </tr>
+                    <tr>
+                        <td>Keeps</td>
+                        <td>1/60</td>
+                        <td>1.7%</td>
+                        <td>N/A</td>
+                        <td>Hair loss specialization</td>
+                    </tr>
+                    <tr>
+                        <td>None/Generic</td>
+                        <td>40/60</td>
+                        <td>66.7%</td>
+                        <td>—</td>
+                        <td>No brand dominance</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Top Media Sources -->
+        <div class="media-influence">
+            <h2>📰 Top Media Sources Shaping Telehealth Narrative</h2>
+            <p style="margin: 12px 0; color: #6c757d;">Which outlets AI engines trust for telehealth information</p>
+            
+            <div class="media-ranking">
+                <div class="media-item">
+                    <div class="media-rank top-3">#1</div>
+                    <div>
+                        <div class="media-name">ForHims.com</div>
+                        <div class="media-category">Official Hims Site</div>
+                    </div>
+                    <div class="media-bar">
+                        <div class="media-fill official" style="width: 100%">
+                            <span class="fill-text">4.3%</span>
+                        </div>
+                    </div>
+                    <div class="media-count">36 citations</div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-rank top-3">#2</div>
+                    <div>
+                        <div class="media-name">FDA.gov</div>
+                        <div class="media-category">Regulatory</div>
+                    </div>
+                    <div class="media-bar">
+                        <div class="media-fill regulatory" style="width: 97.2%">
+                            <span class="fill-text">4.1%</span>
+                        </div>
+                    </div>
+                    <div class="media-count">35 citations</div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-rank top-3">#3</div>
+                    <div>
+                        <div class="media-name">AmericanTelemed.org</div>
+                        <div class="media-category">Industry Association</div>
+                    </div>
+                    <div class="media-bar">
+                        <div class="media-fill" style="width: 77.8%">
+                            <span class="fill-text">3.3%</span>
+                        </div>
+                    </div>
+                    <div class="media-count">28 citations</div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-rank">4</div>
+                    <div>
+                        <div class="media-name">CDC.gov</div>
+                        <div class="media-category">Government Health</div>
+                    </div>
+                    <div class="media-bar">
+                        <div class="media-fill regulatory" style="width: 77.8%">
+                            <span class="fill-text">3.3%</span>
+                        </div>
+                    </div>
+                    <div class="media-count">28 citations</div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-rank">5</div>
+                    <div>
+                        <div class="media-name">AMA-assn.org</div>
+                        <div class="media-category">Medical Association</div>
+                    </div>
+                    <div class="media-bar">
+                        <div class="media-fill medical" style="width: 75%">
+                            <span class="fill-text">3.2%</span>
+                        </div>
+                    </div>
+                    <div class="media-count">27 citations</div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-rank">6</div>
+                    <div>
+                        <div class="media-name">Mayo Clinic</div>
+                        <div class="media-category">Medical Authority</div>
+                    </div>
+                    <div class="media-bar">
+                        <div class="media-fill medical" style="width: 47.2%">
+                            <span class="fill-text">2.0%</span>
+                        </div>
+                    </div>
+                    <div class="media-count">17 citations</div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-rank">7</div>
+                    <div>
+                        <div class="media-name">GoodRx.com</div>
+                        <div class="media-category">Healthcare Platform</div>
+                    </div>
+                    <div class="media-bar">
+                        <div class="media-fill" style="width: 55.6%">
+                            <span class="fill-text">2.4%</span>
+                        </div>
+                    </div>
+                    <div class="media-count">20 citations</div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-rank">8</div>
+                    <div>
+                        <div class="media-name">Ro.co (Roman)</div>
+                        <div class="media-category">Competitor</div>
+                    </div>
+                    <div class="media-bar">
+                        <div class="media-fill" style="width: 41.7%">
+                            <span class="fill-text">1.8%</span>
+                        </div>
+                    </div>
+                    <div class="media-count">15 citations</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Regulatory Analysis -->
+        <div class="regulatory-section">
+            <div class="regulatory-stat">
+                <div class="regulatory-percentage">70.3%</div>
+                <div class="regulatory-label">of all citations mention regulatory compliance</div>
+            </div>
+            <p style="margin-top: 20px; text-align: center;">
+                High regulatory focus establishes legitimacy but may overshadow consumer benefits.<br>
+                Consider balancing compliance messaging with convenience and outcomes.
+            </p>
+        </div>
+
+        <!-- Methodology Box -->
+        <div class="regulatory-section" style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-color: #2196F3;">
+            <h2 style="color: #1565c0; margin-bottom: 20px;">📊 Methodology: Understanding "Presence" vs "Win Rate"</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; text-align: left;">
+                <div>
+                    <h4 style="color: #1565c0; margin-bottom: 10px;">✓ Presence Rate</h4>
+                    <p style="color: #424242; font-size: 0.95em;">
+                        Measures if a brand is <strong>mentioned</strong> in AI responses:
+                        • Brand appears in the text or citations<br>
+                        • Acknowledged as offering the service<br>
+                        • Listed among options available<br>
+                        <em>Example: "Hims also offers ED treatment..."</em>
+                    </p>
+                </div>
+                <div>
+                    <h4 style="color: #1565c0; margin-bottom: 10px;">🏆 Win Rate</h4>
+                    <p style="color: #424242; font-size: 0.95em;">
+                        Measures if a brand is <strong>recommended</strong> as best:
+                        • Positioned as the top choice<br>
+                        • Receives most favorable framing<br>
+                        • Highlighted for advantages over others<br>
+                        <em>Example: "Roman stands out as the leader..."</em>
+                    </p>
+                </div>
+            </div>
+            <p style="margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.5); border-radius: 8px; color: #1565c0;">
+                <strong>Key Insight:</strong> High presence with low win rate indicates brand awareness without preference - 
+                consumers know you exist but AI doesn't recommend you over competitors.
+            </p>
+        </div>
+
+        <!-- Query Performance -->
+        <div class="query-performance">
+            <h2>📊 Query Performance Analysis</h2>
+            <p style="margin: 12px 0; color: #6c757d;">Where Hims & Hers appears in telehealth searches - and who wins the recommendation</p>
+            
+            <div class="query-grid">
+                <div class="query-item">
+                    <div class="query-text">
+                        <strong>"Online ED treatment options"</strong>
+                        <div style="margin-top: 8px; padding: 10px; background: #fff3e0; border-radius: 4px; font-size: 0.85em; color: #424242;">
+                            <strong>Example Response:</strong> "Several platforms offer ED treatment including <span style="background: yellow;">Roman (Ro), which leads with comprehensive men's health services</span>, Hims which also provides ED medications, and Lemonaid Health..."
+                            <div style="margin-top: 5px; color: #e65100;">
+                                <strong>Winner: Roman</strong> (featured first, described as comprehensive)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="query-metric">
+                        <div class="metric-value">100%</div>
+                        <div class="metric-label">H&H Present</div>
+                    </div>
+                    <div class="query-metric">
+                        <div class="metric-value">0%</div>
+                        <div class="metric-label">H&H Wins</div>
+                    </div>
+                </div>
+                
+                <div class="query-item">
+                    <div class="query-text">
+                        <strong>"Telehealth for men's health issues"</strong>
+                        <div style="margin-top: 8px; padding: 10px; background: #fff3e0; border-radius: 4px; font-size: 0.85em; color: #424242;">
+                            <strong>Example Response:</strong> "For men's health, <span style="background: yellow;">Roman offers the most comprehensive platform</span> covering ED, hair loss, and more. Hims and Lemonaid also provide services..."
+                            <div style="margin-top: 5px; color: #e65100;">
+                                <strong>Winner: Roman</strong> (positioned as "most comprehensive")
+                            </div>
+                        </div>
+                    </div>
+                    <div class="query-metric">
+                        <div class="metric-value">75%</div>
+                        <div class="metric-label">H&H Present</div>
+                    </div>
+                    <div class="query-metric">
+                        <div class="metric-value">0%</div>
+                        <div class="metric-label">H&H Wins</div>
+                    </div>
+                </div>
+                
+                <div class="query-item">
+                    <div class="query-text">
+                        <strong>"Hims vs Roman vs Lemonaid comparison"</strong>
+                        <div style="margin-top: 8px; padding: 10px; background: #fff3e0; border-radius: 4px; font-size: 0.85em; color: #424242;">
+                            <strong>Example Response:</strong> "When comparing these services, <span style="background: yellow;">Roman typically offers the most comprehensive approach</span> with 2-day shipping. Hims provides similar services with colorful branding. Lemonaid focuses on affordability..."
+                            <div style="margin-top: 5px; color: #e65100;">
+                                <strong>Winner: Roman</strong> (even in direct comparison)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="query-metric">
+                        <div class="metric-value">100%</div>
+                        <div class="metric-label">H&H Present</div>
+                    </div>
+                    <div class="query-metric">
+                        <div class="metric-value">0%</div>
+                        <div class="metric-label">H&H Wins</div>
+                    </div>
+                </div>
+                
+                <div class="query-item">
+                    <div class="query-text">
+                        <strong>"How does Hims and Hers work?"</strong>
+                        <div style="margin-top: 8px; padding: 10px; background: #e8f5e9; border-radius: 4px; font-size: 0.85em; color: #424242;">
+                            <strong>Example Response:</strong> "Hims & Hers operates as a telehealth platform where patients complete online consultations, receive prescriptions, and have medications delivered..."
+                            <div style="margin-top: 5px; color: #2e7d32;">
+                                <strong>Winner: None</strong> (brand-specific query, no comparison)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="query-metric">
+                        <div class="metric-value">100%</div>
+                        <div class="metric-label">H&H Present</div>
+                    </div>
+                    <div class="query-metric">
+                        <div class="metric-value">—</div>
+                        <div class="metric-label">N/A</div>
+                    </div>
+                </div>
+                
+                <div class="query-item">
+                    <div class="query-text">
+                        <strong>"Best online doctor consultation platforms"</strong>
+                        <div style="margin-top: 8px; padding: 10px; background: #ffebee; border-radius: 4px; font-size: 0.85em; color: #424242;">
+                            <strong>Example Response:</strong> "Top telehealth platforms include Teladoc, Amwell, MDLive, and Doctor on Demand for general healthcare needs..."
+                            <div style="margin-top: 5px; color: #c62828;">
+                                <strong>Winner: Traditional telehealth</strong> (Hims not mentioned)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="query-metric">
+                        <div class="metric-value">0%</div>
+                        <div class="metric-label">H&H Present</div>
+                    </div>
+                    <div class="query-metric">
+                        <div class="metric-value">0%</div>
+                        <div class="metric-label">H&H Wins</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Platform Analysis -->
+        <div class="platform-analysis">
+            <h2>🤖 AI Platform Citation Patterns</h2>
+            <p style="margin: 12px 0; color: #6c757d;">How different AI engines surface Hims & Hers content</p>
+            
+            <div class="platform-grid">
+                <div class="platform-card leader">
+                    <div class="platform-name">Claude</div>
+                    <div class="platform-citations">354</div>
+                    <div class="platform-metrics">
+                        23.6 per query<br>
+                        8/15 H&H mentions
+                    </div>
+                </div>
+                
+                <div class="platform-card">
+                    <div class="platform-name">Gemini</div>
+                    <div class="platform-citations">191</div>
+                    <div class="platform-metrics">
+                        12.7 per query<br>
+                        9/15 H&H mentions
+                    </div>
+                </div>
+                
+                <div class="platform-card">
+                    <div class="platform-name">ChatGPT</div>
+                    <div class="platform-citations">189</div>
+                    <div class="platform-metrics">
+                        12.6 per query<br>
+                        7/15 H&H mentions
+                    </div>
+                </div>
+                
+                <div class="platform-card">
+                    <div class="platform-name">Perplexity</div>
+                    <div class="platform-citations">112</div>
+                    <div class="platform-metrics">
+                        7.5 per query<br>
+                        5/15 H&H mentions
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sentiment-grid">
+                <div class="sentiment-card neutral">
+                    <div class="sentiment-percentage" style="color: #6c757d;">94.8%</div>
+                    <div class="sentiment-label">Neutral Tone</div>
+                </div>
+                <div class="sentiment-card cautionary">
+                    <div class="sentiment-percentage" style="color: #ff9800;">2.4%</div>
+                    <div class="sentiment-label">Cautionary</div>
+                </div>
+                <div class="sentiment-card negative">
+                    <div class="sentiment-percentage" style="color: #f44336;">1.9%</div>
+                    <div class="sentiment-label">Negative</div>
+                </div>
+                <div class="sentiment-card positive">
+                    <div class="sentiment-percentage" style="color: #4caf50;">0.9%</div>
+                    <div class="sentiment-label">Positive</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Strategic Insights -->
+        <div class="query-performance">
+            <h2>🔍 Strategic Insights</h2>
+            <div class="insights-grid">
+                <div class="insight-card strength">
+                    <h4 style="margin-bottom: 8px;">✅ Strengths</h4>
+                    <ul style="margin-top: 8px; padding-left: 20px; font-size: 0.95em;">
+                        <li>Strong regulatory compliance messaging</li>
+                        <li>Medical authority validation (Mayo, AMA)</li>
+                        <li>100% presence in ED treatment queries</li>
+                        <li>Neutral to positive sentiment (95.7%)</li>
+                        <li>ForHims.com is top cited source</li>
+                    </ul>
+                </div>
+                
+                <div class="insight-card opportunity">
+                    <h4 style="margin-bottom: 8px;">💡 Opportunities</h4>
+                    <ul style="margin-top: 8px; padding-left: 20px; font-size: 0.95em;">
+                        <li>Increase consumer media coverage (0.4%)</li>
+                        <li>Strengthen mental health positioning</li>
+                        <li>Optimize for Claude (3.2x advantage)</li>
+                        <li>Build ForHers brand visibility (15%)</li>
+                        <li>Develop competitive differentiation</li>
+                    </ul>
+                </div>
+                
+                <div class="insight-card gap">
+                    <h4 style="margin-bottom: 8px;">⚠️ Critical Gaps</h4>
+                    <ul style="margin-top: 8px; padding-left: 20px; font-size: 0.95em;">
+                        <li>0% win rate vs Roman (16 wins)</li>
+                        <li>Absent from general telehealth queries</li>
+                        <li>No presence in mental health searches</li>
+                        <li>Tech media coverage absent</li>
+                        <li>Reddit/social proof missing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="media-influence">
+            <h2>🎯 Data-Driven Recommendations</h2>
+            <div class="recommendations-grid">
+                <div class="recommendation-card">
+                    <strong>1. Urgent: Counter Roman's Category Leadership</strong>
+                    <span class="priority-badge priority-critical">Critical Priority</span>
+                    <p style="margin-top: 12px;">Roman wins 26.7% of queries while Hims & Hers wins 0%. Develop aggressive content strategy highlighting unique differentiators: dual gender focus, broader condition coverage, and integrated mental health services.</p>
+                </div>
+                
+                <div class="recommendation-card">
+                    <strong>2. Balance Regulatory with Consumer Messaging</strong>
+                    <span class="priority-badge priority-high">High Priority</span>
+                    <p style="margin-top: 12px;">70.3% regulatory focus establishes trust but may intimidate consumers. Create content emphasizing convenience, privacy, outcomes, and user experience alongside compliance.</p>
+                </div>
+                
+                <div class="recommendation-card">
+                    <strong>3. Claim Mental Health Leadership</strong>
+                    <span class="priority-badge priority-high">High Priority</span>
+                    <p style="margin-top: 12px;">0% presence in "online therapy and mental health services" despite offering these services. Position as comprehensive wellness platform vs single-condition competitors.</p>
+                </div>
+                
+                <div class="recommendation-card">
+                    <strong>4. Amplify Consumer Media Presence</strong>
+                    <span class="priority-badge priority-high">High Priority</span>
+                    <p style="margin-top: 12px;">Only 3 consumer media citations (0.4%). Target lifestyle, tech, and business media with user success stories, convenience narrative, and digital health innovation.</p>
+                </div>
+                
+                <div class="recommendation-card">
+                    <strong>5. Strengthen ForHers Brand Identity</strong>
+                    <span class="priority-badge priority-medium">Medium Priority</span>
+                    <p style="margin-top: 12px;">ForHers appears in only 15% of queries vs ForHims at 46.7%. Develop targeted women's health content to capture untapped market and differentiate from male-focused competitors.</p>
+                </div>
+                
+                <div class="recommendation-card">
+                    <strong>6. Optimize for Platform Variance</strong>
+                    <span class="priority-badge priority-medium">Medium Priority</span>
+                    <p style="margin-top: 12px;">Claude provides 354 citations vs Perplexity's 112 (3.2x difference). Develop platform-specific content strategies, particularly for high-value Claude optimization.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2025 AI Telehealth Visibility Analysis | Digital Healthcare Intelligence</p>
+            <p style="margin-top: 8px; font-size: 0.85em;">
+                <strong>Analysis Parameters:</strong> 15 Queries | 4 AI Engines | 60 Total Prompts | 846 Citations Analyzed
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+engine,prompt,domain,class,url
+perplexity,Tell me about Microsoft. Respond in English.,en.wikipedia.org,editorial,https://en.wikipedia.org/wiki/Microsoft
+perplexity,Tell me about Microsoft. Respond in English.,learn.microsoft.com,editorial,https://learn.microsoft.com/en-us/windows/release-health/windows-message-center
+perplexity,Tell me about Microsoft. Respond in English.,news.microsoft.com,editorial,https://news.microsoft.com/source/2025/07/30/microsoft-cloud-and-ai-strength-fuels-fourth-quarter-results
+perplexity,Tell me about Microsoft. Respond in English.,learn.microsoft.com,editorial,https://learn.microsoft.com/en-us/lifecycle/end-of-support/end-of-support-2025
+perplexity,Tell me about Microsoft. Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast
+perplexity,Tell me about Microsoft. Respond in English.,answers.microsoft.com,editorial,https://answers.microsoft.com/en-us/outlook_com/forum/all/missing-a-bunch-of-mails-from-all-2024-and-2025/25e2b34d-7ba5-41a7-98f4-d374b56b5ab4
+perplexity,Tell me about Microsoft. Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/investor/company-overview
+perplexity,Tell me about Microsoft. Respond in English.,learn.microsoft.com,editorial,https://learn.microsoft.com/en-us/answers/questions/4708063/is-this-email-from-microsoft-legit-or-a-scam
+perplexity,Tell me about Microsoft. Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/worklab/work-trend-index/2025-the-year-the-frontier-firm-is-born
+perplexity,Tell me about Microsoft. Respond in English.,support.microsoft.com,editorial,https://support.microsoft.com/en-us/windows/windows-10-support-ends-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281
+perplexity,Tell me about Microsoft. Respond in English.,partner.microsoft.com,editorial,https://partner.microsoft.com/en-us/blog/article/microsoft-build-2025-post-event
+perplexity,Tell me about Microsoft. Respond in English.,schools.nyc.gov,editorial,https://www.schools.nyc.gov/enrollment/summer-rising
+perplexity,Tell me about Microsoft. Respond in English.,sec.gov,editorial,https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm
+perplexity,Tell me about Microsoft. Respond in English.,cms.gov,editorial,https://www.cms.gov/medicare/quality/home-health/home-health-qrp-spotlight-and-announcements
+perplexity,Tell me about Microsoft. Respond in English.,alpha-sense.com,editorial,https://www.alpha-sense.com/earnings/msft
+perplexity,Tell me about Microsoft. Respond in English.,dcf.wisconsin.gov,editorial,https://dcf.wisconsin.gov/childcare/payments
+perplexity,Tell me about Microsoft. Respond in English.,learn.microsoft.com,editorial,https://learn.microsoft.com/en-us/answers/questions
+chatgpt,Tell me about Microsoft. Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/about
+chatgpt,Tell me about Microsoft. Respond in English.,forbes.com,editorial_tier1,https://www.forbes.com/sites/bernardmarr/2023/01/30/microsofts-2023-earnings-report-what-you-need-to-know
+chatgpt,Tell me about Microsoft. Respond in English.,cnbc.com,editorial_tier1,https://www.cnbc.com/2023/07/25/microsofts-earnings-report-q4-2023.html
+chatgpt,Tell me about Microsoft. Respond in English.,theverge.com,editorial,https://www.theverge.com/2023/10/03/microsoft-ai-initiatives-2023
+chatgpt,Tell me about Microsoft. Respond in English.,bbc.com,editorial,https://www.bbc.com/news/business-66812345
+chatgpt,Tell me about Microsoft. Respond in English.,reuters.com,editorial_tier1,https://www.reuters.com/technology/microsofts-activision-blizzard-deal-2023-10-01
+chatgpt,Tell me about Microsoft. Respond in English.,zdnet.com,editorial,https://www.zdnet.com/article/microsofts-sustainability-goals-2023
+chatgpt,Tell me about Microsoft. Respond in English.,businessinsider.com,editorial,https://www.businessinsider.com/microsoft-employee-culture-2023-09
+gemini,Tell me about Microsoft. Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us
+gemini,Tell me about Microsoft. Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/about
+gemini,Tell me about Microsoft. Respond in English.,news.microsoft.com,editorial,https://news.microsoft.com
+gemini,Tell me about Microsoft. Respond in English.,investopedia.com,editorial,https://www.investopedia.com/terms/m/microsoft-msft.asp
+gemini,Tell me about Microsoft. Respond in English.,bloomberg.com,editorial_tier1,https://www.bloomberg.com/quote/MSFT:US
+gemini,Tell me about Microsoft. Respond in English.,reuters.com,editorial_tier1,https://www.reuters.com/companies/MSFT.OQ
+gemini,Tell me about Microsoft. Respond in English.,finance.yahoo.com,editorial,https://finance.yahoo.com/quote/MSFT
+gemini,Tell me about Microsoft. Respond in English.,cnbc.com,editorial_tier1,https://www.cnbc.com/quotes
+gemini,Tell me about Microsoft. Respond in English.,marketwatch.com,editorial,https://www.marketwatch.com/investing/stock/msft
+perplexity,What is Microsoft known for? Respond in English.,microsoft.com,editorial,https://www.microsoft.com/investor/reports/ar24/index.html
+perplexity,What is Microsoft known for? Respond in English.,learn.microsoft.com,editorial,https://learn.microsoft.com/en-us/windows/release-health/windows-message-center
+perplexity,What is Microsoft known for? Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/worklab/work-trend-index/2025-the-year-the-frontier-firm-is-born
+perplexity,What is Microsoft known for? Respond in English.,support.microsoft.com,editorial,https://support.microsoft.com/en-us/office/what-windows-end-of-support-means-for-office-and-microsoft-365-34e28be4-1e4f-4928-b210-3f45d8215595
+perplexity,What is Microsoft known for? Respond in English.,news.microsoft.com,editorial,https://news.microsoft.com/2024-in-review
+perplexity,What is Microsoft known for? Respond in English.,answers.microsoft.com,editorial,https://answers.microsoft.com/en-us/outlook_com/forum/all/missing-a-bunch-of-mails-from-all-2024-and-2025/25e2b34d-7ba5-41a7-98f4-d374b56b5ab4
+perplexity,What is Microsoft known for? Respond in English.,crn.com,editorial,https://www.crn.com/news/ai/2025/the-10-biggest-microsoft-news-stories-of-2025-so-far
+perplexity,What is Microsoft known for? Respond in English.,answers.microsoft.com,editorial,https://answers.microsoft.com/en-us/outlook_com/forum/all/notes/636e5504-b3d4-440b-9435-e5e3781c19f3
+perplexity,What is Microsoft known for? Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/corporate-responsibility/recognition
+perplexity,What is Microsoft known for? Respond in English.,schools.nyc.gov,editorial,https://www.schools.nyc.gov/enrollment/enroll-grade-by-grade/pre-k
+perplexity,What is Microsoft known for? Respond in English.,partner.microsoft.com,editorial,https://partner.microsoft.com/fr-ch/blog/article/congratulations-to-the-2024-microsoft-partner-of-the-year-awards-winners-and-finalists
+perplexity,What is Microsoft known for? Respond in English.,answers.microsoft.com,editorial,https://answers.microsoft.com/en-us/outlook_com/forum/all/how-do-i-enable-the-you-are-not-responding-to-the/2b3ce4d6-5b2e-4764-845e-06bad197073b
+perplexity,What is Microsoft known for? Respond in English.,comparably.com,editorial,https://www.comparably.com/companies/microsoft/awards
+perplexity,What is Microsoft known for? Respond in English.,ssa.gov,editorial,https://www.ssa.gov/news/en/newsletter/archive.html
+perplexity,What is Microsoft known for? Respond in English.,partner.microsoft.com,editorial,https://partner.microsoft.com/inspire/awards
+perplexity,What is Microsoft known for? Respond in English.,calcivilrights.ca.gov,editorial,https://calcivilrights.ca.gov/shpt
+perplexity,What is Microsoft known for? Respond in English.,blogs.windows.com,editorial,https://blogs.windows.com/windowsdeveloper/2024/11/01/announcing-the-microsoft-store-awards-2024-winners
+perplexity,What is Microsoft known for? Respond in English.,cms.gov,editorial,https://www.cms.gov/medicare/quality/home-health/home-health-qrp-spotlight-and-announcements
+chatgpt,What is Microsoft known for? Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us
+chatgpt,What is Microsoft known for? Respond in English.,forbes.com,editorial_tier1,https://www.forbes.com/sites/johnkoetsier/2023/01/10/microsofts-windows-11-usage-continues-to-grow-as-windows-10-falls
+chatgpt,What is Microsoft known for? Respond in English.,zdnet.com,editorial,https://www.zdnet.com/article/microsoft-office-365-usage-continues-to-rise-as-remote-work-becomes-the-norm
+chatgpt,What is Microsoft known for? Respond in English.,cnbc.com,editorial_tier1,https://www.cnbc.com/2023/02/01/microsoft-azure-revenue-growth-accelerates-as-cloud-demand-soars.html
+chatgpt,What is Microsoft known for? Respond in English.,theverge.com,editorial,https://www.theverge.com/2023/03/15/microsoft-xbox-game-pass-growth-2023
+chatgpt,What is Microsoft known for? Respond in English.,techradar.com,editorial,https://www.techradar.com/news/microsofts-ai-ambitions-are-getting-serious
+chatgpt,What is Microsoft known for? Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/security/business
+chatgpt,What is Microsoft known for? Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/surface/business
+gemini,What is Microsoft known for? Respond in English.,news.microsoft.com,editorial,https://news.microsoft.com/2023/10/26/microsoft-cloud-growth-continues-as-azure-drives-strong-q1-results
+gemini,What is Microsoft known for? Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/microsoft-365
+gemini,What is Microsoft known for? Respond in English.,news.xbox.com,editorial,https://news.xbox.com/en-us
+gemini,What is Microsoft known for? Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/dynamics365
+gemini,What is Microsoft known for? Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/ai
+gemini,What is Microsoft known for? Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/surface
+gemini,What is Microsoft known for? Respond in English.,linkedin.com,editorial,https://www.linkedin.com
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/performance
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,learn.microsoft.com,editorial,https://learn.microsoft.com/en-us/windows/release-health/windows-message-center
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,crn.com,editorial,https://www.crn.com/news/ai/2025/the-10-biggest-microsoft-news-stories-of-2025-so-far
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,news.microsoft.com,editorial,https://news.microsoft.com/microsoft-events
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/worklab/work-trend-index/2025-the-year-the-frontier-firm-is-born
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,news.microsoft.com,editorial,https://news.microsoft.com/build-2025-book-of-news
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,learn.microsoft.com,editorial,https://learn.microsoft.com/en-us/lifecycle/end-of-support/end-of-support-2025
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,news.microsoft.com,editorial,https://news.microsoft.com/recent-news
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,news.microsoft.com,editorial,https://news.microsoft.com/source/view-all
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,news.microsoft.com,editorial,https://news.microsoft.com/category/recent-news
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/07/24/ai-powered-success-with-1000-stories-of-customer-transformation-and-innovation
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,news.microsoft.com,editorial,https://news.microsoft.com/source/tag/press-releases
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,support.microsoft.com,editorial,https://support.microsoft.com/en-us/windows/windows-10-support-ends-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,the-independent.com,editorial,https://www.the-independent.com/topic/microsoft
+perplexity,Please tell me about recent news from Microsoft. Respond in English.,news.microsoft.com,editorial,https://news.microsoft.com/source
+chatgpt,Please tell me about recent news from Microsoft. Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/microsoft-365/blog/2023/10/10/introducing-copilot-in-microsoft-365
+chatgpt,Please tell me about recent news from Microsoft. Respond in English.,forbes.com,editorial_tier1,https://www.forbes.com/sites/bernardmarr/2023/09/15/microsoft-azure-announces-new-sustainability-initiatives
+chatgpt,Please tell me about recent news from Microsoft. Respond in English.,theverge.com,editorial,https://www.theverge.com/2023/10/05/microsoft-xbox-game-pass-new-titles
+chatgpt,Please tell me about recent news from Microsoft. Respond in English.,cnbc.com,editorial_tier1,https://www.cnbc.com/2023/09/20/microsoft-acquires-cybersecurity-firm.html
+chatgpt,Please tell me about recent news from Microsoft. Respond in English.,techradar.com,editorial,https://www.techradar.com/news/windows-11-update-october-2023
+chatgpt,Please tell me about recent news from Microsoft. Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/corporate-responsibility
+chatgpt,Please tell me about recent news from Microsoft. Respond in English.,bbc.com,editorial,https://www.bbc.com/news/technology-67012345
+chatgpt,Please tell me about recent news from Microsoft. Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/news
+gemini,Please tell me about recent news from Microsoft. Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/ai**
+gemini,Please tell me about recent news from Microsoft. Respond in English.,theverge.com,editorial,https://www.theverge.com/2023/3/16/23639760/microsoft-bing-ai-chat-review-experience-impressions**
+gemini,Please tell me about recent news from Microsoft. Respond in English.,cnbc.com,editorial_tier1,https://www.cnbc.com/2023/07/18/microsoft-is-adding-ai-powered-features-to-microsoft-365.html**
+gemini,Please tell me about recent news from Microsoft. Respond in English.,news.microsoft.com,editorial,https://news.microsoft.com/2024/01/24/microsoft-cloud-growth-continues-in-q2-fy24
+gemini,Please tell me about recent news from Microsoft. Respond in English.,reuters.com,editorial_tier1,https://www.reuters.com/technology/microsoft-cloud-revenue-beats-expectations-2024-01-24
+gemini,Please tell me about recent news from Microsoft. Respond in English.,ft.com,editorial_tier1,https://www.ft.com/content/a26a52a2-a79a-4707-a692-676a7266624a**
+gemini,Please tell me about recent news from Microsoft. Respond in English.,microsoft.com,editorial,https://www.microsoft.com/en-us/investor/earnings/fy24-q2**

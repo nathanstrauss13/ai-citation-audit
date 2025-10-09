@@ -1,0 +1,56 @@
+query,query_type,category,commercial_intent,engine,john_hardy_mentioned,competitors_mentioned,featured_brand,john_hardy_prominence,total_citations,john_hardy_citations,competitor_citations
+What jewelry brands does Reddit recommend for sustainability?,social_media,social_reddit,research,ChatGPT,No,"Brilliant Earth, Vrai, Mejuri, Catbird",Mejuri,Not_Present,0,0,0
+What jewelry brands does Reddit recommend for sustainability?,social_media,social_reddit,research,Claude,No,"Brilliant Earth, Mejuri, Aurate",Brilliant Earth,Not_Present,0,0,0
+What jewelry brands does Reddit recommend for sustainability?,social_media,social_reddit,research,Perplexity,No,"Aurate, Mejuri, Catbird",Mejuri,Not_Present,12,0,0
+What jewelry brands does Reddit recommend for sustainability?,social_media,social_reddit,research,Gemini,No,"Vrai, Mejuri, Catbird, Aurate, Brilliant Earth, Bario Neal",Vrai,Not_Present,4,0,4
+Reddit recommendations for ethical engagement rings,social_media,social_reddit,research,ChatGPT,No,Brilliant Earth,Brilliant Earth,Not_Present,2,0,0
+Reddit recommendations for ethical engagement rings,social_media,social_reddit,research,Claude,No,"Brilliant Earth, Vrai, Bario Neal, Catbird",Brilliant Earth,Not_Present,0,0,0
+Reddit recommendations for ethical engagement rings,social_media,social_reddit,research,Perplexity,No,Brilliant Earth,Brilliant Earth,Not_Present,6,0,0
+Reddit recommendations for ethical engagement rings,social_media,social_reddit,research,Gemini,No,"Brilliant Earth, Bario Neal",Brilliant Earth,Not_Present,15,0,2
+Best luxury jewelry brands according to Reddit users,social_media,social_reddit,discovery,ChatGPT,No,"Chopard, Cartier, Tiffany & Co",Cartier,Not_Present,3,0,0
+Best luxury jewelry brands according to Reddit users,social_media,social_reddit,discovery,Claude,No,"Chopard, Cartier, Tiffany & Co",Cartier,Not_Present,0,0,0
+Best luxury jewelry brands according to Reddit users,social_media,social_reddit,discovery,Perplexity,No,"David Yurman, Chopard, Cartier, Tiffany & Co",Cartier,Not_Present,6,0,0
+Best luxury jewelry brands according to Reddit users,social_media,social_reddit,discovery,Gemini,No,"David Yurman, Chopard, Cartier, Tiffany & Co",Cartier,Not_Present,14,0,4
+What do people on Reddit say about lab-grown diamonds?,social_media,social_reddit,research,ChatGPT,No,,None,Not_Present,3,0,0
+What do people on Reddit say about lab-grown diamonds?,social_media,social_reddit,research,Claude,No,,None,Not_Present,0,0,0
+What do people on Reddit say about lab-grown diamonds?,social_media,social_reddit,research,Perplexity,No,,None,Not_Present,6,0,1
+What do people on Reddit say about lab-grown diamonds?,social_media,social_reddit,research,Gemini,No,,None,Not_Present,5,0,0
+Viral jewelry trends on TikTok 2025,social_media,social_tiktok_instagram,discovery,ChatGPT,No,,None,Not_Present,0,0,0
+Viral jewelry trends on TikTok 2025,social_media,social_tiktok_instagram,discovery,Claude,No,,None,Not_Present,0,0,0
+Viral jewelry trends on TikTok 2025,social_media,social_tiktok_instagram,discovery,Perplexity,No,,None,Not_Present,8,0,0
+Viral jewelry trends on TikTok 2025,social_media,social_tiktok_instagram,discovery,Gemini,No,,None,Not_Present,0,0,0
+Most popular jewelry influencers on Instagram,social_media,social_tiktok_instagram,research,ChatGPT,No,,None,Not_Present,8,0,0
+Most popular jewelry influencers on Instagram,social_media,social_tiktok_instagram,research,Claude,No,,None,Not_Present,0,0,0
+Most popular jewelry influencers on Instagram,social_media,social_tiktok_instagram,research,Perplexity,No,Mejuri,Mejuri,Not_Present,12,0,0
+Most popular jewelry influencers on Instagram,social_media,social_tiktok_instagram,research,Gemini,No,,None,Not_Present,8,0,0
+TikTok recommendations for affordable luxury jewelry,social_media,social_tiktok_instagram,discovery,ChatGPT,No,Mejuri,Mejuri,Not_Present,14,0,2
+TikTok recommendations for affordable luxury jewelry,social_media,social_tiktok_instagram,discovery,Claude,No,"Aurate, Mejuri, Cartier",Mejuri,Not_Present,0,0,0
+TikTok recommendations for affordable luxury jewelry,social_media,social_tiktok_instagram,discovery,Gemini,No,Mejuri,Mejuri,Not_Present,9,0,1
+What are people saying on social media about sustainable jewelry?,social_media,social_general,research,ChatGPT,No,"Brilliant Earth, Mejuri",Brilliant Earth,Not_Present,5,0,1
+What are people saying on social media about sustainable jewelry?,social_media,social_general,research,Claude,No,,None,Not_Present,0,0,0
+What are people saying on social media about sustainable jewelry?,social_media,social_general,research,Perplexity,No,,None,Not_Present,16,1,1
+What are people saying on social media about sustainable jewelry?,social_media,social_general,research,Gemini,No,"Bario Neal, Vrai, Catbird",Bario Neal,Not_Present,0,0,0
+Customer reviews and experiences with John Hardy on social media,social_media,social_general,research,ChatGPT,Yes,,John Hardy,Featured_First,7,0,0
+Customer reviews and experiences with John Hardy on social media,social_media,social_general,research,Claude,Yes,,John Hardy,Featured_First,0,0,0
+Customer reviews and experiences with John Hardy on social media,social_media,social_general,research,Perplexity,Yes,,John Hardy,Featured_First,8,7,0
+Customer reviews and experiences with John Hardy on social media,social_media,social_general,research,Gemini,Yes,,John Hardy,Featured_First,0,0,0
+Most talked about jewelry brands on social media,social_media,social_general,discovery,ChatGPT,No,"David Yurman, Chopard, Pandora, Tiffany & Co, Cartier",Tiffany & Co,Not_Present,0,0,0
+Most talked about jewelry brands on social media,social_media,social_general,discovery,Claude,No,"Mejuri, David Yurman, Pandora, Tiffany & Co, Cartier",Tiffany & Co,Not_Present,0,0,0
+Most talked about jewelry brands on social media,social_media,social_general,discovery,Perplexity,No,"David Yurman, Mejuri, Tiffany & Co",Tiffany & Co,Not_Present,11,0,0
+Most talked about jewelry brands on social media,social_media,social_general,discovery,Gemini,No,"Mejuri, David Yurman, Pandora, Tiffany & Co, Cartier",Tiffany & Co,Not_Present,24,0,15
+Women's Wear Daily jewelry industry coverage,trade_publication,trade_direct,research,ChatGPT,No,,None,Not_Present,3,0,0
+Women's Wear Daily jewelry industry coverage,trade_publication,trade_direct,research,Claude,No,,None,Not_Present,0,0,0
+Women's Wear Daily jewelry industry coverage,trade_publication,trade_direct,research,Perplexity,No,,None,Not_Present,5,0,0
+Women's Wear Daily jewelry industry coverage,trade_publication,trade_direct,research,Gemini,No,"Cartier, Tiffany & Co",Tiffany & Co,Not_Present,0,0,0
+Business of Fashion luxury jewelry trends,trade_publication,trade_direct,research,ChatGPT,No,,None,Not_Present,1,0,0
+Business of Fashion luxury jewelry trends,trade_publication,trade_direct,research,Claude,No,,None,Not_Present,0,0,0
+Business of Fashion luxury jewelry trends,trade_publication,trade_direct,research,Gemini,No,"Cartier, Tiffany & Co",Tiffany & Co,Not_Present,5,0,0
+Jewelry industry market analysis and trends 2025,trade_publication,trade_industry,research,ChatGPT,No,,None,Not_Present,4,0,0
+Jewelry industry market analysis and trends 2025,trade_publication,trade_industry,research,Claude,No,"Pandora, Cartier, Tiffany & Co",Cartier,Not_Present,0,0,0
+Jewelry industry market analysis and trends 2025,trade_publication,trade_industry,research,Gemini,No,"Cartier, Tiffany & Co",Cartier,Not_Present,5,0,0
+Fashion industry coverage of sustainable jewelry brands,trade_publication,trade_industry,research,Claude,No,"Brilliant Earth, Pandora, Mejuri",Mejuri,Not_Present,0,0,0
+Fashion industry coverage of sustainable jewelry brands,trade_publication,trade_industry,research,Gemini,No,"Aurate, Vrai, Bario Neal, Catbird",Bario Neal,Not_Present,11,0,0
+Jewelry designer profiles and interviews in fashion media,trade_publication,trade_industry,research,ChatGPT,No,,None,Not_Present,6,0,0
+Jewelry designer profiles and interviews in fashion media,trade_publication,trade_industry,research,Claude,No,Cartier,Cartier,Not_Present,0,0,0
+Jewelry designer profiles and interviews in fashion media,trade_publication,trade_industry,research,Perplexity,No,,None,Not_Present,14,0,0
+Jewelry designer profiles and interviews in fashion media,trade_publication,trade_industry,research,Gemini,No,,None,Not_Present,23,0,0

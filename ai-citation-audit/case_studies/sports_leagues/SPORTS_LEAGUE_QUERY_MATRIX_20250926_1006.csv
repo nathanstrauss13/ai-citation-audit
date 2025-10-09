@@ -1,0 +1,81 @@
+query,engine,nba_present,nfl_present,mlb_present,nhl_present,winner,position_prominence,media_sources_count,total_citations
+What is the most popular professional sports league in America?,ChatGPT,No,No,No,No,None,Not Present,4,9
+What is the most popular professional sports league in America?,Claude,No,No,No,No,None,Not Present,0,0
+What is the most popular professional sports league in America?,Perplexity,No,No,No,No,None,Not Present,0,7
+What is the most popular professional sports league in America?,Gemini,No,No,No,No,None,Not Present,2,6
+Which sports league has the highest average player salaries?,ChatGPT,No,No,Yes,No,MLB,Not Present,2,6
+Which sports league has the highest average player salaries?,Claude,No,No,No,No,None,Not Present,10,24
+Which sports league has the highest average player salaries?,Perplexity,No,No,No,No,None,Not Present,1,3
+Which sports league has the highest average player salaries?,Gemini,No,No,No,No,None,Not Present,0,5
+Best professional sports league to watch for beginners,ChatGPT,No,No,No,No,None,Not Present,0,0
+Best professional sports league to watch for beginners,Claude,Yes,No,Yes,Yes,MLB,Medium,7,16
+Best professional sports league to watch for beginners,Perplexity,No,No,No,No,None,Not Present,0,7
+Best professional sports league to watch for beginners,Gemini,Yes,Yes,No,No,NBA,Medium,4,8
+Which sports league has the most international reach?,ChatGPT,Yes,Yes,No,No,NBA,Medium,6,9
+Which sports league has the most international reach?,Claude,Yes,No,No,No,NBA,Medium,5,17
+Which sports league has the most international reach?,Perplexity,No,No,No,No,None,Not Present,0,7
+Which sports league has the most international reach?,Gemini,No,No,No,No,None,Not Present,0,0
+Most profitable sports league in the world,ChatGPT,No,No,No,No,None,Not Present,0,0
+Most profitable sports league in the world,Claude,Yes,Yes,No,No,NBA,Medium,8,22
+Most profitable sports league in the world,Perplexity,No,No,No,No,None,Not Present,0,6
+Most profitable sports league in the world,Gemini,No,No,No,No,None,Not Present,0,0
+Which sports league has the best playoffs format?,ChatGPT,No,No,No,No,None,Not Present,0,0
+Which sports league has the best playoffs format?,Claude,Yes,Yes,Yes,Yes,NBA,High,13,23
+Which sports league has the best playoffs format?,Perplexity,No,No,No,No,None,Not Present,0,0
+Which sports league has the best playoffs format?,Gemini,No,No,No,No,None,Not Present,0,0
+Most exciting professional sports league to watch,ChatGPT,Yes,No,Yes,No,NBA,Medium,4,10
+Most exciting professional sports league to watch,Claude,Yes,No,No,No,NBA,Medium,5,27
+Most exciting professional sports league to watch,Perplexity,No,No,No,No,None,Not Present,0,8
+Most exciting professional sports league to watch,Gemini,No,No,No,No,None,Not Present,0,0
+Which sports league has the most parity and competitive balance?,ChatGPT,No,No,No,No,None,Not Present,6,10
+Which sports league has the most parity and competitive balance?,Claude,Yes,Yes,Yes,Yes,NBA,Medium,11,28
+Which sports league has the most parity and competitive balance?,Perplexity,No,No,No,No,None,Not Present,0,7
+Which sports league has the most parity and competitive balance?,Gemini,No,No,No,No,None,Not Present,0,0
+Best sports league for family entertainment,ChatGPT,Yes,Yes,Yes,No,NBA,Medium,14,17
+Best sports league for family entertainment,Claude,Yes,No,Yes,Yes,NBA,Medium,8,14
+Best sports league for family entertainment,Perplexity,No,No,No,No,None,Not Present,0,10
+Best sports league for family entertainment,Gemini,No,No,No,No,None,Not Present,0,0
+Which professional sports league has the longest season?,ChatGPT,Yes,Yes,Yes,Yes,NBA,Medium,12,12
+Which professional sports league has the longest season?,Claude,Yes,No,Yes,Yes,NBA,Medium,11,22
+Which professional sports league has the longest season?,Perplexity,No,No,No,No,None,Not Present,0,0
+Which professional sports league has the longest season?,Gemini,Yes,Yes,Yes,Yes,NBA,Medium,5,6
+Most athlete-friendly professional sports league,ChatGPT,No,Yes,No,No,NFL,Not Present,6,15
+Most athlete-friendly professional sports league,Claude,Yes,No,Yes,No,NBA,Low,10,26
+Most athlete-friendly professional sports league,Perplexity,No,No,No,No,None,Not Present,0,7
+Most athlete-friendly professional sports league,Gemini,No,No,No,No,None,Not Present,0,0
+Which sports league has the best fan experience?,ChatGPT,No,No,No,No,None,Not Present,4,10
+Which sports league has the best fan experience?,Claude,No,Yes,Yes,No,NFL,Not Present,6,24
+Which sports league has the best fan experience?,Perplexity,No,No,No,No,None,Not Present,1,8
+Which sports league has the best fan experience?,Gemini,No,No,No,No,None,Not Present,0,0
+Most innovative professional sports league,ChatGPT,Yes,No,No,No,NBA,Medium,9,11
+Most innovative professional sports league,Claude,Yes,No,Yes,Yes,NBA,High,11,22
+Most innovative professional sports league,Perplexity,No,No,No,No,None,Not Present,0,0
+Most innovative professional sports league,Gemini,No,No,No,No,None,Not Present,0,0
+Which sports league has the best social media presence?,ChatGPT,No,No,No,No,None,Not Present,2,10
+Which sports league has the best social media presence?,Claude,No,No,No,No,None,Not Present,0,19
+Which sports league has the best social media presence?,Perplexity,No,No,No,No,None,Not Present,0,7
+Which sports league has the best social media presence?,Gemini,Yes,Yes,No,Yes,NBA,Medium,4,11
+Most watched sports league globally,ChatGPT,No,No,No,No,None,Not Present,3,12
+Most watched sports league globally,Claude,Yes,No,No,No,NBA,Medium,2,22
+Most watched sports league globally,Perplexity,No,No,No,No,None,Not Present,0,7
+Most watched sports league globally,Gemini,No,No,No,No,None,Not Present,1,3
+Which sports league sells the most merchandise?,ChatGPT,No,No,No,No,None,Not Present,2,6
+Which sports league sells the most merchandise?,Claude,Yes,No,Yes,No,NBA,Medium,9,27
+Which sports league sells the most merchandise?,Perplexity,No,No,Yes,No,MLB,Not Present,1,7
+Which sports league sells the most merchandise?,Gemini,No,No,No,No,None,Not Present,0,0
+Most valuable sports league franchises,ChatGPT,No,No,No,No,None,Not Present,0,0
+Most valuable sports league franchises,Claude,No,No,No,No,None,Not Present,8,23
+Most valuable sports league franchises,Perplexity,No,No,No,No,None,Not Present,0,3
+Most valuable sports league franchises,Gemini,No,No,No,No,None,Not Present,6,7
+Best sports league for player marketing and endorsements,ChatGPT,No,No,No,No,None,Not Present,0,0
+Best sports league for player marketing and endorsements,Claude,No,No,No,No,None,Not Present,4,25
+Best sports league for player marketing and endorsements,Perplexity,No,No,No,No,None,Not Present,0,0
+Best sports league for player marketing and endorsements,Gemini,No,No,No,No,None,Not Present,0,0
+Most technologically advanced sports league,ChatGPT,Yes,Yes,Yes,No,NBA,Medium,13,17
+Most technologically advanced sports league,Claude,Yes,Yes,Yes,No,NBA,High,9,24
+Most technologically advanced sports league,Perplexity,No,No,No,No,None,Not Present,0,0
+Most technologically advanced sports league,Gemini,No,No,No,No,None,Not Present,0,0
+Which sports league has the best streaming and digital experience?,ChatGPT,No,No,No,No,None,Not Present,0,12
+Which sports league has the best streaming and digital experience?,Claude,Yes,Yes,Yes,No,NBA,High,9,23
+Which sports league has the best streaming and digital experience?,Perplexity,No,No,No,No,None,Not Present,0,8
+Which sports league has the best streaming and digital experience?,Gemini,No,No,No,No,None,Not Present,0,0

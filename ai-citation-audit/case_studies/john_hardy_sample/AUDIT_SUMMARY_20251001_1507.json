@@ -1,0 +1,87 @@
+{
+  "audit_date": "2025-10-01T15:07:26.967907",
+  "total_queries_tested": 10,
+  "total_platforms": 4,
+  "total_tests_conducted": 40,
+  "overall_metrics": {
+    "john_hardy_visibility_rate": 35.0,
+    "times_jh_present": 14,
+    "total_citations": 535
+  },
+  "by_category": {
+    "brand_awareness": {
+      "total": 8,
+      "present": 8,
+      "rate": 100.0
+    },
+    "sustainability": {
+      "total": 12,
+      "present": 0,
+      "rate": 0.0
+    },
+    "lab_grown": {
+      "total": 8,
+      "present": 0,
+      "rate": 0.0
+    },
+    "competitive": {
+      "total": 8,
+      "present": 6,
+      "rate": 75.0
+    },
+    "thought_leadership": {
+      "total": 4,
+      "present": 0,
+      "rate": 0.0
+    }
+  },
+  "top_competitors": [
+    {
+      "brand": "Brilliant Earth",
+      "mentions": 19
+    },
+    {
+      "brand": "Vrai",
+      "mentions": 14
+    },
+    {
+      "brand": "Tiffany & Co",
+      "mentions": 11
+    },
+    {
+      "brand": "Aurate",
+      "mentions": 7
+    },
+    {
+      "brand": "Catbird",
+      "mentions": 7
+    }
+  ],
+  "by_platform": {
+    "chatgpt": {
+      "total_queries": 10,
+      "jh_present": 4,
+      "visibility_rate": 40.0
+    },
+    "claude": {
+      "total_queries": 10,
+      "jh_present": 4,
+      "visibility_rate": 40.0
+    },
+    "perplexity": {
+      "total_queries": 10,
+      "jh_present": 3,
+      "visibility_rate": 30.0
+    },
+    "gemini": {
+      "total_queries": 10,
+      "jh_present": 3,
+      "visibility_rate": 30.0
+    }
+  },
+  "media_coverage": {
+    "total_outlets_citing": 6,
+    "jh_citations": 9,
+    "competitor_citations": 14
+  }
+}

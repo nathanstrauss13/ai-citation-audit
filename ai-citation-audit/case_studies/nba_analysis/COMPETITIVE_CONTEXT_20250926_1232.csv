@@ -1,0 +1,21 @@
+query,engine,nba_present,nfl_present,mlb_present,nhl_present,winner,nba_citation_count
+Most popular professional sports league globally,ChatGPT,Yes,Yes,Yes,No,NFL,0
+Most popular professional sports league globally,Claude,Yes,Yes,No,No,NBA,0
+Most popular professional sports league globally,Perplexity,No,No,No,No,None,0
+Most popular professional sports league globally,Gemini,Yes,Yes,No,No,NBA,0
+Which sports league has the best playoffs?,ChatGPT,Yes,No,No,No,NBA,0
+Which sports league has the best playoffs?,Claude,Yes,Yes,Yes,Yes,NBA,0
+Which sports league has the best playoffs?,Perplexity,Yes,Yes,Yes,No,MLB,0
+Which sports league has the best playoffs?,Gemini,No,No,No,No,None,0
+Most innovative professional sports league,ChatGPT,Yes,Yes,Yes,No,NFL,0
+Most innovative professional sports league,Claude,Yes,Yes,Yes,No,NBA,0
+Most innovative professional sports league,Perplexity,No,No,No,No,None,0
+Most innovative professional sports league,Gemini,Yes,Yes,No,No,NBA,0
+Best sports league for international fans,ChatGPT,Yes,Yes,Yes,No,NBA,0
+Best sports league for international fans,Claude,Yes,No,No,No,NBA,0
+Best sports league for international fans,Perplexity,No,No,No,No,None,0
+Best sports league for international fans,Gemini,Yes,No,No,No,NBA,0
+Most watched sports league in America,ChatGPT,Yes,No,No,No,NBA,0
+Most watched sports league in America,Claude,No,No,No,No,None,0
+Most watched sports league in America,Perplexity,No,No,No,No,None,0
+Most watched sports league in America,Gemini,No,No,No,No,None,0

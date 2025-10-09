@@ -1,0 +1,36 @@
+{
+  "analysis_date": "2025-10-01T17:52:57.928882",
+  "execution_summary": {
+    "total_queries_attempted": 100,
+    "successful_completions": 98,
+    "platform_success_rates": {
+      "chatgpt": 100.0,
+      "claude": 100.0,
+      "perplexity": 100.0,
+      "gemini": 100.0
+    }
+  },
+  "gemini_debugging": {
+    "api_keys_used": 3,
+    "attempts": 25,
+    "successes": 25
+  },
+  "citation_quality": {
+    "total_citations_captured": 777,
+    "citations_by_platform": {
+      "ChatGPT": 248,
+      "Perplexity": 311,
+      "Gemini": 174,
+      "Claude": 44
+    },
+    "unique_domains": 255,
+    "owned_media_citations": 40,
+    "earned_media_citations": 81,
+    "earned_to_owned_ratio": 2.02
+  },
+  "media_analysis": {
+    "total_outlets": 255,
+    "tier_1_luxury_outlets": 3,
+    "sustainability_media": 1
+  }
+}

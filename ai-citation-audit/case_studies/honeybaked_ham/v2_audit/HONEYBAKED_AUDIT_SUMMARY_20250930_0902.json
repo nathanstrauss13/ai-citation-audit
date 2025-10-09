@@ -1,0 +1,51 @@
+{
+  "audit_date": "2025-09-30T09:02:52.529414",
+  "total_queries_tested": 60,
+  "total_platforms": 4,
+  "total_tests_conducted": 60,
+  "overall_metrics": {
+    "brand_mention_rate": 35.0,
+    "total_brand_mentions": 21,
+    "total_citations": 654,
+    "citations_with_brand": 130,
+    "citation_authority_score": 19.88
+  },
+  "by_query_type": {
+    "branded": {
+      "total": 12,
+      "mentions": 12,
+      "rate": 100.0
+    },
+    "brand_agnostic": {
+      "total": 48,
+      "mentions": 9,
+      "rate": 18.75
+    }
+  },
+  "by_platform": {
+    "chatgpt": {
+      "total_queries": 15,
+      "brand_mentions": 5,
+      "mention_rate": 33.33333333333333
+    },
+    "claude": {
+      "total_queries": 15,
+      "brand_mentions": 7,
+      "mention_rate": 46.666666666666664
+    },
+    "perplexity": {
+      "total_queries": 15,
+      "brand_mentions": 5,
+      "mention_rate": 33.33333333333333
+    },
+    "gemini": {
+      "total_queries": 15,
+      "brand_mentions": 4,
+      "mention_rate": 26.666666666666668
+    }
+  },
+  "competitive_landscape": {
+    "total_competitor_mentions": 64,
+    "unique_competitors_found": 11
+  }
+}

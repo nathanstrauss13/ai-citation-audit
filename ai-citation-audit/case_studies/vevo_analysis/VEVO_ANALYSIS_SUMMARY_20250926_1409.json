@@ -1,0 +1,93 @@
+{
+  "analysis_timestamp": "20250926_1409",
+  "total_queries_processed": 60,
+  "total_citations_collected": 644,
+  "vevo_official_percentage": "21.3%",
+  "youtube_mention_rate": "58.3%",
+  "top_media_sources": [
+    {
+      "domain": "youtube.com",
+      "citations": 105,
+      "category": "platform_content"
+    },
+    {
+      "domain": "vevo.com",
+      "citations": 101,
+      "category": "official_vevo"
+    },
+    {
+      "domain": "billboard.com",
+      "citations": 57,
+      "category": "music_media"
+    },
+    {
+      "domain": "musicbusinessworldwide.com",
+      "citations": 46,
+      "category": "music_media"
+    },
+    {
+      "domain": "hq.vevo.com",
+      "citations": 21,
+      "category": "official_vevo"
+    },
+    {
+      "domain": "ifpi.org",
+      "citations": 17,
+      "category": "other"
+    },
+    {
+      "domain": "variety.com",
+      "citations": 17,
+      "category": "music_media"
+    },
+    {
+      "domain": "digitalmusicnews.com",
+      "citations": 14,
+      "category": "other"
+    },
+    {
+      "domain": "tidal.com",
+      "citations": 12,
+      "category": "other"
+    },
+    {
+      "domain": "support.google.com",
+      "citations": 11,
+      "category": "other"
+    }
+  ],
+  "platform_performance": {
+    "ChatGPT": {
+      "queries": 15,
+      "citations": 152,
+      "vevo_mentions": 12
+    },
+    "Claude": {
+      "queries": 15,
+      "citations": 273,
+      "vevo_mentions": 14
+    },
+    "Perplexity": {
+      "queries": 15,
+      "citations": 103,
+      "vevo_mentions": 9
+    },
+    "Gemini": {
+      "queries": 15,
+      "citations": 116,
+      "vevo_mentions": 12
+    }
+  },
+  "content_type_breakdown": {
+    "video_citations": 0,
+    "article_citations": 0,
+    "social_citations": 0,
+    "official_citations": 0,
+    "wiki_citations": 0,
+    "forum_citations": 0
+  },
+  "key_insights": [
+    "Music media provides stronger Vevo coverage than tech media - leverage music industry partnerships",
+    "Claude provides the most Vevo citations - prioritize content optimization for this platform"
+  ]
+}

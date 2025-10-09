@@ -1,0 +1,832 @@
+engine,query,citation_url,domain,domain_classification,nba_mentioned_in_url,nfl_mentioned_in_url,mlb_mentioned_in_url,nhl_mentioned_in_url,citation_position
+ChatGPT,How do I watch NBA games?,https://www.nba.com/leaguepass,nba.com,league_official,Yes,No,No,No,1
+ChatGPT,How do I watch NBA games?,https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,How do I watch NBA games?,https://tv.youtube.com,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,How do I watch NBA games?,https://www.sling.com,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,4
+ChatGPT,How do I watch NBA games?,https://www.fubo.tv,fubo.tv,streaming_service,Unknown,Unknown,Unknown,Unknown,5
+ChatGPT,How do I watch NBA games?,https://www.nba.com/leaguepass,nba.com,league_official,Yes,No,No,No,6
+ChatGPT,How do I watch NBA games?,https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,How do I watch NBA games?,https://tv.youtube.com,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,8
+ChatGPT,How do I watch NBA games?,https://www.sling.com,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,9
+ChatGPT,How do I watch NBA games?,https://www.fubo.tv,fubo.tv,streaming_service,Unknown,Unknown,Unknown,Unknown,10
+Perplexity,How do I watch NBA games?,https://www.espn.com/nba/story/_/id/46436502/nba-preseason-2025-how-watch-games-october,espn.com,sports_media,Yes,No,No,No,0
+Perplexity,How do I watch NBA games?,https://www.primevideo.com/tournament/amzn1.dv.icid.cf75b42a-68cd-4a1c-993a-a0b3f0575c5f,primevideo.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How do I watch NBA games?,https://www.espn.com/nba/schedule,espn.com,sports_media,Yes,No,No,No,0
+Perplexity,How do I watch NBA games?,https://www.espn.com/where-to-watch/leagues/nba,espn.com,sports_media,Yes,No,No,No,0
+Perplexity,How do I watch NBA games?,https://www.peacocktv.com/sports/nba,peacocktv.com,other,Yes,No,No,No,0
+Perplexity,How do I watch NBA games?,https://www.hulu.com/nba,hulu.com,streaming_service,Yes,No,No,No,0
+Perplexity,How do I watch NBA games?,https://www.aboutamazon.com/news/entertainment/how-to-watch-nba-prime,aboutamazon.com,other,Yes,No,No,No,0
+Perplexity,How do I watch NBA games?,https://tv.youtube.com/browse/nba-basketball-UCfCI17CQpic3xo2Q_S50UVA,tv.youtube.com,streaming_service,Yes,No,No,No,0
+Gemini,How do I watch NBA games?,https://tv.youtube.com/welcome/](https://tv.youtube.com/welcome/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,1
+Gemini,How do I watch NBA games?,https://www.hulu.com/live-tv](https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,2
+Gemini,How do I watch NBA games?,https://www.sling.com/](https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,3
+Gemini,How do I watch NBA games?,https://www.fubo.tv/welcome](https://www.fubo.tv/welcome,fubo.tv,streaming_service,Unknown,Unknown,Unknown,Unknown,4
+Gemini,How do I watch NBA games?,https://www.nba.com/leaguepass](https://www.nba.com/leaguepass,nba.com,league_official,Yes,No,No,No,5
+ChatGPT,Where can I stream NBA games live?,https://watch.nba.com/packages,watch.nba.com,league_official,Yes,No,No,No,1
+ChatGPT,Where can I stream NBA games live?,https://www.espn.com/espnplus/,espn.com,sports_media,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,Where can I stream NBA games live?,https://www.tntdrama.com/watchtnt,tntdrama.com,other,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,Where can I stream NBA games live?,https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,4
+ChatGPT,Where can I stream NBA games live?,https://tv.youtube.com/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,5
+ChatGPT,Where can I stream NBA games live?,https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,6
+ChatGPT,Where can I stream NBA games live?,https://www.fubo.tv/,fubo.tv,streaming_service,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,Where can I stream NBA games live?,https://www.directv.com/stream/,directv.com,other,Unknown,Unknown,Unknown,Unknown,8
+ChatGPT,Where can I stream NBA games live?,https://watch.nba.com/packages,watch.nba.com,league_official,Yes,No,No,No,9
+ChatGPT,Where can I stream NBA games live?,https://www.espn.com/espnplus/,espn.com,sports_media,Unknown,Unknown,Unknown,Unknown,10
+ChatGPT,Where can I stream NBA games live?,https://www.tntdrama.com/watchtnt,tntdrama.com,other,Unknown,Unknown,Unknown,Unknown,11
+ChatGPT,Where can I stream NBA games live?,https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,12
+ChatGPT,Where can I stream NBA games live?,https://tv.youtube.com/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,13
+ChatGPT,Where can I stream NBA games live?,https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,14
+ChatGPT,Where can I stream NBA games live?,https://www.fubo.tv/,fubo.tv,streaming_service,Unknown,Unknown,Unknown,Unknown,15
+ChatGPT,Where can I stream NBA games live?,https://www.directv.com/stream/,directv.com,other,Unknown,Unknown,Unknown,Unknown,16
+Perplexity,Where can I stream NBA games live?,https://www.sportspro.com/news/nba-2025-2026-regular-season-streaming-espn-nbc-prime-video-august-2025/,sportspro.com,other,Yes,No,No,No,0
+Perplexity,Where can I stream NBA games live?,https://www.hulu.com/nba,hulu.com,streaming_service,Yes,No,No,No,0
+Perplexity,Where can I stream NBA games live?,https://www.aboutamazon.com/news/entertainment/how-to-watch-nba-prime,aboutamazon.com,other,Yes,No,No,No,0
+Perplexity,Where can I stream NBA games live?,https://play.google.com/store/apps/details?id=com.nbaimd.gametime.nba2011&hl=en_US,play.google.com,other,Yes,No,No,No,0
+Perplexity,Where can I stream NBA games live?,https://www.peacocktv.com/sports/nba,peacocktv.com,other,Yes,No,No,No,0
+Perplexity,Where can I stream NBA games live?,https://tv.youtube.com/browse/nba-basketball-UCfCI17CQpic3xo2Q_S50UVA,tv.youtube.com,streaming_service,Yes,No,No,No,0
+Perplexity,Where can I stream NBA games live?,https://www.espn.com/where-to-watch/leagues/nba,espn.com,sports_media,Yes,No,No,No,0
+Perplexity,Where can I stream NBA games live?,https://www.sportsmediawatch.com/tv-schedules/nba-tv-schedule/,sportsmediawatch.com,other,Yes,No,No,No,0
+Gemini,Where can I stream NBA games live?,https://www.nba.com/leaguepass](https://www.nba.com/leaguepass,nba.com,league_official,Yes,No,No,No,1
+Gemini,Where can I stream NBA games live?,https://tv.youtube.com/](https://tv.youtube.com/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,2
+Gemini,Where can I stream NBA games live?,https://www.hulu.com/live-tv](https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,3
+Gemini,Where can I stream NBA games live?,https://www.sling.com/](https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,4
+Gemini,Where can I stream NBA games live?,https://www.directv.com/stream/](https://www.directv.com/stream/,directv.com,other,Unknown,Unknown,Unknown,Unknown,5
+ChatGPT,How do I get tickets to NBA games?,https://www.nba.com/tickets,nba.com,league_official,Yes,No,No,No,1
+ChatGPT,How do I get tickets to NBA games?,https://www.ticketmaster.com/nba,ticketmaster.com,ticketing_platform,Yes,No,No,No,2
+ChatGPT,How do I get tickets to NBA games?,https://www.stubhub.com/nba-tickets/,stubhub.com,ticketing_platform,Yes,No,No,No,3
+ChatGPT,How do I get tickets to NBA games?,https://seatgeek.com/nba-tickets,seatgeek.com,ticketing_platform,Yes,No,No,No,4
+ChatGPT,How do I get tickets to NBA games?,https://www.vividseats.com/nba-basketball/,vividseats.com,ticketing_platform,Yes,No,No,No,5
+ChatGPT,How do I get tickets to NBA games?,https://www.nba.com/tickets](https://www.nba.com/tickets,nba.com,league_official,Yes,No,No,No,6
+ChatGPT,How do I get tickets to NBA games?,https://www.ticketmaster.com/nba](https://www.ticketmaster.com/nba,ticketmaster.com,ticketing_platform,Yes,No,No,No,7
+ChatGPT,How do I get tickets to NBA games?,https://www.stubhub.com/nba-tickets/](https://www.stubhub.com/nba-tickets/,stubhub.com,ticketing_platform,Yes,No,No,No,8
+ChatGPT,How do I get tickets to NBA games?,https://seatgeek.com/nba-tickets](https://seatgeek.com/nba-tickets,seatgeek.com,ticketing_platform,Yes,No,No,No,9
+ChatGPT,How do I get tickets to NBA games?,https://www.vividseats.com/nba-basketball/](https://www.vividseats.com/nba-basketball/,vividseats.com,ticketing_platform,Yes,No,No,No,10
+Perplexity,How do I get tickets to NBA games?,https://seatgeek.com/blog/how-to-buy-and-sell-nba-tickets,seatgeek.com,ticketing_platform,Yes,No,No,No,0
+Perplexity,How do I get tickets to NBA games?,https://seatgeek.com/nba-tickets,seatgeek.com,ticketing_platform,Yes,No,No,No,0
+Perplexity,How do I get tickets to NBA games?,https://blog.ticketcity.com/nba/nba-ticket-delivery-types/,blog.ticketcity.com,other,Yes,No,No,No,0
+Perplexity,How do I get tickets to NBA games?,https://www.vividseats.com/nba-basketball,vividseats.com,ticketing_platform,Yes,No,No,No,0
+Perplexity,How do I get tickets to NBA games?,https://nbatickets.nba.com,nbatickets.nba.com,league_official,Yes,No,No,No,0
+Perplexity,How do I get tickets to NBA games?,https://www.stubhub.com/nba-tickets/grouping/115,stubhub.com,ticketing_platform,Yes,No,No,No,0
+Perplexity,How do I get tickets to NBA games?,https://www.sportsgamblingpodcast.com/2023/11/09/the-ultimate-guide-to-buying-nba-tickets-tips-and-tricks/,sportsgamblingpodcast.com,other,Yes,No,No,No,0
+Perplexity,How do I get tickets to NBA games?,https://nbaexperiences.com,nbaexperiences.com,other,Yes,No,No,No,0
+Perplexity,How do I get tickets to NBA games?,https://tiqassist.com/nba-playoffs-season-ticket-best-tips/,tiqassist.com,other,Yes,No,No,No,0
+Perplexity,How do I get tickets to NBA games?,https://www.hellotickets.com/us/sports/nba-tickets,hellotickets.com,other,Yes,No,No,No,0
+Perplexity,How do I get tickets to NBA games?,https://www.tickpick.com/basketball-tickets/,tickpick.com,other,Yes,No,No,No,0
+Perplexity,How do I get tickets to NBA games?,https://gametime.co/c/nba-basketball,gametime.co,other,Yes,No,No,No,0
+Perplexity,How do I get tickets to NBA games?,https://nbaexperiences.com/blog/how-to-buy-tickets-to-nba-all-star,nbaexperiences.com,other,Yes,No,No,No,0
+Gemini,How do I get tickets to NBA games?,https://www.nba.com/tickets](https://www.nba.com/tickets,nba.com,league_official,Yes,No,No,No,1
+Gemini,How do I get tickets to NBA games?,https://www.nba.com](https://www.nba.com,,other,Yes,No,No,No,2
+Gemini,How do I get tickets to NBA games?,https://www.ticketmaster.com/nba-tickets/artist/805923](https://www.ticketmaster.com/nba-tickets/artist/805923,ticketmaster.com,ticketing_platform,Yes,No,No,No,3
+Gemini,How do I get tickets to NBA games?,https://www.stubhub.com/nba-tickets/category/8/](https://www.stubhub.com/nba-tickets/category/8/,stubhub.com,ticketing_platform,Yes,No,No,No,4
+Gemini,How do I get tickets to NBA games?,https://seatgeek.com/nba-tickets](https://seatgeek.com/nba-tickets,seatgeek.com,ticketing_platform,Yes,No,No,No,5
+Gemini,How do I get tickets to NBA games?,https://www.vividseats.com/nba-basketball-tickets.html](https://www.vividseats.com/nba-basketball-tickets.html,vividseats.com,ticketing_platform,Yes,No,No,No,6
+Gemini,How do I get tickets to NBA games?,https://gametime.co/nba/basketball](https://gametime.co/nba/basketball,gametime.co,other,Yes,No,No,No,7
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/schedule,nba.com,league_official,Yes,No,No,No,1
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/lakers/,nba.com,league_official,Yes,No,No,No,2
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/warriors/,nba.com,league_official,Yes,No,No,No,3
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/celtics/,nba.com,league_official,Yes,No,No,No,4
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/heat/,nba.com,league_official,Yes,No,No,No,5
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/bucks/,nba.com,league_official,Yes,No,No,No,6
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/sixers/,nba.com,league_official,Yes,No,No,No,7
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/suns/,nba.com,league_official,Yes,No,No,No,8
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/nuggets/,nba.com,league_official,Yes,No,No,No,9
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/nets/,nba.com,league_official,Yes,No,No,No,10
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/knicks/,nba.com,league_official,Yes,No,No,No,11
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/mavericks/,nba.com,league_official,Yes,No,No,No,12
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/clippers/,nba.com,league_official,Yes,No,No,No,13
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/bulls/,nba.com,league_official,Yes,No,No,No,14
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/pistons/,nba.com,league_official,Yes,No,No,No,15
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/spurs/,nba.com,league_official,Yes,No,No,No,16
+ChatGPT,Best NBA games to attend this season,https://www.nba.com/thunder/,nba.com,league_official,Yes,No,No,No,17
+Perplexity,Best NBA games to attend this season,https://www.cbssports.com/nba/news/2025-26-nba-schedule-release-top-10-must-see-games-from-season-opener-to-lakers-vs-mavericks-and-more/,cbssports.com,sports_media,Yes,No,No,No,0
+Perplexity,Best NBA games to attend this season,https://wikihoops.com/top-games/2025-26/,wikihoops.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best NBA games to attend this season,https://www.nbcsports.com/nba/news/nba-2025-26-schedule-is-released-20-must-watch-games-this-season,nbcsports.com,sports_media,Yes,No,No,No,0
+Perplexity,Best NBA games to attend this season,http://www.espn.com/nba/gameleaders,espn.com,sports_media,Yes,No,No,No,0
+Perplexity,Best NBA games to attend this season,https://www.basket-mag.com/nba-schedule-2025-2026/,basket-mag.com,other,Yes,No,No,No,0
+Perplexity,Best NBA games to attend this season,https://www.si.com/nba/seven-best-nba-games-to-circle-for-the-2025-26-season,si.com,sports_media,Yes,No,No,No,0
+Perplexity,Best NBA games to attend this season,https://www.usatoday.com/story/sports/nba/2025/08/14/nba-television-schedule-25-games-to-watch/85662689007/,usatoday.com,news_media,Yes,No,No,No,0
+Perplexity,Best NBA games to attend this season,https://www.youtube.com/watch?v=CfzIAiZbbM0,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best NBA games to attend this season,https://www.espn.com/nba/story/_/id/45960087/nba-full-schedule-2025-2026-games-watch-faq,espn.com,sports_media,Yes,No,No,No,0
+Perplexity,Best NBA games to attend this season,http://www.espn.com/nba/attendance,espn.com,sports_media,Yes,No,No,No,0
+Perplexity,Best NBA games to attend this season,https://www.espn.com/nba/standings,espn.com,sports_media,Yes,No,No,No,0
+Perplexity,Best NBA games to attend this season,https://www.youtube.com/watch?v=MocG6ast7mM,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best NBA games to attend this season,https://www.nbc.com/nbc-insider/the-full-2025-2026-nba-on-nbc-schedule,nbc.com,other,Yes,No,No,No,0
+Perplexity,Best NBA games to attend this season,https://www.youtube.com/watch?v=LIKUEOPNXF8,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Gemini,Best NBA games to attend this season,https://www.nba.com/schedule](https://www.nba.com/schedule,nba.com,league_official,Yes,No,No,No,1
+Gemini,Best NBA games to attend this season,https://www.ticketmaster.com/](https://www.ticketmaster.com/,ticketmaster.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,2
+Gemini,Best NBA games to attend this season,https://www.stubhub.com/](https://www.stubhub.com/,stubhub.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,3
+Gemini,Best NBA games to attend this season,https://www.nba.com/schedule](https://www.nba.com/schedule,nba.com,league_official,Yes,No,No,No,4
+Gemini,Best NBA games to attend this season,https://www.ticketmaster.com/](https://www.ticketmaster.com/,ticketmaster.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,5
+Gemini,Best NBA games to attend this season,https://www.stubhub.com/](https://www.stubhub.com/,stubhub.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,6
+Gemini,Best NBA games to attend this season,https://www.nba.com/schedule](https://www.nba.com/schedule,nba.com,league_official,Yes,No,No,No,7
+Gemini,Best NBA games to attend this season,https://www.ticketmaster.com/](https://www.ticketmaster.com/,ticketmaster.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,8
+Gemini,Best NBA games to attend this season,https://www.stubhub.com/](https://www.stubhub.com/,stubhub.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,9
+Gemini,Best NBA games to attend this season,https://www.nba.com/schedule](https://www.nba.com/schedule,nba.com,league_official,Yes,No,No,No,10
+Gemini,Best NBA games to attend this season,https://www.ticketmaster.com/](https://www.ticketmaster.com/,ticketmaster.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,11
+Gemini,Best NBA games to attend this season,https://www.stubhub.com/](https://www.stubhub.com/,stubhub.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,12
+Gemini,Best NBA games to attend this season,https://www.nba.com/schedule](https://www.nba.com/schedule,nba.com,league_official,Yes,No,No,No,13
+Gemini,Best NBA games to attend this season,https://www.ticketmaster.com/](https://www.ticketmaster.com/,ticketmaster.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,14
+Gemini,Best NBA games to attend this season,https://www.stubhub.com/](https://www.stubhub.com/,stubhub.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,15
+Gemini,Best NBA games to attend this season,https://www.nba.com/schedule](https://www.nba.com/schedule,nba.com,league_official,Yes,No,No,No,16
+Gemini,Best NBA games to attend this season,https://www.ticketmaster.com/](https://www.ticketmaster.com/,ticketmaster.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,17
+Gemini,Best NBA games to attend this season,https://www.stubhub.com/](https://www.stubhub.com/,stubhub.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,18
+ChatGPT,How do I become an NBA fan?,https://www.nba.com,nba.com,league_official,Yes,No,No,No,1
+ChatGPT,How do I become an NBA fan?,https://official.nba.com/rulebook/,official.nba.com,league_official,Yes,No,No,No,2
+ChatGPT,How do I become an NBA fan?,https://www.nba.com/history,nba.com,league_official,Yes,No,No,No,3
+ChatGPT,How do I become an NBA fan?,https://www.nba.com/leaguepass,nba.com,league_official,Yes,No,No,No,4
+Perplexity,How do I become an NBA fan?,https://www.thelexingtonline.com/blog/2023/11/10/ir3nwz4lalx1fyryxtdqlyrvneugfr,thelexingtonline.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How do I become an NBA fan?,https://blog.jobsinsports.com/2024/05/20/how-to-become-nba-ball-boy/,blog.jobsinsports.com,other,Yes,No,No,No,0
+Perplexity,How do I become an NBA fan?,https://nbatrips.com/en/the-ultimate-guide-to-attending-nba-star-games/,nbatrips.com,other,Yes,No,No,No,0
+Perplexity,How do I become an NBA fan?,https://nbahoopsonline.com/Articles/2021-22/Becomeafan.html,nbahoopsonline.com,other,Yes,No,No,No,0
+Perplexity,How do I become an NBA fan?,https://thenbaunderground.com/be-a-better-fan,thenbaunderground.com,other,Yes,No,No,No,0
+Perplexity,How do I become an NBA fan?,https://careers.nba.com,careers.nba.com,league_official,Yes,No,No,No,0
+Perplexity,How do I become an NBA fan?,https://youtini.com/article/the-slam-dunk-beginners-guide-everything-you-need-to-know-about-the-nba,youtini.com,other,Yes,No,No,No,0
+Perplexity,How do I become an NBA fan?,https://nbaexperiences.com/about-us,nbaexperiences.com,other,Yes,No,No,No,0
+Perplexity,How do I become an NBA fan?,http://www.espn.com/espn/page2/story?page=simmons%2F020227,espn.com,sports_media,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How do I become an NBA fan?,https://www.youtube.com/shorts/GzYjQySFiwE,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How do I become an NBA fan?,https://gothamist.com/news/so-you-want-to-be-a-ny-knicks-fan-heres-a-guide,gothamist.com,other,Unknown,Unknown,Unknown,Unknown,0
+Gemini,How do I become an NBA fan?,https://www.nba.com/nba101](https://www.nba.com/nba101,nba.com,league_official,Yes,No,No,No,1
+Gemini,How do I become an NBA fan?,https://www.nba.com/teams](https://www.nba.com/teams,nba.com,league_official,Yes,No,No,No,2
+Gemini,How do I become an NBA fan?,https://www.espn.com/nba/](https://www.espn.com/nba/,espn.com,sports_media,Yes,No,No,No,3
+Gemini,How do I become an NBA fan?,https://www.basketball-reference.com/](https://www.basketball-reference.com/,basketball-reference.com,stats_reference,Yes,No,No,No,4
+Gemini,How do I become an NBA fan?,https://www.nba.com/leaguepass](https://www.nba.com/leaguepass,nba.com,league_official,Yes,No,No,No,5
+Gemini,How do I become an NBA fan?,https://www.youtube.com/@NBA](https://www.youtube.com/@NBA,youtube.com,streaming_service,Yes,No,No,No,6
+Gemini,How do I become an NBA fan?,https://theathletic.com/nba/](https://theathletic.com/nba/,theathletic.com,sports_media,Yes,No,No,No,7
+Gemini,How do I become an NBA fan?,https://bleacherreport.com/nba](https://bleacherreport.com/nba,bleacherreport.com,sports_media,Yes,No,No,No,8
+Gemini,How do I become an NBA fan?,https://www.reddit.com/r/nba/](https://www.reddit.com/r/nba/,reddit.com,social_platform,Yes,No,No,No,9
+ChatGPT,How to get into the NBA,https://www.nba.com/draft,nba.com,league_official,Yes,No,No,No,1
+ChatGPT,How to get into the NBA,https://www.ncaa.org/sports/2021/2/8/basketball-recruiting-rules.aspx,ncaa.org,other,Yes,No,No,No,2
+ChatGPT,How to get into the NBA,https://aausports.org,aausports.org,other,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,How to get into the NBA,https://gleague.nba.com,gleague.nba.com,league_official,Yes,No,No,No,4
+Perplexity,How to get into the NBA,https://refrsports.com/blog/nba-draft-2025-comprehensive-guide-to-picks-rules-and-process,refrsports.com,other,Yes,No,No,No,0
+Perplexity,How to get into the NBA,https://www.youtube.com/watch?v=EA_LSXzM3C8,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to get into the NBA,https://stanford_ftp.sidearmsports.com/Compliance/NBADraftTipSheet.pdf,stanford_ftp.sidearmsports.com,other,Yes,No,No,No,0
+Perplexity,How to get into the NBA,https://www.logodesignteam.com/blog/a-step-by-step-guide-to-becoming-a-professional-nba-player/,logodesignteam.com,other,Yes,No,No,No,0
+Perplexity,How to get into the NBA,https://en.wikipedia.org/wiki/Eligibility_for_the_NBA_draft,en.wikipedia.org,wiki_reference,Yes,No,No,No,0
+Perplexity,How to get into the NBA,https://careers.nba.com,careers.nba.com,league_official,Yes,No,No,No,0
+Perplexity,How to get into the NBA,https://www.espn.com/nba/story/_/id/40388476/how-do-nba-draft-free-agency-work,espn.com,sports_media,Yes,No,No,No,0
+Perplexity,How to get into the NBA,https://nbaacademy.nba.com,nbaacademy.nba.com,league_official,Yes,No,No,No,0
+Perplexity,How to get into the NBA,https://en.wikipedia.org/wiki/NBA_draft,en.wikipedia.org,wiki_reference,Yes,No,No,No,0
+Perplexity,How to get into the NBA,https://www.youtube.com/watch?v=2ZKNrmQMul4,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to get into the NBA,https://www.babcockhoops.com/post/2025nbadraft-insidethefirststepsofthepre-draftprocess,babcockhoops.com,other,Yes,No,No,No,0
+Perplexity,How to get into the NBA,https://www.youtube.com/watch?v=1kWJRBgehxY,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to get into the NBA,https://ncaaorg.s3.amazonaws.com/compliance/cbreform/2024CBR_NBAPre-DraftProcessKeyDates.pdf,ncaaorg.s3.amazonaws.com,other,Yes,No,No,No,0
+Gemini,How to get into the NBA,https://www.nba.com/](https://www.nba.com/,nba.com,league_official,Yes,No,No,No,1
+Gemini,How to get into the NBA,https://www.nba.com/draft](https://www.nba.com/draft,nba.com,league_official,Yes,No,No,No,2
+Gemini,How to get into the NBA,https://gleague.nba.com/](https://gleague.nba.com/,gleague.nba.com,league_official,Yes,No,No,No,3
+Gemini,How to get into the NBA,https://www.ncaa.com/sports/basketball-men](https://www.ncaa.com/sports/basketball-men,ncaa.com,other,Yes,No,No,No,4
+Gemini,How to get into the NBA,https://www.espn.com/nba/](https://www.espn.com/nba/,espn.com,sports_media,Yes,No,No,No,5
+Gemini,How to get into the NBA,https://bleacherreport.com/nba](https://bleacherreport.com/nba,bleacherreport.com,sports_media,Yes,No,No,No,6
+Gemini,How to get into the NBA,https://www.nbadraft.net/](https://www.nbadraft.net/,nbadraft.net,other,Yes,No,No,No,7
+ChatGPT,How to watch professional basketball games?,https://www.nba.com/leaguepass,nba.com,league_official,Yes,No,No,No,1
+ChatGPT,How to watch professional basketball games?,https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,How to watch professional basketball games?,https://tv.youtube.com/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,How to watch professional basketball games?,https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,4
+ChatGPT,How to watch professional basketball games?,https://www.fubo.tv/,fubo.tv,streaming_service,Unknown,Unknown,Unknown,Unknown,5
+ChatGPT,How to watch professional basketball games?,https://leaguepass.wnba.com/,leaguepass.wnba.com,league_official,Yes,No,No,No,6
+ChatGPT,How to watch professional basketball games?,https://www.euroleague.tv/,euroleague.tv,other,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,How to watch professional basketball games?,https://www.nba.com/leaguepass,nba.com,league_official,Yes,No,No,No,8
+ChatGPT,How to watch professional basketball games?,https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,9
+ChatGPT,How to watch professional basketball games?,https://tv.youtube.com/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,10
+ChatGPT,How to watch professional basketball games?,https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,11
+ChatGPT,How to watch professional basketball games?,https://www.fubo.tv/,fubo.tv,streaming_service,Unknown,Unknown,Unknown,Unknown,12
+ChatGPT,How to watch professional basketball games?,https://leaguepass.wnba.com/,leaguepass.wnba.com,league_official,Yes,No,No,No,13
+ChatGPT,How to watch professional basketball games?,https://www.euroleague.tv/,euroleague.tv,other,Unknown,Unknown,Unknown,Unknown,14
+Perplexity,How to watch professional basketball games?,https://www.hulu.com/guides/nba-basketball,hulu.com,streaming_service,Yes,No,No,No,0
+Perplexity,How to watch professional basketball games?,https://www.aboutamazon.com/news/entertainment/how-to-watch-nba-prime,aboutamazon.com,other,Yes,No,No,No,0
+Perplexity,How to watch professional basketball games?,https://www.espn.com/nba/story/_/id/46436502/nba-preseason-2025-how-watch-games-october,espn.com,sports_media,Yes,No,No,No,0
+Perplexity,How to watch professional basketball games?,https://www.espn.com/where-to-watch/leagues/nba,espn.com,sports_media,Yes,No,No,No,0
+Perplexity,How to watch professional basketball games?,https://www.espn.com/nba/schedule,espn.com,sports_media,Yes,No,No,No,0
+Perplexity,How to watch professional basketball games?,https://www.hulu.com/nba,hulu.com,streaming_service,Yes,No,No,No,0
+Perplexity,How to watch professional basketball games?,https://www.peacocktv.com/sports/nba,peacocktv.com,other,Yes,No,No,No,0
+Perplexity,How to watch professional basketball games?,https://www.youtube.com/user/NBA,youtube.com,streaming_service,Yes,No,No,No,0
+Gemini,How to watch professional basketball games?,https://tv.youtube.com/welcome/](https://tv.youtube.com/welcome/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,1
+Gemini,How to watch professional basketball games?,https://www.hulu.com/live-tv](https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,2
+Gemini,How to watch professional basketball games?,https://www.sling.com/](https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,3
+Gemini,How to watch professional basketball games?,https://www.fubo.tv/](https://www.fubo.tv/,fubo.tv,streaming_service,Unknown,Unknown,Unknown,Unknown,4
+Gemini,How to watch professional basketball games?,https://www.directv.com/stream/](https://www.directv.com/stream/,directv.com,other,Unknown,Unknown,Unknown,Unknown,5
+Gemini,How to watch professional basketball games?,https://www.nba.com/leaguepass](https://www.nba.com/leaguepass,nba.com,league_official,Yes,No,No,No,6
+Gemini,How to watch professional basketball games?,https://www.wnba.com/leaguepass/](https://www.wnba.com/leaguepass/,wnba.com,league_official,Yes,No,No,No,7
+Gemini,How to watch professional basketball games?,https://www.euroleague.tv/](https://www.euroleague.tv/,euroleague.tv,other,Unknown,Unknown,Unknown,Unknown,8
+Gemini,How to watch professional basketball games?,https://www.livebasketball.tv/home](https://www.livebasketball.tv/home,livebasketball.tv,other,Yes,No,No,No,9
+Gemini,How to watch professional basketball games?,https://www.nbl.com.au/news/watch-every-game-live-on-nbl-tv](https://www.nbl.com.au/news/watch-every-game-live-on-nbl-tv,nbl.com.au,other,Unknown,Unknown,Unknown,Unknown,10
+ChatGPT,Where to buy tickets to professional basketball games?,https://www.nba.com/tickets,nba.com,league_official,Yes,No,No,No,1
+ChatGPT,Where to buy tickets to professional basketball games?,https://www.nba.com/lakers/tickets,nba.com,league_official,Yes,No,No,No,2
+ChatGPT,Where to buy tickets to professional basketball games?,https://www.ticketmaster.com/nba,ticketmaster.com,ticketing_platform,Yes,No,No,No,3
+ChatGPT,Where to buy tickets to professional basketball games?,https://www.stubhub.com/nba-tickets/,stubhub.com,ticketing_platform,Yes,No,No,No,4
+ChatGPT,Where to buy tickets to professional basketball games?,https://seatgeek.com/nba-tickets,seatgeek.com,ticketing_platform,Yes,No,No,No,5
+ChatGPT,Where to buy tickets to professional basketball games?,https://www.vividseats.com/nba-basketball/,vividseats.com,ticketing_platform,Yes,No,No,No,6
+ChatGPT,Where to buy tickets to professional basketball games?,https://www.nba.com/tickets,nba.com,league_official,Yes,No,No,No,7
+ChatGPT,Where to buy tickets to professional basketball games?,https://www.nba.com/lakers/tickets,nba.com,league_official,Yes,No,No,No,8
+ChatGPT,Where to buy tickets to professional basketball games?,https://www.ticketmaster.com/nba,ticketmaster.com,ticketing_platform,Yes,No,No,No,9
+ChatGPT,Where to buy tickets to professional basketball games?,https://www.stubhub.com/nba-tickets/,stubhub.com,ticketing_platform,Yes,No,No,No,10
+ChatGPT,Where to buy tickets to professional basketball games?,https://seatgeek.com/nba-tickets,seatgeek.com,ticketing_platform,Yes,No,No,No,11
+ChatGPT,Where to buy tickets to professional basketball games?,https://www.vividseats.com/nba-basketball/,vividseats.com,ticketing_platform,Yes,No,No,No,12
+Perplexity,Where to buy tickets to professional basketball games?,https://www.stubhub.com/nba-tickets/grouping/115,stubhub.com,ticketing_platform,Yes,No,No,No,0
+Perplexity,Where to buy tickets to professional basketball games?,https://seatgeek.com/nba-tickets,seatgeek.com,ticketing_platform,Yes,No,No,No,0
+Perplexity,Where to buy tickets to professional basketball games?,https://nbatickets.nba.com,nbatickets.nba.com,league_official,Yes,No,No,No,0
+Perplexity,Where to buy tickets to professional basketball games?,https://www.vividseats.com/nba-basketball,vividseats.com,ticketing_platform,Yes,No,No,No,0
+Perplexity,Where to buy tickets to professional basketball games?,https://nbaexperiences.com/calendar-of-events,nbaexperiences.com,other,Yes,No,No,No,0
+Perplexity,Where to buy tickets to professional basketball games?,https://gametime.co/c/nba-basketball,gametime.co,other,Yes,No,No,No,0
+Perplexity,Where to buy tickets to professional basketball games?,https://nbaexperiences.com,nbaexperiences.com,other,Yes,No,No,No,0
+Perplexity,Where to buy tickets to professional basketball games?,https://www.tickpick.com/nba-tickets/,tickpick.com,other,Yes,No,No,No,0
+Gemini,Where to buy tickets to professional basketball games?,https://www.nba.com/](https://www.nba.com/,nba.com,league_official,Yes,No,No,No,1
+Gemini,Where to buy tickets to professional basketball games?,https://www.nba.com/lakers/tickets](https://www.nba.com/lakers/tickets,nba.com,league_official,Yes,No,No,No,2
+Gemini,Where to buy tickets to professional basketball games?,https://www.nba.com/celtics/tickets](https://www.nba.com/celtics/tickets,nba.com,league_official,Yes,No,No,No,3
+Gemini,Where to buy tickets to professional basketball games?,https://www.nba.com/warriors/tickets](https://www.nba.com/warriors/tickets,nba.com,league_official,Yes,No,No,No,4
+Gemini,Where to buy tickets to professional basketball games?,https://www.ticketmaster.com/](https://www.ticketmaster.com/,ticketmaster.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,5
+Gemini,Where to buy tickets to professional basketball games?,https://www.stubhub.com/](https://www.stubhub.com/,stubhub.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,6
+Gemini,Where to buy tickets to professional basketball games?,https://seatgeek.com/](https://seatgeek.com/,seatgeek.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,7
+Gemini,Where to buy tickets to professional basketball games?,https://www.vividseats.com/](https://www.vividseats.com/,vividseats.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,8
+ChatGPT,Best professional basketball games this year,https://www.nba.com,nba.com,league_official,Yes,No,No,No,1
+ChatGPT,Best professional basketball games this year,https://www.espn.com,espn.com,sports_media,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,Best professional basketball games this year,https://www.wnba.com,wnba.com,league_official,Yes,No,No,No,3
+ChatGPT,Best professional basketball games this year,https://theathletic.com,theathletic.com,sports_media,Unknown,Unknown,Unknown,Unknown,4
+ChatGPT,Best professional basketball games this year,https://www.fiba.basketball,fiba.basketball,other,Yes,No,No,No,5
+ChatGPT,Best professional basketball games this year,https://www.nba.com,nba.com,league_official,Yes,No,No,No,6
+ChatGPT,Best professional basketball games this year,https://www.espn.com,espn.com,sports_media,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,Best professional basketball games this year,https://www.wnba.com,wnba.com,league_official,Yes,No,No,No,8
+ChatGPT,Best professional basketball games this year,https://theathletic.com,theathletic.com,sports_media,Unknown,Unknown,Unknown,Unknown,9
+ChatGPT,Best professional basketball games this year,https://www.fiba.basketball,fiba.basketball,other,Yes,No,No,No,10
+Perplexity,Best professional basketball games this year,https://www.cbssports.com/nba/news/2025-26-nba-schedule-release-top-10-must-see-games-from-season-opener-to-lakers-vs-mavericks-and-more/,cbssports.com,sports_media,Yes,No,No,No,0
+Perplexity,Best professional basketball games this year,https://www.youtube.com/watch?v=CfzIAiZbbM0,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best professional basketball games this year,https://www.nbcsports.com/nba/news/nba-2025-26-schedule-is-released-20-must-watch-games-this-season,nbcsports.com,sports_media,Yes,No,No,No,0
+Perplexity,Best professional basketball games this year,https://wikihoops.com/top-games/2025-26/,wikihoops.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best professional basketball games this year,https://www.si.com/nba/seven-best-nba-games-to-circle-for-the-2025-26-season,si.com,sports_media,Yes,No,No,No,0
+Perplexity,Best professional basketball games this year,https://hashtagbasketball.com/advanced-nba-schedule-grid,hashtagbasketball.com,other,Yes,No,No,No,0
+Perplexity,Best professional basketball games this year,https://wikihoops.com/top-games/2024-25/,wikihoops.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best professional basketball games this year,https://www.youtube.com/watch?v=2271-bZFVss,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best professional basketball games this year,http://www.espn.com/nba/gameleaders,espn.com,sports_media,Yes,No,No,No,0
+Perplexity,Best professional basketball games this year,https://www.espn.com/nba/scoreboard,espn.com,sports_media,Yes,No,No,No,0
+Perplexity,Best professional basketball games this year,https://www.youtube.com/watch?v=aA3omqeKy4c,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best professional basketball games this year,https://www.cbssports.com/nba/schedule/,cbssports.com,sports_media,Yes,No,No,No,0
+Gemini,Best professional basketball games this year,https://www.nba.com/](https://www.nba.com/,nba.com,league_official,Yes,No,No,No,1
+Gemini,Best professional basketball games this year,https://www.espn.com/nba/](https://www.espn.com/nba/,espn.com,sports_media,Yes,No,No,No,2
+ChatGPT,How to become a professional basketball fan?,https://www.nba.com,nba.com,league_official,Yes,No,No,No,1
+ChatGPT,How to become a professional basketball fan?,https://www.wnba.com,wnba.com,league_official,Yes,No,No,No,2
+ChatGPT,How to become a professional basketball fan?,https://www.euroleague.net,euroleague.net,other,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,How to become a professional basketball fan?,https://www.ncaa.com/sports/basketball-men,ncaa.com,other,Yes,No,No,No,4
+ChatGPT,How to become a professional basketball fan?,https://www.espn.com/nba,espn.com,sports_media,Yes,No,No,No,5
+Perplexity,How to become a professional basketball fan?,https://thenbaunderground.com/be-a-better-fan,thenbaunderground.com,other,Yes,No,No,No,0
+Perplexity,How to become a professional basketball fan?,https://www.thelexingtonline.com/blog/2023/11/10/ir3nwz4lalx1fyryxtdqlyrvneugfr,thelexingtonline.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to become a professional basketball fan?,https://nbatrips.com/en/the-ultimate-guide-to-attending-nba-star-games/,nbatrips.com,other,Yes,No,No,No,0
+Perplexity,How to become a professional basketball fan?,https://nbahoopsonline.com/Articles/2021-22/Becomeafan.html,nbahoopsonline.com,other,Yes,No,No,No,0
+Perplexity,How to become a professional basketball fan?,https://celadonbooks.com/booklists/basketball-books/,celadonbooks.com,other,Yes,No,No,No,0
+Perplexity,How to become a professional basketball fan?,https://www.youtube.com/shorts/GzYjQySFiwE,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to become a professional basketball fan?,https://www.etsy.com/listing/1519319277/courtside-the-fans-guide-to-pro,etsy.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to become a professional basketball fan?,https://nbaexperiences.com/about-us,nbaexperiences.com,other,Yes,No,No,No,0
+Perplexity,How to become a professional basketball fan?,https://www.monster.com/career-advice/article/jobs-for-basketball-fans-0317,monster.com,other,Yes,No,No,No,0
+Perplexity,How to become a professional basketball fan?,https://careers.nba.com,careers.nba.com,league_official,Yes,No,No,No,0
+Gemini,How to become a professional basketball fan?,https://official.nba.com/rule-book/](https://official.nba.com/rule-book/,official.nba.com,league_official,Yes,No,No,No,1
+Gemini,How to become a professional basketball fan?,https://www.fiba.basketball/basketballrules](https://www.fiba.basketball/basketballrules,fiba.basketball,other,Yes,No,No,No,2
+Gemini,How to become a professional basketball fan?,https://www.nba.com/history](https://www.nba.com/history,nba.com,league_official,Yes,No,No,No,3
+Gemini,How to become a professional basketball fan?,https://www.nba.com/leaguepass](https://www.nba.com/leaguepass,nba.com,league_official,Yes,No,No,No,4
+Gemini,How to become a professional basketball fan?,https://www.espn.com/nba/](https://www.espn.com/nba/,espn.com,sports_media,Yes,No,No,No,5
+Gemini,How to become a professional basketball fan?,https://theathletic.com/nba/](https://theathletic.com/nba/,theathletic.com,sports_media,Yes,No,No,No,6
+Gemini,How to become a professional basketball fan?,https://bleacherreport.com/nba](https://bleacherreport.com/nba,bleacherreport.com,sports_media,Yes,No,No,No,7
+Gemini,How to become a professional basketball fan?,https://www.nba.com/news](https://www.nba.com/news,nba.com,league_official,Yes,No,No,No,8
+Gemini,How to become a professional basketball fan?,https://www.basketball-reference.com/](https://www.basketball-reference.com/,basketball-reference.com,stats_reference,Yes,No,No,No,9
+Gemini,How to become a professional basketball fan?,https://www.nba.com/stats](https://www.nba.com/stats,nba.com,league_official,Yes,No,No,No,10
+Gemini,How to become a professional basketball fan?,https://cleaningtheglass.com/](https://cleaningtheglass.com/,cleaningtheglass.com,other,Unknown,Unknown,Unknown,Unknown,11
+ChatGPT,How to watch sports games online?,https://www.espn.com/espnplus/,espn.com,sports_media,Unknown,Unknown,Unknown,Unknown,1
+ChatGPT,How to watch sports games online?,https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,How to watch sports games online?,https://tv.youtube.com/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,How to watch sports games online?,https://www.fubo.tv/,fubo.tv,streaming_service,Unknown,Unknown,Unknown,Unknown,4
+ChatGPT,How to watch sports games online?,https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,5
+ChatGPT,How to watch sports games online?,https://www.dazn.com/,dazn.com,other,Unknown,Unknown,Unknown,Unknown,6
+ChatGPT,How to watch sports games online?,https://www.nbcsports.com/live,nbcsports.com,sports_media,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,How to watch sports games online?,https://www.cbssports.com/live/,cbssports.com,sports_media,Unknown,Unknown,Unknown,Unknown,8
+ChatGPT,How to watch sports games online?,https://www.amazon.com/primevideo,amazon.com,other,Unknown,Unknown,Unknown,Unknown,9
+ChatGPT,How to watch sports games online?,https://www.nfl.com/gamepass/,nfl.com,league_official,No,Yes,No,No,10
+ChatGPT,How to watch sports games online?,https://www.nba.com/leaguepass,nba.com,league_official,Yes,No,No,No,11
+ChatGPT,How to watch sports games online?,https://www.mlb.com/live-stream-games,mlb.com,league_official,No,No,Yes,No,12
+ChatGPT,How to watch sports games online?,https://www.nhl.com/tv,nhl.com,league_official,No,No,No,Yes,13
+Gemini,How to watch sports games online?,https://plus.espn.com/](https://plus.espn.com/,plus.espn.com,sports_media,Unknown,Unknown,Unknown,Unknown,1
+Gemini,How to watch sports games online?,https://www.peacocktv.com/](https://www.peacocktv.com/,peacocktv.com,other,Unknown,Unknown,Unknown,Unknown,2
+Gemini,How to watch sports games online?,https://www.paramountplus.com/](https://www.paramountplus.com/,paramountplus.com,other,Unknown,Unknown,Unknown,Unknown,3
+Gemini,How to watch sports games online?,https://www.nba.com/watch/league-pass-stream](https://www.nba.com/watch/league-pass-stream,nba.com,league_official,Yes,No,No,No,4
+Gemini,How to watch sports games online?,https://www.mlb.com/live-stream-games](https://www.mlb.com/live-stream-games,mlb.com,league_official,No,No,Yes,No,5
+Gemini,How to watch sports games online?,https://www.nfl.com/plus/](https://www.nfl.com/plus/,nfl.com,league_official,No,Yes,No,No,6
+Gemini,How to watch sports games online?,https://tv.youtube.com/](https://tv.youtube.com/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,7
+Gemini,How to watch sports games online?,https://www.hulu.com/live-tv](https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,8
+Gemini,How to watch sports games online?,https://www.sling.com/](https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,9
+Gemini,How to watch sports games online?,https://www.fubo.tv/](https://www.fubo.tv/,fubo.tv,streaming_service,Unknown,Unknown,Unknown,Unknown,10
+ChatGPT,Where to buy sports tickets?,https://www.ticketmaster.com,ticketmaster.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,1
+ChatGPT,Where to buy sports tickets?,https://www.stubhub.com,stubhub.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,Where to buy sports tickets?,https://www.seatgeek.com,seatgeek.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,Where to buy sports tickets?,https://www.vividseats.com,vividseats.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,4
+ChatGPT,Where to buy sports tickets?,https://www.tickpick.com,tickpick.com,other,Unknown,Unknown,Unknown,Unknown,5
+ChatGPT,Where to buy sports tickets?,https://www.ticketmaster.com,ticketmaster.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,6
+ChatGPT,Where to buy sports tickets?,https://www.stubhub.com,stubhub.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,Where to buy sports tickets?,https://www.seatgeek.com,seatgeek.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,8
+ChatGPT,Where to buy sports tickets?,https://www.vividseats.com,vividseats.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,9
+ChatGPT,Where to buy sports tickets?,https://www.tickpick.com,tickpick.com,other,Unknown,Unknown,Unknown,Unknown,10
+Perplexity,Where to buy sports tickets?,https://www.stubhub.com/sports-tickets/category/28,stubhub.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Where to buy sports tickets?,https://www.vividseats.com/sports,vividseats.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Where to buy sports tickets?,https://gametime.co,gametime.co,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Where to buy sports tickets?,https://www.viagogo.com/Sports-Tickets,viagogo.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Where to buy sports tickets?,https://www.sitickets.com,sitickets.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Where to buy sports tickets?,https://www.stubhub.com,stubhub.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Where to buy sports tickets?,https://www.tickpick.com,tickpick.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Where to buy sports tickets?,https://seatgeek.com,seatgeek.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Where to buy sports tickets?,https://www.nfl.com/partners/ticket-network/,nfl.com,league_official,No,Yes,No,No,0
+Perplexity,Where to buy sports tickets?,https://www.vividseats.com,vividseats.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,0
+Gemini,Where to buy sports tickets?,https://www.nfl.com/teams](https://www.nfl.com/teams,nfl.com,league_official,No,Yes,No,No,1
+Gemini,Where to buy sports tickets?,https://www.mlb.com/teams](https://www.mlb.com/teams,mlb.com,league_official,No,No,Yes,No,2
+Gemini,Where to buy sports tickets?,https://www.nba.com/teams](https://www.nba.com/teams,nba.com,league_official,Yes,No,No,No,3
+Gemini,Where to buy sports tickets?,https://www.nhl.com/](https://www.nhl.com/,nhl.com,league_official,No,No,No,Yes,4
+Gemini,Where to buy sports tickets?,https://www.mlssoccer.com/clubs/](https://www.mlssoccer.com/clubs/,mlssoccer.com,other,Unknown,Unknown,Unknown,Unknown,5
+Gemini,Where to buy sports tickets?,https://texassports.com/](https://texassports.com/,texassports.com,other,Unknown,Unknown,Unknown,Unknown,6
+Gemini,Where to buy sports tickets?,https://www.pgatour.com/](https://www.pgatour.com/,pgatour.com,other,Unknown,Unknown,Unknown,Unknown,7
+Gemini,Where to buy sports tickets?,https://www.ticketmaster.com/](https://www.ticketmaster.com/,ticketmaster.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,8
+Gemini,Where to buy sports tickets?,https://seatgeek.com/](https://seatgeek.com/,seatgeek.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,9
+Gemini,Where to buy sports tickets?,https://www.axs.com/](https://www.axs.com/,axs.com,other,Unknown,Unknown,Unknown,Unknown,10
+Gemini,Where to buy sports tickets?,https://www.stubhub.com/](https://www.stubhub.com/,stubhub.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,11
+Gemini,Where to buy sports tickets?,https://www.vividseats.com/](https://www.vividseats.com/,vividseats.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,12
+Gemini,Where to buy sports tickets?,https://gametime.co/](https://gametime.co/,gametime.co,other,Unknown,Unknown,Unknown,Unknown,13
+ChatGPT,Best sports games to attend,https://www.nfl.com/super-bowl/,nfl.com,league_official,No,Yes,No,No,1
+ChatGPT,Best sports games to attend,https://www.fifa.com/worldcup/,fifa.com,other,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,Best sports games to attend,https://olympics.com/,olympics.com,other,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,Best sports games to attend,https://www.uefa.com/uefachampionsleague/,uefa.com,other,Unknown,Unknown,Unknown,Unknown,4
+ChatGPT,Best sports games to attend,https://www.kentuckyderby.com/,kentuckyderby.com,other,Unknown,Unknown,Unknown,Unknown,5
+ChatGPT,Best sports games to attend,https://www.wimbledon.com/,wimbledon.com,other,Unknown,Unknown,Unknown,Unknown,6
+ChatGPT,Best sports games to attend,https://www.masters.com/,masters.com,other,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,Best sports games to attend,https://www.nba.com/,nba.com,league_official,Yes,No,No,No,8
+ChatGPT,Best sports games to attend,https://www.mlb.com/world-series,mlb.com,league_official,No,No,Yes,No,9
+ChatGPT,Best sports games to attend,https://www.letour.fr/en/,letour.fr,other,Unknown,Unknown,Unknown,Unknown,10
+Perplexity,Best sports games to attend,https://www.topendsports.com/events/calendar-2025.htm,topendsports.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports games to attend,https://medliant.com/blog/20-popular-sporting-events-to-enjoy-in-the-usa,medliant.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports games to attend,https://aboveandbeyond.group/most-watched-sports-events/,aboveandbeyond.group,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports games to attend,https://bleacherreport.com/articles/1247928-ranking-the-biggest-events-in-sports,bleacherreport.com,sports_media,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports games to attend,https://boomset.com/most-viewed-sporting-events-worldwide/,boomset.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports games to attend,https://www.justshortofcrazy.com/best-sporting-events-to-attend-in-the-u-s-with-kids/,justshortofcrazy.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports games to attend,https://www.roadtrips.com/calendar-of-events/,roadtrips.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports games to attend,https://www.ace.aaa.com/travel/advocacy/best-sports-events-around-the-world.html,ace.aaa.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports games to attend,https://en.wikipedia.org/wiki/2025_in_sports,en.wikipedia.org,wiki_reference,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports games to attend,https://dayzeroproject.com/feature/16/50-sporting-events-you-must-see-live,dayzeroproject.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports games to attend,https://www.spglobal.com/market-intelligence/en/news-insights/research/state-of-us-sports-viewing-2025,spglobal.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports games to attend,https://www.foxsports.com/scores,foxsports.com,sports_media,Unknown,Unknown,Unknown,Unknown,0
+Gemini,Best sports games to attend,https://www.nfl.com/super-bowl/,nfl.com,league_official,No,Yes,No,No,1
+Gemini,Best sports games to attend,https://www.ticketmaster.com/nfl-super-bowl-tickets/artist/805991,ticketmaster.com,ticketing_platform,No,Yes,No,No,2
+Gemini,Best sports games to attend,https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022,fifa.com,other,Unknown,Unknown,Unknown,Unknown,3
+Gemini,Best sports games to attend,https://www.masters.com/,masters.com,other,Unknown,Unknown,Unknown,Unknown,4
+Gemini,Best sports games to attend,https://www.masters.com/en_US/tickets/index.html,masters.com,other,Unknown,Unknown,Unknown,Unknown,5
+Gemini,Best sports games to attend,https://www.kentuckyderby.com/,kentuckyderby.com,other,Unknown,Unknown,Unknown,Unknown,6
+Gemini,Best sports games to attend,https://www.kentuckyderby.com/tickets,kentuckyderby.com,other,Unknown,Unknown,Unknown,Unknown,7
+Gemini,Best sports games to attend,https://olympics.com/en/,olympics.com,other,Unknown,Unknown,Unknown,Unknown,8
+Gemini,Best sports games to attend,https://www.thefa.com/,thefa.com,other,Unknown,Unknown,Unknown,Unknown,9
+Gemini,Best sports games to attend,https://ohiostatebuckeyes.com/sports/football/,ohiostatebuckeyes.com,other,No,Yes,No,No,10
+Gemini,Best sports games to attend,https://www.nba.com/,nba.com,league_official,Yes,No,No,No,11
+Gemini,Best sports games to attend,https://www.ticketmaster.com/nba-finals-tickets/artist/805985,ticketmaster.com,ticketing_platform,Yes,No,No,No,12
+Gemini,Best sports games to attend,https://www.nhl.com/,nhl.com,league_official,No,No,No,Yes,13
+Gemini,Best sports games to attend,https://www.ticketmaster.com/nhl-stanley-cup-playoffs-tickets/artist/805988,ticketmaster.com,ticketing_platform,No,No,No,Yes,14
+Gemini,Best sports games to attend,https://www.wimbledon.com/,wimbledon.com,other,Unknown,Unknown,Unknown,Unknown,15
+Gemini,Best sports games to attend,https://www.wimbledon.com/en_GB/tickets/index.html,wimbledon.com,other,Unknown,Unknown,Unknown,Unknown,16
+ChatGPT,How to become a sports fan?,https://www.wikihow.com/Become-a-Sports-Fan,wikihow.com,wiki_reference,Unknown,Unknown,Unknown,Unknown,1
+ChatGPT,How to become a sports fan?,https://www.sportsfeelgoodstories.com/how-to-become-a-sports-fan/,sportsfeelgoodstories.com,other,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,How to become a sports fan?,https://www.theodysseyonline.com/beginners-guide-becoming-sports-fan,theodysseyonline.com,other,Unknown,Unknown,Unknown,Unknown,3
+Perplexity,How to become a sports fan?,https://www.thesportdisplays.com/blogs/news/how-to-become-a-sports-fan,thesportdisplays.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to become a sports fan?,https://www.psychologytoday.com/us/blog/alpha-blog-charlie/202306/the-bright-side-of-being-a-sports-fan,psychologytoday.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to become a sports fan?,https://thetamnews.org/13585/opinion/beginners-guide-to-being-a-sports-fan/,thetamnews.org,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to become a sports fan?,https://www.thelexingtonline.com/blog/2023/11/10/ir3nwz4lalx1fyryxtdqlyrvneugfr,thelexingtonline.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to become a sports fan?,https://whysportmatters.theeyeopener.com/become-a-sport-fan,whysportmatters.theeyeopener.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to become a sports fan?,https://www.apa.org/news/podcasts/speaking-of-psychology/sports-fans,apa.org,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to become a sports fan?,https://thenbaunderground.com/be-a-better-fan,thenbaunderground.com,other,Yes,No,No,No,0
+Perplexity,How to become a sports fan?,https://www.thelexingtonline.com/blog/2023/10/18/q0qnuy00bs0eg5y9m50jg1bdt70uvh,thelexingtonline.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to become a sports fan?,https://sportsepreneur.com/beginners-guide-for-new-mlb-fans/,sportsepreneur.com,other,No,No,Yes,No,0
+Perplexity,How to become a sports fan?,https://www.montclair.edu/newscenter/2025/02/03/what-does-it-mean-to-be-a-loyal-sports-fan-sports-communication-expert-weighs-in/,montclair.edu,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to become a sports fan?,https://onmilwaukee.com/articles/begel060308,onmilwaukee.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to become a sports fan?,https://livelike.com/the-psychology-of-sports-fan-engagement/,livelike.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to become a sports fan?,http://www.espn.com/espn/page2/story?page=simmons%2F020227,espn.com,sports_media,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How to become a sports fan?,https://bleacherreport.com/articles/386593-the-ten-rules-of-being-a-true-sports-fan,bleacherreport.com,sports_media,Unknown,Unknown,Unknown,Unknown,0
+ChatGPT,Most popular sports leagues,https://www.nfl.com,nfl.com,league_official,No,Yes,No,No,1
+ChatGPT,Most popular sports leagues,https://www.premierleague.com,premierleague.com,other,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,Most popular sports leagues,https://www.nba.com,nba.com,league_official,Yes,No,No,No,3
+ChatGPT,Most popular sports leagues,https://www.mlb.com,mlb.com,league_official,No,No,Yes,No,4
+ChatGPT,Most popular sports leagues,https://www.laliga.com,laliga.com,other,Unknown,Unknown,Unknown,Unknown,5
+ChatGPT,Most popular sports leagues,https://www.bundesliga.com,bundesliga.com,other,Unknown,Unknown,Unknown,Unknown,6
+ChatGPT,Most popular sports leagues,https://www.legaseriea.it/en,legaseriea.it,other,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,Most popular sports leagues,https://www.iplt20.com,iplt20.com,other,Unknown,Unknown,Unknown,Unknown,8
+ChatGPT,Most popular sports leagues,https://www.uefa.com/uefachampionsleague,uefa.com,other,Unknown,Unknown,Unknown,Unknown,9
+ChatGPT,Most popular sports leagues,https://www.nhl.com,nhl.com,league_official,No,No,No,Yes,10
+Perplexity,Most popular sports leagues,https://instasport.club/blogs/insta360/the-10-most-popular-sports-in-the-world-2025-edition,instasport.club,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most popular sports leagues,https://en.wikipedia.org/wiki/Sports_in_the_United_States,en.wikipedia.org,wiki_reference,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most popular sports leagues,https://www.topendsports.com/world/lists/popular-sport/fans.htm,topendsports.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most popular sports leagues,https://www.sportsvalue.com.br/en/the-sports-competitions-with-the-highest-revenues-in-the-world/,sportsvalue.com.br,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most popular sports leagues,https://apsportseditors.org/top-sports-leagues/,apsportseditors.org,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most popular sports leagues,https://en.wikipedia.org/wiki/List_of_professional_sports_leagues_by_revenue,en.wikipedia.org,wiki_reference,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most popular sports leagues,https://www.iworkinsport.com/news/top-20-sports-leagues-the-most-attractive-employers-in-sport-2025,iworkinsport.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most popular sports leagues,https://www.youtube.com/watch?v=PWOrri8cT04,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most popular sports leagues,https://www.spglobal.com/market-intelligence/en/news-insights/research/state-of-us-sports-viewing-2025,spglobal.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most popular sports leagues,https://sportsepreneur.com/top-5-soccer-leagues-2025-rankings/,sportsepreneur.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most popular sports leagues,https://www.youtube.com/watch?v=R76JkdvEZcA,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Gemini,Most popular sports leagues,https://www.statista.com/statistics/272184/revenue-of-the-national-football-league-nfl-since-2005/](https://www.statista.com/statistics/272184/revenue-of-the-national-football-league-nfl-since-2005/,statista.com,other,No,Yes,No,No,1
+Gemini,Most popular sports leagues,https://www.statista.com/statistics/324022/revenue-of-major-league-baseball-mlb/](https://www.statista.com/statistics/324022/revenue-of-major-league-baseball-mlb/,statista.com,other,No,No,Yes,No,2
+Gemini,Most popular sports leagues,https://www.statista.com/statistics/274360/revenue-of-the-national-basketball-association-nba-since-2005/](https://www.statista.com/statistics/274360/revenue-of-the-national-basketball-association-nba-since-2005/,statista.com,other,Yes,No,No,No,3
+Gemini,Most popular sports leagues,https://www.statista.com/statistics/267190/revenue-of-the-english-premier-league-since-2003/](https://www.statista.com/statistics/267190/revenue-of-the-english-premier-league-since-2003/,statista.com,other,Unknown,Unknown,Unknown,Unknown,4
+Gemini,Most popular sports leagues,https://www.statista.com/statistics/1040127/la-liga-revenue/](https://www.statista.com/statistics/1040127/la-liga-revenue/,statista.com,other,Unknown,Unknown,Unknown,Unknown,5
+Gemini,Most popular sports leagues,https://www.statista.com/statistics/447958/bundesliga-total-revenue/](https://www.statista.com/statistics/447958/bundesliga-total-revenue/,statista.com,other,Unknown,Unknown,Unknown,Unknown,6
+ChatGPT,Highest paying sports leagues,https://www.forbes.com/sportsmoney/,forbes.com,business_media,Unknown,Unknown,Unknown,Unknown,1
+ChatGPT,Highest paying sports leagues,https://www.statista.com/markets/413/topic/657/sports-fitness/,statista.com,other,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,Highest paying sports leagues,https://www.espn.com/sportsbusiness/,espn.com,sports_media,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,Highest paying sports leagues,https://www2.deloitte.com/uk/en/pages/sports-business-group/articles/deloitte-football-money-league.html,www2.deloitte.com,other,No,Yes,No,No,4
+Perplexity,Highest paying sports leagues,https://www.topendsports.com/world/lists/earnings/athletes-paid-sports.htm,topendsports.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Highest paying sports leagues,https://www.wsn.com/blog/highest-paid-sport/,wsn.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Highest paying sports leagues,https://blog.fantasyappsolutions.com/top-richest-sports-leagues-in-the-world/,blog.fantasyappsolutions.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Highest paying sports leagues,https://www.statista.com/statistics/675120/average-sports-salaries-by-league/,statista.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Highest paying sports leagues,https://en.wikipedia.org/wiki/List_of_professional_sports_leagues_by_revenue,en.wikipedia.org,wiki_reference,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Highest paying sports leagues,https://blog.jobsinsports.com/2023/07/03/what-sport-makes-the-most-money/,blog.jobsinsports.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Highest paying sports leagues,https://apsportseditors.org/top-sports-leagues/,apsportseditors.org,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Highest paying sports leagues,https://work.chron.com/sport-highest-average-salary-10203.html,work.chron.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Highest paying sports leagues,https://www.ceotodaymagazine.com/2024/12/the-worlds-highest-paying-sports-leagues-teams-and-salaries/,ceotodaymagazine.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Highest paying sports leagues,https://www.danlalondefilms.com/post/the-max-earnings-of-pro-athletes-vs-team-profits-in-the-big-four-sports-leagues,danlalondefilms.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Highest paying sports leagues,https://timesofindia.indiatimes.com/sports/international-sports/sports-billion-dollar-club-top-10-richest-leagues-that-are-changing-the-game/articleshow/123659092.cms,timesofindia.indiatimes.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Highest paying sports leagues,https://www.spglobal.com/market-intelligence/en/news-insights/research/state-of-us-sports-viewing-2025,spglobal.com,other,Unknown,Unknown,Unknown,Unknown,0
+Gemini,Highest paying sports leagues,https://www.espn.com/nba/story/_/id/39163132/nba-average-salary-2023-24-season-highest-ever](https://www.espn.com/nba/story/_/id/39163132/nba-average-salary-2023-24-season-highest-ever,espn.com,sports_media,Yes,No,No,No,1
+Gemini,Highest paying sports leagues,https://hoopshype.com/salaries/](https://hoopshype.com/salaries/,hoopshype.com,other,Unknown,Unknown,Unknown,Unknown,2
+Gemini,Highest paying sports leagues,https://www.statista.com/statistics/971310/average-player-salary-nfl/](https://www.statista.com/statistics/971310/average-player-salary-nfl/,statista.com,other,No,Yes,No,No,3
+Gemini,Highest paying sports leagues,https://overthecap.com/](https://overthecap.com/,overthecap.com,other,Unknown,Unknown,Unknown,Unknown,4
+Gemini,Highest paying sports leagues,https://www.statista.com/statistics/193554/average-player-salary-in-the-mlb/](https://www.statista.com/statistics/193554/average-player-salary-in-the-mlb/,statista.com,other,No,No,Yes,No,5
+Gemini,Highest paying sports leagues,https://www.statista.com/statistics/193575/average-player-salary-in-the-nhl-since-1990/](https://www.statista.com/statistics/193575/average-player-salary-in-the-nhl-since-1990/,statista.com,other,No,No,No,Yes,6
+Gemini,Highest paying sports leagues,https://www.capfriendly.com/](https://www.capfriendly.com/,capfriendly.com,other,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,Most watched sports leagues globally,https://nflcommunications.com/,nflcommunications.com,other,No,Yes,No,No,1
+ChatGPT,Most watched sports leagues globally,https://www.premierleague.com/,premierleague.com,other,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,Most watched sports leagues globally,https://economictimes.indiatimes.com/,economictimes.indiatimes.com,other,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,Most watched sports leagues globally,https://www.nba.com/,nba.com,league_official,Yes,No,No,No,4
+ChatGPT,Most watched sports leagues globally,https://www.uefa.com/,uefa.com,other,Unknown,Unknown,Unknown,Unknown,5
+ChatGPT,Most watched sports leagues globally,https://www.laliga.com/,laliga.com,other,Unknown,Unknown,Unknown,Unknown,6
+ChatGPT,Most watched sports leagues globally,https://www.mlb.com/,mlb.com,league_official,No,No,Yes,No,7
+ChatGPT,Most watched sports leagues globally,https://www.bundesliga.com/,bundesliga.com,other,Unknown,Unknown,Unknown,Unknown,8
+ChatGPT,Most watched sports leagues globally,https://www.legaseriea.it/,legaseriea.it,other,Unknown,Unknown,Unknown,Unknown,9
+ChatGPT,Most watched sports leagues globally,https://www.formula1.com/,formula1.com,other,Unknown,Unknown,Unknown,Unknown,10
+Perplexity,Most watched sports leagues globally,https://instasport.club/blogs/insta360/the-10-most-popular-sports-in-the-world-2025-edition,instasport.club,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most watched sports leagues globally,https://www.sportingpedia.com/2025/03/12/the-most-popular-sports-leagues-and-organizations-on-social-media/,sportingpedia.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most watched sports leagues globally,https://www.topendsports.com/world/lists/popular-sport/fans.htm,topendsports.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most watched sports leagues globally,https://sportforbusiness.com/the-worlds-most-watched-sports/,sportforbusiness.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most watched sports leagues globally,https://blog.fantasyappsolutions.com/top-richest-sports-leagues-in-the-world/,blog.fantasyappsolutions.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most watched sports leagues globally,https://www.statista.com/statistics/1336094/most-popular-sports-leagues-events/,statista.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most watched sports leagues globally,https://apsportseditors.org/top-sports-leagues/,apsportseditors.org,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most watched sports leagues globally,https://www.planetsport.com/news/the-most-watched-sports-worldwide,planetsport.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most watched sports leagues globally,https://www.spglobal.com/market-intelligence/en/news-insights/research/state-of-us-sports-viewing-2025,spglobal.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most watched sports leagues globally,https://www.sportsvalue.com.br/en/the-sports-competitions-with-the-highest-revenues-in-the-world/,sportsvalue.com.br,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most watched sports leagues globally,https://en.wikipedia.org/wiki/List_of_professional_sports_leagues_by_revenue,en.wikipedia.org,wiki_reference,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most watched sports leagues globally,https://www.youtube.com/watch?v=PWOrri8cT04,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most watched sports leagues globally,https://www.givemesport.com/best-leagues-in-world-football-soccer-ranked/,givemesport.com,other,No,Yes,No,No,0
+Gemini,Most watched sports leagues globally,https://www.premierleague.com/](https://www.premierleague.com/,premierleague.com,other,Unknown,Unknown,Unknown,Unknown,1
+Gemini,Most watched sports leagues globally,https://www.statista.com/statistics/266766/number-of-english-premier-league-fans-worldwide/](https://www.statista.com/statistics/266766/number-of-english-premier-league-fans-worldwide/,statista.com,other,Unknown,Unknown,Unknown,Unknown,2
+Gemini,Most watched sports leagues globally,https://www.nfl.com/](https://www.nfl.com/,nfl.com,league_official,No,Yes,No,No,3
+Gemini,Most watched sports leagues globally,https://www.sportsmediawatch.com/](https://www.sportsmediawatch.com/,sportsmediawatch.com,other,Unknown,Unknown,Unknown,Unknown,4
+Gemini,Most watched sports leagues globally,https://www.statista.com/statistics/216588/regular-season-tv-viewership-of-nfl-games-since-1995/](https://www.statista.com/statistics/216588/regular-season-tv-viewership-of-nfl-games-since-1995/,statista.com,other,No,Yes,No,No,5
+Gemini,Most watched sports leagues globally,https://www.laliga.com/en-GB](https://www.laliga.com/en-GB,laliga.com,other,Unknown,Unknown,Unknown,Unknown,6
+Gemini,Most watched sports leagues globally,https://www.iplt20.com/](https://www.iplt20.com/,iplt20.com,other,Unknown,Unknown,Unknown,Unknown,7
+Gemini,Most watched sports leagues globally,https://www.espncricinfo.com/](https://www.espncricinfo.com/,espncricinfo.com,sports_media,Unknown,Unknown,Unknown,Unknown,8
+Gemini,Most watched sports leagues globally,https://www.mlb.com/](https://www.mlb.com/,mlb.com,league_official,No,No,Yes,No,9
+ChatGPT,Best sports for families,https://activeforlife.com/family-sports/,activeforlife.com,other,Unknown,Unknown,Unknown,Unknown,1
+ChatGPT,Best sports for families,https://www.verywellfamily.com/best-family-sports-1257094,verywellfamily.com,other,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,Best sports for families,https://www.parents.com/fun/sports/family-sports-activities/,parents.com,other,Unknown,Unknown,Unknown,Unknown,3
+Perplexity,Best sports for families,https://www.teamsnap.com/blog/general-sports/10-family-games-and-activities-to-do-outdoors,teamsnap.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports for families,https://www.dcurbanmom.com/jforum/posts/list/1215620.page,dcurbanmom.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports for families,https://blog.fscamps.com/non-competitive-sports-for-kids,blog.fscamps.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports for families,https://thrive.psu.edu/blog/choosing-the-best-sports-for-your-child/,thrive.psu.edu,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports for families,https://www.nordictrack.co.uk/learn/playing-sport-as-a-family-which-activities-are-best-to-choose-and-how-can-you-make-a-go-of-it/,nordictrack.co.uk,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports for families,https://forum.meangreennation.com/t/random-best-sport-to-attend-with-your-children/119,forum.meangreennation.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports for families,https://www.visitma.com/things-to-do/bring-the-kids/sports/,visitma.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports for families,https://advice.decathlon.ca/7-family-sports-activities,advice.decathlon.ca,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports for families,https://www.nhs.uk/healthier-families/activities/sports-and-activities/,nhs.uk,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports for families,https://mommypoppins.com/anywhere-kids/sports-for-kids-hobbies-for-kids,mommypoppins.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports for families,https://activeforlife.com/50-indoor-physical-activities-for-kids/,activeforlife.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports for families,https://redstickmom.com/the-best-organized-sports-for-little-kids/,redstickmom.com,other,Unknown,Unknown,Unknown,Unknown,0
+ChatGPT,Fastest growing sports leagues,https://www.nba.com/news/nba-global-expansion,nba.com,league_official,Yes,No,No,No,1
+ChatGPT,Fastest growing sports leagues,https://www.forbes.com/sites/tristanlavalette/2023/03/27/ipl-2023-the-worlds-most-valuable-cricket-tournament-returns/,forbes.com,business_media,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,Fastest growing sports leagues,https://www.mlssoccer.com/news/mls-commissioner-don-garber-on-league-s-growth-expansion-and-future,mlssoccer.com,other,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,Fastest growing sports leagues,https://www.sportspromedia.com/news/ufc-global-expansion-espn-dana-white/,sportspromedia.com,other,Unknown,Unknown,Unknown,Unknown,4
+ChatGPT,Fastest growing sports leagues,https://www.nytimes.com/2023/03/02/sports/autoracing/formula-1-us-growth.html,nytimes.com,news_media,Unknown,Unknown,Unknown,Unknown,5
+ChatGPT,Fastest growing sports leagues,https://www.businessinsider.com/esports-ecosystem-market-report,businessinsider.com,business_media,Unknown,Unknown,Unknown,Unknown,6
+Perplexity,Fastest growing sports leagues,https://apsportseditors.org/top-sports-leagues/,apsportseditors.org,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Fastest growing sports leagues,https://www.sportsvalue.com.br/en/the-sports-competitions-with-the-highest-revenues-in-the-world/,sportsvalue.com.br,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Fastest growing sports leagues,https://www.adweek.com/brand-marketing/8-new-sports-leagues-2025/,adweek.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Fastest growing sports leagues,https://en.wikipedia.org/wiki/List_of_professional_sports_leagues_by_revenue,en.wikipedia.org,wiki_reference,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Fastest growing sports leagues,https://www.deloitte.com/us/en/insights/industry/technology/technology-media-telecom-outlooks/sports-industry-outlook.html,deloitte.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Fastest growing sports leagues,https://www.gwi.com/blog/fastest-growing-international-sports,gwi.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Fastest growing sports leagues,https://www.axios.com/local/kansas-city/2025/08/22/womens-pro-sports-leagues-growing,axios.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Fastest growing sports leagues,https://www.sportsbusinessjournal.com/Articles/2024/04/01/emerging-leagues-directory/,sportsbusinessjournal.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Fastest growing sports leagues,https://www.spglobal.com/market-intelligence/en/news-insights/research/state-of-us-sports-viewing-2025,spglobal.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Fastest growing sports leagues,https://sportstechx.com/new-sports-leagues-emerging-formats/,sportstechx.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Fastest growing sports leagues,https://www.i9sports.com/blog/the-fastest-growing-sport-in-2025,i9sports.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Fastest growing sports leagues,https://erthegolf.com/blogs/news/the-10-fastest-growing-sports-why-they-re-booming-and-what-s-next,erthegolf.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Fastest growing sports leagues,https://www.petcashpost.com/p/2025-look-ahead-sports,petcashpost.com,other,Unknown,Unknown,Unknown,Unknown,0
+Gemini,Fastest growing sports leagues,https://www.forbes.com/sites/mikeozanian/2023/02/09/mls-team-values-2023-inter-miami-leaps-into-the-top-10-as-expansion-fees-soar/?sh=1e116d9623a8](https://www.forbes.com/sites/mikeozanian/2023/02/09/mls-team-values-2023-inter-miami-leaps-into-the-top-10-as-expansion-fees-soar/?sh=1e116d9623a8,forbes.com,business_media,Unknown,Unknown,Unknown,Unknown,1
+Gemini,Fastest growing sports leagues,https://frontofficesports.com/mls-revenue-records-growth/](https://frontofficesports.com/mls-revenue-records-growth/,frontofficesports.com,other,Unknown,Unknown,Unknown,Unknown,2
+Gemini,Fastest growing sports leagues,https://www.statista.com/topics/1643/major-league-soccer-mls/,statista.com,other,Unknown,Unknown,Unknown,Unknown,3
+Gemini,Fastest growing sports leagues,https://www.statista.com/topics/1643/major-league-soccer-mls/,statista.com,other,Unknown,Unknown,Unknown,Unknown,4
+Gemini,Fastest growing sports leagues,https://www.forbes.com/sites/justinbirnbaum/2023/11/06/the-most-valuable-nwsl-teams-2023/?sh=23f045e158a2](https://www.forbes.com/sites/justinbirnbaum/2023/11/06/the-most-valuable-nwsl-teams-2023/?sh=23f045e158a2,forbes.com,business_media,Yes,No,No,No,5
+Gemini,Fastest growing sports leagues,https://www.nwslsoccer.com/](https://www.nwslsoccer.com/,nwslsoccer.com,other,Unknown,Unknown,Unknown,Unknown,6
+Gemini,Fastest growing sports leagues,https://justwomenssports.com/](https://justwomenssports.com/,justwomenssports.com,other,Unknown,Unknown,Unknown,Unknown,7
+Gemini,Fastest growing sports leagues,https://www.forbes.com/sites/brettknight/2023/04/12/indias-premier-league-is-now-worth-107-billion-as-the-worlds-second-most-valuable-sports-league/?sh=4260b7993092](https://www.forbes.com/sites/brettknight/2023/04/12/indias-premier-league-is-now-worth-107-billion-as-the-worlds-second-most-valuable-sports-league/?sh=4260b7993092,forbes.com,business_media,Unknown,Unknown,Unknown,Unknown,8
+Gemini,Fastest growing sports leagues,https://www.espncricinfo.com/indian-premier-league](https://www.espncricinfo.com/indian-premier-league,espncricinfo.com,sports_media,Unknown,Unknown,Unknown,Unknown,9
+Gemini,Fastest growing sports leagues,https://www.ufc.com/](https://www.ufc.com/,ufc.com,other,Unknown,Unknown,Unknown,Unknown,10
+Gemini,Fastest growing sports leagues,https://www.mmafighting.com/](https://www.mmafighting.com/,mmafighting.com,other,Unknown,Unknown,Unknown,Unknown,11
+ChatGPT,Most valuable sports franchises,https://www.forbes.com/lists/most-valuable-sports-teams/,forbes.com,business_media,Unknown,Unknown,Unknown,Unknown,1
+ChatGPT,Most valuable sports franchises,https://www.forbes.com/mlb-valuations/,forbes.com,business_media,No,No,Yes,No,2
+ChatGPT,Most valuable sports franchises,https://www.forbes.com/soccer-valuations/,forbes.com,business_media,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,Most valuable sports franchises,https://www.forbes.com/nba-valuations/,forbes.com,business_media,Yes,No,No,No,4
+Perplexity,Most valuable sports franchises,https://lists.thebiglead.com/sports/10-most-valuable-sports-franchises-are-all-in-the-u-s/,lists.thebiglead.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most valuable sports franchises,https://www.usatoday.com/story/sports/2024/12/12/forbes-2024-list-50-most-valuable-sports-franchises/76947858007/,usatoday.com,news_media,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most valuable sports franchises,https://www.esquire.com.au/most-valuable-sports-teams-2025/,esquire.com.au,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most valuable sports franchises,https://www.forbesmiddleeast.com/lifestyle/sports/the-worlds-50-most-valuable-sports-teams-2024,forbesmiddleeast.com,business_media,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most valuable sports franchises,https://en.wikipedia.org/wiki/Forbes_list_of_the_most_valuable_sports_teams,en.wikipedia.org,wiki_reference,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most valuable sports franchises,https://www.statista.com/statistics/278027/brand-value-of-sport-teams-franchises-worldwide/,statista.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most valuable sports franchises,https://www.forbesmiddleeast.com/lifestyle/sports/the-worlds-most-profitable-sports-teams-2025,forbesmiddleeast.com,business_media,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most valuable sports franchises,https://www.cbssports.com/nfl/news/cowboys-top-list-of-most-valuable-nfl-franchises-with-valuation-over-12-billion-as-all-teams-see-major-rise/,cbssports.com,sports_media,No,Yes,No,No,0
+Perplexity,Most valuable sports franchises,https://www.youtube.com/watch?v=W7KUQbRyFuo,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Gemini,Most valuable sports franchises,https://www.forbes.com/lists/nfl-valuations/?sh=5306883498f8](https://www.forbes.com/lists/nfl-valuations/?sh=5306883498f8,forbes.com,business_media,No,Yes,No,No,1
+Gemini,Most valuable sports franchises,https://www.forbes.com/lists/mlb-valuations/?sh=719d03387723](https://www.forbes.com/lists/mlb-valuations/?sh=719d03387723,forbes.com,business_media,No,No,Yes,No,2
+Gemini,Most valuable sports franchises,https://www.forbes.com/lists/nba-valuations/?sh=3790d68a47b5](https://www.forbes.com/lists/nba-valuations/?sh=3790d68a47b5,forbes.com,business_media,Yes,No,No,No,3
+Gemini,Most valuable sports franchises,https://www.forbes.com/lists/nba-valuations/?sh=3790d68a47b5](https://www.forbes.com/lists/nba-valuations/?sh=3790d68a47b5,forbes.com,business_media,Yes,No,No,No,4
+Gemini,Most valuable sports franchises,https://www.forbes.com/lists/nba-valuations/?sh=3790d68a47b5](https://www.forbes.com/lists/nba-valuations/?sh=3790d68a47b5,forbes.com,business_media,Yes,No,No,No,5
+Gemini,Most valuable sports franchises,https://www.forbes.com/lists/nfl-valuations/?sh=5306883498f8](https://www.forbes.com/lists/nfl-valuations/?sh=5306883498f8,forbes.com,business_media,No,Yes,No,No,6
+ChatGPT,Best athlete salary sports,https://www.forbes.com/athletes/,forbes.com,business_media,Unknown,Unknown,Unknown,Unknown,1
+ChatGPT,Best athlete salary sports,https://www.espn.com/,espn.com,sports_media,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,Best athlete salary sports,https://www.spotrac.com/,spotrac.com,other,Unknown,Unknown,Unknown,Unknown,3
+Perplexity,Best athlete salary sports,https://en.wikipedia.org/wiki/Forbes_list_of_the_world's_highest-paid_athletes,en.wikipedia.org,wiki_reference,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best athlete salary sports,https://en.wikipedia.org/wiki/List_of_largest_sports_contracts,en.wikipedia.org,wiki_reference,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best athlete salary sports,https://www.onfocus.news/top-10-highest-paid-athletes-of-2025-ronaldo-leads-soccer-and-basketball-dominate/,onfocus.news,other,Yes,No,No,No,0
+Perplexity,Best athlete salary sports,https://blog.jobsinsports.com/2023/07/03/what-sport-makes-the-most-money/,blog.jobsinsports.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best athlete salary sports,https://www.beinsports.com/en-us/other-sports/articles/-photos-ranking-of-the-10-highest-paid-athletes-in-the-world-in-2025-2025-08-14,beinsports.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best athlete salary sports,https://www.wsn.com/blog/highest-paid-sport/,wsn.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best athlete salary sports,https://www.espn.com/soccer/story/_/id/45167743/cristiano-ronaldo-tops-forbes-highest-paid-list,espn.com,sports_media,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best athlete salary sports,https://www.topendsports.com/world/lists/earnings/athletes-paid-sports.htm,topendsports.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best athlete salary sports,https://www.statista.com/statistics/250295/highest-paid-athletes-worldwide/,statista.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best athlete salary sports,https://www.youtube.com/shorts/A3_Rjowua1Q,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Gemini,Best athlete salary sports,https://www.spotrac.com/nba/rankings/salary/](https://www.spotrac.com/nba/rankings/salary/,spotrac.com,other,Yes,No,No,No,1
+Gemini,Best athlete salary sports,https://www.espn.com/nba/salaries](https://www.espn.com/nba/salaries,espn.com,sports_media,Yes,No,No,No,2
+Gemini,Best athlete salary sports,https://www.spotrac.com/nfl/rankings/salary/](https://www.spotrac.com/nfl/rankings/salary/,spotrac.com,other,No,Yes,No,No,3
+Gemini,Best athlete salary sports,https://overthecap.com/](https://overthecap.com/,overthecap.com,other,Unknown,Unknown,Unknown,Unknown,4
+Gemini,Best athlete salary sports,https://www.spotrac.com/mlb/rankings/salary/](https://www.spotrac.com/mlb/rankings/salary/,spotrac.com,other,No,No,Yes,No,5
+Gemini,Best athlete salary sports,https://www.baseball-reference.com/](https://www.baseball-reference.com/,baseball-reference.com,stats_reference,No,No,Yes,No,6
+Gemini,Best athlete salary sports,https://www.forbes.com/sites/justinbirnbaum/2023/05/12/the-worlds-highest-paid-soccer-players-2023-cristiano-ronaldo-and-lionel-messi-lead-the-list/?sh=344a3d1b6549](https://www.forbes.com/sites/justinbirnbaum/2023/05/12/the-worlds-highest-paid-soccer-players-2023-cristiano-ronaldo-and-lionel-messi-lead-the-list/?sh=344a3d1b6549,forbes.com,business_media,Yes,No,No,No,7
+Gemini,Best athlete salary sports,https://www.forbes.com/sites/brettknight/2023/05/09/the-highest-paid-golfers-2023-tiger-woods-still-reigns-over-a-billion-dollar-industry/?sh=33c674492174](https://www.forbes.com/sites/brettknight/2023/05/09/the-highest-paid-golfers-2023-tiger-woods-still-reigns-over-a-billion-dollar-industry/?sh=33c674492174,forbes.com,business_media,Unknown,Unknown,Unknown,Unknown,8
+Gemini,Best athlete salary sports,https://www.pgatour.com/](https://www.pgatour.com/,pgatour.com,other,Unknown,Unknown,Unknown,Unknown,9
+ChatGPT,Most exciting sports to watch live,https://bleacherreport.com/articles/1598664-ranking-the-most-exciting-sports-to-watch,bleacherreport.com,sports_media,Unknown,Unknown,Unknown,Unknown,1
+ChatGPT,Most exciting sports to watch live,https://www.si.com/extra-mustard/2017/01/09/most-exciting-sports-watch-live,si.com,sports_media,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,Most exciting sports to watch live,https://www.espn.com/espn/page2/story?page=caple/080904,espn.com,sports_media,Unknown,Unknown,Unknown,Unknown,3
+Perplexity,Most exciting sports to watch live,https://www.roadtrips.com/blog/the-most-watched-sporting-events-in-the-world/,roadtrips.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most exciting sports to watch live,https://www.watchmojo.com/articles/top-10-sports-that-are-entertaining-to-watch,watchmojo.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most exciting sports to watch live,https://bellyupsports.com/2025/01/the-best-sports-to-watch-a-guide-for-enthusiasts/,bellyupsports.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most exciting sports to watch live,https://www.twinkietown.com/2021/12/6/22817403/best-worst-live-sports-experiences-ranked-football-sucks-roller-derby-is-awesome-baseball-has-food,twinkietown.com,other,No,Yes,Yes,No,0
+Perplexity,Most exciting sports to watch live,https://www.youtube.com/watch?v=0PWP1OT74D4,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Most exciting sports to watch live,https://www.teamblind.com/post/whats-the-best-live-sport-to-see-cgt405yx,teamblind.com,other,Unknown,Unknown,Unknown,Unknown,0
+Gemini,Most exciting sports to watch live,https://bleacherreport.com/articles/2364264-top-10-most-exciting-sports-to-watch-live](https://bleacherreport.com/articles/2364264-top-10-most-exciting-sports-to-watch-live,bleacherreport.com,sports_media,Unknown,Unknown,Unknown,Unknown,1
+Gemini,Most exciting sports to watch live,https://www.nbcsports.com/chicago/bulls/why-basketball-best-sport](https://www.nbcsports.com/chicago/bulls/why-basketball-best-sport,nbcsports.com,sports_media,Yes,No,No,No,2
+Gemini,Most exciting sports to watch live,https://www.espn.com/nhl/story/_/id/10155600/10-reasons-why-hockey-best-sport](https://www.espn.com/nhl/story/_/id/10155600/10-reasons-why-hockey-best-sport,espn.com,sports_media,No,No,No,Yes,3
+Gemini,Most exciting sports to watch live,https://www.si.com/nhl/2016/01/22/why-hockey-best-sport](https://www.si.com/nhl/2016/01/22/why-hockey-best-sport,si.com,sports_media,No,No,No,Yes,4
+Gemini,Most exciting sports to watch live,https://www.ranker.com/list/most-exciting-sports/ranker-sports](https://www.ranker.com/list/most-exciting-sports/ranker-sports,ranker.com,other,Unknown,Unknown,Unknown,Unknown,5
+ChatGPT,Top revenue generating sports leagues,https://www.forbes.com/nfl/,forbes.com,business_media,No,Yes,No,No,1
+ChatGPT,Top revenue generating sports leagues,https://www.forbes.com/mlb/,forbes.com,business_media,No,No,Yes,No,2
+ChatGPT,Top revenue generating sports leagues,https://www.forbes.com/nba/,forbes.com,business_media,Yes,No,No,No,3
+ChatGPT,Top revenue generating sports leagues,https://www.forbes.com/soccer/,forbes.com,business_media,Unknown,Unknown,Unknown,Unknown,4
+ChatGPT,Top revenue generating sports leagues,https://www.forbes.com/nhl/,forbes.com,business_media,No,No,No,Yes,5
+ChatGPT,Top revenue generating sports leagues,https://www.laliga.com/,laliga.com,other,Unknown,Unknown,Unknown,Unknown,6
+ChatGPT,Top revenue generating sports leagues,https://www.bundesliga.com/,bundesliga.com,other,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,Top revenue generating sports leagues,https://www.legaseriea.it/en,legaseriea.it,other,Unknown,Unknown,Unknown,Unknown,8
+Perplexity,Top revenue generating sports leagues,https://blog.fantasyappsolutions.com/top-richest-sports-leagues-in-the-world/,blog.fantasyappsolutions.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Top revenue generating sports leagues,https://thesporting.blog/blog/richest-sports-leagues-in-the-world,thesporting.blog,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Top revenue generating sports leagues,https://timesofindia.indiatimes.com/sports/international-sports/sports-billion-dollar-club-top-10-richest-leagues-that-are-changing-the-game/articleshow/123659092.cms,timesofindia.indiatimes.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Top revenue generating sports leagues,https://www.sportsvalue.com.br/en/the-sports-competitions-with-the-highest-revenues-in-the-world/,sportsvalue.com.br,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Top revenue generating sports leagues,https://en.wikipedia.org/wiki/List_of_professional_sports_leagues_by_revenue,en.wikipedia.org,wiki_reference,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Top revenue generating sports leagues,https://www.brandvm.com/post/top-5-most-profitable-sports-make-money,brandvm.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Top revenue generating sports leagues,https://apsportseditors.org/top-sports-leagues/,apsportseditors.org,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Top revenue generating sports leagues,https://www.statscore.com/market-research/what-are-the-sources-of-income-for-sports-leagues/,statscore.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Top revenue generating sports leagues,https://www.youtube.com/watch?v=PWOrri8cT04,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Top revenue generating sports leagues,https://www.deloitte.com/uk/en/services/consulting-financial/analysis/deloitte-football-money-league.html,deloitte.com,other,No,Yes,No,No,0
+Gemini,Top revenue generating sports leagues,https://www.sportico.com/business/leagues/2023/nfl-revenue-2023-1234747073/](https://www.sportico.com/business/leagues/2023/nfl-revenue-2023-1234747073/,sportico.com,other,No,Yes,No,No,1
+Gemini,Top revenue generating sports leagues,https://frontofficesports.com/mlb-revenue-2023/](https://frontofficesports.com/mlb-revenue-2023/,frontofficesports.com,other,No,No,Yes,No,2
+Gemini,Top revenue generating sports leagues,https://www.sportico.com/business/leagues/2023/nba-revenue-2023-1234740691/](https://www.sportico.com/business/leagues/2023/nba-revenue-2023-1234740691/,sportico.com,other,Yes,No,No,No,3
+Gemini,Top revenue generating sports leagues,https://www2.deloitte.com/uk/en/pages/sports-business-group/articles/deloitte-football-money-league.html](https://www2.deloitte.com/uk/en/pages/sports-business-group/articles/deloitte-football-money-league.html,www2.deloitte.com,other,No,Yes,No,No,4
+Gemini,Top revenue generating sports leagues,https://www.sportico.com/business/leagues/2023/nhl-revenue-2023-1234738608/](https://www.sportico.com/business/leagues/2023/nhl-revenue-2023-1234738608/,sportico.com,other,No,No,No,Yes,5
+Gemini,Top revenue generating sports leagues,https://www.statista.com/statistics/1037767/revenue-of-la-liga-spain/](https://www.statista.com/statistics/1037767/revenue-of-la-liga-spain/,statista.com,other,Unknown,Unknown,Unknown,Unknown,6
+Gemini,Top revenue generating sports leagues,https://www.statista.com/statistics/445255/bundesliga-revenue-by-source/](https://www.statista.com/statistics/445255/bundesliga-revenue-by-source/,statista.com,other,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,Best sports leagues for international fans,https://www.premierleague.com/,premierleague.com,other,Unknown,Unknown,Unknown,Unknown,1
+ChatGPT,Best sports leagues for international fans,https://www.nba.com/,nba.com,league_official,Yes,No,No,No,2
+ChatGPT,Best sports leagues for international fans,https://www.laliga.com/,laliga.com,other,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,Best sports leagues for international fans,https://www.uefa.com/uefachampionsleague/,uefa.com,other,Unknown,Unknown,Unknown,Unknown,4
+ChatGPT,Best sports leagues for international fans,https://www.nfl.com/,nfl.com,league_official,No,Yes,No,No,5
+ChatGPT,Best sports leagues for international fans,https://www.formula1.com/,formula1.com,other,Unknown,Unknown,Unknown,Unknown,6
+ChatGPT,Best sports leagues for international fans,https://www.iplt20.com/,iplt20.com,other,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,Best sports leagues for international fans,https://www.mlb.com/,mlb.com,league_official,No,No,Yes,No,8
+ChatGPT,Best sports leagues for international fans,https://www.premierleague.com/,premierleague.com,other,Unknown,Unknown,Unknown,Unknown,9
+ChatGPT,Best sports leagues for international fans,https://www.nba.com/,nba.com,league_official,Yes,No,No,No,10
+ChatGPT,Best sports leagues for international fans,https://www.laliga.com/,laliga.com,other,Unknown,Unknown,Unknown,Unknown,11
+ChatGPT,Best sports leagues for international fans,https://www.uefa.com/uefachampionsleague/,uefa.com,other,Unknown,Unknown,Unknown,Unknown,12
+ChatGPT,Best sports leagues for international fans,https://www.nfl.com/,nfl.com,league_official,No,Yes,No,No,13
+ChatGPT,Best sports leagues for international fans,https://www.formula1.com/,formula1.com,other,Unknown,Unknown,Unknown,Unknown,14
+ChatGPT,Best sports leagues for international fans,https://www.iplt20.com/,iplt20.com,other,Unknown,Unknown,Unknown,Unknown,15
+ChatGPT,Best sports leagues for international fans,https://www.mlb.com/,mlb.com,league_official,No,No,Yes,No,16
+Perplexity,Best sports leagues for international fans,https://www.worldatlas.com/articles/what-are-the-most-popular-sports-in-the-world.html,worldatlas.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports leagues for international fans,https://www.youtube.com/watch?v=R76JkdvEZcA,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports leagues for international fans,https://www.magicsportsapp.com/blog/league-management/the-most-popular-sports-leagues/,magicsportsapp.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports leagues for international fans,https://www.iworkinsport.com/news/top-20-sports-leagues-the-most-attractive-employers-in-sport-2025,iworkinsport.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports leagues for international fans,https://en.wikipedia.org/wiki/List_of_professional_sports_leagues_by_revenue,en.wikipedia.org,wiki_reference,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports leagues for international fans,https://www1.grousemountain.com/list-of-sports-leagues,www1.grousemountain.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports leagues for international fans,https://www.sportsvalue.com.br/en/the-sports-competitions-with-the-highest-revenues-in-the-world/,sportsvalue.com.br,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports leagues for international fans,https://www.altmansolon.com/news/us-sports-leagues-challenge-european-fans,altmansolon.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports leagues for international fans,https://apsportseditors.org/top-sports-leagues/,apsportseditors.org,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports leagues for international fans,https://www.gwi.com/blog/fastest-growing-international-sports,gwi.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports leagues for international fans,https://www.spglobal.com/market-intelligence/en/news-insights/research/state-of-us-sports-viewing-2025,spglobal.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports leagues for international fans,https://www.stndigital.com/blog/nba-nhl-nfl-mlb-growing-internationally/,stndigital.com,other,Yes,Yes,Yes,Yes,0
+Perplexity,Best sports leagues for international fans,https://en.uhomes.com/blog/most-popular-sports-of-the-world,en.uhomes.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,Best sports leagues for international fans,https://en.wikipedia.org/wiki/Major_professional_sports_leagues_in_the_United_States_and_Canada,en.wikipedia.org,wiki_reference,Unknown,Unknown,Unknown,Unknown,0
+Gemini,Best sports leagues for international fans,https://www.statista.com/statistics/975416/football-soccer-fans-worldwide-by-continent/](https://www.statista.com/statistics/975416/football-soccer-fans-worldwide-by-continent/,statista.com,other,No,Yes,No,No,1
+Gemini,Best sports leagues for international fans,https://www.premierleague.com/](https://www.premierleague.com/,premierleague.com,other,Unknown,Unknown,Unknown,Unknown,2
+Gemini,Best sports leagues for international fans,https://www.nba.com/](https://www.nba.com/,nba.com,league_official,Yes,No,No,No,3
+Gemini,Best sports leagues for international fans,https://www.statista.com/statistics/255843/number-of-nba-fans-worldwide-by-region/](https://www.statista.com/statistics/255843/number-of-nba-fans-worldwide-by-region/,statista.com,other,Yes,No,No,No,4
+Gemini,Best sports leagues for international fans,https://www.nba.com/news/nba-global-academy](https://www.nba.com/news/nba-global-academy,nba.com,league_official,Yes,No,No,No,5
+Gemini,Best sports leagues for international fans,https://www.mlssoccer.com/](https://www.mlssoccer.com/,mlssoccer.com,other,Unknown,Unknown,Unknown,Unknown,6
+Gemini,Best sports leagues for international fans,https://tv.apple.com/sporting-event/major-league-soccer/team/tvs.ea.team.141311](https://tv.apple.com/sporting-event/major-league-soccer/team/tvs.ea.team.141311,tv.apple.com,other,Unknown,Unknown,Unknown,Unknown,7
+Gemini,Best sports leagues for international fans,https://www.statista.com/statistics/270535/market-value-of-the-major-league-soccer-in-north-america/](https://www.statista.com/statistics/270535/market-value-of-the-major-league-soccer-in-north-america/,statista.com,other,Unknown,Unknown,Unknown,Unknown,8
+Gemini,Best sports leagues for international fans,https://www.uefa.com/uefachampionsleague/](https://www.uefa.com/uefachampionsleague/,uefa.com,other,Unknown,Unknown,Unknown,Unknown,9
+Gemini,Best sports leagues for international fans,https://www.formula1.com/](https://www.formula1.com/,formula1.com,other,Unknown,Unknown,Unknown,Unknown,10
+ChatGPT,How do I watch NFL games?,https://www.nfl.com/game-pass/,nfl.com,league_official,No,Yes,No,No,1
+ChatGPT,How do I watch NFL games?,https://www.amazon.com/Prime-Video/b?node=2676882011,amazon.com,other,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,How do I watch NFL games?,https://www.paramountplus.com/,paramountplus.com,other,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,How do I watch NFL games?,https://www.peacocktv.com/,peacocktv.com,other,Unknown,Unknown,Unknown,Unknown,4
+ChatGPT,How do I watch NFL games?,https://www.nfl.com/game-pass/,nfl.com,league_official,No,Yes,No,No,5
+ChatGPT,How do I watch NFL games?,https://www.amazon.com/Prime-Video/b?node=2676882011,amazon.com,other,Unknown,Unknown,Unknown,Unknown,6
+ChatGPT,How do I watch NFL games?,https://www.paramountplus.com/,paramountplus.com,other,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,How do I watch NFL games?,https://www.peacocktv.com/,peacocktv.com,other,Unknown,Unknown,Unknown,Unknown,8
+Perplexity,How do I watch NFL games?,https://www.espn.com/nfl/schedule,espn.com,sports_media,No,Yes,No,No,0
+Perplexity,How do I watch NFL games?,https://www.youtube.com/watch?v=4F-zylo2QBg&vl=en,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How do I watch NFL games?,https://www.paramountplus.com/shows/nfl-on-cbs/news/1010625/nfl-on-cbs-schedule-how-to-watch-live-football-games/,paramountplus.com,other,No,Yes,No,No,0
+Perplexity,How do I watch NFL games?,https://www.nfl.com/ways-to-watch/by-device,nfl.com,league_official,No,Yes,No,No,0
+Perplexity,How do I watch NFL games?,https://www.nfl.com/plus/learn-more,nfl.com,league_official,No,Yes,No,No,0
+Perplexity,How do I watch NFL games?,https://www.azcentral.com/story/sports/nfl/2025/09/28/what-channels-are-nfl-games-on-sunday-tv-week-4/85430192007/,azcentral.com,other,No,Yes,No,No,0
+Perplexity,How do I watch NFL games?,https://www.nfl.com/ways-to-watch/,nfl.com,league_official,No,Yes,No,No,0
+Perplexity,How do I watch NFL games?,https://www.espn.com/where-to-watch/leagues/nfl,espn.com,sports_media,No,Yes,No,No,0
+Perplexity,How do I watch NFL games?,https://www.nfl.com/network/games,nfl.com,league_official,No,Yes,No,No,0
+Perplexity,How do I watch NFL games?,https://www.hulu.com/nfl,hulu.com,streaming_service,No,Yes,No,No,0
+Perplexity,How do I watch NFL games?,https://www.peacocktv.com/sports/nfl,peacocktv.com,other,No,Yes,No,No,0
+Gemini,How do I watch NFL games?,https://www.xfinity.com/](https://www.xfinity.com/,xfinity.com,other,Unknown,Unknown,Unknown,Unknown,1
+Gemini,How do I watch NFL games?,https://www.spectrum.com/](https://www.spectrum.com/,spectrum.com,other,Unknown,Unknown,Unknown,Unknown,2
+Gemini,How do I watch NFL games?,https://www.cox.com/](https://www.cox.com/,cox.com,other,Unknown,Unknown,Unknown,Unknown,3
+Gemini,How do I watch NFL games?,https://www.directv.com/](https://www.directv.com/,directv.com,other,Unknown,Unknown,Unknown,Unknown,4
+Gemini,How do I watch NFL games?,https://www.dish.com/](https://www.dish.com/,dish.com,other,Unknown,Unknown,Unknown,Unknown,5
+Gemini,How do I watch NFL games?,https://tv.youtube.com/welcome/](https://tv.youtube.com/welcome/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,6
+Gemini,How do I watch NFL games?,https://www.hulu.com/live-tv](https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,7
+Gemini,How do I watch NFL games?,https://www.fubo.tv/](https://www.fubo.tv/,fubo.tv,streaming_service,Unknown,Unknown,Unknown,Unknown,8
+Gemini,How do I watch NFL games?,https://www.sling.com/](https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,9
+Gemini,How do I watch NFL games?,https://stream.directv.com/](https://stream.directv.com/,stream.directv.com,other,Unknown,Unknown,Unknown,Unknown,10
+Gemini,How do I watch NFL games?,https://www.nfl.com/plus](https://www.nfl.com/plus,nfl.com,league_official,No,Yes,No,No,11
+Gemini,How do I watch NFL games?,https://tv.youtube.com/learn/nflsundayticket/](https://tv.youtube.com/learn/nflsundayticket/,tv.youtube.com,streaming_service,No,Yes,No,No,12
+Gemini,How do I watch NFL games?,https://www.antennaweb.org/](https://www.antennaweb.org/,antennaweb.org,other,Unknown,Unknown,Unknown,Unknown,13
+Gemini,How do I watch NFL games?,https://www.amazon.com/Prime-Video/b?ie=UTF8&node=2676882011](https://www.amazon.com/Prime-Video/b?ie=UTF8&node=2676882011,amazon.com,other,Unknown,Unknown,Unknown,Unknown,14
+ChatGPT,How do I get tickets to NFL games?,https://www.nfl.com/tickets,nfl.com,league_official,No,Yes,No,No,1
+ChatGPT,How do I get tickets to NFL games?,https://www.patriots.com/tickets,patriots.com,other,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,How do I get tickets to NFL games?,https://www.ticketmaster.com/nfl,ticketmaster.com,ticketing_platform,No,Yes,No,No,3
+ChatGPT,How do I get tickets to NFL games?,https://www.stubhub.com/nfl-tickets/,stubhub.com,ticketing_platform,No,Yes,No,No,4
+ChatGPT,How do I get tickets to NFL games?,https://seatgeek.com/nfl-tickets,seatgeek.com,ticketing_platform,No,Yes,No,No,5
+ChatGPT,How do I get tickets to NFL games?,https://www.vividseats.com/nfl-football/,vividseats.com,ticketing_platform,No,Yes,No,No,6
+ChatGPT,How do I get tickets to NFL games?,https://www.nfl.com/tickets,nfl.com,league_official,No,Yes,No,No,7
+ChatGPT,How do I get tickets to NFL games?,https://www.ticketmaster.com/nfl,ticketmaster.com,ticketing_platform,No,Yes,No,No,8
+ChatGPT,How do I get tickets to NFL games?,https://www.stubhub.com/nfl-tickets/,stubhub.com,ticketing_platform,No,Yes,No,No,9
+ChatGPT,How do I get tickets to NFL games?,https://seatgeek.com/nfl-tickets,seatgeek.com,ticketing_platform,No,Yes,No,No,10
+ChatGPT,How do I get tickets to NFL games?,https://www.vividseats.com/nfl-football/,vividseats.com,ticketing_platform,No,Yes,No,No,11
+Perplexity,How do I get tickets to NFL games?,https://beebesbargains.com/the-best-time-and-place-to-buy-nfl-tickets-lessons-from-a-bills-mafia-veteran/,beebesbargains.com,other,No,Yes,No,No,0
+Perplexity,How do I get tickets to NFL games?,https://www.tickpick.com/nfl-tickets/,tickpick.com,other,No,Yes,No,No,0
+Perplexity,How do I get tickets to NFL games?,https://seatgeek.com/nfl-tickets,seatgeek.com,ticketing_platform,No,Yes,No,No,0
+Perplexity,How do I get tickets to NFL games?,https://tv.youtube.com/learn/nflsundayticket/,tv.youtube.com,streaming_service,No,Yes,No,No,0
+Perplexity,How do I get tickets to NFL games?,https://discounts.aaa.com/discounts-articles/how-to-get-cheap-football-tickets,discounts.aaa.com,other,No,Yes,No,No,0
+Perplexity,How do I get tickets to NFL games?,https://www.vividseats.com/nfl,vividseats.com,ticketing_platform,No,Yes,No,No,0
+Perplexity,How do I get tickets to NFL games?,https://www.youtube.com/watch?v=VLr-yT83a5c,youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How do I get tickets to NFL games?,https://www.stubhub.com/nfl-tickets/grouping/121,stubhub.com,ticketing_platform,No,Yes,No,No,0
+Perplexity,How do I get tickets to NFL games?,https://onlocationexp.com/nfl,onlocationexp.com,other,No,Yes,No,No,0
+Perplexity,How do I get tickets to NFL games?,https://www.expedia.com/event-tickets/nfl-tickets.c,expedia.com,other,No,Yes,No,No,0
+Perplexity,How do I get tickets to NFL games?,https://help.ticketmaster.com/hc/en-us/articles/9756981666833-NFL-Tickets-Everything-you-need-to-know,help.ticketmaster.com,ticketing_platform,No,Yes,No,No,0
+Perplexity,How do I get tickets to NFL games?,https://www.nfl.com/news/2025-nfl-london-games-your-digital-ticket,nfl.com,league_official,No,Yes,No,No,0
+Perplexity,How do I get tickets to NFL games?,https://www.nfl.com/apps/one-pass/mobile-ticketing-guide/,nfl.com,league_official,No,Yes,No,No,0
+Gemini,How do I get tickets to NFL games?,https://www.dallascowboys.com/tickets/,dallascowboys.com,other,Unknown,Unknown,Unknown,Unknown,1
+Gemini,How do I get tickets to NFL games?,https://www.ticketmaster.com/nfl-tickets,ticketmaster.com,ticketing_platform,No,Yes,No,No,2
+Gemini,How do I get tickets to NFL games?,https://www.ticketmaster.com/nfl-tickets,ticketmaster.com,ticketing_platform,No,Yes,No,No,3
+Gemini,How do I get tickets to NFL games?,https://www.stubhub.com/nfl-tickets/ca-1-catid-8/,stubhub.com,ticketing_platform,No,Yes,No,No,4
+Gemini,How do I get tickets to NFL games?,https://seatgeek.com/nfl-tickets,seatgeek.com,ticketing_platform,No,Yes,No,No,5
+Gemini,How do I get tickets to NFL games?,https://www.vividseats.com/nfl-football-tickets.html,vividseats.com,ticketing_platform,No,Yes,No,No,6
+Gemini,How do I get tickets to NFL games?,https://gametime.co/nfl-football/tickets,gametime.co,other,No,Yes,No,No,7
+ChatGPT,How do I watch MLB games?,https://www.mlb.com/live-stream-games,mlb.com,league_official,No,No,Yes,No,1
+ChatGPT,How do I watch MLB games?,https://www.mlb.com/live-stream-games,mlb.com,league_official,No,No,Yes,No,2
+ChatGPT,How do I watch MLB games?,https://tv.youtube.com/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,How do I watch MLB games?,https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,4
+ChatGPT,How do I watch MLB games?,https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,5
+ChatGPT,How do I watch MLB games?,https://www.fubo.tv/,fubo.tv,streaming_service,Unknown,Unknown,Unknown,Unknown,6
+ChatGPT,How do I watch MLB games?,https://www.apple.com/apple-tv-plus/,apple.com,other,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,How do I watch MLB games?,https://www.peacocktv.com/,peacocktv.com,other,Unknown,Unknown,Unknown,Unknown,8
+Perplexity,How do I watch MLB games?,https://www.cbssports.com/mlb/news/yankees-vs-red-sox-2025-wild-card-series-schedule-scores-where-to-watch-mlb-playoff-games-tv-coverage/,cbssports.com,sports_media,No,No,Yes,No,0
+Perplexity,How do I watch MLB games?,https://www.baseballamerica.com/stories/2025-mlb-playoffs-how-to-watch-every-game-this-postseason-without-cable/,baseballamerica.com,other,No,No,Yes,No,0
+Perplexity,How do I watch MLB games?,https://www.mlb.com/news/mlb-2025-wild-card-series-matchups,mlb.com,league_official,No,No,Yes,No,0
+Perplexity,How do I watch MLB games?,https://www.cbssports.com/mlb/news/dodgers-vs-reds-2025-wild-card-series-schedule-scores-where-to-watch-mlb-playoff-games-tv-coverage/,cbssports.com,sports_media,No,No,Yes,No,0
+Perplexity,How do I watch MLB games?,https://www.mlb.com/live-stream-games,mlb.com,league_official,No,No,Yes,No,0
+Perplexity,How do I watch MLB games?,https://www.espn.com/where-to-watch/leagues/mlb,espn.com,sports_media,No,No,Yes,No,0
+Perplexity,How do I watch MLB games?,https://www.sportsmediawatch.com/tv-schedules/mlb-tv-schedule/,sportsmediawatch.com,other,No,No,Yes,No,0
+Perplexity,How do I watch MLB games?,https://www.mlb.com/live-stream-games/subscribe,mlb.com,league_official,No,No,Yes,No,0
+Perplexity,How do I watch MLB games?,https://www.espn.com/mlb/schedule,espn.com,sports_media,No,No,Yes,No,0
+Perplexity,How do I watch MLB games?,https://www.sling.com/sports/mlb,sling.com,streaming_service,No,No,Yes,No,0
+Perplexity,How do I watch MLB games?,https://www.directv.com/sports/mlb/,directv.com,other,No,No,Yes,No,0
+Perplexity,How do I watch MLB games?,https://www.hbomax.com/sports/mlb,hbomax.com,other,No,No,Yes,No,0
+Perplexity,How do I watch MLB games?,https://tv.apple.com/us/room/edt.item.62327df1-6874-470e-98b2-a5bbeac509a2,tv.apple.com,other,Unknown,Unknown,Unknown,Unknown,0
+Perplexity,How do I watch MLB games?,https://www.mlb.com/tv,mlb.com,league_official,No,No,Yes,No,0
+Perplexity,How do I watch MLB games?,https://www.cbssports.com/mlb/schedule/,cbssports.com,sports_media,No,No,Yes,No,0
+Gemini,How do I watch MLB games?,https://www.mlb.com/live-stream-games](https://www.mlb.com/live-stream-games,mlb.com,league_official,No,No,Yes,No,1
+Gemini,How do I watch MLB games?,https://www.mlb.com/live-stream-games/help-center/blackout-restrictions](https://www.mlb.com/live-stream-games/help-center/blackout-restrictions,mlb.com,league_official,No,No,Yes,No,2
+Gemini,How do I watch MLB games?,https://tv.youtube.com/welcome/](https://tv.youtube.com/welcome/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,3
+Gemini,How do I watch MLB games?,https://www.hulu.com/live-tv](https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,4
+Gemini,How do I watch MLB games?,https://www.sling.com/](https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,5
+Gemini,How do I watch MLB games?,https://stream.directv.com/](https://stream.directv.com/,stream.directv.com,other,Unknown,Unknown,Unknown,Unknown,6
+Gemini,How do I watch MLB games?,https://tv.youtube.com/welcome/](https://tv.youtube.com/welcome/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,7
+Gemini,How do I watch MLB games?,https://www.hulu.com/live-tv](https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,8
+Gemini,How do I watch MLB games?,https://www.sling.com/](https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,9
+Gemini,How do I watch MLB games?,https://stream.directv.com/](https://stream.directv.com/,stream.directv.com,other,Unknown,Unknown,Unknown,Unknown,10
+Gemini,How do I watch MLB games?,https://tv.youtube.com/welcome/](https://tv.youtube.com/welcome/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,11
+Gemini,How do I watch MLB games?,https://www.hulu.com/live-tv](https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,12
+Gemini,How do I watch MLB games?,https://www.sling.com/](https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,13
+Gemini,How do I watch MLB games?,https://stream.directv.com/](https://stream.directv.com/,stream.directv.com,other,Unknown,Unknown,Unknown,Unknown,14
+Gemini,How do I watch MLB games?,https://tv.apple.com/](https://tv.apple.com/,tv.apple.com,other,Unknown,Unknown,Unknown,Unknown,15
+Gemini,How do I watch MLB games?,https://www.peacocktv.com/](https://www.peacocktv.com/,peacocktv.com,other,Unknown,Unknown,Unknown,Unknown,16
+Gemini,How do I watch MLB games?,https://www.ballysports.com/](https://www.ballysports.com/,ballysports.com,other,Unknown,Unknown,Unknown,Unknown,17
+Gemini,How do I watch MLB games?,https://www.mlb.com/live-stream-games/subscribe](https://www.mlb.com/live-stream-games/subscribe,mlb.com,league_official,No,No,Yes,No,18
+ChatGPT,How do I get tickets to MLB games?,https://www.mlb.com/tickets,mlb.com,league_official,No,No,Yes,No,1
+ChatGPT,How do I get tickets to MLB games?,https://www.mlb.com/yankees/tickets,mlb.com,league_official,No,No,Yes,No,2
+ChatGPT,How do I get tickets to MLB games?,https://www.ticketmaster.com/mlb,ticketmaster.com,ticketing_platform,No,No,Yes,No,3
+ChatGPT,How do I get tickets to MLB games?,https://www.stubhub.com/mlb-tickets/,stubhub.com,ticketing_platform,No,No,Yes,No,4
+ChatGPT,How do I get tickets to MLB games?,https://www.mlb.com/tickets](https://www.mlb.com/tickets,mlb.com,league_official,No,No,Yes,No,5
+ChatGPT,How do I get tickets to MLB games?,https://www.ticketmaster.com/mlb](https://www.ticketmaster.com/mlb,ticketmaster.com,ticketing_platform,No,No,Yes,No,6
+ChatGPT,How do I get tickets to MLB games?,https://www.stubhub.com/mlb-tickets/](https://www.stubhub.com/mlb-tickets/,stubhub.com,ticketing_platform,No,No,Yes,No,7
+Perplexity,How do I get tickets to MLB games?,https://www.vividseats.com/mlb-baseball,vividseats.com,ticketing_platform,No,No,Yes,No,0
+Perplexity,How do I get tickets to MLB games?,https://seatgeek.com/mlb-tickets,seatgeek.com,ticketing_platform,No,No,Yes,No,0
+Perplexity,How do I get tickets to MLB games?,https://www.mlb.com/tickets/ballpark-digital-ticketing,mlb.com,league_official,No,No,Yes,No,0
+Perplexity,How do I get tickets to MLB games?,https://www.tickpick.com/mlb-tickets/,tickpick.com,other,No,No,Yes,No,0
+Perplexity,How do I get tickets to MLB games?,https://www.mlb.com/tickets,mlb.com,league_official,No,No,Yes,No,0
+Perplexity,How do I get tickets to MLB games?,https://www.mlb.com/apps/ballpark,mlb.com,league_official,No,No,Yes,No,0
+Perplexity,How do I get tickets to MLB games?,https://www.stubhub.com/mlb-tickets/grouping/81,stubhub.com,ticketing_platform,No,No,Yes,No,0
+Perplexity,How do I get tickets to MLB games?,https://gametime.co/c/mlb-baseball,gametime.co,other,No,No,Yes,No,0
+Gemini,How do I get tickets to MLB games?,https://www.mlb.com/dodgers/tickets,mlb.com,league_official,No,No,Yes,No,1
+Gemini,How do I get tickets to MLB games?,https://www.mlb.com/yankees/tickets,mlb.com,league_official,No,No,Yes,No,2
+Gemini,How do I get tickets to MLB games?,https://www.mlb.com/,mlb.com,league_official,No,No,Yes,No,3
+Gemini,How do I get tickets to MLB games?,https://www.ticketmaster.com/,ticketmaster.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,4
+Gemini,How do I get tickets to MLB games?,https://www.stubhub.com/,stubhub.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,5
+Gemini,How do I get tickets to MLB games?,https://seatgeek.com/,seatgeek.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,6
+Gemini,How do I get tickets to MLB games?,https://www.vividseats.com/,vividseats.com,ticketing_platform,Unknown,Unknown,Unknown,Unknown,7
+ChatGPT,How do I watch NHL games?,https://www.nhl.com/tv,nhl.com,league_official,No,No,No,Yes,1
+ChatGPT,How do I watch NHL games?,https://www.espn.com/espnplus/,espn.com,sports_media,Unknown,Unknown,Unknown,Unknown,2
+ChatGPT,How do I watch NHL games?,https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,3
+ChatGPT,How do I watch NHL games?,https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,4
+ChatGPT,How do I watch NHL games?,https://tv.youtube.com/welcome/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,5
+ChatGPT,How do I watch NHL games?,https://www.sportsnet.ca/now/,sportsnet.ca,other,Unknown,Unknown,Unknown,Unknown,6
+ChatGPT,How do I watch NHL games?,https://www.tsn.ca/subscribe,tsn.ca,other,Unknown,Unknown,Unknown,Unknown,7
+Perplexity,How do I watch NHL games?,https://www.nhl.com/info/how-to-watch-and-stream-nhl-games,nhl.com,league_official,No,No,No,Yes,0
+Perplexity,How do I watch NHL games?,https://www.nhl.com/video/nhltv-information,nhl.com,league_official,No,No,No,Yes,0
+Perplexity,How do I watch NHL games?,https://www.hbomax.com/sports/nhl,hbomax.com,other,No,No,No,Yes,0
+Perplexity,How do I watch NHL games?,https://plus.espn.com/nhl,plus.espn.com,sports_media,No,No,No,Yes,0
+Perplexity,How do I watch NHL games?,https://www.espn.com/nhl/story/_/id/46149412/2025-26-nhl-schedule-how-watch-games-espn-networks,espn.com,sports_media,No,No,No,Yes,0
+Perplexity,How do I watch NHL games?,https://www.hulu.com/nhl,hulu.com,streaming_service,No,No,No,Yes,0
+Perplexity,How do I watch NHL games?,https://www.nhl.com/schedule,nhl.com,league_official,No,No,No,Yes,0
+Perplexity,How do I watch NHL games?,https://tv.youtube.com/browse/nhl-UCCmccnXtxbvyH0g8yCk_4yA,tv.youtube.com,streaming_service,No,No,No,Yes,0
+Perplexity,How do I watch NHL games?,https://www.espn.com/nhl/schedule,espn.com,sports_media,No,No,No,Yes,0
+Perplexity,How do I watch NHL games?,https://tubitv.com/live/400000008/nhl,tubitv.com,other,No,No,No,Yes,0
+Perplexity,How do I watch NHL games?,https://www.primevideo.com/salp/nhl,primevideo.com,other,No,No,No,Yes,0
+Perplexity,How do I watch NHL games?,https://www.nhl.com/news/nhl-2025-26-national-television-schedule-announced,nhl.com,league_official,No,No,No,Yes,0
+Perplexity,How do I watch NHL games?,https://www.sportsmediawatch.com/tv-schedules/nhl-tv-schedule-america-canada/,sportsmediawatch.com,other,No,No,No,Yes,0
+Gemini,How do I watch NHL games?,https://www.espn.com/nhl/schedule](https://www.espn.com/nhl/schedule,espn.com,sports_media,No,No,No,Yes,1
+Gemini,How do I watch NHL games?,https://www.tntdrama.com/schedule](https://www.tntdrama.com/schedule,tntdrama.com,other,Unknown,Unknown,Unknown,Unknown,2
+Gemini,How do I watch NHL games?,https://www.nhl.com/network/schedule](https://www.nhl.com/network/schedule,nhl.com,league_official,No,No,No,Yes,3
+Gemini,How do I watch NHL games?,https://plus.espn.com/](https://plus.espn.com/,plus.espn.com,sports_media,Unknown,Unknown,Unknown,Unknown,4
+Gemini,How do I watch NHL games?,https://www.hulu.com/live-tv](https://www.hulu.com/live-tv,hulu.com,streaming_service,Unknown,Unknown,Unknown,Unknown,5
+Gemini,How do I watch NHL games?,https://tv.youtube.com/](https://tv.youtube.com/,tv.youtube.com,streaming_service,Unknown,Unknown,Unknown,Unknown,6
+Gemini,How do I watch NHL games?,https://www.sling.com/](https://www.sling.com/,sling.com,streaming_service,Unknown,Unknown,Unknown,Unknown,7
+Gemini,How do I watch NHL games?,https://www.directv.com/stream/](https://www.directv.com/stream/,directv.com,other,Unknown,Unknown,Unknown,Unknown,8
+ChatGPT,How do I get tickets to NHL games?,https://www.nhl.com/tickets,nhl.com,league_official,No,No,No,Yes,1
+ChatGPT,How do I get tickets to NHL games?,https://www.nhl.com/rangers/tickets,nhl.com,league_official,No,No,No,Yes,2
+ChatGPT,How do I get tickets to NHL games?,https://www.ticketmaster.com/sports/nhl-hockey,ticketmaster.com,ticketing_platform,No,No,No,Yes,3
+ChatGPT,How do I get tickets to NHL games?,https://www.stubhub.com/nhl-tickets/,stubhub.com,ticketing_platform,No,No,No,Yes,4
+ChatGPT,How do I get tickets to NHL games?,https://seatgeek.com/nhl-tickets,seatgeek.com,ticketing_platform,No,No,No,Yes,5
+ChatGPT,How do I get tickets to NHL games?,https://www.vividseats.com/nhl-hockey/,vividseats.com,ticketing_platform,No,No,No,Yes,6
+ChatGPT,How do I get tickets to NHL games?,https://www.nhl.com/tickets,nhl.com,league_official,No,No,No,Yes,7
+ChatGPT,How do I get tickets to NHL games?,https://www.nhl.com/rangers/tickets,nhl.com,league_official,No,No,No,Yes,8
+ChatGPT,How do I get tickets to NHL games?,https://www.ticketmaster.com/sports/nhl-hockey,ticketmaster.com,ticketing_platform,No,No,No,Yes,9
+ChatGPT,How do I get tickets to NHL games?,https://www.stubhub.com/nhl-tickets/,stubhub.com,ticketing_platform,No,No,No,Yes,10
+ChatGPT,How do I get tickets to NHL games?,https://seatgeek.com/nhl-tickets,seatgeek.com,ticketing_platform,No,No,No,Yes,11
+ChatGPT,How do I get tickets to NHL games?,https://www.vividseats.com/nhl-hockey/,vividseats.com,ticketing_platform,No,No,No,Yes,12
+Perplexity,How do I get tickets to NHL games?,https://www.britishicehockey.co.uk/post/the-best-payment-systems-to-buy-tickets-for-ice-hockey-games/,britishicehockey.co.uk,other,No,No,No,Yes,0
+Perplexity,How do I get tickets to NHL games?,https://www.tickpick.com/nhl-tickets/,tickpick.com,other,No,No,No,Yes,0
+Perplexity,How do I get tickets to NHL games?,https://blog.ticketcity.com/nhl-bag-policies/nhl-ticket-delivery-types/,blog.ticketcity.com,other,No,No,No,Yes,0
+Perplexity,How do I get tickets to NHL games?,https://www.nhl.com/tickets/,nhl.com,league_official,No,No,No,Yes,0
+Perplexity,How do I get tickets to NHL games?,https://www.ask.com/lifestyle/use-mobile-apps-effectively-buy-manage-nhl-tickets,ask.com,other,No,No,No,Yes,0
+Perplexity,How do I get tickets to NHL games?,https://www.stubhub.com/nhl-tickets/grouping/144,stubhub.com,ticketing_platform,No,No,No,Yes,0
+Perplexity,How do I get tickets to NHL games?,https://seatgeek.com/nhl-tickets,seatgeek.com,ticketing_platform,No,No,No,Yes,0
+Perplexity,How do I get tickets to NHL games?,https://gametime.co/c/nhl-hockey,gametime.co,other,No,No,No,Yes,0
+Perplexity,How do I get tickets to NHL games?,https://www.vividseats.com/nhl-hockey,vividseats.com,ticketing_platform,No,No,No,Yes,0
+Perplexity,How do I get tickets to NHL games?,https://www.hellotickets.com/us/sports/nhl-tickets,hellotickets.com,other,No,No,No,Yes,0
+Perplexity,How do I get tickets to NHL games?,https://blog.ticketmaster.com/nhl-faqs/,blog.ticketmaster.com,ticketing_platform,No,No,No,Yes,0
+Perplexity,How do I get tickets to NHL games?,https://www.nhl.com/sharks/tickets/,nhl.com,league_official,No,No,No,Yes,0
+Gemini,How do I get tickets to NHL games?,https://www.ticketmaster.com/nhl](https://www.ticketmaster.com/nhl,ticketmaster.com,ticketing_platform,No,No,No,Yes,1
+Gemini,How do I get tickets to NHL games?,https://www.stubhub.com/nhl-tickets/ca-c113](https://www.stubhub.com/nhl-tickets/ca-c113,stubhub.com,ticketing_platform,No,No,No,Yes,2
+Gemini,How do I get tickets to NHL games?,https://seatgeek.com/nhl-tickets](https://seatgeek.com/nhl-tickets,seatgeek.com,ticketing_platform,No,No,No,Yes,3
+Gemini,How do I get tickets to NHL games?,https://www.vividseats.com/nhl-hockey-tickets.html](https://www.vividseats.com/nhl-hockey-tickets.html,vividseats.com,ticketing_platform,No,No,No,Yes,4
+Gemini,How do I get tickets to NHL games?,https://gametime.co/nhl-hockey](https://gametime.co/nhl-hockey,gametime.co,other,No,No,No,Yes,5

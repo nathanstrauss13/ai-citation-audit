@@ -1,0 +1,17 @@
+query,engine,run_1_featured_league,run_2_featured_league,run_3_featured_league,consistency_score,variance_type
+How do I watch NBA games?,ChatGPT,NBA,NBA,NBA,1.0,Low
+How do I watch NBA games?,Claude,NBA,NBA,NBA,1.0,Low
+How do I watch NBA games?,Perplexity,NBA,NBA,NBA,1.0,Low
+How do I watch NBA games?,Gemini,NBA,NBA,NBA,1.0,Low
+What's the best professional sports league to watch?,ChatGPT,NFL,NFL,NFL,1.0,Low
+What's the best professional sports league to watch?,Claude,NFL,NFL,NFL,1.0,Low
+What's the best professional sports league to watch?,Perplexity,NFL,NFL,NBA,0.67,High
+What's the best professional sports league to watch?,Gemini,NBA,NBA,NFL,0.67,High
+Most exciting sports to watch live?,ChatGPT,NBA,NBA,NFL,0.67,High
+Most exciting sports to watch live?,Claude,None,NFL,None,0.67,High
+Most exciting sports to watch live?,Perplexity,NFL,NBA,NBA,0.67,High
+Most exciting sports to watch live?,Gemini,None,None,None,1.0,Low
+Which sports league has the most passionate fans?,ChatGPT,NFL,NFL,NFL,1.0,Low
+Which sports league has the most passionate fans?,Claude,NFL,NFL,NFL,1.0,Low
+Which sports league has the most passionate fans?,Perplexity,NFL,NFL,NFL,1.0,Low
+Which sports league has the most passionate fans?,Gemini,NFL,NFL,NFL,1.0,Low

@@ -1,0 +1,92 @@
+{
+  "analysis_timestamp": "20250926_1508",
+  "total_queries_processed": 60,
+  "total_citations_collected": 846,
+  "hims_official_percentage": "48.3%",
+  "medical_authority_percentage": "3.0%",
+  "top_media_sources": [
+    {
+      "domain": "forhims.com",
+      "citations": 36,
+      "category": "official_hims_hers"
+    },
+    {
+      "domain": "fda.gov",
+      "citations": 35,
+      "category": "regulatory"
+    },
+    {
+      "domain": "americantelemed.org",
+      "citations": 28,
+      "category": "other"
+    },
+    {
+      "domain": "cdc.gov",
+      "citations": 28,
+      "category": "other"
+    },
+    {
+      "domain": "ama-assn.org",
+      "citations": 27,
+      "category": "other"
+    },
+    {
+      "domain": "hhs.gov",
+      "citations": 25,
+      "category": "other"
+    },
+    {
+      "domain": "mdlive.com",
+      "citations": 20,
+      "category": "other"
+    },
+    {
+      "domain": "goodrx.com",
+      "citations": 20,
+      "category": "healthcare_platform"
+    },
+    {
+      "domain": "cms.gov",
+      "citations": 19,
+      "category": "other"
+    },
+    {
+      "domain": "mayoclinic.org",
+      "citations": 17,
+      "category": "medical_authority"
+    }
+  ],
+  "platform_performance": {
+    "ChatGPT": {
+      "queries": 15,
+      "citations": 189,
+      "hims_mentions": 7
+    },
+    "Claude": {
+      "queries": 15,
+      "citations": 354,
+      "hims_mentions": 8
+    },
+    "Perplexity": {
+      "queries": 15,
+      "citations": 112,
+      "hims_mentions": 5
+    },
+    "Gemini": {
+      "queries": 15,
+      "citations": 191,
+      "hims_mentions": 9
+    }
+  },
+  "competitor_wins": {
+    "None": 40,
+    "Lemonaid": 3,
+    "Roman": 16,
+    "Keeps": 1
+  },
+  "key_insights": [
+    "Medical authority sources dominate Hims & Hers citations - strong credibility positioning",
+    "Roman shows stronger competitive positioning - need enhanced brand visibility",
+    "Claude provides the most telehealth citations - prioritize content optimization for this platform"
+  ]
+}

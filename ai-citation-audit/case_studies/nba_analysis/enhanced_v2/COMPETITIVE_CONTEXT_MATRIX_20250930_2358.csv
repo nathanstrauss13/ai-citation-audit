@@ -1,0 +1,385 @@
+league,query,query_type,engine,mentioned_in_response,prominence_ranking,actionable_info_provided,total_citations,cross_league_mentions
+NBA,How do I watch NBA games?,branded,ChatGPT,Yes,1,Yes,0,1
+NFL,How do I watch NBA games?,branded,ChatGPT,No,0,No,0,1
+MLB,How do I watch NBA games?,branded,ChatGPT,No,0,No,0,1
+NHL,How do I watch NBA games?,branded,ChatGPT,No,0,No,0,1
+NBA,How do I watch NBA games?,branded,Claude,Yes,1,Yes,21,1
+NFL,How do I watch NBA games?,branded,Claude,No,0,No,21,1
+MLB,How do I watch NBA games?,branded,Claude,No,0,No,21,1
+NHL,How do I watch NBA games?,branded,Claude,No,0,No,21,1
+NBA,How do I watch NBA games?,branded,Perplexity,Yes,1,Yes,9,1
+NFL,How do I watch NBA games?,branded,Perplexity,No,0,No,9,1
+MLB,How do I watch NBA games?,branded,Perplexity,No,0,No,9,1
+NHL,How do I watch NBA games?,branded,Perplexity,No,0,No,9,1
+NBA,How do I watch NBA games?,branded,Gemini,Yes,1,Yes,0,1
+NFL,How do I watch NBA games?,branded,Gemini,No,0,No,0,1
+MLB,How do I watch NBA games?,branded,Gemini,No,0,No,0,1
+NHL,How do I watch NBA games?,branded,Gemini,No,0,No,0,1
+NBA,Where can I stream NBA games live?,branded,ChatGPT,Yes,1,Yes,7,1
+NFL,Where can I stream NBA games live?,branded,ChatGPT,No,0,No,7,1
+MLB,Where can I stream NBA games live?,branded,ChatGPT,No,0,No,7,1
+NHL,Where can I stream NBA games live?,branded,ChatGPT,No,0,No,7,1
+NBA,Where can I stream NBA games live?,branded,Claude,Yes,1,Yes,11,1
+NFL,Where can I stream NBA games live?,branded,Claude,No,0,No,11,1
+MLB,Where can I stream NBA games live?,branded,Claude,No,0,No,11,1
+NHL,Where can I stream NBA games live?,branded,Claude,No,0,No,11,1
+NBA,Where can I stream NBA games live?,branded,Perplexity,Yes,1,Yes,8,1
+NFL,Where can I stream NBA games live?,branded,Perplexity,No,0,No,8,1
+MLB,Where can I stream NBA games live?,branded,Perplexity,No,0,No,8,1
+NHL,Where can I stream NBA games live?,branded,Perplexity,No,0,No,8,1
+NBA,Where can I stream NBA games live?,branded,Gemini,Yes,1,Yes,0,1
+NFL,Where can I stream NBA games live?,branded,Gemini,No,0,No,0,1
+MLB,Where can I stream NBA games live?,branded,Gemini,No,0,No,0,1
+NHL,Where can I stream NBA games live?,branded,Gemini,No,0,No,0,1
+NBA,How do I get tickets to NBA games?,branded,ChatGPT,Yes,1,Yes,0,1
+NFL,How do I get tickets to NBA games?,branded,ChatGPT,No,0,No,0,1
+MLB,How do I get tickets to NBA games?,branded,ChatGPT,No,0,No,0,1
+NHL,How do I get tickets to NBA games?,branded,ChatGPT,No,0,No,0,1
+NBA,How do I get tickets to NBA games?,branded,Claude,Yes,1,Yes,18,1
+NFL,How do I get tickets to NBA games?,branded,Claude,No,0,No,18,1
+MLB,How do I get tickets to NBA games?,branded,Claude,No,0,No,18,1
+NHL,How do I get tickets to NBA games?,branded,Claude,No,0,No,18,1
+NBA,How do I get tickets to NBA games?,branded,Perplexity,Yes,1,Yes,12,1
+NFL,How do I get tickets to NBA games?,branded,Perplexity,No,0,No,12,1
+MLB,How do I get tickets to NBA games?,branded,Perplexity,No,0,No,12,1
+NHL,How do I get tickets to NBA games?,branded,Perplexity,No,0,No,12,1
+NBA,How do I get tickets to NBA games?,branded,Gemini,Yes,1,Yes,0,1
+NFL,How do I get tickets to NBA games?,branded,Gemini,No,0,No,0,1
+MLB,How do I get tickets to NBA games?,branded,Gemini,No,0,No,0,1
+NHL,How do I get tickets to NBA games?,branded,Gemini,No,0,No,0,1
+NBA,Best NBA games to attend this season,branded,ChatGPT,Yes,1,No,0,1
+NFL,Best NBA games to attend this season,branded,ChatGPT,No,0,No,0,1
+MLB,Best NBA games to attend this season,branded,ChatGPT,No,0,No,0,1
+NHL,Best NBA games to attend this season,branded,ChatGPT,No,0,No,0,1
+NBA,Best NBA games to attend this season,branded,Claude,Yes,1,No,19,1
+NFL,Best NBA games to attend this season,branded,Claude,No,0,No,19,1
+MLB,Best NBA games to attend this season,branded,Claude,No,0,No,19,1
+NHL,Best NBA games to attend this season,branded,Claude,No,0,No,19,1
+NBA,Best NBA games to attend this season,branded,Perplexity,Yes,1,Yes,14,1
+NFL,Best NBA games to attend this season,branded,Perplexity,No,0,No,14,1
+MLB,Best NBA games to attend this season,branded,Perplexity,No,0,No,14,1
+NHL,Best NBA games to attend this season,branded,Perplexity,No,0,No,14,1
+NBA,Best NBA games to attend this season,branded,Gemini,Yes,1,Yes,0,1
+NFL,Best NBA games to attend this season,branded,Gemini,No,0,No,0,1
+MLB,Best NBA games to attend this season,branded,Gemini,No,0,No,0,1
+NHL,Best NBA games to attend this season,branded,Gemini,No,0,No,0,1
+NBA,How do I become an NBA fan?,branded,ChatGPT,Yes,1,Yes,0,1
+NFL,How do I become an NBA fan?,branded,ChatGPT,No,0,No,0,1
+MLB,How do I become an NBA fan?,branded,ChatGPT,No,0,No,0,1
+NHL,How do I become an NBA fan?,branded,ChatGPT,No,0,No,0,1
+NBA,How do I become an NBA fan?,branded,Claude,Yes,1,Yes,37,1
+NFL,How do I become an NBA fan?,branded,Claude,No,0,No,37,1
+MLB,How do I become an NBA fan?,branded,Claude,No,0,No,37,1
+NHL,How do I become an NBA fan?,branded,Claude,No,0,No,37,1
+NBA,How do I become an NBA fan?,branded,Perplexity,Yes,1,Yes,11,1
+NFL,How do I become an NBA fan?,branded,Perplexity,No,0,No,11,1
+MLB,How do I become an NBA fan?,branded,Perplexity,No,0,No,11,1
+NHL,How do I become an NBA fan?,branded,Perplexity,No,0,No,11,1
+NBA,How do I become an NBA fan?,branded,Gemini,Yes,1,Yes,0,1
+NFL,How do I become an NBA fan?,branded,Gemini,No,0,No,0,1
+MLB,How do I become an NBA fan?,branded,Gemini,No,0,No,0,1
+NHL,How do I become an NBA fan?,branded,Gemini,No,0,No,0,1
+NBA,What NBA team should I root for?,branded,ChatGPT,Yes,1,Yes,0,1
+NFL,What NBA team should I root for?,branded,ChatGPT,No,0,No,0,1
+MLB,What NBA team should I root for?,branded,ChatGPT,No,0,No,0,1
+NHL,What NBA team should I root for?,branded,ChatGPT,No,0,No,0,1
+NBA,What NBA team should I root for?,branded,Claude,Yes,1,Yes,23,1
+NFL,What NBA team should I root for?,branded,Claude,No,0,No,23,1
+MLB,What NBA team should I root for?,branded,Claude,No,0,No,23,1
+NHL,What NBA team should I root for?,branded,Claude,No,0,No,23,1
+NBA,What NBA team should I root for?,branded,Perplexity,Yes,1,No,13,1
+NFL,What NBA team should I root for?,branded,Perplexity,No,0,No,13,1
+MLB,What NBA team should I root for?,branded,Perplexity,No,0,No,13,1
+NHL,What NBA team should I root for?,branded,Perplexity,No,0,No,13,1
+NBA,What NBA team should I root for?,branded,Gemini,Yes,1,No,0,1
+NFL,What NBA team should I root for?,branded,Gemini,No,0,No,0,1
+MLB,What NBA team should I root for?,branded,Gemini,No,0,No,0,1
+NHL,What NBA team should I root for?,branded,Gemini,No,0,No,0,1
+NBA,What's the best professional sports league to watch?,league_agnostic,ChatGPT,Yes,2,Yes,0,4
+NFL,What's the best professional sports league to watch?,league_agnostic,ChatGPT,Yes,1,Yes,0,4
+MLB,What's the best professional sports league to watch?,league_agnostic,ChatGPT,Yes,3,Yes,0,4
+NHL,What's the best professional sports league to watch?,league_agnostic,ChatGPT,Yes,4,Yes,0,4
+NBA,What's the best professional sports league to watch?,league_agnostic,Claude,Yes,2,Yes,15,4
+NFL,What's the best professional sports league to watch?,league_agnostic,Claude,Yes,1,Yes,15,4
+MLB,What's the best professional sports league to watch?,league_agnostic,Claude,Yes,3,Yes,15,4
+NHL,What's the best professional sports league to watch?,league_agnostic,Claude,Yes,4,Yes,15,4
+NBA,What's the best professional sports league to watch?,league_agnostic,Perplexity,Yes,2,Yes,13,4
+NFL,What's the best professional sports league to watch?,league_agnostic,Perplexity,Yes,1,Yes,13,4
+MLB,What's the best professional sports league to watch?,league_agnostic,Perplexity,Yes,4,Yes,13,4
+NHL,What's the best professional sports league to watch?,league_agnostic,Perplexity,Yes,3,Yes,13,4
+NBA,What's the best professional sports league to watch?,league_agnostic,Gemini,Yes,1,Yes,0,4
+NFL,What's the best professional sports league to watch?,league_agnostic,Gemini,Yes,2,Yes,0,4
+MLB,What's the best professional sports league to watch?,league_agnostic,Gemini,Yes,3,Yes,0,4
+NHL,What's the best professional sports league to watch?,league_agnostic,Gemini,Yes,4,Yes,0,4
+NBA,Which sports have the best streaming options?,league_agnostic,ChatGPT,Yes,2,Yes,0,3
+NFL,Which sports have the best streaming options?,league_agnostic,ChatGPT,Yes,1,Yes,0,3
+MLB,Which sports have the best streaming options?,league_agnostic,ChatGPT,Yes,3,Yes,0,3
+NHL,Which sports have the best streaming options?,league_agnostic,ChatGPT,No,0,No,0,3
+NBA,Which sports have the best streaming options?,league_agnostic,Claude,Yes,1,Yes,30,4
+NFL,Which sports have the best streaming options?,league_agnostic,Claude,Yes,4,Yes,30,4
+MLB,Which sports have the best streaming options?,league_agnostic,Claude,Yes,2,Yes,30,4
+NHL,Which sports have the best streaming options?,league_agnostic,Claude,Yes,3,Yes,30,4
+NBA,Which sports have the best streaming options?,league_agnostic,Perplexity,Yes,2,Yes,9,4
+NFL,Which sports have the best streaming options?,league_agnostic,Perplexity,Yes,1,Yes,9,4
+MLB,Which sports have the best streaming options?,league_agnostic,Perplexity,Yes,3,Yes,9,4
+NHL,Which sports have the best streaming options?,league_agnostic,Perplexity,Yes,4,Yes,9,4
+NBA,Which sports have the best streaming options?,league_agnostic,Gemini,Yes,2,Yes,0,3
+NFL,Which sports have the best streaming options?,league_agnostic,Gemini,Yes,1,Yes,0,3
+MLB,Which sports have the best streaming options?,league_agnostic,Gemini,Yes,3,Yes,0,3
+NHL,Which sports have the best streaming options?,league_agnostic,Gemini,No,0,No,0,3
+NBA,Most exciting sports to watch live?,league_agnostic,ChatGPT,Yes,2,Yes,0,4
+NFL,Most exciting sports to watch live?,league_agnostic,ChatGPT,Yes,1,Yes,0,4
+MLB,Most exciting sports to watch live?,league_agnostic,ChatGPT,Yes,0,No,0,4
+NHL,Most exciting sports to watch live?,league_agnostic,ChatGPT,Yes,3,Yes,0,4
+NBA,Most exciting sports to watch live?,league_agnostic,Claude,No,0,No,20,1
+NFL,Most exciting sports to watch live?,league_agnostic,Claude,Yes,1,Yes,20,1
+MLB,Most exciting sports to watch live?,league_agnostic,Claude,No,0,No,20,1
+NHL,Most exciting sports to watch live?,league_agnostic,Claude,No,0,No,20,1
+NBA,Most exciting sports to watch live?,league_agnostic,Perplexity,No,0,No,8,1
+NFL,Most exciting sports to watch live?,league_agnostic,Perplexity,Yes,1,Yes,8,1
+MLB,Most exciting sports to watch live?,league_agnostic,Perplexity,No,0,No,8,1
+NHL,Most exciting sports to watch live?,league_agnostic,Perplexity,No,0,No,8,1
+NBA,Most exciting sports to watch live?,league_agnostic,Gemini,Yes,1,Yes,0,4
+NFL,Most exciting sports to watch live?,league_agnostic,Gemini,Yes,3,Yes,0,4
+MLB,Most exciting sports to watch live?,league_agnostic,Gemini,Yes,4,Yes,0,4
+NHL,Most exciting sports to watch live?,league_agnostic,Gemini,Yes,2,Yes,0,4
+NBA,Which sports league has the most passionate fans?,league_agnostic,ChatGPT,Yes,2,Yes,0,3
+NFL,Which sports league has the most passionate fans?,league_agnostic,ChatGPT,Yes,1,Yes,0,3
+MLB,Which sports league has the most passionate fans?,league_agnostic,ChatGPT,Yes,3,Yes,0,3
+NHL,Which sports league has the most passionate fans?,league_agnostic,ChatGPT,No,0,No,0,3
+NBA,Which sports league has the most passionate fans?,league_agnostic,Claude,Yes,2,No,25,3
+NFL,Which sports league has the most passionate fans?,league_agnostic,Claude,Yes,1,No,25,3
+MLB,Which sports league has the most passionate fans?,league_agnostic,Claude,Yes,3,No,25,3
+NHL,Which sports league has the most passionate fans?,league_agnostic,Claude,No,0,No,25,3
+NBA,Which sports league has the most passionate fans?,league_agnostic,Perplexity,Yes,2,Yes,7,4
+NFL,Which sports league has the most passionate fans?,league_agnostic,Perplexity,Yes,1,Yes,7,4
+MLB,Which sports league has the most passionate fans?,league_agnostic,Perplexity,Yes,4,Yes,7,4
+NHL,Which sports league has the most passionate fans?,league_agnostic,Perplexity,Yes,3,Yes,7,4
+NBA,Which sports league has the most passionate fans?,league_agnostic,Gemini,Yes,2,No,0,4
+NFL,Which sports league has the most passionate fans?,league_agnostic,Gemini,Yes,1,No,0,4
+MLB,Which sports league has the most passionate fans?,league_agnostic,Gemini,Yes,4,No,0,4
+NHL,Which sports league has the most passionate fans?,league_agnostic,Gemini,Yes,3,No,0,4
+NBA,Easiest professional sport to get into as a new fan,league_agnostic,ChatGPT,Yes,1,Yes,0,3
+NFL,Easiest professional sport to get into as a new fan,league_agnostic,ChatGPT,Yes,2,Yes,0,3
+MLB,Easiest professional sport to get into as a new fan,league_agnostic,ChatGPT,Yes,3,Yes,0,3
+NHL,Easiest professional sport to get into as a new fan,league_agnostic,ChatGPT,No,0,No,0,3
+NBA,Easiest professional sport to get into as a new fan,league_agnostic,Claude,No,0,No,16,0
+NFL,Easiest professional sport to get into as a new fan,league_agnostic,Claude,No,0,No,16,0
+MLB,Easiest professional sport to get into as a new fan,league_agnostic,Claude,No,0,No,16,0
+NHL,Easiest professional sport to get into as a new fan,league_agnostic,Claude,No,0,No,16,0
+NBA,Easiest professional sport to get into as a new fan,league_agnostic,Perplexity,Yes,1,Yes,7,1
+NFL,Easiest professional sport to get into as a new fan,league_agnostic,Perplexity,No,0,No,7,1
+MLB,Easiest professional sport to get into as a new fan,league_agnostic,Perplexity,No,0,No,7,1
+NHL,Easiest professional sport to get into as a new fan,league_agnostic,Perplexity,No,0,No,7,1
+NBA,Easiest professional sport to get into as a new fan,league_agnostic,Gemini,Yes,1,Yes,0,4
+NFL,Easiest professional sport to get into as a new fan,league_agnostic,Gemini,Yes,3,Yes,0,4
+MLB,Easiest professional sport to get into as a new fan,league_agnostic,Gemini,Yes,2,Yes,0,4
+NHL,Easiest professional sport to get into as a new fan,league_agnostic,Gemini,Yes,4,Yes,0,4
+NBA,Best sports league for international fans,league_agnostic,ChatGPT,Yes,1,Yes,0,3
+NFL,Best sports league for international fans,league_agnostic,ChatGPT,Yes,3,Yes,0,3
+MLB,Best sports league for international fans,league_agnostic,ChatGPT,Yes,2,Yes,0,3
+NHL,Best sports league for international fans,league_agnostic,ChatGPT,No,0,No,0,3
+NBA,Best sports league for international fans,league_agnostic,Claude,Yes,1,Yes,24,1
+NFL,Best sports league for international fans,league_agnostic,Claude,No,0,No,24,1
+MLB,Best sports league for international fans,league_agnostic,Claude,No,0,No,24,1
+NHL,Best sports league for international fans,league_agnostic,Claude,No,0,No,24,1
+NBA,Best sports league for international fans,league_agnostic,Perplexity,Yes,1,No,16,4
+NFL,Best sports league for international fans,league_agnostic,Perplexity,Yes,2,No,16,4
+MLB,Best sports league for international fans,league_agnostic,Perplexity,Yes,4,No,16,4
+NHL,Best sports league for international fans,league_agnostic,Perplexity,Yes,3,No,16,4
+NBA,Best sports league for international fans,league_agnostic,Gemini,Yes,1,Yes,0,3
+NFL,Best sports league for international fans,league_agnostic,Gemini,Yes,3,Yes,0,3
+MLB,Best sports league for international fans,league_agnostic,Gemini,Yes,2,Yes,0,3
+NHL,Best sports league for international fans,league_agnostic,Gemini,No,0,No,0,3
+NBA,Which sports leagues have the biggest cultural impact?,league_agnostic,ChatGPT,Yes,2,Yes,0,4
+NFL,Which sports leagues have the biggest cultural impact?,league_agnostic,ChatGPT,Yes,1,Yes,0,4
+MLB,Which sports leagues have the biggest cultural impact?,league_agnostic,ChatGPT,Yes,3,Yes,0,4
+NHL,Which sports leagues have the biggest cultural impact?,league_agnostic,ChatGPT,Yes,4,Yes,0,4
+NBA,Which sports leagues have the biggest cultural impact?,league_agnostic,Claude,Yes,2,No,21,3
+NFL,Which sports leagues have the biggest cultural impact?,league_agnostic,Claude,Yes,1,No,21,3
+MLB,Which sports leagues have the biggest cultural impact?,league_agnostic,Claude,Yes,3,No,21,3
+NHL,Which sports leagues have the biggest cultural impact?,league_agnostic,Claude,No,0,No,21,3
+NBA,Which sports leagues have the biggest cultural impact?,league_agnostic,Perplexity,Yes,2,No,9,4
+NFL,Which sports leagues have the biggest cultural impact?,league_agnostic,Perplexity,Yes,1,No,9,4
+MLB,Which sports leagues have the biggest cultural impact?,league_agnostic,Perplexity,Yes,3,No,9,4
+NHL,Which sports leagues have the biggest cultural impact?,league_agnostic,Perplexity,Yes,4,No,9,4
+NBA,Which sports leagues have the biggest cultural impact?,league_agnostic,Gemini,Yes,2,Yes,0,3
+NFL,Which sports leagues have the biggest cultural impact?,league_agnostic,Gemini,Yes,1,Yes,0,3
+MLB,Which sports leagues have the biggest cultural impact?,league_agnostic,Gemini,Yes,3,Yes,0,3
+NHL,Which sports leagues have the biggest cultural impact?,league_agnostic,Gemini,No,0,No,0,3
+NBA,Most socially engaged sports leagues,league_agnostic,ChatGPT,Yes,2,No,0,3
+NFL,Most socially engaged sports leagues,league_agnostic,ChatGPT,Yes,1,No,0,3
+MLB,Most socially engaged sports leagues,league_agnostic,ChatGPT,Yes,3,No,0,3
+NHL,Most socially engaged sports leagues,league_agnostic,ChatGPT,No,0,No,0,3
+NBA,Most socially engaged sports leagues,league_agnostic,Claude,Yes,1,No,13,3
+NFL,Most socially engaged sports leagues,league_agnostic,Claude,Yes,2,No,13,3
+MLB,Most socially engaged sports leagues,league_agnostic,Claude,Yes,3,No,13,3
+NHL,Most socially engaged sports leagues,league_agnostic,Claude,No,0,No,13,3
+NBA,Most socially engaged sports leagues,league_agnostic,Perplexity,Yes,2,No,15,3
+NFL,Most socially engaged sports leagues,league_agnostic,Perplexity,Yes,1,No,15,3
+MLB,Most socially engaged sports leagues,league_agnostic,Perplexity,Yes,3,No,15,3
+NHL,Most socially engaged sports leagues,league_agnostic,Perplexity,No,0,No,15,3
+NBA,Most socially engaged sports leagues,league_agnostic,Gemini,Yes,1,No,0,2
+NFL,Most socially engaged sports leagues,league_agnostic,Gemini,Yes,2,No,0,2
+MLB,Most socially engaged sports leagues,league_agnostic,Gemini,No,0,No,0,2
+NHL,Most socially engaged sports leagues,league_agnostic,Gemini,No,0,No,0,2
+NBA,Sports leagues with the best athletes,league_agnostic,ChatGPT,Yes,1,No,0,4
+NFL,Sports leagues with the best athletes,league_agnostic,ChatGPT,Yes,2,No,0,4
+MLB,Sports leagues with the best athletes,league_agnostic,ChatGPT,Yes,3,No,0,4
+NHL,Sports leagues with the best athletes,league_agnostic,ChatGPT,Yes,4,No,0,4
+NBA,Sports leagues with the best athletes,league_agnostic,Claude,Yes,1,No,34,4
+NFL,Sports leagues with the best athletes,league_agnostic,Claude,Yes,2,No,34,4
+MLB,Sports leagues with the best athletes,league_agnostic,Claude,Yes,3,No,34,4
+NHL,Sports leagues with the best athletes,league_agnostic,Claude,Yes,4,No,34,4
+NBA,Sports leagues with the best athletes,league_agnostic,Perplexity,Yes,1,No,14,4
+NFL,Sports leagues with the best athletes,league_agnostic,Perplexity,Yes,2,No,14,4
+MLB,Sports leagues with the best athletes,league_agnostic,Perplexity,Yes,3,No,14,4
+NHL,Sports leagues with the best athletes,league_agnostic,Perplexity,Yes,4,No,14,4
+NBA,Sports leagues with the best athletes,league_agnostic,Gemini,Yes,2,No,0,4
+NFL,Sports leagues with the best athletes,league_agnostic,Gemini,Yes,1,No,0,4
+MLB,Sports leagues with the best athletes,league_agnostic,Gemini,Yes,3,No,0,4
+NHL,Sports leagues with the best athletes,league_agnostic,Gemini,Yes,4,No,0,4
+NBA,Best professional sports for families to watch,league_agnostic,ChatGPT,Yes,2,Yes,0,4
+NFL,Best professional sports for families to watch,league_agnostic,ChatGPT,Yes,4,Yes,0,4
+MLB,Best professional sports for families to watch,league_agnostic,ChatGPT,Yes,1,Yes,0,4
+NHL,Best professional sports for families to watch,league_agnostic,ChatGPT,Yes,3,Yes,0,4
+NBA,Best professional sports for families to watch,league_agnostic,Claude,No,0,No,20,0
+NFL,Best professional sports for families to watch,league_agnostic,Claude,No,0,No,20,0
+MLB,Best professional sports for families to watch,league_agnostic,Claude,No,0,No,20,0
+NHL,Best professional sports for families to watch,league_agnostic,Claude,No,0,No,20,0
+NBA,Best professional sports for families to watch,league_agnostic,Perplexity,Yes,2,Yes,14,3
+NFL,Best professional sports for families to watch,league_agnostic,Perplexity,No,0,No,14,3
+MLB,Best professional sports for families to watch,league_agnostic,Perplexity,Yes,1,Yes,14,3
+NHL,Best professional sports for families to watch,league_agnostic,Perplexity,Yes,3,Yes,14,3
+NBA,Best professional sports for families to watch,league_agnostic,Gemini,Yes,2,Yes,0,3
+NFL,Best professional sports for families to watch,league_agnostic,Gemini,Yes,3,Yes,0,3
+MLB,Best professional sports for families to watch,league_agnostic,Gemini,No,0,No,0,3
+NHL,Best professional sports for families to watch,league_agnostic,Gemini,Yes,1,Yes,0,3
+NBA,Which sports are most fun to play and watch?,league_agnostic,ChatGPT,Yes,2,Yes,0,4
+NFL,Which sports are most fun to play and watch?,league_agnostic,ChatGPT,Yes,1,Yes,0,4
+MLB,Which sports are most fun to play and watch?,league_agnostic,ChatGPT,Yes,3,Yes,0,4
+NHL,Which sports are most fun to play and watch?,league_agnostic,ChatGPT,Yes,4,Yes,0,4
+NBA,Which sports are most fun to play and watch?,league_agnostic,Claude,No,0,No,12,0
+NFL,Which sports are most fun to play and watch?,league_agnostic,Claude,No,0,No,12,0
+MLB,Which sports are most fun to play and watch?,league_agnostic,Claude,No,0,No,12,0
+NHL,Which sports are most fun to play and watch?,league_agnostic,Claude,No,0,No,12,0
+NBA,Which sports are most fun to play and watch?,league_agnostic,Perplexity,No,0,No,8,0
+NFL,Which sports are most fun to play and watch?,league_agnostic,Perplexity,No,0,No,8,0
+MLB,Which sports are most fun to play and watch?,league_agnostic,Perplexity,No,0,No,8,0
+NHL,Which sports are most fun to play and watch?,league_agnostic,Perplexity,No,0,No,8,0
+NBA,Which sports are most fun to play and watch?,league_agnostic,Gemini,No,0,No,0,0
+NFL,Which sports are most fun to play and watch?,league_agnostic,Gemini,No,0,No,0,0
+MLB,Which sports are most fun to play and watch?,league_agnostic,Gemini,No,0,No,0,0
+NHL,Which sports are most fun to play and watch?,league_agnostic,Gemini,No,0,No,0,0
+NBA,Fastest growing sports leagues in the world,league_agnostic,ChatGPT,Yes,1,Yes,7,1
+NFL,Fastest growing sports leagues in the world,league_agnostic,ChatGPT,No,0,No,7,1
+MLB,Fastest growing sports leagues in the world,league_agnostic,ChatGPT,No,0,No,7,1
+NHL,Fastest growing sports leagues in the world,league_agnostic,ChatGPT,No,0,No,7,1
+NBA,Fastest growing sports leagues in the world,league_agnostic,Claude,Yes,1,Yes,18,1
+NFL,Fastest growing sports leagues in the world,league_agnostic,Claude,No,0,No,18,1
+MLB,Fastest growing sports leagues in the world,league_agnostic,Claude,No,0,No,18,1
+NHL,Fastest growing sports leagues in the world,league_agnostic,Claude,No,0,No,18,1
+NBA,Fastest growing sports leagues in the world,league_agnostic,Perplexity,Yes,1,No,12,2
+NFL,Fastest growing sports leagues in the world,league_agnostic,Perplexity,Yes,2,No,12,2
+MLB,Fastest growing sports leagues in the world,league_agnostic,Perplexity,No,0,No,12,2
+NHL,Fastest growing sports leagues in the world,league_agnostic,Perplexity,No,0,No,12,2
+NBA,Fastest growing sports leagues in the world,league_agnostic,Gemini,Yes,2,Yes,0,2
+NFL,Fastest growing sports leagues in the world,league_agnostic,Gemini,Yes,1,Yes,0,2
+MLB,Fastest growing sports leagues in the world,league_agnostic,Gemini,No,0,No,0,2
+NHL,Fastest growing sports leagues in the world,league_agnostic,Gemini,No,0,No,0,2
+NBA,How do I watch NFL games?,competitive_baseline,ChatGPT,No,0,No,0,1
+NFL,How do I watch NFL games?,competitive_baseline,ChatGPT,Yes,1,Yes,0,1
+MLB,How do I watch NFL games?,competitive_baseline,ChatGPT,No,0,No,0,1
+NHL,How do I watch NFL games?,competitive_baseline,ChatGPT,No,0,No,0,1
+NBA,How do I watch NFL games?,competitive_baseline,Claude,No,0,No,21,1
+NFL,How do I watch NFL games?,competitive_baseline,Claude,Yes,1,Yes,21,1
+MLB,How do I watch NFL games?,competitive_baseline,Claude,No,0,No,21,1
+NHL,How do I watch NFL games?,competitive_baseline,Claude,No,0,No,21,1
+NBA,How do I watch NFL games?,competitive_baseline,Perplexity,No,0,No,16,1
+NFL,How do I watch NFL games?,competitive_baseline,Perplexity,Yes,1,Yes,16,1
+MLB,How do I watch NFL games?,competitive_baseline,Perplexity,No,0,No,16,1
+NHL,How do I watch NFL games?,competitive_baseline,Perplexity,No,0,No,16,1
+NBA,How do I watch NFL games?,competitive_baseline,Gemini,No,0,No,0,1
+NFL,How do I watch NFL games?,competitive_baseline,Gemini,Yes,1,Yes,0,1
+MLB,How do I watch NFL games?,competitive_baseline,Gemini,No,0,No,0,1
+NHL,How do I watch NFL games?,competitive_baseline,Gemini,No,0,No,0,1
+NBA,How do I get tickets to NFL games?,competitive_baseline,ChatGPT,No,0,No,6,1
+NFL,How do I get tickets to NFL games?,competitive_baseline,ChatGPT,Yes,1,Yes,6,1
+MLB,How do I get tickets to NFL games?,competitive_baseline,ChatGPT,No,0,No,6,1
+NHL,How do I get tickets to NFL games?,competitive_baseline,ChatGPT,No,0,No,6,1
+NBA,How do I get tickets to NFL games?,competitive_baseline,Claude,No,0,No,20,1
+NFL,How do I get tickets to NFL games?,competitive_baseline,Claude,Yes,1,Yes,20,1
+MLB,How do I get tickets to NFL games?,competitive_baseline,Claude,No,0,No,20,1
+NHL,How do I get tickets to NFL games?,competitive_baseline,Claude,No,0,No,20,1
+NBA,How do I get tickets to NFL games?,competitive_baseline,Perplexity,No,0,No,12,1
+NFL,How do I get tickets to NFL games?,competitive_baseline,Perplexity,Yes,1,Yes,12,1
+MLB,How do I get tickets to NFL games?,competitive_baseline,Perplexity,No,0,No,12,1
+NHL,How do I get tickets to NFL games?,competitive_baseline,Perplexity,No,0,No,12,1
+NBA,How do I get tickets to NFL games?,competitive_baseline,Gemini,No,0,No,0,1
+NFL,How do I get tickets to NFL games?,competitive_baseline,Gemini,Yes,1,Yes,0,1
+MLB,How do I get tickets to NFL games?,competitive_baseline,Gemini,No,0,No,0,1
+NHL,How do I get tickets to NFL games?,competitive_baseline,Gemini,No,0,No,0,1
+NBA,How do I watch MLB games?,competitive_baseline,ChatGPT,No,0,No,0,1
+NFL,How do I watch MLB games?,competitive_baseline,ChatGPT,No,0,No,0,1
+MLB,How do I watch MLB games?,competitive_baseline,ChatGPT,Yes,1,Yes,0,1
+NHL,How do I watch MLB games?,competitive_baseline,ChatGPT,No,0,No,0,1
+NBA,How do I watch MLB games?,competitive_baseline,Claude,No,0,No,26,1
+NFL,How do I watch MLB games?,competitive_baseline,Claude,No,0,No,26,1
+MLB,How do I watch MLB games?,competitive_baseline,Claude,Yes,1,Yes,26,1
+NHL,How do I watch MLB games?,competitive_baseline,Claude,No,0,No,26,1
+NBA,How do I watch MLB games?,competitive_baseline,Perplexity,No,0,No,12,1
+NFL,How do I watch MLB games?,competitive_baseline,Perplexity,No,0,No,12,1
+MLB,How do I watch MLB games?,competitive_baseline,Perplexity,Yes,1,Yes,12,1
+NHL,How do I watch MLB games?,competitive_baseline,Perplexity,No,0,No,12,1
+NBA,How do I watch MLB games?,competitive_baseline,Gemini,No,0,No,0,1
+NFL,How do I watch MLB games?,competitive_baseline,Gemini,No,0,No,0,1
+MLB,How do I watch MLB games?,competitive_baseline,Gemini,Yes,1,Yes,0,1
+NHL,How do I watch MLB games?,competitive_baseline,Gemini,No,0,No,0,1
+NBA,How do I get tickets to MLB games?,competitive_baseline,ChatGPT,No,0,No,0,1
+NFL,How do I get tickets to MLB games?,competitive_baseline,ChatGPT,No,0,No,0,1
+MLB,How do I get tickets to MLB games?,competitive_baseline,ChatGPT,Yes,1,Yes,0,1
+NHL,How do I get tickets to MLB games?,competitive_baseline,ChatGPT,No,0,No,0,1
+NBA,How do I get tickets to MLB games?,competitive_baseline,Claude,No,0,No,26,1
+NFL,How do I get tickets to MLB games?,competitive_baseline,Claude,No,0,No,26,1
+MLB,How do I get tickets to MLB games?,competitive_baseline,Claude,Yes,1,Yes,26,1
+NHL,How do I get tickets to MLB games?,competitive_baseline,Claude,No,0,No,26,1
+NBA,How do I get tickets to MLB games?,competitive_baseline,Perplexity,No,0,No,12,1
+NFL,How do I get tickets to MLB games?,competitive_baseline,Perplexity,No,0,No,12,1
+MLB,How do I get tickets to MLB games?,competitive_baseline,Perplexity,Yes,1,Yes,12,1
+NHL,How do I get tickets to MLB games?,competitive_baseline,Perplexity,No,0,No,12,1
+NBA,How do I get tickets to MLB games?,competitive_baseline,Gemini,No,0,No,0,1
+NFL,How do I get tickets to MLB games?,competitive_baseline,Gemini,No,0,No,0,1
+MLB,How do I get tickets to MLB games?,competitive_baseline,Gemini,Yes,1,Yes,0,1
+NHL,How do I get tickets to MLB games?,competitive_baseline,Gemini,No,0,No,0,1
+NBA,How do I watch NHL games?,competitive_baseline,ChatGPT,No,0,No,0,1
+NFL,How do I watch NHL games?,competitive_baseline,ChatGPT,No,0,No,0,1
+MLB,How do I watch NHL games?,competitive_baseline,ChatGPT,No,0,No,0,1
+NHL,How do I watch NHL games?,competitive_baseline,ChatGPT,Yes,1,Yes,0,1
+NBA,How do I watch NHL games?,competitive_baseline,Claude,No,0,No,17,1
+NFL,How do I watch NHL games?,competitive_baseline,Claude,No,0,No,17,1
+MLB,How do I watch NHL games?,competitive_baseline,Claude,No,0,No,17,1
+NHL,How do I watch NHL games?,competitive_baseline,Claude,Yes,1,Yes,17,1
+NBA,How do I watch NHL games?,competitive_baseline,Perplexity,No,0,No,11,1
+NFL,How do I watch NHL games?,competitive_baseline,Perplexity,No,0,No,11,1
+MLB,How do I watch NHL games?,competitive_baseline,Perplexity,No,0,No,11,1
+NHL,How do I watch NHL games?,competitive_baseline,Perplexity,Yes,1,Yes,11,1
+NBA,How do I watch NHL games?,competitive_baseline,Gemini,No,0,No,0,1
+NFL,How do I watch NHL games?,competitive_baseline,Gemini,No,0,No,0,1
+MLB,How do I watch NHL games?,competitive_baseline,Gemini,No,0,No,0,1
+NHL,How do I watch NHL games?,competitive_baseline,Gemini,Yes,1,Yes,0,1
+NBA,How do I get tickets to NHL games?,competitive_baseline,ChatGPT,No,0,No,0,1
+NFL,How do I get tickets to NHL games?,competitive_baseline,ChatGPT,No,0,No,0,1
+MLB,How do I get tickets to NHL games?,competitive_baseline,ChatGPT,No,0,No,0,1
+NHL,How do I get tickets to NHL games?,competitive_baseline,ChatGPT,Yes,1,Yes,0,1
+NBA,How do I get tickets to NHL games?,competitive_baseline,Claude,No,0,No,16,1
+NFL,How do I get tickets to NHL games?,competitive_baseline,Claude,No,0,No,16,1
+MLB,How do I get tickets to NHL games?,competitive_baseline,Claude,No,0,No,16,1
+NHL,How do I get tickets to NHL games?,competitive_baseline,Claude,Yes,1,Yes,16,1
+NBA,How do I get tickets to NHL games?,competitive_baseline,Perplexity,No,0,No,13,1
+NFL,How do I get tickets to NHL games?,competitive_baseline,Perplexity,No,0,No,13,1
+MLB,How do I get tickets to NHL games?,competitive_baseline,Perplexity,No,0,No,13,1
+NHL,How do I get tickets to NHL games?,competitive_baseline,Perplexity,Yes,1,Yes,13,1
+NBA,How do I get tickets to NHL games?,competitive_baseline,Gemini,No,0,No,0,1
+NFL,How do I get tickets to NHL games?,competitive_baseline,Gemini,No,0,No,0,1
+MLB,How do I get tickets to NHL games?,competitive_baseline,Gemini,No,0,No,0,1
+NHL,How do I get tickets to NHL games?,competitive_baseline,Gemini,Yes,1,Yes,0,1

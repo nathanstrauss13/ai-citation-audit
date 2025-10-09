@@ -1,0 +1,61 @@
+query,engine,pickle_present,competitors_mentioned,position_prominence,source_quality,total_citations
+Tell me about Pickle Robot. Respond in English.,ChatGPT,Yes,None,first,high,6
+Tell me about Pickle Robot. Respond in English.,Claude,Yes,None,first,high,15
+Tell me about Pickle Robot. Respond in English.,Perplexity,Yes,None,first,high,3
+Tell me about Pickle Robot. Respond in English.,Gemini,Yes,None,first,high,7
+What is Pickle Robot known for? Respond in English.,ChatGPT,Yes,None,first,high,8
+What is Pickle Robot known for? Respond in English.,Claude,Yes,None,first,high,18
+What is Pickle Robot known for? Respond in English.,Perplexity,Yes,None,first,high,7
+What is Pickle Robot known for? Respond in English.,Gemini,Yes,None,first,high,7
+Pickle Robot vs Boston Dynamics vs Locus Robotics comparison. Respond in English.,ChatGPT,Yes,"Boston Dynamics, Locus Robotics",not_present,medium,0
+Pickle Robot vs Boston Dynamics vs Locus Robotics comparison. Respond in English.,Claude,Yes,"Boston Dynamics, Locus Robotics",first,high,28
+Pickle Robot vs Boston Dynamics vs Locus Robotics comparison. Respond in English.,Perplexity,Yes,"Boston Dynamics, Locus Robotics",first,high,8
+Pickle Robot vs Boston Dynamics vs Locus Robotics comparison. Respond in English.,Gemini,Yes,"Boston Dynamics, Locus Robotics",first,high,11
+How does Pickle Robot work and what makes it different? Respond in English.,ChatGPT,Yes,None,first,high,8
+How does Pickle Robot work and what makes it different? Respond in English.,Claude,Yes,None,first,high,9
+How does Pickle Robot work and what makes it different? Respond in English.,Perplexity,Yes,None,first,medium,9
+How does Pickle Robot work and what makes it different? Respond in English.,Gemini,Yes,None,first,high,8
+Please tell me about recent news from Pickle Robot. Respond in English.,ChatGPT,Yes,None,first,high,12
+Please tell me about recent news from Pickle Robot. Respond in English.,Claude,Yes,None,first,high,12
+Please tell me about recent news from Pickle Robot. Respond in English.,Perplexity,Yes,None,first,high,9
+Please tell me about recent news from Pickle Robot. Respond in English.,Gemini,Yes,None,first,high,7
+Best warehouse automation companies 2025. Respond in English.,ChatGPT,No,"Locus Robotics, Fetch Robotics",not_present,high,18
+Best warehouse automation companies 2025. Respond in English.,Claude,No,Berkshire Grey,not_present,high,20
+Best warehouse automation companies 2025. Respond in English.,Perplexity,No,None,not_present,medium,5
+Best warehouse automation companies 2025. Respond in English.,Gemini,No,"Boston Dynamics, Locus Robotics",not_present,high,21
+Leading automated truck unloading solutions. Respond in English.,ChatGPT,No,None,not_present,medium,0
+Leading automated truck unloading solutions. Respond in English.,Claude,No,Boston Dynamics,not_present,high,28
+Leading automated truck unloading solutions. Respond in English.,Perplexity,Yes,Boston Dynamics,first,medium,10
+Leading automated truck unloading solutions. Respond in English.,Gemini,No,None,not_present,medium,14
+Who are the leading automated material handling companies in US? Respond in English.,ChatGPT,No,None,not_present,high,17
+Who are the leading automated material handling companies in US? Respond in English.,Claude,No,"6 River Systems, Berkshire Grey",not_present,high,24
+Who are the leading automated material handling companies in US? Respond in English.,Perplexity,No,None,not_present,medium,9
+Who are the leading automated material handling companies in US? Respond in English.,Gemini,No,Locus Robotics,not_present,high,25
+AI-powered robotics for logistics and warehouses. Respond in English.,ChatGPT,No,None,not_present,medium,4
+AI-powered robotics for logistics and warehouses. Respond in English.,Claude,No,"Boston Dynamics, Fetch Robotics",not_present,high,32
+AI-powered robotics for logistics and warehouses. Respond in English.,Perplexity,No,None,not_present,medium,9
+AI-powered robotics for logistics and warehouses. Respond in English.,Gemini,No,"Boston Dynamics, Locus Robotics, Berkshire Grey",not_present,high,13
+Best warehouse robotics companies for unloading trucks. Respond in English.,ChatGPT,No,"Locus Robotics, Fetch Robotics",not_present,high,18
+Best warehouse robotics companies for unloading trucks. Respond in English.,Claude,No,"Boston Dynamics, Berkshire Grey",not_present,high,25
+Best warehouse robotics companies for unloading trucks. Respond in English.,Perplexity,Yes,None,first,medium,7
+Best warehouse robotics companies for unloading trucks. Respond in English.,Gemini,No,"Boston Dynamics, Berkshire Grey",not_present,high,10
+Automated material handling vs manual warehouse operations. Respond in English.,ChatGPT,No,None,not_present,medium,0
+Automated material handling vs manual warehouse operations. Respond in English.,Claude,No,None,not_present,high,35
+Automated material handling vs manual warehouse operations. Respond in English.,Perplexity,No,None,not_present,medium,9
+Automated material handling vs manual warehouse operations. Respond in English.,Gemini,No,Locus Robotics,not_present,medium,6
+Future of warehouse automation and robotics 2025. Respond in English.,ChatGPT,No,None,not_present,medium,0
+Future of warehouse automation and robotics 2025. Respond in English.,Claude,No,Berkshire Grey,not_present,high,32
+Future of warehouse automation and robotics 2025. Respond in English.,Perplexity,No,None,not_present,medium,9
+Future of warehouse automation and robotics 2025. Respond in English.,Gemini,No,Locus Robotics,not_present,high,20
+Recent funding rounds in warehouse robotics startups. Respond in English.,ChatGPT,No,None,not_present,high,14
+Recent funding rounds in warehouse robotics startups. Respond in English.,Claude,No,None,not_present,high,22
+Recent funding rounds in warehouse robotics startups. Respond in English.,Perplexity,No,None,not_present,high,7
+Recent funding rounds in warehouse robotics startups. Respond in English.,Gemini,No,Locus Robotics,not_present,high,16
+Which robotics companies raised Series A or B funding recently? Respond in English.,ChatGPT,No,None,not_present,high,12
+Which robotics companies raised Series A or B funding recently? Respond in English.,Claude,No,None,not_present,medium,0
+Which robotics companies raised Series A or B funding recently? Respond in English.,Perplexity,No,None,not_present,high,8
+Which robotics companies raised Series A or B funding recently? Respond in English.,Gemini,No,None,not_present,high,10
+Warehouse automation ROI and productivity improvements. Respond in English.,ChatGPT,No,None,not_present,high,18
+Warehouse automation ROI and productivity improvements. Respond in English.,Claude,No,None,not_present,medium,29
+Warehouse automation ROI and productivity improvements. Respond in English.,Perplexity,No,None,not_present,high,9
+Warehouse automation ROI and productivity improvements. Respond in English.,Gemini,No,Locus Robotics,not_present,medium,7

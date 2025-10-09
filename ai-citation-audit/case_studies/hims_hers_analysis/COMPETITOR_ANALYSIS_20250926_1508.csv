@@ -1,0 +1,61 @@
+query,engine,hims_hers_present,roman_present,lemonaid_present,keeps_present,curology_present,winner,citation_tone
+Best online doctor consultation platforms,ChatGPT,No,No,No,No,No,None,neutral
+Best online doctor consultation platforms,Claude,No,No,No,No,No,None,neutral
+Best online doctor consultation platforms,Perplexity,No,No,No,No,No,None,cautionary
+Best online doctor consultation platforms,Gemini,No,No,No,No,No,None,cautionary
+How to get prescription medication online,ChatGPT,No,No,Yes,No,No,Lemonaid,neutral
+How to get prescription medication online,Claude,No,Yes,No,No,No,Roman,negative
+How to get prescription medication online,Perplexity,No,No,No,No,No,None,neutral
+How to get prescription medication online,Gemini,Yes,Yes,No,No,No,Roman,neutral
+Hims vs Roman vs Lemonaid comparison,ChatGPT,Yes,Yes,Yes,No,No,Roman,neutral
+Hims vs Roman vs Lemonaid comparison,Claude,Yes,Yes,Yes,No,No,Roman,neutral
+Hims vs Roman vs Lemonaid comparison,Perplexity,Yes,Yes,Yes,No,No,Roman,neutral
+Hims vs Roman vs Lemonaid comparison,Gemini,Yes,Yes,Yes,No,No,Roman,neutral
+Telehealth for men's health issues,ChatGPT,Yes,Yes,No,No,No,Roman,positive
+Telehealth for men's health issues,Claude,Yes,Yes,No,No,No,Roman,neutral
+Telehealth for men's health issues,Perplexity,No,No,No,No,No,None,neutral
+Telehealth for men's health issues,Gemini,Yes,Yes,Yes,No,No,Roman,neutral
+Online therapy and mental health services,ChatGPT,No,No,No,No,No,None,neutral
+Online therapy and mental health services,Claude,No,No,No,No,No,None,neutral
+Online therapy and mental health services,Perplexity,No,No,No,No,No,None,neutral
+Online therapy and mental health services,Gemini,No,No,No,No,No,None,neutral
+How does Hims and Hers work?,ChatGPT,Yes,No,No,No,No,None,neutral
+How does Hims and Hers work?,Claude,Yes,No,No,No,No,None,neutral
+How does Hims and Hers work?,Perplexity,Yes,No,No,No,No,None,neutral
+How does Hims and Hers work?,Gemini,Yes,No,No,No,No,None,neutral
+Cost of telehealth consultations,ChatGPT,No,No,No,No,No,None,cautionary
+Cost of telehealth consultations,Claude,No,No,No,No,No,None,neutral
+Cost of telehealth consultations,Perplexity,No,No,No,No,No,None,cautionary
+Cost of telehealth consultations,Gemini,No,No,No,No,No,None,neutral
+Is online prescription medication safe?,ChatGPT,No,No,No,No,No,None,neutral
+Is online prescription medication safe?,Claude,No,Yes,No,No,No,Roman,neutral
+Is online prescription medication safe?,Perplexity,No,No,No,No,No,None,neutral
+Is online prescription medication safe?,Gemini,No,No,No,No,No,None,neutral
+Online treatment for hair loss,ChatGPT,Yes,No,No,Yes,No,Keeps,neutral
+Online treatment for hair loss,Claude,Yes,Yes,No,Yes,No,Roman,neutral
+Online treatment for hair loss,Perplexity,No,No,No,No,No,None,neutral
+Online treatment for hair loss,Gemini,Yes,Yes,No,Yes,No,Roman,neutral
+Telehealth for anxiety and depression,ChatGPT,No,No,No,No,No,None,neutral
+Telehealth for anxiety and depression,Claude,No,No,No,No,No,None,neutral
+Telehealth for anxiety and depression,Perplexity,No,No,No,No,No,None,neutral
+Telehealth for anxiety and depression,Gemini,No,No,No,No,No,None,neutral
+Online ED treatment options,ChatGPT,Yes,Yes,Yes,No,No,Roman,neutral
+Online ED treatment options,Claude,Yes,Yes,No,No,No,Roman,neutral
+Online ED treatment options,Perplexity,Yes,Yes,Yes,No,No,Roman,neutral
+Online ED treatment options,Gemini,Yes,Yes,Yes,No,No,Roman,neutral
+Birth control online prescription,ChatGPT,Yes,No,Yes,No,No,Lemonaid,neutral
+Birth control online prescription,Claude,No,No,No,No,No,None,neutral
+Birth control online prescription,Perplexity,No,No,No,No,No,None,neutral
+Birth control online prescription,Gemini,Yes,No,Yes,No,No,Lemonaid,neutral
+Hims and Hers reviews and ratings,ChatGPT,Yes,No,No,No,No,None,neutral
+Hims and Hers reviews and ratings,Claude,Yes,No,No,No,No,None,neutral
+Hims and Hers reviews and ratings,Perplexity,Yes,No,No,No,No,None,neutral
+Hims and Hers reviews and ratings,Gemini,Yes,No,No,No,No,None,neutral
+Who owns Hims and Hers?,ChatGPT,Yes,No,No,No,No,None,neutral
+Who owns Hims and Hers?,Claude,Yes,No,No,No,No,None,neutral
+Who owns Hims and Hers?,Perplexity,Yes,No,No,No,No,None,neutral
+Who owns Hims and Hers?,Gemini,Yes,No,No,No,No,None,neutral
+Hims and Hers vs traditional healthcare,ChatGPT,Yes,No,No,No,No,None,neutral
+Hims and Hers vs traditional healthcare,Claude,Yes,No,No,No,No,None,neutral
+Hims and Hers vs traditional healthcare,Perplexity,Yes,No,No,No,No,None,neutral
+Hims and Hers vs traditional healthcare,Gemini,Yes,No,No,No,No,None,neutral

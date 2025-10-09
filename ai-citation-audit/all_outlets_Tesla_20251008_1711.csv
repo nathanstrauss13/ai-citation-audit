@@ -1,0 +1,113 @@
+rank,outlet,category,pr_opportunity_score,total_citations,platforms_citing,platform_count,brand_mentions,competitor_mentions,recommended_count,is_pr_target,sample_context
+1,edmunds.com,OTHER,37.8,18,"Gemini, Claude, Perplexity, ChatGPT",4,18,"{""Rivian"": 3, ""Ford"": 12}",0,False,"**Tesla Model Y**: The Model Y is a popular choice for families due to its spacious interior, impressive range (up to 330 miles on a single charge), and advanced safety features. It also offers optional third-row seating, making it versatile for larger families ([Tesla](https://www"
+2,consumerreports.org,EDITORIAL_TIER2,31.5,10,"Gemini, Claude, ChatGPT",3,10,"{""Rivian"": 3, ""Ford"": 7}",0,False,"**Tesla Model Y**: The Model Y is a popular choice for families due to its spacious interior, impressive range (up to 330 miles on a single charge), and advanced safety features. It also offers optional third-row seating, making it versatile for larger families ([Tesla](https://www"
+3,caranddriver.com,OTHER,31.5,15,"Gemini, ChatGPT, Perplexity, Claude",4,15,"{""Ford"": 9}",0,False,"Here are some of the best electric vehicles for families in 2023-2024, based on expert reviews and ratings:
+
+Tesla Model Y
+- Most popular electric SUV globally
+- Range: 310-330 miles
+- Spacious interior with optional third row
+- Strong safety ratings and advanced driver assistance features
+[Source: "
+4,cars.usnews.com,EDITORIAL_TIER2,21.0,8,"Gemini, ChatGPT",2,8,"{""Rivian"": 2, ""Ford"": 4}",0,False,"**Tesla Model Y**: The Model Y is a popular choice for families due to its spacious interior, impressive range (up to 330 miles on a single charge), and advanced safety features. It also offers optional third-row seating, making it versatile for larger families ([Tesla](https://www"
+5,insideevs.com,OTHER,14.4,8,"Gemini, ChatGPT, Claude",3,8,"{""Ford"": 5}",0,False,"Here are some of the best electric vehicles for families in 2023-2024, based on expert reviews and ratings:
+
+Tesla Model Y
+- Most popular electric SUV globally
+- Range: 310-330 miles
+- Spacious interior with optional third row
+- Strong safety ratings and advanced driver assistance features
+[Source: "
+6,kbb.com,OTHER,10.8,6,"Gemini, Perplexity, Claude",3,6,"{""Ford"": 3}",0,False,"Here are some of the best electric vehicles for families in 2023-2024, based on expert reviews and ratings:
+
+Tesla Model Y
+- Most popular electric SUV globally
+- Range: 310-330 miles
+- Spacious interior with optional third row
+- Strong safety ratings and advanced driver assistance features
+[Source: "
+7,usnews.com,EDITORIAL_TIER2,10.5,4,"Gemini, ChatGPT",2,4,"{""Rivian"": 1, ""Ford"": 2}",0,False,"**Tesla Model Y**: The Model Y is a popular choice for families due to its spacious interior, impressive range (up to 330 miles on a single charge), and advanced safety features. It also offers optional third-row seating, making it versatile for larger families ([Tesla](https://www"
+8,electrek.co,OTHER,10.5,7,"Gemini, Claude",2,7,"{""Ford"": 1}",0,False,"Here are some of the best electric vehicles for families in 2023-2024, based on expert reviews and ratings:
+
+Tesla Model Y
+- Most popular electric SUV globally
+- Range: 310-330 miles
+- Spacious interior with optional third row
+- Strong safety ratings and advanced driver assistance features
+[Source: "
+9,tesla.com,OTHER,9.0,6,"Claude, ChatGPT",2,6,"{""Rivian"": 3, ""Ford"": 6}",0,False,"**Tesla Model Y**: The Model Y is a popular choice for families due to its spacious interior, impressive range (up to 330 miles on a single charge), and advanced safety features. It also offers optional third-row seating, making it versatile for larger families ([Tesla](https://www"
+10,iihs.org,OTHER,7.5,5,"Gemini, Claude",2,5,"{""Ford"": 2}",0,False,"Tesla Model Y:**
+
+*   **Pros:** Ample cargo space, available third-row seating (though somewhat cramped), long range, access to Tesla's Supercharger network, advanced technology features (Autopilot). *   **Citation:** Edmunds names the Tesla Model Y as a Top Rated EV"
+11,greencarreports.com,EDITORIAL_TIER2,6.3,3,ChatGPT,1,3,"{""Ford"": 3}",0,False,"**Tesla Model Y**  
+   The Tesla Model Y is a compact SUV that offers ample space for families with its optional third-row seating. It has a long range of up to 326 miles on a single charge and comes with advanced safety features and Tesla's Autopilot system"
+12,ford.com,OTHER,3.6,3,ChatGPT,1,3,"{""Rivian"": 3, ""Ford"": 3}",0,False,"**Tesla Model Y**: The Model Y is a popular choice for families due to its spacious interior, impressive range (up to 330 miles on a single charge), and advanced safety features. It also offers optional third-row seating, making it versatile for larger families ([Tesla](https://www"
+13,vw.com,OTHER,3.6,3,ChatGPT,1,3,"{""Rivian"": 3, ""Ford"": 3}",0,False,"**Tesla Model Y**: The Model Y is a popular choice for families due to its spacious interior, impressive range (up to 330 miles on a single charge), and advanced safety features. It also offers optional third-row seating, making it versatile for larger families ([Tesla](https://www"
+14,kia.com,OTHER,3.6,3,ChatGPT,1,3,"{""Rivian"": 3, ""Ford"": 3}",0,False,"**Tesla Model Y**: The Model Y is a popular choice for families due to its spacious interior, impressive range (up to 330 miles on a single charge), and advanced safety features. It also offers optional third-row seating, making it versatile for larger families ([Tesla](https://www"
+15,rivian.com,OTHER,3.6,3,ChatGPT,1,3,"{""Rivian"": 3, ""Ford"": 3}",0,False,"**Tesla Model Y**: The Model Y is a popular choice for families due to its spacious interior, impressive range (up to 330 miles on a single charge), and advanced safety features. It also offers optional third-row seating, making it versatile for larger families ([Tesla](https://www"
+16,hyundaiusa.com,OTHER,3.6,3,ChatGPT,1,3,"{""Rivian"": 3, ""Ford"": 3}",0,False,"**Tesla Model Y**: The Model Y is a popular choice for families due to its spacious interior, impressive range (up to 330 miles on a single charge), and advanced safety features. It also offers optional third-row seating, making it versatile for larger families ([Tesla](https://www"
+17,electricdrive.org,OTHER,3.6,3,ChatGPT,1,3,"{""Ford"": 3}",0,False,"**Tesla Model Y**  
+   The Tesla Model Y is a compact SUV that offers ample space for families with its optional third-row seating. It has a long range of up to 326 miles on a single charge and comes with advanced safety features and Tesla's Autopilot system"
+18,plugincars.com,OTHER,2.4,2,Claude,1,2,"{""Ford"": 2}",0,False,"Here are some of the best electric vehicles for families in 2023-2024, based on expert reviews and ratings:
+
+Tesla Model Y
+- Most popular electric SUV globally
+- Range: 310-330 miles
+- Spacious interior with optional third row
+- Strong safety ratings and advanced driver assistance features
+[Source: "
+19,fueleconomy.gov,INFORMATIONAL,2.4,4,Claude,1,4,"{""Ford"": 4}",0,False,"Here are some of the best electric vehicles for families in 2023-2024, based on expert reviews and ratings:
+
+Tesla Model Y
+- Most popular electric SUV globally
+- Range: 310-330 miles
+- Spacious interior with optional third row
+- Strong safety ratings and advanced driver assistance features
+[Source: "
+20,electriccarscheme.com,OTHER,2.4,2,Perplexity,1,2,"{""Ford"": 2}",0,False,"- **Ford Mustang Mach-E, Tesla Model Y, Polestar 2**: These are also frequently recommended for their blend of performance, tech, and practicality, though they may come at a higher price[7][9]"
+21,evpowered.co.uk,OTHER,2.4,2,Perplexity,1,2,"{""Ford"": 2}",0,False,"- **Ford Mustang Mach-E, Tesla Model Y, Polestar 2**: These are also frequently recommended for their blend of performance, tech, and practicality, though they may come at a higher price[7][9]"
+22,ev.com,OTHER,2.4,2,Perplexity,1,2,"{""Ford"": 2}",0,False,"- **Ford Mustang Mach-E, Tesla Model Y, Polestar 2**: These are also frequently recommended for their blend of performance, tech, and practicality, though they may come at a higher price[7][9]"
+23,topgear.com,OTHER,2.4,2,Perplexity,1,2,"{""Ford"": 2}",0,False,"- **Ford Mustang Mach-E, Tesla Model Y, Polestar 2**: These are also frequently recommended for their blend of performance, tech, and practicality, though they may come at a higher price[7][9]"
+24,youtube.com,SOCIAL_COMMUNITY,1.8,2,Perplexity,1,2,"{""Ford"": 2}",0,False,"- **Ford Mustang Mach-E, Tesla Model Y, Polestar 2**: These are also frequently recommended for their blend of performance, tech, and practicality, though they may come at a higher price[7][9]"
+25,nhtsa.gov,INFORMATIONAL,1.8,3,Gemini,1,3,{},0,False,"Tesla Model Y:**
+
+*   **Pros:** Ample cargo space, available third-row seating (though somewhat cramped), long range, access to Tesla's Supercharger network, advanced technology features (Autopilot). *   **Citation:** Edmunds names the Tesla Model Y as a Top Rated EV"
+26,www,OTHER,1.8,1,Gemini,1,1,{},1,False,
+27,electricdrive,OTHER,1.8,1,ChatGPT,1,1,{},1,False,
+28,electrek,OTHER,1.8,1,Gemini,1,1,{},1,False,
+29,epa.gov,INFORMATIONAL,1.2,2,Claude,1,2,"{""Ford"": 2}",0,False,"Here are some of the best electric vehicles for families in 2023-2024, based on expert reviews and ratings:
+
+Tesla Model Y
+- Most popular electric SUV globally
+- Range: 310-330 miles
+- Spacious interior with optional third row
+- Strong safety ratings and advanced driver assistance features
+[Source: "
+30,motortrend.com,OTHER,1.2,1,Perplexity,1,1,"{""Ford"": 1}",0,False,"- **Ford Mustang Mach-E, Tesla Model Y, Polestar 2**: These are also frequently recommended for their blend of performance, tech, and practicality, though they may come at a higher price[7][9]"
+31,carwow.co.uk,OTHER,1.2,1,Perplexity,1,1,"{""Ford"": 1}",0,False,"- **Ford Mustang Mach-E, Tesla Model Y, Polestar 2**: These are also frequently recommended for their blend of performance, tech, and practicality, though they may come at a higher price[7][9]"
+32,hendrickcars.com,OTHER,1.2,1,Perplexity,1,1,"{""Ford"": 1}",0,False,"- **Ford Mustang Mach-E, Tesla Model Y, Polestar 2**: These are also frequently recommended for their blend of performance, tech, and practicality, though they may come at a higher price[7][9]"
+33,evfinder.com,OTHER,1.2,1,Claude,1,1,"{""Ford"": 1}",0,False,"Tesla Model Y
+- Mid-size SUV with seating for up to 7
+- Range: 330 miles
+- Excellent safety ratings
+- Starting price: $47,490
+(Source: Tesla. tesla"
+34,plugshare.com,OTHER,1.2,1,Claude,1,1,"{""Ford"": 1}",0,False,"Tesla Model Y
+- Mid-size SUV with seating for up to 7
+- Range: 330 miles
+- Excellent safety ratings
+- Starting price: $47,490
+(Source: Tesla. tesla"
+35,electricvehiclecouncil.com,OTHER,1.2,1,Claude,1,1,"{""Ford"": 1}",0,False,"Tesla Model Y
+- Mid-size SUV with seating for up to 7
+- Range: 330 miles
+- Excellent safety ratings
+- Starting price: $47,490
+(Source: Tesla. tesla"
+36,whatcar.com,OTHER,1.2,1,Perplexity,1,1,"{""Ford"": 1}",0,False,"The top electric vehicles suitable for family use in 2025 are the **Kia EV9**, **Hyundai Ioniq 9**, **Skoda Elroq**, **Kia EV3**, **Tesla Model Y**, **Volvo EX90**, **Skoda Enyaq iV**, and **Kia e-Niro**[2][3][4][6][9]. - **Tesla Model Y**: Known for its advanced entertainment system, strong safety "
+37,afdc.energy.gov,INFORMATIONAL,1.2,2,Gemini,1,2,{},0,False,"Tesla Model Y:**
+
+*   **Why it's great for families:** The Model Y offers a good balance of range, performance, and cargo space. It has seating for up to seven (with the optional third row), a large rear hatch, and access to Tesla's Supercharger network"
+38,energy.gov,INFORMATIONAL,0.6,1,Gemini,1,1,{},0,False,"Tesla Model Y:**
+
+*   **Why it's great for families:** The Model Y offers a good balance of range, performance, and cargo space. It has seating for up to seven (with the optional third row), a large rear hatch, and access to Tesla's Supercharger network"

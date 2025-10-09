@@ -1,0 +1,99 @@
+query,query_type,category,commercial_intent,engine,john_hardy_mentioned,competitors_mentioned,featured_brand,john_hardy_prominence,total_citations,john_hardy_citations,competitor_citations,owned_media_citations,earned_media_citations
+What is John Hardy jewelry known for?,branded,brand_awareness,brand_knowledge,ChatGPT,Yes,,John Hardy,Featured_First,4,4,0,1,3
+What is John Hardy jewelry known for?,branded,brand_awareness,brand_knowledge,Claude,Yes,,John Hardy,Featured_First,0,0,0,0,0
+What is John Hardy jewelry known for?,branded,brand_awareness,brand_knowledge,Perplexity,Yes,,John Hardy,Featured_First,16,16,0,1,15
+What is John Hardy jewelry known for?,branded,brand_awareness,brand_knowledge,Gemini,Yes,,John Hardy,Featured_First,3,3,0,2,1
+Is John Hardy jewelry worth the investment?,branded,brand_awareness,value_assessment,ChatGPT,Yes,,John Hardy,Featured_First,3,3,0,1,2
+Is John Hardy jewelry worth the investment?,branded,brand_awareness,value_assessment,Claude,Yes,,John Hardy,Featured_First,0,0,0,0,0
+Is John Hardy jewelry worth the investment?,branded,brand_awareness,value_assessment,Perplexity,Yes,"Cartier, Tiffany & Co",John Hardy,Featured_First,12,11,0,1,10
+Is John Hardy jewelry worth the investment?,branded,brand_awareness,value_assessment,Gemini,Yes,Cartier,John Hardy,Featured_First,4,3,0,2,1
+Where to buy John Hardy jewelry?,branded,brand_awareness,purchase_intent,ChatGPT,Yes,,John Hardy,Featured_First,18,2,0,2,0
+Where to buy John Hardy jewelry?,branded,brand_awareness,purchase_intent,Claude,Yes,,John Hardy,Featured_First,0,0,0,0,0
+Where to buy John Hardy jewelry?,branded,brand_awareness,purchase_intent,Perplexity,Yes,,John Hardy,Featured_First,14,14,0,6,8
+Where to buy John Hardy jewelry?,branded,brand_awareness,purchase_intent,Gemini,Yes,,John Hardy,Featured_First,7,7,0,2,5
+John Hardy jewelry review,branded,brand_awareness,research,ChatGPT,Yes,,John Hardy,Featured_First,4,4,0,1,3
+John Hardy jewelry review,branded,brand_awareness,research,Claude,Yes,,John Hardy,Featured_First,0,0,0,0,0
+John Hardy jewelry review,branded,brand_awareness,research,Perplexity,Yes,,John Hardy,Featured_First,14,13,0,2,11
+John Hardy jewelry review,branded,brand_awareness,research,Gemini,Yes,,John Hardy,Featured_First,1,0,0,0,0
+Most sustainable luxury jewelry brands,brand_agnostic,sustainability,discovery,ChatGPT,No,"Chopard, Tiffany & Co, Cartier",Chopard,Not_Present,14,0,6,0,0
+Most sustainable luxury jewelry brands,brand_agnostic,sustainability,discovery,Claude,No,"Mejuri, Catbird, Brilliant Earth, Vrai, Aurate, Chopard",Brilliant Earth,Not_Present,8,0,6,0,0
+Most sustainable luxury jewelry brands,brand_agnostic,sustainability,discovery,Perplexity,No,"Aurate, Cartier",Aurate,Not_Present,11,0,0,0,0
+Most sustainable luxury jewelry brands,brand_agnostic,sustainability,discovery,Gemini,No,"Vrai, Chopard",Chopard,Not_Present,6,0,2,0,0
+Ethical jewelry brands that use recycled materials,brand_agnostic,sustainability,research,ChatGPT,No,"Mejuri, Catbird, Brilliant Earth, Vrai, Aurate",Brilliant Earth,Not_Present,16,0,10,0,0
+Ethical jewelry brands that use recycled materials,brand_agnostic,sustainability,research,Claude,No,"Catbird, Brilliant Earth, Bario Neal, Aurate",Brilliant Earth,Not_Present,8,0,4,0,0
+Ethical jewelry brands that use recycled materials,brand_agnostic,sustainability,research,Perplexity,No,"Mejuri, Catbird",Catbird,Not_Present,12,0,0,0,0
+Ethical jewelry brands that use recycled materials,brand_agnostic,sustainability,research,Gemini,No,"Mejuri, Catbird, Vrai, Bario Neal, Aurate",Mejuri,Not_Present,8,0,5,0,0
+Which jewelry companies are truly sustainable?,brand_agnostic,sustainability,verification,ChatGPT,No,"Brilliant Earth, Vrai, Tiffany & Co, Pandora, Chopard",Chopard,Not_Present,14,0,10,0,0
+Which jewelry companies are truly sustainable?,brand_agnostic,sustainability,verification,Claude,No,"Mejuri, Brilliant Earth, Vrai, Aurate",Brilliant Earth,Not_Present,4,0,4,0,0
+Which jewelry companies are truly sustainable?,brand_agnostic,sustainability,verification,Perplexity,No,"Mejuri, Catbird, Brilliant Earth, Aurate, Pandora",Pandora,Not_Present,14,0,1,0,0
+Which jewelry companies are truly sustainable?,brand_agnostic,sustainability,verification,Gemini,No,"Brilliant Earth, Vrai, Aurate, Chopard",Brilliant Earth,Not_Present,10,0,5,0,0
+Best eco-friendly luxury jewelry,brand_agnostic,sustainability,purchase_intent,ChatGPT,No,"Chopard, Vrai, Tiffany & Co, Cartier",Chopard,Not_Present,7,0,4,0,0
+Best eco-friendly luxury jewelry,brand_agnostic,sustainability,purchase_intent,Claude,No,"Brilliant Earth, Vrai, Aurate, Chopard",Brilliant Earth,Not_Present,5,0,4,0,0
+Best eco-friendly luxury jewelry,brand_agnostic,sustainability,purchase_intent,Perplexity,No,"Bario Neal, Catbird, Vrai, Cartier",Vrai,Not_Present,10,0,1,0,0
+Best eco-friendly luxury jewelry,brand_agnostic,sustainability,purchase_intent,Gemini,No,"Vrai, Aurate",Aurate,Not_Present,14,0,4,0,0
+Sustainable engagement ring brands,brand_agnostic,sustainability,purchase_intent,ChatGPT,No,"Mejuri, Catbird, Brilliant Earth, Vrai",Brilliant Earth,Not_Present,14,0,8,0,0
+Sustainable engagement ring brands,brand_agnostic,sustainability,purchase_intent,Claude,No,"Catbird, Brilliant Earth, Vrai",Brilliant Earth,Not_Present,8,0,3,0,0
+Sustainable engagement ring brands,brand_agnostic,sustainability,purchase_intent,Perplexity,No,Brilliant Earth,Brilliant Earth,Not_Present,10,0,3,0,0
+Sustainable engagement ring brands,brand_agnostic,sustainability,purchase_intent,Gemini,No,"Brilliant Earth, Vrai, Aurate",Brilliant Earth,Not_Present,8,0,3,0,0
+Jewelry brands with best environmental practices,brand_agnostic,sustainability,research,ChatGPT,No,"Pandora, Chopard, Tiffany & Co, Cartier",Chopard,Not_Present,6,0,4,0,0
+Jewelry brands with best environmental practices,brand_agnostic,sustainability,research,Claude,No,"Mejuri, Brilliant Earth, Vrai, Aurate, Pandora",Brilliant Earth,Not_Present,5,0,5,0,0
+Jewelry brands with best environmental practices,brand_agnostic,sustainability,research,Perplexity,No,"Mejuri, Catbird",Catbird,Not_Present,14,0,1,0,0
+Jewelry brands with best environmental practices,brand_agnostic,sustainability,research,Gemini,No,"Brilliant Earth, Bario Neal",Bario Neal,Not_Present,8,0,2,0,0
+Best lab-grown diamond jewelry brands,brand_agnostic,lab_grown,discovery,ChatGPT,No,"Brilliant Earth, Vrai",Brilliant Earth,Not_Present,14,0,4,0,0
+Best lab-grown diamond jewelry brands,brand_agnostic,lab_grown,discovery,Claude,No,"Mejuri, Brilliant Earth, Vrai",Brilliant Earth,Not_Present,0,0,0,0,0
+Best lab-grown diamond jewelry brands,brand_agnostic,lab_grown,discovery,Gemini,No,"Brilliant Earth, Vrai",Vrai,Not_Present,6,0,2,0,0
+Luxury brands that offer lab-grown diamonds,brand_agnostic,lab_grown,research,ChatGPT,No,"Pandora, Vrai, Tiffany & Co, Chopard",Tiffany & Co,Not_Present,12,0,8,0,0
+Luxury brands that offer lab-grown diamonds,brand_agnostic,lab_grown,research,Claude,No,"Pandora, Brilliant Earth, Vrai",Pandora,Not_Present,0,0,0,0,0
+Luxury brands that offer lab-grown diamonds,brand_agnostic,lab_grown,research,Perplexity,No,"Pandora, Brilliant Earth, Vrai",Brilliant Earth,Not_Present,13,0,1,0,0
+Luxury brands that offer lab-grown diamonds,brand_agnostic,lab_grown,research,Gemini,No,"Pandora, Vrai",Pandora,Not_Present,6,0,2,0,0
+Where to buy lab-grown diamond jewelry?,brand_agnostic,lab_grown,purchase_intent,ChatGPT,No,"Brilliant Earth, Vrai",Brilliant Earth,Not_Present,14,0,4,0,0
+Where to buy lab-grown diamond jewelry?,brand_agnostic,lab_grown,purchase_intent,Claude,No,"Brilliant Earth, Vrai",Brilliant Earth,Not_Present,0,0,0,0,0
+Where to buy lab-grown diamond jewelry?,brand_agnostic,lab_grown,purchase_intent,Perplexity,No,"Brilliant Earth, Vrai",Brilliant Earth,Not_Present,12,0,1,0,0
+Where to buy lab-grown diamond jewelry?,brand_agnostic,lab_grown,purchase_intent,Gemini,No,"Brilliant Earth, Vrai",Vrai,Not_Present,8,0,2,0,0
+Lab-grown diamond engagement rings best brands,brand_agnostic,lab_grown,purchase_intent,Claude,No,"Brilliant Earth, Vrai",Brilliant Earth,Not_Present,0,0,0,0,0
+Lab-grown diamond engagement rings best brands,brand_agnostic,lab_grown,purchase_intent,Perplexity,No,"Brilliant Earth, Vrai",Brilliant Earth,Not_Present,9,0,0,0,0
+Lab-grown diamond engagement rings best brands,brand_agnostic,lab_grown,purchase_intent,Gemini,No,"Brilliant Earth, Vrai",Brilliant Earth,Not_Present,6,0,2,0,0
+John Hardy vs Tiffany & Co sustainability,competitive,competitive,comparison,ChatGPT,Yes,Tiffany & Co,John Hardy,Featured_First,3,1,2,1,0
+John Hardy vs Tiffany & Co sustainability,competitive,competitive,comparison,Claude,Yes,Tiffany & Co,John Hardy,Featured_First,0,0,0,0,0
+John Hardy vs Tiffany & Co sustainability,competitive,competitive,comparison,Perplexity,Yes,Tiffany & Co,John Hardy,Featured_First,16,14,0,3,11
+John Hardy vs Tiffany & Co sustainability,competitive,competitive,comparison,Gemini,Yes,Tiffany & Co,John Hardy,Featured_First,6,2,1,2,0
+David Yurman vs John Hardy craftsmanship,competitive,competitive,comparison,ChatGPT,Yes,David Yurman,David Yurman,Mentioned_After,2,1,1,1,0
+David Yurman vs John Hardy craftsmanship,competitive,competitive,comparison,Claude,Yes,David Yurman,David Yurman,Mentioned_After,0,0,0,0,0
+David Yurman vs John Hardy craftsmanship,competitive,competitive,comparison,Perplexity,Yes,David Yurman,David Yurman,Mentioned_After,16,5,9,1,4
+David Yurman vs John Hardy craftsmanship,competitive,competitive,comparison,Gemini,Yes,David Yurman,David Yurman,Mentioned_After,4,2,2,2,0
+John Hardy vs Brilliant Earth sustainability,competitive,competitive,comparison,ChatGPT,Yes,Brilliant Earth,John Hardy,Featured_First,4,2,2,2,0
+John Hardy vs Brilliant Earth sustainability,competitive,competitive,comparison,Claude,Yes,Brilliant Earth,John Hardy,Featured_First,0,0,0,0,0
+John Hardy vs Brilliant Earth sustainability,competitive,competitive,comparison,Perplexity,Yes,Brilliant Earth,John Hardy,Featured_First,17,11,5,4,7
+John Hardy vs Brilliant Earth sustainability,competitive,competitive,comparison,Gemini,Yes,Brilliant Earth,John Hardy,Featured_First,5,2,3,2,0
+Best alternative to Tiffany jewelry,competitive,competitive,discovery,ChatGPT,No,"Chopard, Tiffany & Co, Cartier",Tiffany & Co,Not_Present,14,0,4,0,0
+Best alternative to Tiffany jewelry,competitive,competitive,discovery,Claude,No,"Mejuri, Brilliant Earth, Tiffany & Co, Cartier, David Yurman",Tiffany & Co,Not_Present,0,0,0,0,0
+Best alternative to Tiffany jewelry,competitive,competitive,discovery,Perplexity,No,"Catbird, Tiffany & Co, Vrai, Aurate",Tiffany & Co,Not_Present,7,0,3,0,0
+Best alternative to Tiffany jewelry,competitive,competitive,discovery,Gemini,No,"Mejuri, Brilliant Earth, Vrai, Tiffany & Co, Cartier, David Yurman, Pandora",Tiffany & Co,Not_Present,10,0,6,0,0
+Jewelry industry sustainability leaders,brand_agnostic,thought_leadership,research,ChatGPT,No,"Pandora, Brilliant Earth, Tiffany & Co, Chopard",Chopard,Not_Present,7,0,4,0,0
+Jewelry industry sustainability leaders,brand_agnostic,thought_leadership,research,Claude,No,"Pandora, Tiffany & Co, Chopard",Tiffany & Co,Not_Present,0,0,0,0,0
+Jewelry industry sustainability leaders,brand_agnostic,thought_leadership,research,Perplexity,No,"Mejuri, Catbird",Catbird,Not_Present,15,0,0,0,0
+Jewelry industry sustainability leaders,brand_agnostic,thought_leadership,research,Gemini,No,"Pandora, Brilliant Earth, Tiffany & Co, Chopard",Brilliant Earth,Not_Present,10,0,4,0,0
+Most ethical luxury jewelry designers,brand_agnostic,thought_leadership,research,ChatGPT,No,"Brilliant Earth, Tiffany & Co, Chopard",Chopard,Not_Present,14,0,6,0,0
+Most ethical luxury jewelry designers,brand_agnostic,thought_leadership,research,Claude,No,"Mejuri, Brilliant Earth, Vrai, Bario Neal, Chopard",Brilliant Earth,Not_Present,6,0,5,0,0
+Most ethical luxury jewelry designers,brand_agnostic,thought_leadership,research,Perplexity,No,Brilliant Earth,Brilliant Earth,Not_Present,12,0,1,0,0
+Most ethical luxury jewelry designers,brand_agnostic,thought_leadership,research,Gemini,No,"Brilliant Earth, Chopard",Chopard,Not_Present,11,0,5,0,0
+Jewelry brands leading in craftsmanship,brand_agnostic,thought_leadership,research,ChatGPT,No,"Chopard, Tiffany & Co, Cartier",Cartier,Not_Present,14,0,6,0,0
+Jewelry brands leading in craftsmanship,brand_agnostic,thought_leadership,research,Claude,No,"Tiffany & Co, Cartier",Cartier,Not_Present,0,0,0,0,0
+Jewelry brands leading in craftsmanship,brand_agnostic,thought_leadership,research,Perplexity,No,"Tiffany & Co, Cartier",Cartier,Not_Present,14,0,0,0,0
+Jewelry brands leading in craftsmanship,brand_agnostic,thought_leadership,research,Gemini,No,Cartier,Cartier,Not_Present,0,0,0,0,0
+Best artisan jewelry brands,brand_agnostic,product_specific,discovery,ChatGPT,No,"Mejuri, Catbird, Bario Neal, Aurate",Mejuri,Not_Present,20,0,8,0,0
+Best artisan jewelry brands,brand_agnostic,product_specific,discovery,Claude,No,"Mejuri, Catbird",Mejuri,Not_Present,0,0,0,0,0
+Best artisan jewelry brands,brand_agnostic,product_specific,discovery,Perplexity,No,"Catbird, Tiffany & Co, Cartier",Catbird,Not_Present,12,0,0,0,0
+Best artisan jewelry brands,brand_agnostic,product_specific,discovery,Gemini,No,"Mejuri, Aurate",Aurate,Not_Present,13,0,2,0,0
+Handcrafted luxury jewelry brands,brand_agnostic,product_specific,discovery,ChatGPT,No,"Chopard, Tiffany & Co, Cartier",Cartier,Not_Present,20,0,6,0,0
+Handcrafted luxury jewelry brands,brand_agnostic,product_specific,discovery,Claude,Yes,"David Yurman, Cartier, Chopard",Cartier,Mentioned_After,0,0,0,0,0
+Handcrafted luxury jewelry brands,brand_agnostic,product_specific,discovery,Perplexity,No,"Chopard, Tiffany & Co, Cartier",Cartier,Not_Present,12,1,1,1,0
+Handcrafted luxury jewelry brands,brand_agnostic,product_specific,discovery,Gemini,No,,None,Not_Present,15,0,0,0,0
+Best jewelry for meaningful gifts,brand_agnostic,product_specific,purchase_intent,ChatGPT,No,"Pandora, Tiffany & Co",Pandora,Not_Present,5,0,2,0,0
+Best jewelry for meaningful gifts,brand_agnostic,product_specific,purchase_intent,Claude,No,,None,Not_Present,0,0,0,0,0
+Best jewelry for meaningful gifts,brand_agnostic,product_specific,purchase_intent,Perplexity,No,,None,Not_Present,11,0,2,0,0
+Best jewelry for meaningful gifts,brand_agnostic,product_specific,purchase_intent,Gemini,No,"Mejuri, Catbird, Brilliant Earth",Mejuri,Not_Present,0,0,0,0,0
+Luxury jewelry with cultural heritage,brand_agnostic,product_specific,research,ChatGPT,No,"Chopard, Cartier",Cartier,Not_Present,5,0,2,0,0
+Luxury jewelry with cultural heritage,brand_agnostic,product_specific,research,Claude,No,Cartier,Cartier,Not_Present,0,0,0,0,0
+Luxury jewelry with cultural heritage,brand_agnostic,product_specific,research,Perplexity,No,,None,Not_Present,18,0,0,0,0
+Luxury jewelry with cultural heritage,brand_agnostic,product_specific,research,Gemini,No,,None,Not_Present,5,0,0,0,0

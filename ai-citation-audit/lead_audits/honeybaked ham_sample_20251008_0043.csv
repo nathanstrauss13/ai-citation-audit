@@ -1,0 +1,21 @@
+query,platform,brand_mentioned,competitors_mentioned,position
+What's the best ham to buy for thanksgiving?,ChatGPT,Yes,,First
+What's the best ham to buy for thanksgiving?,Claude,No,,Not Mentioned
+What's the best ham to buy for thanksgiving?,Perplexity,Yes,costco,Later
+What's the best ham to buy for thanksgiving?,Gemini,No,,Not Mentioned
+Who are the top brands like honeybaked ham?,ChatGPT,Yes,,First
+Who are the top brands like honeybaked ham?,Claude,Yes,,First
+Who are the top brands like honeybaked ham?,Perplexity,Yes,costco,First
+Who are the top brands like honeybaked ham?,Gemini,Yes,"kroger, costco",First
+Compare honeybaked ham and kroger,ChatGPT,Yes,kroger,First
+Compare honeybaked ham and kroger,Claude,Yes,kroger,First
+Compare honeybaked ham and kroger,Perplexity,Yes,kroger,First
+Compare honeybaked ham and kroger,Gemini,Yes,kroger,First
+Best products,ChatGPT,No,,Not Mentioned
+Best products,Claude,No,,Not Mentioned
+Best products,Perplexity,No,,Not Mentioned
+Best products,Gemini,No,,Not Mentioned
+Where to buy honeybaked ham?,ChatGPT,No,,Not Mentioned
+Where to buy honeybaked ham?,Claude,Yes,costco,First
+Where to buy honeybaked ham?,Perplexity,Yes,kroger,First
+Where to buy honeybaked ham?,Gemini,Yes,,First

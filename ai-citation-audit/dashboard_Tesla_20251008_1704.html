@@ -1,0 +1,650 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla - AI Citation Audit Report</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { opacity: 0.9; font-size: 1.1rem; }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .metric-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid #667eea;
+        }
+        .metric-label {
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .metric-value {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background: #f8f9fa;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #dee2e6;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #dee2e6;
+            vertical-align: top;
+        }
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .badge-editorial { background: #28a745; color: white; }
+        .badge-social { background: #17a2b8; color: white; }
+        .badge-info { background: #ffc107; color: #333; }
+        .badge-ecommerce { background: #6c757d; color: white; }
+        .badge-pr { background: #dc3545; color: white; }
+        .badge-other { background: #868e96; color: white; }
+        
+        .score {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1.1rem;
+        }
+        
+        .high-priority {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 20px;
+        }
+        
+        .methodology {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 30px;
+        }
+
+        .split-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .small-note {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 8px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Tesla AI Citation Audit</h1>
+            <div class="subtitle">Enhanced PR-Focused Analysis • October 08, 2025</div>
+        </div>
+        
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-label">Brand Mention Rate</div>
+                <div class="metric-value">100.0%</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Total Queries</div>
+                <div class="metric-value">2</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Platforms Tested</div>
+                <div class="metric-value">4</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Outlets Identified</div>
+                <div class="metric-value">38</div>
+            </div>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-label">Editorial Outlets</div>
+                <div class="metric-value">4</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">PR Targets Identified</div>
+                <div class="metric-value">0</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Completion Rate</div>
+                <div class="metric-value">100.0%</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Active Platforms</div>
+                <div class="metric-value">ChatGPT, Claude, Gemini, Perplexity</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🎯 Top PR Targets (Editorial Outlets Without Brand Coverage)</h2>
+
+            <div class="small-note">No editorial PR gaps detected in this run. All high-value editorial outlets that appeared also mentioned the brand.</div>
+
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🧭 Platform Breakdown</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Responses</th>
+                        <th>Brand Mention Rate</th>
+                        <th>Unique Outlets</th>
+                        <th>Total Links Extracted</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><strong>ChatGPT</strong></td>
+                        <td>2</td>
+                        <td>100.0%</td>
+                        <td>14</td>
+                        <td>45</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Claude</strong></td>
+                        <td>2</td>
+                        <td>100.0%</td>
+                        <td>14</td>
+                        <td>31</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Gemini</strong></td>
+                        <td>2</td>
+                        <td>100.0%</td>
+                        <td>12</td>
+                        <td>42</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Perplexity</strong></td>
+                        <td>2</td>
+                        <td>100.0%</td>
+                        <td>12</td>
+                        <td>21</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🏆 Top Outlets Overall</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Outlet</th>
+                        <th>Category</th>
+                        <th>PR Score</th>
+                        <th>Citations</th>
+                        <th>Platforms</th>
+                        <th>Brand Mentions</th>
+                        <th>Recommended</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td><strong>edmunds.com</strong></td>
+                        <td><span class="badge badge-other">OTHER</span></td>
+                        <td><span class="score">37.8</span></td>
+                        <td>18</td>
+                        <td>Gemini, Claude, Perplexity, ChatGPT</td>
+                        <td>18</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td><strong>consumerreports.org</strong></td>
+                        <td><span class="badge badge-editorial">EDITORIAL TIER2</span></td>
+                        <td><span class="score">31.5</span></td>
+                        <td>10</td>
+                        <td>Gemini, Claude, ChatGPT</td>
+                        <td>10</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><strong>caranddriver.com</strong></td>
+                        <td><span class="badge badge-other">OTHER</span></td>
+                        <td><span class="score">31.5</span></td>
+                        <td>15</td>
+                        <td>Gemini, ChatGPT, Perplexity, Claude</td>
+                        <td>15</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td><strong>cars.usnews.com</strong></td>
+                        <td><span class="badge badge-editorial">EDITORIAL TIER2</span></td>
+                        <td><span class="score">21.0</span></td>
+                        <td>8</td>
+                        <td>Gemini, ChatGPT</td>
+                        <td>8</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td><strong>insideevs.com</strong></td>
+                        <td><span class="badge badge-other">OTHER</span></td>
+                        <td><span class="score">14.4</span></td>
+                        <td>8</td>
+                        <td>Gemini, ChatGPT, Claude</td>
+                        <td>8</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td><strong>kbb.com</strong></td>
+                        <td><span class="badge badge-other">OTHER</span></td>
+                        <td><span class="score">10.8</span></td>
+                        <td>6</td>
+                        <td>Gemini, Perplexity, Claude</td>
+                        <td>6</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td><strong>usnews.com</strong></td>
+                        <td><span class="badge badge-editorial">EDITORIAL TIER2</span></td>
+                        <td><span class="score">10.5</span></td>
+                        <td>4</td>
+                        <td>Gemini, ChatGPT</td>
+                        <td>4</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td><strong>electrek.co</strong></td>
+                        <td><span class="badge badge-other">OTHER</span></td>
+                        <td><span class="score">10.5</span></td>
+                        <td>7</td>
+                        <td>Gemini, Claude</td>
+                        <td>7</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td><strong>tesla.com</strong></td>
+                        <td><span class="badge badge-other">OTHER</span></td>
+                        <td><span class="score">9.0</span></td>
+                        <td>6</td>
+                        <td>Claude, ChatGPT</td>
+                        <td>6</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td><strong>iihs.org</strong></td>
+                        <td><span class="badge badge-other">OTHER</span></td>
+                        <td><span class="score">7.5</span></td>
+                        <td>5</td>
+                        <td>Gemini, Claude</td>
+                        <td>5</td>
+                        <td>-</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📚 Top Outlets by Type</h2>
+            <div class="split-grid">
+
+                <div>
+                    <h3 style="margin-bottom: 12px;">Editorial</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Outlet</th>
+                                <th>PR Score</th>
+                                <th>Citations</th>
+                                <th>Platforms</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td><strong>consumerreports.org</strong></td>
+                                <td><span class="score">31.5</span></td>
+                                <td>10</td>
+                                <td>Gemini, Claude, ChatGPT</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>cars.usnews.com</strong></td>
+                                <td><span class="score">21.0</span></td>
+                                <td>8</td>
+                                <td>Gemini, ChatGPT</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>usnews.com</strong></td>
+                                <td><span class="score">10.5</span></td>
+                                <td>4</td>
+                                <td>Gemini, ChatGPT</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>greencarreports.com</strong></td>
+                                <td><span class="score">6.3</span></td>
+                                <td>3</td>
+                                <td>ChatGPT</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <h3 style="margin-bottom: 12px;">Social/Community</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Outlet</th>
+                                <th>PR Score</th>
+                                <th>Citations</th>
+                                <th>Platforms</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td><strong>youtube.com</strong></td>
+                                <td><span class="score">1.8</span></td>
+                                <td>2</td>
+                                <td>Perplexity</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <h3 style="margin-bottom: 12px;">Informational</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Outlet</th>
+                                <th>PR Score</th>
+                                <th>Citations</th>
+                                <th>Platforms</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td><strong>fueleconomy.gov</strong></td>
+                                <td><span class="score">2.4</span></td>
+                                <td>4</td>
+                                <td>Claude</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>nhtsa.gov</strong></td>
+                                <td><span class="score">1.8</span></td>
+                                <td>3</td>
+                                <td>Gemini</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>epa.gov</strong></td>
+                                <td><span class="score">1.2</span></td>
+                                <td>2</td>
+                                <td>Claude</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>afdc.energy.gov</strong></td>
+                                <td><span class="score">1.2</span></td>
+                                <td>2</td>
+                                <td>Gemini</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>energy.gov</strong></td>
+                                <td><span class="score">0.6</span></td>
+                                <td>1</td>
+                                <td>Gemini</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📊 Outlets by Category</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Count</th>
+                        <th>Top Outlets</th>
+                        <th>Avg PR Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><span class="badge badge-other">OTHER</span></td>
+                        <td>28</td>
+                        <td>edmunds.com, caranddriver.com, insideevs.com</td>
+                        <td>6.0</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="badge badge-editorial">EDITORIAL TIER2</span></td>
+                        <td>4</td>
+                        <td>consumerreports.org, cars.usnews.com, usnews.com</td>
+                        <td>17.3</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="badge badge-info">INFORMATIONAL</span></td>
+                        <td>5</td>
+                        <td>fueleconomy.gov, nhtsa.gov, epa.gov</td>
+                        <td>1.4</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="badge badge-social">SOCIAL COMMUNITY</span></td>
+                        <td>1</td>
+                        <td>youtube.com</td>
+                        <td>1.8</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🆚 Competitor Mentions Across Outlets</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Competitor</th>
+                        <th>Total Mentions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><strong>Ford</strong></td>
+                        <td>97</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Rivian</strong></td>
+                        <td>27</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🔗 Recommended Resources Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Domain</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><strong>electrek</strong></td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>electricdrive</strong></td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>www</strong></td>
+                        <td>1</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📝 Sample Citation Contexts</h2>
+
+            <div class="small-note" style="background:#f8f9fa;border-left:3px solid #667eea;padding:10px 12px;margin-bottom:10px;">
+                **Tesla Model Y**: The Model Y is a popular choice for families due to its spacious interior, impressive range (up to 330 miles on a single charge), and advanced safety features. It also offers optional third-row seating, making it versatile for larger families ([Tesla](https://www
+            </div>
+
+            <div class="small-note" style="background:#f8f9fa;border-left:3px solid #667eea;padding:10px 12px;margin-bottom:10px;">
+                Here are some of the best electric vehicles for families in 2023-2024, based on expert reviews and ratings:
+
+Tesla Model Y
+- Most popular electric SUV globally
+- Range: 310-330 miles
+- Spacious interior with optional third row
+- Strong safety ratings and advanced driver assistance features
+[Source:
+            </div>
+
+            <div class="small-note" style="background:#f8f9fa;border-left:3px solid #667eea;padding:10px 12px;margin-bottom:10px;">
+                Tesla Model Y:**
+
+*   **Pros:** Ample cargo space, available third-row seating (though somewhat cramped), long range, access to Tesla's Supercharger network, advanced technology features (Autopilot). *   **Citation:** Edmunds names the Tesla Model Y as a Top Rated EV
+            </div>
+
+        </div>
+
+        <div class="methodology">
+            <h3>Methodology</h3>
+            <ul>
+                <li><strong>Platforms Tested:</strong> ChatGPT, Claude, Perplexity, Gemini</li>
+                <li><strong>Citation Extraction:</strong> Enhanced with URL extraction and recommendation detection</li>
+                <li><strong>Scoring Formula:</strong> Tier weight × Citation frequency × Platform breadth × Recommendation bonus × Brand gap</li>
+                <li><strong>Classification:</strong> Editorial Tier 1/2, Social, Informational, Ecommerce, PR Wire</li>
+                <li><strong>Completion Rate:</strong> 100.0% (8 / 8 expected)</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Enhanced Typeform Auditor v1.0 • Turning AI visibility gaps into PR wins</p>
+        </div>
+    </div>
+</body>
+</html>
