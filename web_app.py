@@ -4,20 +4,33 @@ import subprocess
 import shlex
 import requests
 import logging
+import uuid
 from datetime import datetime
-from flask import Flask, request, redirect, url_for, render_template_string, send_from_directory, flash
+from flask import Flask, request, redirect, url_for, render_template_string, send_from_directory, flash, jsonify
+from redis import Redis
+from rq import Queue
+from rq.job import Job
 
-# Load environment variables from .env for web context (ensures Perplexity, etc. available in Typeform flow)
-try:
-    from load_env import load_env as _load_env
-    _load_env()
-except Exception as _e:
-    print(f"Warning: .env not loaded in web_app.py: {_e}")
+# Load environment variables properly using python-dotenv
+from dotenv import load_dotenv
+load_dotenv()  # This loads .env file if it exists (for local dev)
 
 logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO)
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "dev")
+
+# Initialize Redis connection and RQ queue
+try:
+    redis_url = os.environ.get('REDIS_URL', 'redis://localhost:6379')
+    redis_conn = Redis.from_url(redis_url)
+    job_queue = Queue('default', connection=redis_conn)
+    logger.info(f"Redis connected successfully at {redis_url}")
+except Exception as e:
+    logger.error(f"Failed to connect to Redis: {e}")
+    redis_conn = None
+    job_queue = None
 
 # Default Typeform UX in-app + Squarespace deprecation for insights.innatec3.com
 @app.before_request
@@ -31,7 +44,7 @@ def _redirect_root_to_typeform():
             return redirect("https://ai-citation-audit.onrender.com/typeform-audit", code=302)
         # Make Typeform the default UX for this app: redirect only root to internal Typeform route
         if request.path == "/" and request.method in ("GET", "POST"):
-            return redirect(url_for("typeform_audit"), code=308)
+            return redirect("https://ai-citation-audit.onrender.com/typeform-audit", code=302)
     except Exception:
         # If anything goes wrong, fall back to normal handling
         pass
@@ -887,7 +900,7 @@ TPL_SIMPLE_AUDIT_RESULTS = """
   </div>
   
   <p style="margin-top: 40px; color: #666; font-size: 14px;">
-    <a href="/simple-audit">← Run Another Audit</a>
+    <a href="https://ai-citation-audit.onrender.com/typeform-audit">← Run Another Audit</a>
   </p>
 </body>
 </html>
@@ -938,6 +951,48 @@ Generate a similar generic question for {brand}. Return ONLY the question, nothi
         logger.error(f"Error generating query suggestion: {e}")
     
     return f"What are the best options for {brand.lower()} customers?"
+
+@app.route("/job/<job_id>")
+def job_status(job_id):
+    """Check status of a background job"""
+    if not redis_conn or not job_queue:
+        return jsonify({'status': 'error', 'error': 'Redis not available'}), 503
+    
+    try:
+        job = Job.fetch(job_id, connection=redis_conn)
+        
+        if job.is_finished:
+            result = job.result
+            # Clean up job after retrieving result (optional, keeps Redis clean)
+            # job.delete()
+            return jsonify({
+                'status': 'completed',
+                'result': result
+            })
+        elif job.is_failed:
+            return jsonify({
+                'status': 'failed',
+                'error': str(job.exc_info) if job.exc_info else 'Unknown error'
+            }), 500
+        elif job.is_started:
+            return jsonify({
+                'status': 'processing',
+                'progress': job.meta.get('progress', 0),
+                'message': job.meta.get('message', 'Processing...')
+            })
+        else:
+            # Queued but not started
+            return jsonify({
+                'status': 'queued',
+                'position': job.get_position() if hasattr(job, 'get_position') else None
+            })
+    except Exception as e:
+        logger.error(f"Error fetching job {job_id}: {e}")
+        return jsonify({
+            'status': 'not_found',
+            'error': f'Job not found: {str(e)}'
+        }), 404
+
 
 @app.route("/typeform-audit", methods=["GET", "POST"])
 def typeform_audit():
@@ -1005,29 +1060,66 @@ def typeform_audit():
             return {'error': str(e)}, 500
     
     elif action == 'run_audit':
+        # Check if Redis/RQ is available for background processing
+        if not redis_conn or not job_queue:
+            # Fallback to synchronous execution when Redis unavailable
+            logger.warning("Redis unavailable, running audit synchronously")
+            try:
+                brand = request.json.get('brand', '')
+                competitors = request.json.get('competitors', [])
+                prompts = request.json.get('prompts', [])
+                
+                from simple_raw_auditor import SimpleRawAuditor
+                auditor = SimpleRawAuditor(brand, competitors, prompts)
+                results = auditor.run_audit()
+                
+                # Save CSV
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M")
+                safe_brand = "".join(c for c in brand if c.isalnum() or c in (' ', '-', '_')).strip()
+                csv_filename = f"{safe_brand}_audit_{timestamp}.csv"
+                csv_path = f"lead_audits/{csv_filename}"
+                auditor.to_csv(csv_path)
+                
+                # Analyze results for dashboard
+                analysis = analyze_audit_results(brand, competitors, results)
+                analysis['csv_filename'] = csv_filename
+                
+                return analysis
+            except Exception as e:
+                logger.exception("run_audit failed")
+                return {'error': str(e)}, 500
+        
+        # Queue the job for background processing
         try:
             brand = request.json.get('brand', '')
             competitors = request.json.get('competitors', [])
             prompts = request.json.get('prompts', [])
             
-            from simple_raw_auditor import SimpleRawAuditor
-            auditor = SimpleRawAuditor(brand, competitors, prompts)
-            results = auditor.run_audit()
+            # Import worker function
+            from worker import run_audit_job
             
-            # Save CSV
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M")
-            safe_brand = "".join(c for c in brand if c.isalnum() or c in (' ', '-', '_')).strip()
-            csv_filename = f"{safe_brand}_audit_{timestamp}.csv"
-            csv_path = f"lead_audits/{csv_filename}"
-            auditor.to_csv(csv_path)
+            # Queue the job
+            job = job_queue.enqueue(
+                run_audit_job,
+                brand,
+                competitors,
+                prompts,
+                str(uuid.uuid4()),  # job_id for logging
+                job_timeout='10m',  # 10 minute timeout
+                result_ttl=3600  # Keep results for 1 hour
+            )
             
-            # Analyze results for dashboard
-            analysis = analyze_audit_results(brand, competitors, results)
-            analysis['csv_filename'] = csv_filename
+            logger.info(f"Queued audit job {job.id} for brand {brand}")
             
-            return analysis
+            # Return 202 Accepted with job ID
+            return jsonify({
+                'status': 'queued',
+                'job_id': job.id,
+                'message': 'Audit queued for processing'
+            }), 202
+            
         except Exception as e:
-            logger.exception("run_audit failed")
+            logger.exception("Failed to queue audit job")
             return {'error': str(e)}, 500
     
     return {'error': 'Invalid action'}, 400
@@ -2020,15 +2112,65 @@ TPL_TYPEFORM_AUDIT = """
                 });
                 
                 const data = await response.json();
-                if (!response.ok || data.error) { throw new Error(data.error || `Request failed (${response.status})`); }
-                appState.results = data;
                 
-                renderResults(data);
-                showScreen(6);
+                // Check if job was queued (202 response)
+                if (response.status === 202 && data.job_id) {
+                    // Poll for job status
+                    pollJobStatus(data.job_id);
+                } else if (response.ok) {
+                    // Synchronous response (fallback when Redis unavailable)
+                    appState.results = data;
+                    renderResults(data);
+                    showScreen(6);
+                } else {
+                    throw new Error(data.error || `Request failed (${response.status})`);
+                }
             } catch (error) {
                 alert('Error running audit: ' + error.message);
                 showScreen(4);
             }
+        }
+        
+        async function pollJobStatus(jobId) {
+            const pollInterval = 2000; // Poll every 2 seconds
+            
+            const poll = async () => {
+                try {
+                    const response = await fetch(`/job/${jobId}`);
+                    const data = await response.json();
+                    
+                    if (data.status === 'completed') {
+                        // Job finished successfully
+                        if (processingInterval) clearInterval(processingInterval);
+                        if (progressInterval) clearInterval(progressInterval);
+                        appState.results = data.result;
+                        renderResults(data.result);
+                        showScreen(6);
+                    } else if (data.status === 'failed') {
+                        // Job failed
+                        if (processingInterval) clearInterval(processingInterval);
+                        if (progressInterval) clearInterval(progressInterval);
+                        throw new Error(data.error || 'Job failed');
+                    } else if (data.status === 'processing') {
+                        // Update progress if available
+                        if (data.progress) {
+                            document.getElementById('timeProgressBar').style.width = data.progress + '%';
+                            document.getElementById('progressPercent').textContent = Math.round(data.progress) + '%';
+                        }
+                        // Continue polling
+                        setTimeout(poll, pollInterval);
+                    } else {
+                        // Still queued, continue polling
+                        setTimeout(poll, pollInterval);
+                    }
+                } catch (error) {
+                    alert('Error checking job status: ' + error.message);
+                    showScreen(4);
+                }
+            };
+            
+            // Start polling
+            poll();
         }
         
         let processingInterval;
