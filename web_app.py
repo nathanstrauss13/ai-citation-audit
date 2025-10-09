@@ -229,7 +229,12 @@ def _build_basic_prompts_preview(brand, competitors_csv, region, language, time_
     prompts = presence + industry_prompts + comparative
     return f"# Enhanced prompts based on detected industry context:\n\n" + "\n".join(prompts)
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/")
+def root_redirect():
+    """Redirect root to the typeform audit interface"""
+    return redirect(url_for('typeform_audit'))
+
+@app.route("/old-index", methods=["GET", "POST"])
 def index():
     ctx = {
         "brand": request.form.get("brand", ""),
