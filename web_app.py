@@ -18,6 +18,17 @@ load_dotenv()  # This loads .env file if it exists (for local dev)
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
+# Debug: Log all environment variables related to API keys at startup
+logger.info("=== Environment Variables Check ===")
+logger.info(f"OPENAI_API_KEY present: {bool(os.environ.get('OPENAI_API_KEY'))}")
+logger.info(f"ANTHROPIC_API_KEY present: {bool(os.environ.get('ANTHROPIC_API_KEY'))}")
+logger.info(f"PERPLEXITY_API_KEY present: {bool(os.environ.get('PERPLEXITY_API_KEY'))}")
+logger.info(f"GOOGLE_API_KEY present: {bool(os.environ.get('GOOGLE_API_KEY'))}")
+if os.environ.get('OPENAI_API_KEY'):
+    logger.info(f"OPENAI_API_KEY length: {len(os.environ.get('OPENAI_API_KEY'))}")
+    logger.info(f"OPENAI_API_KEY starts with: {os.environ.get('OPENAI_API_KEY')[:10]}...")
+logger.info("===================================")
+
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "dev")
 
