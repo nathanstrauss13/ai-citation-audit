@@ -1072,6 +1072,9 @@ def typeform_audit():
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M")
                 safe_brand = "".join(c for c in brand if c.isalnum() or c in (' ', '-', '_')).strip()
                 csv_filename = f"{safe_brand}_audit_{timestamp}.csv"
+                
+                # Ensure lead_audits directory exists
+                os.makedirs('lead_audits', exist_ok=True)
                 csv_path = f"lead_audits/{csv_filename}"
                 auditor.to_csv(csv_path)
                 
