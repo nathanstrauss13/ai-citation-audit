@@ -1994,14 +1994,14 @@ TPL_TYPEFORM_AUDIT = """
         // Focus helpers to keep input caret visible/active
         function focusBrandInput() {
             const el = document.getElementById('brandInput');
-            if (el) {
+            if (el && currentScreen === 1) {
                 el.focus({ preventScroll: true });
                 try { el.selectionStart = el.selectionEnd = el.value.length; } catch (_) {}
             }
         }
         function focusQueryInput() {
             const el = document.getElementById('queryInput');
-            if (el) {
+            if (el && currentScreen === 2) {
                 el.focus({ preventScroll: true });
                 try { el.selectionStart = el.selectionEnd = el.value.length; } catch (_) {}
             }
@@ -2015,10 +2015,14 @@ TPL_TYPEFORM_AUDIT = """
             const isButton = t && (t.tagName === 'BUTTON' || (t.closest && t.closest('button')));
             if (active.id === 'screen1') {
                 const isInput = t && (t.id === 'brandInput' || t.tagName === 'INPUT');
-                if (!isInput && !isButton) focusBrandInput();
+                if (!isInput && !isButton) {
+                    setTimeout(focusBrandInput, 10);
+                }
             } else if (active.id === 'screen2') {
                 const isTextarea = t && (t.id === 'queryInput' || t.tagName === 'TEXTAREA');
-                if (!isTextarea && !isButton) focusQueryInput();
+                if (!isTextarea && !isButton) {
+                    setTimeout(focusQueryInput, 10);
+                }
             }
         });
 
@@ -2027,18 +2031,24 @@ TPL_TYPEFORM_AUDIT = """
         // state that sometimes occurs after stray clicks on the page.
         document.addEventListener('DOMContentLoaded', () => {
             // Ensure initial focus on screen 1
-            setTimeout(focusBrandInput, 0);
+            setTimeout(focusBrandInput, 100);
 
             const bi = document.getElementById('brandInput');
             if (bi) {
-                bi.addEventListener('blur', () => {
-                    if (currentScreen === 1) setTimeout(focusBrandInput, 0);
+                bi.addEventListener('blur', (e) => {
+                    // Only refocus if blur wasn't caused by clicking the continue button
+                    if (currentScreen === 1 && e.relatedTarget?.tagName !== 'BUTTON') {
+                        setTimeout(focusBrandInput, 10);
+                    }
                 });
             }
             const qi = document.getElementById('queryInput');
             if (qi) {
-                qi.addEventListener('blur', () => {
-                    if (currentScreen === 2) setTimeout(focusQueryInput, 0);
+                qi.addEventListener('blur', (e) => {
+                    // Only refocus if blur wasn't caused by clicking a button
+                    if (currentScreen === 2 && e.relatedTarget?.tagName !== 'BUTTON') {
+                        setTimeout(focusQueryInput, 10);
+                    }
                 });
             }
         });
@@ -2047,10 +2057,10 @@ TPL_TYPEFORM_AUDIT = """
             // If user begins typing while nothing is focused, restore focus to the relevant field.
             const activeTag = (document.activeElement && document.activeElement.tagName) || '';
             const modifierHeld = e.metaKey || e.ctrlKey || e.altKey;
-            if (!modifierHeld) {
-                if (currentScreen === 1 && activeTag !== 'INPUT') {
+            if (!modifierHeld && !['INPUT', 'TEXTAREA', 'BUTTON'].includes(activeTag)) {
+                if (currentScreen === 1) {
                     focusBrandInput();
-                } else if (currentScreen === 2 && activeTag !== 'TEXTAREA') {
+                } else if (currentScreen === 2) {
                     focusQueryInput();
                 }
             }
@@ -2115,9 +2125,9 @@ TPL_TYPEFORM_AUDIT = """
 
             // After transition, ensure the correct field has focus
             if (screenNum === 1) {
-                setTimeout(focusBrandInput, 80);
+                setTimeout(focusBrandInput, 150);
             } else if (screenNum === 2) {
-                setTimeout(focusQueryInput, 80);
+                setTimeout(focusQueryInput, 150);
             }
         }
         

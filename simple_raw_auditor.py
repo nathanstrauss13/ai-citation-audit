@@ -32,6 +32,54 @@ def _extract_urls(text: str) -> List[str]:
     except Exception:
         return []
 
+def fix_implicit_brand_references(query: str, brand: str) -> str:
+    """Fix implicit brand references in queries
+    
+    Examples:
+    - "is it better than Coors" → "is Budweiser better than Coors"
+    - "how does it compare to Nike" → "how does Lululemon compare to Nike"
+    - "should I choose it over Tesla" → "should I choose Ford over Tesla"
+    """
+    import re
+    
+    query_lower = query.lower()
+    
+    # Patterns for implicit references
+    implicit_patterns = [
+        # "is it better than X"
+        (r'\bis\s+it\s+better\s+than\b', f'is {brand} better than'),
+        # "how does it compare"
+        (r'\bhow\s+does\s+it\s+compare\b', f'how does {brand} compare'),
+        # "should I choose it"
+        (r'\bshould\s+I\s+choose\s+it\b', f'should I choose {brand}'),
+        # "is it worth"
+        (r'\bis\s+it\s+worth\b', f'is {brand} worth'),
+        # "does it have"
+        (r'\bdoes\s+it\s+have\b', f'does {brand} have'),
+        # "can it"
+        (r'\bcan\s+it\s+(?:compete|match|beat)\b', f'can {brand}'),
+        # "will it"
+        (r'\bwill\s+it\s+(?:be|work|last)\b', f'will {brand}'),
+        # "would it be"
+        (r'\bwould\s+it\s+be\b', f'would {brand} be'),
+        # "how is it"
+        (r'\bhow\s+is\s+it\b', f'how is {brand}'),
+        # "what makes it"
+        (r'\bwhat\s+makes\s+it\b', f'what makes {brand}'),
+        # "why is it"
+        (r'\bwhy\s+is\s+it\b', f'why is {brand}'),
+    ]
+    
+    fixed_query = query
+    for pattern, replacement in implicit_patterns:
+        if re.search(pattern, query_lower):
+            fixed_query = re.sub(pattern, replacement, fixed_query, flags=re.IGNORECASE)
+            logger.info(f"Fixed implicit brand reference: '{query}' → '{fixed_query}'")
+            break  # Only fix the first match to avoid over-replacement
+    
+    return fixed_query
+
+
 def fix_location_query(query: str, brand: str) -> str:
     """Fix location-based queries by replacing 'around me' or 'nearby' with city/state context
     
@@ -100,16 +148,22 @@ def infer_competitors(brand: str, openai_key: str) -> Dict[str, Any]:
             (["lululemon"], {"competitors": ["Nike", "Adidas", "Under Armour"], "industry": "Athletic Apparel"}),
             (["honeybaked", "honey baked"], {"competitors": ["Smithfield", "Omaha Steaks", "Harry & David"], "industry": "Food & Gifts"}),
             (["john hardy"], {"competitors": ["David Yurman", "Tiffany & Co.", "Pandora"], "industry": "Jewelry"}),
-            (["nba"], {"competitors": ["NFL", "MLB", "NHL"], "industry": "Sports Leagues"})
+            (["nba"], {"competitors": ["NFL", "MLB", "NHL"], "industry": "Sports Leagues"}),
+            (["portland"], {"competitors": ["Seattle Repertory Theatre", "American Conservatory Theater", "Guthrie Theater"], "industry": "Regional Theater"})
         ]
         for keys, val in fallback_map:
             if any(k in b for k in keys):
+                logger.info(f"Using fallback competitors for {brand_name}: {val}")
                 return val
+        logger.warning(f"No fallback mapping found for {brand_name}, returning empty competitors")
         return {"competitors": [], "industry": "Unknown"}
     
     # No key: fallback mapping
     if not openai_key:
+        logger.warning("No OpenAI API key provided, using fallback")
         return _fallback(brand)
+    
+    logger.info(f"Attempting to infer competitors for: {brand}")
     
     try:
         response = requests.post(
@@ -135,12 +189,16 @@ Respond in JSON format:
                 "max_tokens": 300,
                 "temperature": 0.7
             },
-            timeout=30
+            timeout=45  # Increased timeout
         )
+        
+        logger.info(f"OpenAI API response status: {response.status_code}")
         
         if response.status_code == 200:
             data = response.json()
             content = data['choices'][0]['message']['content']
+            
+            logger.info(f"OpenAI raw response: {content[:200]}...")
             
             if '```json' in content:
                 content = content.split('```json')[1].split('```')[0].strip()
@@ -150,12 +208,24 @@ Respond in JSON format:
             result = json.loads(content)
             # If model returned something usable, prefer it
             if isinstance(result, dict) and result.get('competitors'):
+                logger.info(f"Successfully inferred competitors: {result}")
                 return result
+            else:
+                logger.warning(f"OpenAI returned invalid format: {result}")
+        else:
+            logger.error(f"OpenAI API error: {response.status_code} - {response.text[:200]}")
         
+    except requests.exceptions.Timeout:
+        logger.error(f"OpenAI API timeout after 45 seconds")
+    except requests.exceptions.RequestException as e:
+        logger.error(f"OpenAI API request error: {e}")
+    except json.JSONDecodeError as e:
+        logger.error(f"Failed to parse OpenAI JSON response: {e}")
     except Exception as e:
-        logger.error(f"Error inferring competitors: {e}")
+        logger.error(f"Unexpected error inferring competitors: {e}", exc_info=True)
     
     # Fallback if model failed or returned empty
+    logger.info("Falling back to hardcoded competitor mapping")
     return _fallback(brand)
 
 
@@ -168,6 +238,9 @@ def generate_queries(brand: str, general_query: str, competitors: List[str], ope
     
     # Fix location-based queries - replace "around me" or "nearby" with city/state context
     general_query = fix_location_query(general_query, brand)
+    
+    # Fix implicit brand references (e.g., "is it better than X" → "is Budweiser better than X")
+    general_query = fix_implicit_brand_references(general_query, brand)
     
     # Check if user's query is branded (mentions the brand name)
     is_branded_query = brand.lower() in general_query.lower()
