@@ -565,6 +565,7 @@ End with a section titled "Recommended Resources:" listing websites users should
         # Support both ANTHROPIC_API_KEY and CLAUDE_API_KEY
         api_key = os.getenv('ANTHROPIC_API_KEY') or os.getenv('CLAUDE_API_KEY')
         if not api_key:
+            logger.warning("Claude API key not found (ANTHROPIC_API_KEY or CLAUDE_API_KEY)")
             return None
         
         enhanced_query = f"""{query}
@@ -572,26 +573,33 @@ End with a section titled "Recommended Resources:" listing websites users should
 Please cite at least 3 credible sources with full URLs.
 End with a section titled "Recommended Resources:" listing websites users should visit."""
         
-        response = requests.post(
-            "https://api.anthropic.com/v1/messages",
-            headers={"x-api-key": api_key, "Content-Type": "application/json", "anthropic-version": "2023-06-01"},
-            json={
-                "model": "claude-3-5-sonnet-20241022",
-                "max_tokens": 1000,
-                "messages": [{"role": "user", "content": enhanced_query}],
-                "system": "You are a helpful assistant that always cites credible sources with URLs and provides a 'Recommended Resources' section."
-            },
-            timeout=30
-        )
-        
-        if response.status_code == 200:
-            text = ""
-            for block in response.json().get('content', []):
-                if block.get('type') == 'text':
-                    text += block.get('text', '')
-            urls = _extract_urls(text)
-            return {'text': text, 'citations': urls}
-        return None
+        try:
+            response = requests.post(
+                "https://api.anthropic.com/v1/messages",
+                headers={"x-api-key": api_key, "Content-Type": "application/json", "anthropic-version": "2023-06-01"},
+                json={
+                    "model": "claude-3-5-sonnet-20241022",
+                    "max_tokens": 1000,
+                    "messages": [{"role": "user", "content": enhanced_query}],
+                    "system": "You are a helpful assistant that always cites credible sources with URLs and provides a 'Recommended Resources' section."
+                },
+                timeout=30
+            )
+            
+            if response.status_code == 200:
+                text = ""
+                for block in response.json().get('content', []):
+                    if block.get('type') == 'text':
+                        text += block.get('text', '')
+                urls = _extract_urls(text)
+                logger.info(f"Claude query successful, response length: {len(text)}")
+                return {'text': text, 'citations': urls}
+            else:
+                logger.error(f"Claude API error: {response.status_code} - {response.text[:200]}")
+                return None
+        except Exception as e:
+            logger.error(f"Claude query failed: {e}")
+            return None
     
     def _query_perplexity(self, query: str) -> Dict:
         api_key = os.getenv('PERPLEXITY_API_KEY') or os.getenv('PPLX_API_KEY')
