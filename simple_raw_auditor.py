@@ -236,11 +236,18 @@ def generate_queries(brand: str, general_query: str, competitors: List[str], ope
     Otherwise, generate unbiased queries to see which brands AI platforms naturally recommend.
     """
     
+    # Store original query before fixes to detect comparison intent
+    original_query = general_query
+    
     # Fix location-based queries - replace "around me" or "nearby" with city/state context
     general_query = fix_location_query(general_query, brand)
     
     # Fix implicit brand references (e.g., "is it better than X" → "is Budweiser better than X")
     general_query = fix_implicit_brand_references(general_query, brand)
+    
+    # Check if user's query is a comparison (mentions competitors or uses comparison words)
+    is_comparison_query = any(comp.lower() in original_query.lower() for comp in competitors) or \
+                         any(word in original_query.lower() for word in ['better than', 'vs', 'versus', 'compare', 'comparison', 'or'])
     
     # Check if user's query is branded (mentions the brand name)
     is_branded_query = brand.lower() in general_query.lower()
@@ -269,7 +276,27 @@ def generate_queries(brand: str, general_query: str, competitors: List[str], ope
     try:
         comp_context = f"Competitors: {', '.join(competitors)}" if competitors else "No competitors specified"
         
-        if is_branded_query:
+        if is_comparison_query:
+            # Comparison query - generate variations comparing brands
+            prompt_instructions = f"""CONTEXT: The user is a marketing/PR professional for "{brand}" testing AI visibility.
+
+The user's query is a COMPARISON query (comparing "{brand}" with competitors).
+
+Generate 5 comparison queries that test how AI platforms position {brand} relative to competitors:
+1. The user's original query: "{general_query}"
+2-5. Variations that compare {brand} with competitors in different ways
+
+PREFERRED FORMATS:
+- "{brand} vs [Competitor]" or "[Competitor] vs {brand}"
+- "Is {brand} better than [Competitor]?"
+- "Should I choose {brand} or [Competitor]?"
+- "{brand} compared to [Competitor]"
+- "Differences between {brand} and [Competitor]"
+
+Include at least 2-3 different competitors from: {', '.join(competitors[:3])}
+
+Goal: Test how AI platforms position {brand} in direct comparisons."""
+        elif is_branded_query:
             # Branded query - generate variations that mention the brand
             prompt_instructions = f"""CONTEXT: The user is a marketing/PR professional for "{brand}" testing AI visibility.
 
@@ -357,7 +384,26 @@ Respond as a JSON array of exactly 5 queries:
         logger.error(f"Error generating queries: {e}")
     
     # Fallback
-    if is_branded_query:
+    if is_comparison_query:
+        # Generate comparison queries with available competitors
+        queries = [general_query]
+        if competitors and len(competitors) >= 2:
+            queries.extend([
+                f"{brand} vs {competitors[0]}",
+                f"Is {brand} better than {competitors[1]}?",
+                f"Should I choose {brand} or {competitors[0]}?",
+                f"{brand} compared to {competitors[1]}"
+            ])
+        else:
+            # Generic comparisons if no competitors
+            queries.extend([
+                f"Is {brand} the best choice?",
+                f"How does {brand} compare to alternatives?",
+                f"{brand} vs competitors",
+                f"Why choose {brand}?"
+            ])
+        return queries[:5]
+    elif is_branded_query:
         return [
             general_query,
             f"Tell me about {brand}",
