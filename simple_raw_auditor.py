@@ -845,6 +845,9 @@ End with a section titled "Recommended Resources:" listing websites users should
     
     def to_csv(self, filepath: str):
         """Save results to CSV with full response and all citation types"""
+        # Ensure directory exists
+        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+        
         with open(filepath, 'w', newline='', encoding='utf-8') as f:
             fieldnames = [
                 'query',
