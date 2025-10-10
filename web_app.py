@@ -21,12 +21,16 @@ logging.basicConfig(level=logging.INFO)
 # Debug: Log all environment variables related to API keys at startup
 logger.info("=== Environment Variables Check ===")
 logger.info(f"OPENAI_API_KEY present: {bool(os.environ.get('OPENAI_API_KEY'))}")
+logger.info(f"OPEN_AI_API_KEY present: {bool(os.environ.get('OPEN_AI_API_KEY'))}")
 logger.info(f"ANTHROPIC_API_KEY present: {bool(os.environ.get('ANTHROPIC_API_KEY'))}")
+logger.info(f"CLAUDE_API_KEY present: {bool(os.environ.get('CLAUDE_API_KEY'))}")
 logger.info(f"PERPLEXITY_API_KEY present: {bool(os.environ.get('PERPLEXITY_API_KEY'))}")
 logger.info(f"GOOGLE_API_KEY present: {bool(os.environ.get('GOOGLE_API_KEY'))}")
-if os.environ.get('OPENAI_API_KEY'):
-    logger.info(f"OPENAI_API_KEY length: {len(os.environ.get('OPENAI_API_KEY'))}")
-    logger.info(f"OPENAI_API_KEY starts with: {os.environ.get('OPENAI_API_KEY')[:10]}...")
+logger.info(f"GEMINI_API_KEY present: {bool(os.environ.get('GEMINI_API_KEY'))}")
+openai_key = os.environ.get('OPENAI_API_KEY') or os.environ.get('OPEN_AI_API_KEY')
+if openai_key:
+    logger.info(f"OpenAI key length: {len(openai_key)}")
+    logger.info(f"OpenAI key starts with: {openai_key[:10]}...")
 logger.info("===================================")
 
 app = Flask(__name__)
@@ -1012,7 +1016,8 @@ def typeform_audit():
     if action == 'suggest_query':
         try:
             brand = request.json.get('brand', '')
-            openai_key = os.environ.get('OPENAI_API_KEY')
+            # Try both variable names
+            openai_key = os.environ.get('OPENAI_API_KEY') or os.environ.get('OPEN_AI_API_KEY')
             
             suggestion = generate_smart_query_suggestion(brand, openai_key)
             return {'suggestion': suggestion}
@@ -1023,7 +1028,8 @@ def typeform_audit():
     elif action == 'detect_competitors':
         try:
             brand = request.json.get('brand', '')
-            openai_key = os.environ.get('OPENAI_API_KEY')
+            # Try both variable names (OPENAI_API_KEY and OPEN_AI_API_KEY)
+            openai_key = os.environ.get('OPENAI_API_KEY') or os.environ.get('OPEN_AI_API_KEY')
             
             # Debug logging
             logger.info(f"detect_competitors called for brand: {brand}")
@@ -1062,7 +1068,8 @@ def typeform_audit():
             brand = request.json.get('brand', '')
             query = request.json.get('query', '')
             competitors = request.json.get('competitors', [])
-            openai_key = os.environ.get('OPENAI_API_KEY')
+            # Try both variable names
+            openai_key = os.environ.get('OPENAI_API_KEY') or os.environ.get('OPEN_AI_API_KEY')
             
             from simple_raw_auditor import generate_queries
             prompts = generate_queries(brand, query, competitors, openai_key)
