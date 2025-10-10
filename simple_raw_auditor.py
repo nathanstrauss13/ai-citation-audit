@@ -247,10 +247,13 @@ def generate_queries(brand: str, general_query: str, competitors: List[str], ope
     
     # Check if user's query is a comparison (mentions competitors or uses comparison words)
     is_comparison_query = any(comp.lower() in original_query.lower() for comp in competitors) or \
-                         any(word in original_query.lower() for word in ['better than', 'vs', 'versus', 'compare', 'comparison', 'or'])
+                         any(word in original_query.lower() for word in ['better than', 'vs', 'versus', 'compare', 'comparison', 'or', 'compared to'])
     
     # Check if user's query is branded (mentions the brand name)
     is_branded_query = brand.lower() in general_query.lower()
+    
+    # CRITICAL FIX: If query is unbiased, keep it unbiased to measure organic visibility
+    # This fixes the Budweiser audit issue where branded queries gave misleading 93.3% mention rate
     
     if not openai_key:
         # Fallback
