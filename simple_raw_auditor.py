@@ -481,7 +481,8 @@ class SimpleRawAuditor:
             return self._query_gemini(query)
     
     def _query_chatgpt(self, query: str) -> Dict:
-        api_key = os.getenv('OPENAI_API_KEY')
+        # Support both OPENAI_API_KEY and OPEN_AI_API_KEY
+        api_key = os.getenv('OPENAI_API_KEY') or os.getenv('OPEN_AI_API_KEY')
         if not api_key:
             return None
         
@@ -512,7 +513,8 @@ End with a section titled "Recommended Resources:" listing websites users should
         return None
     
     def _query_claude(self, query: str) -> Dict:
-        api_key = os.getenv('ANTHROPIC_API_KEY')
+        # Support both ANTHROPIC_API_KEY and CLAUDE_API_KEY
+        api_key = os.getenv('ANTHROPIC_API_KEY') or os.getenv('CLAUDE_API_KEY')
         if not api_key:
             return None
         
@@ -642,7 +644,8 @@ End with a section titled "Recommended Resources:" listing websites users should
             return {'text': f"ERROR: Perplexity exception: {e}", 'citations': []}
     
     def _query_gemini(self, query: str) -> Dict:
-        api_key = os.getenv('GOOGLE_API_KEY')
+        # Support both GOOGLE_API_KEY and GEMINI_API_KEY
+        api_key = os.getenv('GOOGLE_API_KEY') or os.getenv('GEMINI_API_KEY')
         if not api_key:
             return None
         
