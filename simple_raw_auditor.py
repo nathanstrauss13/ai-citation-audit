@@ -15,6 +15,10 @@ from datetime import datetime
 from typing import List, Dict, Any
 from urllib.parse import urlparse
 import re
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -593,26 +597,95 @@ End with a section titled "Recommended Resources:" listing websites users should
                 return {'text': text, 'citations': urls}
         return None
     
+    # -------------------------
+    # Robust name matching utils
+    # -------------------------
+    def _normalize_text(self, s: str) -> str:
+        """Lowercase and remove non-alphanumeric for condensed substring checks."""
+        return re.sub(r'[^a-z0-9]+', '', (s or '').lower())
+
+    def _canonical_tokens(self, name: str) -> List[str]:
+        """Split name into tokens (handles CamelCase) and drop noisy suffix words."""
+        s = re.sub(r'([a-z])([A-Z])', r'\1 \2', name or '')
+        tokens = re.findall(r"[A-Za-z0-9]+", s)
+        noise = {'the', 'company', 'co', 'inc', 'incorporated', 'llc', 'ltd', 'corp', 'corporation'}
+        return [t.lower() for t in tokens if t and t.lower() not in noise]
+
+    def _brand_variants(self, name: str) -> List[str]:
+        """Generate reasonable variants of a brand/company name (spacing, suffixes, prefixes)."""
+        tokens = self._canonical_tokens(name)
+        variants = set()
+        if not tokens:
+            return []
+        base_space = ' '.join(tokens)
+        base_hyphen = '-'.join(tokens)
+        base_concat = ''.join(tokens)
+
+        variants.add(base_space)
+        variants.add(base_hyphen)
+        variants.add(base_concat)
+        variants.add('the ' + base_space)
+
+        # Common suffixes frequently seen in AI outputs
+        suffixes = [' company', ' co', ' co.', ' inc', ' inc.', ' llc', ' ltd', ' corp', ' corporation']
+        for suf in suffixes:
+            variants.add(base_space + suf)
+            variants.add('the ' + base_space + suf)
+
+        # Also include the original name form (lowercased)
+        variants.add((name or '').lower())
+
+        return [v for v in variants if v]
+
+    def _patternize(self, variant: str) -> str:
+        """Convert variant to a regex allowing flexible spaces/hyphens and optional possessive."""
+        parts = re.findall(r'[a-z0-9]+', (variant or '').lower())
+        if not parts:
+            return ''
+        return r'\b' + r'(?:[\s\-]+)?'.join(map(re.escape, parts)) + r"(?:'s)?\b"
+
+    def _name_in_text_or_resources(self, name: str, text: str, resources: List[str]) -> bool:
+        """Detect name in free text and recommended resources, robust to spacing/suffixes."""
+        t = text or ''
+        vlist = self._brand_variants(name)
+        text_lower = t.lower()
+        condensed_text = self._normalize_text(t)
+        resources_text = ' '.join(resources or [])
+        condensed_resources_text = self._normalize_text(resources_text)
+
+        for v in vlist:
+            # Condensed substring check (handles HoneyBaked vs "Honey Baked")
+            condensed_variant = self._normalize_text(v)
+            if condensed_variant and (condensed_variant in condensed_text or condensed_variant in condensed_resources_text):
+                return True
+            # Flexible spacing/hyphen regex in full text and resources text
+            pat = self._patternize(v)
+            if pat and re.search(pat, text_lower, flags=re.IGNORECASE):
+                return True
+            if resources_text and pat and re.search(pat, resources_text, flags=re.IGNORECASE):
+                return True
+        return False
+
     def _analyze_response(self, result: Dict, query: str, platform: str) -> Dict:
-        """Analyze response for brand/competitor mentions and citations"""
-        text = result.get('text', '')
+        """Analyze response for brand/competitor mentions and citations (with robust variant matching)"""
+        text = result.get('text', '') or ''
         citations = result.get('citations', [])  # Actual citations with URLs (from Perplexity)
-        
-        text_lower = text.lower()
-        # Word-boundary entity detection to avoid false positives
-        brand_mentioned = bool(re.search(r'\b' + re.escape(self.brand.lower()) + r'\b', text_lower))
-        
+
+        # Extract recommended resources early; we use them for entity detection too
+        recommended_resources = self._extract_recommended_resources(text)
+
+        # Robust brand mention detection across text and resources (handles "The", spacing, suffixes)
+        brand_mentioned = self._name_in_text_or_resources(self.brand, text, recommended_resources)
+
+        # Competitor mentions with same robustness
         competitors_mentioned = []
-        for comp in self.competitors:
-            if re.search(r'\b' + re.escape(comp.lower()) + r'\b', text_lower):
+        for comp in self.competitors or []:
+            if self._name_in_text_or_resources(comp, text, recommended_resources):
                 competitors_mentioned.append(comp)
-        
+
         # Extract inferred citations (e.g., "According to Forbes...", "ESPN reports...")
         inferred_citations = self._extract_inferred_citations(text)
-        
-        # Extract recommended resources (e.g., "Visit Cars.com", "Check Edmunds...")
-        recommended_resources = self._extract_recommended_resources(text)
-        
+
         return {
             'query': query,
             'platform': platform,
@@ -643,14 +716,29 @@ End with a section titled "Recommended Resources:" listing websites users should
             r'[Cc]iting ([^,\.]+)',
         ]
         
+        # Stopwords to filter out generic tokens misidentified as sources
+        stopwords = {
+            'source', 'sources', 'news', 'press', 'press release', 'article', 'articles',
+            'report', 'reports', 'study', 'studies', 'paper', 'papers', 'blog', 'website',
+            'site', 'info', 'information', 'resource', 'resources'
+        }
+        
         for pattern in patterns:
             matches = re.findall(pattern, text)
             for match in matches:
-                source = match.strip()
-                # Clean up common artifacts
-                source = source.replace(' the', '').replace(' a', '').strip()
-                if source and len(source) < 50:  # Reasonable source name length
-                    inferred.append(source)
+                source = (match or '').strip()
+                # Clean up common artifacts and determiners
+                source = re.sub(r'^\b(the|a|an)\b\s+', '', source, flags=re.IGNORECASE).strip(':,; ').strip()
+                source_lower = source.lower()
+                # Skip generic/ambiguous tokens and overly short/long values
+                if not source or len(source) >= 50:
+                    continue
+                if source_lower in stopwords:
+                    continue
+                # Basic sanity: require at least one alpha char
+                if not re.search(r'[a-zA-Z]', source):
+                    continue
+                inferred.append(source)
         
         # Remove duplicates while preserving order
         seen = set()

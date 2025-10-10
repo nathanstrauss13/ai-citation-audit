@@ -6,7 +6,11 @@ Background worker for processing audit jobs using RQ (Redis Queue)
 import os
 import logging
 from datetime import datetime
+from dotenv import load_dotenv
 from simple_raw_auditor import SimpleRawAuditor, infer_competitors, generate_queries
+
+# Load environment variables from .env file
+load_dotenv()
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)

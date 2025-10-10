@@ -22,15 +22,10 @@ app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "dev")
 
 # Initialize Redis connection and RQ queue
-try:
-    redis_url = os.environ.get('REDIS_URL', 'redis://localhost:6379')
-    redis_conn = Redis.from_url(redis_url)
-    job_queue = Queue('default', connection=redis_conn)
-    logger.info(f"Redis connected successfully at {redis_url}")
-except Exception as e:
-    logger.error(f"Failed to connect to Redis: {e}")
-    redis_conn = None
-    job_queue = None
+# DISABLED FOR LOCAL DEVELOPMENT - Run synchronously instead
+redis_conn = None
+job_queue = None
+logger.info("Redis/RQ disabled - running audits synchronously")
 
 # Default Typeform UX in-app + Squarespace deprecation for insights.innatec3.com
 @app.before_request
@@ -1124,8 +1119,165 @@ def typeform_audit():
     
     return {'error': 'Invalid action'}, 400
 
+def classify_citation_category(domain: str, brand_name: str = "") -> str:
+    """Classify a citation domain into categories for better organization
+    
+    Categories:
+    - media_press: News outlets, magazines, newspapers
+    - informational: Wikipedia, .gov, .edu, reference sites
+    - social: Reddit, Twitter/X, LinkedIn, forums
+    - ecommerce: Amazon, retail marketplaces
+    - review: Yelp, TripAdvisor, review platforms
+    - industry_trade: Industry publications, trade journals
+    - brand_official: Brand's own properties
+    - pr_wire: PR Newswire, press release services
+    - video_streaming: YouTube, Vimeo, streaming platforms
+    - other: Uncategorized
+    """
+    d = (domain or "").lower().strip()
+    b = (brand_name or "").lower().replace(" ", "").replace("-", "")
+    
+    # Brand official sites
+    if b and b in d.replace(".", "").replace("-", ""):
+        return "brand_official"
+    
+    # Informational/Reference (.gov, .edu, Wikipedia)
+    if any(ext in d for ext in ['.gov', '.edu', '.mil']):
+        return "informational"
+    if any(site in d for site in ['wikipedia.org', 'wikimedia', 'britannica.com', 'dictionary.com', 
+                                   'merriam-webster', 'investopedia', 'howstuffworks']):
+        return "informational"
+    
+    # Social Media
+    social_platforms = [
+        'reddit.com', 'twitter.com', 'x.com', 'facebook.com', 'linkedin.com', 'instagram.com',
+        'tiktok.com', 'pinterest.com', 'snapchat.com', 'discord.com', 'quora.com',
+        'medium.com', 'substack.com', 'tumblr.com'
+    ]
+    if any(platform in d for platform in social_platforms):
+        return "social"
+    
+    # E-commerce/Retail
+    ecommerce_sites = [
+        'amazon.com', 'ebay.com', 'walmart.com', 'target.com', 'bestbuy.com',
+        'etsy.com', 'shopify.com', 'alibaba.com', 'aliexpress.com', 'wayfair.com'
+    ]
+    if any(site in d for site in ecommerce_sites):
+        return "ecommerce"
+    
+    # Review Sites
+    review_sites = [
+        'yelp.com', 'tripadvisor.com', 'trustpilot.com', 'g2.com', 'capterra.com',
+        'consumerreports.org', 'bbb.org', 'glassdoor.com', 'indeed.com', 'angi.com',
+        'homeadvisor.com', 'thumbtack.com', 'zomato.com', 'opentable.com'
+    ]
+    if any(site in d for site in review_sites):
+        return "review"
+    
+    # PR/Wire Services
+    pr_wires = [
+        'prnewswire.com', 'businesswire.com', 'globenewswire.com', 'prweb.com',
+        'marketwatch.com/press-release', 'accesswire.com', 'einnews.com'
+    ]
+    if any(wire in d for wire in pr_wires):
+        return "pr_wire"
+    
+    # Video/Streaming
+    video_platforms = [
+        'youtube.com', 'vimeo.com', 'dailymotion.com', 'twitch.tv', 'netflix.com',
+        'hulu.com', 'disneyplus.com', 'hbomax.com', 'peacocktv.com', 'paramountplus.com'
+    ]
+    if any(platform in d for platform in video_platforms):
+        return "video_streaming"
+    
+    # Media/Press (comprehensive list of news outlets)
+    media_outlets = [
+        # Tier 1 National/International
+        'nytimes.com', 'wsj.com', 'washingtonpost.com', 'ft.com', 'economist.com',
+        'reuters.com', 'apnews.com', 'bloomberg.com', 'forbes.com', 'fortune.com',
+        'businessinsider.com', 'cnbc.com', 'cnn.com', 'bbc.com', 'theguardian.com',
+        
+        # Tech/Business
+        'techcrunch.com', 'theverge.com', 'wired.com', 'arstechnica.com', 'engadget.com',
+        'cnet.com', 'zdnet.com', 'venturebeat.com', 'mashable.com', 'gizmodo.com',
+        'fastcompany.com', 'inc.com', 'entrepreneur.com',
+        
+        # Sports
+        'espn.com', 'si.com', 'bleacherreport.com', 'cbssports.com', 'foxsports.com',
+        'nba.com', 'nfl.com', 'mlb.com', 'nhl.com', 'athletic.com', 'sportingnews.com',
+        
+        # Entertainment/Lifestyle
+        'variety.com', 'hollywoodreporter.com', 'deadline.com', 'ew.com', 'people.com',
+        'usmagazine.com', 'tmz.com', 'etonline.com', 'vogue.com', 'gq.com', 'esquire.com',
+        
+        # Regional/Local
+        'latimes.com', 'chicagotribune.com', 'sfchronicle.com', 'bostonglobe.com',
+        'dallasnews.com', 'denverpost.com', 'seattletimes.com', 'miamiherald.com',
+        
+        # Food/Dining
+        'bonappetit.com', 'foodandwine.com', 'eater.com', 'seriouseats.com',
+        'epicurious.com', 'saveur.com', 'tastingtable.com', 'thekitchn.com',
+        
+        # Travel
+        'lonelyplanet.com', 'travelandleisure.com', 'cntraveler.com', 'afar.com',
+        
+        # Health/Science
+        'healthline.com', 'webmd.com', 'mayoclinic.org', 'scientificamerican.com',
+        'newscientist.com', 'nature.com', 'science.org'
+    ]
+    if any(outlet in d for outlet in media_outlets):
+        return "media_press"
+    
+    # Industry/Trade Publications (patterns)
+    trade_indicators = ['journal', 'magazine', 'news', 'times', 'post', 'herald', 'tribune',
+                       'gazette', 'chronicle', 'daily', 'weekly', 'review', 'digest']
+    if any(indicator in d for indicator in trade_indicators):
+        # Exclude common false positives
+        if not any(fp in d for fp in ['wordpress', 'blogspot', 'tumblr', 'medium']):
+            return "industry_trade"
+    
+    return "other"
+
+
+def get_category_display_name(category: str) -> str:
+    """Get human-readable category name"""
+    category_names = {
+        "media_press": "Media & Press",
+        "informational": "Informational/Reference",
+        "social": "Social Media",
+        "ecommerce": "E-commerce/Retail",
+        "review": "Review Sites",
+        "industry_trade": "Industry/Trade",
+        "brand_official": "Brand Official",
+        "pr_wire": "PR/Wire Services",
+        "video_streaming": "Video/Streaming",
+        "other": "Other"
+    }
+    return category_names.get(category, "Other")
+
+
 def analyze_audit_results(brand, competitors, results):
     """Analyze audit results to create dashboard data with PR scoring"""
+    
+    # Handle empty results
+    if not results or len(results) == 0:
+        return {
+            'brand': brand,
+            'total_queries': 0,
+            'total_results': 0,
+            'brand_mentions': 0,
+            'brand_mention_rate': 0,
+            'brand_rank': 1,
+            'total_brands': 1,
+            'total_citations': 0,
+            'total_unique_outlets': 0,
+            'platform_stats': {},
+            'competitor_mentions': {},
+            'rankings': [[brand, 0]],
+            'top_sources': [],
+            'results': [],
+            'error': 'No results collected. Please check API keys are configured.'
+        }
     
     # Import PR analysis functions
     try:
@@ -1315,8 +1467,12 @@ def analyze_audit_results(brand, competitors, results):
         'results': results
     }
     
-    # Enhanced top sources with PR scoring if backend available
+    # Enhanced top sources with category classification and PR scoring
     for d, s in top_sources:
+        # Classify the citation category
+        category = classify_citation_category(d, brand)
+        category_display = get_category_display_name(category)
+        
         source_data = {
             'domain': d, 
             'total': s['total'], 
@@ -1325,7 +1481,9 @@ def analyze_audit_results(brand, competitors, results):
             'url_citations': s.get('url_citations', 0),
             'inferred_citations': s.get('inferred_citations', 0),
             'recommended': s.get('recommended', 0),
-            'group': _group_for_domain(d, brand)
+            'group': _group_for_domain(d, brand),
+            'category': category,
+            'category_display': category_display
         }
         
         # Add PR tier classification if backend available
@@ -2137,6 +2295,12 @@ TPL_TYPEFORM_AUDIT = """
             const poll = async () => {
                 try {
                     const response = await fetch(`/job/${jobId}`);
+                    
+                    // Check if response is ok before parsing
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+                    
                     const data = await response.json();
                     
                     if (data.status === 'completed') {
@@ -2147,21 +2311,16 @@ TPL_TYPEFORM_AUDIT = """
                         // The result from the worker includes the analysis
                         const result = data.result;
                         
-                        // If result has the analysis structure, use it directly
-                        // Otherwise, wrap it in the expected format
-                        if (result && result.brand) {
+                        // Validate result structure before rendering
+                        if (result && typeof result === 'object' && result.brand) {
                             appState.results = result;
                             renderResults(result);
+                            showScreen(6);
                         } else {
-                            // Fallback: construct minimal result structure
-                            appState.results = {
-                                brand: appState.brand,
-                                results: result.results || [],
-                                error: 'Unexpected result format'
-                            };
-                            alert('Audit completed but result format was unexpected. Please check the CSV download.');
+                            // Result doesn't have expected structure
+                            console.error('Unexpected result format:', result);
+                            throw new Error('Audit completed but result format was unexpected. Please try again.');
                         }
-                        showScreen(6);
                     } else if (data.status === 'failed') {
                         // Job failed
                         if (processingInterval) clearInterval(processingInterval);
@@ -2175,11 +2334,23 @@ TPL_TYPEFORM_AUDIT = """
                         }
                         // Continue polling
                         setTimeout(poll, pollInterval);
-                    } else {
+                    } else if (data.status === 'queued') {
                         // Still queued, continue polling
+                        setTimeout(poll, pollInterval);
+                    } else if (data.status === 'not_found') {
+                        // Job not found
+                        if (processingInterval) clearInterval(processingInterval);
+                        if (progressInterval) clearInterval(progressInterval);
+                        throw new Error('Job not found. It may have expired.');
+                    } else {
+                        // Unknown status, continue polling
+                        console.warn('Unknown job status:', data.status);
                         setTimeout(poll, pollInterval);
                     }
                 } catch (error) {
+                    if (processingInterval) clearInterval(processingInterval);
+                    if (progressInterval) clearInterval(progressInterval);
+                    console.error('Job polling error:', error);
                     alert('Error checking job status: ' + error.message);
                     showScreen(4);
                 }
@@ -2417,9 +2588,10 @@ TPL_TYPEFORM_AUDIT = """
 
                     <div class="tabs" style="display:flex; gap:0; margin-bottom: 1rem; border-bottom: 2px solid #2A2A2A; flex-wrap: wrap;">
                         <button class="tab topmedia-tab active" onclick="switchTopMediaTab(event, 'all')" style="padding: 0.75rem 1.25rem; background:none; border:none; color:#B8C5CD; cursor:pointer; border-bottom: 3px solid #464A3F;">All Media (Top 20)</button>
-                        <button class="tab topmedia-tab" onclick="switchTopMediaTab(event, 'sports_entertainment')" style="padding: 0.75rem 1.25rem; background:none; border:none; color:#888888; cursor:pointer; border-bottom: 3px solid transparent;">Sports & Entertainment</button>
-                        <button class="tab topmedia-tab" onclick="switchTopMediaTab(event, 'tech_streaming')" style="padding: 0.75rem 1.25rem; background:none; border:none; color:#888888; cursor:pointer; border-bottom: 3px solid transparent;">Tech & Streaming</button>
-                        <button class="tab topmedia-tab" onclick="switchTopMediaTab(event, 'brand_official')" style="padding: 0.75rem 1.25rem; background:none; border:none; color:#888888; cursor:pointer; border-bottom: 3px solid transparent;">Brand Official Sites</button>
+                        <button class="tab topmedia-tab" onclick="switchTopMediaTab(event, 'media_press')" style="padding: 0.75rem 1.25rem; background:none; border:none; color:#888888; cursor:pointer; border-bottom: 3px solid transparent;">Media & Press</button>
+                        <button class="tab topmedia-tab" onclick="switchTopMediaTab(event, 'social')" style="padding: 0.75rem 1.25rem; background:none; border:none; color:#888888; cursor:pointer; border-bottom: 3px solid transparent;">Social Media</button>
+                        <button class="tab topmedia-tab" onclick="switchTopMediaTab(event, 'informational')" style="padding: 0.75rem 1.25rem; background:none; border:none; color:#888888; cursor:pointer; border-bottom: 3px solid transparent;">Informational</button>
+                        <button class="tab topmedia-tab" onclick="switchTopMediaTab(event, 'brand_official')" style="padding: 0.75rem 1.25rem; background:none; border:none; color:#888888; cursor:pointer; border-bottom: 3px solid transparent;">Brand Official</button>
                     </div>
                     
                     <table>
@@ -2458,7 +2630,7 @@ TPL_TYPEFORM_AUDIT = """
                     }
                     
                     html += `
-                        <tr style="${rowStyle}" data-group="${source.group}">
+                        <tr style="${rowStyle}" data-category="${source.category || 'other'}">
                             <td><strong>${i + 1}</strong></td>
                             <td>
                                 <a href="https://${source.domain}" target="_blank" style="color: #B8C5CD; text-decoration: none;">${source.domain}</a>
@@ -2549,6 +2721,8 @@ TPL_TYPEFORM_AUDIT = """
                         url_citations: s.url_citations || 0,
                         inferred_citations: s.inferred_citations || 0,
                         recommended: s.recommended || 0,
+                        category: s.category || 'other',
+                        category_display: s.category_display || 'Other',
                         priority
                     };
                 });
@@ -2926,17 +3100,24 @@ TPL_TYPEFORM_AUDIT = """
                 console.error('Chart initialization failed', e);
             }
 
-            // Filterable tabs for Top Media table
+            // Filterable tabs for Top Media table - now using category instead of group
             try {
-                window.switchTopMediaTab = function(evt, group) {
-                    document.querySelectorAll('.topmedia-tab').forEach(b => b.classList.remove('active'));
+                window.switchTopMediaTab = function(evt, category) {
+                    document.querySelectorAll('.topmedia-tab').forEach(b => {
+                        b.classList.remove('active');
+                        b.style.color = '#888888';
+                        b.style.borderBottomColor = 'transparent';
+                    });
                     if (evt && evt.target) {
                         evt.target.classList.add('active');
+                        evt.target.style.color = '#B8C5CD';
+                        evt.target.style.borderBottomColor = '#464A3F';
                     }
                     const rows = document.querySelectorAll('#topMediaSection table tbody tr');
                     rows.forEach(r => {
-                        const g = r.getAttribute('data-group') || 'other';
-                        r.style.display = (!group || group === 'all' || g === group) ? '' : 'none';
+                        // Get category from data attribute (we'll need to add this)
+                        const rowCategory = r.getAttribute('data-category') || 'other';
+                        r.style.display = (!category || category === 'all' || rowCategory === category) ? '' : 'none';
                     });
                 };
                 // Default view
