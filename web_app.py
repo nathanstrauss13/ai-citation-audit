@@ -1014,6 +1014,12 @@ def typeform_audit():
             brand = request.json.get('brand', '')
             openai_key = os.environ.get('OPENAI_API_KEY')
             
+            # Debug logging
+            logger.info(f"detect_competitors called for brand: {brand}")
+            logger.info(f"OpenAI API key present: {bool(openai_key)}")
+            if openai_key:
+                logger.info(f"OpenAI API key length: {len(openai_key)}")
+            
             from simple_raw_auditor import infer_competitors
             result = infer_competitors(brand, openai_key)
             
