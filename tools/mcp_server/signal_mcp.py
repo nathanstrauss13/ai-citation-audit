@@ -635,7 +635,8 @@ def outlet_profile(slug: str, domain: str) -> dict:
     pages = [{"url": u, "fetch_status": v.get("status"),
               "brand_mentions_on_page": v.get("brand_count"),
               "page_title": (v.get("title") or "")[:120],
-              **({"checked_date": v["checked_date"]} if v.get("checked_date") else {})}
+              **({"checked_date": v["checked_date"]} if v.get("checked_date") else {}),
+              **({"fetch_note": v["note"]} if v.get("note") else {})}
              for u, v in cc.items() if _root(u.split("//")[-1]) == root]
     _cls_map, _cls_note = _classes(slug, p)
     return {**_label(slug, p), "domain_root": root,
@@ -748,7 +749,8 @@ def get_page_evidence(slug: str, only_missing_brand: bool = False, limit: int = 
               "source_type": _source_type_of(u, _root(u.split("//")[-1]), _cls_map, _owned),
               "times_cited": cited.get(u, 0),
               "answers_citing": len(cited_answers.get(u, ())),
-              **({"checked_date": v["checked_date"]} if v.get("checked_date") else {})}
+              **({"checked_date": v["checked_date"]} if v.get("checked_date") else {}),
+              **({"fetch_note": v["note"]} if v.get("note") else {})}
              for u, v in cc.items()
              if not (only_missing_brand and (v.get("status") != "ok" or v.get("brand_count")))
              and (not url_contains or url_contains.lower() in u.lower())
