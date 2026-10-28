@@ -49,14 +49,9 @@ for r in csv.DictReader(open(RAW + "13_retrieved_pages.csv")):
     retrieved[(r["llm"], r["prompt_class"], r["answer_id"])].append(r)
 ans_ids = {(r["llm"], r["prompt"]): r["answer_id"] for r in csv.DictReader(open(RAW + "01_answers.csv"))}
 
-SECOND = {"co.uk", "com.au", "co.jp", "co.in", "com.br", "co.nz", "org.uk", "gov.uk"}
-def host(u):
-    h = (urlparse(u).netloc or "").lower().split(":")[0]
-    return h[4:] if h.startswith("www.") else h
-def root(h):
-    p = h.split(".")
-    if len(p) >= 3 and ".".join(p[-2:]) in SECOND: return ".".join(p[-3:])
-    return ".".join(p[-2:]) if len(p) >= 2 else h
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from conventions import host_of as host, root_of as root   # the shared rooting rule: the classes file is keyed by it
 def norm(u):
     u = re.sub(r"[?&](utm_[^&#]*|fbclid=[^&#]*|gclid=[^&#]*)", "", u or "")
     return re.sub(r"^https?://(www\.)?", "", u).rstrip("?&/").lower()
