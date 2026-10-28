@@ -11730,6 +11730,14 @@ def mcp_current_build():
     return jsonify({"current_build": h.hexdigest()[:12]})
 
 
+@app.route('/favicon.ico')
+def favicon():
+    """The cube mark (Oct 28, 2026 brand ruling). Browsers that find no
+    <link rel="icon"> fall back to this path; the templates also link it."""
+    return send_file(os.path.join(app.static_folder, 'favicon.ico'), mimetype='image/x-icon',
+                     max_age=86400)
+
+
 @app.route('/healthz')
 def healthz():
     """Lightweight liveness probe — no DB, no LLM. Surfaces audit concurrency so

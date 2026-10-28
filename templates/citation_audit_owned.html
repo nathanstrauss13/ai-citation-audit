@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="128x128" href="/static/cube_128.png">
+<link rel="apple-touch-icon" sizes="1024x1024" href="/static/cube_1024.png">
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 {# Shared customer report — keep it out of search indexes. #}
 <meta name="robots" content="noindex,nofollow">
 <title>Owned Signal Finder — {{ brand }} — INNATE C3</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0ECCXPL90"></script>
 <script>
@@ -26,7 +29,7 @@ body{background:radial-gradient(1100px 520px at 80% -6%,rgba(203,171,109,.09),tr
 h2,.eyebrow,.wm,.brand,.stat,.pilltab,.movehd,.gh,.gapcard h4,.oc b,.on.you,.ov{font-family:'Jost',sans-serif}
 .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:26px;gap:12px;flex-wrap:wrap}
 .top a{text-decoration:none}
-.wm{font-weight:500;letter-spacing:-.01em;font-size:20px;color:#f4f4f5}.wm sup{font-size:.56em}
+.wm{font-family:'Jost',sans-serif;font-weight:200;letter-spacing:0;font-size:20px;color:#f4f4f5;text-decoration:none;display:inline-flex;align-items:center;gap:8px}.wm img{height:16px;width:auto;display:block}
 .tabs{display:flex;gap:8px}
 .pilltab{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:7px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink2);background:rgba(255,255,255,.02);transition:color .2s,border-color .2s}
 .pilltab:hover{color:var(--ink)}
@@ -92,7 +95,7 @@ footer a:hover{text-decoration:underline}
 <body>
 <div class="wrap">
   <div class="top">
-    <a href="https://innatec3.com" target="_blank" rel="noopener" class="wm">innate c3</a>
+    <a href="https://innatec3.com" target="_blank" rel="noopener" class="wm"><img src="/static/cube_128.png" alt="">innate c3</a>
     <div class="tabs">
       <a href="/signal/{{ slug }}" class="pilltab">Earned · PR</a>
       <a href="/signal/{{ slug }}/owned" class="pilltab on">Owned</a>

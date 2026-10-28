@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="128x128" href="/static/cube_128.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/static/cube_1024.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% if shared_data %}
@@ -11,7 +14,7 @@
     <title>Free AI Visibility Audit — INNATE C3</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0ECCXPL90"></script>
     <script>
@@ -1628,7 +1631,8 @@
 
     /* ---- top nav / header ---- */
     .signal-header{margin-bottom:0;padding:26px 0;border:0;}
-    .signal-header .wm{font-family:'Inter',sans-serif;font-weight:500;font-size:22px;letter-spacing:-.012em;color:#f4f4f5;text-transform:none;text-decoration:none;}
+    .signal-header .wm{font-family:'Jost',sans-serif;font-weight:200;font-size:22px;letter-spacing:0;color:#f4f4f5;text-transform:none;text-decoration:none;display:inline-flex;align-items:center;gap:8px;}
+    .signal-header .wm img{height:16px;width:auto;display:block;}
     .signal-header .wm sup{font-size:.56em;font-weight:500;margin-left:1px;}
     .signal-header .auth-cluster{color:var(--ink2);}
     .signal-header .auth-cluster a{color:#2a1008;background:var(--cta);border:0;padding:9px 16px;border-radius:999px;font-weight:600;box-shadow:0 0 22px -4px var(--coral-g);transition:transform .2s,box-shadow .2s;}
@@ -1929,7 +1933,7 @@
     <div class="pglow"></div>
     <div class="container">
         <div class="signal-header">
-            <a href="https://innatec3.com" target="_blank" rel="noopener" class="wm">innate c3</a>
+            <a href="https://innatec3.com" target="_blank" rel="noopener" class="wm"><img src="/static/cube_128.png" alt="">innate c3</a>
             {% if shared_data and shared_data.slug %}
             <div class="sig-tabs">
                 <a href="/signal/{{ shared_data.slug }}" class="pilltab on">Earned · PR</a>
