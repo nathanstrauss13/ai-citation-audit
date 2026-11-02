@@ -2585,10 +2585,13 @@ def _one_prompt_persist(run):
         print("one-prompt persist failed (continuing):", str(e)[:120])
 
 
-def _send_one_prompt_email(run):
+def _send_one_prompt_email(run, lead=False):
     """Owner report after each one-prompt run, like the audit debug email: brand,
     the question, cost, counts, per-agent timing, and a link that replays the run.
-    Skipped silently without a mail key or AUDIT_DEBUG_EMAIL. Never raises."""
+    Sent again with lead=True when a visitor unlocks the findings with a work
+    email, so the address reaches the inbox even though the run's own report
+    fired before the unlock. Skipped silently without a mail key or
+    AUDIT_DEBUG_EMAIL. Never raises."""
     recipient = os.environ.get("AUDIT_DEBUG_EMAIL", "nstrauss@innatec3.com").strip()
     key = (os.environ.get("GMAIL_SMTP_APP_PASSWORD") or os.environ.get("RESEND_API_KEY") or os.environ.get("SENDGRID_API_KEY"))
     if not recipient or not key:
@@ -2614,9 +2617,10 @@ def _send_one_prompt_email(run):
         top = ", ".join(f"{s['root']} {s['answers']} of {f.get('answers', 0)}" for s in (f.get("top_sources") or [])[:3]) or "(none)"
         attr = ", ".join(v for v in (run.attr.get("utm_source"), run.attr.get("utm_medium"), run.attr.get("utm_campaign")) if v) or "direct"
         state = "errored" if run.failed else ("unlocked by " + run.email if run.email else "completed, findings not unlocked")
-        subject = f"[One prompt] {run.brand} \u2014 {c.get('answers', 0)} of 6 answered \u00b7 {cost_label}"
+        subject = (f"[One prompt \u00b7 lead] {run.email} \u00b7 {run.brand}" if lead
+                   else f"[One prompt] {run.brand} \u2014 {c.get('answers', 0)} of 6 answered \u00b7 {cost_label}")
         lines = [
-            "One prompt, six agents: run " + state,
+            ("Lead: " + (run.email or "") + " unlocked the findings") if lead else ("One prompt, six agents: run " + state),
             "",
             f"Brand: {run.brand}",
             f"Question: {run.prompt}",
@@ -2779,6 +2783,17 @@ def one_prompt_unlock():
     if email and not operator:
         _capture_inbound_lead("completed", f"[one prompt] {brand}: {prompt}", _client_ip(), email,
                               _is_operator_email(email), _session_inbound_attr(), brand=brand, est_cost_usd=est)
+        try:
+            if run is None:
+                # the run outlived the process: rebuild enough of it from the row for the lead email
+                from types import SimpleNamespace
+                run = SimpleNamespace(run_id=run_id, brand=brand, prompt=prompt, email=email, ip=rec.ip,
+                                      attr={"utm_source": rec.utm_source, "utm_medium": rec.utm_medium, "utm_campaign": rec.utm_campaign},
+                                      operator=bool(rec.is_operator), events=json.loads(rec.events_json or "[]"),
+                                      counts=json.loads(rec.counts_json or "{}"), findings=findings, est_cost_usd=est, failed=None)
+            threading.Thread(target=_send_one_prompt_email, args=(run, True), daemon=True).start()
+        except Exception as e:
+            print("one-prompt lead email failed (continuing):", str(e)[:120])
     return jsonify({"run_id": run_id, "findings": findings})
 
 
