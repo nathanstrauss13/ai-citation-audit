@@ -2460,8 +2460,9 @@ def root_redirect():
     # Preserve the query string so LinkedIn attribution survives: a visitor landing
     # on signal.innatec3.com/?utm_source=linkedin must arrive at
     # /citation-audit?utm_source=linkedin, where the GET handler stashes the UTM.
+    # Nov 2, 2026 (Nathan): root serves the one-prompt page. /citation-audit stays reachable directly.
     qs = request.query_string.decode('utf-8', 'ignore')
-    target = "/citation-audit" + (("?" + qs) if qs else "")
+    target = "/one-prompt" + (("?" + qs) if qs else "")
     return redirect(target, code=308)
 
 
