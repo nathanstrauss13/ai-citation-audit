@@ -19,8 +19,8 @@ html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--ui);-
 a{color:inherit}
 .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
 header{display:flex;align-items:center;justify-content:space-between;height:64px}
-.wm{font-family:var(--display);font-weight:200;font-size:22px;color:#f4f4f5;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
-.wm img{height:16px;width:auto;display:block}
+.lockup{font-family:var(--display);font-weight:200;font-size:22px;color:#f4f4f5;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.lockup img{height:16px;width:auto;display:block}
 .talk{color:#2a1008;background:linear-gradient(180deg,#f0916f,#d76a4c);padding:9px 16px;border-radius:999px;font:600 13px/1 var(--ui);text-decoration:none;box-shadow:0 0 22px -4px rgba(240,135,106,.36);transition:transform .2s,box-shadow .2s}
 .talk:hover{transform:translateY(-1px);box-shadow:0 0 30px -2px rgba(240,135,106,.36)}
 
@@ -51,6 +51,10 @@ header{display:flex;align-items:center;justify-content:space-between;height:64px
 .answer.on{opacity:1;transform:none}
 .answer .b{color:var(--gold);font-weight:600;text-shadow:0 0 8px var(--gold-g)}
 .answer .c{color:var(--olive)}
+.answer b{color:var(--ink);font-weight:600}
+.answer .lk{box-shadow:inset 0 -1px 0 rgba(255,255,255,.22)}
+.answer .url{color:var(--muted)}
+.answer sup{font-size:8px;color:var(--hue);margin-left:1px}
 .answer .sup{box-shadow:inset 0 -1px 0 var(--hue)}
 .answer .mk{display:inline-block;width:4px;height:4px;border-radius:2px;background:var(--hue);vertical-align:super;margin-left:1px;box-shadow:0 0 6px var(--hue)}
 .answer.err{color:var(--muted);font-style:italic;-webkit-mask-image:none;mask-image:none}
@@ -153,7 +157,11 @@ header{display:flex;align-items:center;justify-content:space-between;height:64px
 .close a{display:inline-block;background:var(--gold);color:#121212;border-radius:3px;padding:13px 22px;font:600 12px/1 var(--ui);letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
 .wm{position:fixed;left:16px;bottom:12px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);opacity:.7;display:none}
 .wm.on{display:block}
-.ctl{position:fixed;right:16px;bottom:12px;font-size:10px;color:var(--muted);display:flex;gap:10px}
+.ctl{position:fixed;right:16px;bottom:12px;font-size:10px;color:var(--muted);display:none;gap:10px}
+.ctl.on{display:flex}
+.note{color:var(--amber,#d9a44a);font-size:12.5px;margin:10px 0 0;min-height:0}
+.note:empty{display:none}
+.gate .note{margin:10px 0 0}
 .ctl button{background:none;border:1px solid var(--line);color:var(--ink2);font-size:10px;padding:3px 8px;border-radius:3px;cursor:pointer}
 @media (max-width:980px){.cols{grid-template-columns:repeat(3,1fr)}.tiles{grid-template-columns:repeat(2,1fr)}.fan{display:none}.form{grid-template-columns:1fr}}
 
@@ -195,7 +203,7 @@ header{display:flex;align-items:center;justify-content:space-between;height:64px
 </head>
 <body>
 <div class="wrap">
-  <header><a class="wm" href="https://innatec3.com" target="_blank" rel="noopener"><img src="/static/cube_128.png" alt="">innate c3</a><a class="talk" href="https://calendly.com/nstrauss/new-meeting" target="_blank" rel="noopener">Talk to us</a></header>
+  <header><a class="lockup" href="https://innatec3.com" target="_blank" rel="noopener"><img src="/static/cube_128.png" alt="">innate c3</a><a class="talk" href="https://calendly.com/nstrauss/new-meeting" target="_blank" rel="noopener">Talk to us</a></header>
 
   <section class="ask" id="ask">
     <h1>One prompt, six agents</h1>
@@ -205,7 +213,7 @@ header{display:flex;align-items:center;justify-content:space-between;height:64px
       <input id="prompt" placeholder="A question a buyer would ask" required>
       <button id="run" type="submit">Run</button>
     </form>
-    
+    <p class="note" id="note"></p>
   </section>
 
   <section class="stage" id="stage">
@@ -221,6 +229,7 @@ header{display:flex;align-items:center;justify-content:space-between;height:64px
       <h2>Five findings from this run</h2>
       <p>Enter a work email to open them. The run stays on this page.</p>
       <form id="gateform"><input id="email" type="email" placeholder="name@company.com" required><button type="submit">Open findings</button></form>
+      <p class="note" id="gnote"></p>
     </div>
     <div class="tiles" id="tiles"></div>
     <div class="close" id="closer" style="display:none"><p id="closeline"></p><a href="{{ calendly_url }}" target="_blank" rel="noopener">Book 30 minutes</a></div>
@@ -234,13 +243,15 @@ header{display:flex;align-items:center;justify-content:space-between;height:64px
 // ---------- helpers ----------
 const $ = (s, r = document) => r.querySelector(s);
 const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+const unent = (s) => String(s == null ? '' : s).replace(/&#(\d+);/g, (m, n) => String.fromCharCode(+n)).replace(/&#x([0-9a-f]+);/gi, (m, n) => String.fromCharCode(parseInt(n, 16))).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#?39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 const esc = (s) => s.replace(/[&<>"]/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
 const hueOf = (i, n) => 168 + (332 - 168) * (n > 1 ? i / (n - 1) : 0);
 const hostPath = (u) => { try { const x = new URL(u); return (x.host.replace(/^www\./, '') + x.pathname.replace(/\/$/, '')); } catch { return u; } };
 const shortLabel = (u, n = 30) => { const s = hostPath(u); return s.length > n ? s.slice(0, n - 1) + '…' : s; };
 
 // ---------- state ----------
-const TYPE_COL = {editorial: '#74d0ff', owned: '#cbab6d', competitor: '#aab98a', retail: '#c98ad6', reference: '#9aa1ad', social: '#f0876a', unclassified: '#3a3e47'};
+const TYPE_COL = {editorial: '#74d0ff', reviews: '#6fd3c1', aggregator: '#a3a8ff', community: '#f0b060', social: '#f0876a', reference: '#9aa1ad', institutional: '#c9c0a3', corporate: '#d6a2a2', retail: '#c98ad6', owned: '#cbab6d', competitor: '#aab98a', unclassified: '#3a3e47'};
+const LIVE = true; // build_template.py flips this to true for the deployed page
 const S = {run: null, cols: {}, chips: {}, pages: {}, counts: {answers: 0, errors: 0, citations: 0, resolved: 0, rewritten: 0, dropped: 0, merged: 0, verified: 0, walls: 0, distinct: 0, cap: 0, read: 0, blocked: 0}, findings: null, done: false};
 let speed = 1, timers = [], brandRe = null, compRe = null;
 
@@ -288,9 +299,21 @@ function mark(text, cits) {
   let out = '', pos = 0;
   for (const m of marks) { out += esc(text.slice(pos, m.pos)) + `<i class="mk" data-cid="${m.id}"></i>`; pos = m.pos; }
   out += esc(text.slice(pos));
+  out = md(out);
   if (brandRe) out = out.replace(brandRe, '<span class="b">$1</span>');
   if (compRe) out = out.replace(compRe, '<span class="c">$1</span>');
   return out.replace(/\n/g, '<br>');
+}
+// light markdown on the escaped, marker-bearing text: bold, headers, links, footnotes, bare urls
+const MK = '(<i class="mk"[^>]*><\\/i>)?';
+function md(h) {
+  h = h.replace(new RegExp('\\[\\[(\\d{1,2})\\]\\]\\((https?:[^)\\s]*?)' + MK + '\\)', 'g'), '<sup>$1</sup>$3');
+  h = h.replace(new RegExp('\\[([^\\]\\n]{1,80})\\]\\((https?:[^)\\s]*?)' + MK + '\\)', 'g'), '<span class="lk">$1</span>$3');
+  h = h.replace(/(^|[\s(])(https?:\/\/[^\s<)]+)/g, (m, pre, u) => pre + '<span class="url">' + esc(shortLabel(u.replace(/&amp;/g, '&'), 38)) + '</span>');
+  h = h.replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>').replace(/(^|[^*])\*([^*\n]+?)\*(?!\*)/g, '$1<em>$2</em>');
+  h = h.replace(/^#{1,4} (.+)$/gm, '<b>$1</b>').replace(/^(?:---|\*\*\*)\s*$/gm, '').replace(/^\s*[-*] /gm, '· ');
+  h = h.replace(/\[(\d{1,2})\](?!\()/g, '<sup>$1</sup>');
+  return h;
 }
 function renderAnswer(agent) {
   const col = S.cols[agent]; if (!col.text) return;
@@ -349,7 +372,7 @@ const H = {
     const c = S.cols[d.agent]; c.text = d.text; S.counts.answers++; renderAnswer(d.agent);
     $('.answer', c.el).classList.add('on'); $('.state', c.el).textContent = `answered · ${(d.latency_ms / 1000).toFixed(1)} s`; ledger();
   },
-  'agent.error'(d) { const c = S.cols[d.agent]; S.counts.errors++; $('.answer', c.el).innerHTML = esc(d.reason); $('.answer', c.el).classList.add('on', 'err'); $('.state', c.el).textContent = 'no answer'; },
+  'agent.error'(d) { const c = S.cols[d.agent]; S.counts.errors++; const a = $('.answer', c.el); a.textContent = 'No answer from this agent this run.'; a.title = d.reason || ''; a.classList.add('on', 'err'); $('.state', c.el).textContent = 'no answer'; ledger(); },
   'citation.found'(d) {
     const c = S.cols[d.agent]; const chip = {...d, el: null}; S.chips[d.cit_id] = chip; c.chips.push(d.cit_id); S.counts.citations++;
     if (d.source === 'api') c.el.classList.add('api');
@@ -393,7 +416,7 @@ const H = {
     const chip = S.chips[d.cit_id]; if (!chip) return; S.counts.verified++; if (d.status === 'wall') S.counts.walls++;
     const c = S.cols[d.agent]; $('.state', c.el).textContent = 'checking links';
     chip.el.style.setProperty('--verdict', d.status === 'ok' ? 'var(--olive)' : 'var(--amber)');
-    chip.el.classList.add('verifying'); setTimeout(() => { chip.el.classList.remove('verifying'); chip.el.classList.add(d.status); }, 700 / speed);
+    chip.el.classList.add('verifying'); if (d.status !== 'ok') chip.el.title = d.note === 'timeout' ? 'no response in time · kept on record' : 'blocked by the site · kept on record'; setTimeout(() => { chip.el.classList.remove('verifying'); chip.el.classList.add(d.status === 'ok' ? 'ok' : 'wall'); }, 700 / speed);
     if (chip.page_key) (S.pages[chip.page_key] = S.pages[chip.page_key] || {chips: []}).chips.push(chip);
   },
   'scrape.budget'(d) { S.counts.distinct = d.distinct_pages; S.counts.cap = d.read_cap; Object.values(S.cols).forEach((c) => $('.state', c.el).textContent = 'reading pages'); ledger(); },
@@ -406,7 +429,7 @@ const H = {
     for (const chip of p.chips) {
       chip.hits = d.brand_count || 0;
       const card = $('.card', chip.el);
-      if (d.status === 'blocked') card.innerHTML = `<div class="wallb"><span>blocked · kept</span></div>`;
+      if (d.status !== 'ok') card.innerHTML = `<div class="wallb"><span>${d.note === 'unreachable' ? 'unreachable' : 'blocked'} · kept</span></div>`;
       else { const hits = Math.min(4, d.brand_count || 0); card.querySelectorAll('.l i').forEach((i, k) => { if (k >= hits) i.remove(); }); card.classList.add('scanned'); }
       setTimeout(() => { chip.el.classList.remove('reading'); if (d.status === 'ok') { chip.el.classList.add('filled'); $('.hits', chip.el).innerHTML = Array.from({length: Math.min(4, d.brand_count || 0)}, () => '<i></i>').join(''); } }, 450 / speed);
     }
@@ -420,7 +443,7 @@ const H = {
 
 // ---------- bundling: FLIP every live chip into its source-type group ----------
 const DROP_REASON = {'404': 'dead link · 404 not found', '410': 'dead link · 410 gone', 'dns': 'dead link · host not found', 'refused': 'dead link · connection refused', 'timeout': 'dead link · no response'};
-const TYPE_ORDER = ['editorial', 'owned', 'competitor', 'retail', 'reference', 'social', 'unclassified'];
+const TYPE_ORDER = Object.keys(TYPE_COL);
 function bundle() {
   const live = Object.values(S.chips).filter((c) => c.el && c.el.isConnected && !c.dropped && !c.merged);
   if (!live.length) return;
@@ -469,14 +492,14 @@ function tiles(f) {
   // 1 brands named
   T.appendChild(el('div', 'tile', `<h3>Brands named</h3><div class="big">${me ? me.named_in.length : 0} of ${n}</div><div class="den">answers name ${esc(brandName)}${me ? ` · named first in ${me.named_first_in.length} of ${n}` : ''}</div><div class="chart">${f.brands_named.map((b) => barRow(b.name, b.named_in.length, n, {gold: isMe(b), dom: b.domain})).join('')}</div>`));
   // 2 citation mix
-  const types = ['editorial', 'owned', 'competitor', 'retail', 'reference', 'social', 'unclassified'], cols = TYPE_COL;
-  const tot = f.citation_mix.distinct_pages, by = f.citation_mix.by_type;
-  T.appendChild(el('div', 'tile', `<h3>Citation mix</h3><div class="big">${tot}</div><div class="den">distinct pages cited across ${n} answers</div><div class="chart donut">${donut(types.map((t) => ({v: by[t] || 0, c: cols[t]})), tot)}<div class="leg">${types.filter((t) => by[t]).map((t) => `<div><b style="background:${cols[t]}"></b>${t} <span style="color:var(--muted)">${by[t]} of ${tot}</span></div>`).join('')}</div></div>`));
+  const tot = f.citation_mix.distinct_pages, by = f.citation_mix.by_type, cols = TYPE_COL;
+  const types = TYPE_ORDER.concat(Object.keys(by).filter((t) => !(t in TYPE_COL)));
+  T.appendChild(el('div', 'tile', `<h3>Citation mix</h3><div class="big">${tot}</div><div class="den">distinct pages cited across ${n} answers</div><div class="chart donut">${donut(types.map((t) => ({v: by[t] || 0, c: cols[t] || cols.unclassified})), tot)}<div class="leg">${types.filter((t) => by[t]).map((t) => `<div><b style="background:${cols[t] || cols.unclassified}"></b>${t} <span style="color:var(--muted)">${by[t]} of ${tot}</span></div>`).join('')}</div></div>`));
   // 3 top sources
   const top = f.top_sources[0];
   T.appendChild(el('div', 'tile', `<h3>Top sources</h3><div class="big">${top ? `${top.answers} of ${n}` : '0'}</div><div class="den">answers cite ${top ? esc(top.root) : 'no domain'}, the most cited domain</div><div class="chart">${f.top_sources.map((s) => barRow(s.root, s.answers, n, {dom: s.root, href: 'https://' + s.root, gold: me && me.domain === s.root})).join('')}</div>`));
   // 4 editorial placements
-  T.appendChild(el('div', 'tile', `<h3>Top editorial placements</h3><div class="big">${by.editorial || 0} of ${tot}</div><div class="den">cited pages are editorial</div><div class="chart">${f.editorial_placements.map((e) => barRow(e.title.length > 40 ? e.title.slice(0, 39) + '…' : e.title, e.answers, n, {dom: e.outlet, href: e.url, sub: e.outlet})).join('')}</div>`));
+  T.appendChild(el('div', 'tile', `<h3>Top editorial placements</h3><div class="big">${by.editorial || 0} of ${tot}</div><div class="den">cited pages are editorial</div><div class="chart">${f.editorial_placements.map((e) => barRow((e.title = unent(e.title)).length > 40 ? e.title.slice(0, 39) + '…' : e.title, e.answers, n, {dom: e.outlet, href: e.url, sub: e.outlet})).join('')}</div>`));
   // 5 owned mix
   const o = f.owned_mix, other = o.distinct_pages - o.brand_pages - o.competitor_pages;
   T.appendChild(el('div', 'tile', `<h3>Owned mix</h3><div class="big">${o.brand_pages} of ${o.distinct_pages}</div><div class="den">cited pages are ${esc(brandName)}'s own</div><div class="chart donut">${donut([{v: o.brand_pages, c: cols.owned}, {v: o.competitor_pages, c: cols.competitor}, {v: other, c: '#3a3e47'}], o.distinct_pages)}<div class="leg"><div><b style="background:${cols.owned}"></b>${esc(brandName)} pages <span style="color:var(--muted)">${o.brand_pages} of ${o.distinct_pages}</span></div><div><b style="background:${cols.competitor}"></b>competitor pages <span style="color:var(--muted)">${o.competitor_pages} of ${o.distinct_pages}</span></div><div><b style="background:#3a3e47"></b>everything else <span style="color:var(--muted)">${other} of ${o.distinct_pages}</span></div></div></div>`));
@@ -496,25 +519,57 @@ function replay(events) {
   for (const e of events) timers.push(setTimeout(() => dispatch(e.event, e.data), (e.t * 1000) / speed));
 }
 function stream(url) {
-  const es = new EventSource(url);
+  const es = new EventSource(url); S.es = es;
   Object.keys(H).forEach((name) => es.addEventListener(name, (m) => dispatch(name, JSON.parse(m.data))));
-  es.onerror = () => { Object.values(S.cols).forEach((c) => { if ($('.state', c.el).textContent !== 'done') $('.state', c.el).textContent = 'connection lost'; }); };
+  es.addEventListener('findings.locked', () => es.close());          // the server has nothing more; stop the browser reconnecting
+  es.onerror = () => {
+    if (S.done || es.readyState !== EventSource.CLOSED) return;      // a dropped connection resumes itself with Last-Event-ID
+    Object.values(S.cols).forEach((c) => { if ($('.state', c.el).textContent !== 'done') $('.state', c.el).textContent = 'connection lost'; });
+    note('The connection to the run was lost. Reload to try again.');
+  };
 }
-$('#form').addEventListener('submit', (ev) => {
-  ev.preventDefault(); $('#run').disabled = true;
+const note = (m) => { $('#note').textContent = m || ''; };
+const lockForm = (on) => { ['#run', '#brand', '#prompt'].forEach((q) => { $(q).disabled = on; }); };
+function demo() {
+  // replay the synthetic log (watermarked); the typed brand and prompt are ignored
+  $('.ctl').classList.add('on');
+  S.findings = window.SYNTHETIC_FINDINGS; replay(window.SYNTHETIC_EVENTS);
+}
+$('#form').addEventListener('submit', async (ev) => {
+  ev.preventDefault(); if (S.run) return;
   const params = new URLSearchParams(location.search);
-  if (params.get('stream')) { stream(params.get('stream')); return; }
-  // prototype: replay the synthetic log, relabelled with the typed brand only when it matches the log's brand
-  const events = window.SYNTHETIC_EVENTS; S.findings = window.SYNTHETIC_FINDINGS;
-  replay(events);
+  if (params.get('stream')) { lockForm(true); stream(params.get('stream')); return; }
+  if (!LIVE || params.get('demo')) { lockForm(true); demo(); return; }
+  const brand = $('#brand').value.trim(), prompt = $('#prompt').value.replace(/\s+/g, ' ').trim();
+  if (brand.length < 2 || prompt.length < 10) { note('Enter a brand name and one question of at least ten characters.'); return; }
+  lockForm(true); note('');
+  try {
+    const r = await fetch('/one-prompt', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({brand, prompt})});
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok || !j.stream) { note(j.error || `The run could not start (${r.status}). Try again in a minute.`); lockForm(false); return; }
+    S.run_id = j.run_id; stream(j.stream);
+  } catch (e) { note('The run could not start. Check your connection and try again.'); lockForm(false); }
 });
-function openFindings() { const f = S.findings || window.SYNTHETIC_FINDINGS; tiles(f); $('#closeline').innerHTML = `This is one prompt and <b>${S.counts.citations}</b> citations. The audit analyzes 10,000+.`; $('#tiles').classList.add('open'); $('#gate').style.display = 'none'; $('#closer').style.display = 'block'; }
-$('#gateform').addEventListener('submit', (ev) => { ev.preventDefault(); openFindings(); });
+function openFindings() {
+  const f = S.findings; if (!f) return;
+  tiles(f); $('#closeline').innerHTML = `This is one prompt and <b>${S.counts.citations}</b> citations. The audit analyzes 10,000+.`;
+  $('#tiles').classList.add('open'); $('#gate').style.display = 'none'; $('#closer').style.display = 'block';
+}
+$('#gateform').addEventListener('submit', async (ev) => {
+  ev.preventDefault();
+  if (!S.run_id) { openFindings(); return; }                          // demo replay: findings travel with the log
+  const btn = $('#gateform button'); btn.disabled = true; $('#gnote').textContent = '';
+  try {
+    const r = await fetch('/one-prompt/unlock', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({run_id: S.run_id, email: $('#email').value.trim()})});
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok || !j.findings) { $('#gnote').textContent = j.error || `The findings could not be opened (${r.status}). Try again.`; btn.disabled = false; return; }
+    S.findings = j.findings; openFindings();
+  } catch (e) { $('#gnote').textContent = 'The findings could not be opened. Check your connection and try again.'; btn.disabled = false; }
+});
 $('#speed').addEventListener('click', () => { speed = speed === 1 ? 3 : 1; $('#speed').textContent = `speed ×${speed}`; });
 $('#skip').addEventListener('click', () => { timers.forEach(clearTimeout); const events = window.SYNTHETIC_EVENTS; if (!S.run) dispatch('run.start', events[0].data); events.filter((e) => e.event !== 'run.start').forEach((e) => dispatch(e.event, e.data)); });
 // prefill for the prototype; ?autorun=1&speed=3 starts the replay on load
-$('#brand').value = 'Rivian'; $('#prompt').value = 'What is the best electric adventure vehicle for off-roading and camping?';
-{ const q = new URLSearchParams(location.search); if (q.get('brand')) $('#brand').value = q.get('brand'); if (q.get('prompt')) $('#prompt').value = q.get('prompt'); if (q.get('autostart')) $('#form').requestSubmit(); }
+{ const q = new URLSearchParams(location.search); if (q.get('brand')) $('#brand').value = q.get('brand'); if (q.get('prompt')) $('#prompt').value = q.get('prompt'); if (q.get('demo')) { $('#brand').value = 'Rivian'; $('#prompt').value = 'What is the best electric adventure vehicle for off-roading and camping?'; } if (q.get('autostart')) $('#form').requestSubmit(); }
 { const q = new URLSearchParams(location.search); if (q.get('speed')) { speed = +q.get('speed') || 1; $('#speed').textContent = `speed ×${speed}`; } if (q.get('autorun')) $('#form').requestSubmit(); }
 </script>
 </body>
