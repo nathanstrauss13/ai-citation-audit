@@ -410,6 +410,40 @@ class FreeAuditUse(db.Model):
     __table_args__ = (db.UniqueConstraint('ip', 'day', name='uniq_ip_day'),)
 
 
+class OnePromptUse(db.Model):
+    """Per-IP per-day count of one-prompt runs (signal root page, Nov 2, 2026).
+    Separate from FreeAuditUse so the six-agent one-prompt run has its own cap."""
+    __tablename__ = 'one_prompt_use'
+    id = db.Column(db.Integer, primary_key=True)
+    ip = db.Column(db.String(64), nullable=False, index=True)
+    day = db.Column(db.Date, nullable=False, index=True)
+    count = db.Column(db.Integer, default=0, nullable=False)
+    __table_args__ = (db.UniqueConstraint('ip', 'day', name='uniq_one_prompt_ip_day'),)
+
+
+class OnePromptRun(db.Model):
+    """One row per one-prompt run: the event log, the findings, and the unlock
+    email. The log replays the page exactly (same shapes as the live stream)."""
+    __tablename__ = 'one_prompt_runs'
+    id = db.Column(db.Integer, primary_key=True)
+    run_id = db.Column(db.String(16), unique=True, nullable=False, index=True)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow, nullable=False, index=True)
+    brand = db.Column(db.String(120), nullable=True)
+    prompt = db.Column(db.Text, nullable=True)
+    ip = db.Column(db.String(64), nullable=True)
+    utm_source = db.Column(db.String(120), nullable=True)
+    utm_medium = db.Column(db.String(120), nullable=True)
+    utm_campaign = db.Column(db.String(120), nullable=True)
+    referrer = db.Column(db.String(400), nullable=True)
+    status = db.Column(db.String(16), nullable=True, default='started', index=True)
+    email = db.Column(db.String(254), nullable=True, index=True)
+    is_operator = db.Column(db.Boolean, nullable=True, default=False)
+    est_cost_usd = db.Column(db.Float, nullable=True)
+    counts_json = db.Column(db.Text, nullable=True)
+    events_json = db.Column(db.Text, nullable=True)
+    findings_json = db.Column(db.Text, nullable=True)
+
+
 class AuditLead(db.Model):
     """Per-email lead capture + hard cap on free audits per email. Each audit
     costs real LLM API spend; without this, a single shared link could blow up
@@ -2472,6 +2506,209 @@ def one_prompt():
     Until the event stream ships it replays a synthetic, watermarked run from
     static/one_prompt/events_synthetic.js. ?stream=<sse url> switches to a live stream."""
     return render_template("one_prompt.html", calendly_url="https://calendly.com/nstrauss/new-meeting")
+
+
+# ── One prompt, six agents: the live run (Product Development, Nov 2, 2026) ──
+# POST /one-prompt {brand, prompt} -> {run_id, stream}; GET /one-prompt/stream/<run_id>
+# is the SSE stream (event: <name>, data: json, ": keepalive" every 10 s);
+# POST /one-prompt/unlock {run_id, email} applies the work-email rule and returns
+# the findings. Caps: ONE_PROMPT_DAILY_CAP per IP, ONE_PROMPT_GLOBAL_CAP across
+# IPs, and the audit concurrency semaphore (503 at_capacity, same retry contract).
+ONE_PROMPT_DAILY_CAP = max(1, int(os.environ.get("ONE_PROMPT_DAILY_CAP", "3") or "3"))
+ONE_PROMPT_GLOBAL_CAP = max(1, int(os.environ.get("ONE_PROMPT_GLOBAL_CAP", "100") or "100"))
+
+
+def _one_prompt_runs_today(day):
+    try:
+        n = db.session.query(db.func.coalesce(db.func.sum(OnePromptUse.count), 0)).filter(OnePromptUse.day == day).scalar()
+        return int(n or 0)
+    except Exception as e:
+        try:
+            db.session.rollback()
+        except Exception:
+            pass
+        print("one-prompt global count failed (allowing):", str(e)[:120])
+        return 0
+
+
+def _one_prompt_persist(run):
+    """Write the finished run (events, findings, counts) to one_prompt_runs. Best effort."""
+    try:
+        with app.app_context():
+            rec = OnePromptRun.query.filter_by(run_id=run.run_id).first()
+            if rec is None:
+                rec = OnePromptRun(run_id=run.run_id)
+                db.session.add(rec)
+            rec.brand = (run.brand or "")[:120]
+            rec.prompt = run.prompt
+            rec.ip = run.ip
+            rec.utm_source = run.attr.get("utm_source")
+            rec.utm_medium = run.attr.get("utm_medium")
+            rec.utm_campaign = run.attr.get("utm_campaign")
+            rec.referrer = run.attr.get("referrer")
+            rec.status = "errored" if run.failed else "completed"
+            rec.is_operator = bool(run.operator)
+            rec.est_cost_usd = run.est_cost_usd
+            rec.counts_json = json.dumps(run.counts or {})
+            rec.events_json = json.dumps(run.events)
+            rec.findings_json = json.dumps(run.findings or {})
+            if run.email:
+                rec.email = run.email
+            db.session.commit()
+    except Exception as e:
+        try:
+            db.session.rollback()
+        except Exception:
+            pass
+        print("one-prompt persist failed (continuing):", str(e)[:120])
+
+
+@app.route("/one-prompt", methods=["POST"])
+def one_prompt_start():
+    import sys
+    import one_prompt_runner as OPR
+    body = request.get_json(silent=True) or {}
+    brand = (body.get("brand") or request.form.get("brand") or "").strip()[:80]
+    prompt = re.sub(r"\s+", " ", (body.get("prompt") or request.form.get("prompt") or "")).strip()[:400]
+    if len(brand) < 2 or len(prompt) < 10:
+        return jsonify({"code": "bad_input", "error": "Enter a brand name and one question of at least ten characters."}), 400
+    ip = _client_ip()
+    today = date.today()
+    exempt = _ip_is_exempt_from_cap(ip) or _operator_ok()
+    if not exempt:
+        use = OnePromptUse.query.filter_by(ip=ip, day=today).first()
+        if use and use.count >= ONE_PROMPT_DAILY_CAP:
+            return jsonify({"code": "rate_limited", "error": f"You've run {ONE_PROMPT_DAILY_CAP} prompts today. Talk to us for a full audit, or come back tomorrow."}), 429
+        if _one_prompt_runs_today(today) >= ONE_PROMPT_GLOBAL_CAP:
+            return jsonify({"code": "global_limit", "error": "The one-prompt run has hit its daily limit. Talk to us for a full audit, or check back tomorrow."}), 429
+    if not _audit_slot_acquire():
+        return jsonify({"code": "at_capacity", "error": "A couple of runs are already in progress. You're in line; it usually clears within a minute."}), 503
+    if not exempt:
+        try:
+            use = OnePromptUse.query.filter_by(ip=ip, day=today).first()
+            if use:
+                use.count += 1
+            else:
+                db.session.add(OnePromptUse(ip=ip, day=today, count=1))
+            db.session.commit()
+        except Exception as e:
+            try:
+                db.session.rollback()
+            except Exception:
+                pass
+            print("one-prompt use count failed (continuing):", str(e)[:120])
+    run = OPR.register(OPR.Run(brand, prompt, ip=ip, attr=_session_inbound_attr(), operator=exempt))
+    try:
+        with app.app_context():
+            db.session.add(OnePromptRun(run_id=run.run_id, brand=brand, prompt=prompt, ip=ip, status="started", is_operator=exempt,
+                                        utm_source=run.attr.get("utm_source"), utm_medium=run.attr.get("utm_medium"),
+                                        utm_campaign=run.attr.get("utm_campaign"), referrer=run.attr.get("referrer")))
+            db.session.commit()
+    except Exception as e:
+        try:
+            db.session.rollback()
+        except Exception:
+            pass
+        print("one-prompt start row failed (continuing):", str(e)[:120])
+
+    def _release():
+        _audit_slot_release()
+        _one_prompt_persist(run)
+    OPR.start(run, sys.modules[__name__], slot_release=_release)
+    return jsonify({"run_id": run.run_id, "stream": f"/one-prompt/stream/{run.run_id}"})
+
+
+@app.route("/one-prompt/stream/<run_id>")
+def one_prompt_stream(run_id):
+    """SSE. Every event carries id: <index>; a reconnecting EventSource sends
+    Last-Event-ID and resumes after it, so nothing is replayed twice. Once a
+    finished run has been delivered in full, a reconnect gets 204, which stops
+    the browser from reconnecting."""
+    import one_prompt_runner as OPR
+    try:
+        after = int(request.headers.get("Last-Event-ID") or request.args.get("after") or -1)
+    except ValueError:
+        after = -1
+    run = OPR.get(run_id)
+    if run is None:
+        # a finished run that outlived the process: replay it from the table
+        rec = OnePromptRun.query.filter_by(run_id=run_id).first()
+        if rec is None or not rec.events_json:
+            return jsonify({"code": "not_found", "error": "No such run."}), 404
+        events = json.loads(rec.events_json)
+        if after >= len(events) - 1:
+            return Response(status=204)
+
+        def replay():
+            for i, ev in enumerate(events):
+                if i > after:
+                    yield f"id: {i}\nevent: {ev['event']}\ndata: {json.dumps(ev['data'])}\n\n"
+        return Response(replay(), mimetype="text/event-stream", headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
+    if run.done and after >= len(run.events) - 1:
+        return Response(status=204)
+
+    def generate():
+        for i, ev in run.subscribe(heartbeat=10.0, start=after + 1):
+            if ev is None:
+                yield ": keepalive\n\n"
+                continue
+            yield f"id: {i}\nevent: {ev['event']}\ndata: {json.dumps(ev['data'])}\n\n"
+    return Response(generate(), mimetype="text/event-stream", headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
+
+
+@app.route("/one-prompt/unlock", methods=["POST"])
+def one_prompt_unlock():
+    import one_prompt_runner as OPR
+    body = request.get_json(silent=True) or {}
+    run_id = (body.get("run_id") or request.form.get("run_id") or "").strip()
+    run = OPR.get(run_id)
+    rec = OnePromptRun.query.filter_by(run_id=run_id).first() if run_id else None
+    if run is None and rec is None:
+        return jsonify({"code": "not_found", "error": "No such run."}), 404
+    if run is not None and not run.done:
+        return jsonify({"code": "not_ready", "error": "The run is still in progress."}), 409
+    email = _normalize_email(body.get("email") or request.form.get("email") or "")
+    operator = _operator_ok() or _ip_is_exempt_from_cap(_client_ip())
+    if not operator and (not email or not _is_work_email(email)):
+        return jsonify({"code": "work_email_required", "error": "Enter a work email address to open the findings."}), 400
+    findings = run.findings if run is not None else json.loads(rec.findings_json or "{}")
+    brand = run.brand if run is not None else rec.brand
+    prompt = run.prompt if run is not None else rec.prompt
+    est = run.est_cost_usd if run is not None else rec.est_cost_usd
+    if run is not None:
+        run.email = email
+    try:
+        if rec is None:
+            rec = OnePromptRun.query.filter_by(run_id=run_id).first()
+        if rec is not None and email:
+            rec.email = email
+            db.session.commit()
+    except Exception:
+        try:
+            db.session.rollback()
+        except Exception:
+            pass
+    if email and not operator:
+        _capture_inbound_lead("completed", f"[one prompt] {brand}: {prompt}", _client_ip(), email,
+                              _is_operator_email(email), _session_inbound_attr(), brand=brand, est_cost_usd=est)
+    return jsonify({"run_id": run_id, "findings": findings})
+
+
+@app.route("/one-prompt/log/<run_id>")
+def one_prompt_log(run_id):
+    """Operator only: the run's event log as JSON lines (the page's replay format)."""
+    if not _operator_ok():
+        abort(404)
+    import one_prompt_runner as OPR
+    run = OPR.get(run_id)
+    if run is not None:
+        body = run.jsonl()
+    else:
+        rec = OnePromptRun.query.filter_by(run_id=run_id).first()
+        if rec is None or not rec.events_json:
+            abort(404)
+        body = "\n".join(json.dumps(e) for e in json.loads(rec.events_json)) + "\n"
+    return Response(body, mimetype="application/x-ndjson")
 
 
 @app.route("/legacy-index", methods=["GET", "POST"])
