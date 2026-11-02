@@ -2575,6 +2575,71 @@ def _one_prompt_persist(run):
         print("one-prompt persist failed (continuing):", str(e)[:120])
 
 
+def _send_one_prompt_email(run):
+    """Owner report after each one-prompt run, like the audit debug email: brand,
+    the question, cost, counts, per-agent timing, and a link that replays the run.
+    Skipped silently without a mail key or AUDIT_DEBUG_EMAIL. Never raises."""
+    recipient = os.environ.get("AUDIT_DEBUG_EMAIL", "nstrauss@innatec3.com").strip()
+    key = (os.environ.get("GMAIL_SMTP_APP_PASSWORD") or os.environ.get("RESEND_API_KEY") or os.environ.get("SENDGRID_API_KEY"))
+    if not recipient or not key:
+        return
+    try:
+        from sendgrid.helpers.mail import Mail
+        from urllib.parse import urlencode
+        base = (SIGNAL_BASE_URL or "https://signal.innatec3.com").rstrip("/")
+        replay = f"{base}/one-prompt?" + urlencode({"brand": run.brand, "prompt": run.prompt, "stream": f"/one-prompt/stream/{run.run_id}", "autorun": "1"})
+        log_url = f"{base}/one-prompt/log/{run.run_id}"
+        c = run.counts or {}
+        answered, errors = [], []
+        for ev in run.events:
+            if ev["event"] == "agent.answer":
+                answered.append(f"{ev['data']['agent']} {ev['data']['latency_ms'] / 1000:.0f} s")
+            elif ev["event"] == "agent.error":
+                errors.append(f"{ev['data']['agent']}: {ev['data'].get('reason', '')[:80]}")
+        cost_label = f"~${run.est_cost_usd:.2f}" if run.est_cost_usd is not None else "(not measured)"
+        f = run.findings or {}
+        me = next((b for b in f.get("brands_named") or [] if b.get("name") == run.brand), None)
+        named = f"{len(me['named_in'])} of {f.get('answers', 0)}" if me else f"0 of {f.get('answers', 0)}"
+        first = f"{len(me['named_first_in'])} of {f.get('answers', 0)}" if me else "0"
+        top = ", ".join(f"{s['root']} {s['answers']} of {f.get('answers', 0)}" for s in (f.get("top_sources") or [])[:3]) or "(none)"
+        attr = ", ".join(v for v in (run.attr.get("utm_source"), run.attr.get("utm_medium"), run.attr.get("utm_campaign")) if v) or "direct"
+        state = "errored" if run.failed else ("unlocked by " + run.email if run.email else "completed, findings not unlocked")
+        subject = f"[One prompt] {run.brand} \u2014 {c.get('answers', 0)} of 6 answered \u00b7 {cost_label}"
+        lines = [
+            "One prompt, six agents: run " + state,
+            "",
+            f"Brand: {run.brand}",
+            f"Question: {run.prompt}",
+            f"Run: {run.run_id}",
+            f"Replay: {replay}",
+            f"Event log (operator key): {log_url}",
+            "",
+            f"Est. API cost, all providers: {cost_label} (Meta AI tokens unpriced)",
+            f"Duration: {(run.events[-1]['t'] if run.events else 0):.0f} s",
+            f"Visitor: {run.ip or '?'} \u00b7 {attr}" + (" \u00b7 operator" if run.operator else ""),
+            "",
+            "Findings:",
+            f"  {run.brand} named in {named} answers, first in {first}",
+            f"  Citations: {c.get('citations', 0)}, dropped {c.get('dropped', 0)}",
+            f"  Distinct pages: {c.get('distinct_pages', 0)}, read {c.get('read', 0)} of {c.get('read_cap', 0)}, blocked {c.get('blocked', 0)}",
+            f"  Top sources: {top}",
+            "",
+            "Agents: " + ("; ".join(answered) or "(none)"),
+        ]
+        if errors:
+            lines.append("No answer: " + "; ".join(errors))
+        if run.failed:
+            lines.append(f"Error: {run.failed}")
+        text_body = "\n".join(lines)
+        html_body = "<pre style=\"font: 13px/1.5 -apple-system, Helvetica, Arial, sans-serif; white-space: pre-wrap\">" + html.escape(text_body) + "</pre>" + \
+                    f'<p><a href="{html.escape(replay)}" style="display:inline-block;padding:10px 16px;background:#1a1a1a;color:#fff;text-decoration:none;border-radius:4px">Replay the run</a></p>'
+        msg = Mail(from_email=("nstrauss@innatec3.com", "Innate C3 Citation Audit"), to_emails=[recipient], subject=subject,
+                   plain_text_content=text_body, html_content=html_body)
+        _send_mail_object(msg)
+    except Exception as e:
+        print("one-prompt email send failed:", str(e)[:160])
+
+
 @app.route("/one-prompt", methods=["POST"])
 def one_prompt_start():
     import sys
@@ -2626,6 +2691,7 @@ def one_prompt_start():
     def _release():
         _audit_slot_release()
         _one_prompt_persist(run)
+        _send_one_prompt_email(run)
     OPR.start(run, sys.modules[__name__], slot_release=_release)
     return jsonify({"run_id": run.run_id, "stream": f"/one-prompt/stream/{run.run_id}"})
 
