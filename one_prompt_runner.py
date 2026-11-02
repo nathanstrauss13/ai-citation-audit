@@ -17,6 +17,7 @@ citation.merged, citation.verified, scrape.budget, page.open, page.read,
 page.classified, run.done, findings.locked.
 """
 import contextvars
+import html as _html
 import json
 import os
 import re
@@ -528,7 +529,7 @@ def execute(run, A, slot_release=None):
                             r = {"status": "error"}
                         st = "ok" if r.get("status") == "ok" else "blocked"
                         bc = max((r.get("counts") or {}).get(n, 0) for n in names) if r.get("counts") else 0
-                        p.update(read=st, title=(r.get("title") or "")[:200] or None, brand_count=bc)
+                        p.update(read=st, title=_html.unescape(r.get("title") or "").strip()[:200] or None, brand_count=bc)
                         read += st == "ok"
                         blocked += st != "ok"
                         d = {"page_key": pk, "status": st, "tier": "reader" if r.get("via") == "reader" else "direct",
