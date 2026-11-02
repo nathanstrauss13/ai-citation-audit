@@ -11554,6 +11554,14 @@ _MCP_NAMED_PROFILES = {
             {"slug": "e9ea20b741", "label": "Xsight Signal Board"},
         ],
     },
+    "loreal": {
+        "client": "loreal-luxe",
+        "audits": [
+            {"slug": "azzaro-oct2026", "label": "Azzaro — AI Visibility Audit, November 2026 (100 questions x 6 agents, 600 answers, collected October 26 to November 2, 2026; the v9 deck's file of record)",
+             "run_date": "2026-11-02", "classes_file": "data/azzaro_oct2026_classes.json",
+             "evidence_file": "data/azzaro_oct2026_checks.json", "evidence_mode": "replace"},
+        ],
+    },
     "coco": {
         "client": "coco-robotics",
         "audits": [
