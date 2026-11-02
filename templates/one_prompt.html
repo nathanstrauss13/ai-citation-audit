@@ -140,6 +140,17 @@ header{display:flex;align-items:center;justify-content:space-between;height:64px
 .gate button{background:var(--gold);color:#121212;border:0;border-radius:3px;padding:0 18px;font:600 12px/1 var(--ui);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;height:40px}
 .tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;filter:blur(7px);opacity:.45;pointer-events:none;transition:filter .9s,opacity .9s}
 .tiles.open{filter:none;opacity:1;pointer-events:auto}
+.tiles.preview{filter:none;opacity:1;pointer-events:none}
+.tiles.preview .tile .den,.tiles.preview .tile .chart{filter:blur(7px);opacity:.55;user-select:none}
+.tile .den,.tile .chart{transition:filter .9s,opacity .9s}
+.col .stack{display:none;margin-top:14px;flex-direction:column;gap:6px;padding:0 2px}
+.col.collapsed .stack{display:flex}
+.col.collapsed .threads{display:none}
+.col.collapsed .chips .chip:not(.peek),.col.collapsed .chips .ghost{display:none}
+.col.collapsed .chips{margin-top:8px}
+.stack .sc{height:22px;border:1px solid var(--hue-dim);border-radius:3px;font-size:10px;letter-spacing:.08em;color:var(--ink2);line-height:20px;padding:0 8px;cursor:pointer;background:var(--hue-fill);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stack .sc.dead{border-style:dashed;border-color:var(--red);color:var(--red);background:none}
+.stack .sc:hover{color:var(--ink)}
 .tile{border:1px solid var(--line);border-radius:6px;padding:16px 16px 14px;background:linear-gradient(180deg,#0f1117,#0a0b0f);min-height:230px}
 .tile h3{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2);margin:0 0 12px;font-weight:500}
 .tile .big{font-family:var(--display);font-weight:200;font-size:30px;line-height:1;margin-bottom:4px}
@@ -288,8 +299,9 @@ function buildCols(agents) {
   agents.forEach((a, i) => {
     const h = hueOf(i, agents.length);
     const c = el('div', 'col'); c.style.setProperty('--hue', `hsl(${h},52%,66%)`); c.style.setProperty('--hue-dim', `hsla(${h},52%,66%,.35)`); c.style.setProperty('--hue-fill', `hsla(${h},50%,60%,.18)`);
-    c.innerHTML = `<div class="stem"></div><div class="label">${esc(a)}</div><div class="state">waiting</div><div class="answer" tabindex="0" aria-label="${esc(a)} answer, scrollable"></div><div class="conduit">{ } api citations</div><svg class="threads"></svg><div class="chips"></div>`;
+    c.innerHTML = `<div class="stem"></div><div class="label">${esc(a)}</div><div class="state">waiting</div><div class="answer" tabindex="0" aria-label="${esc(a)} answer, scrollable"></div><div class="conduit">{ } api citations</div><svg class="threads"></svg><div class="stack" title="show the full stack"></div><div class="chips"></div>`;
     cols.appendChild(c); S.cols[a] = {el: c, i, hue: h, text: '', chips: []};
+    $('.stack', c).addEventListener('click', () => { const col = S.cols[a]; col.pinnedOpen = true; col.el.classList.remove('collapsed'); redrawThreads(a); });
     $('.answer', c).addEventListener('scroll', () => redrawThreads(a), {passive: true});
   });
 }
@@ -357,6 +369,22 @@ function ledger() {
   $('#ledger').innerHTML = parts.join('<span class="cap">·</span>');
 }
 
+// ---------- completed stacks collapse to count chips ----------
+function checkCollapse(agent) {
+  const col = S.cols[agent]; if (!col || !col.answered || col.pinnedOpen || S.done) return;
+  const chips = col.chips.map((id) => S.chips[id]); if (!chips.length) return;
+  if (!chips.every((c) => c.dropped || c.merged || c.verified)) return;
+  clearTimeout(col.ct);
+  col.ct = setTimeout(() => {
+    if (col.pinnedOpen || S.done || col.el.classList.contains('collapsed')) return;
+    const live = chips.filter((c) => !c.dropped && !c.merged).length, dead = chips.filter((c) => c.dropped).length, merged = chips.filter((c) => c.merged).length;
+    $('.stack', col.el).innerHTML = `<div class="sc">${live} citation${live === 1 ? '' : 's'} · show</div>` + (dead ? `<div class="sc dead">${dead} dead link${dead === 1 ? '' : 's'}</div>` : '') + (merged ? `<div class="sc">${merged} merged</div>` : '');
+    col.el.classList.add('collapsed'); $('.threads', col.el).innerHTML = '';
+    chips.forEach((c) => { if (c.el && c.el.classList.contains('reading')) c.el.classList.add('peek'); });   // a page already being read stays in view
+  }, 1300 / speed);
+}
+function expandAll() { Object.values(S.cols).forEach((c) => { clearTimeout(c.ct); c.el.classList.remove('collapsed'); }); document.querySelectorAll('.chip.peek').forEach((e) => e.classList.remove('peek')); }
+
 // ---------- event handlers ----------
 const H = {
   'run.start'(d) {
@@ -369,7 +397,7 @@ const H = {
   },
   'agent.start'(d) { const c = S.cols[d.agent]; c.el.classList.add('started'); $('.state', c.el).textContent = 'answering'; },
   'agent.answer'(d) {
-    const c = S.cols[d.agent]; c.text = d.text; S.counts.answers++; renderAnswer(d.agent);
+    const c = S.cols[d.agent]; c.text = d.text; c.answered = true; S.counts.answers++; renderAnswer(d.agent);
     $('.answer', c.el).classList.add('on'); $('.state', c.el).textContent = `answered · ${(d.latency_ms / 1000).toFixed(1)} s`; ledger();
   },
   'agent.error'(d) { const c = S.cols[d.agent]; S.counts.errors++; const a = $('.answer', c.el); a.textContent = 'No answer from this agent this run.'; a.title = d.reason || ''; a.classList.add('on', 'err'); $('.state', c.el).textContent = 'no answer'; ledger(); },
@@ -404,25 +432,26 @@ const H = {
     const c = S.cols[d.agent]; $('.state', c.el).textContent = 'checking links';
     chip.el.classList.add('dropped'); if (chip.path) chip.path.remove();
     setTimeout(() => { const g = el('div', 'ghost', esc(DROP_REASON[d.reason] || `dead link · ${d.reason}`)); g.title = `${chip.url_raw || ''} dropped: ${d.reason}. The record keeps the link and the reason.`; chip.el.replaceWith(g); redrawThreads(d.agent); }, 1000 / speed);
-    ledger();
+    ledger(); checkCollapse(d.agent);
   },
   'citation.merged'(d) {
     const chip = S.chips[d.cit_id], into = S.chips[d.into]; if (!chip) return; chip.merged = true; S.counts.merged++;
     chip.el.classList.add('merging'); if (chip.path) chip.path.remove();
     setTimeout(() => { chip.el.classList.add('gone'); if (into && into.el) { into.absorbed = (into.absorbed || 0) + 1; $('.badge', into.el).textContent = into.absorbed + 1; into.el.classList.remove('absorbed'); void into.el.offsetWidth; into.el.classList.add('absorbed'); } redrawThreads(d.agent); }, 450 / speed);
-    ledger();
+    ledger(); checkCollapse(d.agent);
   },
   'citation.verified'(d) {
-    const chip = S.chips[d.cit_id]; if (!chip) return; S.counts.verified++; if (d.status === 'wall') S.counts.walls++;
+    const chip = S.chips[d.cit_id]; if (!chip) return; chip.verified = true; S.counts.verified++; if (d.status === 'wall') S.counts.walls++;
     const c = S.cols[d.agent]; $('.state', c.el).textContent = 'checking links';
     chip.el.style.setProperty('--verdict', d.status === 'ok' ? 'var(--olive)' : 'var(--amber)');
     chip.el.classList.add('verifying'); if (d.status !== 'ok') chip.el.title = d.note === 'timeout' ? 'no response in time · kept on record' : 'blocked by the site · kept on record'; setTimeout(() => { chip.el.classList.remove('verifying'); chip.el.classList.add(d.status === 'ok' ? 'ok' : 'wall'); }, 700 / speed);
     if (chip.page_key) (S.pages[chip.page_key] = S.pages[chip.page_key] || {chips: []}).chips.push(chip);
+    checkCollapse(d.agent);
   },
-  'scrape.budget'(d) { S.counts.distinct = d.distinct_pages; S.counts.cap = d.read_cap; Object.values(S.cols).forEach((c) => $('.state', c.el).textContent = 'reading pages'); ledger(); },
+  'scrape.budget'(d) { S.counts.distinct = d.distinct_pages; S.counts.cap = d.read_cap; Object.values(S.cols).forEach((c) => { if (c.answered) $('.state', c.el).textContent = 'reading pages'; }); ledger(); },
   'page.open'(d) {
     const p = S.pages[d.page_key]; if (!p) return;
-    for (const chip of p.chips) { const card = $('.card', chip.el); card.className = 'card'; card.innerHTML = `<div class="t"></div>` + Array.from({length: 6}, (_, i) => `<div class="l" style="width:${60 + ((i * 37) % 38)}%"><i style="left:${20 + ((i * 53) % 45)}%"></i></div>`).join('') + `<div class="f"><span>title ✓</span><span>byline ✓</span><span>date ✓</span><span>text ✓</span></div><div class="scan"></div>`; chip.el.classList.add('reading'); }
+    for (const chip of p.chips) { const card = $('.card', chip.el); card.className = 'card'; card.innerHTML = `<div class="t"></div>` + Array.from({length: 6}, (_, i) => `<div class="l" style="width:${60 + ((i * 37) % 38)}%"><i style="left:${20 + ((i * 53) % 45)}%"></i></div>`).join('') + `<div class="f"><span>title ✓</span><span>byline ✓</span><span>date ✓</span><span>text ✓</span></div><div class="scan"></div>`; chip.el.classList.add('reading'); if (S.cols[chip.agent] && S.cols[chip.agent].el.classList.contains('collapsed')) chip.el.classList.add('peek'); }
   },
   'page.read'(d) {
     const p = S.pages[d.page_key]; if (!p) return; p.read = d; if (d.status === 'ok') S.counts.read++; else S.counts.blocked++;
@@ -431,13 +460,20 @@ const H = {
       const card = $('.card', chip.el);
       if (d.status !== 'ok') card.innerHTML = `<div class="wallb"><span>${d.note === 'unreachable' ? 'unreachable' : 'blocked'} · kept</span></div>`;
       else { const hits = Math.min(4, d.brand_count || 0); card.querySelectorAll('.l i').forEach((i, k) => { if (k >= hits) i.remove(); }); card.classList.add('scanned'); }
-      setTimeout(() => { chip.el.classList.remove('reading'); if (d.status === 'ok') { chip.el.classList.add('filled'); $('.hits', chip.el).innerHTML = Array.from({length: Math.min(4, d.brand_count || 0)}, () => '<i></i>').join(''); } }, 450 / speed);
+      setTimeout(() => { chip.el.classList.remove('reading'); if (d.status === 'ok') { chip.el.classList.add('filled'); $('.hits', chip.el).innerHTML = Array.from({length: Math.min(4, d.brand_count || 0)}, () => '<i></i>').join(''); } setTimeout(() => chip.el.classList.remove('peek'), 1400 / speed); }, 450 / speed);
     }
     ledger();
   },
   'page.classified'(d) { const p = S.pages[d.page_key]; if (!p) return; for (const chip of p.chips) { chip.type = d.source_type; chip.el.style.setProperty('--tcol', TYPE_COL[d.source_type] || TYPE_COL.unclassified); chip.el.title = d.source_type; chip.el.classList.add('typed'); } },
-  'run.done'(d) { S.done = true; bundle(); if (new URLSearchParams(location.search).get('open')) setTimeout(openFindings, 300); Object.values(S.cols).forEach((c) => $('.state', c.el).textContent = 'done'); ledger(); $('#findings').classList.add('on'); document.querySelectorAll('#fan .pulse').forEach((p) => p.style.animationDuration = '6s'); },
-  'findings.locked'() { $('#gate').scrollIntoView({behavior: 'smooth', block: 'center'}); },
+  'run.done'(d) {
+    S.done = true; expandAll(); bundle(); Object.values(S.cols).forEach((c) => $('.state', c.el).textContent = 'done'); ledger();
+    $('#findings').classList.add('on'); document.querySelectorAll('#fan .pulse').forEach((p) => p.style.animationDuration = '6s');
+    if (!S.run_id && S.findings) dispatch('findings.preview', S.findings);            // demo replay: the findings travel with the log
+    setTimeout(() => window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'}), 700);
+    if (new URLSearchParams(location.search).get('open')) setTimeout(openFindings, 300);
+  },
+  'findings.preview'(d) { S.findings = d; const T = $('#tiles'); if (T.classList.contains('open')) return; $('#findings').classList.add('on'); tiles(d); T.classList.add('preview'); },
+  'findings.locked'() { setTimeout(() => window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'}), 200); },
 };
 
 
@@ -445,6 +481,7 @@ const H = {
 const DROP_REASON = {'404': 'dead link · 404 not found', '410': 'dead link · 410 gone', 'dns': 'dead link · host not found', 'refused': 'dead link · connection refused', 'timeout': 'dead link · no response'};
 const TYPE_ORDER = Object.keys(TYPE_COL);
 function bundle() {
+  expandAll();
   const live = Object.values(S.chips).filter((c) => c.el && c.el.isConnected && !c.dropped && !c.merged);
   if (!live.length) return;
   const groups = {};
@@ -553,7 +590,7 @@ $('#form').addEventListener('submit', async (ev) => {
 function openFindings() {
   const f = S.findings; if (!f) return;
   tiles(f); $('#closeline').innerHTML = `This is one prompt and <b>${S.counts.citations}</b> citations. The audit analyzes 10,000+.`;
-  $('#tiles').classList.add('open'); $('#gate').style.display = 'none'; $('#closer').style.display = 'block';
+  $('#tiles').classList.remove('preview'); $('#tiles').classList.add('open'); $('#gate').style.display = 'none'; $('#closer').style.display = 'block';
 }
 $('#gateform').addEventListener('submit', async (ev) => {
   ev.preventDefault();
