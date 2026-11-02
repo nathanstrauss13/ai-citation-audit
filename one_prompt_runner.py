@@ -24,7 +24,7 @@ import re
 import threading
 import time
 import uuid
-from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as FuturesTimeoutError
+from concurrent.futures import ThreadPoolExecutor, as_completed, wait, FIRST_COMPLETED, TimeoutError as FuturesTimeoutError
 from datetime import datetime
 from urllib.parse import urlsplit, parse_qsl, urlencode
 
@@ -33,6 +33,7 @@ import requests
 AGENTS = ["ChatGPT", "Claude", "Gemini", "Perplexity", "Grok", "Meta AI"]
 READ_CAP = max(1, int(os.environ.get("ONE_PROMPT_READ_CAP", "20") or "20"))
 AGENT_DEADLINE_S = float(os.environ.get("ONE_PROMPT_AGENT_DEADLINE", "120") or "120")
+READ_START_S = float(os.environ.get("ONE_PROMPT_READ_START", "45") or "45")   # first page-read wave once most agents are in and this many seconds have passed
 META_MODEL = os.environ.get("META_MODEL", "muse-spark-1.3")
 RUN_TTL_S = 3 * 3600
 _TRACKING = re.compile(r"^(utm_\w*|fbclid|gclid|dclid|srsltid|mc_cid|mc_eid|igshid|yclid|msclkid|_hsenc|_hsmi|ref_src|ref_url)$", re.I)
@@ -371,7 +372,11 @@ def _call_agent(agent, enriched, A):
 
 
 def execute(run, A, slot_release=None):
-    """Run the pipeline for `run`, emitting events. Never raises; always ends with run.done and findings.locked."""
+    """Run the pipeline for `run`, emitting events. Never raises; always ends with run.done and findings.locked.
+
+    Pipelined (Nov 2, 2026, Nathan: "speed the analysis"): each agent's links resolve, drop, merge and
+    verify the moment its answer lands, instead of waiting for the slowest agent; page reading of the
+    most-cited pages starts once most agents are in (READ_START_S) and tops up after the last one."""
     sink = []
     try:
         A._audit_usage_ctx.set(sink)
@@ -382,8 +387,118 @@ def execute(run, A, slot_release=None):
     run.emit("run.start", {"run_id": run.run_id, "brand": brand, "aliases": [brand], "competitors": [], "agents": AGENTS,
                            "prompt": prompt, "started_at": started})
     answers = {}       # agent -> {text, display, appended, meta, latency}
-    cits = []          # [{cit_id, agent, url_raw, source, span}]
+    cits = []          # [{cit_id, agent, url_raw, source, span, ...}]
+    res = {}           # url_raw -> resolve result
+    live = []          # resolved, undropped citations
+    pages = {}         # page_key -> {url, agents:set, cit_ids:[], wall, root, order}
+    pending_urls = {}  # agent -> set of raw urls still resolving
+    verified = set()   # agents whose merge/verify has run
+    rd = {"started": False, "read": 0, "blocked": 0, "submitted": set(), "cap": READ_CAP, "futs": {}}
+    L = threading.RLock()
     cid = [0]
+    rex = ThreadPoolExecutor(max_workers=16)
+    pex = ThreadPoolExecutor(max_workers=10)
+    names = [brand]
+
+    def verify_agent(ag):
+        """Merge within the answer, then verify, once every link of `ag` has settled."""
+        with L:
+            if ag in verified or pending_urls.get(ag):
+                return
+            verified.add(ag)
+            seen_pk = {}
+            mine = sorted([c for c in live if c["agent"] == ag], key=lambda c: c["cit_id"])
+            for c in mine:
+                if c["page_key"] in seen_pk:
+                    c["merged"] = seen_pk[c["page_key"]]
+                    run.emit("citation.merged", {"agent": ag, "cit_id": c["cit_id"], "into": seen_pk[c["page_key"]]})
+                else:
+                    seen_pk[c["page_key"]] = c["cit_id"]
+            for c in mine:
+                if c.get("merged"):
+                    continue
+                v = c["verdict"]
+                d = {"agent": ag, "cit_id": c["cit_id"], "status": "ok" if v["status"] == "ok" else "wall", "http_status": v["http"]}
+                if v["status"] != "ok" and v.get("reason"):
+                    d["note"] = v["reason"]
+                run.emit("citation.verified", d)
+                p = pages.setdefault(c["page_key"], {"url": c["final"], "agents": set(), "cit_ids": [], "wall": v["status"] != "ok", "root": _root(c["final"], A), "order": len(pages)})
+                p["agents"].add(ag)
+                p["cit_ids"].append(c["cit_id"])
+
+    def settle(u, r):
+        """Apply one resolve result to every citation carrying that raw URL."""
+        with L:
+            res[u] = r
+            for c in [c for c in cits if c["url_raw"] == u and "settled" not in c]:
+                c["settled"] = True
+                if r["status"] == "dropped":
+                    c["dropped"] = r["reason"]
+                    run.emit("citation.dropped", {"agent": c["agent"], "cit_id": c["cit_id"], "reason": r["reason"]})
+                else:
+                    c["final"] = r["final"]
+                    c["page_key"] = _page_key(r["final"])
+                    c["verdict"] = r
+                    run.emit("citation.resolved", {"agent": c["agent"], "cit_id": c["cit_id"], "url_raw": c["url_raw"], "url_final": r["final"], "kind": r["kind"], "page_key": c["page_key"]})
+                    live.append(c)
+            waiting = [ag for ag, s_ in pending_urls.items() if u in s_]
+            for ag in waiting:
+                pending_urls[ag].discard(u)
+                if not pending_urls[ag]:
+                    verify_agent(ag)
+
+    def on_resolved(fut, u):
+        try:
+            r = fut.result()
+        except Exception:
+            r = {"final": u, "kind": "none", "status": "wall", "http": None, "reason": "timeout"}
+        settle(u, r)
+
+    def read_done(fut, pk):
+        p = pages[pk]
+        try:
+            r = fut.result()
+        except Exception:
+            r = {"status": "error"}
+        st = "ok" if r.get("status") == "ok" else "blocked"
+        bc = max((r.get("counts") or {}).get(n, 0) for n in names) if r.get("counts") else 0
+        with L:
+            p.update(read=st, title=_html.unescape(r.get("title") or "").strip()[:200] or None, brand_count=bc)
+            rd["read"] += st == "ok"
+            rd["blocked"] += st != "ok"
+        d = {"page_key": pk, "status": st, "tier": "reader" if r.get("via") == "reader" else "direct",
+             "title": p["title"], "byline": (r.get("author") or None), "date": (r.get("published") or None),
+             "brand_count": bc, "text_chars": int(r.get("content_len") or 0)}
+        if st != "ok" and r.get("status") == "error":
+            d["note"] = "unreachable"
+        run.emit("page.read", d)
+
+    def ranked_pages():
+        return sorted(pages.items(), key=lambda kv: (-len(kv[1]["agents"]), kv[1]["order"]))
+
+    def start_reads(final=False):
+        """Read the most-cited pages up to the cap: first wave when most agents are in, top-up after the last."""
+        with L:
+            ranked = ranked_pages()
+            if not ranked:
+                return
+            if not rd["started"] and not final:
+                rd["started"] = True
+            cap = min(READ_CAP, len(ranked))
+            run.emit("scrape.budget", {"distinct_pages": len(ranked), "read_cap": cap})
+            room = cap - len(rd["submitted"])
+            for pk, p in ranked:
+                if room <= 0:
+                    break
+                if pk in rd["submitted"]:
+                    continue
+                rd["submitted"].add(pk)
+                room -= 1
+                run.emit("page.open", {"page_key": pk, "url": p["url"]})
+                f = pex.submit(A._scrape_cited_page, p["url"], names, 10)
+                rd["futs"][f] = pk
+                f.add_done_callback(lambda fut, pk=pk: read_done(fut, pk))
+
     try:
         enriched = prompt + A.CITATION_SUFFIX + A._time_aware_note()
         for ag in AGENTS:
@@ -400,153 +515,100 @@ def execute(run, A, slot_release=None):
         ex = ThreadPoolExecutor(max_workers=6)
         futs = {ex.submit(contextvars.copy_context().run, one, ag): ag for ag in AGENTS}
         pending = set(AGENTS)
+        t_run = time.monotonic()
+        not_done = set(futs)
         try:
-            for fut in as_completed(futs, timeout=AGENT_DEADLINE_S):
-                ag, text, grounded, meta, ms, err = fut.result()
-                pending.discard(ag)
-                if err:
-                    run.emit("agent.error", {"agent": ag, "reason": err})
-                    continue
-                display, appended = _split_display(text)
-                answers[ag] = {"text": text, "display": display, "appended": appended, "meta": meta, "latency": ms}
-                run.emit("agent.answer", {"agent": ag, "text": display, "latency_ms": ms, "searched": bool(grounded)})
-                # citations: text links (with their span in the display text), then api-only links
-                seen = []
-                for c in A.extract_urls(text):
-                    u = c["url"]
-                    if u in seen:
-                        continue
-                    seen.append(u)
-                    pos = display.find(u)
-                    cid[0] += 1
-                    d = {"agent": ag, "cit_id": cid[0], "url_raw": u, "source": "text" if pos >= 0 else "api"}
-                    if pos >= 0:
-                        d["span"] = {"start": pos, "end": pos + len(u)}
-                    cits.append(dict(d))
-                    run.emit("citation.found", d)
-                # supports: the sentence an agent tied to a link, when the agent tagged it
-                by_url = {c["url_raw"]: c["cit_id"] for c in cits if c["agent"] == ag}
-                done_sup = set()
-                for sp in (meta.get("supports") or []):
-                    for u in (sp.get("urls") or []):
-                        cid_ = by_url.get(u)
-                        if not cid_ or cid_ in done_sup:
-                            continue
-                        st, en = sp.get("start"), sp.get("end")
-                        if not (isinstance(st, int) and isinstance(en, int) and 0 <= st < en <= len(display)):
-                            needle = (sp.get("claim") or sp.get("text") or "").strip()[:120]
-                            st = display.find(needle) if needle else -1
-                            if st < 0:
-                                continue
-                            en = st + len(needle)
-                        done_sup.add(cid_)
-                        run.emit("citation.support", {"agent": ag, "cit_id": cid_, "span": {"start": st, "end": en}})
-        except FuturesTimeoutError:
-            pass
+            while not_done and time.monotonic() - t_run < AGENT_DEADLINE_S:
+                done, not_done = wait(not_done, timeout=1.0, return_when=FIRST_COMPLETED)
+                for fut in done:
+                    ag, text, grounded, meta, ms, err = fut.result()
+                    pending.discard(ag)
+                    if err:
+                        run.emit("agent.error", {"agent": ag, "reason": err})
+                        with L:
+                            verified.add(ag)
+                    else:
+                        display, appended = _split_display(text)
+                        answers[ag] = {"text": text, "display": display, "appended": appended, "meta": meta, "latency": ms}
+                        run.emit("agent.answer", {"agent": ag, "text": display, "latency_ms": ms, "searched": bool(grounded)})
+                        seen, new_urls = [], []
+                        with L:
+                            for c in A.extract_urls(text):
+                                u = c["url"]
+                                if u in seen:
+                                    continue
+                                seen.append(u)
+                                pos = display.find(u)
+                                cid[0] += 1
+                                d = {"agent": ag, "cit_id": cid[0], "url_raw": u, "source": "text" if pos >= 0 else "api"}
+                                if pos >= 0:
+                                    d["span"] = {"start": pos, "end": pos + len(u)}
+                                cits.append(dict(d))
+                                run.emit("citation.found", d)
+                            by_url = {c["url_raw"]: c["cit_id"] for c in cits if c["agent"] == ag}
+                            done_sup = set()
+                            for sp in (meta.get("supports") or []):
+                                for u in (sp.get("urls") or []):
+                                    cid_ = by_url.get(u)
+                                    if not cid_ or cid_ in done_sup:
+                                        continue
+                                    st, en = sp.get("start"), sp.get("end")
+                                    if not (isinstance(st, int) and isinstance(en, int) and 0 <= st < en <= len(display)):
+                                        needle = (sp.get("claim") or sp.get("text") or "").strip()[:120]
+                                        st = display.find(needle) if needle else -1
+                                        if st < 0:
+                                            continue
+                                        en = st + len(needle)
+                                    done_sup.add(cid_)
+                                    run.emit("citation.support", {"agent": ag, "cit_id": cid_, "span": {"start": st, "end": en}})
+                            # resolve now: reuse a result already in, join one in flight, or start one
+                            pending_urls[ag] = set()
+                            for u in seen:
+                                if u in res:
+                                    settle(u, res[u])
+                                else:
+                                    pending_urls[ag].add(u)
+                                    if not any(u in s_ for a2, s_ in pending_urls.items() if a2 != ag):
+                                        f = rex.submit(_resolve, u, A)
+                                        f.add_done_callback(lambda fut, u=u: on_resolved(fut, u))
+                            if not pending_urls[ag]:
+                                verify_agent(ag)
+                # first reading wave once most agents are in and the run is past READ_START_S (checked every tick)
+                if not rd["started"] and len(pending) <= 1 and time.monotonic() - t_run >= READ_START_S and len(verified) >= 3:
+                    start_reads()
         finally:
             ex.shutdown(wait=False, cancel_futures=True)
         for ag in sorted(pending, key=AGENTS.index):
             run.emit("agent.error", {"agent": ag, "reason": f"no answer in {int(AGENT_DEADLINE_S)} s"})
-
-        # resolve, drop, merge, verify
-        distinct_raw = list(dict.fromkeys(c["url_raw"] for c in cits))
-        res = {}
-        pages = {}          # page_key -> {url, agents:set, cit_ids:[], wall, root}
-        live = []
-
-        def _settle(u, r):
-            """Emit resolved or dropped for every citation that carried this raw URL, as its result lands."""
-            res[u] = r
-            for c in [c for c in cits if c["url_raw"] == u]:
-                if r["status"] == "dropped":
-                    c["dropped"] = r["reason"]
-                    run.emit("citation.dropped", {"agent": c["agent"], "cit_id": c["cit_id"], "reason": r["reason"]})
-                    continue
-                c["final"] = r["final"]
-                c["page_key"] = _page_key(r["final"])
-                c["verdict"] = r
-                run.emit("citation.resolved", {"agent": c["agent"], "cit_id": c["cit_id"], "url_raw": c["url_raw"], "url_final": r["final"], "kind": r["kind"], "page_key": c["page_key"]})
-                live.append(c)
-        if distinct_raw:
-            ex2 = ThreadPoolExecutor(max_workers=16)
-            try:
-                f2 = {ex2.submit(_resolve, u, A): u for u in distinct_raw}
-                try:
-                    for fut in as_completed(f2, timeout=90):
-                        u = f2[fut]
-                        try:
-                            _settle(u, fut.result())
-                        except Exception:
-                            _settle(u, {"final": u, "kind": "none", "status": "wall", "http": None, "reason": "timeout"})
-                except FuturesTimeoutError:
-                    pass
-            finally:
-                ex2.shutdown(wait=False, cancel_futures=True)
-        for u in distinct_raw:
-            if u not in res:
-                _settle(u, {"final": u, "kind": "none", "status": "wall", "http": None, "reason": "timeout"})
-        live.sort(key=lambda c: c["cit_id"])
-        for ag in AGENTS:
-            seen_pk = {}
-            for c in [c for c in live if c["agent"] == ag]:
-                if c["page_key"] in seen_pk:
-                    c["merged"] = seen_pk[c["page_key"]]
-                    run.emit("citation.merged", {"agent": ag, "cit_id": c["cit_id"], "into": seen_pk[c["page_key"]]})
-                else:
-                    seen_pk[c["page_key"]] = c["cit_id"]
-        for c in live:
-            if c.get("merged"):
-                continue
-            v = c["verdict"]
-            d = {"agent": c["agent"], "cit_id": c["cit_id"], "status": "ok" if v["status"] == "ok" else "wall", "http_status": v["http"]}
-            if v["status"] != "ok" and v.get("reason"):
-                d["note"] = v["reason"]
-            run.emit("citation.verified", d)
-            p = pages.setdefault(c["page_key"], {"url": c["final"], "agents": set(), "cit_ids": [], "wall": v["status"] != "ok", "root": _root(c["final"], A), "order": len(pages)})
-            p["agents"].add(c["agent"])
-            p["cit_ids"].append(c["cit_id"])
-
-        # read the pages, most-cited first, up to the cap
-        ranked = sorted(pages.items(), key=lambda kv: (-len(kv[1]["agents"]), kv[1]["order"]))
+            with L:
+                verified.add(ag)
+        # let the last resolves land (bounded), then settle anything still out as a timeout and verify
+        t_wait = time.monotonic()
+        while time.monotonic() - t_wait < 60 and any(pending_urls.get(ag) for ag in AGENTS):
+            time.sleep(0.25)
+        with L:
+            for ag in AGENTS:
+                for u in list(pending_urls.get(ag) or []):
+                    settle(u, {"final": u, "kind": "none", "status": "wall", "http": None, "reason": "timeout"})
+            for ag in AGENTS:
+                verify_agent(ag)
+        rex.shutdown(wait=False, cancel_futures=True)
+        start_reads(final=True)
+        t_wait = time.monotonic()
+        while time.monotonic() - t_wait < 75 and any(not f.done() for f in rd["futs"]):
+            time.sleep(0.25)
+        with L:
+            for f, pk in rd["futs"].items():
+                if not f.done():
+                    p = pages[pk]
+                    if p.get("read") is None:
+                        p.update(read="blocked", title=None, brand_count=0)
+                        rd["blocked"] += 1
+                        run.emit("page.read", {"page_key": pk, "status": "blocked", "tier": "direct", "title": None, "byline": None, "date": None, "brand_count": 0, "text_chars": 0, "note": "no response in 75 s"})
+        pex.shutdown(wait=False, cancel_futures=True)
+        ranked = ranked_pages()
         cap = min(READ_CAP, len(ranked))
-        run.emit("scrape.budget", {"distinct_pages": len(ranked), "read_cap": cap})
-        read = blocked = 0
-        names = [brand]
-        if cap:
-            ex3 = ThreadPoolExecutor(max_workers=8)
-            try:
-                f3 = {}
-                for pk, p in ranked[:cap]:
-                    run.emit("page.open", {"page_key": pk, "url": p["url"]})
-                    f3[ex3.submit(A._scrape_cited_page, p["url"], names, 10)] = pk
-                try:
-                    for fut in as_completed(f3, timeout=75):
-                        pk = f3[fut]
-                        p = pages[pk]
-                        try:
-                            r = fut.result()
-                        except Exception:
-                            r = {"status": "error"}
-                        st = "ok" if r.get("status") == "ok" else "blocked"
-                        bc = max((r.get("counts") or {}).get(n, 0) for n in names) if r.get("counts") else 0
-                        p.update(read=st, title=_html.unescape(r.get("title") or "").strip()[:200] or None, brand_count=bc)
-                        read += st == "ok"
-                        blocked += st != "ok"
-                        d = {"page_key": pk, "status": st, "tier": "reader" if r.get("via") == "reader" else "direct",
-                             "title": p["title"], "byline": (r.get("author") or None), "date": (r.get("published") or None),
-                             "brand_count": bc, "text_chars": int(r.get("content_len") or 0)}
-                        if st != "ok" and r.get("status") == "error":
-                            d["note"] = "unreachable"
-                        run.emit("page.read", d)
-                except FuturesTimeoutError:
-                    for fut, pk in f3.items():
-                        if not fut.done():
-                            p = pages[pk]
-                            p.update(read="blocked", title=None, brand_count=0)
-                            blocked += 1
-                            run.emit("page.read", {"page_key": pk, "status": "blocked", "tier": "direct", "title": None, "byline": None, "date": None, "brand_count": 0, "text_chars": 0, "note": "no response in 75 s"})
-            finally:
-                ex3.shutdown(wait=False, cancel_futures=True)
+        read, blocked = rd["read"], rd["blocked"]
 
         # classify every distinct root: owned by rule, the rest by the app's classifier (observed roots only)
         roots = list(dict.fromkeys(p["root"] for _, p in ranked))
@@ -567,7 +629,6 @@ def execute(run, A, slot_release=None):
             p["type"] = types.get(p["root"]) or "unclassified"
             run.emit("page.classified", {"page_key": pk, "source_type": p["type"]})
 
-        # cost from the app's ledger (the per-run usage sink); Meta AI priced only when COST_META_* is set
         est = None
         try:
             est, _rows = A._usage_cost(A._aggregate_usage_rows(sink))
@@ -580,6 +641,7 @@ def execute(run, A, slot_release=None):
         run.counts = {"answers": len(answers), "citations": len(cits), "distinct_pages": len(ranked), "read": read, "read_cap": cap, "blocked": blocked, "dropped": n_drop}
         run.findings = _findings(run, A, answers, ranked, pages, cap, read, blocked, n_drop, len(cits))
         run.emit("run.done", {"duration_ms": int((time.monotonic() - run.t0) * 1000), "est_cost_usd": est, "counts": run.counts})
+        run.emit("findings.preview", run.findings)
     except Exception as e:
         run.failed = f"{type(e).__name__}: {str(e)[:160]}"
         print("one-prompt run failed:", run.failed)
