@@ -2503,8 +2503,20 @@ def root_redirect():
 @app.route("/one-prompt")
 def one_prompt():
     """One prompt, six agents: the live pipeline page (Marketing, Nov 2, 2026).
-    Until the event stream ships it replays a synthetic, watermarked run from
-    static/one_prompt/events_synthetic.js. ?stream=<sse url> switches to a live stream."""
+    Until the page switches to the live stream it replays a synthetic, watermarked
+    run from static/one_prompt/events_synthetic.js. ?stream=<sse url> switches to a
+    live stream. The landing GET stashes UTM and external referrer in the session,
+    as /citation-audit does, so the unlock's inbound row carries attribution."""
+    try:
+        _utm = {k: (request.args.get(k) or '')[:120] for k in ('utm_source', 'utm_medium', 'utm_campaign')}
+        _ext_ref = (request.referrer or '')[:400]
+        if _ext_ref and request.host in _ext_ref:
+            _ext_ref = ''
+        if any(_utm.values()) or _ext_ref:
+            session['inbound_attr'] = {'utm_source': _utm['utm_source'], 'utm_medium': _utm['utm_medium'],
+                                       'utm_campaign': _utm['utm_campaign'], 'referrer': _ext_ref}
+    except Exception:
+        pass
     return render_template("one_prompt.html", calendly_url="https://calendly.com/nstrauss/new-meeting")
 
 
