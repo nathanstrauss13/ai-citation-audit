@@ -636,7 +636,7 @@ def execute(run, A, slot_release=None):
         except Exception:
             pass
         run.est_cost_usd = est
-        run.cost_note = "Meta AI tokens are in the ledger; priced only if COST_META_IN/OUT are set"
+        run.cost_note = "Meta AI priced at Muse Spark 1.3 list (META_IN_PER_M, META_OUT_PER_M)"
         n_drop = sum(1 for c in cits if c.get("dropped"))
         run.counts = {"answers": len(answers), "citations": len(cits), "distinct_pages": len(ranked), "read": read, "read_cap": cap, "blocked": blocked, "dropped": n_drop}
         run.findings = _findings(run, A, answers, ranked, pages, cap, read, blocked, n_drop, len(cits))

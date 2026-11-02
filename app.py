@@ -610,6 +610,14 @@ _MODEL_PRICES = {
     "openrouter:*": (
         float(os.environ.get("OPENROUTER_IN_PER_M", 3.0)),
         float(os.environ.get("OPENROUTER_OUT_PER_M", 15.0))),
+    # Meta Model API, Muse Spark 1.3 Standard: list price read from dev.meta.ai/platform/models
+    # on Nov 2, 2026 (input $1.25, cached input $0.15, output $4.25 per 1M; no web-search fee listed).
+    "meta:muse-spark-1.3": (
+        float(os.environ.get("META_IN_PER_M", 1.25)),
+        float(os.environ.get("META_OUT_PER_M", 4.25))),
+    "meta:*": (
+        float(os.environ.get("META_IN_PER_M", 1.25)),
+        float(os.environ.get("META_OUT_PER_M", 4.25))),
     "gemini:gemini-2.5-flash": (
         float(os.environ.get("GEMINI_IN_PER_M", 0.30)),
         float(os.environ.get("GEMINI_OUT_PER_M", 2.50))),
@@ -633,7 +641,7 @@ _PROVIDER_FALLBACK_PRICES = {"anthropic": (3.0, 15.0), "openai": (2.5, 10.0),
                              "perplexity": (3.0, 15.0), "xai": (2.00, 6.00)}
 # Cached-input price as a fraction of the input price, per provider
 # (Anthropic ~0.1x; xAI $0.50 vs $2.00 = 0.25x).
-_CACHE_READ_MULT = {"xai": float(os.environ.get("XAI_CACHE_READ_MULT", 0.25))}
+_CACHE_READ_MULT = {"xai": float(os.environ.get("XAI_CACHE_READ_MULT", 0.25)), "meta": 0.12}   # Meta: $0.15 cached vs $1.25 input
 _SEARCH_PER_1K = {
     "anthropic": 10.0,
     "openai": float(os.environ.get("OPENAI_SEARCH_PER_1K", 30.0)),
@@ -641,6 +649,8 @@ _SEARCH_PER_1K = {
     # Google Search grounding is billed per grounded request; Perplexity bills a
     # per-request search fee on top of tokens (tier-dependent — override via env).
     "gemini": float(os.environ.get("GEMINI_SEARCH_PER_1K", 14.0)),
+    # Meta lists no web-search fee for the Model API (dev.meta.ai/platform/models, Nov 2, 2026).
+    "meta": float(os.environ.get("META_SEARCH_PER_1K", 0.0)),
     "perplexity": float(os.environ.get("PERPLEXITY_SEARCH_PER_1K", 5.0)),
     # xAI server-side web_search/x_search: no separate fee is published, and the
     # 9/28 console charge is reproduced by token pricing alone. Override if a
@@ -2614,7 +2624,7 @@ def _send_one_prompt_email(run):
             f"Replay: {replay}",
             f"Event log (operator key): {log_url}",
             "",
-            f"Est. API cost, all providers: {cost_label} (Meta AI tokens unpriced)",
+            f"Est. API cost, all providers: {cost_label}",
             f"Duration: {(run.events[-1]['t'] if run.events else 0):.0f} s",
             f"Visitor: {run.ip or '?'} \u00b7 {attr}" + (" \u00b7 operator" if run.operator else ""),
             "",
