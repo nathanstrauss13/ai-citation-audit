@@ -55,7 +55,7 @@ AI_ASSISTANT_SOURCES = {
     "grok": ("grok.com", "x.ai"),
 }
 AI_CHANNEL_NAMES = ("ai assistant", "ai referral", "ai traffic")
-AI_REFERRALS_BASIS = ("sessions whose GA4 session source matches a known assistant domain (chatgpt.com incl. chat.openai.com and openai.com; "
+AI_REFERRALS_BASIS = ("sessions whose GA4 session source matches a known AI agent domain (chatgpt.com incl. chat.openai.com and openai.com; "
                       "gemini.google.com incl. bard.google.com; perplexity.ai; claude.ai incl. anthropic.com; copilot.microsoft.com; grok.com and x.ai), "
                       "plus sessions GA4's default channel group labels as an AI channel whose source is none of these (reported as 'others'); "
                       "the referrer match applies to every month, so months before the channel existed are not undercounted")
