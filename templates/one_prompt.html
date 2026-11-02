@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>One prompt, six agents · innate c3</title>
+<link rel="icon" href="/static/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07080b; --ink:#EDEEF1; --ink2:#9aa1ad; --muted:#6b7280; --line:rgba(255,255,255,.09);
+  --gold:#cbab6d; --gold-g:rgba(203,171,109,.45); --olive:#aab98a; --red:#c7706a; --amber:#d9a44a;
+  --ui:'Inter',system-ui,sans-serif; --display:'Jost','Inter',sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--ui);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+header{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:var(--display);font-weight:200;font-size:20px;letter-spacing:.06em}
+.brand b{font-weight:400}
+nav a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2);text-decoration:none;margin-left:28px}
+
+/* ask */
+.ask{padding:72px 0 40px;text-align:center}
+.ask h1{font-family:var(--display);font-weight:200;font-size:44px;line-height:1.1;margin:0 0 10px;letter-spacing:.01em}
+.ask p.sub{color:var(--ink2);margin:0 auto 36px;max-width:620px;font-size:15px;line-height:1.55}
+.form{display:grid;grid-template-columns:220px 1fr auto;gap:12px;max-width:900px;margin:0 auto}
+.form input{background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.28);color:var(--ink);font-family:var(--display);font-weight:300;font-size:22px;padding:10px 4px;outline:none}
+.form input::placeholder{color:#555b66}
+.form input:focus{border-bottom-color:var(--gold)}
+.form button{background:var(--gold);color:#121212;border:0;border-radius:3px;padding:0 22px;font:600 13px/1 var(--ui);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;height:44px;align-self:end}
+.form button[disabled]{opacity:.4;cursor:default}
+.ask .fine{color:var(--muted);font-size:12px;margin-top:16px;letter-spacing:.02em}
+
+/* stage */
+.stage{display:none;padding:10px 0 40px;position:relative}
+.stage.on{display:block}
+.fan{display:block;width:100%;height:170px;overflow:visible}
+.cols{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;position:relative}
+.col{position:relative;min-height:420px;padding-top:6px;min-width:0}
+.col .label{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;text-align:center;color:var(--hue);opacity:0;transition:opacity .6s}
+.col.started .label{opacity:.9}
+.col .state{font-size:10px;color:var(--muted);text-align:center;height:14px;margin-top:2px;letter-spacing:.04em}
+.answer{position:relative;margin-top:10px;height:168px;overflow-y:auto;overflow-x:hidden;font-size:11px;line-height:15px;color:var(--ink2);opacity:0;transform:translateY(6px);transition:opacity .8s,transform .8s;padding-right:6px;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.14) transparent;
+  -webkit-mask-image:linear-gradient(#000 82%,transparent);mask-image:linear-gradient(#000 82%,transparent)}
+.answer::-webkit-scrollbar{width:4px}.answer::-webkit-scrollbar-thumb{background:rgba(255,255,255,.14);border-radius:2px}
+.answer.on{opacity:1;transform:none}
+.answer .b{color:var(--gold);font-weight:600;text-shadow:0 0 8px var(--gold-g)}
+.answer .c{color:var(--olive)}
+.answer .sup{box-shadow:inset 0 -1px 0 var(--hue)}
+.answer .mk{display:inline-block;width:4px;height:4px;border-radius:2px;background:var(--hue);vertical-align:super;margin-left:1px;box-shadow:0 0 6px var(--hue)}
+.answer.err{color:var(--muted);font-style:italic;-webkit-mask-image:none;mask-image:none}
+.stem{position:absolute;left:50%;top:0;width:1px;height:100%;background:linear-gradient(var(--hue-dim),transparent);opacity:0;transition:opacity 1s}
+.col.started .stem{opacity:.5}
+.threads{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.threads path{fill:none;stroke:var(--hue);stroke-width:1;opacity:.55;stroke-dasharray:400;stroke-dashoffset:400;animation:draw 1s ease-out forwards}
+.threads path.api{stroke-dasharray:3 3;opacity:.5;animation:none}
+@keyframes draw{to{stroke-dashoffset:0}}
+.conduit{position:absolute;right:0;top:36px;font-size:9px;letter-spacing:.08em;color:var(--hue);opacity:0;transition:opacity .6s}
+.col.api .conduit{opacity:.8}
+
+/* chips */
+.chips{position:relative;margin-top:14px;display:flex;flex-direction:column;gap:7px;padding:0 2px}
+.chip{position:relative;height:22px;overflow:visible;border:1px solid var(--hue);border-radius:3px;background:rgba(7,8,11,.9);font-size:10px;line-height:20px;padding:0 7px 0 18px;white-space:nowrap;color:var(--ink);
+  transform:scale(.6);opacity:0;transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .35s,border-color .4s,background .6s,box-shadow .6s;box-shadow:0 0 12px var(--hue-dim)}
+.chip.in{transform:none;opacity:1;box-shadow:none}
+.chip .dot{position:absolute;left:7px;top:8px;width:5px;height:5px;border-radius:50%;background:var(--hue);transition:background .4s}
+.chip .lbl{overflow:hidden;text-overflow:ellipsis;display:inline-block;max-width:calc(100% - 2px);vertical-align:top;transition:max-width .4s}
+.chip.typed .lbl{max-width:calc(100% - 34px)}
+.chip.filled:not(.typed) .lbl{max-width:calc(100% - 30px)}
+.chip .tail{color:#5a5e66;transition:transform .7s ease-in,opacity .7s;display:inline-block}
+.chip.snipping .tail{transform:translate(14px,34px) rotate(28deg);opacity:0}
+.chip .cut{position:absolute;top:-4px;width:1px;height:30px;background:#fff;box-shadow:0 0 8px var(--hue);opacity:0}
+.chip.snipping .cut{animation:cut .7s ease-out}
+@keyframes cut{0%{opacity:0}30%{opacity:1}100%{opacity:0}}
+.chip .sleeve{position:absolute;inset:-1px;border-radius:3px;border:1px solid #5a5e66;background:repeating-linear-gradient(135deg,#1a1c20 0 3px,#101214 3px 6px);color:rgba(241,238,232,.6);padding:0 7px;overflow:hidden;text-overflow:ellipsis;transition:transform .8s ease-in,opacity .8s}
+.chip .sleeve .ping{position:absolute;right:-30px;top:9px;width:5px;height:5px;border-radius:50%;background:#fff;box-shadow:0 0 6px #fff;opacity:0}
+.chip.pinging .sleeve .ping{animation:ping 1.2s ease-in-out forwards}
+@keyframes ping{0%{opacity:1;transform:translateX(0)}50%{opacity:1;transform:translateX(26px)}100%{opacity:0;transform:translateX(0)}}
+.chip.unmasked .sleeve{transform:translate(70px,8px) rotate(5deg);opacity:0;pointer-events:none}
+.chip .badge{position:absolute;right:-8px;top:-8px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:1px solid var(--hue);color:var(--hue);font-size:9px;line-height:14px;text-align:center;transform:scale(0);transition:transform .3s}
+.chip.absorbed .badge{transform:scale(1)}
+.chip.merging{transform:translateY(-30px) scale(.5);opacity:0}
+.chip.gone{display:none}
+.chip .ring{position:absolute;left:50%;top:50%;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;border:1px solid var(--hue);opacity:0}
+.chip.absorbed .ring{animation:ring .9s ease-out}
+@keyframes ring{0%{opacity:.8;transform:scale(1)}100%{opacity:0;transform:scale(9)}}
+/* verify */
+.chip .pingline{position:absolute;left:100%;top:10px;height:1px;width:0;background:var(--hue);opacity:.6;transition:width .5s}
+.chip.verifying .pingline{width:26px}
+.chip .pingdot{position:absolute;left:calc(100% + 0px);top:8px;width:5px;height:5px;border-radius:50%;background:#fff;opacity:0}
+.chip.verifying .pingdot{animation:vping 1.1s ease-in-out forwards}
+@keyframes vping{0%{opacity:1;transform:translateX(0)}45%{transform:translateX(24px)}55%{transform:translateX(24px);background:var(--verdict)}100%{opacity:0;transform:translateX(0);background:var(--verdict)}}
+.chip.verifying .pingdot{animation-duration:.7s}
+.chip.ok{border-color:var(--olive)} .chip.ok .dot{background:var(--olive)}
+.chip.wall{border-color:var(--amber);border-style:dashed} .chip.wall .dot{background:var(--amber)}
+.chip.wall::after{content:"▮▮";position:absolute;right:6px;top:0;color:var(--amber);font-size:9px}
+.chip.dropped{border-color:var(--red);transform:translate(18px,40px) rotate(9deg);opacity:0;transition:transform 1s ease-in,opacity 1s}
+.ghost{height:22px;border:1px dashed var(--red);border-radius:3px;font-size:9px;letter-spacing:.1em;color:var(--red);line-height:20px;padding:0 8px;opacity:.7;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* page card */
+.chip .card{position:absolute;left:-1px;right:-1px;top:24px;z-index:5;border:1px solid var(--hue);border-radius:4px;background:rgba(9,10,13,.98);padding:8px 9px;max-height:0;overflow:hidden;opacity:0;transition:max-height .35s ease-out,opacity .3s;box-shadow:0 0 18px var(--hue-dim)}
+.chip.reading .card{max-height:150px;opacity:1}
+.card .t{height:6px;width:70%;background:rgba(241,238,232,.5);border-radius:1px;margin:4px 0 6px}
+.card .l{height:3px;background:rgba(241,238,232,.16);border-radius:1px;margin-bottom:4px;position:relative}
+.card .l i{position:absolute;top:0;height:3px;width:18%;background:var(--gold);box-shadow:0 0 5px var(--gold);opacity:0;transition:opacity .2s}
+.card.scanned .l i{opacity:1}
+.card .scan{position:absolute;left:-9px;right:-9px;top:0;height:1px;background:var(--hue);box-shadow:0 0 8px var(--hue);animation:scan .5s linear forwards}
+@keyframes scan{from{top:8px}to{top:calc(100% - 8px)}}
+.card .f{display:flex;gap:7px;font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.card.scanned .f span{color:var(--hue)}
+.card .wallb{height:58px;margin-top:6px;border:1px solid rgba(217,164,74,.4);border-radius:2px;background:repeating-linear-gradient(0deg,rgba(217,164,74,.2) 0 9px,transparent 9px 11px),repeating-linear-gradient(90deg,rgba(217,164,74,.2) 0 18px,transparent 18px 20px);position:relative}
+.card .wallb span{position:absolute;inset:0;display:grid;place-items:center;font-size:8px;letter-spacing:.2em;color:var(--amber)}
+.chip.filled{background:var(--hue-fill)}
+.chip .hits{position:absolute;right:7px;top:0}
+.chip .hits i{display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--gold);margin-left:2px;box-shadow:0 0 4px var(--gold)}
+.chip .type{display:none}
+.chip.typed .dot{box-shadow:0 0 6px var(--tcol);background:var(--tcol)!important}
+
+/* ledger */
+.ledger{margin-top:26px;border-top:1px solid var(--line);padding-top:12px;display:flex;flex-wrap:wrap;gap:8px 26px;font-size:11.5px;color:var(--ink2);letter-spacing:.03em;min-height:20px}
+.ledger b{color:var(--ink);font-weight:500}
+.ledger .cap{color:var(--muted)}
+
+/* findings */
+.findings{display:none;padding:10px 0 80px}
+.findings.on{display:block}
+.gate{position:relative;border:1px solid var(--line);border-radius:6px;padding:28px;background:linear-gradient(180deg,#0f1117,#0a0b0f);text-align:center;margin-bottom:22px}
+.gate h2{font-family:var(--display);font-weight:200;font-size:26px;margin:0 0 6px}
+.gate p{color:var(--ink2);margin:0 0 18px;font-size:14px}
+.gate form{display:flex;gap:10px;justify-content:center}
+.gate input{background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.28);color:var(--ink);font-family:var(--display);font-weight:300;font-size:18px;padding:8px 4px;width:320px;outline:none}
+.gate button{background:var(--gold);color:#121212;border:0;border-radius:3px;padding:0 18px;font:600 12px/1 var(--ui);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;height:40px}
+.tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;filter:blur(7px);opacity:.45;pointer-events:none;transition:filter .9s,opacity .9s}
+.tiles.open{filter:none;opacity:1;pointer-events:auto}
+.tile{border:1px solid var(--line);border-radius:6px;padding:16px 16px 14px;background:linear-gradient(180deg,#0f1117,#0a0b0f);min-height:230px}
+.tile h3{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2);margin:0 0 12px;font-weight:500}
+.tile .big{font-family:var(--display);font-weight:200;font-size:30px;line-height:1;margin-bottom:4px}
+.tile .den{color:var(--muted);font-size:11px;margin-bottom:12px}
+.tile ul{list-style:none;margin:0;padding:0;font-size:12px;line-height:1.5}
+.tile li{display:flex;justify-content:space-between;gap:8px;border-top:1px solid var(--line);padding:5px 0}
+.tile li span:last-child{color:var(--ink2);white-space:nowrap}
+.tile li .g{color:var(--gold)}
+.mix{display:flex;height:8px;border-radius:2px;overflow:hidden;margin:6px 0 10px}
+.mix i{display:block;height:100%}
+.leg{font-size:11px;color:var(--ink2);line-height:1.7}
+.leg b{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.close{margin-top:26px;text-align:center}
+.close p{font-family:var(--display);font-weight:200;font-size:24px;margin:0 0 14px}
+.close a{display:inline-block;background:var(--gold);color:#121212;border-radius:3px;padding:13px 22px;font:600 12px/1 var(--ui);letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+.wm{position:fixed;left:16px;bottom:12px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);opacity:.7;display:none}
+.wm.on{display:block}
+.ctl{position:fixed;right:16px;bottom:12px;font-size:10px;color:var(--muted);display:flex;gap:10px}
+.ctl button{background:none;border:1px solid var(--line);color:var(--ink2);font-size:10px;padding:3px 8px;border-radius:3px;cursor:pointer}
+@media (max-width:980px){.cols{grid-template-columns:repeat(3,1fr)}.tiles{grid-template-columns:repeat(2,1fr)}.fan{display:none}.form{grid-template-columns:1fr}}
+
+/* tiles v2 */
+.tiles{grid-template-columns:repeat(3,1fr)}
+.tile{min-height:250px}
+.tile .chart{margin:4px 0 10px}
+.bar{display:flex;align-items:center;gap:8px;font-size:12px;padding:4px 0;border-top:1px solid var(--line)}
+.bar .nm{flex:1;display:flex;align-items:center;gap:8px;min-width:0}
+.bar .nm span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .tr{width:84px;height:5px;background:rgba(255,255,255,.08);border-radius:2px;overflow:hidden;flex:none}
+.bar .tr i{display:block;height:100%;background:var(--ink2);border-radius:2px;width:0;transition:width 1s ease-out}
+.bar.g .tr i{background:var(--gold)}
+.bar .n{color:var(--ink2);white-space:nowrap;width:46px;text-align:right;font-size:11px}
+.logo{width:18px;height:18px;border-radius:4px;background:#1a1d24;flex:none;display:grid;place-items:center;font-size:9px;color:var(--ink2);overflow:hidden;position:relative}
+.logo img{width:14px;height:14px;object-fit:contain;position:absolute;inset:2px}
+.tile a{text-decoration:none;color:inherit}
+.tile a:hover span{text-decoration:underline}
+.donut{display:flex;align-items:center;gap:14px}
+.donut svg{flex:none}
+.seg{display:flex;height:8px;border-radius:2px;overflow:hidden;background:rgba(255,255,255,.06)}
+.seg i{display:block;height:100%}
+.close p b{font-weight:400;color:var(--gold)}
+@media (max-width:980px){.tiles{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.tiles{grid-template-columns:1fr}}
+
+/* bundles: chips regroup by source type at the end of the run */
+.bundles{display:none;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:14px;margin-top:22px}
+.bundles.on{display:grid}
+.bundle h4{margin:0 0 8px;padding-bottom:6px;border-bottom:1px solid var(--bcol);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--bcol);font-weight:500;display:flex;justify-content:space-between;gap:6px}
+.bundle h4 span{color:var(--muted);letter-spacing:.04em;text-transform:none;font-size:10px;white-space:nowrap}
+.bundle .list{display:flex;flex-direction:column;gap:6px;min-height:40px}
+.bundle .chip{transition:transform .9s cubic-bezier(.2,.8,.2,1),opacity .4s,border-color .4s,background .6s;box-shadow:none}
+.cols.bundled .col{min-height:0}
+.cols.bundled .threads,.cols.bundled .stem{opacity:0;transition:opacity .4s}
+.bhead{margin-top:26px;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2);display:none}
+.bhead.on{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><div class="brand">innate <b>c3</b></div><nav><a href="https://www.innatec3.com/ai-visibility-audit">AI Visibility Audit</a><a href="https://www.innatec3.com/contact">Contact</a></nav></header>
+
+  <section class="ask" id="ask">
+    <h1>One prompt, six agents</h1>
+    <p class="sub">Type a brand and one question a buyer would ask. Six agents answer. Every link they cite is resolved, checked, and read while you watch.</p>
+    <form class="form" id="form" autocomplete="off">
+      <input id="brand" placeholder="Brand" required>
+      <input id="prompt" placeholder="A question a buyer would ask" required>
+      <button id="run" type="submit">Run</button>
+    </form>
+    
+  </section>
+
+  <section class="stage" id="stage">
+    <svg class="fan" id="fan"></svg>
+    <div class="cols" id="cols"></div>
+    <div class="bhead" id="bhead">Citations by source type</div>
+    <div class="bundles" id="bundles"></div>
+    <div class="ledger" id="ledger"></div>
+  </section>
+
+  <section class="findings" id="findings">
+    <div class="gate" id="gate">
+      <h2>Five findings from this run</h2>
+      <p>Enter a work email to open them. The run stays on this page.</p>
+      <form id="gateform"><input id="email" type="email" placeholder="name@company.com" required><button type="submit">Open findings</button></form>
+    </div>
+    <div class="tiles" id="tiles"></div>
+    <div class="close" id="closer" style="display:none"><p id="closeline"></p><a href="{{ calendly_url }}" target="_blank" rel="noopener">Book 30 minutes</a></div>
+  </section>
+</div>
+<div class="wm" id="wm">prototype · synthetic run · not a measurement</div>
+<div class="ctl"><button id="speed">speed ×1</button><button id="skip">skip to end</button></div>
+
+<script src="/static/one_prompt/events_synthetic.js"></script>
+<script>
+// ---------- helpers ----------
+const $ = (s, r = document) => r.querySelector(s);
+const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+const esc = (s) => s.replace(/[&<>"]/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+const hueOf = (i, n) => 168 + (332 - 168) * (n > 1 ? i / (n - 1) : 0);
+const hostPath = (u) => { try { const x = new URL(u); return (x.host.replace(/^www\./, '') + x.pathname.replace(/\/$/, '')); } catch { return u; } };
+const shortLabel = (u, n = 30) => { const s = hostPath(u); return s.length > n ? s.slice(0, n - 1) + '…' : s; };
+
+// ---------- state ----------
+const TYPE_COL = {editorial: '#74d0ff', owned: '#cbab6d', competitor: '#aab98a', retail: '#c98ad6', reference: '#9aa1ad', social: '#f0876a', unclassified: '#3a3e47'};
+const S = {run: null, cols: {}, chips: {}, pages: {}, counts: {answers: 0, errors: 0, citations: 0, resolved: 0, rewritten: 0, dropped: 0, merged: 0, verified: 0, walls: 0, distinct: 0, cap: 0, read: 0, blocked: 0}, findings: null, done: false};
+let speed = 1, timers = [], brandRe = null, compRe = null;
+
+// ---------- fan (SVG) ----------
+function drawFan(agents) {
+  const svg = $('#fan'); svg.innerHTML = '';
+  const W = svg.clientWidth || 1200, H = 170, n = agents.length;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs'); svg.appendChild(defs);
+  const colW = W / n;
+  const seed = `<circle cx="${W / 2}" cy="14" r="22" fill="url(#seedg)"/><circle cx="${W / 2}" cy="14" r="3.5" fill="#EDEEF1"/>`;
+  defs.innerHTML = `<radialGradient id="seedg"><stop offset="0" stop-color="rgba(241,238,232,.45)"/><stop offset="1" stop-color="rgba(241,238,232,0)"/></radialGradient>` +
+    agents.map((a, i) => `<radialGradient id="h${i}"><stop offset="0" stop-color="hsla(${hueOf(i, n)},52%,66%,.5)"/><stop offset="1" stop-color="hsla(${hueOf(i, n)},52%,66%,0)"/></radialGradient>`).join('');
+  let paths = `<path d="M${W / 2},26 L${W / 2},${60}" stroke="rgba(241,238,232,.6)" stroke-width="2.4" fill="none" stroke-linecap="round"/>`;
+  agents.forEach((a, i) => {
+    const x = colW * (i + .5), jy = 60 - Math.abs(i - (n - 1) / 2) * 6, sway = (x - W / 2) * .25;
+    const d = `M${W / 2},${jy} C${W / 2 + sway * .4},${jy + 50} ${x - sway * .5},${H - 60} ${x},${H - 14}`;
+    const h = hueOf(i, n), col = `hsl(${h},52%,66%)`, bright = `hsl(${h},70%,82%)`;
+    paths += `<g class="br" data-i="${i}" opacity="0" style="transition:opacity 1.2s">
+      <path d="${d}" stroke="${col}" stroke-width="7" stroke-opacity=".12" fill="none" stroke-linecap="round"/>
+      <path d="${d}" stroke="${col}" stroke-width="1.8" fill="none" stroke-linecap="round" class="line"/>
+      <path d="${d}" stroke="${bright}" stroke-width="2.2" fill="none" stroke-linecap="round" class="pulse" pathLength="100" stroke-dasharray="6 100" style="animation:pulse ${2.4 + (i % 3) * .3}s linear infinite;animation-delay:${-i * .37}s"/>
+      <circle cx="${x}" cy="${H - 14}" r="22" fill="url(#h${i})" class="halo"/>
+      <circle cx="${x}" cy="${H - 14}" r="3" fill="${bright}"/>
+    </g>`;
+  });
+  svg.innerHTML += seed + paths;
+  const st = document.createElement('style'); st.textContent = '@keyframes pulse{from{stroke-dashoffset:106}to{stroke-dashoffset:0}}'; svg.appendChild(st);
+}
+
+// ---------- columns ----------
+function buildCols(agents) {
+  const cols = $('#cols'); cols.innerHTML = '';
+  agents.forEach((a, i) => {
+    const h = hueOf(i, agents.length);
+    const c = el('div', 'col'); c.style.setProperty('--hue', `hsl(${h},52%,66%)`); c.style.setProperty('--hue-dim', `hsla(${h},52%,66%,.35)`); c.style.setProperty('--hue-fill', `hsla(${h},50%,60%,.18)`);
+    c.innerHTML = `<div class="stem"></div><div class="label">${esc(a)}</div><div class="state">waiting</div><div class="answer" tabindex="0" aria-label="${esc(a)} answer, scrollable"></div><div class="conduit">{ } api citations</div><svg class="threads"></svg><div class="chips"></div>`;
+    cols.appendChild(c); S.cols[a] = {el: c, i, hue: h, text: '', chips: []};
+    $('.answer', c).addEventListener('scroll', () => redrawThreads(a), {passive: true});
+  });
+}
+function mark(text, cits) {
+  // brand and competitor spans, citation markers at span ends (text citations)
+  const marks = cits.filter((c) => c.span).map((c) => ({pos: Math.min(text.length, c.span.end), id: c.cit_id})).sort((a, b) => a.pos - b.pos);
+  let out = '', pos = 0;
+  for (const m of marks) { out += esc(text.slice(pos, m.pos)) + `<i class="mk" data-cid="${m.id}"></i>`; pos = m.pos; }
+  out += esc(text.slice(pos));
+  if (brandRe) out = out.replace(brandRe, '<span class="b">$1</span>');
+  if (compRe) out = out.replace(compRe, '<span class="c">$1</span>');
+  return out.replace(/\n/g, '<br>');
+}
+function renderAnswer(agent) {
+  const col = S.cols[agent]; if (!col.text) return;
+  const cits = col.chips.map((id) => S.chips[id]).filter((c) => c.source === 'text');
+  $('.answer', col.el).innerHTML = mark(col.text, cits);
+}
+function thread(agent, cid) {
+  const col = S.cols[agent], chip = S.chips[cid]; if (!chip || !chip.el || !chip.el.parentNode) return;
+  const svg = $('.threads', col.el), ans = $('.answer', col.el), chips = $('.chips', col.el);
+  const mk = $(`.mk[data-cid="${cid}"]`, col.el);
+  const ansTop = ans.offsetTop, ansH = ans.offsetHeight, ansW = ans.offsetWidth;
+  let x0, y0;
+  if (chip.source === 'api') { x0 = ansW - 4; y0 = ansTop + 24; }
+  else if (mk && mk.offsetTop - ans.scrollTop >= 0 && mk.offsetTop - ans.scrollTop < ansH - 14) { x0 = mk.offsetLeft + 2; y0 = ansTop + mk.offsetTop - ans.scrollTop + 4; }
+  else { x0 = ansW * 0.5 + (cid % 5) * 12; y0 = ansTop + ansH - 10; }
+  const colW = col.el.offsetWidth, api = chip.source === 'api';
+  const gx = api ? colW - 1 : 1;                                   // left gutter for text links, right gutter for api citations
+  const y1 = chips.offsetTop + chip.el.offsetTop + chip.el.offsetHeight / 2;
+  const x1 = api ? chips.offsetLeft + chip.el.offsetLeft + chip.el.offsetWidth : chips.offsetLeft + chip.el.offsetLeft;
+  const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  const yb = chips.offsetTop - 8;
+  p.setAttribute('d', `M${x0},${y0} C${x0},${y0 + 30} ${gx},${yb - 40} ${gx},${yb} L${gx},${y1 - 6} Q${gx},${y1} ${gx + (api ? -6 : 6)},${y1} L${x1},${y1}`);
+  if (chip.source === 'api') p.classList.add('api');
+  svg.appendChild(p); chip.path = p;
+}
+function redrawThreads(agent) {
+  const col = S.cols[agent]; $('.threads', col.el).innerHTML = '';
+  for (const id of col.chips) { const c = S.chips[id]; if (c.el && !c.el.classList.contains('gone') && !c.dropped) thread(agent, id); }
+}
+
+// ---------- ledger ----------
+function ledger() {
+  const k = S.counts, n = S.run ? S.run.agents.length : 0;
+  const parts = [`<b>${k.answers}</b> of ${n} answers`];
+  if (k.citations) parts.push(`<b>${k.citations}</b> citations`);
+  if (k.resolved) parts.push(`<b>${k.rewritten}</b> of ${k.citations} rewritten to the page behind them`);
+  if (k.dropped) parts.push(`<b>${k.dropped}</b> dead links dropped`);
+  if (k.merged) parts.push(`<b>${k.merged}</b> merged within an answer`);
+  if (k.distinct) parts.push(`<b>${k.distinct}</b> distinct pages`);
+  if (k.cap) parts.push(`<b>${k.read}</b> of ${k.cap} pages read${k.blocked ? ` <span class="cap">· ${k.blocked} blocked</span>` : ''}${k.cap < k.distinct ? ` <span class="cap">· reading the first ${k.cap} of ${k.distinct}</span>` : ''}`);
+  $('#ledger').innerHTML = parts.join('<span class="cap">·</span>');
+}
+
+// ---------- event handlers ----------
+const H = {
+  'run.start'(d) {
+    S.run = d; $('#stage').classList.add('on'); $('#ask').style.paddingBottom = '10px';
+    brandRe = new RegExp(`\\b(${d.aliases.map((a) => a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})\\b`, 'gi');
+    compRe = d.competitors && d.competitors.length ? new RegExp(`\\b(${d.competitors.map((a) => a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})\\b`, 'gi') : null;
+    drawFan(d.agents); buildCols(d.agents); ledger();
+    $('#wm').classList.toggle('on', !!d.synthetic);
+    setTimeout(() => document.querySelectorAll('#fan .br').forEach((g, i) => setTimeout(() => g.setAttribute('opacity', '1'), i * 120)), 50);
+  },
+  'agent.start'(d) { const c = S.cols[d.agent]; c.el.classList.add('started'); $('.state', c.el).textContent = 'answering'; },
+  'agent.answer'(d) {
+    const c = S.cols[d.agent]; c.text = d.text; S.counts.answers++; renderAnswer(d.agent);
+    $('.answer', c.el).classList.add('on'); $('.state', c.el).textContent = `answered · ${(d.latency_ms / 1000).toFixed(1)} s`; ledger();
+  },
+  'agent.error'(d) { const c = S.cols[d.agent]; S.counts.errors++; $('.answer', c.el).innerHTML = esc(d.reason); $('.answer', c.el).classList.add('on', 'err'); $('.state', c.el).textContent = 'no answer'; },
+  'citation.found'(d) {
+    const c = S.cols[d.agent]; const chip = {...d, el: null}; S.chips[d.cit_id] = chip; c.chips.push(d.cit_id); S.counts.citations++;
+    if (d.source === 'api') c.el.classList.add('api');
+    const e = el('div', 'chip'); e.dataset.cid = d.cit_id; for (const v of ['--hue', '--hue-dim', '--hue-fill']) e.style.setProperty(v, c.el.style.getPropertyValue(v));
+    const raw = d.url_raw, isTail = /[?&](utm_|fbclid|gclid|srsltid)/.test(raw), base = isTail ? raw.split(/[?&](?=utm_|fbclid|gclid|srsltid)/)[0] : raw, tail = isTail ? raw.slice(base.length) : '';
+    const isMask = /vertexaisearch|grounding-api-redirect|\/url\?q=|bing\.com\/ck/.test(raw);
+    e.innerHTML = `<i class="dot"></i><span class="lbl">${esc(shortLabel(base))}</span>${tail ? `<span class="tail">${esc(tail.slice(0, 22))}</span><i class="cut" style="left:${Math.min(150, 18 + shortLabel(base).length * 5.6)}px"></i>` : ''}<span class="hits"></span><span class="type"></span><i class="badge"></i><i class="ring"></i><i class="pingline"></i><i class="pingdot"></i><div class="card"></div>` + (isMask ? `<div class="sleeve">${esc(shortLabel(raw, 34))}<i class="ping"></i></div>` : '');
+    $('.chips', c.el).appendChild(e); chip.el = e; chip.masked = isMask; chip.tailed = isTail;
+    if (d.source === 'text') renderAnswer(d.agent);
+    requestAnimationFrame(() => { e.classList.add('in'); thread(d.agent, d.cit_id); });
+    $('.state', c.el).textContent = 'extracting citations'; ledger();
+  },
+  'citation.support'(d) {
+    const c = S.cols[d.agent]; const ans = $('.answer', c.el); const html = ans.innerHTML; // underline the first sentence span (prototype: span offsets map through markup loosely)
+    const mk = $(`.mk[data-cid="${d.cit_id}"]`, c.el); if (!mk) return;
+    // walk back from the marker and wrap preceding text nodes up to ~60 chars
+    let need = 60, node = mk.previousSibling;
+    while (node && need > 0) { if (node.nodeType === 3) { const t = node.textContent; const cut = Math.max(0, t.length - need); const span = document.createElement('span'); span.className = 'sup'; span.textContent = t.slice(cut); node.textContent = t.slice(0, cut); node.parentNode.insertBefore(span, node.nextSibling); need -= span.textContent.length; node = node.previousSibling; } else if (node.nodeType === 1 && !node.classList.contains('mk')) { node.classList.add('sup'); need -= node.textContent.length; node = node.previousSibling; } else node = node.previousSibling; }
+  },
+  'citation.resolved'(d) {
+    const chip = S.chips[d.cit_id]; if (!chip) return; S.counts.resolved++; chip.url_final = d.url_final; chip.page_key = d.page_key;
+    const c = S.cols[d.agent]; $('.state', c.el).textContent = 'resolving links';
+    if (d.kind === 'demask' || d.kind === 'unwrap') { S.counts.rewritten++; chip.el.classList.add('pinging'); $('.lbl', chip.el).textContent = shortLabel(d.url_final); setTimeout(() => chip.el.classList.add('unmasked'), 900 / speed); }
+    else if (d.kind === 'tracking' || (chip.tailed && !/[?&](utm_|fbclid|gclid|srsltid)/.test(d.url_final))) { S.counts.rewritten++; chip.el.classList.add('snipping'); setTimeout(() => { const t = $('.tail', chip.el); if (t) t.remove(); }, 800 / speed); }
+    ledger();
+  },
+  'citation.dropped'(d) {
+    const chip = S.chips[d.cit_id]; if (!chip) return; chip.dropped = true; S.counts.dropped++;
+    const c = S.cols[d.agent]; $('.state', c.el).textContent = 'checking links';
+    chip.el.classList.add('dropped'); if (chip.path) chip.path.remove();
+    setTimeout(() => { const g = el('div', 'ghost', esc(DROP_REASON[d.reason] || `dead link · ${d.reason}`)); g.title = `${chip.url_raw || ''} dropped: ${d.reason}. The record keeps the link and the reason.`; chip.el.replaceWith(g); redrawThreads(d.agent); }, 1000 / speed);
+    ledger();
+  },
+  'citation.merged'(d) {
+    const chip = S.chips[d.cit_id], into = S.chips[d.into]; if (!chip) return; chip.merged = true; S.counts.merged++;
+    chip.el.classList.add('merging'); if (chip.path) chip.path.remove();
+    setTimeout(() => { chip.el.classList.add('gone'); if (into && into.el) { into.absorbed = (into.absorbed || 0) + 1; $('.badge', into.el).textContent = into.absorbed + 1; into.el.classList.remove('absorbed'); void into.el.offsetWidth; into.el.classList.add('absorbed'); } redrawThreads(d.agent); }, 450 / speed);
+    ledger();
+  },
+  'citation.verified'(d) {
+    const chip = S.chips[d.cit_id]; if (!chip) return; S.counts.verified++; if (d.status === 'wall') S.counts.walls++;
+    const c = S.cols[d.agent]; $('.state', c.el).textContent = 'checking links';
+    chip.el.style.setProperty('--verdict', d.status === 'ok' ? 'var(--olive)' : 'var(--amber)');
+    chip.el.classList.add('verifying'); setTimeout(() => { chip.el.classList.remove('verifying'); chip.el.classList.add(d.status); }, 700 / speed);
+    if (chip.page_key) (S.pages[chip.page_key] = S.pages[chip.page_key] || {chips: []}).chips.push(chip);
+  },
+  'scrape.budget'(d) { S.counts.distinct = d.distinct_pages; S.counts.cap = d.read_cap; Object.values(S.cols).forEach((c) => $('.state', c.el).textContent = 'reading pages'); ledger(); },
+  'page.open'(d) {
+    const p = S.pages[d.page_key]; if (!p) return;
+    for (const chip of p.chips) { const card = $('.card', chip.el); card.className = 'card'; card.innerHTML = `<div class="t"></div>` + Array.from({length: 6}, (_, i) => `<div class="l" style="width:${60 + ((i * 37) % 38)}%"><i style="left:${20 + ((i * 53) % 45)}%"></i></div>`).join('') + `<div class="f"><span>title ✓</span><span>byline ✓</span><span>date ✓</span><span>text ✓</span></div><div class="scan"></div>`; chip.el.classList.add('reading'); }
+  },
+  'page.read'(d) {
+    const p = S.pages[d.page_key]; if (!p) return; p.read = d; if (d.status === 'ok') S.counts.read++; else S.counts.blocked++;
+    for (const chip of p.chips) {
+      chip.hits = d.brand_count || 0;
+      const card = $('.card', chip.el);
+      if (d.status === 'blocked') card.innerHTML = `<div class="wallb"><span>blocked · kept</span></div>`;
+      else { const hits = Math.min(4, d.brand_count || 0); card.querySelectorAll('.l i').forEach((i, k) => { if (k >= hits) i.remove(); }); card.classList.add('scanned'); }
+      setTimeout(() => { chip.el.classList.remove('reading'); if (d.status === 'ok') { chip.el.classList.add('filled'); $('.hits', chip.el).innerHTML = Array.from({length: Math.min(4, d.brand_count || 0)}, () => '<i></i>').join(''); } }, 450 / speed);
+    }
+    ledger();
+  },
+  'page.classified'(d) { const p = S.pages[d.page_key]; if (!p) return; for (const chip of p.chips) { chip.type = d.source_type; chip.el.style.setProperty('--tcol', TYPE_COL[d.source_type] || TYPE_COL.unclassified); chip.el.title = d.source_type; chip.el.classList.add('typed'); } },
+  'run.done'(d) { S.done = true; bundle(); if (new URLSearchParams(location.search).get('open')) setTimeout(openFindings, 300); Object.values(S.cols).forEach((c) => $('.state', c.el).textContent = 'done'); ledger(); $('#findings').classList.add('on'); document.querySelectorAll('#fan .pulse').forEach((p) => p.style.animationDuration = '6s'); },
+  'findings.locked'() { $('#gate').scrollIntoView({behavior: 'smooth', block: 'center'}); },
+};
+
+
+// ---------- bundling: FLIP every live chip into its source-type group ----------
+const DROP_REASON = {'404': 'dead link · 404 not found', '410': 'dead link · 410 gone', 'dns': 'dead link · host not found', 'refused': 'dead link · connection refused', 'timeout': 'dead link · no response'};
+const TYPE_ORDER = ['editorial', 'owned', 'competitor', 'retail', 'reference', 'social', 'unclassified'];
+function bundle() {
+  const live = Object.values(S.chips).filter((c) => c.el && c.el.isConnected && !c.dropped && !c.merged);
+  if (!live.length) return;
+  const groups = {};
+  for (const c of live) (groups[c.type || 'unclassified'] = groups[c.type || 'unclassified'] || []).push(c);
+  const first = new Map(live.map((c) => [c, c.el.getBoundingClientRect()]));
+  const B = $('#bundles'); B.innerHTML = '';
+  const total = live.length;
+  for (const t of TYPE_ORDER) {
+    if (!groups[t]) continue;
+    const g = el('div', 'bundle'); g.style.setProperty('--bcol', TYPE_COL[t]);
+    g.innerHTML = `<h4>${t}<span>${groups[t].length} of ${total}</span></h4><div class="list"></div>`;
+    B.appendChild(g);
+    groups[t].sort((a, b) => (b.hits || 0) - (a.hits || 0));
+    for (const c of groups[t]) $('.list', g).appendChild(c.el);
+  }
+  $('#cols').classList.add('bundled'); $('#bhead').classList.add('on'); B.classList.add('on');
+  document.querySelectorAll('.threads').forEach((sv) => (sv.innerHTML = ''));
+  let k = 0;
+  for (const c of live) {
+    const f = first.get(c), l = c.el.getBoundingClientRect();
+    c.el.style.transition = 'none'; c.el.style.transform = `translate(${f.left - l.left}px, ${f.top - l.top}px)`;
+  }
+  void B.offsetHeight;
+  for (const c of live) { c.el.style.transition = ''; c.el.style.transitionDelay = `${(k++ % 12) * 40}ms`; c.el.style.transform = ''; }
+  setTimeout(() => live.forEach((c) => (c.el.style.transitionDelay = '')), 1600 / speed);
+}
+
+// ---------- findings tiles ----------
+const ico = (d) => `https://www.google.com/s2/favicons?domain=${encodeURIComponent(d)}&sz=64`;
+const ico2 = (d) => `https://icons.duckduckgo.com/ip3/${encodeURIComponent(d)}.ico`;
+const logo = (d, name) => `<span class="logo">${esc((name || d || '?').slice(0, 1).toUpperCase())}${d ? `<img src="${ico(d)}" alt="" loading="lazy" data-alt="${ico2(d)}" onerror="if(this.dataset.alt){this.src=this.dataset.alt;delete this.dataset.alt}else{this.remove()}">` : ''}</span>`;
+const barRow = (label, v, n, {gold = false, href = null, dom = null, sub = null} = {}) => {
+  const inner = `<span class="nm">${logo(dom, label)}<span>${esc(label)}${sub ? `<br><span style="color:var(--muted);font-size:10px">${esc(sub)}</span>` : ''}</span></span><span class="tr"><i data-w="${(v / n) * 100}"></i></span><span class="n">${v} of ${n}</span>`;
+  return `<div class="bar${gold ? ' g' : ''}">${href ? `<a href="${esc(href)}" target="_blank" rel="noopener" style="display:contents">${inner}</a>` : inner}</div>`;
+};
+const donut = (parts, total, size = 92) => {
+  const r = 36, c = 2 * Math.PI * r; let off = 0;
+  const arcs = parts.filter((p) => p.v > 0).map((p) => { const len = (p.v / total) * c; const a = `<circle r="${r}" cx="${size / 2}" cy="${size / 2}" fill="none" stroke="${p.c}" stroke-width="10" stroke-dasharray="${len} ${c - len}" stroke-dashoffset="${-off}" transform="rotate(-90 ${size / 2} ${size / 2})"/>`; off += len; return a; }).join('');
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}"><circle r="${r}" cx="${size / 2}" cy="${size / 2}" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="10"/>${arcs}</svg>`;
+};
+function tiles(f) {
+  const n = f.answers, T = $('#tiles'); T.innerHTML = '';
+  const brandName = S.run.brand; const me = f.brands_named.find((b) => b.name.toLowerCase() === brandName.toLowerCase());
+  const isMe = (b) => b.name.toLowerCase() === brandName.toLowerCase();
+  // 1 brands named
+  T.appendChild(el('div', 'tile', `<h3>Brands named</h3><div class="big">${me ? me.named_in.length : 0} of ${n}</div><div class="den">answers name ${esc(brandName)}${me ? ` · named first in ${me.named_first_in.length} of ${n}` : ''}</div><div class="chart">${f.brands_named.map((b) => barRow(b.name, b.named_in.length, n, {gold: isMe(b), dom: b.domain})).join('')}</div>`));
+  // 2 citation mix
+  const types = ['editorial', 'owned', 'competitor', 'retail', 'reference', 'social', 'unclassified'], cols = TYPE_COL;
+  const tot = f.citation_mix.distinct_pages, by = f.citation_mix.by_type;
+  T.appendChild(el('div', 'tile', `<h3>Citation mix</h3><div class="big">${tot}</div><div class="den">distinct pages cited across ${n} answers</div><div class="chart donut">${donut(types.map((t) => ({v: by[t] || 0, c: cols[t]})), tot)}<div class="leg">${types.filter((t) => by[t]).map((t) => `<div><b style="background:${cols[t]}"></b>${t} <span style="color:var(--muted)">${by[t]} of ${tot}</span></div>`).join('')}</div></div>`));
+  // 3 top sources
+  const top = f.top_sources[0];
+  T.appendChild(el('div', 'tile', `<h3>Top sources</h3><div class="big">${top ? `${top.answers} of ${n}` : '0'}</div><div class="den">answers cite ${top ? esc(top.root) : 'no domain'}, the most cited domain</div><div class="chart">${f.top_sources.map((s) => barRow(s.root, s.answers, n, {dom: s.root, href: 'https://' + s.root, gold: me && me.domain === s.root})).join('')}</div>`));
+  // 4 editorial placements
+  T.appendChild(el('div', 'tile', `<h3>Top editorial placements</h3><div class="big">${by.editorial || 0} of ${tot}</div><div class="den">cited pages are editorial</div><div class="chart">${f.editorial_placements.map((e) => barRow(e.title.length > 40 ? e.title.slice(0, 39) + '…' : e.title, e.answers, n, {dom: e.outlet, href: e.url, sub: e.outlet})).join('')}</div>`));
+  // 5 owned mix
+  const o = f.owned_mix, other = o.distinct_pages - o.brand_pages - o.competitor_pages;
+  T.appendChild(el('div', 'tile', `<h3>Owned mix</h3><div class="big">${o.brand_pages} of ${o.distinct_pages}</div><div class="den">cited pages are ${esc(brandName)}'s own</div><div class="chart donut">${donut([{v: o.brand_pages, c: cols.owned}, {v: o.competitor_pages, c: cols.competitor}, {v: other, c: '#3a3e47'}], o.distinct_pages)}<div class="leg"><div><b style="background:${cols.owned}"></b>${esc(brandName)} pages <span style="color:var(--muted)">${o.brand_pages} of ${o.distinct_pages}</span></div><div><b style="background:${cols.competitor}"></b>competitor pages <span style="color:var(--muted)">${o.competitor_pages} of ${o.distinct_pages}</span></div><div><b style="background:#3a3e47"></b>everything else <span style="color:var(--muted)">${other} of ${o.distinct_pages}</span></div></div></div>`));
+  // 6 pages read
+  const pg = f.pages || {distinct_pages: S.counts.distinct, read_cap: S.counts.cap, read: S.counts.read, blocked: S.counts.blocked, dropped: S.counts.dropped, citations: S.counts.citations};
+  const unread = pg.distinct_pages - pg.read - pg.blocked;
+  T.appendChild(el('div', 'tile', `<h3>Pages read</h3><div class="big">${pg.read} of ${pg.distinct_pages}</div><div class="den">distinct pages fetched and read in this run</div><div class="chart"><div class="seg"><i style="width:${(pg.read / pg.distinct_pages) * 100}%;background:${C_OLIVE}"></i><i style="width:${(pg.blocked / pg.distinct_pages) * 100}%;background:${C_AMBER}"></i></div><div class="leg" style="margin-top:8px"><div><b style="background:${C_OLIVE}"></b>read <span style="color:var(--muted)">${pg.read} of ${pg.distinct_pages}</span></div><div><b style="background:${C_AMBER}"></b>refused by the site, kept <span style="color:var(--muted)">${pg.blocked} of ${pg.distinct_pages}</span></div><div><b style="background:#3a3e47"></b>beyond this run's ${pg.read_cap}-page cap <span style="color:var(--muted)">${unread} of ${pg.distinct_pages}</span></div><div><b style="background:${C_RED}"></b>dead links dropped (404, gone, host not found) <span style="color:var(--muted)">${pg.dropped} of ${pg.citations}</span></div></div></div>`));
+  requestAnimationFrame(() => setTimeout(() => T.querySelectorAll('.tr i').forEach((i) => { i.style.width = i.dataset.w + '%'; }), 50));
+}
+const C_OLIVE = '#aab98a', C_AMBER = '#d9a44a', C_RED = '#c7706a';
+
+// ---------- replay / stream ----------
+function dispatch(name, data) { if (H[name]) { try { H[name](data); } catch (e) { console.error(name, e); } } }
+function replay(events) {
+  timers.forEach(clearTimeout); timers = [];
+  const t0 = performance.now();
+  for (const e of events) timers.push(setTimeout(() => dispatch(e.event, e.data), (e.t * 1000) / speed));
+}
+function stream(url) {
+  const es = new EventSource(url);
+  Object.keys(H).forEach((name) => es.addEventListener(name, (m) => dispatch(name, JSON.parse(m.data))));
+  es.onerror = () => { Object.values(S.cols).forEach((c) => { if ($('.state', c.el).textContent !== 'done') $('.state', c.el).textContent = 'connection lost'; }); };
+}
+$('#form').addEventListener('submit', (ev) => {
+  ev.preventDefault(); $('#run').disabled = true;
+  const params = new URLSearchParams(location.search);
+  if (params.get('stream')) { stream(params.get('stream')); return; }
+  // prototype: replay the synthetic log, relabelled with the typed brand only when it matches the log's brand
+  const events = window.SYNTHETIC_EVENTS; S.findings = window.SYNTHETIC_FINDINGS;
+  replay(events);
+});
+function openFindings() { const f = S.findings || window.SYNTHETIC_FINDINGS; tiles(f); $('#closeline').innerHTML = `This is one prompt and <b>${S.counts.citations}</b> citations. The audit analyzes 10,000+.`; $('#tiles').classList.add('open'); $('#gate').style.display = 'none'; $('#closer').style.display = 'block'; }
+$('#gateform').addEventListener('submit', (ev) => { ev.preventDefault(); openFindings(); });
+$('#speed').addEventListener('click', () => { speed = speed === 1 ? 3 : 1; $('#speed').textContent = `speed ×${speed}`; });
+$('#skip').addEventListener('click', () => { timers.forEach(clearTimeout); const events = window.SYNTHETIC_EVENTS; if (!S.run) dispatch('run.start', events[0].data); events.filter((e) => e.event !== 'run.start').forEach((e) => dispatch(e.event, e.data)); });
+// prefill for the prototype; ?autorun=1&speed=3 starts the replay on load
+$('#brand').value = 'Rivian'; $('#prompt').value = 'What is the best electric adventure vehicle for off-roading and camping?';
+{ const q = new URLSearchParams(location.search); if (q.get('brand')) $('#brand').value = q.get('brand'); if (q.get('prompt')) $('#prompt').value = q.get('prompt'); if (q.get('autostart')) $('#form').requestSubmit(); }
+{ const q = new URLSearchParams(location.search); if (q.get('speed')) { speed = +q.get('speed') || 1; $('#speed').textContent = `speed ×${speed}`; } if (q.get('autorun')) $('#form').requestSubmit(); }
+</script>
+</body>
+</html>

@@ -2465,6 +2465,14 @@ def root_redirect():
     return redirect(target, code=308)
 
 
+@app.route("/one-prompt")
+def one_prompt():
+    """One prompt, six agents: the live pipeline page (Marketing, Nov 2, 2026).
+    Until the event stream ships it replays a synthetic, watermarked run from
+    static/one_prompt/events_synthetic.js. ?stream=<sse url> switches to a live stream."""
+    return render_template("one_prompt.html", calendly_url="https://calendly.com/nstrauss/new-meeting")
+
+
 @app.route("/legacy-index", methods=["GET", "POST"])
 def index():
     # Allow POST from the search form to avoid 405 Method Not Allowed
