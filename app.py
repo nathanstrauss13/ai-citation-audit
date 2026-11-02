@@ -2517,7 +2517,7 @@ def one_prompt():
                                        'utm_campaign': _utm['utm_campaign'], 'referrer': _ext_ref}
     except Exception:
         pass
-    return render_template("one_prompt.html", calendly_url="https://calendly.com/nstrauss/new-meeting")
+    return render_template("one_prompt.html", calendly_url="https://calendly.com/nstrauss-innatec3/new-meeting")
 
 
 # ── One prompt, six agents: the live run (Product Development, Nov 2, 2026) ──
@@ -9504,7 +9504,7 @@ def _send_requester_report_email(to_email, brand, slug, n_agents=5):
             "numbers are automated; every figure is recomputable from the full "
             "responses in the report's appendix.\n\n"
             "If you'd like a human read of what it means, reply to this email "
-            "or book 30 minutes: https://calendly.com/nstrauss/new-meeting\n\n"
+            "or book 30 minutes: https://calendly.com/nstrauss-innatec3/new-meeting\n\n"
             "Nathan Strauss\nInnate C3\n")
         html_body = (
             f'<p>Your free AI Visibility Audit for <b>{html.escape(brand)}</b> is ready:</p>'
@@ -9515,7 +9515,7 @@ def _send_requester_report_email(to_email, brand, slug, n_agents=5):
             'are automated; every figure is recomputable from the full responses '
             'in the report\'s appendix.</p>'
             '<p>If you\'d like a human read of what it means, reply to this email '
-            'or <a href="https://calendly.com/nstrauss/new-meeting">book 30 minutes</a>.</p>'
+            'or <a href="https://calendly.com/nstrauss-innatec3/new-meeting">book 30 minutes</a>.</p>'
             '<p>Nathan Strauss<br>Innate C3</p>')
         from sendgrid.helpers.mail import Mail
         msg = Mail(
@@ -17192,7 +17192,7 @@ def _render_kit_dashboard(data, public_slug=None):
             'insight types a consultative engagement develops. The engagement is bespoke: prompts '
             'designed around your stakeholders, 500 to 1,000 outputs, and human filtering and '
             'analysis to identify the signal and what is truly actionable.</div>'
-            f'<a href="https://calendly.com/nstrauss/new-meeting" target="_blank" rel="noopener" '
+            f'<a href="https://calendly.com/nstrauss-innatec3/new-meeting" target="_blank" rel="noopener" '
             'style="display:inline-block;background:#cbab6d;color:#161206;font-weight:600;font-size:14px;'
             'padding:10px 22px;border-radius:9px;text-decoration:none;margin-right:12px">Book 30 minutes</a>'
             f'<a href="/signal/{public_slug}.json" '
