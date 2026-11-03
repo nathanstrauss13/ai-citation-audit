@@ -2768,6 +2768,24 @@ def one_prompt_stream(run_id):
     except ValueError:
         after = -1
     run = OPR.get(run_id)
+    # ?pace=real replays a finished run at its original timestamps (the time it took, as it happened)
+    pace_real = (request.args.get("pace") or "") == "real"
+
+    def paced(events):
+        prev = None
+        for i, ev in enumerate(events):
+            if i <= after:
+                continue
+            if pace_real and prev is not None:
+                gap = min(max(float(ev.get("t", 0)) - prev, 0.0), 60.0)
+                while gap > 0:
+                    step = min(gap, 8.0)
+                    time.sleep(step)
+                    gap -= step
+                    if gap > 0:
+                        yield ": keepalive\n\n"
+            prev = float(ev.get("t", 0))
+            yield f"id: {i}\nevent: {ev['event']}\ndata: {json.dumps(ev['data'])}\n\n"
     if run is None:
         # a finished run that outlived the process: replay it from the table
         rec = OnePromptRun.query.filter_by(run_id=run_id).first()
@@ -2776,14 +2794,11 @@ def one_prompt_stream(run_id):
         events = json.loads(rec.events_json)
         if after >= len(events) - 1:
             return Response(status=204)
-
-        def replay():
-            for i, ev in enumerate(events):
-                if i > after:
-                    yield f"id: {i}\nevent: {ev['event']}\ndata: {json.dumps(ev['data'])}\n\n"
-        return Response(replay(), mimetype="text/event-stream", headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
+        return Response(paced(events), mimetype="text/event-stream", headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
     if run.done and after >= len(run.events) - 1:
         return Response(status=204)
+    if run.done and pace_real:
+        return Response(paced(list(run.events)), mimetype="text/event-stream", headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
 
     def generate():
         for i, ev in run.subscribe(heartbeat=10.0, start=after + 1):
