@@ -200,11 +200,22 @@ header{display:flex;align-items:center;justify-content:space-between;height:64px
 @media (max-width:640px){.tiles{grid-template-columns:1fr}}
 
 /* bundles: chips regroup by source type at the end of the run */
-.bundles{display:none;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:14px;margin-top:22px}
-.bundles.on{display:grid}
-.bundle h4{margin:0 0 8px;padding-bottom:6px;border-bottom:1px solid var(--bcol);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--bcol);font-weight:500;display:flex;justify-content:space-between;gap:6px}
-.bundle h4 span{color:var(--muted);letter-spacing:.04em;text-transform:none;font-size:10px;white-space:nowrap}
-.bundle .list{display:flex;flex-direction:column;gap:6px;min-height:40px}
+.bundles{display:none;flex-wrap:wrap;gap:18px 14px;margin-top:22px;align-items:flex-start}
+.bundles.on{display:flex}
+.bundle{flex:1 1 150px;min-width:150px;max-width:260px}
+.bundle h4{margin:0 0 8px;padding-bottom:6px;border-bottom:1px solid var(--bcol);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--bcol);font-weight:500;line-height:1.3}
+.bundle h4 span{display:block;color:var(--muted);letter-spacing:.04em;text-transform:none;font-size:10px;white-space:nowrap;margin-top:2px}
+.bundle .list{display:flex;flex-direction:column;gap:8px;min-height:40px}
+.dstack{position:relative;cursor:default}
+.dstack .chip{position:absolute;left:0;right:0;top:0;background:#0b0c10;box-shadow:0 -1px 0 rgba(0,0,0,.6);transition:top .5s cubic-bezier(.2,.8,.2,1),left .5s,transform .9s cubic-bezier(.2,.8,.2,1),opacity .4s}
+.dstack.open .chip{position:relative;left:0 !important;top:0 !important;margin-bottom:6px}
+.dstack .cnt{position:absolute;right:-6px;top:-8px;z-index:30;min-width:18px;height:16px;padding:0 5px;border-radius:8px;background:var(--bg);border:1px solid var(--bcol);color:var(--bcol);font-size:9px;line-height:14px;text-align:center;letter-spacing:.04em}
+.dstack.one .cnt{display:none}
+.dstack.open .cnt{opacity:.5}
+.field{position:relative;margin:34px 0 0;height:760px;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.field .grid{position:absolute;inset:0;display:grid;grid-template-columns:repeat(10,1fr);grid-template-rows:repeat(10,1fr);gap:0;filter:blur(1.3px);opacity:.75;padding:14px}
+.field .grid svg{width:100%;height:100%;display:block}
+.field .cap{position:absolute;left:0;right:0;bottom:26px;text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2)}
 .bundle .chip{transition:transform .9s cubic-bezier(.2,.8,.2,1),opacity .4s,border-color .4s,background .6s;box-shadow:none}
 .cols.bundled .col{min-height:0}
 .cols.bundled .threads,.cols.bundled .stem{opacity:0;transition:opacity .4s}
@@ -237,12 +248,13 @@ header{display:flex;align-items:center;justify-content:space-between;height:64px
 
   <section class="findings" id="findings">
     <div class="gate" id="gate">
-      <h2>Five findings from this run</h2>
+      <h2>Six findings from this run</h2>
       <p>Enter a work email to open them. The run stays on this page.</p>
       <form id="gateform"><input id="email" type="email" placeholder="name@company.com" required><button type="submit">Open findings</button></form>
       <p class="note" id="gnote"></p>
     </div>
     <div class="tiles" id="tiles"></div>
+    <div class="field" id="field" style="display:none"><div class="grid" id="fieldgrid"></div><div class="cap">one hundred prompts, six agents each</div></div>
     <div class="close" id="closer" style="display:none"><p id="closeline"></p><a href="{{ calendly_url }}" target="_blank" rel="noopener">Book 30 minutes</a></div>
   </section>
 </div>
@@ -299,9 +311,8 @@ function buildCols(agents) {
   agents.forEach((a, i) => {
     const h = hueOf(i, agents.length);
     const c = el('div', 'col'); c.style.setProperty('--hue', `hsl(${h},52%,66%)`); c.style.setProperty('--hue-dim', `hsla(${h},52%,66%,.35)`); c.style.setProperty('--hue-fill', `hsla(${h},50%,60%,.18)`);
-    c.innerHTML = `<div class="stem"></div><div class="label">${esc(a)}</div><div class="state">waiting</div><div class="answer" tabindex="0" aria-label="${esc(a)} answer, scrollable"></div><div class="conduit">{ } api citations</div><svg class="threads"></svg><div class="stack" title="show the full stack"></div><div class="chips"></div>`;
+    c.innerHTML = `<div class="stem"></div><div class="label">${esc(a)}</div><div class="state">waiting</div><div class="answer" tabindex="0" aria-label="${esc(a)} answer, scrollable"></div><div class="conduit">{ } api citations</div><svg class="threads"></svg><div class="chips"></div>`;
     cols.appendChild(c); S.cols[a] = {el: c, i, hue: h, text: '', chips: []};
-    $('.stack', c).addEventListener('click', () => { const col = S.cols[a]; col.pinnedOpen = true; col.el.classList.remove('collapsed'); redrawThreads(a); });
     $('.answer', c).addEventListener('scroll', () => redrawThreads(a), {passive: true});
   });
 }
@@ -369,21 +380,10 @@ function ledger() {
   $('#ledger').innerHTML = parts.join('<span class="cap">·</span>');
 }
 
-// ---------- completed stacks collapse to count chips ----------
-function checkCollapse(agent) {
-  const col = S.cols[agent]; if (!col || !col.answered || col.pinnedOpen || S.done) return;
-  const chips = col.chips.map((id) => S.chips[id]); if (!chips.length) return;
-  if (!chips.every((c) => c.dropped || c.merged || c.verified)) return;
-  clearTimeout(col.ct);
-  col.ct = setTimeout(() => {
-    if (col.pinnedOpen || S.done || col.el.classList.contains('collapsed')) return;
-    const live = chips.filter((c) => !c.dropped && !c.merged).length, dead = chips.filter((c) => c.dropped).length, merged = chips.filter((c) => c.merged).length;
-    $('.stack', col.el).innerHTML = `<div class="sc">${live} citation${live === 1 ? '' : 's'} · show</div>` + (dead ? `<div class="sc dead">${dead} dead link${dead === 1 ? '' : 's'}</div>` : '') + (merged ? `<div class="sc">${merged} merged</div>` : '');
-    col.el.classList.add('collapsed'); $('.threads', col.el).innerHTML = '';
-    chips.forEach((c) => { if (c.el && c.el.classList.contains('reading')) c.el.classList.add('peek'); });   // a page already being read stays in view
-  }, 1300 / speed);
-}
-function expandAll() { Object.values(S.cols).forEach((c) => { clearTimeout(c.ct); c.el.classList.remove('collapsed'); }); document.querySelectorAll('.chip.peek').forEach((e) => e.classList.remove('peek')); }
+// ---------- stacks: cards stay in their columns until run.done, then fan into domain stacks inside the type bundles ----------
+function checkCollapse() {}
+function expandAll() { document.querySelectorAll('.chip.peek').forEach((e) => e.classList.remove('peek')); }
+const rootOf = (key) => { const h = String(key || '').split('/')[0].replace(/^www\./, '').toLowerCase(); const p = h.split('.'); if (p.length >= 3 && /^(co|com|org|net|gov|ac|edu)$/.test(p[p.length - 2])) return p.slice(-3).join('.'); return p.slice(-2).join('.'); };
 
 // ---------- event handlers ----------
 const H = {
@@ -451,7 +451,7 @@ const H = {
   'scrape.budget'(d) { S.counts.distinct = d.distinct_pages; S.counts.cap = d.read_cap; Object.values(S.cols).forEach((c) => { if (c.answered) $('.state', c.el).textContent = 'reading pages'; }); ledger(); },
   'page.open'(d) {
     const p = S.pages[d.page_key]; if (!p) return;
-    for (const chip of p.chips) { const card = $('.card', chip.el); card.className = 'card'; card.innerHTML = `<div class="t"></div>` + Array.from({length: 6}, (_, i) => `<div class="l" style="width:${60 + ((i * 37) % 38)}%"><i style="left:${20 + ((i * 53) % 45)}%"></i></div>`).join('') + `<div class="f"><span>title ✓</span><span>byline ✓</span><span>date ✓</span><span>text ✓</span></div><div class="scan"></div>`; chip.el.classList.add('reading'); if (S.cols[chip.agent] && S.cols[chip.agent].el.classList.contains('collapsed')) chip.el.classList.add('peek'); }
+    for (const chip of p.chips) { const card = $('.card', chip.el); card.className = 'card'; card.innerHTML = `<div class="t"></div>` + Array.from({length: 6}, (_, i) => `<div class="l" style="width:${60 + ((i * 37) % 38)}%"><i style="left:${20 + ((i * 53) % 45)}%"></i></div>`).join('') + `<div class="f"><span>title ✓</span><span>byline ✓</span><span>date ✓</span><span>text ✓</span></div><div class="scan"></div>`; chip.el.classList.add('reading'); }
   },
   'page.read'(d) {
     const p = S.pages[d.page_key]; if (!p) return; p.read = d; if (d.status === 'ok') S.counts.read++; else S.counts.blocked++;
@@ -460,7 +460,7 @@ const H = {
       const card = $('.card', chip.el);
       if (d.status !== 'ok') card.innerHTML = `<div class="wallb"><span>${d.note === 'unreachable' ? 'unreachable' : 'blocked'} · kept</span></div>`;
       else { const hits = Math.min(4, d.brand_count || 0); card.querySelectorAll('.l i').forEach((i, k) => { if (k >= hits) i.remove(); }); card.classList.add('scanned'); }
-      setTimeout(() => { chip.el.classList.remove('reading'); if (d.status === 'ok') { chip.el.classList.add('filled'); $('.hits', chip.el).innerHTML = Array.from({length: Math.min(4, d.brand_count || 0)}, () => '<i></i>').join(''); } setTimeout(() => chip.el.classList.remove('peek'), 1400 / speed); }, 450 / speed);
+      setTimeout(() => { chip.el.classList.remove('reading'); if (d.status === 'ok') { chip.el.classList.add('filled'); $('.hits', chip.el).innerHTML = Array.from({length: Math.min(4, d.brand_count || 0)}, () => '<i></i>').join(''); } }, 450 / speed);
     }
     ledger();
   },
@@ -469,11 +469,11 @@ const H = {
     S.done = true; expandAll(); bundle(); Object.values(S.cols).forEach((c) => $('.state', c.el).textContent = 'done'); ledger();
     $('#findings').classList.add('on'); document.querySelectorAll('#fan .pulse').forEach((p) => p.style.animationDuration = '6s');
     if (!S.run_id && S.findings) dispatch('findings.preview', S.findings);            // demo replay: the findings travel with the log
-    setTimeout(() => window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'}), 700);
+    if (!S.replay) setTimeout(() => window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'}), 700);
     if (new URLSearchParams(location.search).get('open')) setTimeout(openFindings, 300);
   },
   'findings.preview'(d) { S.findings = d; const T = $('#tiles'); if (T.classList.contains('open')) return; $('#findings').classList.add('on'); tiles(d); T.classList.add('preview'); },
-  'findings.locked'() { setTimeout(() => window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'}), 200); },
+  'findings.locked'() { if (!S.replay) setTimeout(() => window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'}), 200); },
 };
 
 
@@ -488,14 +488,25 @@ function bundle() {
   for (const c of live) (groups[c.type || 'unclassified'] = groups[c.type || 'unclassified'] || []).push(c);
   const first = new Map(live.map((c) => [c, c.el.getBoundingClientRect()]));
   const B = $('#bundles'); B.innerHTML = '';
-  const total = live.length;
-  for (const t of TYPE_ORDER) {
+  const total = live.length, STEP = 5, SHIFT = 3;
+  for (const t of TYPE_ORDER.concat(Object.keys(groups).filter((k) => !TYPE_ORDER.includes(k)))) {
     if (!groups[t]) continue;
-    const g = el('div', 'bundle'); g.style.setProperty('--bcol', TYPE_COL[t]);
-    g.innerHTML = `<h4>${t}<span>${groups[t].length} of ${total}</span></h4><div class="list"></div>`;
+    const g = el('div', 'bundle'); g.style.setProperty('--bcol', TYPE_COL[t] || TYPE_COL.unclassified);
+    g.innerHTML = `<h4>${esc(t)}<span>${groups[t].length} of ${total} citations</span></h4><div class="list"></div>`;
     B.appendChild(g);
-    groups[t].sort((a, b) => (b.hits || 0) - (a.hits || 0));
-    for (const c of groups[t]) $('.list', g).appendChild(c.el);
+    // one overlapping stack per root domain, biggest stacks first, most-read card on top
+    const byRoot = {};
+    for (const c of groups[t]) (byRoot[rootOf(c.page_key || c.url_final || c.url_raw)] = byRoot[rootOf(c.page_key || c.url_final || c.url_raw)] || []).push(c);
+    const roots = Object.keys(byRoot).sort((a, b) => byRoot[b].length - byRoot[a].length || a.localeCompare(b));
+    for (const r of roots) {
+      const cards = byRoot[r].sort((a, b) => (b.hits || 0) - (a.hits || 0));
+      const st = el('div', 'dstack' + (cards.length === 1 ? ' one' : '')); st.title = `${r} · ${cards.length} citation${cards.length === 1 ? '' : 's'} · click to fan out`;
+      st.style.height = `${22 + (cards.length - 1) * STEP}px`;
+      cards.forEach((c, i) => { st.appendChild(c.el); c.el.style.top = `${i * STEP}px`; c.el.style.left = `${i * SHIFT}px`; c.el.style.zIndex = String(20 - i); });
+      st.appendChild(el('i', 'cnt', `×${cards.length}`));
+      st.addEventListener('click', () => { st.classList.toggle('open'); st.style.height = st.classList.contains('open') ? 'auto' : `${22 + (cards.length - 1) * STEP}px`; });
+      $('.list', g).appendChild(st);
+    }
   }
   $('#cols').classList.add('bundled'); $('#bhead').classList.add('on'); B.classList.add('on');
   document.querySelectorAll('.threads').forEach((sv) => (sv.innerHTML = ''));
@@ -507,6 +518,19 @@ function bundle() {
   void B.offsetHeight;
   for (const c of live) { c.el.style.transition = ''; c.el.style.transitionDelay = `${(k++ % 12) * 40}ms`; c.el.style.transform = ''; }
   setTimeout(() => live.forEach((c) => (c.el.style.transitionDelay = '')), 1600 / speed);
+}
+
+// ---------- field of one hundred fans (the audit at scale) ----------
+function fanSymbol(n = 6) {
+  const W = 300, H = 110, colW = W / n; let paths = `<path d="M${W / 2},8 L${W / 2},26" stroke="rgba(241,238,232,.7)" stroke-width="2" fill="none" stroke-linecap="round"/>`;
+  for (let i = 0; i < n; i++) { const x = colW * (i + .5), jy = 26 - Math.abs(i - (n - 1) / 2) * 2, sway = (x - W / 2) * .25, h = hueOf(i, n); paths += `<path d="M${W / 2},${jy} C${W / 2 + sway * .4},${jy + 30} ${x - sway * .5},${H - 40} ${x},${H - 10}" stroke="hsl(${h},52%,66%)" stroke-width="1.6" fill="none" stroke-linecap="round"/><circle cx="${x}" cy="${H - 10}" r="2.4" fill="hsl(${h},70%,82%)"/>`; }
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet"><circle cx="${W / 2}" cy="8" r="3" fill="#EDEEF1"/>${paths}</svg>`;
+}
+function buildField() {
+  const g = $('#fieldgrid'); if (g.childElementCount) return;
+  const one = fanSymbol(S.run && S.run.agents ? S.run.agents.length : 6);
+  g.innerHTML = Array.from({length: 100}, () => one).join('');
+  $('#field').style.display = 'block';
 }
 
 // ---------- findings tiles ----------
@@ -572,6 +596,19 @@ function demo() {
   $('.ctl').classList.add('on');
   S.findings = window.SYNTHETIC_FINDINGS; replay(window.SYNTHETIC_EVENTS);
 }
+async function replayRun(id) {
+  lockForm(true); note('');
+  let j;
+  try { const r = await fetch(`/one-prompt/replay/${encodeURIComponent(id)}.json`); if (!r.ok) throw new Error(r.status); j = await r.json(); }
+  catch (e) { note('That run could not be loaded.'); lockForm(false); return; }
+  $('#brand').value = j.brand || ''; $('#prompt').value = j.prompt || '';
+  S.replay = true; S.run_id = null;                                   // a replay never unlocks or writes a lead
+  const evs = (j.events || []).filter((e) => e.event !== 'findings.locked');
+  const total = evs.length ? Math.max(0.1, evs[evs.length - 1].t) : 0.1;
+  speed = total / 2.4;                                                // the whole run in about two and a half seconds
+  replay(evs);
+  timers.push(setTimeout(() => { speed = 1; if (S.findings) { openFindings(); $('#findings').scrollIntoView({behavior: 'smooth', block: 'start'}); } }, (total * 1000) / speed + 400));
+}
 $('#form').addEventListener('submit', async (ev) => {
   ev.preventDefault(); if (S.run) return;
   const params = new URLSearchParams(location.search);
@@ -589,7 +626,8 @@ $('#form').addEventListener('submit', async (ev) => {
 });
 function openFindings() {
   const f = S.findings; if (!f) return;
-  tiles(f); $('#closeline').innerHTML = `This is one prompt and <b>${S.counts.citations}</b> citations. The audit analyzes 10,000+.`;
+  tiles(f); buildField();
+  $('#closeline').innerHTML = `This was one prompt and <b>${S.counts.citations}</b> citations. The audit runs one hundred prompts, six agents each. That is 600 answers and about <b>12,000</b> citations.`;
   $('#tiles').classList.remove('preview'); $('#tiles').classList.add('open'); $('#gate').style.display = 'none'; $('#closer').style.display = 'block';
 }
 $('#gateform').addEventListener('submit', async (ev) => {
@@ -607,7 +645,7 @@ $('#speed').addEventListener('click', () => { speed = speed === 1 ? 3 : 1; $('#s
 $('#skip').addEventListener('click', () => { timers.forEach(clearTimeout); const events = window.SYNTHETIC_EVENTS; if (!S.run) dispatch('run.start', events[0].data); events.filter((e) => e.event !== 'run.start').forEach((e) => dispatch(e.event, e.data)); });
 // prefill for the prototype; ?autorun=1&speed=3 starts the replay on load
 { const q = new URLSearchParams(location.search); if (q.get('brand')) $('#brand').value = q.get('brand'); if (q.get('prompt')) $('#prompt').value = q.get('prompt'); if (q.get('demo')) { $('#brand').value = 'Rivian'; $('#prompt').value = 'What is the best electric adventure vehicle for off-roading and camping?'; } if (q.get('autostart')) $('#form').requestSubmit(); }
-{ const q = new URLSearchParams(location.search); if (q.get('speed')) { speed = +q.get('speed') || 1; $('#speed').textContent = `speed ×${speed}`; } if (q.get('autorun')) $('#form').requestSubmit(); }
+{ const q = new URLSearchParams(location.search); if (q.get('speed')) { speed = +q.get('speed') || 1; $('#speed').textContent = `speed ×${speed}`; } if (q.get('replay')) replayRun(q.get('replay')); else if (q.get('autorun')) $('#form').requestSubmit(); }
 </script>
 </body>
 </html>
