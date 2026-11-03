@@ -2690,13 +2690,14 @@ def one_prompt_replay(run_id):
     import one_prompt_runner as OPR
     run = OPR.get(run_id)
     if run is not None:
-        events, brand, prompt = run.events, run.brand, run.prompt
+        events, brand, prompt, findings = run.events, run.brand, run.prompt, run.findings
     else:
         rec = OnePromptRun.query.filter_by(run_id=run_id).first()
         if rec is None or not rec.events_json:
             return jsonify({"code": "not_found", "error": "No such run."}), 404
-        events, brand, prompt = json.loads(rec.events_json), rec.brand, rec.prompt
-    return jsonify({"run_id": run_id, "brand": brand, "prompt": prompt, "events": events})
+        events, brand, prompt, findings = json.loads(rec.events_json), rec.brand, rec.prompt, json.loads(rec.findings_json or "null")
+    # findings are also carried here, so runs logged before the findings.preview event replay in full
+    return jsonify({"run_id": run_id, "brand": brand, "prompt": prompt, "events": events, "findings": findings})
 
 
 @app.route("/one-prompt", methods=["POST"])
