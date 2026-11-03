@@ -607,7 +607,8 @@ async function replayRun(id) {
   const total = evs.length ? Math.max(0.1, evs[evs.length - 1].t) : 0.1;
   speed = total / 2.4;                                                // the whole run in about two and a half seconds
   replay(evs);
-  timers.push(setTimeout(() => { speed = 1; if (S.findings) { openFindings(); $('#findings').scrollIntoView({behavior: 'smooth', block: 'start'}); } }, (total * 1000) / speed + 400));
+  timers.push(setTimeout(() => { speed = 1; if (!S.findings && j.findings) S.findings = j.findings;   // older runs logged no findings.preview; the endpoint carries the stored findings
+    if (S.findings) { $('#findings').classList.add('on'); openFindings(); $('#findings').scrollIntoView({behavior: 'smooth', block: 'start'}); } }, (total * 1000) / speed + 400));
 }
 $('#form').addEventListener('submit', async (ev) => {
   ev.preventDefault(); if (S.run) return;
