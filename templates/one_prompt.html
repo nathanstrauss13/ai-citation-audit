@@ -81,11 +81,18 @@ header{display:flex;align-items:center;justify-content:space-between;height:64px
 .chip .cut{position:absolute;top:-4px;width:1px;height:30px;background:#fff;box-shadow:0 0 8px var(--hue);opacity:0}
 .chip.snipping .cut{animation:cut .7s ease-out}
 @keyframes cut{0%{opacity:0}30%{opacity:1}100%{opacity:0}}
-.chip .sleeve{position:absolute;inset:-1px;border-radius:3px;border:1px solid #5a5e66;background:repeating-linear-gradient(135deg,#1a1c20 0 3px,#101214 3px 6px);color:rgba(241,238,232,.6);padding:0 7px;overflow:hidden;text-overflow:ellipsis;transition:transform .8s ease-in,opacity .8s}
+.chip .sleeve{position:absolute;inset:-1px;border-radius:3px;border:1px solid #5a5e66;background:repeating-linear-gradient(135deg,#1a1c20 0 3px,#101214 3px 6px);color:rgba(241,238,232,.6);padding:0 58px 0 7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .chip .sleeve .ping{position:absolute;right:-30px;top:9px;width:5px;height:5px;border-radius:50%;background:#fff;box-shadow:0 0 6px #fff;opacity:0}
 .chip.pinging .sleeve .ping{animation:ping 1.2s ease-in-out forwards}
 @keyframes ping{0%{opacity:1;transform:translateX(0)}50%{opacity:1;transform:translateX(26px)}100%{opacity:0;transform:translateX(0)}}
-.chip.unmasked .sleeve{transform:translate(70px,8px) rotate(5deg);opacity:0;pointer-events:none}
+.chip .sleeve{clip-path:inset(0 0 0 0);transition:clip-path .9s cubic-bezier(.4,0,.2,1)}
+.chip .sleeve::before{content:"redirect";position:absolute;right:6px;top:0;font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#9aa1ad}
+.chip .sleeve::after{content:"";position:absolute;left:-2px;top:-2px;bottom:-2px;width:2px;background:#fff;box-shadow:0 0 10px #fff,0 0 20px var(--hue);opacity:0}
+.chip.unmasked .sleeve{clip-path:inset(0 0 0 100%);pointer-events:none}
+.chip.unmasked .sleeve::after{opacity:1;left:100%;transition:left .9s cubic-bezier(.4,0,.2,1)}
+.chip.unmasked{box-shadow:0 0 14px var(--hue-dim)}
+.chip.unmasked .lbl{animation:reveal .9s ease-out}
+@keyframes reveal{0%{color:var(--hue)}100%{color:var(--ink)}}
 .chip .badge{position:absolute;right:-8px;top:-8px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:1px solid var(--hue);color:var(--hue);font-size:9px;line-height:14px;text-align:center;transform:scale(0);transition:transform .3s}
 .chip.absorbed .badge{transform:scale(1)}
 .chip.merging{transform:translateY(-30px) scale(.5);opacity:0}
@@ -112,8 +119,11 @@ header{display:flex;align-items:center;justify-content:space-between;height:64px
 .card .l{height:3px;background:rgba(241,238,232,.16);border-radius:1px;margin-bottom:4px;position:relative}
 .card .l i{position:absolute;top:0;height:3px;width:18%;background:var(--gold);box-shadow:0 0 5px var(--gold);opacity:0;transition:opacity .2s}
 .card.scanned .l i{opacity:1}
-.card .scan{position:absolute;left:-9px;right:-9px;top:0;height:1px;background:var(--hue);box-shadow:0 0 8px var(--hue);animation:scan .5s linear forwards}
-@keyframes scan{from{top:8px}to{top:calc(100% - 8px)}}
+.card .scan{position:absolute;left:-1px;right:-1px;top:0;height:14px;background:linear-gradient(180deg,transparent,var(--hue-fill) 60%,var(--hue));border-bottom:1px solid #fff;box-shadow:0 2px 10px var(--hue);opacity:.95;animation:scan 1s linear forwards}
+@keyframes scan{from{top:0}to{top:calc(100% - 14px)}}
+.card .l i{transition:opacity .15s}
+.card.scanned .l:nth-child(2) i{transition-delay:.15s}.card.scanned .l:nth-child(3) i{transition-delay:.3s}.card.scanned .l:nth-child(4) i{transition-delay:.45s}.card.scanned .l:nth-child(5) i{transition-delay:.6s}.card.scanned .l:nth-child(6) i{transition-delay:.75s}.card.scanned .l:nth-child(7) i{transition-delay:.9s}
+.chip.reading{z-index:40}
 .card .f{display:flex;gap:7px;font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:6px}
 .card.scanned .f span{color:var(--hue)}
 .card .wallb{height:58px;margin-top:6px;border:1px solid rgba(217,164,74,.4);border-radius:2px;background:repeating-linear-gradient(0deg,rgba(217,164,74,.2) 0 9px,transparent 9px 11px),repeating-linear-gradient(90deg,rgba(217,164,74,.2) 0 18px,transparent 18px 20px);position:relative}
@@ -164,6 +174,8 @@ header{display:flex;align-items:center;justify-content:space-between;height:64px
 .leg{font-size:11px;color:var(--ink2);line-height:1.7}
 .leg b{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px;vertical-align:middle}
 .close{margin-top:26px;text-align:center}
+.field .close{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;margin:0;width:min(760px,92%);padding:30px 34px;border-radius:10px;background:rgba(9,10,13,.78);border:1px solid var(--line);backdrop-filter:blur(3px)}
+.field .close p{font-size:26px;line-height:1.3}
 .close p{font-family:var(--display);font-weight:200;font-size:24px;margin:0 0 14px}
 .close a{display:inline-block;background:var(--gold);color:#121212;border-radius:3px;padding:13px 22px;font:600 12px/1 var(--ui);letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
 .wm{position:fixed;left:16px;bottom:12px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);opacity:.7;display:none}
@@ -206,6 +218,12 @@ header{display:flex;align-items:center;justify-content:space-between;height:64px
 .bundle h4{margin:0 0 8px;padding-bottom:6px;border-bottom:1px solid var(--bcol);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--bcol);font-weight:500;line-height:1.3}
 .bundle h4 span{display:block;color:var(--muted);letter-spacing:.04em;text-transform:none;font-size:10px;white-space:nowrap;margin-top:2px}
 .bundle .list{display:flex;flex-direction:column;gap:8px;min-height:40px}
+.col .settled{display:flex;flex-direction:column;gap:8px;margin-top:10px;padding:0 2px}
+.col .settled:empty{margin:0}
+.col .settled .dstack{--bcol:var(--hue)}
+.cols.bundled .col .settled{display:none}
+.ghost{transition:opacity .6s,height .4s,margin .4s}
+.ghost.fade{opacity:0;height:0;margin:0;border-width:0}
 .dstack{position:relative;cursor:default}
 .dstack .chip{position:absolute;left:0;right:0;top:0;background:#0b0c10;box-shadow:0 -1px 0 rgba(0,0,0,.6);transition:top .5s cubic-bezier(.2,.8,.2,1),left .5s,transform .9s cubic-bezier(.2,.8,.2,1),opacity .4s}
 .dstack.open .chip{position:relative;left:0 !important;top:0 !important;margin-bottom:6px}
@@ -254,8 +272,9 @@ header{display:flex;align-items:center;justify-content:space-between;height:64px
       <p class="note" id="gnote"></p>
     </div>
     <div class="tiles" id="tiles"></div>
-    <div class="field" id="field" style="display:none"><div class="grid" id="fieldgrid"></div><div class="cap">one hundred prompts, six agents each</div></div>
-    <div class="close" id="closer" style="display:none"><p id="closeline"></p><a href="{{ calendly_url }}" target="_blank" rel="noopener">Book 30 minutes</a></div>
+    <div class="field" id="field" style="display:none"><div class="grid" id="fieldgrid"></div>
+      <div class="close" id="closer"><p id="closeline"></p><a href="{{ calendly_url }}" target="_blank" rel="noopener">Book 30 minutes</a></div>
+      <div class="cap">one hundred prompts, six agents each</div></div>
   </section>
 </div>
 <div class="wm" id="wm">prototype · synthetic run · not a measurement</div>
@@ -311,7 +330,7 @@ function buildCols(agents) {
   agents.forEach((a, i) => {
     const h = hueOf(i, agents.length);
     const c = el('div', 'col'); c.style.setProperty('--hue', `hsl(${h},52%,66%)`); c.style.setProperty('--hue-dim', `hsla(${h},52%,66%,.35)`); c.style.setProperty('--hue-fill', `hsla(${h},50%,60%,.18)`);
-    c.innerHTML = `<div class="stem"></div><div class="label">${esc(a)}</div><div class="state">waiting</div><div class="answer" tabindex="0" aria-label="${esc(a)} answer, scrollable"></div><div class="conduit">{ } api citations</div><svg class="threads"></svg><div class="chips"></div>`;
+    c.innerHTML = `<div class="stem"></div><div class="label">${esc(a)}</div><div class="state">waiting</div><div class="answer" tabindex="0" aria-label="${esc(a)} answer, scrollable"></div><div class="conduit">{ } api citations</div><svg class="threads"></svg><div class="chips"></div><div class="settled"></div>`;
     cols.appendChild(c); S.cols[a] = {el: c, i, hue: h, text: '', chips: []};
     $('.answer', c).addEventListener('scroll', () => redrawThreads(a), {passive: true});
   });
@@ -364,7 +383,7 @@ function thread(agent, cid) {
 }
 function redrawThreads(agent) {
   const col = S.cols[agent]; $('.threads', col.el).innerHTML = '';
-  for (const id of col.chips) { const c = S.chips[id]; if (c.el && !c.el.classList.contains('gone') && !c.dropped) thread(agent, id); }
+  for (const id of col.chips) { const c = S.chips[id]; if (c.el && !c.settled && !c.el.classList.contains('gone') && !c.dropped) thread(agent, id); }
 }
 
 // ---------- ledger ----------
@@ -382,6 +401,38 @@ function ledger() {
 
 // ---------- stacks: cards stay in their columns until run.done, then fan into domain stacks inside the type bundles ----------
 function checkCollapse() {}
+const STEP = 5, SHIFT = 3;
+function layoutStack(st) {
+  const cards = Array.from(st.querySelectorAll(':scope > .chip'));
+  cards.forEach((e, i) => { e.style.top = `${i * STEP}px`; e.style.left = `${i * SHIFT}px`; e.style.zIndex = e.classList.contains('reading') ? '40' : String(30 - i); });
+  st.style.height = st.classList.contains('open') ? 'auto' : `${22 + (cards.length - 1) * STEP}px`;
+  const cnt = st.querySelector(':scope > .cnt'); if (cnt) cnt.textContent = `×${cards.length}`; st.classList.toggle('one', cards.length === 1);
+  st.dataset.n = cards.length;
+}
+function makeStack(root) {
+  const st = el('div', 'dstack one'); st.dataset.root = root; st.title = `${root} · click to fan out`;
+  st.appendChild(el('i', 'cnt', '×1'));
+  st.addEventListener('click', () => { st.classList.toggle('open'); layoutStack(st); });
+  return st;
+}
+// a verified card falls out of the live list into its column's domain stack (newest on top), like a piece landing
+function settle(chip) {
+  if (!chip || !chip.el || chip.settled || chip.dropped || chip.merged || S.done) return;
+  const col = S.cols[chip.agent]; if (!col) return;
+  const root = rootOf(chip.page_key || chip.url_final || chip.url_raw);
+  const area = $('.settled', col.el);
+  let st = Array.from(area.children).find((x) => x.dataset.root === root);
+  const first = chip.el.getBoundingClientRect();
+  if (!st) { st = makeStack(root); area.appendChild(st); }
+  chip.settled = true; chip.el.style.transition = 'none';
+  st.insertBefore(chip.el, st.firstChild); layoutStack(st);
+  if (chip.path) { chip.path.remove(); chip.path = null; }
+  const last = chip.el.getBoundingClientRect();
+  chip.el.style.transform = `translate(${first.left - last.left}px, ${first.top - last.top}px)`;
+  void chip.el.offsetWidth;
+  chip.el.style.transition = ''; chip.el.style.transform = '';
+  redrawThreads(chip.agent);
+}
 function expandAll() { document.querySelectorAll('.chip.peek').forEach((e) => e.classList.remove('peek')); }
 const rootOf = (key) => { const h = String(key || '').split('/')[0].replace(/^www\./, '').toLowerCase(); const p = h.split('.'); if (p.length >= 3 && /^(co|com|org|net|gov|ac|edu)$/.test(p[p.length - 2])) return p.slice(-3).join('.'); return p.slice(-2).join('.'); };
 
@@ -431,7 +482,7 @@ const H = {
     const chip = S.chips[d.cit_id]; if (!chip) return; chip.dropped = true; S.counts.dropped++;
     const c = S.cols[d.agent]; $('.state', c.el).textContent = 'checking links';
     chip.el.classList.add('dropped'); if (chip.path) chip.path.remove();
-    setTimeout(() => { const g = el('div', 'ghost', esc(DROP_REASON[d.reason] || `dead link · ${d.reason}`)); g.title = `${chip.url_raw || ''} dropped: ${d.reason}. The record keeps the link and the reason.`; chip.el.replaceWith(g); redrawThreads(d.agent); }, 1000 / speed);
+    setTimeout(() => { const g = el('div', 'ghost', esc(DROP_REASON[d.reason] || `dead link · ${d.reason}`)); g.title = `${chip.url_raw || ''} dropped: ${d.reason}. The record keeps the link and the reason.`; chip.el.replaceWith(g); redrawThreads(d.agent); setTimeout(() => { g.classList.add('fade'); setTimeout(() => { g.remove(); redrawThreads(d.agent); }, 650); }, 2600 / speed); }, 1000 / speed);
     ledger(); checkCollapse(d.agent);
   },
   'citation.merged'(d) {
@@ -444,14 +495,14 @@ const H = {
     const chip = S.chips[d.cit_id]; if (!chip) return; chip.verified = true; S.counts.verified++; if (d.status === 'wall') S.counts.walls++;
     const c = S.cols[d.agent]; $('.state', c.el).textContent = 'checking links';
     chip.el.style.setProperty('--verdict', d.status === 'ok' ? 'var(--olive)' : 'var(--amber)');
-    chip.el.classList.add('verifying'); if (d.status !== 'ok') chip.el.title = d.note === 'timeout' ? 'no response in time · kept on record' : 'blocked by the site · kept on record'; setTimeout(() => { chip.el.classList.remove('verifying'); chip.el.classList.add(d.status === 'ok' ? 'ok' : 'wall'); }, 700 / speed);
+    chip.el.classList.add('verifying'); if (d.status !== 'ok') chip.el.title = d.note === 'timeout' ? 'no response in time · kept on record' : 'blocked by the site · kept on record'; setTimeout(() => { chip.el.classList.remove('verifying'); chip.el.classList.add(d.status === 'ok' ? 'ok' : 'wall'); setTimeout(() => settle(chip), 350 / speed); }, 700 / speed);
     if (chip.page_key) (S.pages[chip.page_key] = S.pages[chip.page_key] || {chips: []}).chips.push(chip);
     checkCollapse(d.agent);
   },
   'scrape.budget'(d) { S.counts.distinct = d.distinct_pages; S.counts.cap = d.read_cap; Object.values(S.cols).forEach((c) => { if (c.answered) $('.state', c.el).textContent = 'reading pages'; }); ledger(); },
   'page.open'(d) {
     const p = S.pages[d.page_key]; if (!p) return;
-    for (const chip of p.chips) { const card = $('.card', chip.el); card.className = 'card'; card.innerHTML = `<div class="t"></div>` + Array.from({length: 6}, (_, i) => `<div class="l" style="width:${60 + ((i * 37) % 38)}%"><i style="left:${20 + ((i * 53) % 45)}%"></i></div>`).join('') + `<div class="f"><span>title ✓</span><span>byline ✓</span><span>date ✓</span><span>text ✓</span></div><div class="scan"></div>`; chip.el.classList.add('reading'); }
+    for (const chip of p.chips) { const card = $('.card', chip.el); card.className = 'card'; card.innerHTML = `<div class="t"></div>` + Array.from({length: 6}, (_, i) => `<div class="l" style="width:${60 + ((i * 37) % 38)}%"><i style="left:${20 + ((i * 53) % 45)}%"></i></div>`).join('') + `<div class="f"><span>title ✓</span><span>byline ✓</span><span>date ✓</span><span>text ✓</span></div><div class="scan"></div>`; chip.el.classList.add('reading'); chip.openedAt = performance.now(); const st = chip.el.closest('.dstack'); if (st) layoutStack(st); }
   },
   'page.read'(d) {
     const p = S.pages[d.page_key]; if (!p) return; p.read = d; if (d.status === 'ok') S.counts.read++; else S.counts.blocked++;
@@ -460,7 +511,8 @@ const H = {
       const card = $('.card', chip.el);
       if (d.status !== 'ok') card.innerHTML = `<div class="wallb"><span>${d.note === 'unreachable' ? 'unreachable' : 'blocked'} · kept</span></div>`;
       else { const hits = Math.min(4, d.brand_count || 0); card.querySelectorAll('.l i').forEach((i, k) => { if (k >= hits) i.remove(); }); card.classList.add('scanned'); }
-      setTimeout(() => { chip.el.classList.remove('reading'); if (d.status === 'ok') { chip.el.classList.add('filled'); $('.hits', chip.el).innerHTML = Array.from({length: Math.min(4, d.brand_count || 0)}, () => '<i></i>').join(''); } }, 450 / speed);
+      const held = Math.max(0, 1150 / speed - (performance.now() - (chip.openedAt || 0)));   // the scan bar takes about a second per page
+      setTimeout(() => { chip.el.classList.remove('reading'); if (d.status === 'ok') { chip.el.classList.add('filled'); $('.hits', chip.el).innerHTML = Array.from({length: Math.min(4, d.brand_count || 0)}, () => '<i></i>').join(''); } const st = chip.el.closest('.dstack'); if (st) layoutStack(st); }, held);
     }
     ledger();
   },
@@ -468,6 +520,7 @@ const H = {
   'run.done'(d) {
     S.done = true; expandAll(); bundle(); Object.values(S.cols).forEach((c) => $('.state', c.el).textContent = 'done'); ledger();
     $('#findings').classList.add('on'); document.querySelectorAll('#fan .pulse').forEach((p) => p.style.animationDuration = '6s');
+    if (!S.run_id && !S.findings && S.demoFindings) S.findings = S.demoFindings;        // stored runs logged before findings.preview
     if (!S.run_id && S.findings) dispatch('findings.preview', S.findings);            // demo replay: the findings travel with the log
     if (!S.replay) setTimeout(() => window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'}), 700);
     if (new URLSearchParams(location.search).get('open')) setTimeout(openFindings, 300);
@@ -488,7 +541,7 @@ function bundle() {
   for (const c of live) (groups[c.type || 'unclassified'] = groups[c.type || 'unclassified'] || []).push(c);
   const first = new Map(live.map((c) => [c, c.el.getBoundingClientRect()]));
   const B = $('#bundles'); B.innerHTML = '';
-  const total = live.length, STEP = 5, SHIFT = 3;
+  const total = live.length;
   for (const t of TYPE_ORDER.concat(Object.keys(groups).filter((k) => !TYPE_ORDER.includes(k)))) {
     if (!groups[t]) continue;
     const g = el('div', 'bundle'); g.style.setProperty('--bcol', TYPE_COL[t] || TYPE_COL.unclassified);
@@ -500,12 +553,8 @@ function bundle() {
     const roots = Object.keys(byRoot).sort((a, b) => byRoot[b].length - byRoot[a].length || a.localeCompare(b));
     for (const r of roots) {
       const cards = byRoot[r].sort((a, b) => (b.hits || 0) - (a.hits || 0));
-      const st = el('div', 'dstack' + (cards.length === 1 ? ' one' : '')); st.title = `${r} · ${cards.length} citation${cards.length === 1 ? '' : 's'} · click to fan out`;
-      st.style.height = `${22 + (cards.length - 1) * STEP}px`;
-      cards.forEach((c, i) => { st.appendChild(c.el); c.el.style.top = `${i * STEP}px`; c.el.style.left = `${i * SHIFT}px`; c.el.style.zIndex = String(20 - i); });
-      st.appendChild(el('i', 'cnt', `×${cards.length}`));
-      st.addEventListener('click', () => { st.classList.toggle('open'); st.style.height = st.classList.contains('open') ? 'auto' : `${22 + (cards.length - 1) * STEP}px`; });
-      $('.list', g).appendChild(st);
+      const st = makeStack(r); $('.list', g).appendChild(st);
+      cards.forEach((c) => st.insertBefore(c.el, st.firstChild)); layoutStack(st);
     }
   }
   $('#cols').classList.add('bundled'); $('#bhead').classList.add('on'); B.classList.add('on');
@@ -575,6 +624,7 @@ const C_OLIVE = '#aab98a', C_AMBER = '#d9a44a', C_RED = '#c7706a';
 // ---------- replay / stream ----------
 function dispatch(name, data) { if (H[name]) { try { H[name](data); } catch (e) { console.error(name, e); } } }
 function replay(events) {
+  S.replayEvents = events;
   timers.forEach(clearTimeout); timers = [];
   const t0 = performance.now();
   for (const e of events) timers.push(setTimeout(() => dispatch(e.event, e.data), (e.t * 1000) / speed));
@@ -596,6 +646,16 @@ function demo() {
   $('.ctl').classList.add('on');
   S.findings = window.SYNTHETIC_FINDINGS; replay(window.SYNTHETIC_EVENTS);
 }
+async function demoRun(id) {
+  lockForm(true); note('');
+  let j;
+  try { const r = await fetch(`/one-prompt/replay/${encodeURIComponent(id)}.json`); if (!r.ok) throw new Error(r.status); j = await r.json(); }
+  catch (e) { note('That run could not be loaded.'); lockForm(false); return; }
+  $('#brand').value = j.brand || ''; $('#prompt').value = j.prompt || '';
+  S.demoFindings = j.findings || null; $('.ctl').classList.add('on');
+  $('#wm').textContent = `demo · replay of stored run ${id} · no new measurement`; $('#wm').classList.add('on');
+  replay((j.events || []));
+}
 async function replayRun(id) {
   lockForm(true); note('');
   let j;
@@ -614,6 +674,7 @@ $('#form').addEventListener('submit', async (ev) => {
   ev.preventDefault(); if (S.run) return;
   const params = new URLSearchParams(location.search);
   if (params.get('stream')) { lockForm(true); stream(params.get('stream')); return; }
+  if (params.get('demo') && params.get('demo') !== '1') { demoRun(params.get('demo')); return; }
   if (!LIVE || params.get('demo')) { lockForm(true); demo(); return; }
   const brand = $('#brand').value.trim(), prompt = $('#prompt').value.replace(/\s+/g, ' ').trim();
   if (brand.length < 2 || prompt.length < 10) { note('Enter a brand name and one question of at least ten characters.'); return; }
@@ -629,7 +690,7 @@ function openFindings() {
   const f = S.findings; if (!f) return;
   tiles(f); buildField();
   $('#closeline').innerHTML = `This was one prompt and <b>${S.counts.citations}</b> citations. The audit runs one hundred prompts, six agents each. That is 600 answers and about <b>12,000</b> citations.`;
-  $('#tiles').classList.remove('preview'); $('#tiles').classList.add('open'); $('#gate').style.display = 'none'; $('#closer').style.display = 'block';
+  $('#tiles').classList.remove('preview'); $('#tiles').classList.add('open'); $('#gate').style.display = 'none';
 }
 $('#gateform').addEventListener('submit', async (ev) => {
   ev.preventDefault();
@@ -643,7 +704,7 @@ $('#gateform').addEventListener('submit', async (ev) => {
   } catch (e) { $('#gnote').textContent = 'The findings could not be opened. Check your connection and try again.'; btn.disabled = false; }
 });
 $('#speed').addEventListener('click', () => { speed = speed === 1 ? 3 : 1; $('#speed').textContent = `speed ×${speed}`; });
-$('#skip').addEventListener('click', () => { timers.forEach(clearTimeout); const events = window.SYNTHETIC_EVENTS; if (!S.run) dispatch('run.start', events[0].data); events.filter((e) => e.event !== 'run.start').forEach((e) => dispatch(e.event, e.data)); });
+$('#skip').addEventListener('click', () => { timers.forEach(clearTimeout); const events = S.replayEvents || window.SYNTHETIC_EVENTS; if (!events) return; if (!S.run) dispatch('run.start', events[0].data); events.filter((e) => e.event !== 'run.start').forEach((e) => dispatch(e.event, e.data)); });
 // prefill for the prototype; ?autorun=1&speed=3 starts the replay on load
 { const q = new URLSearchParams(location.search); if (q.get('brand')) $('#brand').value = q.get('brand'); if (q.get('prompt')) $('#prompt').value = q.get('prompt'); if (q.get('demo')) { $('#brand').value = 'Rivian'; $('#prompt').value = 'What is the best electric adventure vehicle for off-roading and camping?'; } if (q.get('autostart')) $('#form').requestSubmit(); }
 { const q = new URLSearchParams(location.search); if (q.get('speed')) { speed = +q.get('speed') || 1; $('#speed').textContent = `speed ×${speed}`; } if (q.get('replay')) replayRun(q.get('replay')); else if (q.get('autorun')) $('#form').requestSubmit(); }
