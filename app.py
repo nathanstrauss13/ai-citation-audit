@@ -2600,7 +2600,7 @@ def _send_one_prompt_email(run, lead=False):
         from sendgrid.helpers.mail import Mail
         from urllib.parse import urlencode
         base = (SIGNAL_BASE_URL or "https://signal.innatec3.com").rstrip("/")
-        replay = f"{base}/one-prompt?" + urlencode({"brand": run.brand, "prompt": run.prompt, "stream": f"/one-prompt/stream/{run.run_id}", "autorun": "1"})
+        replay = f"{base}/one-prompt?" + urlencode({"replay": run.run_id})
         log_url = f"{base}/one-prompt/log/{run.run_id}"
         c = run.counts or {}
         answered, errors = [], []
@@ -2616,11 +2616,12 @@ def _send_one_prompt_email(run, lead=False):
         first = f"{len(me['named_first_in'])} of {f.get('answers', 0)}" if me else "0"
         top = ", ".join(f"{s['root']} {s['answers']} of {f.get('answers', 0)}" for s in (f.get("top_sources") or [])[:3]) or "(none)"
         attr = ", ".join(v for v in (run.attr.get("utm_source"), run.attr.get("utm_medium"), run.attr.get("utm_campaign")) if v) or "direct"
-        state = "errored" if run.failed else ("unlocked by " + run.email if run.email else "completed, findings not unlocked")
-        subject = (f"[One prompt \u00b7 lead] {run.email} \u00b7 {run.brand}" if lead
-                   else f"[One prompt] {run.brand} \u2014 {c.get('answers', 0)} of 6 answered \u00b7 {cost_label}")
+        state = "errored" if run.failed else ("findings opened by " + run.email if run.email else "no email entered, findings not opened")
+        subject = (f"[One prompt \u00b7 lead] {run.email} \u00b7 {run.brand} \u00b7 {cost_label}" if (lead or run.email)
+                   else f"[One prompt] {run.brand} \u2014 no email entered \u00b7 {cost_label}")
         lines = [
-            ("Lead: " + (run.email or "") + " unlocked the findings") if lead else ("One prompt, six agents: run " + state),
+            "One prompt, six agents: " + state,
+            f"Visitor email: {run.email}" if run.email else "Visitor email: not provided (report not viewed)",
             "",
             f"Brand: {run.brand}",
             f"Question: {run.prompt}",
@@ -2652,6 +2653,50 @@ def _send_one_prompt_email(run, lead=False):
         _send_mail_object(msg)
     except Exception as e:
         print("one-prompt email send failed:", str(e)[:160])
+
+
+ONE_PROMPT_EMAIL_WAIT_S = max(60, int(os.environ.get("ONE_PROMPT_EMAIL_WAIT_S", "900") or "900"))
+
+
+def _one_prompt_send_once(run, lead=False):
+    """Send the run report exactly once: on unlock (with the address) or, failing
+    that, after ONE_PROMPT_EMAIL_WAIT_S with a note that no email was given."""
+    if getattr(run, "emailed", False):
+        return
+    run.emailed = True
+    t = getattr(run, "email_timer", None)
+    if t is not None:
+        try:
+            t.cancel()
+        except Exception:
+            pass
+    _send_one_prompt_email(run, lead=lead)
+
+
+def _one_prompt_schedule_email(run):
+    """Nathan (Nov 3, 2026): the report waits until the visitor enters a work
+    email or walks away, so it always says who, or that nobody did."""
+    run.emailed = False
+    t = threading.Timer(ONE_PROMPT_EMAIL_WAIT_S, _one_prompt_send_once, args=(run,))
+    t.daemon = True
+    run.email_timer = t
+    t.start()
+
+
+@app.route("/one-prompt/replay/<run_id>.json")
+def one_prompt_replay(run_id):
+    """The run's events with their timestamps, for the page's sped-up replay
+    (?replay=<run_id>). Public by run id, like the stream."""
+    import one_prompt_runner as OPR
+    run = OPR.get(run_id)
+    if run is not None:
+        events, brand, prompt = run.events, run.brand, run.prompt
+    else:
+        rec = OnePromptRun.query.filter_by(run_id=run_id).first()
+        if rec is None or not rec.events_json:
+            return jsonify({"code": "not_found", "error": "No such run."}), 404
+        events, brand, prompt = json.loads(rec.events_json), rec.brand, rec.prompt
+    return jsonify({"run_id": run_id, "brand": brand, "prompt": prompt, "events": events})
 
 
 @app.route("/one-prompt", methods=["POST"])
@@ -2705,7 +2750,7 @@ def one_prompt_start():
     def _release():
         _audit_slot_release()
         _one_prompt_persist(run)
-        _send_one_prompt_email(run)
+        _one_prompt_schedule_email(run)
     OPR.start(run, sys.modules[__name__], slot_release=_release)
     return jsonify({"run_id": run.run_id, "stream": f"/one-prompt/stream/{run.run_id}"})
 
@@ -2784,14 +2829,16 @@ def one_prompt_unlock():
         _capture_inbound_lead("completed", f"[one prompt] {brand}: {prompt}", _client_ip(), email,
                               _is_operator_email(email), _session_inbound_attr(), brand=brand, est_cost_usd=est)
         try:
-            if run is None:
-                # the run outlived the process: rebuild enough of it from the row for the lead email
+            if run is not None:
+                threading.Thread(target=_one_prompt_send_once, args=(run, True), daemon=True).start()
+            else:
+                # the run outlived the process: its report went out at the deadline; send the lead follow-up
                 from types import SimpleNamespace
-                run = SimpleNamespace(run_id=run_id, brand=brand, prompt=prompt, email=email, ip=rec.ip,
-                                      attr={"utm_source": rec.utm_source, "utm_medium": rec.utm_medium, "utm_campaign": rec.utm_campaign},
-                                      operator=bool(rec.is_operator), events=json.loads(rec.events_json or "[]"),
-                                      counts=json.loads(rec.counts_json or "{}"), findings=findings, est_cost_usd=est, failed=None)
-            threading.Thread(target=_send_one_prompt_email, args=(run, True), daemon=True).start()
+                ghost = SimpleNamespace(run_id=run_id, brand=brand, prompt=prompt, email=email, ip=rec.ip,
+                                        attr={"utm_source": rec.utm_source, "utm_medium": rec.utm_medium, "utm_campaign": rec.utm_campaign},
+                                        operator=bool(rec.is_operator), events=json.loads(rec.events_json or "[]"),
+                                        counts=json.loads(rec.counts_json or "{}"), findings=findings, est_cost_usd=est, failed=None)
+                threading.Thread(target=_send_one_prompt_email, args=(ghost, True), daemon=True).start()
         except Exception as e:
             print("one-prompt lead email failed (continuing):", str(e)[:120])
     return jsonify({"run_id": run_id, "findings": findings})
